@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Guycn2"
+		]
+	},
+	"bs-permissionmanager-desc": "ממשק ניהול עבור עריכת הרשאות משתמש",
+	"bs-permissionmanager-pref-max-backups": "הגבלת גיבוי"
+}

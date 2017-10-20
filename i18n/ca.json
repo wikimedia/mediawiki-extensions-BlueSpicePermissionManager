@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Edustus",
+			"Fitoschido"
+		]
+	},
+	"bs-permissionmanager-btn-group-label": "Grup:",
+	"bs-permissionmanager-header-global": "Wiki",
+	"bs-permissionmanager-header-group": "Grup",
+	"bs-permissionmanager-btn-save-label": "Desar",
+	"bs-permissionmanager-btn-save-in-progress-label": "S’està desant…",
+	"bs-permissionmanager-labeltemplates": "Plantilles",
+	"bs-permissionmanager-labeltpled-desc": "Descripció",
+	"bs-permissionmanager-labeltpled-add": "Nou",
+	"bs-permissionmanager-labeltpled-edit": "Editar",
+	"bs-permissionmanager-labeltpled-cancel": "Cancel·lar",
+	"bs-permissionmanager-titletpled-new": "Crear una plantilla"
+}

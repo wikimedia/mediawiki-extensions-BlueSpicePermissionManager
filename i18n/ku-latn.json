@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"George Animal",
+			"Bikarhêner"
+		]
+	},
+	"bs-permissionmanager-btn-group-label": "Kom:",
+	"bs-permissionmanager-header-permissions": "Destûr",
+	"bs-permissionmanager-header-global": "Wîkî",
+	"bs-permissionmanager-header-group": "Kom",
+	"bs-permissionmanager-btn-save-label": "Tomar bike",
+	"bs-permissionmanager-btn-save-in-progress-label": "Tê tomarkirin...",
+	"bs-permissionmanager-save-success": "Destûr hatin tomarkirin.",
+	"bs-permissionmanager-labeltemplates": "Şablon",
+	"bs-permissionmanager-btn-template-editor": "Şablonan biguherîne",
+	"bs-permissionmanager-labeltpled-desc": "Danasîn",
+	"bs-permissionmanager-labeltpled-active": "Çalak",
+	"bs-permissionmanager-labeltpled-add": "Nû",
+	"bs-permissionmanager-labeltpled-edit": "Biguherîne",
+	"bs-permissionmanager-labeltpled-delete": "Jê bibe",
+	"bs-permissionmanager-labeltpled-cancel": "Betal bike",
+	"bs-permissionmanager-msgtpled-success": "Şablon hate tomarkirin.",
+	"bs-permissionmanager-msgtpled-savefailure": "Şablon nikaribû bê tomarkirin.",
+	"bs-permissionmanager-msgtpled-saveonabort": "Tu dixwazî niha hemû daneyan tomar bikî?",
+	"bs-permissionmanager-msgtpled-new": "Navê şablonê:",
+	"bs-permissionmanager-msgtpled-edit": "Navê şablona nû:",
+	"bs-permissionmanager-msgtpled-delete": "Şablon hate jêbirin.",
+	"bs-permissionmanager-msgtpled-deletefail": "Şablon nikaribû bê jêbirin.",
+	"bs-permissionmanager-titletpled-new": "Şablonekê çêke",
+	"bs-permissionmanager-titletpled-edit": "Navê şablonê biguherîne",
+	"bs-permissionmanager-titletpled-delete": "Şablonê jê bibe",
+	"bs-permissionmanager-unsaved-changes": "Guherandinên netomarkirî hene. Tu niha bi rastî dixwazî ji vê rûpelê derkevî? Guherandinên netormakirî winda bibin."
+}

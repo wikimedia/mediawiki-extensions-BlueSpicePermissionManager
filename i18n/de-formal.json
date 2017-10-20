@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Mglaser"
+		]
+	},
+	"bs-permissionmanager-pref-lockmode": "Lockmode aktivieren (Achtung! Nach dem Deaktivieren des Lockmode überprüfen Sie bitte die Einstellungen in der Rechteverwaltung)",
+	"bs-permissionmanager-unsaved-changes": "Es existieren ungespeicherte Änderungen. Wollen Sie die Seite wirklich verlassen? Die ungespeicherten Änderungen gehen in diesem Fall verloren"
+}

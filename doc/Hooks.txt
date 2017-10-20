@@ -1,0 +1,5 @@
+==Permissionmanager.class.php==
+
+'BsNamespacemanageOnSavePermission':
+&$wgNamespacePermissionLockdown:
+ &$wgGroupPermissions:

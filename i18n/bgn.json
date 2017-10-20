@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Baloch Afghanistan"
+		]
+	},
+	"bs-permissionmanager-btn-group-label": "گروپ:",
+	"bs-permissionmanager-header-global": "ویکی",
+	"bs-permissionmanager-header-namespaces": "نامانی فضاهان",
+	"bs-permissionmanager-header-group": "گروپ",
+	"bs-permissionmanager-btn-save-label": "ذخیره",
+	"bs-permissionmanager-btn-save-in-progress-label": "بئ ذخیره کورتینی حالا...",
+	"bs-permissionmanager-labeltpled-add": "نوکین",
+	"bs-permissionmanager-labeltpled-edit": "ایڈیٹ",
+	"bs-permissionmanager-labeltpled-cancel": "کنسیل"
+}

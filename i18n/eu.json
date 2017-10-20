@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Subi",
+			"Mikel Ibaiba"
+		]
+	},
+	"bs-permissionmanager-btn-group-label": "Taldea:",
+	"bs-permissionmanager-header-permissions": "Baimenak",
+	"bs-permissionmanager-btn-save-label": "Gorde",
+	"bs-permissionmanager-btn-save-in-progress-label": "Gordetzen...",
+	"bs-permissionmanager-save-success": "Baimenak gorde dira.",
+	"bs-permissionmanager-labeltemplates": "Txantiloiak",
+	"bs-permissionmanager-labeltpled-desc": "Deskribapena",
+	"bs-permissionmanager-labeltpled-add": "Berria",
+	"bs-permissionmanager-labeltpled-edit": "Aldatu",
+	"bs-permissionmanager-labeltpled-delete": "Ezabatu",
+	"bs-permissionmanager-labeltpled-cancel": "Utzi",
+	"bs-permissionmanager-msgtpled-success": "Txantiloia gorde da.",
+	"bs-permissionmanager-msgtpled-savefailure": "Ezin izan da txantiloia gorde.",
+	"bs-permissionmanager-msgtpled-saveonabort": "Datu guztiak gorde nahi dituzu orain?",
+	"bs-permissionmanager-msgtpled-new": "Txantiloiaren izena:",
+	"bs-permissionmanager-msgtpled-delete": "Txantiloia ezabatu da.",
+	"bs-permissionmanager-msgtpled-deletefail": "Ezin izan da txantiloia ezabatu.",
+	"bs-permissionmanager-titletpled-new": "Txantiloia sortu",
+	"bs-permissionmanager-titletpled-delete": "Txantiloia ezabatu",
+	"bs-permissionmanager-unsaved-changes": "Gorde gabeko aldaketak daude. Benetan orrialdetik irten nahi duzu? Gorde gabeko aldaketak galduko dira.",
+	"bs-permissionmanager-affected-by-explicit": "$1 blokeatu da",
+	"bs-permissionmanager-affected-by-inherited": "$1tik oinordetzan jasota",
+	"bs-permissionmanager-affected-by-notset": "Ez da aktibatu",
+	"bs-permissionmanager-affected-by-explicitlyset": "Bereziki aktibatuta",
+	"bs-permissionmanager-affected-by-setonwiki": "Wiki maila aktibatu"
+}

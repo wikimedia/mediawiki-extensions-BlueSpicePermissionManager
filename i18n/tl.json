@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Emem.calist"
+		]
+	},
+	"bs-permissionmanager-affected-by-explicit": "Huli ka ngayon (ni/ng mga) $1",
+	"bs-permissionmanager-affected-by-inherited": "Namana pa galing (kay/kina) $1",
+	"bs-permissionmanager-affected-by-notset": "Hindi nakasaad"
+}

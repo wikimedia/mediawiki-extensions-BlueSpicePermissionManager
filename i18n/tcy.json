@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"VASANTH S.N."
+		]
+	},
+	"bs-permissionmanager-btn-group-label": "ಗುಂಪು:",
+	"bs-permissionmanager-header-permissions": "ಒಪ್ಪುಗೆಲು",
+	"bs-permissionmanager-header-global": "ವಿಕಿ",
+	"bs-permissionmanager-header-namespaces": "ಪುದರ್‍ದ ವರ್ಗೊಲು",
+	"bs-permissionmanager-header-group": "ಗುಂಪು",
+	"bs-permissionmanager-btn-save-label": "ಒರಿಪಾಲೆ",
+	"bs-permissionmanager-btn-save-in-progress-label": "ಓರಿಪಾವೊಂತುಂಡು...",
+	"bs-permissionmanager-labeltemplates": "ಟೆಂಪ್ಲೆಟ್‍ಲು",
+	"bs-permissionmanager-labeltpled-desc": "ವಿವರಣೆ",
+	"bs-permissionmanager-labeltpled-active": "ಸಕ್ರಿಯ",
+	"bs-permissionmanager-labeltpled-add": "ಪೊಸ",
+	"bs-permissionmanager-labeltpled-edit": "ಸಂಪೊಲಿಪುಲೆ",
+	"bs-permissionmanager-labeltpled-delete": "ಮಾಜಾಲೆ",
+	"bs-permissionmanager-labeltpled-cancel": "ವಜಾ ಮಲ್ಪುಲೆ"
+}

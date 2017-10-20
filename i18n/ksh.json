@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Purodha"
+		]
+	},
+	"bs-permissionmanager-btn-group-label": "Jropp",
+	"bs-permissionmanager-header-global": "Wikki",
+	"bs-permissionmanager-header-namespaces": "Appachtemangs",
+	"bs-permissionmanager-header-group": "Jropp",
+	"bs-permissionmanager-btn-save-label": "Seschere",
+	"bs-permissionmanager-labeltemplates": "Schblohne",
+	"bs-permissionmanager-btn-template-editor": "Schblohne änndere",
+	"bs-permissionmanager-labeltpled-active": "Aktihf",
+	"bs-permissionmanager-labeltpled-add": "Neu",
+	"bs-permissionmanager-labeltpled-delete": "Fott schmiiße",
+	"bs-permissionmanager-labeltpled-cancel": "Ophühre",
+	"bs-permissionmanager-pref-max-backups": "De hüschße Zahl Sescheronge",
+	"bs-permissionmanager-error-lockout": "Winneschsdens ein Jropp moß dat Rääsch „$1“\nhan.\nDe Änderonge kunnte nit faßjehallde wähde.",
+	"log-name-bs-permission-manager": "Logbohch vun de Verwalldong vun de Rääschde",
+	"log-description-bs-permission-manager": "Logbohch vun de Ännderonge aan Jropperääschte.",
+	"log-show-hide-bs-permission-manager": "$1 et Logbohch vun de Rääschdeverwalldong",
+	"logentry-bs-permission-manager-modify": "{{GENDER:$2|Dä Metmaacher|De Metmaacherėn|Dä Metmaacher|De Metmaacherėn|Dä Metmaacher}} $1 hät de Zohjangsrääschde vun de Jropp $4 veränndert."
+}

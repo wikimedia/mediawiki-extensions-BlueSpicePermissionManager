@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hwangjy9",
+			"Ykhwong"
+		]
+	},
+	"bs-permissionmanager-btn-group-label": "그룹:",
+	"bs-permissionmanager-header-global": "위키",
+	"bs-permissionmanager-header-namespaces": "이름공간",
+	"bs-permissionmanager-header-group": "그룹",
+	"bs-permissionmanager-btn-save-label": "저장",
+	"bs-permissionmanager-btn-save-in-progress-label": "저장 중 ...",
+	"bs-permissionmanager-labeltemplates": "틀",
+	"bs-permissionmanager-labeltpled-desc": "설명",
+	"action-permissionmanager-viewspecialpage": "특수 문서\"{{int:bs-permissionmanager-label}}\" 보기",
+	"permissionmanager": "권한 관리자",
+	"bs-permissionmanager-affected-by-explicit": "$1님이 차단했습니다",
+	"bs-permissionmanager-affected-by-inherited": "$1에서 상속됨",
+	"bs-permissionmanager-affected-by-notset": "설정되지 않음",
+	"bs-permissionmanager-affected-by-explicitlyset": "명시적으로 설정됨"
+}

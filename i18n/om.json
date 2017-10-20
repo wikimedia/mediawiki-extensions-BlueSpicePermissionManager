@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tumsaa"
+		]
+	},
+	"bs-permissionmanager-btn-group-label": "Garee:",
+	"bs-permissionmanager-header-group": "Garee",
+	"bs-permissionmanager-btn-save-label": "Olkaayi",
+	"bs-permissionmanager-btn-save-in-progress-label": "Olkaawaa...",
+	"bs-permissionmanager-labeltemplates": "Tempileetota",
+	"bs-permissionmanager-btn-template-editor": "Tempileetii jijjiiri",
+	"bs-permissionmanager-labeltpled-desc": "Ibsa",
+	"bs-permissionmanager-labeltpled-add": "Haaraa",
+	"bs-permissionmanager-labeltpled-delete": "Balleessi",
+	"bs-permissionmanager-labeltpled-cancel": "Dhiisi",
+	"bs-permissionmanager-msgtpled-success": "Teempileetiin olkaawwame.",
+	"bs-permissionmanager-msgtpled-new": "Maqaa tempileetii",
+	"bs-permissionmanager-msgtpled-edit": "Maqaa tempileetii haaraa:",
+	"bs-permissionmanager-msgtpled-delete": "Tempileetin balleeffamee jira",
+	"bs-permissionmanager-msgtpled-deletefail": "Tempileetiin kana balleessuu hin dandeenye.",
+	"bs-permissionmanager-titletpled-new": "Tempileetii uumi",
+	"bs-permissionmanager-titletpled-edit": "Maqaa tempileetii jijjiiri",
+	"bs-permissionmanager-titletpled-delete": "Tempileetii balleessi"
+}

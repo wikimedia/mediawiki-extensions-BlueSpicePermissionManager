@@ -1,0 +1,103 @@
+{
+	"name": "BlueSpicePermissionManager",
+	"version": "2.27.1-alpha",
+	"url": "https://help.bluespice.com/index.php/PermissionManager",
+	"license-name": "GPL-2.0+",
+	"author": [
+		"Markus Glaser",
+		"Stephan Muggli"
+	],
+	"descriptionmsg": "bs-permissionmanager-desc",
+	"type": "bluespice",
+	"bsgExtensions": {
+		"BlueSpicePermissionManager": {
+			"className": "PermissionManager",
+			"extPath": "/BlueSpicePermissionManager"
+		}
+	},
+	"SpecialPages": {
+		"PermissionManager": "SpecialPermissionManager"
+	},
+	"LogTypes": [
+		"bs-permission-manager"
+	],
+	"FilterLogTypes": {
+		"bs-permission-manager": true
+	},
+	"LogActionsHandlers": {
+		"bs-permission-manager/*": "LogFormatter"
+	},
+	"APIModules": {
+		"bs-permissionmanager-tasks": "ApiPermissionManager"
+	},
+	"MessagesDirs": {
+		"PermissionManager": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"PermissionManagerAlias": "includes/specials/SpecialPermissionManager.alias.php"
+	},
+	"AutoloadClasses": {
+		"PermissionManager": "PermissionManager.class.php",
+		"PermissionTemplates": "includes/PermissionTemplates.class.php",
+		"PermissionValidator": "includes/PermissionValidator.php",
+		"SpecialPermissionManager": "includes/specials/SpecialPermissionManager.class.php",
+		"ApiPermissionManager": "includes/api/ApiPermissionManager.php",
+		"PermissionManagerHooks": "includes/PermissionManagerHooks.php"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpicePermissionManager/resources"
+	},
+	"ResourceModules": {
+		"ext.bluespice.permissionManager": {
+			"scripts": [
+				"bluespice.permissionManager.js"
+			],
+			"styles": "bluespice.permissionManager.css",
+			"dependencies": "ext.bluespice.extjs",
+			"messages": [
+				"htmlform-reset",
+				"bs-permissionmanager-header-permissions",
+				"bs-permissionmanager-header-global",
+				"bs-permissionmanager-header-namespaces",
+				"bs-permissionmanager-header-group",
+				"bs-permissionmanager-btn-group-label",
+				"bs-permissionmanager-btn-save-label",
+				"bs-permissionmanager-btn-save-in-progress-label",
+				"bs-permissionmanager-save-success",
+				"bs-permissionmanager-btn-template-editor",
+				"bs-permissionmanager-labeltpled",
+				"bs-permissionmanager-labeltpled-desc",
+				"bs-permissionmanager-labeltpled-active",
+				"bs-permissionmanager-labeltemplates",
+				"bs-permissionmanager-labeltpled-add",
+				"bs-permissionmanager-labeltpled-edit",
+				"bs-permissionmanager-labeltpled-delete",
+				"bs-permissionmanager-labeltpled-cancel",
+				"bs-permissionmanager-msgtpled-success",
+				"bs-permissionmanager-msgtpled-saveonabort",
+				"bs-permissionmanager-msgtpled-new",
+				"bs-permissionmanager-msgtpled-edit",
+				"bs-permissionmanager-msgtpled-delete",
+				"bs-permissionmanager-titletpled-new",
+				"bs-permissionmanager-titletpled-edit",
+				"bs-permissionmanager-titletpled-delete",
+				"bs-permissionmanager-unsaved-changes",
+				"bs-permissionmanager-affected-by-explicit",
+				"bs-permissionmanager-affected-by-inherited",
+				"bs-permissionmanager-affected-by-notset",
+				"bs-permissionmanager-affected-by-explicitlyset",
+				"bs-permissionmanager-affected-by-setonwiki"
+			]
+		}
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "PermissionManager::getSchemaUpdates",
+		"UnitTestsList": "PermissionManager::onUnitTestsList"
+	},
+	"callback": "PermissionManagerHooks::onCallback",
+	"load_composer_autoloader": true,
+	"manifest_version": 1
+}

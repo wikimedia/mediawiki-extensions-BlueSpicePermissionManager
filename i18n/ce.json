@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"bs-permissionmanager-btn-group-label": "Тоба:",
+	"bs-permissionmanager-header-group": "Тоба",
+	"bs-permissionmanager-btn-save-label": "Ӏалашъян",
+	"bs-permissionmanager-btn-save-in-progress-label": "Ӏалашъеш ю...",
+	"bs-permissionmanager-labeltpled-active": "Жигара",
+	"bs-permissionmanager-labeltpled-add": "Керланиг",
+	"bs-permissionmanager-labeltpled-edit": "Тае",
+	"bs-permissionmanager-labeltpled-delete": "ДӀаяккха",
+	"bs-permissionmanager-labeltpled-cancel": "Цаоьшу",
+	"bs-permissionmanager-msgtpled-delete": "Кеп дӀаяьккхина."
+}

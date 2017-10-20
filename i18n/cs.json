@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meliganai"
+		]
+	},
+	"bs-permissionmanager-affected-by-explicit": "Zablokováno $1",
+	"bs-permissionmanager-affected-by-notset": "Nenastaveno",
+	"bs-permissionmanager-affected-by-explicitlyset": "Explicitně nastaveno"
+}

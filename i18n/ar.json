@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25",
+			"باسم",
+			"محمد أحمد عبد الفتاح"
+		]
+	},
+	"bs-permissionmanager-labeltpled-desc": "الوصف",
+	"action-permissionmanager-viewspecialpage": "انظر الصفحة الخاصَّة \"{{int:bs-permissionmanager-label}}\"",
+	"permissionmanager": "مدير الأذون"
+}

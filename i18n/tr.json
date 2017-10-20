@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sayginer",
+			"Violetanka",
+			"Rapsar",
+			"Vito Genovese"
+		]
+	},
+	"bs-permissionmanager-desc": "Kullanıcı haklarının düzenlenmesi için yönetim arayüzü",
+	"bs-permissionmanager-label": "İzin yöneticisi",
+	"bs-permissionmanager-header-permissions": "İzinler",
+	"bs-permissionmanager-header-global": "Viki",
+	"bs-permissionmanager-btn-save-label": "Kaydet",
+	"bs-permissionmanager-btn-save-in-progress-label": "Kaydediliyor ...",
+	"bs-permissionmanager-labeltemplates": "Şablonlar",
+	"bs-permissionmanager-labeltpled": "Şablon düzenleyici",
+	"bs-permissionmanager-labeltpled-desc": "Açıklama",
+	"bs-permissionmanager-labeltpled-add": "Yeni",
+	"bs-permissionmanager-labeltpled-edit": "Düzenle",
+	"bs-permissionmanager-labeltpled-delete": "Sil",
+	"bs-permissionmanager-labeltpled-cancel": "İptal",
+	"bs-permissionmanager-msgtpled-success": "Şablon kaydedildi.",
+	"bs-permissionmanager-msgtpled-savefailure": "Şablon kaydedilemedi.",
+	"bs-permissionmanager-msgtpled-saveonabort": "Şimdi tüm verileri kaydetmek istiyor musunuz?",
+	"bs-permissionmanager-msgtpled-new": "Şablon adı:",
+	"bs-permissionmanager-msgtpled-edit": "Yeni şablon adı:",
+	"bs-permissionmanager-msgtpled-delete": "Şablon silindi.",
+	"bs-permissionmanager-titletpled-new": "Şablon oluştur",
+	"bs-permissionmanager-titletpled-delete": "Şablonu sil"
+}

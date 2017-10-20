@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01"
+		]
+	},
+	"bs-permissionmanager-header-namespaces": "Именски простори",
+	"bs-permissionmanager-btn-save-label": "Сачувај",
+	"bs-permissionmanager-btn-save-in-progress-label": "Чување...",
+	"bs-permissionmanager-labeltemplates": "Шаблони",
+	"bs-permissionmanager-labeltpled-desc": "Опис",
+	"bs-permissionmanager-labeltpled-edit": "Уреди",
+	"bs-permissionmanager-labeltpled-delete": "Обриши"
+}
