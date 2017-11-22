@@ -3,11 +3,10 @@
 -- Part of BlueSpice MediaWiki
 --
 -- @author     Sebastian Ulbricht <sebastian.ulbricht@gmx.de>
-
 -- @package    BlueSpice_Extensions
 -- @subpackage PermissionManager
 -- @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
--- @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+-- @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
 -- @filesource
 
 CREATE SEQUENCE /*$wgDBprefix*/pm_tmpl_id_seq MINVALUE 0 START WITH 0;
