@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"bs-permissionmanager-btn-group-label": "Gruppe:",
+	"bs-permissionmanager-header-permissions": "Permesse",
+	"bs-permissionmanager-header-global": "Uicchi",
+	"bs-permissionmanager-header-namespaces": "Namespace",
+	"bs-permissionmanager-header-group": "Gruppe",
+	"bs-permissionmanager-btn-save-label": "Reggìstre",
+	"bs-permissionmanager-btn-save-in-progress-label": "Stoche a reggistre...",
+	"bs-permissionmanager-labeltpled-active": "Attive",
+	"bs-permissionmanager-labeltpled-add": "Nuève",
+	"bs-permissionmanager-labeltpled-edit": "Cange",
+	"bs-permissionmanager-labeltpled-delete": "Scangìlle",
+	"bs-permissionmanager-labeltpled-cancel": "Annulle"
+}
