@@ -104,9 +104,6 @@ class PermissionManager extends BsExtensionMW {
 	}
 
 	protected function initExt() {
-		BsConfig::registerVar( 'MW::PermissionManager::RealityCheck', false, BsConfig::LEVEL_PUBLIC | BsConfig::TYPE_BOOL | BsConfig::RENDER_AS_JAVASCRIPT, 'bs-permissionmanager-pref-enablerealitycheck', 'toggle' );
-		BsConfig::registerVar( 'MW::PermissionManager::MaxBackups', 5, BsConfig::LEVEL_PUBLIC | BsConfig::TYPE_INT, 'bs-permissionmanager-pref-max-backups' );
-
 		$this->setHook( 'BSGroupManagerGroupNameChanged' );
 		$this->setHook( 'BSGroupManagerGroupDeleted' );
 
@@ -613,8 +610,9 @@ class PermissionManager extends BsExtensionMW {
 			return ( strpos( $elem, "pm-settings-backup-" ) !== FALSE ) ? true : false;
 		} );
 
+		$config = \MediaWiki\MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 		//default limit to 5 backups, remove all backup files until "maxbackups" files left
-		while ( count( $arrBackupFiles ) > BsConfig::get( "MW::PermissionManager::MaxBackups" ) ) {
+		while ( count( $arrBackupFiles ) > $config->get( "PermissionManagerMaxBackups" ) ) {
 			$oldBackupFile = dirname( $bsgConfigFiles[ 'PermissionManager' ] ) . "/" . array_shift( $arrBackupFiles );
 			unlink( $oldBackupFile );
 		}

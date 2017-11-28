@@ -9,10 +9,17 @@
 	],
 	"descriptionmsg": "bs-permissionmanager-desc",
 	"type": "bluespice",
-	"bsgExtensions": {
-		"BlueSpicePermissionManager": {
-			"className": "PermissionManager",
-			"extPath": "/BlueSpicePermissionManager"
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpicePermissionManager": {
+					"className": "PermissionManager",
+					"extPath": "/BlueSpicePermissionManager",
+					"configDefinitions": {
+						"PermissionManagerMaxBackups": "\\BlueSpice\\PermissionManager\\ConfigDefinition\\PermissionManagerMaxBackups::getInstance"
+					}
+				}
+			}
 		}
 	},
 	"SpecialPages": {
@@ -37,6 +44,14 @@
 	},
 	"ExtensionMessagesFiles": {
 		"PermissionManagerAlias": "includes/specials/SpecialPermissionManager.alias.php"
+	},
+	"config_prefix": "bsg",
+	"config": {
+		"PermissionManagerMaxBackups": {
+			"value": 5,
+			"descriptionmsg": "bs-permissionmanager-pref-max-backups",
+			"public": true
+		}
 	},
 	"AutoloadClasses": {
 		"PermissionManager": "PermissionManager.class.php",
@@ -99,5 +114,5 @@
 	},
 	"callback": "PermissionManagerHooks::onCallback",
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }
