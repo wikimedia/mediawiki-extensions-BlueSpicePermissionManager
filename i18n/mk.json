@@ -36,8 +36,6 @@
 	"bs-permissionmanager-titletpled-new": "Создавање на шаблонот",
 	"bs-permissionmanager-titletpled-edit": "Преименување на шаблонот",
 	"bs-permissionmanager-titletpled-delete": "Бришење на шаблонот",
-	"bs-permissionmanager-pref-lockmode": "Активирај заклучен режим",
-	"bs-permissionmanager-pref-skipsysns": "Изоставај ги системските именски простори ако е активиран заклучниот режим",
 	"bs-permissionmanager-pref-enablerealitycheck": "Активирај проверка на дозволи",
 	"bs-permissionmanager-unsaved-changes": "Имате незачувани промени. Дали навистина сакате да ја напуштите страницата сега? Притоа ќе ги изгубите незачуваните промени.",
 	"bs-permissionmanager-error-lockout": "Барем една група мора да го има правото „$1“.\nНе можев да ги зачувам промените.",

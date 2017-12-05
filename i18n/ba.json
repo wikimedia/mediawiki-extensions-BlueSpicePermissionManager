@@ -39,8 +39,6 @@
 	"bs-permissionmanager-titletpled-new": "Шаблон булдырыу",
 	"bs-permissionmanager-titletpled-edit": "Шаблонға яңы исем биреү",
 	"bs-permissionmanager-titletpled-delete": "Шаблонды юйыу",
-	"bs-permissionmanager-pref-lockmode": "Ябыҡ режимды активлаштырыу",
-	"bs-permissionmanager-pref-skipsysns": "Исемдәр арауығы системаһын үткәреп ебәреү",
 	"bs-permissionmanager-pref-enablerealitycheck": "Тикшереү рөхсәтен активлаштырыу",
 	"bs-permissionmanager-unsaved-changes": "Һаҡланмаған үҙгәртеүҙәр бар",
 	"log-name-bs-permission-manager": "Рөхсәт менән идара итеү"

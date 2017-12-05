@@ -37,8 +37,6 @@
 	"bs-permissionmanager-titletpled-new": "Ustvarjanje predloge",
 	"bs-permissionmanager-titletpled-edit": "Preimenovanje predloge",
 	"bs-permissionmanager-titletpled-delete": "Brisanje predloge",
-	"bs-permissionmanager-pref-lockmode": "Vključi način zaklepa",
-	"bs-permissionmanager-pref-skipsysns": "Preskoči sistemske imenske prostore, če je vključen način zaklepa",
 	"bs-permissionmanager-pref-enablerealitycheck": "Vključi preverjanje dovoljenj",
 	"bs-permissionmanager-unsaved-changes": "Obstajajo neshranjene spremembe. Ali res želite zapustiti stran? Neshranjene spremembe bodo izgubljene."
 }

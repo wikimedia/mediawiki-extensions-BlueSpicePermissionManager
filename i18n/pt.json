@@ -38,8 +38,6 @@
 	"bs-permissionmanager-titletpled-new": "Criar modelo",
 	"bs-permissionmanager-titletpled-edit": "Alterar o nome do modelo",
 	"bs-permissionmanager-titletpled-delete": "Eliminar modelo",
-	"bs-permissionmanager-pref-lockmode": "Ativar modo de bloqueio",
-	"bs-permissionmanager-pref-skipsysns": "Saltar os espaços nominais do sistema se o modo de bloqueio está ativo",
 	"bs-permissionmanager-pref-enablerealitycheck": "Ativar a verificação de permissões",
 	"bs-permissionmanager-pref-max-backups": "Limite de cópias de segurança",
 	"bs-permissionmanager-unsaved-changes": "Há alterações por gravar. Pretende realmente abandonar a página agora? As alterações ainda não gravadas serão perdidas.",

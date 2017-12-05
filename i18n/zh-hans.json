@@ -37,8 +37,6 @@
 	"bs-permissionmanager-titletpled-new": "创建模板",
 	"bs-permissionmanager-titletpled-edit": "重命名模板",
 	"bs-permissionmanager-titletpled-delete": "删除模板",
-	"bs-permissionmanager-pref-lockmode": "激活 lockmode",
-	"bs-permissionmanager-pref-skipsysns": "如果lockmode被激活则跳过系统名字空间",
 	"bs-permissionmanager-pref-enablerealitycheck": "激活权限检查",
 	"bs-permissionmanager-pref-max-backups": "备份限制",
 	"bs-permissionmanager-unsaved-changes": "存在尚未保存的更改。您确实想要现在离开此页面吗？这样将会丢失尚未保存的更改。",

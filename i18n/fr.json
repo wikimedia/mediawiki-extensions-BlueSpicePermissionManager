@@ -41,8 +41,6 @@
 	"bs-permissionmanager-titletpled-new": "Créer un modèle",
 	"bs-permissionmanager-titletpled-edit": "Renommer le modèle",
 	"bs-permissionmanager-titletpled-delete": "Supprimer le modèle",
-	"bs-permissionmanager-pref-lockmode": "Activer le mode de verrouillage",
-	"bs-permissionmanager-pref-skipsysns": "Sauter les espaces de nom système si le mode de verrouillage est actif",
 	"bs-permissionmanager-pref-enablerealitycheck": "Activer la vérification des droits",
 	"bs-permissionmanager-pref-max-backups": "Nombre limite de sauvegardes",
 	"bs-permissionmanager-unsaved-changes": "Il y a des modifications non enregistrées. Voulez-vous vraiment quitter la page maintenant ? Les modifications non enregistrées seront perdues.",

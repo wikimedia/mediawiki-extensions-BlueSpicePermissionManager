@@ -38,8 +38,6 @@
 	"bs-permissionmanager-titletpled-new": "Skapa mall",
 	"bs-permissionmanager-titletpled-edit": "Byt namn på mallen",
 	"bs-permissionmanager-titletpled-delete": "Radera mall",
-	"bs-permissionmanager-pref-lockmode": "Aktivera låsläge",
-	"bs-permissionmanager-pref-skipsysns": "Hoppa över systemnamnrymden om låsläge är aktivt",
 	"bs-permissionmanager-pref-enablerealitycheck": "Aktivera rättighetskontroll",
 	"bs-permissionmanager-unsaved-changes": "Det finns osparade ändringar. Vill du verkligen lämna sidan nu? De osparade ändringarna kommer att försvinna.",
 	"bs-permissionmanager-error-lockout": "Åtminstone en grupp måste äga rättigheten \"$1\".\nÄndringarna kunde inte sparas.",

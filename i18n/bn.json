@@ -34,7 +34,6 @@
 	"bs-permissionmanager-titletpled-new": "টেমপ্লেট তৈরি করুন",
 	"bs-permissionmanager-titletpled-edit": "টেমপ্লেট নামান্তর করুন",
 	"bs-permissionmanager-titletpled-delete": "টেমপ্লেট অপসারণ করুন",
-	"bs-permissionmanager-pref-lockmode": "lockmode সক্রিয় করুন",
 	"log-name-bs-permission-manager": "অনুমতি ব্যবস্থাপক লগ",
 	"log-show-hide-bs-permission-manager": "$1 অনুমতি ব্যবস্থাপক লগ",
 	"apihelp-bs-permissionmanager-tasks-description": "PermissionManager-এর জন্য কার্য প্রদান করে",

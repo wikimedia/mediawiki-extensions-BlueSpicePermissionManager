@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jason924tw"
+			"Jason924tw",
+			"Liuxinyu970226"
 		]
 	},
-	"bs-permissionmanager-labeltpled-edit": "纂"
+	"bs-permissionmanager-labeltpled-edit": "纂",
+	"bs-permissionmanager-pref-max-backups": "退限"
 }
