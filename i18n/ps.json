@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"Baloch Khan"
 		]
 	},
+	"bs-permissionmanager-labeltpled-edit": "سمول",
 	"bs-permissionmanager-labeltpled-cancel": "ناگارل"
 }
