@@ -19,8 +19,14 @@
 						"PermissionManagerMaxBackups": "\\BlueSpice\\PermissionManager\\ConfigDefinition\\PermissionManagerMaxBackups::getInstance"
 					}
 				}
+			},
+			"AdminToolRegistry": {
+				"bs-permission-manager": "BlueSpice\\PermissionManager\\AdminTool"
 			}
 		}
+	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\PermissionManager\\" : "src/"
 	},
 	"SpecialPages": {
 		"PermissionManager": "SpecialPermissionManager"

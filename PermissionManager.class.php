@@ -88,21 +88,6 @@ class PermissionManager extends BsExtensionMW {
 	 */
 	public static $aInvisibleGroups = array( 'sysop' );
 
-	/**
-	 * Constructor of PermissionManager
-	 */
-	public function __construct() {
-		wfProfileIn( 'BS::' . __METHOD__);
-		WikiAdmin::registerModule( 'PermissionManager', [
-			'image' => '/extensions/BlueSpiceExtensions/WikiAdmin/resources/images/bs-btn_rechteverwaltung_v1.png',
-			'level' => 'wikiadmin',
-			'message' => 'bs-permissionmanager-label',
-			'iconCls' => 'bs-icon-key',
-			'permissions' => [ 'permissionmanager-viewspecialpage' ],
-		]);
-		wfProfileOut( 'BS::' . __METHOD__ );
-	}
-
 	protected function initExt() {
 		$this->setHook( 'BSGroupManagerGroupNameChanged' );
 		$this->setHook( 'BSGroupManagerGroupDeleted' );
