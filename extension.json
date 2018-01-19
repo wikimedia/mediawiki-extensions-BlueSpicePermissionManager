@@ -9,6 +9,12 @@
 	],
 	"descriptionmsg": "bs-permissionmanager-desc",
 	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.31.0",
+		"extensions": {
+			"BlueSpiceFoundation": "*"
+		}
+	},
 	"attributes": {
 		"BlueSpiceFoundation": {
 			"Extensions": {
