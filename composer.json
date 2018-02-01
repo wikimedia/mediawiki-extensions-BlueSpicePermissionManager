@@ -2,7 +2,7 @@
 	"name": "mediawiki/blue-spice-permission-manager",
 	"type": "mediawiki-extension",
 	"description": "Administration interface for editing user rights",
-	"license": "GPL-3.0",
+	"license": "GPL-3.0-only",
 	"require": {
 		"composer/installers": "~1.0"
 	},
