@@ -1,5 +1,7 @@
-==Permissionmanager.class.php==
+==BlueSpice\PermissionManager\PermissionManager==
 
-'BsNamespacemanageOnSavePermission':
-&$wgNamespacePermissionLockdown:
- &$wgGroupPermissions:
+'BsPermissionManager::beforeSaveRoles': Allows changing assignments of roles to groups
+&$groupRoles: Defines which role is assigned to which group on global level
+&$roleLockdown: Defines which role is assigned to which group on namespace level
+Returning false on this hook will abort the saving of the roles
+

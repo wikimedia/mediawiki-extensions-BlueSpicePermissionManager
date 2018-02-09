@@ -3,23 +3,24 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 	requires: [
 		'Ext.state.Manager',
 		'BS.PermissionManager.data.Manager',
-		'BS.PermissionManager.grid.Permissions',
-		'BS.PermissionManager.tree.Groups',
-		'BS.PermissionManager.TemplateEditor',
-		'BS.PermissionManager.data.Manager'
+		'BS.PermissionManager.grid.Roles',
+		'BS.PermissionManager.tree.Groups'
 	],
 	layout: 'border',
+	border: false,
+	preventHeader: true,
+	resizable: true,
 	initComponent: function() {
 		var me = this;
 
 		$(window).bind( 'beforeunload', function() {
-			var dataManager = Ext.create('BS.PermissionManager.data.Manager');
-			if(dataManager.isDirty()) {
-				var msg = mw.message('bs-permissionmanager-unsaved-changes').plain();
-				if(/chrome/.test(navigator.userAgent.toLowerCase())) { //chrome compatibility
+			var dataManager = Ext.create( 'BS.PermissionManager.data.Manager' );
+			if( dataManager.isDirty() ) {
+				var msg = mw.message( 'bs-permissionmanager-unsaved-changes' ).plain();
+				if(/chrome/.test( navigator.userAgent.toLowerCase() ) ) { //chrome compatibility
 					return msg;
 				}
-				if(window.event) {
+				if( window.event ) {
 					window.event.returnValue = msg;
 				} else {
 					return msg;
@@ -27,55 +28,42 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 			}
 		});
 
-		me._templateEditor = false;
-
 		me.btnOK = new Ext.Button({
-			text: mw.message('bs-permissionmanager-btn-save-label').plain(),
+			text: mw.message( 'bs-permissionmanager-btn-save-label' ).plain(),
 			handler: function() {
-				Ext.create('BS.PermissionManager.data.Manager').savePermissions( this );
+				Ext.create( 'BS.PermissionManager.data.Manager' ).saveRoles( this );
 			},
 			scope: this
 		});
 
-		me.btnCancel = new Ext.Button({
-			text: mw.message('htmlform-reset').plain(),
+		me.btnCancel = new Ext.Button( {
+			text: mw.message( 'htmlform-reset' ).plain(),
 			handler: function() {
-				var dataManager = Ext.create('BS.PermissionManager.data.Manager');
+				var dataManager = Ext.create( 'BS.PermissionManager.data.Manager' );
 				dataManager.resetAllSettings();
 
 				Ext.data.StoreManager
-					.lookup('bs-permissionmanager-permission-store')
-					.loadRawData(dataManager.buildPermissionData().permissions);
+					.lookup( 'bs-permissionmanager-role-store' )
+					.loadRawData( dataManager.buildRoleData().roles );
 			}
 		});
 
-		me.btnTemplateEditor = new Ext.Button({
-			text: mw.message('bs-permissionmanager-btn-template-editor'),
-			handler: function() {
-				if(!me._templateEditor) {
-					me._templateEditor = Ext.create('BS.PermissionManager.TemplateEditor', {});
-				}
-				me._templateEditor.show();
-			}
-		});
-
-		me.title = mw.message('bs-permissionmanager-btn-group-label').plain() + ' user';
-
-		me.gridPermissions = new BS.PermissionManager.grid.Permissions({
+		me.gridRoles = new BS.PermissionManager.grid.Roles({
 			region: 'center'
 		});
+
 		me.treeGroups = new BS.PermissionManager.tree.Groups({
 			region: 'west',
-			collapsed: true,
-			collapsible: true,
+			collapsed: false,
+			collapsible: false,
 			width: 200
 		});
+
 		me.items = [
-			me.gridPermissions,
+			me.gridRoles,
 			me.treeGroups
 		];
-		me.buttons = [
-			me.btnTemplateEditor,
+		me.tbar = [
 			me.btnOK,
 			me.btnCancel
 		];
@@ -105,21 +93,19 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 		$cell.append(
 			mw.message( 'bs-permissionmanager-header-global' ).plain()
 		);
+
 		for( var i = 0; i < aNs.length; i++ ) {
 			$cell = $( '<td>' );
 			$row.append( $cell );
 			$cell.append( aNs[i].name );
 		}
-		//only namespace specific permissions
-		me.gridPermissions.store.data.each( function( record, i ) {
-			if( record.data.type !== 1 ) {
-				return;
-			}
+
+		me.gridRoles.store.data.each( function( record, i ) {
 			$row = $( '<tr>' );
 			$table.append( $row );
 			$cell = $( '<td>' );
 			$row.append( $cell );
-			$cell.append( record.data.right );
+			$cell.append( record.data.role );
 			$cell = $( '<td>' );
 			$row.append( $cell );
 			$cell.append( record.data['userCan_Wiki'] ? 'X' : '' );
@@ -128,20 +114,6 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 				$row.append( $cell );
 				$cell.append( record.data['userCan_'+aNs[i].id] ? 'X' : '' );
 			}
-		});
-		//only global permissions
-		me.gridPermissions.store.data.each( function( record, i ) {
-			if( record.data.type !== 2 ) {
-				return;
-			}
-			$row = $( '<tr>' );
-			$table.append( $row );
-			$cell = $( '<td>' );
-			$row.append( $cell );
-			$cell.append( record.data.right );
-			$cell = $( '<td>' );
-			$row.append( $cell );
-			$cell.append( record.data['userCan_Wiki'] ? 'X' : '' );
 		});
 
 		//Returning a deffered object is reuired by current export handlers

@@ -4,10 +4,11 @@ Ext.define('BS.panel.Maximizable', {
 	shadow: false,
 	closable: false,
 	border: false,
-
+	resizable: false,
 	oldX: 0,
 	oldY: 0,
 	bsRenderToTarget: null,
+	style: 'padding: 0; border-width: 0;',
 
 	constructor: function( cfg ) {
 		this.bsRenderToTarget = Ext.get(cfg.renderTo);
@@ -32,10 +33,10 @@ Ext.define('BS.panel.Maximizable', {
 		this.minimizeTool.on('click', this.onMinimizeToolClick, this);
 		this.minimizeTool.setVisible(false);
 
-		this.tools = [
-			this.maximizeTool,
-			this.minimizeTool
-		];
+		//Because of no-border design, "tools" section
+		//is no longer visible
+		this.tbar.push( this.maximizeTool );
+		this.tbar.push( this.minimizeTool );
 
 		this.on('afterrender', this.onAfterRender, this);
 		Ext.get(window).on('resize', this.onWindowResize, this);

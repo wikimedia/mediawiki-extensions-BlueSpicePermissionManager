@@ -137,7 +137,6 @@ var walk = function( val, path ){
 
 Ext.override('Ext.grid.column.Column', {
     initComponent: function() {
-		console.log(this);
         var me = this;
         
         if ((!me.dataPath) && me.dataIndex && filter.test(me.dataIndex) ){

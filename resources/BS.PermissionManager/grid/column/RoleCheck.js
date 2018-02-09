@@ -1,16 +1,12 @@
-Ext.define( 'BS.PermissionManager.grid.column.PermissionCheck', {
+Ext.define( 'BS.PermissionManager.grid.column.RoleCheck', {
 	extend: 'Ext.grid.column.CheckColumn',
-	alias: 'widget.bs-pm-permissioncheck',
+	alias: 'widget.bs-pm-rolecheck',
 	renderer: function( value, meta, record ) {
 		var me = this;
 		var dataIndex = me.dataIndex;
 		var cssPrefix = Ext.baseCSSPrefix;
 		var cls = [cssPrefix + 'grid-checkcolumn'];
 
-		if ( record.get( 'type' ) > 1 && dataIndex !== 'userCan_Wiki' ) {
-			cls = [];
-			return;
-		}
 		if ( this.disabled ) {
 			meta.tdCls += ' ' + this.disabledCls;
 		}

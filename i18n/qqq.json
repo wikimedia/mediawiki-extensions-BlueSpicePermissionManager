@@ -57,5 +57,9 @@
 	"bs-permissionmanager-affected-by-inherited": "Flyout shown in permission grid when a right is inherited from one or more groups\nParameters:\n* $1 - name of the group or groups",
 	"bs-permissionmanager-affected-by-notset": "Flyout shown in permission grid when a right is not set",
 	"bs-permissionmanager-affected-by-explicitlyset": "Flyout shown in permission grid when a right is explicitly set",
-	"bs-permissionmanager-affected-by-setonwiki": "Flyout shown in permission grid when a right is set on wiki level"
+	"bs-permissionmanager-affected-by-setonwiki": "Flyout shown in permission grid when a right is set on wiki level",
+	"bs-permissionmanager-group-all": "Label for '*' group in Group tree",
+	"bs-permissionmanager-hint": "Flyout text showing all permissions included in the role",
+	"bs-permissionmanager-header-role": "Column headline for role\n{{Identical|Role}}",
+	"bs-permissionmanager-write-config-file-error": "Text of error message when configuration file is not writable"
 }

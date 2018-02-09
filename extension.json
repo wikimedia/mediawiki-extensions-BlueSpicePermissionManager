@@ -1,13 +1,9 @@
 {
 	"name": "BlueSpicePermissionManager",
-	"license-name": "GPL-3.0-only",
+	"license-name":"GPL-3.0-only",
 	"version": "3.0.0-alpha",
 	"url": "https://help.bluespice.com/index.php/PermissionManager",
-	"author": [
-		"Markus Glaser",
-		"Stephan Muggli"
-	],
-	"descriptionmsg": "bs-permissionmanager-desc",
+	"author": "Dejan Savuljesku <savuljesku@hallowelt.com>",
 	"type": "bluespice",
 	"requires": {
 		"MediaWiki": ">= 1.31.0",
@@ -17,9 +13,9 @@
 	},
 	"attributes": {
 		"BlueSpiceFoundation": {
-			"Extensions": {
+			"Extension": {
 				"BlueSpicePermissionManager": {
-					"className": "PermissionManager",
+					"className": "BlueSpice\\PermissionManager\\PermissionManager",
 					"extPath": "/BlueSpicePermissionManager",
 					"configDefinitions": {
 						"PermissionManagerMaxBackups": "\\BlueSpice\\PermissionManager\\ConfigDefinition\\PermissionManagerMaxBackups::getInstance"
@@ -28,14 +24,19 @@
 			},
 			"AdminToolRegistry": {
 				"bs-permission-manager": "BlueSpice\\PermissionManager\\AdminTool"
+			},
+			"PermissionRegistry": {
+				"permissionmanager-viewspecialpage": {
+					"type": "namespace",
+					"roles": [
+						"admin", "demo"
+					]
+				}
 			}
 		}
 	},
-	"AutoloadNamespaces": {
-		"BlueSpice\\PermissionManager\\" : "src/"
-	},
-	"SpecialPages": {
-		"PermissionManager": "SpecialPermissionManager"
+	"APIModules": {
+		"bs-permissionmanager-tasks": "BlueSpice\\PermissionManager\\Api\\ApiPermissionManager"
 	},
 	"LogTypes": [
 		"bs-permission-manager"
@@ -46,32 +47,13 @@
 	"LogActionsHandlers": {
 		"bs-permission-manager/*": "LogFormatter"
 	},
-	"APIModules": {
-		"bs-permissionmanager-tasks": "ApiPermissionManager"
+	"SpecialPages": {
+		"PermissionManager": "BlueSpice\\PermissionManager\\Special\\SpecialPermissionManager"
 	},
 	"MessagesDirs": {
 		"PermissionManager": [
 			"i18n"
 		]
-	},
-	"ExtensionMessagesFiles": {
-		"PermissionManagerAlias": "includes/specials/SpecialPermissionManager.alias.php"
-	},
-	"config_prefix": "bsg",
-	"config": {
-		"PermissionManagerMaxBackups": {
-			"value": 5,
-			"descriptionmsg": "bs-permissionmanager-pref-max-backups",
-			"public": true
-		}
-	},
-	"AutoloadClasses": {
-		"PermissionManager": "PermissionManager.class.php",
-		"PermissionTemplates": "includes/PermissionTemplates.class.php",
-		"PermissionValidator": "includes/PermissionValidator.php",
-		"SpecialPermissionManager": "includes/specials/SpecialPermissionManager.class.php",
-		"ApiPermissionManager": "includes/api/ApiPermissionManager.php",
-		"PermissionManagerHooks": "includes/PermissionManagerHooks.php"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
@@ -86,7 +68,7 @@
 			"dependencies": "ext.bluespice.extjs",
 			"messages": [
 				"htmlform-reset",
-				"bs-permissionmanager-header-permissions",
+				"bs-permissionmanager-header-role",
 				"bs-permissionmanager-header-global",
 				"bs-permissionmanager-header-namespaces",
 				"bs-permissionmanager-header-group",
@@ -120,11 +102,15 @@
 			]
 		}
 	},
-	"Hooks": {
-		"LoadExtensionSchemaUpdates": "PermissionManager::getSchemaUpdates",
-		"UnitTestsList": "PermissionManager::onUnitTestsList"
+	"config_prefix": "bsg",
+	"config": {
+		"PermissionManagerMaxBackups": {
+			"value": 5,
+			"descriptionmsg": "bs-permissionmanager-pref-max-backups",
+			"public": true
+		}
 	},
-	"callback": "PermissionManagerHooks::onCallback",
+	"callback": "BlueSpice\\PermissionManager\\PermissionManager::onCallback",
 	"load_composer_autoloader": true,
 	"manifest_version": 2
 }

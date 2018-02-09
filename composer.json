@@ -8,6 +8,7 @@
 	},
 	"autoload": {
 		"psr-4": {
+			"BlueSpice\\PermissionManager\\": "src"
 		}
 	},
 	"require-dev": {

@@ -1,31 +1,38 @@
-Ext.define('BS.PermissionManager.model.Group', {
-	extend: 'Ext.data.Model',
-	fields: [
-		{name: 'text', type: 'string'}
-	],
-	idProperty: 'text'
-});
-
 Ext.define('BS.PermissionManager.tree.Groups', {
 	extend: 'Ext.tree.Panel',
 	requires: [
 		'BS.PermissionManager.data.Manager'
 	],
-	border:true,
-	title: mw.message('bs-permissionmanager-header-group').plain(),
+	border: true,
+	preventHeader: true,
+	viewConfig:{
+		markDirty:false
+	},
 	listeners: {
 		viewready: function(panel) {
-			var group = Ext.create('BS.PermissionManager.data.Manager').getWorkingGroup();
-			var node = panel.getStore().getNodeById(group);
+			var group = Ext.create( 'BS.PermissionManager.data.Manager' ).getWorkingGroup();
+			var node = panel.getStore().getNodeById( group );
 			panel.getSelectionModel().select(node, false, true);
+			var rootNode = this.getRootNode();
+			rootNode.set( 'text', mw.message( 'bs-permissionmanager-btn-group-label' ).plain() + group );
+		},
+		beforeselect: function( self, record ) {
+			if( record.get( 'root' ) ) {
+				return false;
+			}
+			return true;
 		},
 		select: function( self, record ) {
-			var group = record.get('text');
-				var dataManager = Ext.create('BS.PermissionManager.data.Manager');
+			if( record.get( 'root' ) ) {
+				return;
+			}
+			var group = record.get( 'text' );
+			var dataManager = Ext.create( 'BS.PermissionManager.data.Manager' );
+			dataManager.setWorkingGroup( group );
 
-				dataManager.setWorkingGroup(group);
-			this.up('window').setTitle(mw.message('bs-permissionmanager-btn-group-label').plain() + ' ' + group);
-				Ext.data.StoreManager.lookup('bs-permissionmanager-permission-store').loadRawData(dataManager.buildPermissionData().permissions);
+			var rootNode = this.getRootNode();
+			rootNode.set( 'text', mw.message( 'bs-permissionmanager-btn-group-label' ).plain() + group );
+			Ext.data.StoreManager.lookup( 'bs-permissionmanager-role-store' ).loadRawData( dataManager.buildRoleData().roles );
 		}
 	},
 	stateful: true,
@@ -36,6 +43,7 @@ Ext.define('BS.PermissionManager.tree.Groups', {
 			model: 'BS.PermissionManager.model.Group',
 			root: mw.config.get( 'bsPermissionManagerGroupsTree' )
 		});
+
 		this.callParent(arguments);
 	}
 });

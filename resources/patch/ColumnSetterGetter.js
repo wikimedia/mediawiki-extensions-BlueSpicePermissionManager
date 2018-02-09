@@ -25,7 +25,6 @@ Ext.patch.ColumnSetterGetter = true;
 Ext.override(Ext.grid.column.Column, {
     initComponent: function() {
         var me = this;
-        console.log(this);
         me.callOverridden(arguments);
         
         // TODO - populate a phony dataIndex for naked setter/getter pairs, so shouldUpdateCell has something to go on.
