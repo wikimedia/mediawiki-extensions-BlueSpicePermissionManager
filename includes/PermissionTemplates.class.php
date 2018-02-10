@@ -68,12 +68,10 @@ class PermissionTemplates {
 	protected $sDescription = NULL;
 
 	protected function __construct($iId, $sName, $aPermissions, $sDescription) {
-		wfProfileIn( 'BS::'.__METHOD__ );
 		$this->iId = $iId;
 		$this->sName = $sName;
 		$this->aPermissions = $aPermissions;
 		$this->sDescription = $sDescription;
-		wfProfileOut( 'BS::'.__METHOD__ );
 	}
 
 	public function getId() {
