@@ -322,12 +322,12 @@ class PermissionManager extends BsExtensionMW {
 
 		//load config from file
 		if ( empty( $timestamp ) ) {
-			include BSCONFIGDIR . DS . 'pm-settings.php';
+			include BSCONFIGDIR . '/pm-settings.php';
 		} else {
 			//convert timestamp to date string and lookup backup file
 			$strTime = wfTimestamp( TS_MW, $timestamp );
 			$backupFilename = "pm-settings-backup-{$strTime}.php";
-			include BSCONFIGDIR . DS . $backupFilename;
+			include BSCONFIGDIR . "/$backupFilename";
 		}
 
 		//set empty values in $wgGroupPermissions to 0 and remove not requested groups

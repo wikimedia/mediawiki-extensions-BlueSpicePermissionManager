@@ -150,7 +150,7 @@ class PermissionManagerHooks {
 		}
 
 		global $bsgConfigFiles;
-		$bsgConfigFiles[ 'PermissionManager' ] = BSCONFIGDIR . DS . 'pm-settings.php';
+		$bsgConfigFiles[ 'PermissionManager' ] = BSCONFIGDIR . '/pm-settings.php';
 
 		//set config for Permissionmanager::preventPermissionLockout
 		global $bsgPermissionConfig;
