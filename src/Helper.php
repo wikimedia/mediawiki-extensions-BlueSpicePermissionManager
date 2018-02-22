@@ -20,7 +20,7 @@ class Helper {
 		return self::$instance;
 	}
 
-	protected function createInstance() {
+	protected static function createInstance() {
 		$mainConfig = \MediaWiki\MediaWikiServices::getInstance()
 				->getMainConfig();
 
