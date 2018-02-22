@@ -3,7 +3,8 @@
 		"authors": [
 			"Vitorvicentevalente",
 			"Jkb8",
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Athena in Wonderland"
 		]
 	},
 	"bs-permissionmanager-desc": "Interface de administração para a edição de privilégios de utilizador",
@@ -54,5 +55,9 @@
 	"bs-permissionmanager-affected-by-inherited": "Herdada de $1",
 	"bs-permissionmanager-affected-by-notset": "Não definida",
 	"bs-permissionmanager-affected-by-explicitlyset": "Definida explicitamente",
-	"bs-permissionmanager-affected-by-setonwiki": "Definida ao nível da wiki"
+	"bs-permissionmanager-affected-by-setonwiki": "Definida ao nível da wiki",
+	"bs-permissionmanager-group-all": "todos",
+	"bs-permissionmanager-hint": "Esta função inclui {{PLURAL:$2|a seguinte permissão: $1| as seguintes permissões: $1}}",
+	"bs-permissionmanager-header-role": "Função",
+	"bs-permissionmanager-write-config-file-error": "Não foi possível criar ou gravar $1"
 }

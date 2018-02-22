@@ -53,5 +53,9 @@
 	"bs-permissionmanager-affected-by-inherited": "Hedado de $1",
 	"bs-permissionmanager-affected-by-notset": "Não definido",
 	"bs-permissionmanager-affected-by-explicitlyset": "Definido explicitamente",
-	"bs-permissionmanager-affected-by-setonwiki": "Definida ao nível da wiki"
+	"bs-permissionmanager-affected-by-setonwiki": "Definida ao nível da wiki",
+	"bs-permissionmanager-group-all": "todos",
+	"bs-permissionmanager-hint": "Esta função inclui {{PLURAL:$2|a seguinte permissão: $1| as seguintes permissões: $1}}",
+	"bs-permissionmanager-header-role": "Função",
+	"bs-permissionmanager-write-config-file-error": "Não foi possível criar ou gravar $1"
 }

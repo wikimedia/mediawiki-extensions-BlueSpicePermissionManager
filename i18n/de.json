@@ -54,5 +54,9 @@
 	"bs-permissionmanager-affected-by-inherited": "Geerbt von $1",
 	"bs-permissionmanager-affected-by-notset": "Nicht gesetzt",
 	"bs-permissionmanager-affected-by-explicitlyset": "Explizit gesetzt",
-	"bs-permissionmanager-affected-by-setonwiki": "Auf Wiki-Ebene gesetzt"
+	"bs-permissionmanager-affected-by-setonwiki": "Auf Wiki-Ebene gesetzt",
+	"bs-permissionmanager-group-all": "alle",
+	"bs-permissionmanager-hint": "Diese Rolle enthält die {{PLURAL:$2|folgende Berechtigung|folgenden Berechtigungen}}: $1",
+	"bs-permissionmanager-header-role": "Rolle",
+	"bs-permissionmanager-write-config-file-error": "$1 konnte nicht erstellt oder beschrieben werden"
 }

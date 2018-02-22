@@ -57,5 +57,9 @@
 	"bs-permissionmanager-affected-by-inherited": "Hérité de $1",
 	"bs-permissionmanager-affected-by-notset": "Non défini",
 	"bs-permissionmanager-affected-by-explicitlyset": "Initialisé explicitement",
-	"bs-permissionmanager-affected-by-setonwiki": "Régler au niveau du wiki"
+	"bs-permissionmanager-affected-by-setonwiki": "Régler au niveau du wiki",
+	"bs-permissionmanager-group-all": "tous",
+	"bs-permissionmanager-hint": "Ce rôle inclut {{PLURAL:$2|le droit suivant : $1|les droits suivants : $1}}",
+	"bs-permissionmanager-header-role": "Rôle",
+	"bs-permissionmanager-write-config-file-error": "Impossible de créer ou d’écrire $1"
 }

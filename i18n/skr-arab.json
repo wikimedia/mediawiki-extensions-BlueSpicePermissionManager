@@ -6,5 +6,7 @@
 	},
 	"bs-permissionmanager-affected-by-explicit": "$1 بلاک کرݙتے",
 	"bs-permissionmanager-affected-by-notset": "سیٹ نی تھیا",
-	"bs-permissionmanager-affected-by-setonwiki": "وکی دی سطح تے پورا پورا فٹ تھی ڳئے"
+	"bs-permissionmanager-affected-by-setonwiki": "وکی دی سطح تے پورا پورا فٹ تھی ڳئے",
+	"bs-permissionmanager-group-all": "یکے",
+	"bs-permissionmanager-header-role": "رول"
 }
