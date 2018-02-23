@@ -31,5 +31,7 @@
 	"bs-permissionmanager-msgtpled-deletefail": "樣板無法被刪除。",
 	"bs-permissionmanager-titletpled-new": "建立模板",
 	"bs-permissionmanager-titletpled-edit": "重新命名樣板",
-	"bs-permissionmanager-titletpled-delete": "刪除樣板"
+	"bs-permissionmanager-titletpled-delete": "刪除樣板",
+	"bs-permissionmanager-group-all": "全部",
+	"bs-permissionmanager-header-role": "身份"
 }

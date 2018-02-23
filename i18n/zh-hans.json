@@ -53,5 +53,9 @@
 	"bs-permissionmanager-affected-by-inherited": "继承自$1",
 	"bs-permissionmanager-affected-by-notset": "尚未设置",
 	"bs-permissionmanager-affected-by-explicitlyset": "明确设置",
-	"bs-permissionmanager-affected-by-setonwiki": "在wiki级别上设置"
+	"bs-permissionmanager-affected-by-setonwiki": "在wiki级别上设置",
+	"bs-permissionmanager-group-all": "全部",
+	"bs-permissionmanager-hint": "此角色包含{{PLURAL:$2|以下权限：$1}}",
+	"bs-permissionmanager-header-role": "角色",
+	"bs-permissionmanager-write-config-file-error": "无法创建或写入$1"
 }

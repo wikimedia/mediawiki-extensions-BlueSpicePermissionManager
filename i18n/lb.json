@@ -37,5 +37,8 @@
 	"bs-permissionmanager-affected-by-inherited": "Geierft vu(n) $1",
 	"bs-permissionmanager-affected-by-notset": "Net agestallt",
 	"bs-permissionmanager-affected-by-explicitlyset": "Explizit agestallt",
-	"bs-permissionmanager-affected-by-setonwiki": "Um Niveau vun der Wiki agestallt"
+	"bs-permissionmanager-affected-by-setonwiki": "Um Niveau vun der Wiki agestallt",
+	"bs-permissionmanager-group-all": "all",
+	"bs-permissionmanager-header-role": "Roll",
+	"bs-permissionmanager-write-config-file-error": "$1 konnt net ugeluecht oder geschriwwe ginn"
 }

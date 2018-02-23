@@ -6,7 +6,8 @@
 			"Shirayuki",
 			"Leonid Verhovskij <verhovskij@hallowelt.com>",
 			"Beta16",
-			"Umherirrender"
+			"Umherirrender",
+			"Robby"
 		]
 	},
 	"bs-permissionmanager-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of permission manager extension",
@@ -58,7 +59,7 @@
 	"bs-permissionmanager-affected-by-notset": "Flyout shown in permission grid when a right is not set",
 	"bs-permissionmanager-affected-by-explicitlyset": "Flyout shown in permission grid when a right is explicitly set",
 	"bs-permissionmanager-affected-by-setonwiki": "Flyout shown in permission grid when a right is set on wiki level",
-	"bs-permissionmanager-group-all": "Label for '*' group in Group tree",
+	"bs-permissionmanager-group-all": "Label for '*' group in Group tree\n{{Identical|All}}",
 	"bs-permissionmanager-hint": "Flyout text showing all permissions included in the role",
 	"bs-permissionmanager-header-role": "Column headline for role\n{{Identical|Role}}",
 	"bs-permissionmanager-write-config-file-error": "Text of error message when configuration file is not writable"
