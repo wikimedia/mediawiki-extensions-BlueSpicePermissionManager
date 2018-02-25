@@ -39,5 +39,7 @@
 	"apihelp-bs-permissionmanager-tasks-description": "PermissionManager-এর জন্য কার্য প্রদান করে",
 	"action-permissionmanager-viewspecialpage": "বিশেষ পাতা \"{{int:bs-permissionmanager-label}}\" দেখার",
 	"permissionmanager": "অনুমতি ব্যবস্থাপক",
-	"bs-permissionmanager-affected-by-explicit": "$1 দ্বারা অবরুদ্ধ"
+	"bs-permissionmanager-affected-by-explicit": "$1 দ্বারা অবরুদ্ধ",
+	"bs-permissionmanager-group-all": "সমস্ত",
+	"bs-permissionmanager-header-role": "ভূমিকা"
 }
