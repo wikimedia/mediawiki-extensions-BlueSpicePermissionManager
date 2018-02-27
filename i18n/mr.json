@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"V.narsikar"
+			"V.narsikar",
+			"Sureshkhole"
 		]
 	},
-	"permissionmanager": "परवानगी व्यवस्थापक"
+	"permissionmanager": "परवानगी व्यवस्थापक",
+	"bs-permissionmanager-group-all": "सर्व",
+	"bs-permissionmanager-header-role": "भुमिका",
+	"bs-permissionmanager-write-config-file-error": "$1 येथे लिहीणे किंवा काहीही बनवणे शक्य नाही"
 }
