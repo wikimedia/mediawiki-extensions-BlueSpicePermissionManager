@@ -40,5 +40,6 @@
 	"permissionmanager": "Menedżer uprawnień",
 	"bs-permissionmanager-affected-by-explicit": "Zablokowane przez $1",
 	"bs-permissionmanager-affected-by-notset": "Nie ustawione",
-	"bs-permissionmanager-affected-by-setonwiki": "Ustaw na poziom wiki"
+	"bs-permissionmanager-affected-by-setonwiki": "Ustaw na poziom wiki",
+	"bs-permissionmanager-header-role": "Rola"
 }
