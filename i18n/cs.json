@@ -1,10 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Meliganai"
+			"Meliganai",
+			"Ilimanaq29"
 		]
 	},
 	"bs-permissionmanager-affected-by-explicit": "Zablokováno $1",
 	"bs-permissionmanager-affected-by-notset": "Nenastaveno",
-	"bs-permissionmanager-affected-by-explicitlyset": "Explicitně nastaveno"
+	"bs-permissionmanager-affected-by-explicitlyset": "Explicitně nastaveno",
+	"bs-permissionmanager-group-all": "Všechno",
+	"bs-permissionmanager-hint": "Tato role obsahuje následující {{PLURAL:$2|povolení: $1}}",
+	"bs-permissionmanager-header-role": "Role",
+	"bs-permissionmanager-write-config-file-error": "Není možno vytvořit či napsat $1"
 }

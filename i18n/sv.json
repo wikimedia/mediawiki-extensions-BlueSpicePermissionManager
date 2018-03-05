@@ -50,5 +50,8 @@
 	"bs-permissionmanager-affected-by-explicit": "Blockerades av $1",
 	"bs-permissionmanager-affected-by-inherited": "Ärvdes från $1",
 	"bs-permissionmanager-affected-by-notset": "Inte angiven",
-	"bs-permissionmanager-affected-by-setonwiki": "Ange på wikinivå"
+	"bs-permissionmanager-affected-by-setonwiki": "Ange på wikinivå",
+	"bs-permissionmanager-group-all": "alla",
+	"bs-permissionmanager-header-role": "Roll",
+	"bs-permissionmanager-write-config-file-error": "Kan inte skapa eller skriva $1"
 }
