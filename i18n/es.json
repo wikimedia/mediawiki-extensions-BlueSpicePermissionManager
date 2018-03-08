@@ -6,7 +6,8 @@
 			"AVIADOR",
 			"Amitie 10g",
 			"Ryo567",
-			"AlvaroMolina"
+			"AlvaroMolina",
+			"MarcoAurelio"
 		]
 	},
 	"bs-permissionmanager-desc": "Interfaz administrativa para gestionar permisos de usuarios",
@@ -54,5 +55,6 @@
 	"bs-permissionmanager-affected-by-explicit": "Bloqueado por $1",
 	"bs-permissionmanager-affected-by-inherited": "Heredado de $1",
 	"bs-permissionmanager-affected-by-notset": "No establecido",
-	"bs-permissionmanager-affected-by-explicitlyset": "Explícitamente establecido"
+	"bs-permissionmanager-affected-by-explicitlyset": "Explícitamente establecido",
+	"bs-permissionmanager-group-all": "todos"
 }
