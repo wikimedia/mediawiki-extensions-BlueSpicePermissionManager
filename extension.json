@@ -55,6 +55,9 @@
 			"i18n"
 		]
 	},
+	"ExtensionMessagesFiles": {
+		"PermissionManagerAlias": "PermissionManager.alias.php"
+	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpicePermissionManager/resources"
