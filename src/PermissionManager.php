@@ -20,7 +20,7 @@ class PermissionManager {
 	protected static $permissionRegistry;
 
 	public static function onCallback() {
-		$GLOBALS[ 'bsgConfigFiles' ][ 'PermissionManager' ] = BSCONFIGDIR . DS . 'pm-settings.php';
+		$GLOBALS[ 'bsgConfigFiles' ][ 'PermissionManager' ] = BSCONFIGDIR . '/pm-settings.php';
 
 		array_unshift(
 			$GLOBALS['wgExtensionFunctions'],
