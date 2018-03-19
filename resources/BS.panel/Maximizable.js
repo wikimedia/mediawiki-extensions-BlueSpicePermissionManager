@@ -1,5 +1,5 @@
 Ext.define('BS.panel.Maximizable', {
-	extend: 'Ext.Window',
+	extend: 'MWExt.Dialog',
 	draggable: false,
 	shadow: false,
 	closable: false,

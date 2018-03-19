@@ -66,9 +66,6 @@ html.bs-maximizable-panel-fullscreen {
 	white-space: normal;
 	line-height: normal;
 }
-.bs-pm-checkcolumn:hover p {
-	display: block;
-}
 
 .x-toolbar {
 	padding-bottom: 20px;
@@ -98,4 +95,8 @@ html.bs-maximizable-panel-fullscreen {
 	background-color: #3e538a;
 	border-radius: 20px;
 	float:right;
+}
+
+.x-grid-rolehint {
+	display: none;
 }

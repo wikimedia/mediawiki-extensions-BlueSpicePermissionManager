@@ -1,10 +1,11 @@
 Ext.define('BS.PermissionManager.tree.Groups', {
 	extend: 'Ext.tree.Panel',
 	requires: [
-		'BS.PermissionManager.data.Manager'
+		'BS.PermissionManager.data.Manager',
+		'BS.PermissionManager.model.Group'
 	],
 	border: true,
-	preventHeader: true,
+	header: false,
 	viewConfig:{
 		markDirty:false
 	},
