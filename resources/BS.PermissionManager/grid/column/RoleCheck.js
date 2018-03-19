@@ -5,14 +5,16 @@ Ext.define( 'BS.PermissionManager.grid.column.RoleCheck', {
 		var me = this;
 		var dataIndex = me.dataIndex;
 		var cssPrefix = Ext.baseCSSPrefix;
-		var cls = [cssPrefix + 'grid-checkcolumn'];
+		var cls = [me.checkboxCls, cssPrefix + 'grid-checkcolumn'];
 
 		if ( this.disabled ) {
 			meta.tdCls += ' ' + this.disabledCls;
 		}
 		if ( value === BS.PermissionManager.ALLOWED_EXPLICIT ) {
 			cls.push( cssPrefix + 'grid-checkcolumn-checked' );
+			cls.push( me.checkboxCheckedCls );
 		}
+
 		if ( value ) {
 			meta.tdCls = 'allowed';
 		}
@@ -22,9 +24,10 @@ Ext.define( 'BS.PermissionManager.grid.column.RoleCheck', {
 			meta.tdCls = 'blocked';
 		}
 		var affectedByMessage = record.get( 'affectedBy_' + nsIdx );
+
 		if ( affectedByMessage ) {
-			return '<div class="bs-pm-checkcolumn"><img class="' + cls.join( ' ' ) + '" src="' + Ext.BLANK_IMAGE_URL + '"/><p>' + affectedByMessage + '</p></div>';
+			return '<span class="bs-pm-checkcolumn ' + cls.join( ' ' ) + '" title="' + affectedByMessage + ' "  src="' + Ext.BLANK_IMAGE_URL + '"></span>';
 		}
-		return '<div class="bs-pm-checkcolumn"><img class="' + cls.join( ' ' ) + '" src="' + Ext.BLANK_IMAGE_URL + '"/></div>';
+		return '<span class="bs-pm-checkcolumn ' + cls.join( ' ' ) + '" src="' + Ext.BLANK_IMAGE_URL + '"></span>';
 	}
 } );

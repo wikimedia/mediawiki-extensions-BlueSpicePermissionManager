@@ -93,10 +93,9 @@
 		header: mw.message('bs-permissionmanager-header-namespaces').plain(),
 		sortable: false,
 		hideable: true,
-		flex: 1,
 		defaults: {
-				flex: 1,
-				minWidth: 120
+			flex: 1,
+			minWidth: 120
 		},
 		columns: []
 	}];
@@ -420,7 +419,7 @@
 				this.dirty = true;
 			}
 		},
-		
+
 		set: function( fieldName, newValue, justCheck ) {
 			var me = this,
 				data = me.data,
@@ -480,7 +479,7 @@
 			// changes which would otherwise destroy this data.
 			name = 'userCan_Wiki';
 			value = checkRole( id );
-			if( fields && ( field = fields.get( name ) ) && field.convert ) {
+			if( fields && ( field = me.getField( name ) ) && field.convert ) {
 				value = field.convert( value, me );
 			}
 
@@ -515,7 +514,7 @@
 				namespaceId = namespaces[ ns ].id;
 				name = 'userCan_' + namespaceId;
 				value = checkRoleInNamespace( id, namespaceId );
-				if( fields && ( field = fields.get( name ) ) && field.convert ) {
+				if( fields && ( field = me.getField( name ) ) && field.convert ) {
 					value = field.convert( value, me );
 				}
 				currentValue = data[ name ];

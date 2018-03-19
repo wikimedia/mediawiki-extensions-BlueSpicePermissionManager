@@ -1,5 +1,5 @@
 Ext.define( 'BS.PermissionManager.panel.Manager', {
-	extend: 'BS.panel.Maximizable',
+	extend: 'Ext.Panel',
 	requires: [
 		'Ext.state.Manager',
 		'BS.PermissionManager.data.Manager',
@@ -8,8 +8,9 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 	],
 	layout: 'border',
 	border: false,
-	preventHeader: true,
+	header: false,
 	resizable: true,
+	height: 500,
 	initComponent: function() {
 		var me = this;
 
@@ -56,7 +57,7 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 			region: 'west',
 			collapsed: false,
 			collapsible: false,
-			width: 200
+			width: 250
 		});
 
 		me.items = [
