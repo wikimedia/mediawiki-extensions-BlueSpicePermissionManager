@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nikosgranturismogt"
+		]
+	},
+	"bs-permissionmanager-btn-group-label": "Ομάδα:",
+	"bs-permissionmanager-header-permissions": "Άδειες",
+	"bs-permissionmanager-header-global": "Βίκι",
+	"bs-permissionmanager-header-namespaces": "Ονοματοχώροι",
+	"bs-permissionmanager-header-group": "Ομάδα",
+	"bs-permissionmanager-btn-save-label": "Αποθήκευση",
+	"bs-permissionmanager-btn-save-in-progress-label": "Γίνεται αποθήκευση…",
+	"bs-permissionmanager-save-success": "Οι άδειες αποθηκεύτηκαν.",
+	"bs-permissionmanager-labeltemplates": "Πρότυπα",
+	"bs-permissionmanager-btn-template-editor": "Επεξεργασία προτύπων",
+	"bs-permissionmanager-labeltpled": "Συντάκτης προτύπων",
+	"bs-permissionmanager-labeltpled-desc": "Περιγραφή",
+	"bs-permissionmanager-labeltpled-active": "Ενεργό",
+	"bs-permissionmanager-labeltpled-add": "Νέος",
+	"bs-permissionmanager-labeltpled-edit": "Επεξεργασία",
+	"bs-permissionmanager-labeltpled-delete": "Διαγραφή",
+	"bs-permissionmanager-labeltpled-cancel": "Ακύρωση",
+	"bs-permissionmanager-msgtpled-success": "Το πρότυπο αποθηκεύτηκε.",
+	"bs-permissionmanager-msgtpled-savefailure": "Το πρότυπο δεν μπόρεσε να αποθηκευτεί.",
+	"bs-permissionmanager-msgtpled-saveonabort": "Θέλετε να αποθηκεύσετε όλα τα δεδομένα τώρα;",
+	"bs-permissionmanager-msgtpled-new": "Όνομα προτύπου:",
+	"bs-permissionmanager-msgtpled-edit": "Νέο όνομα προτύπου:",
+	"bs-permissionmanager-msgtpled-delete": "Το πρότυπο διαγράφηκε.",
+	"bs-permissionmanager-msgtpled-deletefail": "Το πρότυπο δεν μπόρεσε να διαγραφεί.",
+	"bs-permissionmanager-titletpled-new": "Δημιουργία προτύπου",
+	"bs-permissionmanager-titletpled-edit": "Μετονομασία προτύπου",
+	"bs-permissionmanager-titletpled-delete": "Διαγραφή προτύπου",
+	"bs-permissionmanager-pref-enablerealitycheck": "Ενεργοποίηση ελέγχου άδειας",
+	"bs-permissionmanager-group-all": "όλα",
+	"bs-permissionmanager-header-role": "Ρόλος"
+}
