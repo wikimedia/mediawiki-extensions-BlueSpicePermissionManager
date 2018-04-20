@@ -35,6 +35,9 @@
 			}
 		}
 	},
+	"AvailableRights": [
+		"permissionmanager-viewspecialpage"
+	],
 	"APIModules": {
 		"bs-permissionmanager-tasks": "BlueSpice\\PermissionManager\\Api\\ApiPermissionManager"
 	},
