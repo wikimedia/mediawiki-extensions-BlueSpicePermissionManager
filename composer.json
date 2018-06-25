@@ -1,5 +1,5 @@
 {
-	"name": "mediawiki/blue-spice-permission-manager",
+	"name": "bluespice/permissionmanager",
 	"type": "mediawiki-extension",
 	"description": "Administration interface for editing user rights",
 	"license": "GPL-3.0-only",
@@ -22,5 +22,8 @@
 			"parallel-lint . --exclude vendor --exclude node_modules",
 			"minus-x check ."
 		]
+	},
+	"extra": {
+		"installer-name": "BlueSpicePermissionManager"
 	}
 }
