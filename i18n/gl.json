@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Banjo"
 		]
 	},
 	"bs-permissionmanager-desc": "Interface administrativa para xestionar permisos de usuarios",
@@ -53,5 +54,6 @@
 	"bs-permissionmanager-affected-by-notset": "Sen definir",
 	"bs-permissionmanager-affected-by-explicitlyset": "Definido explícitamente",
 	"bs-permissionmanager-affected-by-setonwiki": "Definido a nivel da wiki",
-	"bs-permissionmanager-group-all": "todos"
+	"bs-permissionmanager-group-all": "todos",
+	"bs-permissionmanager-header-role": "Rol"
 }
