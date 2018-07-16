@@ -49,6 +49,7 @@
 	"log-name-bs-permission-manager": "Used in [[Special:Log]], title of the log type",
 	"log-description-bs-permission-manager": "Used in [[Special:Log]], description of the log type",
 	"log-show-hide-bs-permission-manager": "Used in [[Special:Log]]. Parameters:\n* $1 - link text; one of {{msg-mw|Show}} or {{msg-mw|Hide}}\n{{Related|Log-show-hide}}",
+	"logeventslist-bs-permission-manager-log": "Permission manager log option label on [[Special:Log]]",
 	"logentry-bs-permission-manager-modify": "Log message about changes in the permissions of one specific group.\nParameters:\n* $4 - name of the group",
 	"apihelp-bs-permissionmanager-tasks-description": "Describes an API endpoint that provides tasks for the PermissionManager\n{{doc-apihelp-description|bs-permissionmanager-tasks}}",
 	"apihelp-bs-permissionmanager-tasks-summary": "Describes an API endpoint that provides tasks for the PermissionManager\n{{doc-apihelp-summary|bs-permissionmanager-tasks}}",
