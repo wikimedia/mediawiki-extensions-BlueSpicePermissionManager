@@ -46,6 +46,7 @@
 	"log-name-bs-permission-manager": "Rechteverwaltungs-Logbuch",
 	"log-description-bs-permission-manager": "Logbuch von Änderungen an den Gruppenberechtigungen.",
 	"log-show-hide-bs-permission-manager": "$1 Rechteverwaltung-Logbuch",
+	"logeventslist-bs-permission-manager-log": "Berechtigungsverwaltungs-Logbuch",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|hat}} die Rechte für Gruppe $4 geändert",
 	"apihelp-bs-permissionmanager-tasks-description": "Bietet Aufgaben zur Rechteverwaltung",
 	"action-permissionmanager-viewspecialpage": "die Spezialseite „{{int:bs-permissionmanager-label}}“ anzusehen",
