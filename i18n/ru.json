@@ -3,7 +3,8 @@
 		"authors": [
 			"Okras",
 			"Striking Blue",
-			"Facenapalm"
+			"Facenapalm",
+			"Vlad5250"
 		]
 	},
 	"bs-permissionmanager-desc": "Интерфейс администрирования для изменения прав пользователя",
@@ -40,5 +41,6 @@
 	"bs-permissionmanager-titletpled-delete": "Удалить шаблон",
 	"bs-permissionmanager-pref-enablerealitycheck": "Активировать проверку разрешений",
 	"bs-permissionmanager-unsaved-changes": "Имеются несохранённые изменения. Вы действительно хотите покинуть страницу? Эти несохранённые изменения будут потеряны.",
+	"logeventslist-bs-permission-manager-log": "Журнал управления разрешениями",
 	"action-permissionmanager-viewspecialpage": "просмотр служебной страницы «{{int:bs-permissionmanager-label}}»"
 }

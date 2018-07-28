@@ -48,6 +48,7 @@
 	"log-name-bs-permission-manager": "Journal du gestionnaire de permission",
 	"log-description-bs-permission-manager": "C'est un journal des modifications dans les autorisations de groupe.",
 	"log-show-hide-bs-permission-manager": "Journal du gestionnaire des permissions $1",
+	"logeventslist-bs-permission-manager-log": "Journal du gestionnaire de droits",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|a modifié}} les droits du groupe $4",
 	"apihelp-bs-permissionmanager-tasks-description": "Fournit les tâches du PermissionManager",
 	"apihelp-bs-permissionmanager-tasks-summary": "Fournit des tâches pour PermissionManager",

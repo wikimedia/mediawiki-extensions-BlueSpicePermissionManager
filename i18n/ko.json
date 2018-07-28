@@ -13,6 +13,7 @@
 	"bs-permissionmanager-btn-save-in-progress-label": "저장 중 ...",
 	"bs-permissionmanager-labeltemplates": "틀",
 	"bs-permissionmanager-labeltpled-desc": "설명",
+	"logeventslist-bs-permission-manager-log": "권한 관리자 기록",
 	"action-permissionmanager-viewspecialpage": "특수 문서\"{{int:bs-permissionmanager-label}}\" 보기",
 	"permissionmanager": "권한 관리자",
 	"bs-permissionmanager-affected-by-explicit": "$1님이 차단했습니다",

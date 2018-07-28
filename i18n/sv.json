@@ -44,6 +44,7 @@
 	"log-name-bs-permission-manager": "Logg för behörighetshantering",
 	"log-description-bs-permission-manager": "Detta är en ändringslogg i gruppen behörigheter.",
 	"log-show-hide-bs-permission-manager": "$1 logg för behörighetshantering",
+	"logeventslist-bs-permission-manager-log": "Logg för behörighetshantering",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|har}} ändrat behörigheterna för gruppen $4",
 	"action-permissionmanager-viewspecialpage": "visa specialsidan \"{{int:bs-permissionmanager-label}}\"",
 	"permissionmanager": "Rättighetshanterare",
