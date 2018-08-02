@@ -63,5 +63,6 @@
 	"bs-permissionmanager-group-all": "Label for '*' group in Group tree\n{{Identical|All}}",
 	"bs-permissionmanager-hint": "Flyout text showing all permissions included in the role",
 	"bs-permissionmanager-header-role": "Column headline for role\n{{Identical|Role}}",
-	"bs-permissionmanager-write-config-file-error": "Text of error message when configuration file is not writable"
+	"bs-permissionmanager-write-config-file-error": "Text of error message when configuration file is not writable",
+	"right-permissionmanager-viewspecialpage": "Grants access to the [[Special:PermissionManager]] special page.\n{{doc-right|permissionmanager-viewspecialpage}}"
 }

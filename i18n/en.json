@@ -58,5 +58,6 @@
 	"bs-permissionmanager-group-all": "all",
 	"bs-permissionmanager-hint": "This role includes {{PLURAL:$2|the following permission: $1| following permissions: $1}}",
 	"bs-permissionmanager-header-role": "Role",
-	"bs-permissionmanager-write-config-file-error": "Not able to create or write $1"
+	"bs-permissionmanager-write-config-file-error": "Not able to create or write $1",
+	"right-permissionmanager-viewspecialpage": "Grants access to the [[Special:PermissionManager]] special page."
 }
