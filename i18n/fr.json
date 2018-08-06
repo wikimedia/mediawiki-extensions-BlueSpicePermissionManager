@@ -62,5 +62,6 @@
 	"bs-permissionmanager-group-all": "tous",
 	"bs-permissionmanager-hint": "Ce rôle inclut {{PLURAL:$2|le droit suivant : $1|les droits suivants : $1}}",
 	"bs-permissionmanager-header-role": "Rôle",
-	"bs-permissionmanager-write-config-file-error": "Impossible de créer ou d’écrire $1"
+	"bs-permissionmanager-write-config-file-error": "Impossible de créer ou d’écrire $1",
+	"right-permissionmanager-viewspecialpage": "Donne les droits d'accès à la page spéciale  [[Special:PermissionManager]]."
 }

@@ -4,7 +4,8 @@
 			"Ата",
 			"Andriykopanytsia",
 			"Piramidion",
-			"SimondR"
+			"SimondR",
+			"Vlad5250"
 		]
 	},
 	"bs-permissionmanager-desc": "Адміністративний інтерфейс для редагування прав користувача",
@@ -55,5 +56,6 @@
 	"bs-permissionmanager-affected-by-inherited": "Успадковано від $1",
 	"bs-permissionmanager-affected-by-notset": "Не задано",
 	"bs-permissionmanager-affected-by-explicitlyset": "Встановлено окремо",
-	"bs-permissionmanager-affected-by-setonwiki": "Встановлено на рівні вікі"
+	"bs-permissionmanager-affected-by-setonwiki": "Встановлено на рівні вікі",
+	"right-permissionmanager-viewspecialpage": "доступ до спеціальної сторінки [[Special:PermissionManager]]"
 }

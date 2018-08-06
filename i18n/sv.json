@@ -54,5 +54,6 @@
 	"bs-permissionmanager-affected-by-setonwiki": "Ange på wikinivå",
 	"bs-permissionmanager-group-all": "alla",
 	"bs-permissionmanager-header-role": "Roll",
-	"bs-permissionmanager-write-config-file-error": "Kan inte skapa eller skriva $1"
+	"bs-permissionmanager-write-config-file-error": "Kan inte skapa eller skriva $1",
+	"right-permissionmanager-viewspecialpage": "Ger åtkomst till specialsidan [[Special:PermissionManager]]."
 }

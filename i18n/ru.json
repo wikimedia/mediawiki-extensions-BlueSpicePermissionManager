@@ -42,5 +42,6 @@
 	"bs-permissionmanager-pref-enablerealitycheck": "Активировать проверку разрешений",
 	"bs-permissionmanager-unsaved-changes": "Имеются несохранённые изменения. Вы действительно хотите покинуть страницу? Эти несохранённые изменения будут потеряны.",
 	"logeventslist-bs-permission-manager-log": "Журнал управления разрешениями",
-	"action-permissionmanager-viewspecialpage": "просмотр служебной страницы «{{int:bs-permissionmanager-label}}»"
+	"action-permissionmanager-viewspecialpage": "просмотр служебной страницы «{{int:bs-permissionmanager-label}}»",
+	"right-permissionmanager-viewspecialpage": "доступ к служебной странице [[Special:PermissionManager]]"
 }

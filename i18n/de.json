@@ -59,5 +59,6 @@
 	"bs-permissionmanager-group-all": "alle",
 	"bs-permissionmanager-hint": "Diese Rolle enthält die {{PLURAL:$2|folgende Berechtigung|folgenden Berechtigungen}}: $1",
 	"bs-permissionmanager-header-role": "Rolle",
-	"bs-permissionmanager-write-config-file-error": "$1 konnte nicht erstellt oder beschrieben werden"
+	"bs-permissionmanager-write-config-file-error": "$1 konnte nicht erstellt oder beschrieben werden",
+	"right-permissionmanager-viewspecialpage": "Zugriff auf die Spezialseite [[Special:PermissionManager]] gewähren."
 }
