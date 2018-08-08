@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"right-permissionmanager-viewspecialpage": "Gir tilgang til spesialsiden [[Special:PermissionManager]]."
+}
