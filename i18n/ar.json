@@ -46,6 +46,7 @@
 	"log-name-bs-permission-manager": "سجل مدير الصلاحية",
 	"log-description-bs-permission-manager": "هذا سجل التغييرات في صلاحيات المجموعة.",
 	"log-show-hide-bs-permission-manager": "$1 سجل مدير الصلاحية",
+	"logeventslist-bs-permission-manager-log": "سجل مدير الصلاحية",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|غير|غيرت}} صلاحيات المجموعة $4",
 	"apihelp-bs-permissionmanager-tasks-description": "يوفر المهام لـPermissionManager",
 	"apihelp-bs-permissionmanager-tasks-summary": "يوفر المهام لـPermissionManager",
@@ -59,5 +60,6 @@
 	"bs-permissionmanager-group-all": "الكل",
 	"bs-permissionmanager-hint": "يتضمن هذا الدور {{PLURAL:$2|الصلاحية التالية: $1|الصلاحيات التالية: $1}}",
 	"bs-permissionmanager-header-role": "الدور",
-	"bs-permissionmanager-write-config-file-error": "غير قادر على إنشاء أو كتابة $1"
+	"bs-permissionmanager-write-config-file-error": "غير قادر على إنشاء أو كتابة $1",
+	"right-permissionmanager-viewspecialpage": "يمنح الوصول إلى الصفحة الخاصة [[Special:PermissionManager]]."
 }
