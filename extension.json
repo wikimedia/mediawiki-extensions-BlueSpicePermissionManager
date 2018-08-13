@@ -38,6 +38,20 @@
 	"AvailableRights": [
 		"permissionmanager-viewspecialpage"
 	],
+	"GroupPermissions": {
+		"*": {
+			"permissionmanager-viewspecialpage": false
+		},
+		"user": {
+			"permissionmanager-viewspecialpage": false
+		},
+		"bureaucrat": {
+			"permissionmanager-viewspecialpage": false
+		},
+		"sysop": {
+			"permissionmanager-viewspecialpage": true
+		}
+	},
 	"APIModules": {
 		"bs-permissionmanager-tasks": "BlueSpice\\PermissionManager\\Api\\ApiPermissionManager"
 	},
