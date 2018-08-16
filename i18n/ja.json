@@ -3,7 +3,8 @@
 		"authors": [
 			"Shirayuki",
 			"SkyDaisy9",
-			"2nd-player"
+			"2nd-player",
+			"Suyama"
 		]
 	},
 	"bs-permissionmanager-desc": "利用者権限を編集するための管理インターフェイス",
@@ -42,5 +43,6 @@
 	"log-name-bs-permission-manager": "利用者権限マネージャ記録",
 	"log-description-bs-permission-manager": "このページは利用者グループの権限の変更記録です。",
 	"log-show-hide-bs-permission-manager": "$1 権限マネージャ記録",
-	"logentry-bs-permission-manager-modify": "$1 はグループ $4 の権限を変更{{GENDER:$2|しました}}"
+	"logentry-bs-permission-manager-modify": "$1 はグループ $4 の権限を変更{{GENDER:$2|しました}}",
+	"right-permissionmanager-viewspecialpage": "特別ページ [[Special:PermissionManager]] の利用を許可します。"
 }
