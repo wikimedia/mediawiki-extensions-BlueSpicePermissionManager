@@ -15,7 +15,7 @@
 		"BlueSpiceFoundation": {
 			"Extensions": {
 				"BlueSpicePermissionManager": {
-					"className": "BlueSpice\\PermissionManager\\PermissionManager",
+					"className": "BlueSpice\\PermissionManager\\Extension",
 					"extPath": "/BlueSpicePermissionManager",
 					"configDefinitions": {
 						"PermissionManagerMaxBackups": "\\BlueSpice\\PermissionManager\\ConfigDefinition\\PermissionManagerMaxBackups::getInstance"
@@ -130,7 +130,10 @@
 			"public": true
 		}
 	},
-	"callback": "BlueSpice\\PermissionManager\\PermissionManager::onCallback",
+	"AutoloadNamespaces": {
+		"BlueSpice\\PermissionManager\\" : "src/"
+	},
+	"callback": "BlueSpice\\PermissionManager\\Extension::onCallback",
 	"load_composer_autoloader": true,
 	"manifest_version": 2
 }

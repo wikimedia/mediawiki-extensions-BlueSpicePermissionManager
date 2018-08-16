@@ -2,8 +2,6 @@
 
 namespace BlueSpice\PermissionManager\Api;
 
-use BlueSpice\PermissionManager\PermissionManager;
-
 class ApiPermissionManager extends \BSApiTasksBase {
 
 	protected $aTasks = array(
@@ -40,7 +38,7 @@ class ApiPermissionManager extends \BSApiTasksBase {
 	protected function task_saveRoles( $data ) {
 		$ret = $this->makeStandardReturn();
 		$ret->success = true;
-		$arrRes = PermissionManager::saveRoles( $data );
+		$arrRes = \BlueSpice\PermissionManager\Extension::saveRoles( $data );
 
 		if ( $arrRes !== true && ( !isset( $arrRes['success'] ) || $arrRes['success'] !== true ) ) {
 			$ret->errors[] = $arrRes;

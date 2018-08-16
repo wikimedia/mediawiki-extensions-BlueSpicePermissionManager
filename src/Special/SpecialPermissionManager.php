@@ -2,7 +2,6 @@
 
 namespace BlueSpice\PermissionManager\Special;
 
-use BlueSpice\PermissionManager\PermissionManager;
 use BlueSpice\PermissionManager\Helper;
 
 class SpecialPermissionManager extends \SpecialPage {
@@ -20,10 +19,10 @@ class SpecialPermissionManager extends \SpecialPage {
 		$helper = Helper::getInstance();
 		$groups = $helper->getGroups();
 
-		$rolesAndPermissions = PermissionManager::getRoles();
+		$rolesAndPermissions = \BlueSpice\PermissionManager\Extension::getRoles();
 		$rolesAndHints = $helper->formatPermissionsToHint( $rolesAndPermissions );
 
-		$groupRoles = PermissionManager::getGroupRoles();
+		$groupRoles = \BlueSpice\PermissionManager\Extension::getGroupRoles();
 
 		$jsVars = array(
 			'bsPermissionManagerGroupsTree' => $groups,
