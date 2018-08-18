@@ -6,6 +6,8 @@
 		]
 	},
 	"bs-permissionmanager-desc": "Interfejs administracyjny do edycji uprawnień użytkowników",
+	"prefs-permissionmanager": "Menedżer uprawnień",
+	"bs-permissionmanager-label": "Menedżer uprawnień",
 	"bs-permissionmanager-btn-group-label": "Grupa:",
 	"bs-permissionmanager-header-permissions": "Uprawnienia",
 	"bs-permissionmanager-header-global": "Wiki",
