@@ -43,5 +43,6 @@
 	"bs-permissionmanager-affected-by-explicit": "Zablokowane przez $1",
 	"bs-permissionmanager-affected-by-notset": "Nie ustawione",
 	"bs-permissionmanager-affected-by-setonwiki": "Ustaw na poziom wiki",
-	"bs-permissionmanager-header-role": "Rola"
+	"bs-permissionmanager-header-role": "Rola",
+	"right-permissionmanager-viewspecialpage": "Przyznawanie dostępu do strony specjalnej [[Special:PermissionManager]]."
 }
