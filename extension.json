@@ -29,7 +29,7 @@
 				"permissionmanager-viewspecialpage": {
 					"type": "namespace",
 					"roles": [
-						"admin", "demo"
+						"admin"
 					]
 				}
 			}
