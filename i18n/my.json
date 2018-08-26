@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ninjastrikers"
+			"Ninjastrikers",
+			"Dr Lotus Black"
 		]
 	},
+	"bs-permissionmanager-header-namespaces": "အမည်ညွှန်းများ",
 	"bs-permissionmanager-labeltemplates": "တမ်းပလိတ်များ"
 }
