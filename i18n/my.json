@@ -6,5 +6,7 @@
 		]
 	},
 	"bs-permissionmanager-header-namespaces": "အမည်ညွှန်းများ",
-	"bs-permissionmanager-labeltemplates": "တမ်းပလိတ်များ"
+	"bs-permissionmanager-labeltemplates": "တမ်းပလိတ်များ",
+	"bs-permissionmanager-labeltpled-delete": "ဖျက်ပါ",
+	"bs-permissionmanager-labeltpled-cancel": "မလုပ်တော့ပါ"
 }
