@@ -49,6 +49,7 @@
 	"logeventslist-bs-permission-manager-log": "Berechtigungsverwaltungs-Logbuch",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|hat}} die Rechte für Gruppe $4 geändert",
 	"apihelp-bs-permissionmanager-tasks-description": "Bietet Aufgaben zur Rechteverwaltung",
+	"apihelp-bs-permissionmanager-tasks-summary": "Stellt die Aufgaben für die Erweiterung „PermissionManager“ bereit.",
 	"action-permissionmanager-viewspecialpage": "die Spezialseite „{{int:bs-permissionmanager-label}}“ anzusehen",
 	"permissionmanager": "Rechteverwaltung",
 	"bs-permissionmanager-affected-by-explicit": "Blockiert von $1",
