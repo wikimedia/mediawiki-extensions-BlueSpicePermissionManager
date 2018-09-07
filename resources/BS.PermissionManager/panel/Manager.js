@@ -49,13 +49,22 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 			}
 		});
 
+		me.chkShowSystemGroups = new Ext.form.field.Checkbox( {
+			boxLabel: mw.message( 'bs-permissionmanager-show-system-groups-label' ).text(),
+			checked: true,
+			listeners: {
+				change: function( chk, newValue, oldValue ) {
+					me.treeGroups.showSystemGroups( newValue );
+				}
+			}
+		} );
+
 		me.gridRoles = new BS.PermissionManager.grid.Roles({
 			region: 'center'
 		});
 
 		me.treeGroups = new BS.PermissionManager.tree.Groups({
 			region: 'west',
-			collapsed: false,
 			collapsible: false,
 			width: 250
 		});
@@ -66,7 +75,8 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 		];
 		me.tbar = [
 			me.btnOK,
-			me.btnCancel
+			me.btnCancel,
+			me.chkShowSystemGroups
 		];
 
 		$( document ).trigger(

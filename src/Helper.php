@@ -44,26 +44,18 @@ class Helper {
 		$this->groups = [];
 
 		$this->groups = [
-			'text' => 'Group',
-			'builtin' => false,
-			'implicit' => false,
+			'text' => '*',
+			'builtin' => true,
+			'implicit' => true,
 			'expanded' => true,
 			'children' => [
 				[
-					'text' => '*',
+					'text' => 'user',
 					'builtin' => true,
 					'implicit' => true,
 					'expanded' => true,
 					'children' => [
-						[
-							'text' => 'user',
-							'builtin' => true,
-							'implicit' => true,
-							'expanded' => true,
-							'children' => [
 
-							]
-						]
 					]
 				]
 			]
@@ -88,12 +80,15 @@ class Helper {
 
 			if ( in_array( $explicitGroup, $this->builtInGroups ) ) {
 				$explicitGroupNode[ 'builtin' ] = true;
+				$explicitGroupNode[ 'iconCls' ] = 'icon-builtin-group';
+			} else {
+				$explicitGroupNode[ 'iconCls' ] = 'icon-group';
 			}
 
 			$explicitGroupNodes[] = $explicitGroupNode;
 		}
 
-		$this->groups[ 'children' ][ 0 ][ 'children' ][ 0 ][ 'children' ] = $explicitGroupNodes;
+		$this->groups[ 'children' ][ 0 ][ 'children' ] = $explicitGroupNodes;
 	}
 
 	public function getGroups() {

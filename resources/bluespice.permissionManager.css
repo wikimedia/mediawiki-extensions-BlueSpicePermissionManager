@@ -60,7 +60,7 @@ html.bs-maximizable-panel-fullscreen {
 	position:absolute;
 	width: 80px;
 	font-size: 12px;
-	margin-left:-5px;
+	margin-left: -5px;
 	background-color: white;
 	padding: 5px !important;
 	white-space: normal;
@@ -76,7 +76,7 @@ html.bs-maximizable-panel-fullscreen {
 }
 
 .bs-grid-panel-roles{
-	padding-left: 10px;
+	padding-left: 2px;
 }
 
 .x-window-body {
@@ -99,4 +99,14 @@ html.bs-maximizable-panel-fullscreen {
 
 .x-grid-rolehint {
 	display: none;
+}
+
+.icon-group:before {
+	content: '\f0c0';
+	font-family: 'fontawesome'
+}
+
+.icon-builtin-group:before {
+	content: '\f0c0';
+	font-family: 'fontawesome'
 }

@@ -14,25 +14,12 @@ Ext.define('BS.PermissionManager.tree.Groups', {
 			var group = Ext.create( 'BS.PermissionManager.data.Manager' ).getWorkingGroup();
 			var node = panel.getStore().getNodeById( group );
 			panel.getSelectionModel().select(node, false, true);
-			var rootNode = this.getRootNode();
-			rootNode.set( 'text', mw.message( 'bs-permissionmanager-btn-group-label' ).plain() + group );
-		},
-		beforeselect: function( self, record ) {
-			if( record.get( 'root' ) ) {
-				return false;
-			}
-			return true;
 		},
 		select: function( self, record ) {
-			if( record.get( 'root' ) ) {
-				return;
-			}
 			var group = record.get( 'text' );
 			var dataManager = Ext.create( 'BS.PermissionManager.data.Manager' );
 			dataManager.setWorkingGroup( group );
 
-			var rootNode = this.getRootNode();
-			rootNode.set( 'text', mw.message( 'bs-permissionmanager-btn-group-label' ).plain() + group );
 			Ext.data.StoreManager.lookup( 'bs-permissionmanager-role-store' ).loadRawData( dataManager.buildRoleData().roles );
 		}
 	},
@@ -46,5 +33,21 @@ Ext.define('BS.PermissionManager.tree.Groups', {
 		});
 
 		this.callParent(arguments);
+	},
+
+	showSystemGroups: function( show ) {
+		var nodes = this.getRootNode().childNodes[ 0 ];
+		for( var idx in nodes.childNodes ) {
+			var childNode = nodes.childNodes[ idx ];
+			if( !childNode.data.builtin ) {
+				continue;
+			}
+			var viewNode = this.getView().getNodeByRecord( childNode );
+			if( show ) {
+				$( viewNode ).show();
+			} else {
+				$( viewNode ).hide();
+			}
+		}
 	}
 });
