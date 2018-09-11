@@ -118,7 +118,8 @@
 				"bs-permissionmanager-affected-by-inherited",
 				"bs-permissionmanager-affected-by-notset",
 				"bs-permissionmanager-affected-by-explicitlyset",
-				"bs-permissionmanager-affected-by-setonwiki"
+				"bs-permissionmanager-affected-by-setonwiki",
+				"bs-permissionmanager-show-system-groups-label"
 			]
 		}
 	},
