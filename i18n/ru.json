@@ -48,5 +48,6 @@
 	"logeventslist-bs-permission-manager-log": "Журнал управления разрешениями",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|изменил|изменила}} права группы $4",
 	"action-permissionmanager-viewspecialpage": "просмотр служебной страницы «{{int:bs-permissionmanager-label}}»",
-	"right-permissionmanager-viewspecialpage": "доступ к служебной странице [[Special:PermissionManager]]"
+	"right-permissionmanager-viewspecialpage": "доступ к служебной странице [[Special:PermissionManager]]",
+	"bs-permissionmanager-show-system-groups-label": "Показать системные группы"
 }

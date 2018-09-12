@@ -61,5 +61,6 @@
 	"bs-permissionmanager-hint": "此身份包含{{PLURAL:$2|以下權限：$1|以下權限：$1}}",
 	"bs-permissionmanager-header-role": "身份",
 	"bs-permissionmanager-write-config-file-error": "無法建立或寫入 $1",
-	"right-permissionmanager-viewspecialpage": "授予存取特殊頁面 [[Special:PermissionManager]] 的權限。"
+	"right-permissionmanager-viewspecialpage": "授予存取特殊頁面 [[Special:PermissionManager]] 的權限。",
+	"bs-permissionmanager-show-system-groups-label": "顯示系統群組"
 }
