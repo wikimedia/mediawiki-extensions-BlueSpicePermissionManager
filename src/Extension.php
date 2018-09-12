@@ -77,6 +77,25 @@ class Extension extends \BlueSpice\Extension{
 		return $roleNames;
 	}
 
+	public static function getRolePermissions( $role, $includeDesc = false ) {
+		$role = self::$roleManager->getRole( $role );
+		if( $role instanceof \BlueSpice\Permission\Role\IRole === false ) {
+			return [];
+		}
+
+		$permissions = $role->getPermissions();
+		if( !$includeDesc ) {
+			return $permissions;
+		}
+
+		$permissionsAndDescs = [];
+		foreach( $permissions as $permission ) {
+			$permissionsAndDescs[ $permission ] =
+				wfMessage( "right-$permission" )->plain();
+		}
+		return $permissionsAndDescs;
+	}
+
 	public static function getGroupRoles () {
 		return self::$roleManager->getGroupRoles();
 	}

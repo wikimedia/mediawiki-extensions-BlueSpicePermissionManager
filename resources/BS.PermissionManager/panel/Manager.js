@@ -27,18 +27,24 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 					return msg;
 				}
 			}
-		});
+		} );
 
 		me.btnOK = new Ext.Button({
 			text: mw.message( 'bs-permissionmanager-btn-save-label' ).plain(),
 			handler: function() {
 				Ext.create( 'BS.PermissionManager.data.Manager' ).saveRoles( this );
+
+				me.btnOK.setDisabled( true );
+				me.btnCancel.setDisabled( true );
 			},
+			cls: 'bs-permissionmanager-button-progressive',
+			disabled: true,
 			scope: this
 		});
 
 		me.btnCancel = new Ext.Button( {
-			text: mw.message( 'htmlform-reset' ).plain(),
+			text: mw.message( "bs-premissionmanager-reset-button-label" ).plain(),
+			disabled: true,
 			handler: function() {
 				var dataManager = Ext.create( 'BS.PermissionManager.data.Manager' );
 				dataManager.resetAllSettings();
@@ -46,6 +52,9 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 				Ext.data.StoreManager
 					.lookup( 'bs-permissionmanager-role-store' )
 					.loadRawData( dataManager.buildRoleData().roles );
+
+					me.btnOK.setDisabled( true );
+					me.btnCancel.setDisabled( true );
 			}
 		});
 
@@ -59,9 +68,16 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 			}
 		} );
 
-		me.gridRoles = new BS.PermissionManager.grid.Roles({
-			region: 'center'
-		});
+		me.gridRoles = new BS.PermissionManager.grid.Roles( {
+			region: 'center',
+			listeners: {
+				cellclick: function() {
+					var dataManager = Ext.create( 'BS.PermissionManager.data.Manager' );
+					me.btnOK.setDisabled( ! dataManager.isDirty() );
+					me.btnCancel.setDisabled( ! dataManager.isDirty() );
+				}
+			}
+		} );
 
 		me.treeGroups = new BS.PermissionManager.tree.Groups({
 			region: 'west',
@@ -76,7 +92,8 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 		me.tbar = [
 			me.btnOK,
 			me.btnCancel,
-			me.chkShowSystemGroups
+			me.chkShowSystemGroups,
+			'->'
 		];
 
 		$( document ).trigger(

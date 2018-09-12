@@ -110,3 +110,24 @@ html.bs-maximizable-panel-fullscreen {
 	content: '\f0c0';
 	font-family: 'fontawesome'
 }
+
+.bs-permissionmanager-button-progressive {
+	background-color: #0060df;
+}
+
+.bs-permissionmanager-button-progressive:hover,
+.bs-permissionmanager-button-progressive:focus,
+.bs-permissionmanager-button-progressive.x-btn-pressed{
+	background-color: #055acb;
+}
+
+.bs-permissionmanager-button-progressive span,
+.bs-permissionmanager-button-progressive:hover span,
+.bs-permissionmanager-button-progressive:focus span {
+	color: white;
+}
+
+.x-btn-disabled span {
+	color: black;
+	font-weight: normal;
+}

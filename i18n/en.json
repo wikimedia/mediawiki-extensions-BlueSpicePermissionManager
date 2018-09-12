@@ -60,5 +60,9 @@
 	"bs-permissionmanager-header-role": "Role",
 	"bs-permissionmanager-write-config-file-error": "Not able to create or write $1",
 	"right-permissionmanager-viewspecialpage": "Grants access to the [[Special:PermissionManager]] special page.",
-	"bs-permissionmanager-show-system-groups-label": "Show system groups"
+	"bs-permissionmanager-show-system-groups-label": "Show system groups",
+	"bs-permissionmanager-role-permissions-label": "Permissions in role: $1",
+	"bs-permissionmanager-role-permissions-column-permission": "Permission",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Description",
+	"bs-premissionmanager-reset-button-label": "Reset"
 }

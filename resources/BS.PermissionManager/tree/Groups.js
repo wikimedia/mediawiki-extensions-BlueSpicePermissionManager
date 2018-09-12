@@ -36,6 +36,14 @@ Ext.define('BS.PermissionManager.tree.Groups', {
 	},
 
 	showSystemGroups: function( show ) {
+		var selection = this.getSelection();
+		var selected = selection.length == 1 ? selection[ 0 ] : null;
+
+		if( selected && selected.data.builtin && !show ) {
+			// If selected group is going to be hidden,
+			// switch selection to root
+			this.setSelection( this.getRootNode() );
+		}
 		var nodes = this.getRootNode().childNodes[ 0 ];
 		for( var idx in nodes.childNodes ) {
 			var childNode = nodes.childNodes[ idx ];

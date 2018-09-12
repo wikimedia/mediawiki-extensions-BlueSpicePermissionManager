@@ -1,4 +1,5 @@
 Ext.define( 'BS.PermissionManager.grid.column.RoleHint', {
+	requires: [ 'BS.PermissionManager.dialog.RolePermissions' ],
 	extend: 'Ext.grid.column.Action',
 	alias: 'widget.bs-pm-rolehint',
 	width: 20,
@@ -8,10 +9,14 @@ Ext.define( 'BS.PermissionManager.grid.column.RoleHint', {
 		return '<div class="' + cls + '"><p>' + value + '</p></div>';
 	},
 	items: [ {
-			iconCls: 'bs-extjs-actioncolumn-icon icon-help question bs-pm-actioncolumn-icon',
+			iconCls: 'bs-extjs-actioncolumn-icon bs-icon-info question bs-pm-actioncolumn-icon',
 			glyph: true, //Needed to have the "BS.override.grid.column.Action" render an <span> instead of an <img>,
-			getTip:  function ( value, metadata, record ) {
-				return value;
+			handler: function( grid, rowIndex, colIndex ) {
+				var roleId = grid.getStore().getAt( rowIndex ).getId();
+				var dialog = new BS.PermissionManager.dialog.RolePermissions( {
+					role: roleId
+				} );
+				dialog.show();
 			}
 		} ]
 } );
