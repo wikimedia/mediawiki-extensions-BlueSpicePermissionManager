@@ -15,5 +15,6 @@
 	"bs-permissionmanager-labeltpled-add": "Nuève",
 	"bs-permissionmanager-labeltpled-edit": "Cange",
 	"bs-permissionmanager-labeltpled-delete": "Scangìlle",
-	"bs-permissionmanager-labeltpled-cancel": "Annulle"
+	"bs-permissionmanager-labeltpled-cancel": "Annulle",
+	"bs-permissionmanager-show-system-groups-label": "Fa 'ndrucà le gruppe de sisteme"
 }

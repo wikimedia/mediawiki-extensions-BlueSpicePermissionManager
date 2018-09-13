@@ -62,5 +62,9 @@
 	"bs-permissionmanager-header-role": "身份",
 	"bs-permissionmanager-write-config-file-error": "無法建立或寫入 $1",
 	"right-permissionmanager-viewspecialpage": "授予存取特殊頁面 [[Special:PermissionManager]] 的權限。",
-	"bs-permissionmanager-show-system-groups-label": "顯示系統群組"
+	"bs-permissionmanager-show-system-groups-label": "顯示系統群組",
+	"bs-permissionmanager-role-permissions-label": "身份為：$1的權限",
+	"bs-permissionmanager-role-permissions-column-permission": "權限",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "描述",
+	"bs-premissionmanager-reset-button-label": "重新設定"
 }

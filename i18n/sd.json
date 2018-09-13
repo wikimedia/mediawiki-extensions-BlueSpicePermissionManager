@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mehtab ahmed"
+			"Mehtab ahmed",
+			"Tweety"
 		]
 	},
 	"bs-permissionmanager-btn-save-label": "سانڍيو",
 	"bs-permissionmanager-labeltpled-active": "سرگرم",
-	"bs-permissionmanager-labeltpled-cancel": "رد"
+	"bs-permissionmanager-labeltpled-cancel": "رد",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "تفصيل",
+	"bs-premissionmanager-reset-button-label": "ترتيب مٽايو"
 }

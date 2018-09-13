@@ -49,5 +49,8 @@
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|изменил|изменила}} права группы $4",
 	"action-permissionmanager-viewspecialpage": "просмотр служебной страницы «{{int:bs-permissionmanager-label}}»",
 	"right-permissionmanager-viewspecialpage": "доступ к служебной странице [[Special:PermissionManager]]",
-	"bs-permissionmanager-show-system-groups-label": "Показать системные группы"
+	"bs-permissionmanager-show-system-groups-label": "Показать системные группы",
+	"bs-permissionmanager-role-permissions-column-permission": "Разрешение",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Описание",
+	"bs-premissionmanager-reset-button-label": "Сбросить"
 }

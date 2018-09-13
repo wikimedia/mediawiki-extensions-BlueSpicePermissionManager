@@ -61,5 +61,6 @@
 	"bs-permissionmanager-hint": "Esta função inclui {{PLURAL:$2|a seguinte permissão: $1| as seguintes permissões: $1}}",
 	"bs-permissionmanager-header-role": "Função",
 	"bs-permissionmanager-write-config-file-error": "Não foi possível criar ou gravar $1",
-	"right-permissionmanager-viewspecialpage": "Concede acesso à página especial [[Special:PermissionManager]]."
+	"right-permissionmanager-viewspecialpage": "Concede acesso à página especial [[Special:PermissionManager]].",
+	"bs-permissionmanager-show-system-groups-label": "Mostrar grupos do sistema"
 }

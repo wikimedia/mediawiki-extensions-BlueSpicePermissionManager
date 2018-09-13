@@ -44,5 +44,8 @@
 	"bs-permissionmanager-affected-by-notset": "Nie ustawione",
 	"bs-permissionmanager-affected-by-setonwiki": "Ustaw na poziom wiki",
 	"bs-permissionmanager-header-role": "Rola",
-	"right-permissionmanager-viewspecialpage": "Przyznawanie dostępu do strony specjalnej [[Special:PermissionManager]]."
+	"right-permissionmanager-viewspecialpage": "Przyznawanie dostępu do strony specjalnej [[Special:PermissionManager]].",
+	"bs-permissionmanager-role-permissions-column-permission": "Uprawnienia",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Opis",
+	"bs-premissionmanager-reset-button-label": "Zresetuj"
 }

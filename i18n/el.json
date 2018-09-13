@@ -33,5 +33,8 @@
 	"bs-permissionmanager-titletpled-delete": "Διαγραφή προτύπου",
 	"bs-permissionmanager-pref-enablerealitycheck": "Ενεργοποίηση ελέγχου άδειας",
 	"bs-permissionmanager-group-all": "όλα",
-	"bs-permissionmanager-header-role": "Ρόλος"
+	"bs-permissionmanager-header-role": "Ρόλος",
+	"bs-permissionmanager-role-permissions-column-permission": "Άδεια",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Περιγραφή",
+	"bs-premissionmanager-reset-button-label": "Επαναφορά"
 }

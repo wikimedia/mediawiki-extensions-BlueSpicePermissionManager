@@ -63,5 +63,10 @@
 	"bs-permissionmanager-hint": "Ce rôle inclut {{PLURAL:$2|le droit suivant : $1|les droits suivants : $1}}",
 	"bs-permissionmanager-header-role": "Rôle",
 	"bs-permissionmanager-write-config-file-error": "Impossible de créer ou d’écrire $1",
-	"right-permissionmanager-viewspecialpage": "Donne les droits d'accès à la page spéciale  [[Special:PermissionManager]]."
+	"right-permissionmanager-viewspecialpage": "Donne les droits d'accès à la page spéciale  [[Special:PermissionManager]].",
+	"bs-permissionmanager-show-system-groups-label": "Afficher les groupes système",
+	"bs-permissionmanager-role-permissions-label": "Droits dans le rôle : $1",
+	"bs-permissionmanager-role-permissions-column-permission": "Droit",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Description",
+	"bs-premissionmanager-reset-button-label": "Réinitialiser"
 }

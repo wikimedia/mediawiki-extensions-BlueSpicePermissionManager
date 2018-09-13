@@ -68,6 +68,6 @@
 	"bs-permissionmanager-show-system-groups-label": "Label text for the checkbox toggling system groups visibility",
 	"bs-permissionmanager-role-permissions-label": "Grid label for overview of permission in particular role. $1 - role name",
 	"bs-permissionmanager-role-permissions-column-permission": "Grid column label for permission name column",
-	"bs-permissionmanager-role-permissions-column-permission-desc": "Grid column label for permission description column",
-	"bs-premissionmanager-reset-button-label": "Label for the button that resets all unsaved changes"
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Grid column label for permission description column\n{{Identical|Description}}",
+	"bs-premissionmanager-reset-button-label": "Label for the button that resets all unsaved changes\n{{Identical|Reset}}"
 }

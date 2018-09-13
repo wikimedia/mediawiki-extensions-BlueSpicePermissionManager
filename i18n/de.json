@@ -63,5 +63,8 @@
 	"bs-permissionmanager-write-config-file-error": "$1 konnte nicht erstellt oder beschrieben werden",
 	"right-permissionmanager-viewspecialpage": "Zugriff auf die Spezialseite [[Special:PermissionManager]] gewähren.",
 	"bs-permissionmanager-show-system-groups-label": "Systemgruppen anzeigen",
+	"bs-permissionmanager-role-permissions-label": "Berechtigungen in der Rolle: $1",
+	"bs-permissionmanager-role-permissions-column-permission": "Berechtigung",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Beschreibung",
 	"bs-premissionmanager-reset-button-label": "Zurücksetzen"
 }
