@@ -69,5 +69,9 @@
 	"bs-permissionmanager-role-permissions-label": "Grid label for overview of permission in particular role. $1 - role name",
 	"bs-permissionmanager-role-permissions-column-permission": "Grid column label for permission name column",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Grid column label for permission description column\n{{Identical|Description}}",
-	"bs-premissionmanager-reset-button-label": "Label for the button that resets all unsaved changes\n{{Identical|Reset}}"
+	"bs-premissionmanager-reset-button-label": "Label for the button that resets all unsaved changes\n{{Identical|Reset}}",
+	"logentry-bs-permission-manager-global-add": "Log message when user adds global role(s) to a group. $4 - Group, $5 - added roles, $6 - count of roles added",
+	"logentry-bs-permission-manager-global-remove": "Log message when user removes global role(s) from a group. $4 - Group, $5 - removed roles, $6 - count of roles removed",
+	"logentry-bs-permission-manager-ns-add": "Log message when user adds role(s) to a group in a namespace. $4 - Group, $5 - added roles, $6 - count of roles added, $7 - namespace name",
+	"logentry-bs-permission-manager-ns-remove": "Log message when user removes role(s) from a group in a namespace. $4 - Group, $5 - removed roles, $6 - count of roles removed, $7 - namespace name"
 }

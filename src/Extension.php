@@ -132,12 +132,19 @@ class Extension extends \BlueSpice\Extension{
 			return true;
 		}
 
-		self::backupExistingSettings();
+		$existingRoles = self::$roleManager->getGroupRoles();
+		$globalDiff = [];
+		$nsRoles = $config->get( 'NamespaceRolesLockdown' );
+		$nsDiff = self::getNSRoleLockdownDiff( $nsRoles, $roleLockdown );
 
+		self::backupExistingSettings();
 		$saveContent = "<?php\n";
 		foreach( $groupRoles as $group => $roleArray ) {
 			foreach ( $roleArray as $role => $value ) {
 				$saveContent .= "\$GLOBALS['bsgGroupRoles']['{$group}']['{$role}'] = " . ( $value ? 'true' : 'false' ) . ";\n";
+				if( !isset( $existingRoles[ $group ][ $role ] ) || $existingRoles[ $group ][ $role ] !== $value ) {
+					$globalDiff[ $group ][ $role ] = $value;
+				}
 			}
 		}
 
@@ -167,7 +174,6 @@ class Extension extends \BlueSpice\Extension{
 				if( in_array( 'read', $permissions ) ) {
 					$isReadLockdown = true;
 				}
-
 			}
 			if ( $isReadLockdown ) {
 				$saveContent .= "\$GLOBALS['wgNonincludableNamespaces'][] = $nsConstant;\n";
@@ -176,6 +182,7 @@ class Extension extends \BlueSpice\Extension{
 
 		$res = file_put_contents( $configFile, $saveContent );
 		if ( $res ) {
+			self::doLog( $globalDiff, $nsDiff );
 			return array( 'success' => true );
 		} else {
 			return array(
@@ -183,6 +190,125 @@ class Extension extends \BlueSpice\Extension{
 					'msg' => wfMessage( 'bs-permissionmanager-write-config-file-error', $configFile )
 			);
 		}
+	}
+
+	protected static function doLog( $globalDiff, $nsDiff ) {
+		foreach( $globalDiff as $group => $roles ) {
+			$addedRoles = [];
+			$removedRoles = [];
+			foreach( $roles as $role => $added ) {
+				if( $added ) {
+					$addedRoles[] = $role;
+				} else {
+					$removedRoles[] = $role;
+				}
+			}
+			if( !empty( $addedRoles ) ) {
+				self::insertLog( 'global-add', [
+					'4::diffGroup' => $group,
+					'5::diffRoles' => implode( ',', $addedRoles ),
+					'6::roleCount' => count( $addedRoles )
+				] );
+			}
+			if( !empty( $removedRoles ) ) {
+				self::insertLog( 'global-remove', [
+					'4::diffGroup' => $group,
+					'5::diffRoles' => implode( ',', $removedRoles ),
+					'6::roleCount' => count( $removedRoles )
+				] );
+			}
+		}
+
+		foreach( $nsDiff as $group => $namespaces ) {
+			foreach( $namespaces as $ns => $roles ) {
+				$nsCanonical = \MWNamespace::getCanonicalName( $ns );
+				if( $ns === NS_MAIN ) {
+					$nsCanonical = wfMessage( 'bs-ns_main' )->plain();
+				}
+				$addedRoles = [];
+				$removedRoles = [];
+				foreach( $roles as $role => $added ) {
+					if( $added ) {
+						$addedRoles[] = $role;
+					} else {
+						$removedRoles[] = $role;
+					}
+				}
+				if( !empty( $addedRoles ) ) {
+					self::insertLog( 'ns-add', [
+						'4::diffGroup' => $group,
+						'5::diffRoles' => implode( ',', $addedRoles ),
+						'6::roleCount' => count( $addedRoles ),
+						'7::ns' => $nsCanonical
+					] );
+				}
+				if( !empty( $removedRoles ) ) {
+					self::insertLog( 'ns-remove', [
+						'4::diffGroup' => $group,
+						'5::diffRoles' => implode( ',', $removedRoles ),
+						'6::roleCount' => count( $removedRoles ),
+						'7::ns' => $nsCanonical
+					] );
+				}
+			}
+		}
+	}
+
+	protected static function insertLog( $type, $params ) {
+		$targetTitle = \SpecialPage::getTitleFor( 'PermissionManager' );
+		$user = \RequestContext::getMain()->getUser();
+
+		$logger = new \ManualLogEntry( 'bs-permission-manager', $type );
+		$logger->setPerformer( $user );
+		$logger->setTarget( $targetTitle );
+		$logger->setParameters( $params );
+		$logger->insert();
+	}
+
+	protected static function getNSRoleLockdownDiff( $new, $old ) {
+		$totalDiff = [];
+		// Groups that do not have role lockdown anymore
+		$negativeDiff = self::arrayDiffDeep( $new, $old );
+		// Groups that now have role lockdown which they hadn't had before
+		$positiveDiff = self::arrayDiffDeep( $old, $new );
+		foreach( $negativeDiff as $ns => $roles ) {
+			foreach( $roles as $role => $groups ) {
+				foreach( $groups as $group ) {
+					$totalDiff[ $group ][ $ns ][ $role ] = false;
+				}
+			}
+		}
+		foreach( $positiveDiff as $ns => $roles ) {
+			foreach( $roles as $role => $groups ) {
+				foreach( $groups as $group ) {
+					$totalDiff[ $group ][ $ns ][ $role ] = true;
+				}
+			}
+		}
+		return $totalDiff;
+	}
+
+	protected static function arrayDiffDeep( $old, $new ) {
+		$new = (array) $new;
+		$return = [];
+
+		foreach ( $old as $key => $value ) {
+			if ( array_key_exists( $key, $new ) ) {
+			if ( is_array( $value ) ) {
+				$recursiveDiff = self::arrayDiffDeep( $value, $new[ $key ] );
+				if ( count( $recursiveDiff ) ) {
+					$return[ $key ] = $recursiveDiff;
+				}
+			} else {
+				if ( $value != $new[ $key ] ) {
+					$return[ $key ] = $value;
+				}
+			}
+			} else {
+				$return[ $key ] = $value;
+			}
+		}
+		return $return;
 	}
 
 	/**
