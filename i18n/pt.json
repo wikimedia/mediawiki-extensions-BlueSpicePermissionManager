@@ -62,5 +62,9 @@
 	"bs-permissionmanager-header-role": "Função",
 	"bs-permissionmanager-write-config-file-error": "Não foi possível criar ou gravar $1",
 	"right-permissionmanager-viewspecialpage": "Concede acesso à página especial [[Special:PermissionManager]].",
-	"bs-permissionmanager-show-system-groups-label": "Mostrar grupos do sistema"
+	"bs-permissionmanager-show-system-groups-label": "Mostrar grupos do sistema",
+	"bs-permissionmanager-role-permissions-label": "Privilégios na função: $1",
+	"bs-permissionmanager-role-permissions-column-permission": "Privilégio",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Descrição",
+	"bs-premissionmanager-reset-button-label": "Repor"
 }

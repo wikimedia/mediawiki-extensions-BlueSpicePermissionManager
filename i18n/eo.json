@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robin van der Vliet"
+			"Robin van der Vliet",
+			"Surfo"
 		]
 	},
-	"bs-permissionmanager-labeltpled-cancel": "Nuligi"
+	"bs-permissionmanager-labeltpled-cancel": "Nuligi",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Priskribo",
+	"bs-premissionmanager-reset-button-label": "Rekomencu"
 }

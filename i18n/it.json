@@ -45,5 +45,6 @@
 	"bs-permissionmanager-affected-by-explicitlyset": "Impostato esplicitamente",
 	"bs-permissionmanager-group-all": "tutto",
 	"bs-permissionmanager-hint": "Questo ruolo include {{PLURAL:$2|la seguente autorizzazione: $1|le seguenti autorizzazioni: $1}}",
-	"bs-permissionmanager-header-role": "Ruolo"
+	"bs-permissionmanager-header-role": "Ruolo",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Descrizione"
 }

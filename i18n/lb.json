@@ -41,6 +41,7 @@
 	"bs-permissionmanager-group-all": "all",
 	"bs-permissionmanager-header-role": "Roll",
 	"bs-permissionmanager-write-config-file-error": "$1 konnt net ugeluecht oder geschriwwe ginn",
+	"bs-permissionmanager-role-permissions-column-permission": "Autorisatioun",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Beschreiwung",
 	"bs-premissionmanager-reset-button-label": "Zrécksetzen"
 }

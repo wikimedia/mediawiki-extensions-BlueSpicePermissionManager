@@ -4,5 +4,6 @@
 			"Papuass"
 		]
 	},
-	"bs-permissionmanager-header-role": "Loma"
+	"bs-permissionmanager-header-role": "Loma",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Apraksts"
 }

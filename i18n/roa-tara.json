@@ -16,5 +16,9 @@
 	"bs-permissionmanager-labeltpled-edit": "Cange",
 	"bs-permissionmanager-labeltpled-delete": "Scangìlle",
 	"bs-permissionmanager-labeltpled-cancel": "Annulle",
-	"bs-permissionmanager-show-system-groups-label": "Fa 'ndrucà le gruppe de sisteme"
+	"bs-permissionmanager-show-system-groups-label": "Fa 'ndrucà le gruppe de sisteme",
+	"bs-permissionmanager-role-permissions-label": "Permesse sus a 'u ruole: $1",
+	"bs-permissionmanager-role-permissions-column-permission": "Permesse",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Descrizione",
+	"bs-premissionmanager-reset-button-label": "Azzere"
 }
