@@ -86,7 +86,9 @@
 				"bluespice.permissionManager.js"
 			],
 			"styles": "bluespice.permissionManager.css",
-			"dependencies": "ext.bluespice.extjs",
+			"dependencies": [
+				"ext.bluespice.extjs"
+			],
 			"messages": [
 				"bs-permissionmanager-header-role",
 				"bs-permissionmanager-header-global",
@@ -130,7 +132,7 @@
 	"config_prefix": "bsg",
 	"config": {
 		"PermissionManagerMaxBackups": {
-			"value": 5,
+			"value": 50,
 			"descriptionmsg": "bs-permissionmanager-pref-max-backups",
 			"public": true
 		}
