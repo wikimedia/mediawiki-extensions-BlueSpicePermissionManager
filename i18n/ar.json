@@ -61,5 +61,14 @@
 	"bs-permissionmanager-hint": "يتضمن هذا الدور {{PLURAL:$2|الصلاحية التالية: $1|الصلاحيات التالية: $1}}",
 	"bs-permissionmanager-header-role": "الدور",
 	"bs-permissionmanager-write-config-file-error": "غير قادر على إنشاء أو كتابة $1",
-	"right-permissionmanager-viewspecialpage": "يمنح الوصول إلى الصفحة الخاصة [[Special:PermissionManager]]."
+	"right-permissionmanager-viewspecialpage": "يمنح الوصول إلى الصفحة الخاصة [[Special:PermissionManager]].",
+	"bs-permissionmanager-show-system-groups-label": "إظهار مجموعات النظام",
+	"bs-permissionmanager-role-permissions-label": "الصلاحيات في الدور: $1",
+	"bs-permissionmanager-role-permissions-column-permission": "الصلاحيات",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "الوصف",
+	"bs-premissionmanager-reset-button-label": "إعادة ضبط",
+	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|قد}} تمت إضافة {{PLURAL:$6|دور|أدوار}} $5 إلى مجموعة $4",
+	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|has}} removed {{PLURAL:$6|role|roles}} $5 from group $4\n$1 {{GENDER:$2|قد}} تمت إزالة {{PLURAL:$6|دور|أدوار}} $5 من مجموعة $4",
+	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|قد}} تمت إضافة {{PLURAL:$6|دور|أدوار}} $5 في نطاق $7 إلى مجموعة $4",
+	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|قد}} تمت إزالة {{PLURAL:$6|دور|أدوار}} $5 في نطاق $7 من مجموعة $4"
 }

@@ -66,5 +66,9 @@
 	"bs-permissionmanager-role-permissions-label": "Berechtigungen in der Rolle: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "Berechtigung",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Beschreibung",
-	"bs-premissionmanager-reset-button-label": "Zurücksetzen"
+	"bs-premissionmanager-reset-button-label": "Zurücksetzen",
+	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|hat}} die {{PLURAL:$6|Rolle|Rollen}} $5 zur Gruppe $4 hinzugefügt",
+	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|hat}} die {{PLURAL:$6|Rolle|Rollen}} $5 aus der Gruppe $4 entfernt",
+	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|hat}} die {{PLURAL:$6|Rolle|Rollen}} $5 im Namensraum $7 zur Gruppe $4 hinzugefügt",
+	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|hat}} die {{PLURAL:$6|Rolle|Rollen}} $5 im Namensraum $7 aus der Gruppe $4 entfernt"
 }
