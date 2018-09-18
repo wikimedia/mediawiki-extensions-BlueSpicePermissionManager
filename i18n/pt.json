@@ -66,5 +66,9 @@
 	"bs-permissionmanager-role-permissions-label": "Privilégios na função: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "Privilégio",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Descrição",
-	"bs-premissionmanager-reset-button-label": "Repor"
+	"bs-premissionmanager-reset-button-label": "Repor",
+	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|adicionou}} {{PLURAL:$6|a função|as funções}} $5 ao grupo $4",
+	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|removeu}} {{PLURAL:$6|a função|as funções}} $5 do grupo $4",
+	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|adicionou}} {{PLURAL:$6|a função|as funções}} $5 no espaço nominal/domínio $7 ao grupo $4",
+	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|removeu}} {{PLURAL:$6|a função|as funções}} $5 no espaço nominal/domínio $7 do grupo $4"
 }

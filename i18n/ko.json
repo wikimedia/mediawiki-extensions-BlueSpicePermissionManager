@@ -25,6 +25,7 @@
 	"bs-permissionmanager-header-role": "역할",
 	"bs-permissionmanager-write-config-file-error": "$1 파일을 만들거나 쓸 수 없습니다",
 	"bs-permissionmanager-show-system-groups-label": "시스템 그룹 보기",
+	"bs-permissionmanager-role-permissions-column-permission": "권한",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "설명",
 	"bs-premissionmanager-reset-button-label": "초기화"
 }
