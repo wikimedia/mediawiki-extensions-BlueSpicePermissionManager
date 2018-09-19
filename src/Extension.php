@@ -31,6 +31,7 @@
 
 namespace BlueSpice\PermissionManager;
 use BlueSpice;
+use BlueSpice\PermissionManager\RoleMatrixDiff;
 
 class Extension extends \BlueSpice\Extension{
 	/**
@@ -132,19 +133,15 @@ class Extension extends \BlueSpice\Extension{
 			return true;
 		}
 
-		$existingRoles = self::$roleManager->getGroupRoles();
-		$globalDiff = [];
-		$nsRoles = $config->get( 'NamespaceRolesLockdown' );
-		$nsDiff = self::getNSRoleLockdownDiff( $nsRoles, $roleLockdown );
+		$roleMatrixDiff = new RoleMatrixDiff( $config, $groupRoles, $roleLockdown );
+		$globalDiff = $roleMatrixDiff->getGlobalDiff();
+		$nsDiff = $roleMatrixDiff->getNsDiff();
 
 		self::backupExistingSettings();
 		$saveContent = "<?php\n";
 		foreach( $groupRoles as $group => $roleArray ) {
 			foreach ( $roleArray as $role => $value ) {
 				$saveContent .= "\$GLOBALS['bsgGroupRoles']['{$group}']['{$role}'] = " . ( $value ? 'true' : 'false' ) . ";\n";
-				if( !isset( $existingRoles[ $group ][ $role ] ) || $existingRoles[ $group ][ $role ] !== $value ) {
-					$globalDiff[ $group ][ $role ] = $value;
-				}
 			}
 		}
 
@@ -263,52 +260,6 @@ class Extension extends \BlueSpice\Extension{
 		$logger->setTarget( $targetTitle );
 		$logger->setParameters( $params );
 		$logger->insert();
-	}
-
-	protected static function getNSRoleLockdownDiff( $new, $old ) {
-		$totalDiff = [];
-		// Groups that do not have role lockdown anymore
-		$negativeDiff = self::arrayDiffDeep( $new, $old );
-		// Groups that now have role lockdown which they hadn't had before
-		$positiveDiff = self::arrayDiffDeep( $old, $new );
-		foreach( $negativeDiff as $ns => $roles ) {
-			foreach( $roles as $role => $groups ) {
-				foreach( $groups as $group ) {
-					$totalDiff[ $group ][ $ns ][ $role ] = false;
-				}
-			}
-		}
-		foreach( $positiveDiff as $ns => $roles ) {
-			foreach( $roles as $role => $groups ) {
-				foreach( $groups as $group ) {
-					$totalDiff[ $group ][ $ns ][ $role ] = true;
-				}
-			}
-		}
-		return $totalDiff;
-	}
-
-	protected static function arrayDiffDeep( $old, $new ) {
-		$new = (array) $new;
-		$return = [];
-
-		foreach ( $old as $key => $value ) {
-			if ( array_key_exists( $key, $new ) ) {
-			if ( is_array( $value ) ) {
-				$recursiveDiff = self::arrayDiffDeep( $value, $new[ $key ] );
-				if ( count( $recursiveDiff ) ) {
-					$return[ $key ] = $recursiveDiff;
-				}
-			} else {
-				if ( $value != $new[ $key ] ) {
-					$return[ $key ] = $value;
-				}
-			}
-			} else {
-				$return[ $key ] = $value;
-			}
-		}
-		return $return;
 	}
 
 	/**
