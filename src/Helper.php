@@ -118,7 +118,9 @@ class Helper {
 			$metadata[] = array(
 					'id' => $nsId,
 					'name' => $nsText,
-					'hideable' => $nsId !== NS_MAIN
+					'hideable' => $nsId !== NS_MAIN,
+					'content' => \MWNamespace::isContent( $nsId ),
+					'talk' => \MWNamespace::isTalk( $nsId )
 			);
 		}
 

@@ -79,7 +79,7 @@
 		stateId: 'role',
 		sortable: false,
 		hideable: false,
-		width: 200
+		width: 150
 	}, {
 		header: mw.message('bs-permissionmanager-header-global').plain(),
 		dataIndex: 'userCan_Wiki',
@@ -88,14 +88,15 @@
 		stateId: 'userCan_Wiki',
 		sortable: false,
 		hideable: false,
-		width: 80
+		width: 50,
+		cls: 'global-namespace-column'
 	}, {
 		header: mw.message('bs-permissionmanager-header-namespaces').plain(),
 		sortable: false,
 		hideable: true,
 		defaults: {
 			flex: 1,
-			minWidth: 120
+			minWidth: 50
 		},
 		columns: []
 	}];
@@ -115,7 +116,10 @@
 			sortable: false,
 			xtype: 'bs-pm-rolecheck',
 			hideable: namespace.hideable,
-			hidden: namespace.hideable
+			hidden: ! namespace.content,
+			lockable: false,
+			width: 55,
+			cls: 'namespace-column'
 		});
 
 		modelFields.push({

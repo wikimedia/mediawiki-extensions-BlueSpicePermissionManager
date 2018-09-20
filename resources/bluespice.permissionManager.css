@@ -131,3 +131,37 @@ html.bs-maximizable-panel-fullscreen {
 	color: black;
 	font-weight: normal;
 }
+
+.namespace-column .x-column-header-inner {
+	height: 85px;
+	padding: 0px;
+}
+
+.global-namespace-column .x-column-header-inner {
+	height: 120px;
+	padding: 0;
+}
+
+.namespace-column .x-column-header-text,
+.global-namespace-column .x-column-header-text{
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	display: inherit;
+	height: 55px;
+	width: 85px;
+	vertical-align: middle;
+}
+
+.namespace-column .x-column-header-text span,
+.x-column-header-text .x-column-header-text span{
+	display:block;
+	width: 80px;
+	text-align: center;
+	word-wrap: normal;
+	white-space: normal;
+	vertical-align: middle;
+	display: inherit;
+}
