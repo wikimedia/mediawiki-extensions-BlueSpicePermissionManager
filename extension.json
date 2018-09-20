@@ -29,7 +29,8 @@
 				"permissionmanager-viewspecialpage": {
 					"type": "namespace",
 					"roles": [
-						"admin"
+						"admin",
+						"maintenanceadmin"
 					]
 				}
 			}
