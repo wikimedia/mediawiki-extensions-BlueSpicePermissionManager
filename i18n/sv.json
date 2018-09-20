@@ -55,5 +55,14 @@
 	"bs-permissionmanager-group-all": "alla",
 	"bs-permissionmanager-header-role": "Roll",
 	"bs-permissionmanager-write-config-file-error": "Kan inte skapa eller skriva $1",
-	"right-permissionmanager-viewspecialpage": "Ger åtkomst till specialsidan [[Special:PermissionManager]]."
+	"right-permissionmanager-viewspecialpage": "Ger åtkomst till specialsidan [[Special:PermissionManager]].",
+	"bs-permissionmanager-show-system-groups-label": "Visa systemgrupper",
+	"bs-permissionmanager-role-permissions-label": "Behörigheter i rollen: $1",
+	"bs-permissionmanager-role-permissions-column-permission": "Behörighet",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Beskrivning",
+	"bs-premissionmanager-reset-button-label": "Återställ",
+	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|lade till}} {{PLURAL:$6|rollen|rollerna}} $5 i gruppen $4",
+	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|tog bort}} {{PLURAL:$6|rollen|rollerna}} $5 från gruppen $4",
+	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|lade till}} {{PLURAL:$6|rollen|rollerna}} $5 i namnrymden $7 i gruppen $4",
+	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|tog bort}} {{PLURAL:$6|rollen|rollerna}} $5 i namnrymden $7 från gruppen $4"
 }
