@@ -34,7 +34,7 @@ class SpecialPermissionManager extends \BlueSpice\SpecialPage {
 
 		$this->getOutput()->addJsConfigVars( $jsVars );
 
-		$this->getOutput()->addHTML( '<div id="panelPermissionManager"  class="bs-manager-container" style="height: 500px"></div>' );
+		$this->getOutput()->addHTML( '<div id="panelPermissionManager"  class="bs-manager-container" style="height: 800px"></div>' );
 	}
 }
 

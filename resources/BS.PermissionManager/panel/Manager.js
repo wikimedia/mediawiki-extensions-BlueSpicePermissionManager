@@ -10,7 +10,7 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 	border: false,
 	header: false,
 	resizable: true,
-	height: 500,
+	height: 800,
 	initComponent: function() {
 		var me = this;
 
