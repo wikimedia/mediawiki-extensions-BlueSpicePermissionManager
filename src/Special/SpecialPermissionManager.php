@@ -4,7 +4,7 @@ namespace BlueSpice\PermissionManager\Special;
 
 use BlueSpice\PermissionManager\Helper;
 
-class SpecialPermissionManager extends \SpecialPage {
+class SpecialPermissionManager extends \BlueSpice\SpecialPage {
 
 	protected $groups = [];
 
