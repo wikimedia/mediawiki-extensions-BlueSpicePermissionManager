@@ -96,7 +96,7 @@
 		hideable: true,
 		defaults: {
 			flex: 1,
-			minWidth: 50
+			minWidth: 60
 		},
 		columns: []
 	}];
@@ -118,7 +118,7 @@
 			hideable: namespace.hideable,
 			hidden: ! namespace.content,
 			lockable: false,
-			width: 55,
+			width: 65,
 			cls: 'namespace-column'
 		});
 
