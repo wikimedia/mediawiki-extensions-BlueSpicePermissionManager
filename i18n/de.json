@@ -4,7 +4,8 @@
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Metalhead64",
 			"Umherirrender",
-			"Jkonrad"
+			"Jkonrad",
+			"Hwboehm"
 		]
 	},
 	"bs-permissionmanager-desc": "Administrationsoberfläche zur Bearbeitung von Benutzerrechten",
@@ -37,7 +38,7 @@
 	"bs-permissionmanager-msgtpled-delete": "Vorlage gelöscht",
 	"bs-permissionmanager-msgtpled-deletefail": "Vorlage konnte nicht gelöscht werden",
 	"bs-permissionmanager-titletpled-new": "Vorlage erstellen",
-	"bs-permissionmanager-titletpled-edit": "Voralge umbenennen",
+	"bs-permissionmanager-titletpled-edit": "Vorlage umbenennen",
 	"bs-permissionmanager-titletpled-delete": "Vorlage löschen",
 	"bs-permissionmanager-pref-enablerealitycheck": "Rechteprüfung aktivieren",
 	"bs-permissionmanager-pref-max-backups": "Maximale Anzahl an Sicherungen",
