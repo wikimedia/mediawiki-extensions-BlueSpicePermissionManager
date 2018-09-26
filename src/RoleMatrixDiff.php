@@ -13,10 +13,16 @@ class RoleMatrixDiff {
 	public function __construct( $config, $newGlobal, $newNSLockdown ) {
 		$this->config = $config;
 		$this->newGlobal = $newGlobal;
-		$this->newNSLockdown = $newNSLockdown;
 
 		$this->oldGlobal = $config->get( 'GroupRoles' );
 		$this->oldNSLockdown = $config->get( 'NamespaceRolesLockdown' );
+
+		foreach( $newNSLockdown as $key => $value ) {
+			// Needs to be normalized first
+			$key = (int) $key;
+			$this->newNSLockdown[$key] = (array) $value;
+		}
+
 	}
 
 	public function getGlobalDiff() {
