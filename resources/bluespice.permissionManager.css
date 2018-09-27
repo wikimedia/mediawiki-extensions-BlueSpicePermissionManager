@@ -144,11 +144,11 @@ html.bs-maximizable-panel-fullscreen {
 
 .namespace-column .x-column-header-text,
 .global-namespace-column .x-column-header-text{
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	transform: rotate(90deg);
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
 	display: inherit;
 	height: 65px;
 	width: 85px;
