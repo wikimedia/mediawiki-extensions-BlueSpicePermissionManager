@@ -130,6 +130,12 @@
 			]
 		}
 	},
+	"Hooks": {
+		"BSGroupManagerGroupDeleted": "\\BlueSpice\\PermissionManager\\Hook\\BSGroupManagerGroupDeleted\\UnassignRoles::callback",
+		"BSGroupManagerGroupNameChanged": [
+			"\\BlueSpice\\PermissionManager\\Hook\\BSGroupManagerGroupNameChanged\\ChangeGroupRoleAssignments::callback"
+		]
+	},
 	"config_prefix": "bsg",
 	"config": {
 		"PermissionManagerMaxBackups": {
