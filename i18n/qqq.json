@@ -53,6 +53,7 @@
 	"logentry-bs-permission-manager-modify": "Log message about changes in the permissions of one specific group.\nParameters:\n* $4 - name of the group",
 	"apihelp-bs-permissionmanager-tasks-description": "Describes an API endpoint that provides tasks for the PermissionManager\n{{doc-apihelp-description|bs-permissionmanager-tasks}}",
 	"apihelp-bs-permissionmanager-tasks-summary": "Describes an API endpoint that provides tasks for the PermissionManager\n{{doc-apihelp-summary|bs-permissionmanager-tasks}}",
+	"apihelp-bs-role-permission-store-summary": "Describes an API endpoint that provides role description for the PermissionManager\n{{doc-apihelp-summary|bs-role-permission-store}}",
 	"action-permissionmanager-viewspecialpage": "placeholder to describe that view of special page \"{{int:bs-permissionmanager-label}}\" is restricted for the current user.\n\n{{Doc-action|permissionmanager-viewspecialpage}}",
 	"permissionmanager": "Anchor text for permission manager\n{{Identical|Permission manager}}",
 	"bs-permissionmanager-affected-by-explicit": "Flyout shown in permission grid when a right is blocked by one or more groups\nParameters:\n* $1 - name of the group or groups",
