@@ -51,6 +51,7 @@
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|hat}} die Rechte für Gruppe $4 geändert",
 	"apihelp-bs-permissionmanager-tasks-description": "Bietet Aufgaben zur Rechteverwaltung",
 	"apihelp-bs-permissionmanager-tasks-summary": "Stellt die Aufgaben für die Erweiterung „PermissionManager“ bereit.",
+	"apihelp-bs-role-permission-store-summary": "Stellt eine Rollenbeschreibung für den PermissionManager zur Verfügung",
 	"action-permissionmanager-viewspecialpage": "die Spezialseite „{{int:bs-permissionmanager-label}}“ anzusehen",
 	"permissionmanager": "Rechteverwaltung",
 	"bs-permissionmanager-affected-by-explicit": "Blockiert von $1",

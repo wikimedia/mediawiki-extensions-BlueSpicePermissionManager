@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
-			"Linforest"
+			"Linforest",
+			"A Chinese Wikipedian",
+			"Phenolla"
 		]
 	},
 	"bs-permissionmanager-desc": "用于编辑用户权限的管理界面",
@@ -44,6 +46,7 @@
 	"log-name-bs-permission-manager": "权限管理器日志",
 	"log-description-bs-permission-manager": "这是组前行中的更改日志。",
 	"log-show-hide-bs-permission-manager": "$1权限管理器日志",
+	"logeventslist-bs-permission-manager-log": "权限管理器日志",
 	"logentry-bs-permission-manager-modify": "$1{{GENDER:$2|已更改}}组$4的权限",
 	"apihelp-bs-permissionmanager-tasks-description": "为权限管理器提供任务",
 	"apihelp-bs-permissionmanager-tasks-summary": "为权限管理器提供任务",
@@ -57,5 +60,10 @@
 	"bs-permissionmanager-group-all": "全部",
 	"bs-permissionmanager-hint": "此角色包含{{PLURAL:$2|以下权限：$1}}",
 	"bs-permissionmanager-header-role": "角色",
-	"bs-permissionmanager-write-config-file-error": "无法创建或写入$1"
+	"bs-permissionmanager-write-config-file-error": "无法创建或写入$1",
+	"bs-permissionmanager-show-system-groups-label": "显示系统群组",
+	"bs-permissionmanager-role-permissions-label": "规则许可：$1",
+	"bs-permissionmanager-role-permissions-column-permission": "权限",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "描述",
+	"bs-premissionmanager-reset-button-label": "重置"
 }

@@ -50,6 +50,7 @@
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|غير|غيرت}} صلاحيات المجموعة $4",
 	"apihelp-bs-permissionmanager-tasks-description": "يوفر المهام لـPermissionManager",
 	"apihelp-bs-permissionmanager-tasks-summary": "يوفر المهام لـPermissionManager",
+	"apihelp-bs-role-permission-store-summary": "توفر وصف الدور لمدير السماحات",
 	"action-permissionmanager-viewspecialpage": "انظر الصفحة الخاصَّة \"{{int:bs-permissionmanager-label}}\"",
 	"permissionmanager": "مدير الأذون",
 	"bs-permissionmanager-affected-by-explicit": "تم منعه بواسطة $1",
