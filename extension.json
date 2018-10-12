@@ -87,7 +87,6 @@
 			"scripts": [
 				"bluespice.permissionManager.js"
 			],
-			"styles": "bluespice.permissionManager.css",
 			"dependencies": [
 				"ext.bluespice.extjs"
 			],
@@ -129,6 +128,9 @@
 				"bs-permissionmanager-role-permissions-column-permission-desc",
 				"bs-premissionmanager-reset-button-label"
 			]
+		},
+		"ext.bluespice.permissionManager.styles": {
+			"styles": "bluespice.permissionManager.css"
 		}
 	},
 	"Hooks": {

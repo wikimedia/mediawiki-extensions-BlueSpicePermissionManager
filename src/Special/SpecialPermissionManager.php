@@ -14,6 +14,10 @@ class SpecialPermissionManager extends \BlueSpice\SpecialPage {
 
 	public function execute( $param ) {
 		parent::execute( $param );
+
+		$this->getOutput()->addModuleStyles(
+			'ext.bluespice.permissionManager.styles'
+		);
 		$this->getOutput()->addModules( 'ext.bluespice.permissionManager' );
 
 		$helper = Helper::getInstance();
