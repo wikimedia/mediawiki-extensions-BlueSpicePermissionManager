@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Vlad5250"
 		]
 	},
 	"bs-permissionmanager-desc": "Администраторски посредник за измена на кориснички права",
@@ -42,5 +43,6 @@
 	"log-name-bs-permission-manager": "Раководен дневник за дозволи",
 	"log-description-bs-permission-manager": "Ова е дневник на промени во поставките за групните права.",
 	"log-show-hide-bs-permission-manager": "$1 раководен дневник за дозволи",
+	"logeventslist-bs-permission-manager-log": "Раководен дневник за дозволи",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|ѝ ги измени}} дозволите на групата $4"
 }
