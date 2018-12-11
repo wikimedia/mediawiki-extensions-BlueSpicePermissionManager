@@ -37,7 +37,7 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 				me.btnOK.setDisabled( true );
 				me.btnCancel.setDisabled( true );
 			},
-			cls: 'bs-permissionmanager-button-progressive',
+			cls: 'x-btn-progressive',
 			disabled: true,
 			scope: this
 		});
