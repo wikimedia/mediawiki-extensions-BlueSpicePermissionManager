@@ -7,6 +7,8 @@
 	"bs-permissionmanager-header-namespaces": "Именни пространства",
 	"bs-permissionmanager-btn-save-label": "Съхраняване",
 	"bs-permissionmanager-labeltpled-desc": "Описание",
+	"bs-permissionmanager-labeltpled-add": "Нов",
+	"bs-permissionmanager-labeltpled-edit": "Редактиране",
 	"bs-permissionmanager-labeltpled-delete": "Изтриване",
 	"bs-permissionmanager-labeltpled-cancel": "Отказ"
 }
