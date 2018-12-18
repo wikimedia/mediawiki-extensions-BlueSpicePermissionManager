@@ -101,14 +101,15 @@ html.bs-maximizable-panel-fullscreen {
 	display: none;
 }
 
-.icon-group:before {
+.icon-custom-group:before {
 	content: '\f0c0';
-	font-family: 'fontawesome'
+	font-family: 'fontawesome';
+	color: #a5a5a5;
 }
 
 .icon-builtin-group:before {
 	content: '\f0c0';
-	font-family: 'fontawesome'
+	font-family: 'fontawesome';
 }
 
 .namespace-column .x-column-header-inner {

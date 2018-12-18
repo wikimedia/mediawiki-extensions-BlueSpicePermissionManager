@@ -2,7 +2,7 @@ Ext.define( 'BS.PermissionManager.grid.column.RoleHint', {
 	requires: [ 'BS.PermissionManager.dialog.RolePermissions' ],
 	extend: 'Ext.grid.column.Action',
 	alias: 'widget.bs-pm-rolehint',
-	width: 20,
+	width: 25,
 	renderer: function( value, metadata, record ) {
 		var cssPrefix = Ext.baseCSSPrefix;
 		var cls = [cssPrefix + 'grid-rolehint'];
