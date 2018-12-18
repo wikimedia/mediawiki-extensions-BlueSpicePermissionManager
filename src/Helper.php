@@ -82,7 +82,7 @@ class Helper {
 				$explicitGroupNode[ 'builtin' ] = true;
 				$explicitGroupNode[ 'iconCls' ] = 'icon-builtin-group';
 			} else {
-				$explicitGroupNode[ 'iconCls' ] = 'icon-group';
+				$explicitGroupNode[ 'iconCls' ] = 'icon-custom-group';
 			}
 
 			$explicitGroupNodes[] = $explicitGroupNode;
