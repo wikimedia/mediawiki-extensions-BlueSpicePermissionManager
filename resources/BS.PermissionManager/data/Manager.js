@@ -236,24 +236,37 @@
 		group = group || workingGroup;
 		if( checkRole( role ) ) {
 			// if there is no lockdown rule for this namespace
-			// the group has the permission
+			// the group has the role
 			if( !Ext.isDefined( roleLockdown[ namespace ] ) ) {
 				return ALLOWED_IMPLICIT;
 			}
 
-			// if there is no lockdown rule for this right in this namespace
+			// if there is no lockdown rule for this role in this namespace
 			// the group has the permission
 			if( !Ext.isDefined( roleLockdown[ namespace ][ role ] ) ) {
 				return ALLOWED_IMPLICIT;
 			}
 
 			// if there is a lockdown rule and it contains this group
-			// the group has the permission
+			// the group has the role
 			if( Ext.isArray( roleLockdown[ namespace ][ role ] ) ) {
 				if( Ext.Array.contains( roleLockdown[ namespace ][ role ], group ) ) {
+					// Explicitly granted for this group
 					return ALLOWED_EXPLICIT;
 				} else if( roleLockdown[ namespace ][ role ].length === 0 ) {
+					// Not explicitly granted to any role (edge case)
 					return ALLOWED_IMPLICIT;
+				} else if( group === 'user' ) {
+					// If current group is user, check if * has explicit permissions
+					if( checkRoleInNamespace( role, namespace, '*' ) === ALLOWED_EXPLICIT ) {
+						return ALLOWED_IMPLICIT;
+					}
+				} else if( group !== '*' && group !== 'user' ) {
+					// If group is a sub-group of user, check if user or * has it set explicitly
+					if( checkRoleInNamespace( role, namespace, '*' ) === ALLOWED_EXPLICIT
+						|| checkRoleInNamespace( role, namespace, 'user' ) === ALLOWED_EXPLICIT ) {
+						return ALLOWED_IMPLICIT;
+					}
 				}
 			}
 		}
@@ -273,11 +286,18 @@
 		var groupsWiki = [];
 		for( var i = 0; i < groups.length; i++ ) {
 			var group = groups[i];
-			var res = checkRoleInNamespace( role, namespace, group );
-			if( res === ALLOWED_EXPLICIT ) {
-				explicitGroupsNS.push( group );
-				continue;
+			if ( namespace ) {
+				var res = checkRoleInNamespace( role, namespace, group );
+				if( res === ALLOWED_EXPLICIT ) {
+					explicitGroupsNS.push( group );
+					continue;
+				}
+				if( res === ALLOWED_IMPLICIT ) {
+					groupsWiki.push( { group : group, type: res } );
+					continue;
+				}
 			}
+
 			res = checkRole( role, group );
 			if( res === ALLOWED_EXPLICIT || res === ALLOWED_IMPLICIT ) {
 				groupsWiki.push( { group : group, type: res } );
