@@ -39,11 +39,19 @@ class ApiPermissionManager extends \BSApiTasksBase {
 		$ret = $this->makeStandardReturn();
 		$ret->success = true;
 		$arrRes = \BlueSpice\PermissionManager\Extension::saveRoles( $data );
-
-		if ( $arrRes !== true && ( !isset( $arrRes['success'] ) || $arrRes['success'] !== true ) ) {
-			$ret->errors[] = $arrRes;
-			$ret->message = wfMessage("internalerror_info")->params( $arrRes )->plain();
-			$ret->success = false;
+		if ( is_array( $arrRes ) ) {
+			if ( isset( $arrRes['success'] ) ) {
+				$ret->success = $arrRes['success'];
+			}
+			if ( isset( $arrRes['message'] ) ) {
+				$ret->message = $arrRes['message'];
+			}
+		} else {
+			if ( $arrRes !== true ) {
+				$ret->errors[] = $arrRes;
+				$ret->success = false;
+				$ret->message = wfMessage( "internalerror_info" )->params( $arrRes )->plain();
+			}
 		}
 
 		return $ret;
