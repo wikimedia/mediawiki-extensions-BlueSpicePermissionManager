@@ -4,7 +4,8 @@
 			"SPQRobin",
 			"Siebrand",
 			"Esketti",
-			"Sjoerddebruin"
+			"Sjoerddebruin",
+			"Mainframe98"
 		]
 	},
 	"bs-permissionmanager-desc": "Administratie-interface voor het bewerken van gebruikersrechten",
@@ -42,5 +43,6 @@
 	"bs-permissionmanager-pref-enablerealitycheck": "Activeren toestemming controleren",
 	"bs-permissionmanager-unsaved-changes": "Er zijn niet opgeslagen wijzigingen. Wilt u echt de pagina verlaten? De niet-opgeslagen wijzigingen gaan dan verloren.",
 	"log-name-bs-permission-manager": "Logboek toestemmingenbeheer",
-	"log-show-hide-bs-permission-manager": "Logboek toestemmingenbeheer $1"
+	"log-show-hide-bs-permission-manager": "Logboek toestemmingenbeheer $1",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Beschrijving"
 }
