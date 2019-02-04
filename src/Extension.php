@@ -126,11 +126,8 @@ class Extension extends \BlueSpice\Extension{
 		if ( wfReadOnly() ) {
 			return array(
 					'success' => false,
-					'msg' => wfMessage( 'bs-readonly', wfReadOnlyReason() )->plain()
+					'message' => wfMessage( 'bs-readonly', wfReadOnlyReason() )->plain()
 			);
-		}
-		if ( \BsCore::checkAccessAdmission( 'wikiadmin' ) === false ) {
-			return true;
 		}
 
 		$roleMatrixDiff = new RoleMatrixDiff( $config, $groupRoles, $roleLockdown );
@@ -184,7 +181,7 @@ class Extension extends \BlueSpice\Extension{
 		} else {
 			return array(
 					'success' => false,
-					'msg' => wfMessage( 'bs-permissionmanager-write-config-file-error', $configFile )
+					'message' => wfMessage( 'bs-permissionmanager-write-config-file-error', basename( $configFile ) )->plain()
 			);
 		}
 	}
