@@ -169,7 +169,7 @@ class Extension extends \BlueSpice\Extension{
 					$isReadLockdown = true;
 				}
 			}
-			if ( $isReadLockdown ) {
+			if ( $isReadLockdown && $nsId !== NS_TEMPLATE ) {
 				$saveContent .= "\$GLOBALS['wgNonincludableNamespaces'][] = $nsConstant;\n";
 			}
 		}
