@@ -82,6 +82,7 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 		me.treeGroups = new BS.PermissionManager.tree.Groups({
 			region: 'west',
 			collapsible: false,
+			split: true,
 			width: 250
 		});
 
