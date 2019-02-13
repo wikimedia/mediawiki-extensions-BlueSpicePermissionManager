@@ -44,5 +44,6 @@
 	"bs-permissionmanager-unsaved-changes": "Er zijn niet opgeslagen wijzigingen. Wilt u echt de pagina verlaten? De niet-opgeslagen wijzigingen gaan dan verloren.",
 	"log-name-bs-permission-manager": "Logboek toestemmingenbeheer",
 	"log-show-hide-bs-permission-manager": "Logboek toestemmingenbeheer $1",
+	"bs-permissionmanager-group-all": "alle",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Beschrijving"
 }
