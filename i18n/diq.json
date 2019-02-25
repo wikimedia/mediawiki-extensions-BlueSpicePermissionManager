@@ -6,7 +6,9 @@
 	},
 	"bs-permissionmanager-header-namespaces": "Heruna nameyan",
 	"bs-permissionmanager-btn-save-label": "Qeyd ke",
+	"bs-permissionmanager-btn-save-in-progress-label": "Qeyd beno...",
 	"bs-permissionmanager-labeltpled-desc": "Şınasnayış",
+	"bs-permissionmanager-labeltpled-add": "Newe",
 	"bs-permissionmanager-labeltpled-edit": "Bıvurne",
 	"bs-permissionmanager-labeltpled-delete": "Bestere",
 	"bs-permissionmanager-labeltpled-cancel": "Bıtexelne"
