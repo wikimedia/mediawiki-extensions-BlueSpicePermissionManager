@@ -4,7 +4,9 @@
 			"Mirzali"
 		]
 	},
+	"bs-permissionmanager-btn-group-label": "Grube:",
 	"bs-permissionmanager-header-namespaces": "Heruna nameyan",
+	"bs-permissionmanager-header-group": "Grube",
 	"bs-permissionmanager-btn-save-label": "Qeyd ke",
 	"bs-permissionmanager-btn-save-in-progress-label": "Qeyd beno...",
 	"bs-permissionmanager-labeltpled-desc": "Şınasnayış",
