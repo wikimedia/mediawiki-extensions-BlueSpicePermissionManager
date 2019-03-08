@@ -6,9 +6,5 @@
 	},
 	"bs-permissionmanager-header-namespaces": "Imenski prostori",
 	"bs-permissionmanager-btn-save-label": "Sačuvaj",
-	"bs-permissionmanager-btn-save-in-progress-label": "Čuvanje...",
-	"bs-permissionmanager-labeltemplates": "Šabloni",
-	"bs-permissionmanager-labeltpled-desc": "Opis",
-	"bs-permissionmanager-labeltpled-edit": "Uredi",
-	"bs-permissionmanager-labeltpled-delete": "Obriši"
+	"bs-permissionmanager-btn-save-in-progress-label": "Čuvanje..."
 }
