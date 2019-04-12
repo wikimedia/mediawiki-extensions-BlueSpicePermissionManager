@@ -14,7 +14,7 @@ class Helper {
 	];
 
 	public static function getInstance() {
-		if( self::$instance == null ) {
+		if ( self::$instance == null ) {
 			self::$instance = self::createInstance();
 		}
 		return self::$instance;
@@ -40,7 +40,7 @@ class Helper {
 		return $this->namespaceRolesLockdown;
 	}
 
-	public function setGroups () {
+	public function setGroups() {
 		$this->groups = [];
 
 		$this->groups = [
@@ -66,17 +66,17 @@ class Helper {
 
 	protected function addOtherGroups() {
 		$explicitGroups = \BsGroupHelper::getAvailableGroups(
-			array( 'blacklist' => $this->implicitGroups )
+			[ 'blacklist' => $this->implicitGroups ]
 		);
 
 		sort( $explicitGroups );
 
 		$explicitGroupNodes = [];
 		foreach ( $explicitGroups as $explicitGroup ) {
-			$explicitGroupNode = array(
+			$explicitGroupNode = [
 				'text' => $explicitGroup,
 				'leaf' => true
-			);
+			];
 
 			if ( in_array( $explicitGroup, $this->builtInGroups ) ) {
 				$explicitGroupNode[ 'builtin' ] = true;
@@ -92,7 +92,7 @@ class Helper {
 	}
 
 	public function getGroups() {
-		if( empty( $this->groups ) ) {
+		if ( empty( $this->groups ) ) {
 			$this->setGroups();
 		}
 		return $this->groups;
@@ -103,10 +103,10 @@ class Helper {
 		$namespaces = $lang->getNamespaces();
 		ksort( $namespaces );
 
-		$metadata = array();
+		$metadata = [];
 
 		foreach ( $namespaces as $nsId => $localizedNSText ) {
-			if ( $nsId < 0 ) { //Filter pseudo namespaces
+			if ( $nsId < 0 ) { // Filter pseudo namespaces
 				continue;
 			}
 
@@ -115,13 +115,13 @@ class Helper {
 				$nsText = wfMessage( 'bs-ns_main' )->text();
 			}
 
-			$metadata[] = array(
+			$metadata[] = [
 					'id' => $nsId,
 					'name' => $nsText,
 					'hideable' => $nsId !== NS_MAIN,
 					'content' => \MWNamespace::isContent( $nsId ),
 					'talk' => \MWNamespace::isTalk( $nsId )
-			);
+			];
 		}
 
 		return $metadata;
@@ -129,7 +129,7 @@ class Helper {
 
 	public function formatPermissionsToHint( $rolesAndPermissions ) {
 		$res = [];
-		foreach( $rolesAndPermissions as $roleAndPermissions ) {
+		foreach ( $rolesAndPermissions as $roleAndPermissions ) {
 			$permissionList = implode( ', ', $roleAndPermissions[ 'permissions' ] );
 			$permissionCount = count( $roleAndPermissions[ 'permissions' ] );
 			$hintText = wfMessage( 'bs-permissionmanager-hint', $permissionList, $permissionCount )->parse();
@@ -141,4 +141,3 @@ class Helper {
 		return $res;
 	}
 }
-

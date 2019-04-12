@@ -25,8 +25,8 @@ class RolePermissionsStore extends \BSApiExtJSStoreBase {
 		$permissions = PermissionManager::getRolePermissions( $role, true );
 
 		$result = [];
-		foreach( $permissions as $permission => $desc ) {
-			$result[] = (object) [
+		foreach ( $permissions as $permission => $desc ) {
+			$result[] = (object)[
 				'permission_name' => $permission,
 				'permission_desc' => $desc
 			];

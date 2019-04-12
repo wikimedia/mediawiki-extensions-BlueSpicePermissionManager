@@ -13,14 +13,14 @@ class UnassignRoles extends BSGroupManagerGroupDeleted {
 
 		unset( $groupRoles[$this->group] );
 
-		foreach( $namespaceLockdown as $ns => &$roles ) {
-			foreach( $roles as $role => &$groups ) {
-				if( in_array( $this->group, $groups ) ) {
-					if( count( $groups ) === 1 ) {
+		foreach ( $namespaceLockdown as $ns => &$roles ) {
+			foreach ( $roles as $role => &$groups ) {
+				if ( in_array( $this->group, $groups ) ) {
+					if ( count( $groups ) === 1 ) {
 						unset( $namespaceLockdown[$ns][$role] );
 						continue;
 					}
-					$groups = array_diff( $groups, [$this->group] );
+					$groups = array_diff( $groups, [ $this->group ] );
 				}
 			}
 		}

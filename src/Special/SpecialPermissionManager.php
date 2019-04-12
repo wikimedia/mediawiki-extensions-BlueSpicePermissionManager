@@ -28,17 +28,16 @@ class SpecialPermissionManager extends \BlueSpice\SpecialPage {
 
 		$groupRoles = \BlueSpice\PermissionManager\Extension::getGroupRoles();
 
-		$jsVars = array(
+		$jsVars = [
 			'bsPermissionManagerGroupsTree' => $groups,
 			'bsPermissionManagerRoles' => $rolesAndHints,
 			'bsPermissionManagerNamespaces' => $helper->buildNamespaceMetadata(),
 			'bsPermissionManagerGroupRoles' => $groupRoles,
 			'bsPermissionManagerRoleLockdown' => $helper->getNamespaceRolesLockdown()
-		);
+		];
 
 		$this->getOutput()->addJsConfigVars( $jsVars );
 
 		$this->getOutput()->addHTML( '<div id="panelPermissionManager"  class="bs-manager-container" style="height: 800px"></div>' );
 	}
 }
-
