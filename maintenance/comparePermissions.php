@@ -1,8 +1,8 @@
 <?php
 
-$IP = dirname(dirname(dirname(__DIR__)));
+$IP = dirname( dirname( dirname( __DIR__ ) ) );
 
-require_once( "$IP/maintenance/Maintenance.php" );
+require_once "$IP/maintenance/Maintenance.php";
 
 class comparePermissions extends \Maintenance {
 	public function __construct() {
@@ -90,7 +90,7 @@ class comparePermissions extends \Maintenance {
 		$missing = [];
 		foreach ( $permissions as $group => $permissions ) {
 			foreach ( $permissions as $permission => $granted ) {
-				if ( !$granted ){
+				if ( !$granted ) {
 					continue;
 				}
 				$unique[$permission] = true;
@@ -160,9 +160,9 @@ class comparePermissions extends \Maintenance {
 
 	protected function getCSVRow( $permission, $data ) {
 		$row = $permission . '|';
-		$row .=  implode( ',', $data['oldGroups'] ) . '|';
-		$row .=  implode( ',', $data['newGroups'] ) . '|';
-		$row .=  implode( ',', $data['roles'] ) . '|';
+		$row .= implode( ',', $data['oldGroups'] ) . '|';
+		$row .= implode( ',', $data['newGroups'] ) . '|';
+		$row .= implode( ',', $data['roles'] ) . '|';
 		$row .= $data['inRegistry'] . "\n";
 
 		return $row;
@@ -170,4 +170,4 @@ class comparePermissions extends \Maintenance {
 }
 
 $maintClass = 'comparePermissions';
-require_once( RUN_MAINTENANCE_IF_MAIN );
+require_once RUN_MAINTENANCE_IF_MAIN;

@@ -4,13 +4,13 @@ namespace BlueSpice\PermissionManager\Api;
 
 class ApiPermissionManager extends \BSApiTasksBase {
 
-	protected $aTasks = array(
+	protected $aTasks = [
 		'saveRoles' => [
 			'examples' => [
-				//TODO
+				// TODO
 			]
 		]
-	);
+	];
 
 	public function getTaskDataDefinitions() {
 		return [
@@ -30,9 +30,9 @@ class ApiPermissionManager extends \BSApiTasksBase {
 	}
 
 	protected function getRequiredTaskPermissions() {
-		return array(
-			'saveRoles' => array( 'wikiadmin' )
-		);
+		return [
+			'saveRoles' => [ 'wikiadmin' ]
+		];
 	}
 
 	protected function task_saveRoles( $data ) {

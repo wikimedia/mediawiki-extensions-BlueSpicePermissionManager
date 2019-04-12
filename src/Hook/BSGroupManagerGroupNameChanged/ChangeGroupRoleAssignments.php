@@ -14,12 +14,12 @@ class ChangeGroupRoleAssignments extends BSGroupManagerGroupNameChanged {
 		$groupRoles[$this->newGroup] = $groupRoles[$this->group];
 		unset( $groupRoles[$this->group] );
 
-		foreach( $namespaceLockdown as $ns => &$roles ) {
-			foreach( $roles as $role => &$groups ) {
-				if( in_array( $this->group, $groups ) ) {
+		foreach ( $namespaceLockdown as $ns => &$roles ) {
+			foreach ( $roles as $role => &$groups ) {
+				if ( in_array( $this->group, $groups ) ) {
 					$index = array_search( $this->group, $groups );
-					if( $index !== false ) {
-						array_splice( $groups, $index, 1, array( $this->newGroup ) );
+					if ( $index !== false ) {
+						array_splice( $groups, $index, 1, [ $this->newGroup ] );
 					}
 				}
 			}

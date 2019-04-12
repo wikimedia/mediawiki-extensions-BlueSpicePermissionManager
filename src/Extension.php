@@ -25,15 +25,15 @@
  * @package    BlueSpice_Extensions
  * @subpackage PermissionManager
  * @copyright  Copyright (C) 2018 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
 
 namespace BlueSpice\PermissionManager;
-use BlueSpice;
-use BlueSpice\PermissionManager\RoleMatrixDiff;
 
-class Extension extends \BlueSpice\Extension{
+use BlueSpice;
+
+class Extension extends \BlueSpice\Extension {
 	/**
 	 * Instance of Manager class that handles
 	 * all role-related operations
@@ -66,8 +66,8 @@ class Extension extends \BlueSpice\Extension{
 			'BSRoleManager'
 		);
 
-		//Implicitly enable role system
-		if( self::$roleManager->isRoleSystemEnabled() == false ) {
+		// Implicitly enable role system
+		if ( self::$roleManager->isRoleSystemEnabled() == false ) {
 			self::$roleManager->enableRoleSystem();
 		}
 	}
@@ -80,24 +80,24 @@ class Extension extends \BlueSpice\Extension{
 
 	public static function getRolePermissions( $role, $includeDesc = false ) {
 		$role = self::$roleManager->getRole( $role );
-		if( $role instanceof \BlueSpice\Permission\Role\IRole === false ) {
+		if ( $role instanceof \BlueSpice\Permission\Role\IRole === false ) {
 			return [];
 		}
 
 		$permissions = $role->getPermissions();
-		if( !$includeDesc ) {
+		if ( !$includeDesc ) {
 			return $permissions;
 		}
 
 		$permissionsAndDescs = [];
-		foreach( $permissions as $permission ) {
+		foreach ( $permissions as $permission ) {
 			$permissionsAndDescs[ $permission ] =
 				wfMessage( "right-$permission" )->plain();
 		}
 		return $permissionsAndDescs;
 	}
 
-	public static function getGroupRoles () {
+	public static function getGroupRoles() {
 		return self::$roleManager->getGroupRoles();
 	}
 
@@ -106,10 +106,10 @@ class Extension extends \BlueSpice\Extension{
 			return false;
 		}
 
-		$groupRoles = ( array ) $data->groupRoles;
-		$roleLockdown = ( array ) $data->roleLockdown;
+		$groupRoles = (array)$data->groupRoles;
+		$roleLockdown = (array)$data->roleLockdown;
 
-		$status = \Hooks::run( 'BsPermissionManager::beforeSaveRoles', array( &$groupRoles, &$roleLockdown ) );
+		$status = \Hooks::run( 'BsPermissionManager::beforeSaveRoles', [ &$groupRoles, &$roleLockdown ] );
 
 		if ( !$status ) {
 			return false;
@@ -124,10 +124,10 @@ class Extension extends \BlueSpice\Extension{
 		$configFile = $config->get( 'ConfigFiles' )[ 'PermissionManager' ];
 
 		if ( wfReadOnly() ) {
-			return array(
+			return [
 					'success' => false,
 					'message' => wfMessage( 'bs-readonly', wfReadOnlyReason() )->plain()
-			);
+			];
 		}
 
 		$roleMatrixDiff = new RoleMatrixDiff( $config, $groupRoles, $roleLockdown );
@@ -136,36 +136,36 @@ class Extension extends \BlueSpice\Extension{
 
 		self::backupExistingSettings();
 		$saveContent = "<?php\n";
-		foreach( $groupRoles as $group => $roleArray ) {
+		foreach ( $groupRoles as $group => $roleArray ) {
 			foreach ( $roleArray as $role => $value ) {
 				$saveContent .= "\$GLOBALS['bsgGroupRoles']['{$group}']['{$role}'] = " . ( $value ? 'true' : 'false' ) . ";\n";
 			}
 		}
 
-		foreach( $roleLockdown as $nsId => $roles ) {
+		foreach ( $roleLockdown as $nsId => $roles ) {
 			$nsCanonicalName = \MWNamespace::getCanonicalName( $nsId );
-			if( $nsId == NS_MAIN ) {
+			if ( $nsId == NS_MAIN ) {
 				$nsCanonicalName = 'MAIN';
 			}
 
 			$nsConstant = "NS_" . strtoupper( $nsCanonicalName );
-			if( !defined( $nsConstant ) ) {
+			if ( !defined( $nsConstant ) ) {
 				$nsConstant = $nsId;
 			}
 
 			$isReadLockdown = false;
-			foreach( $roles as $roleName => $groups ) {
-				if( empty( $groups ) ) {
+			foreach ( $roles as $roleName => $groups ) {
+				if ( empty( $groups ) ) {
 					continue;
 				}
 				$saveContent .= "\$GLOBALS['bsgNamespaceRolesLockdown'][ $nsConstant ][ '$roleName' ]"
 					. " = array(" . ( count( $groups ) ? "'" . implode( "','", $groups ) . "'" : '' ) . ");\n";
 				$roleObject = self::$roleManager->getRole( $roleName );
-				if( $roleObject == null ) {
+				if ( $roleObject == null ) {
 					continue;
 				}
 				$permissions = $roleObject->getPermissions();
-				if( in_array( 'read', $permissions ) ) {
+				if ( in_array( 'read', $permissions ) ) {
 					$isReadLockdown = true;
 				}
 			}
@@ -177,34 +177,34 @@ class Extension extends \BlueSpice\Extension{
 		$res = file_put_contents( $configFile, $saveContent );
 		if ( $res ) {
 			self::doLog( $globalDiff, $nsDiff );
-			return array( 'success' => true );
+			return [ 'success' => true ];
 		} else {
-			return array(
+			return [
 					'success' => false,
 					'message' => wfMessage( 'bs-permissionmanager-write-config-file-error', basename( $configFile ) )->plain()
-			);
+			];
 		}
 	}
 
 	protected static function doLog( $globalDiff, $nsDiff ) {
-		foreach( $globalDiff as $group => $roles ) {
+		foreach ( $globalDiff as $group => $roles ) {
 			$addedRoles = [];
 			$removedRoles = [];
-			foreach( $roles as $role => $added ) {
-				if( $added ) {
+			foreach ( $roles as $role => $added ) {
+				if ( $added ) {
 					$addedRoles[] = $role;
 				} else {
 					$removedRoles[] = $role;
 				}
 			}
-			if( !empty( $addedRoles ) ) {
+			if ( !empty( $addedRoles ) ) {
 				self::insertLog( 'global-add', [
 					'4::diffGroup' => $group,
 					'5::diffRoles' => implode( ',', $addedRoles ),
 					'6::roleCount' => count( $addedRoles )
 				] );
 			}
-			if( !empty( $removedRoles ) ) {
+			if ( !empty( $removedRoles ) ) {
 				self::insertLog( 'global-remove', [
 					'4::diffGroup' => $group,
 					'5::diffRoles' => implode( ',', $removedRoles ),
@@ -213,22 +213,22 @@ class Extension extends \BlueSpice\Extension{
 			}
 		}
 
-		foreach( $nsDiff as $group => $namespaces ) {
-			foreach( $namespaces as $ns => $roles ) {
+		foreach ( $nsDiff as $group => $namespaces ) {
+			foreach ( $namespaces as $ns => $roles ) {
 				$nsCanonical = \MWNamespace::getCanonicalName( $ns );
-				if( $ns === NS_MAIN ) {
+				if ( $ns === NS_MAIN ) {
 					$nsCanonical = wfMessage( 'bs-ns_main' )->plain();
 				}
 				$addedRoles = [];
 				$removedRoles = [];
-				foreach( $roles as $role => $added ) {
-					if( $added ) {
+				foreach ( $roles as $role => $added ) {
+					if ( $added ) {
 						$addedRoles[] = $role;
 					} else {
 						$removedRoles[] = $role;
 					}
 				}
-				if( !empty( $addedRoles ) ) {
+				if ( !empty( $addedRoles ) ) {
 					self::insertLog( 'ns-add', [
 						'4::diffGroup' => $group,
 						'5::diffRoles' => implode( ',', $addedRoles ),
@@ -236,7 +236,7 @@ class Extension extends \BlueSpice\Extension{
 						'7::ns' => $nsCanonical
 					] );
 				}
-				if( !empty( $removedRoles ) ) {
+				if ( !empty( $removedRoles ) ) {
 					self::insertLog( 'ns-remove', [
 						'4::diffGroup' => $group,
 						'5::diffRoles' => implode( ',', $removedRoles ),
@@ -276,17 +276,16 @@ class Extension extends \BlueSpice\Extension{
 			file_put_contents( $backupFile, file_get_contents( $configFile ) );
 		}
 
-		//remove old backup files if max number exceeded
+		// remove old backup files if max number exceeded
 		$arrConfigFiles = scandir( dirname( $configFile ) . "/", SCANDIR_SORT_ASCENDING );
-		$arrBackupFiles = array_filter( $arrConfigFiles, function( $elem ) {
-			return ( strpos( $elem, "pm-settings-backup-" ) !== FALSE ) ? true : false;
+		$arrBackupFiles = array_filter( $arrConfigFiles, function ( $elem ) {
+			return ( strpos( $elem, "pm-settings-backup-" ) !== false ) ? true : false;
 		} );
-		
-		//default limit to 5 backups, remove all backup files until "maxbackups" files left
+
+		// default limit to 5 backups, remove all backup files until "maxbackups" files left
 		while ( count( $arrBackupFiles ) > $config->get( "PermissionManagerMaxBackups" ) ) {
 			$oldBackupFile = dirname( $configFile ) . "/" . array_shift( $arrBackupFiles );
 			unlink( $oldBackupFile );
 		}
 	}
 }
-
