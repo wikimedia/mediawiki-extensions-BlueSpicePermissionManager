@@ -1,12 +1,12 @@
 <?php
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English */
-$specialPageAliases['en'] = array(
-	'PermissionManager' => array( 'PermissionManager', 'Permission Manager' ),
-);
+$specialPageAliases['en'] = [
+	'PermissionManager' => [ 'PermissionManager', 'Permission Manager' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'PermissionManager' => array( 'PermissionManager', 'Permission Manager', 'Rechteverwaltung', 'Rechtemanager' ),
-);
+$specialPageAliases['de'] = [
+	'PermissionManager' => [ 'PermissionManager', 'Permission Manager', 'Rechteverwaltung', 'Rechtemanager' ],
+];
