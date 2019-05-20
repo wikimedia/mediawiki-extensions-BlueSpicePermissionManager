@@ -5,7 +5,8 @@
 			"Linforest",
 			"A Chinese Wikipedian",
 			"Phenolla",
-			"佛壁灯"
+			"佛壁灯",
+			"科劳"
 		]
 	},
 	"bs-permissionmanager-desc": "用于编辑用户权限的管理界面",
@@ -44,7 +45,7 @@
 	"bs-permissionmanager-hint": "此角色包含{{PLURAL:$2|以下权限：$1}}",
 	"bs-permissionmanager-header-role": "角色",
 	"bs-permissionmanager-write-config-file-error": "无法创建或写入$1",
-	"right-permissionmanager-viewspecialpage": "授予访问特殊页面 [[Special:PermissionManager]] 的权限。",
+	"right-permissionmanager-viewspecialpage": "访问页面 [[Special:PermissionManager]] 的权限",
 	"bs-permissionmanager-show-system-groups-label": "显示系统群组",
 	"bs-permissionmanager-role-permissions-label": "规则许可：$1",
 	"bs-permissionmanager-role-permissions-column-permission": "权限",

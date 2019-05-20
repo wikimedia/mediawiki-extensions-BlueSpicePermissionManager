@@ -43,7 +43,7 @@
 	"bs-permissionmanager-hint": "يتضمن هذا الدور {{PLURAL:$2|الصلاحية التالية: $1|الصلاحيات التالية: $1}}",
 	"bs-permissionmanager-header-role": "الدور",
 	"bs-permissionmanager-write-config-file-error": "غير قادر على إنشاء أو كتابة $1",
-	"right-permissionmanager-viewspecialpage": "يمنح الوصول إلى الصفحة الخاصة [[Special:PermissionManager]].",
+	"right-permissionmanager-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:PermissionManager]]",
 	"bs-permissionmanager-show-system-groups-label": "إظهار مجموعات النظام",
 	"bs-permissionmanager-role-permissions-label": "الصلاحيات في الدور: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "الصلاحيات",

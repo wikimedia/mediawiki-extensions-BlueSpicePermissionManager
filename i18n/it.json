@@ -27,6 +27,7 @@
 	"bs-permissionmanager-group-all": "tutto",
 	"bs-permissionmanager-hint": "Questo ruolo include {{PLURAL:$2|la seguente autorizzazione: $1|le seguenti autorizzazioni: $1}}",
 	"bs-permissionmanager-header-role": "Ruolo",
+	"right-permissionmanager-viewspecialpage": "Accede alla pagina speciale [[Special:PermissionManager]]",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Descrizione",
 	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|ha}} aggiunto {{PLURAL:$6|il ruolo|i ruoli}} $5 al gruppo $4",
 	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|ha}} rimosso {{PLURAL:$6|il ruolo|i ruoli}} $5 dal gruppo $4",
