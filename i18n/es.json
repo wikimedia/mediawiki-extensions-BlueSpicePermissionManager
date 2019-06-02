@@ -8,7 +8,8 @@
 			"Ryo567",
 			"AlvaroMolina",
 			"MarcoAurelio",
-			"Vanbasten 23"
+			"Vanbasten 23",
+			"Agusbou2015"
 		]
 	},
 	"bs-permissionmanager-desc": "Interfaz administrativa para gestionar permisos de usuarios",
@@ -42,6 +43,7 @@
 	"bs-permissionmanager-affected-by-notset": "No establecido",
 	"bs-permissionmanager-affected-by-explicitlyset": "Explícitamente establecido",
 	"bs-permissionmanager-group-all": "todos",
+	"bs-permissionmanager-header-role": "Papel",
 	"right-permissionmanager-viewspecialpage": "Otorga acceso a la página especial [[Special:PermissionManager]].",
 	"bs-permissionmanager-role-permissions-column-permission": "Permiso",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Descripción",
