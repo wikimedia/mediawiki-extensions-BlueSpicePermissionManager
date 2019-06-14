@@ -31,14 +31,17 @@
 
 namespace BlueSpice\PermissionManager;
 
-use BlueSpice;
+use BlueSpice\Permission\IRole;
+use BlueSpice\Permission\RoleManager;
+use BlueSpice\Services;
+use Hooks;
 
 class Extension extends \BlueSpice\Extension {
 	/**
 	 * Instance of Manager class that handles
 	 * all role-related operations
 	 *
-	 * @var BlueSpice\Permission\Manager
+	 * @var  RoleManager
 	 */
 	protected static $roleManager;
 	/**
@@ -59,10 +62,10 @@ class Extension extends \BlueSpice\Extension {
 	}
 
 	public static function run() {
-		self::$permissionRegistry = \MediaWiki\MediaWikiServices::getInstance()->getService(
+		self::$permissionRegistry = Services::getInstance()->getService(
 			'BSPermissionRegistry'
 		);
-		self::$roleManager = \MediaWiki\MediaWikiServices::getInstance()->getService(
+		self::$roleManager = Services::getInstance()->getService(
 			'BSRoleManager'
 		);
 
@@ -80,7 +83,7 @@ class Extension extends \BlueSpice\Extension {
 
 	public static function getRolePermissions( $role, $includeDesc = false ) {
 		$role = self::$roleManager->getRole( $role );
-		if ( $role instanceof \BlueSpice\Permission\Role\IRole === false ) {
+		if ( $role instanceof IRole === false ) {
 			return [];
 		}
 
@@ -109,7 +112,7 @@ class Extension extends \BlueSpice\Extension {
 		$groupRoles = (array)$data->groupRoles;
 		$roleLockdown = (array)$data->roleLockdown;
 
-		$status = \Hooks::run( 'BsPermissionManager::beforeSaveRoles', [ &$groupRoles, &$roleLockdown ] );
+		$status = Hooks::run( 'BsPermissionManager::beforeSaveRoles', [ &$groupRoles, &$roleLockdown ] );
 
 		if ( !$status ) {
 			return false;
@@ -120,7 +123,7 @@ class Extension extends \BlueSpice\Extension {
 	}
 
 	protected static function writeGroupSettings( $groupRoles, $roleLockdown ) {
-		$config = \MediaWiki\MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		$config = Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 		$configFile = $config->get( 'ConfigFiles' )[ 'PermissionManager' ];
 
 		if ( wfReadOnly() ) {
@@ -265,7 +268,7 @@ class Extension extends \BlueSpice\Extension {
 	 * @global string $bsgConfigFiles
 	 */
 	protected static function backupExistingSettings() {
-		$config = \MediaWiki\MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		$config = Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 		$configFile = $config->get( 'ConfigFiles' )[ 'PermissionManager' ];
 
 		if ( file_exists( $configFile ) ) {
