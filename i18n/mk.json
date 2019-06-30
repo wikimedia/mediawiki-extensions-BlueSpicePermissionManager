@@ -26,6 +26,7 @@
 	"log-show-hide-bs-permission-manager": "$1 раководен дневник за дозволи",
 	"logeventslist-bs-permission-manager-log": "Раководен дневник за дозволи",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|ѝ ги измени}} дозволите на групата $4",
+	"action-permissionmanager-viewspecialpage": "преглед на службената страница „{{int:bs-permissionmanager-label}}“",
 	"permissionmanager": "Раководител со дозволи",
 	"bs-permissionmanager-affected-by-explicit": "Блокиран од $1",
 	"bs-permissionmanager-group-all": "сите",
