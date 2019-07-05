@@ -50,5 +50,7 @@
 	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|has}} added {{PLURAL:$6|role|roles}} $5 to group $4",
 	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|has}} removed {{PLURAL:$6|role|roles}} $5 from group $4",
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|has}} added {{PLURAL:$6|role|roles}} $5 in namespace $7 to group $4",
-	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|has}} removed {{PLURAL:$6|role|roles}} $5 in namespace $7 from group $4"
+	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|has}} removed {{PLURAL:$6|role|roles}} $5 in namespace $7 from group $4",
+	"bs-permissionmanager-affected-by-dependency-single": "- $1 - available in {{PLURAL:$3|role|roles}}: $2",
+	"bs-permissionmanager-affected-by-dependency": "This role requires {{PLURAL:$2|the following permission|following permissions}}:\n$1"
 }

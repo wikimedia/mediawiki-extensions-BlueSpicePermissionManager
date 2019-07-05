@@ -21,6 +21,8 @@
 
 	var roleLockdown = Ext.Object.merge( {}, mw.config.get( 'bsPermissionManagerRoleLockdown', {} ) );
 
+	var roleDependencyTree = mw.config.get( 'bsPermissionManagerRoleDependencyTree', {} );
+
 	/**
 	 * holds references to the modified values of every defined user group
 	 * @type {object<string, Array.<Ext.data.Model>>}
@@ -244,6 +246,9 @@
 			// if there is no lockdown rule for this role in this namespace
 			// the group has the permission
 			if( !Ext.isDefined( roleLockdown[ namespace ][ role ] ) ) {
+				if ( dependsOnBlocked( role, namespace ) ) {
+					return NOT_ALLOWED;
+				}
 				return ALLOWED_IMPLICIT;
 			}
 
@@ -272,6 +277,68 @@
 		}
 		// anything else means this group doesn't have the permission
 		return NOT_ALLOWED;
+	}
+
+	var dependencyBlockers = {};
+
+	function dependsOnBlocked( role, namespace ) {
+		if ( !roleDependencyTree.hasOwnProperty( role ) ) {
+			return false;
+		}
+		var dependencies = roleDependencyTree[role];
+		var blockers = $.extend( {}, dependencies );
+		var blockedOverall = false;
+		for( var right in dependencies ) {
+			if ( !dependencies.hasOwnProperty( right ) ) {
+				continue;
+			}
+			var blockedSingle = true;
+			for( var i = 0; i < dependencies[right].length; i++ ) {
+				if ( checkRoleInNamespace( dependencies[right][i], namespace ) !== NOT_ALLOWED ) {
+					blockedSingle = false;
+					break;
+				}
+			}
+			if ( !blockedSingle ) {
+				delete( blockers[right] );
+			} else {
+				blockedOverall = true;
+			}
+		}
+		dependencyBlockers[role] = dependencyBlockers[role] || {};
+		dependencyBlockers[role][namespace] = blockers;
+
+		return blockedOverall;
+	}
+
+	function getDependencyBlockMessage( role, namespace ) {
+		if ( !dependencyBlockers.hasOwnProperty( role ) ) {
+			return '';
+		}
+		if ( !dependencyBlockers[role].hasOwnProperty( namespace ) ) {
+			return '';
+		}
+		var blockers = dependencyBlockers[role][namespace];
+		if ( $.isEmptyObject( blockers ) ) {
+			return '';
+		}
+		var singleBlockerMessages = [];
+
+		for( var right in blockers ) {
+			singleBlockerMessages.push(
+				mw.message(
+					'bs-permissionmanager-affected-by-dependency-single',
+					right,
+					blockers[right].join( ','),
+					blockers[right].length
+				).text()
+			);
+		}
+		return mw.message(
+				'bs-permissionmanager-affected-by-dependency',
+				singleBlockerMessages.join( "\n" ),
+				singleBlockerMessages.length
+			).text();
 	}
 
 	function getAffectedBy( role, type, namespace ) {
@@ -339,6 +406,12 @@
 			}
 
 			if( groupsWiki[i].group === workingGroup && type === NOT_ALLOWED ) {
+				if ( !sNSGroups && namespace ) {
+					return {
+						message: getDependencyBlockMessage( role, namespace),
+						isBlocked: true
+					};
+				}
 				return {
 					message: mw.message( 'bs-permissionmanager-affected-by-explicit', sNSGroups ).plain(),
 					isBlocked: true
