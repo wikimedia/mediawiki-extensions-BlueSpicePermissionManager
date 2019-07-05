@@ -32,7 +32,8 @@ class SpecialPermissionManager extends ManagerBase {
 			'bsPermissionManagerRoles' => $rolesAndHints,
 			'bsPermissionManagerNamespaces' => $helper->buildNamespaceMetadata(),
 			'bsPermissionManagerGroupRoles' => $groupRoles,
-			'bsPermissionManagerRoleLockdown' => $helper->getNamespaceRolesLockdown()
+			'bsPermissionManagerRoleLockdown' => $helper->getNamespaceRolesLockdown(),
+			'bsPermissionManagerRoleDependencyTree' => $helper->getRoleDependencyTree()
 		];
 	}
 

@@ -109,7 +109,9 @@
 				"bs-permissionmanager-role-permissions-label",
 				"bs-permissionmanager-role-permissions-column-permission",
 				"bs-permissionmanager-role-permissions-column-permission-desc",
-				"bs-premissionmanager-reset-button-label"
+				"bs-premissionmanager-reset-button-label",
+				"bs-permissionmanager-affected-by-dependency-single",
+				"bs-permissionmanager-affected-by-dependency"
 			]
 		},
 		"ext.bluespice.permissionManager.styles": {
