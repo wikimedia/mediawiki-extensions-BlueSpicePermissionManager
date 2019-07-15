@@ -52,5 +52,7 @@
 	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|قد}} تمت إضافة {{PLURAL:$6|دور|أدوار}} $5 إلى مجموعة $4",
 	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|has}} removed {{PLURAL:$6|role|roles}} $5 from group $4\n$1 {{GENDER:$2|قد}} تمت إزالة {{PLURAL:$6|دور|أدوار}} $5 من مجموعة $4",
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|قد}} تمت إضافة {{PLURAL:$6|دور|أدوار}} $5 في نطاق $7 إلى مجموعة $4",
-	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|قد}} تمت إزالة {{PLURAL:$6|دور|أدوار}} $5 في نطاق $7 من مجموعة $4"
+	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|قد}} تمت إزالة {{PLURAL:$6|دور|أدوار}} $5 في نطاق $7 من مجموعة $4",
+	"bs-permissionmanager-affected-by-dependency-single": "- $1 - متوفر في {{PLURAL:$3|دور|أدوار}}: $2",
+	"bs-permissionmanager-affected-by-dependency": "يتضمن هذا الدور {{PLURAL:$2|الصلاحية|الصلاحيات}} التالية:\n$1"
 }
