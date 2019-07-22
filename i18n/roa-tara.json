@@ -11,6 +11,8 @@
 	"bs-permissionmanager-header-group": "Gruppe",
 	"bs-permissionmanager-btn-save-label": "Reggìstre",
 	"bs-permissionmanager-btn-save-in-progress-label": "Stoche a reggistre...",
+	"bs-permissionmanager-group-all": "tutte",
+	"bs-permissionmanager-header-role": "Ruole",
 	"right-permissionmanager-viewspecialpage": "Tràse jndr'à pàgena speciale [[Special:PermissionManager]]",
 	"bs-permissionmanager-show-system-groups-label": "Fa 'ndrucà le gruppe de sisteme",
 	"bs-permissionmanager-role-permissions-label": "Permesse sus a 'u ruole: $1",
