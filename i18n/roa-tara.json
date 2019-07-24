@@ -4,6 +4,8 @@
 			"Joetaras"
 		]
 	},
+	"prefs-permissionmanager": "Gestore de le permesse",
+	"bs-permissionmanager-label": "Gestore de le permesse",
 	"bs-permissionmanager-btn-group-label": "Gruppe:",
 	"bs-permissionmanager-header-permissions": "Permesse",
 	"bs-permissionmanager-header-global": "Uicchi",
@@ -11,6 +13,10 @@
 	"bs-permissionmanager-header-group": "Gruppe",
 	"bs-permissionmanager-btn-save-label": "Reggìstre",
 	"bs-permissionmanager-btn-save-in-progress-label": "Stoche a reggistre...",
+	"bs-permissionmanager-affected-by-explicit": "Bloccate da $1",
+	"bs-permissionmanager-affected-by-inherited": "Ereditate da $1",
+	"bs-permissionmanager-affected-by-notset": "None 'mbostate",
+	"bs-permissionmanager-affected-by-explicitlyset": "'Mbostate esplicitamende",
 	"bs-permissionmanager-group-all": "tutte",
 	"bs-permissionmanager-header-role": "Ruole",
 	"right-permissionmanager-viewspecialpage": "Tràse jndr'à pàgena speciale [[Special:PermissionManager]]",
