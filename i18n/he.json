@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Guycn2",
-			"Erelon"
+			"Erelon",
+			"Steeve815"
 		]
 	},
 	"bs-permissionmanager-desc": "ממשק ניהולי לעריכת הרשאות משתמש",
@@ -41,5 +42,9 @@
 	"bs-permissionmanager-write-config-file-error": "אין אפשרות ליצור או לשנות את הקובץ $1",
 	"bs-permissionmanager-role-permissions-column-permission": "הרשאות",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "תיאור",
-	"bs-premissionmanager-reset-button-label": "איפוס"
+	"bs-premissionmanager-reset-button-label": "איפוס",
+	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|הוסיף|הוסיפה}} {{PLURAL:$6|את תפקיד|את התפקידים}} $5 לקבוצה $4",
+	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|הסיר|הסירה}} {{PLURAL:$6|את התפקיד|את התפקידים}} $5 מקבוצה $4",
+	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|הוסיף|הוסיפה}} {{PLURAL:$6|את התפקיד|את התפקידים}} $5 במרחב השם $7 לקבוצה $4",
+	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|הסיר|הסירה}} {{PLURAL:$6|את התפקיד|את התפקידים}} $5 במרחב השם $7 מקבוצה $4"
 }

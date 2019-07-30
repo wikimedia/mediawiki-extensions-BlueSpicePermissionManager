@@ -2,9 +2,16 @@
 	"@metadata": {
 		"authors": [
 			"Robin van der Vliet",
-			"Surfo"
+			"Surfo",
+			"Mirin"
 		]
 	},
+	"bs-permissionmanager-btn-group-label": "Grupo:",
+	"bs-permissionmanager-header-namespaces": "Nomspacoj",
+	"bs-permissionmanager-header-group": "Grupo",
+	"bs-permissionmanager-btn-save-label": "Konservi",
+	"bs-permissionmanager-btn-save-in-progress-label": "Konservante...",
+	"bs-permissionmanager-role-permissions-column-permission": "Permeso",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Priskribo",
 	"bs-premissionmanager-reset-button-label": "Rekomencu"
 }
