@@ -6,7 +6,8 @@
 			"A Chinese Wikipedian",
 			"Phenolla",
 			"佛壁灯",
-			"科劳"
+			"科劳",
+			"VulpesVulpes825"
 		]
 	},
 	"bs-permissionmanager-desc": "用于编辑用户权限的管理界面",
@@ -54,5 +55,6 @@
 	"logentry-bs-permission-manager-global-add": "$1添加了角色$5至用户组$4",
 	"logentry-bs-permission-manager-global-remove": "$1从用户组$4中移除了角色$5",
 	"logentry-bs-permission-manager-ns-add": "$1在名字空间$7中添加了角色$5至用户组$4",
-	"logentry-bs-permission-manager-ns-remove": "$1从名字空间$7中移除了用户组$4的角色$5"
+	"logentry-bs-permission-manager-ns-remove": "$1从名字空间$7中移除了用户组$4的角色$5",
+	"bs-permissionmanager-affected-by-dependency": "此身份需要{{PLURAL:$2|以下权限}}：$1"
 }
