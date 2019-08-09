@@ -25,5 +25,17 @@
 	"log-description-bs-permission-manager": "Ова е дневник на промени во поставките за групните права.",
 	"log-show-hide-bs-permission-manager": "$1 раководен дневник за дозволи",
 	"logeventslist-bs-permission-manager-log": "Раководен дневник за дозволи",
-	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|ѝ ги измени}} дозволите на групата $4"
+	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|ѝ ги измени}} дозволите на групата $4",
+	"action-permissionmanager-viewspecialpage": "преглед на службената страница „{{int:bs-permissionmanager-label}}“",
+	"permissionmanager": "Раководител со дозволи",
+	"bs-permissionmanager-affected-by-explicit": "Блокиран од $1",
+	"bs-permissionmanager-affected-by-notset": "Не е зададено",
+	"bs-permissionmanager-group-all": "сите",
+	"bs-permissionmanager-hint": "Оваа улога {{PLURAL:$2|ја вклучува следнава дозвола: $1|ги вклучува следниве дозволи: $1}}",
+	"bs-permissionmanager-header-role": "Улога",
+	"bs-permissionmanager-show-system-groups-label": "Прикажи системски групи",
+	"bs-permissionmanager-role-permissions-label": "Дозволи во улогата: $1",
+	"bs-permissionmanager-role-permissions-column-permission": "Дозвола",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Опис",
+	"bs-premissionmanager-reset-button-label": "Одново"
 }

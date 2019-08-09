@@ -41,7 +41,7 @@
 	"bs-permissionmanager-hint": "Esta função inclui {{PLURAL:$2|a seguinte permissão: $1| as seguintes permissões: $1}}",
 	"bs-permissionmanager-header-role": "Função",
 	"bs-permissionmanager-write-config-file-error": "Não foi possível criar ou gravar $1",
-	"right-permissionmanager-viewspecialpage": "Concede acesso à página especial [[Special:PermissionManager]].",
+	"right-permissionmanager-viewspecialpage": "Acesso à página especial [[Special:PermissionManager]].",
 	"bs-permissionmanager-show-system-groups-label": "Mostrar grupos do sistema",
 	"bs-permissionmanager-role-permissions-label": "Permissões na função: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "Permissão",
@@ -50,5 +50,7 @@
 	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|adicionou}} {{PLURAL:$6|a função|as funções}} $5 ao grupo $4",
 	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|removeu}} {{PLURAL:$6|a função|as funções}} $5 do grupo $4",
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|adicionou}} {{PLURAL:$6|a função|as funções}} $5 no espaço nominal/domínio $7 ao grupo $4",
-	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|removeu}} {{PLURAL:$6|a função|as funções}} $5 no espaço nominal/domínio $7 do grupo $4"
+	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|removeu}} {{PLURAL:$6|a função|as funções}} $5 no espaço nominal/domínio $7 do grupo $4",
+	"bs-permissionmanager-affected-by-dependency-single": "- $1 - disponível em {{PLURAL:$3|papel|papéis}}: $2",
+	"bs-permissionmanager-affected-by-dependency": "Este papel requer {{PLURAL:$2|a seguinte permissão|seguintes permissões}}:\n$1"
 }

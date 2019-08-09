@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Milicevic01",
-			"BadDog"
+			"BadDog",
+			"Zoranzoki21"
 		]
 	},
 	"bs-permissionmanager-header-namespaces": "Именски простори",
@@ -12,5 +13,6 @@
 	"bs-permissionmanager-role-permissions-label": "Дозволе у улози: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "Дозвола",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Опис",
-	"bs-premissionmanager-reset-button-label": "Ресетуј"
+	"bs-premissionmanager-reset-button-label": "Ресетуј",
+	"bs-permissionmanager-group-all": "све"
 }

@@ -26,5 +26,14 @@
 	"log-name-bs-permission-manager": "Logboek toestemmingenbeheer",
 	"log-show-hide-bs-permission-manager": "Logboek toestemmingenbeheer $1",
 	"bs-permissionmanager-group-all": "alle",
-	"bs-permissionmanager-role-permissions-column-permission-desc": "Beschrijving"
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Beschrijving",
+	"bs-permissionmanager-pref-max-backups": "Backup limiet",
+	"bs-permissionmanager-error-lockout": "Ten minste één groep moet het recht \"$1\" toegewezen hebben.\nDe wijzigingen konden niet worden opgeslagen.",
+	"log-description-bs-permission-manager": "Dit is een logboek van wijzigingen aan groepsrechten.",
+	"logeventslist-bs-permission-manager-log": "Logboek toestemmingenbeheer",
+	"action-permissionmanager-viewspecialpage": "de speciale pagina \"{{int:bs-permissionmanager-label}}\" te bekijken",
+	"bs-permissionmanager-affected-by-notset": "Niet ingesteld",
+	"bs-permissionmanager-header-role": "Rol",
+	"bs-permissionmanager-show-system-groups-label": "Toon systeemgroepen",
+	"bs-permissionmanager-role-permissions-column-permission": "Toestemming"
 }

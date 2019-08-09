@@ -27,5 +27,15 @@
 	"bs-permissionmanager-role-permissions-label": "역할 내 권한: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "권한",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "설명",
-	"bs-premissionmanager-reset-button-label": "초기화"
+	"bs-premissionmanager-reset-button-label": "초기화",
+	"prefs-permissionmanager": "권한 관리자",
+	"bs-permissionmanager-label": "권한 관리자",
+	"bs-permissionmanager-grouping-global": "이름공간 독립 권한",
+	"bs-permissionmanager-grouping-local": "이름공간 특정 권한",
+	"bs-permissionmanager-header-permissions": "권한",
+	"bs-permissionmanager-save-success": "권한이 저장되었습니다.",
+	"bs-permissionmanager-unsaved-changes": "저장되지 않은 변경사항이 있습니다. 지금 문서를 떠나시겠습니까? 저장되지 않은 변경사항은 잃게 됩니다.",
+	"bs-permissionmanager-error-lockout": "적어도 하나의 그룹이 \"$1\" 권한을 소유하여야 합니다.\n변경사항을 저장하지 못했습니다.",
+	"log-name-bs-permission-manager": "권한 관리자 기록",
+	"right-permissionmanager-viewspecialpage": "[[Special:PermissionManager]] 특수 문서로 접근"
 }

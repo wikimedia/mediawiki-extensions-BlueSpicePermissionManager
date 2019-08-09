@@ -45,7 +45,7 @@
 	"bs-permissionmanager-hint": "Ce rôle inclut {{PLURAL:$2|le droit suivant : $1|les droits suivants : $1}}",
 	"bs-permissionmanager-header-role": "Rôle",
 	"bs-permissionmanager-write-config-file-error": "Impossible de créer ou d’écrire $1",
-	"right-permissionmanager-viewspecialpage": "Donne les droits d'accès à la page spéciale  [[Special:PermissionManager]].",
+	"right-permissionmanager-viewspecialpage": "Accéder à la page spéciale [[Special:PermissionManager]]",
 	"bs-permissionmanager-show-system-groups-label": "Afficher les groupes système",
 	"bs-permissionmanager-role-permissions-label": "Droits dans le rôle : $1",
 	"bs-permissionmanager-role-permissions-column-permission": "Droit",
@@ -54,5 +54,7 @@
 	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|a}} ajouté {{PLURAL:$6|un rôle|des rôles}} $5 au groupe $4",
 	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|a}} supprimé {{PLURAL:$6|un role|des rôles}} $5 du groupe $4",
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|a}} ajouté {{PLURAL:$6|un rôle|des rôles}} $5 dans l'espace de noms $7 au groupe $4",
-	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|a}} supprimé {{PLURAL:$6|un rôle|des rôles}} $5 dans l'espace de noms $7 du groupe $4"
+	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|a}} supprimé {{PLURAL:$6|un rôle|des rôles}} $5 dans l'espace de noms $7 du groupe $4",
+	"bs-permissionmanager-affected-by-dependency-single": "- $1 - disponible dans $3 {{PLURAL:$3|rôle|rôles}}: $2",
+	"bs-permissionmanager-affected-by-dependency": "Ce rôle nécessite {{PLURAL:$2|le droit suivant|les autorisations suivantes}} :\n$1"
 }

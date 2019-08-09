@@ -57,5 +57,5 @@
 	"logentry-bs-permission-manager-ns-add": "Log message when user adds role(s) to a group in a namespace. $4 - Group, $5 - added roles, $6 - count of roles added, $7 - namespace name",
 	"logentry-bs-permission-manager-ns-remove": "Log message when user removes role(s) from a group in a namespace. $4 - Group, $5 - removed roles, $6 - count of roles removed, $7 - namespace name",
 	"bs-permissionmanager-affected-by-dependency-single": "Warning message when role requires a permission that is not available.\n$1 - permission name, \n$2 - roles containing this permission, \n$3 - number of roles containing this permission",
-	"bs-permissionmanager-affected-by-dependency": "Warning message holding single messages on permission requirements.\n$1 - all the permissions required "
+	"bs-permissionmanager-affected-by-dependency": "Warning message holding single messages on permission requirements.\n$1 - all the permissions required"
 }
