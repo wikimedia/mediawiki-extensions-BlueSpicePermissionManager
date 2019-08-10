@@ -9,6 +9,7 @@ class comparePermissions extends \Maintenance {
 		parent::__construct();
 
 		$this->addOption( 'html', 'Outputs in HTML' );
+		$this->requireExtension( 'BlueSpicePermissionManager' );
 	}
 
 	public function execute() {
