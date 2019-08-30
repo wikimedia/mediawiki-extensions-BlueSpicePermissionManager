@@ -33,9 +33,11 @@
 	"bs-permissionmanager-group-all": "сите",
 	"bs-permissionmanager-hint": "Оваа улога {{PLURAL:$2|ја вклучува следнава дозвола: $1|ги вклучува следниве дозволи: $1}}",
 	"bs-permissionmanager-header-role": "Улога",
+	"bs-permissionmanager-write-config-file-error": "Не може да се создаде или измени $1",
 	"bs-permissionmanager-show-system-groups-label": "Прикажи системски групи",
 	"bs-permissionmanager-role-permissions-label": "Дозволи во улогата: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "Дозвола",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Опис",
-	"bs-premissionmanager-reset-button-label": "Одново"
+	"bs-premissionmanager-reset-button-label": "Одново",
+	"bs-permissionmanager-affected-by-dependency": "Оваа улога {{PLURAL:$2|ја бара следнава дозвола|ги бара следниве дозволи}}:\n$1"
 }
