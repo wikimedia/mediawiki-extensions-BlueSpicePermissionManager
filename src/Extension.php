@@ -146,6 +146,7 @@ class Extension extends \BlueSpice\Extension {
 		}
 
 		foreach ( $roleLockdown as $nsId => $roles ) {
+			$nsId = (int)$nsId;
 			$nsCanonicalName = \MWNamespace::getCanonicalName( $nsId );
 			if ( $nsId == NS_MAIN ) {
 				$nsCanonicalName = 'MAIN';
