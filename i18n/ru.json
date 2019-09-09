@@ -4,7 +4,8 @@
 			"Okras",
 			"Striking Blue",
 			"Facenapalm",
-			"Vlad5250"
+			"Vlad5250",
+			"Марио"
 		]
 	},
 	"bs-permissionmanager-desc": "Интерфейс администрирования для изменения прав пользователя",
@@ -29,6 +30,7 @@
 	"logeventslist-bs-permission-manager-log": "Журнал управления разрешениями",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|изменил|изменила}} права группы $4",
 	"action-permissionmanager-viewspecialpage": "просмотр служебной страницы «{{int:bs-permissionmanager-label}}»",
+	"bs-permissionmanager-affected-by-explicit": "Заблокирован от $1",
 	"right-permissionmanager-viewspecialpage": "доступ к служебной странице [[Special:PermissionManager]]",
 	"bs-permissionmanager-show-system-groups-label": "Показать системные группы",
 	"bs-permissionmanager-role-permissions-column-permission": "Разрешение",
