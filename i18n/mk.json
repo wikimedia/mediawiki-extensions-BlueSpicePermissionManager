@@ -37,5 +37,7 @@
 	"bs-permissionmanager-role-permissions-label": "Дозволи во улогата: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "Дозвола",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Опис",
-	"bs-premissionmanager-reset-button-label": "Одново"
+	"bs-premissionmanager-reset-button-label": "Одново",
+	"bs-permissionmanager-write-config-file-error": "Не може да се создаде или измени $1",
+	"bs-permissionmanager-affected-by-dependency": "Оваа улога {{PLURAL:$2|ја бара следнава дозвола|ги бара следниве дозволи}}:\n$1"
 }

@@ -25,7 +25,7 @@
 	"bs-permissionmanager-pref-enablerealitycheck": "Activer la vérification des droits",
 	"bs-permissionmanager-pref-max-backups": "Nombre limite de sauvegardes",
 	"bs-permissionmanager-unsaved-changes": "Il y a des modifications non enregistrées. Voulez-vous vraiment quitter la page maintenant ? Les modifications non enregistrées seront perdues.",
-	"bs-permissionmanager-error-lockout": "Au moins un groupe doit détenir le droit « $1 ».\nLes modifications n’ont pas pu être enregistrées.",
+	"bs-permissionmanager-error-lockout": "Au moins un groupe doit détenir le droit « $1 ».\nLes modifications n’ont pas pu être enregistrées.",
 	"log-name-bs-permission-manager": "Journal du gestionnaire de permission",
 	"log-description-bs-permission-manager": "C'est un journal des modifications dans les autorisations de groupe.",
 	"log-show-hide-bs-permission-manager": "Journal du gestionnaire des permissions $1",
