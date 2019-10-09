@@ -2,6 +2,8 @@
 
 namespace BlueSpice\PermissionManager;
 
+use BlueSpice\Permission\RoleManager;
+
 class Helper {
 	protected static $instance = null;
 
@@ -12,6 +14,12 @@ class Helper {
 	protected $builtInGroups = [
 		'autoconfirmed', 'emailconfirmed', 'bot', 'sysop', 'bureaucrat', 'developer'
 	];
+
+	/**
+	 *
+	 * @var RoleManager
+	 */
+	protected $roleManager;
 
 	public static function getInstance() {
 		if ( self::$instance == null ) {
@@ -24,20 +32,47 @@ class Helper {
 		$mainConfig = \MediaWiki\MediaWikiServices::getInstance()
 				->getMainConfig();
 
+		$roleManager = \BlueSpice\Services::getInstance()->getBSRoleManager();
 		$config = \MediaWiki\MediaWikiServices::getInstance()
 			->getConfigFactory()->makeConfig( 'bsg' );
 		$namespaceRolesLockdown = $config->get( 'NamespaceRolesLockdown' );
 
-		return new self( $mainConfig->get( 'ImplicitGroups' ), $namespaceRolesLockdown );
+		return new self( $mainConfig->get( 'ImplicitGroups' ), $namespaceRolesLockdown, $roleManager );
 	}
 
-	protected function __construct( $implicitGroups, $namespaceRolesLockdown ) {
+	protected function __construct( $implicitGroups, $namespaceRolesLockdown, $roleManager ) {
 		$this->implicitGroups = $implicitGroups;
 		$this->namespaceRolesLockdown = $namespaceRolesLockdown;
+		$this->roleManager = $roleManager;
 	}
 
 	public function getNamespaceRolesLockdown() {
 		return $this->namespaceRolesLockdown;
+	}
+
+	public function getRoleDependencyTree() {
+		$roles = $this->roleManager->getRoleNames();
+		$tree = [];
+		foreach ( $roles as $roleName ) {
+			$role = $this->roleManager->getRole( $roleName );
+			if ( !$role instanceof \BlueSpice\Permission\IRole ) {
+				continue;
+			}
+			if ( empty( $role->getRequiredPermissions() ) ) {
+				continue;
+			}
+			$requiredPermissions = $role->getRequiredPermissions();
+			$neededRoles = [];
+			foreach ( $requiredPermissions as $permission ) {
+				$rolesWithPermission = $this->roleManager->getRolesWithPermission( $permission );
+				if ( in_array( $roleName, $rolesWithPermission ) ) {
+					continue;
+				}
+				$neededRoles[$permission] = $rolesWithPermission;
+			}
+			$tree[$roleName] = $neededRoles;
+		}
+		return $tree;
 	}
 
 	public function setGroups() {

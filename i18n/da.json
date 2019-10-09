@@ -4,6 +4,17 @@
 			"Saederup92"
 		]
 	},
+	"bs-permissionmanager-btn-group-label": "Gruppe:",
+	"bs-permissionmanager-header-permissions": "Tilladelser",
+	"bs-permissionmanager-header-global": "Wiki",
+	"bs-permissionmanager-header-namespaces": "Navnerum",
+	"bs-permissionmanager-header-group": "Gruppe",
+	"bs-permissionmanager-btn-save-label": "Gem",
+	"bs-permissionmanager-btn-save-in-progress-label": "Gemmer ...",
+	"bs-permissionmanager-affected-by-explicit": "Blokeret af $1",
+	"bs-permissionmanager-affected-by-inherited": "Nedarvet fra $1",
+	"bs-permissionmanager-group-all": "alle",
+	"bs-permissionmanager-header-role": "Rolle",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Beskrivelse",
 	"bs-premissionmanager-reset-button-label": "Nulstil"
 }

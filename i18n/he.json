@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Guycn2"
+			"Guycn2",
+			"Erelon",
+			"Steeve815"
 		]
 	},
 	"bs-permissionmanager-desc": "ממשק ניהולי לעריכת הרשאות משתמש",
@@ -17,25 +19,6 @@
 	"bs-permissionmanager-btn-save-label": "שמירה",
 	"bs-permissionmanager-btn-save-in-progress-label": "מתבצעת שמירה ...",
 	"bs-permissionmanager-save-success": "ההרשאות נשמרו.",
-	"bs-permissionmanager-labeltemplates": "תבניות",
-	"bs-permissionmanager-btn-template-editor": "עריכת תבניות",
-	"bs-permissionmanager-labeltpled": "עריכת תבנית",
-	"bs-permissionmanager-labeltpled-desc": "תיאור",
-	"bs-permissionmanager-labeltpled-active": "פעיל",
-	"bs-permissionmanager-labeltpled-add": "חדש",
-	"bs-permissionmanager-labeltpled-edit": "עריכה",
-	"bs-permissionmanager-labeltpled-delete": "מחיקה",
-	"bs-permissionmanager-labeltpled-cancel": "ביטול",
-	"bs-permissionmanager-msgtpled-success": "התבנית נשמרה.",
-	"bs-permissionmanager-msgtpled-savefailure": "לא ניתן היה לשמור את התבנית.",
-	"bs-permissionmanager-msgtpled-saveonabort": "האם ברצונך לשמור את כל הנתונים כעת?",
-	"bs-permissionmanager-msgtpled-new": "שם התבנית:",
-	"bs-permissionmanager-msgtpled-edit": "שם התבנית החדש:",
-	"bs-permissionmanager-msgtpled-delete": "התבנית נמחקה.",
-	"bs-permissionmanager-msgtpled-deletefail": "לא ניתן היה למחוק את התבנית.",
-	"bs-permissionmanager-titletpled-new": "יצירת תבנית",
-	"bs-permissionmanager-titletpled-edit": "שינוי שם של תבנית",
-	"bs-permissionmanager-titletpled-delete": "מחיקת תבנית",
 	"bs-permissionmanager-pref-enablerealitycheck": "הפעלת בדיקת הרשאות",
 	"bs-permissionmanager-pref-max-backups": "הגבלת הגיבוי",
 	"bs-permissionmanager-unsaved-changes": "יש שינויים שעדיין לא נשמרו. האם ברצונך לעזוב את הדף עכשיו? השינויים שלא נשמרו יאבדו.",
@@ -56,5 +39,12 @@
 	"bs-permissionmanager-group-all": "הכול",
 	"bs-permissionmanager-hint": "תפקיד זה כולל את {{PLURAL:$2|ההרשאה הבאה: $1|ההרשאות הבאות: $1}}",
 	"bs-permissionmanager-header-role": "תפקיד",
-	"bs-permissionmanager-write-config-file-error": "אין אפשרות ליצור או לשנות את הקובץ $1"
+	"bs-permissionmanager-write-config-file-error": "אין אפשרות ליצור או לשנות את הקובץ $1",
+	"bs-permissionmanager-role-permissions-column-permission": "הרשאות",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "תיאור",
+	"bs-premissionmanager-reset-button-label": "איפוס",
+	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|הוסיף|הוסיפה}} {{PLURAL:$6|את תפקיד|את התפקידים}} $5 לקבוצה $4",
+	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|הסיר|הסירה}} {{PLURAL:$6|את התפקיד|את התפקידים}} $5 מקבוצה $4",
+	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|הוסיף|הוסיפה}} {{PLURAL:$6|את התפקיד|את התפקידים}} $5 במרחב השם $7 לקבוצה $4",
+	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|הסיר|הסירה}} {{PLURAL:$6|את התפקיד|את התפקידים}} $5 במרחב השם $7 מקבוצה $4"
 }

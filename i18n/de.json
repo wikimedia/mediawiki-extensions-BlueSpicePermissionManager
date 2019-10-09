@@ -5,7 +5,8 @@
 			"Metalhead64",
 			"Umherirrender",
 			"Jkonrad",
-			"Hwboehm"
+			"Hwboehm",
+			"Mglaser"
 		]
 	},
 	"bs-permissionmanager-desc": "Administrationsoberfläche zur Bearbeitung von Benutzerrechten",
@@ -21,25 +22,6 @@
 	"bs-permissionmanager-btn-save-label": "Speichern",
 	"bs-permissionmanager-btn-save-in-progress-label": "Speichert …",
 	"bs-permissionmanager-save-success": "Rechte wurden gespeichert.",
-	"bs-permissionmanager-labeltemplates": "Vorlagen",
-	"bs-permissionmanager-btn-template-editor": "Vorlagen bearbeiten",
-	"bs-permissionmanager-labeltpled": "Vorlagen-Editor",
-	"bs-permissionmanager-labeltpled-desc": "Beschreibung",
-	"bs-permissionmanager-labeltpled-active": "Aktiv",
-	"bs-permissionmanager-labeltpled-add": "Neu",
-	"bs-permissionmanager-labeltpled-edit": "Bearbeiten",
-	"bs-permissionmanager-labeltpled-delete": "Löschen",
-	"bs-permissionmanager-labeltpled-cancel": "Abbrechen",
-	"bs-permissionmanager-msgtpled-success": "Vorlage gespeichert.",
-	"bs-permissionmanager-msgtpled-savefailure": "Vorlage konnten nicht gespeichert werden.",
-	"bs-permissionmanager-msgtpled-saveonabort": "Sollen die Daten jetzt gespeichert werden?",
-	"bs-permissionmanager-msgtpled-new": "Name der Vorlage:",
-	"bs-permissionmanager-msgtpled-edit": "Neuer Name der Vorlage:",
-	"bs-permissionmanager-msgtpled-delete": "Vorlage gelöscht",
-	"bs-permissionmanager-msgtpled-deletefail": "Vorlage konnte nicht gelöscht werden",
-	"bs-permissionmanager-titletpled-new": "Vorlage erstellen",
-	"bs-permissionmanager-titletpled-edit": "Vorlage umbenennen",
-	"bs-permissionmanager-titletpled-delete": "Vorlage löschen",
 	"bs-permissionmanager-pref-enablerealitycheck": "Rechteprüfung aktivieren",
 	"bs-permissionmanager-pref-max-backups": "Maximale Anzahl an Sicherungen",
 	"bs-permissionmanager-unsaved-changes": "Es existieren ungespeicherte Änderungen. Willst du die Seite wirklich verlassen? Die ungespeicherten Änderungen gehen in diesem Fall verloren",
@@ -63,7 +45,7 @@
 	"bs-permissionmanager-hint": "Diese Rolle enthält die {{PLURAL:$2|folgende Berechtigung|folgenden Berechtigungen}}: $1",
 	"bs-permissionmanager-header-role": "Rolle",
 	"bs-permissionmanager-write-config-file-error": "$1 konnte nicht erstellt oder beschrieben werden",
-	"right-permissionmanager-viewspecialpage": "Zugriff auf die Spezialseite [[Special:PermissionManager]] gewähren.",
+	"right-permissionmanager-viewspecialpage": "Zugriff auf die Spezialseite [[Special:PermissionManager]]",
 	"bs-permissionmanager-show-system-groups-label": "Systemgruppen anzeigen",
 	"bs-permissionmanager-role-permissions-label": "Berechtigungen in der Rolle: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "Berechtigung",
@@ -72,5 +54,7 @@
 	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|hat}} die {{PLURAL:$6|Rolle|Rollen}} $5 zur Gruppe $4 hinzugefügt",
 	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|hat}} die {{PLURAL:$6|Rolle|Rollen}} $5 aus der Gruppe $4 entfernt",
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|hat}} die {{PLURAL:$6|Rolle|Rollen}} $5 im Namensraum $7 zur Gruppe $4 hinzugefügt",
-	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|hat}} die {{PLURAL:$6|Rolle|Rollen}} $5 im Namensraum $7 aus der Gruppe $4 entfernt"
+	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|hat}} die {{PLURAL:$6|Rolle|Rollen}} $5 im Namensraum $7 aus der Gruppe $4 entfernt",
+	"bs-permissionmanager-affected-by-dependency-single": "- $1 - verfügbar in {{PLURAL:$3|der Rolle|den Rollen}}: $2",
+	"bs-permissionmanager-affected-by-dependency": "Diese Rolle benötigt {{PLURAL:$2|das folgende Recht|die folgenden Rechte}}:\n$1"
 }

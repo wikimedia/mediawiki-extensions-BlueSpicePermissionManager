@@ -3,8 +3,10 @@
 namespace BlueSpice\PermissionManager\Special;
 
 use BlueSpice\PermissionManager\Helper;
+use BlueSpice\Special\ManagerBase;
+use BlueSpice\PermissionManager\Extension as PermissionManager;
 
-class SpecialPermissionManager extends \BlueSpice\SpecialPage {
+class SpecialPermissionManager extends ManagerBase {
 
 	protected $groups = [];
 
@@ -12,32 +14,39 @@ class SpecialPermissionManager extends \BlueSpice\SpecialPage {
 		parent::__construct( 'PermissionManager', 'permissionmanager-viewspecialpage' );
 	}
 
-	public function execute( $param ) {
-		parent::execute( $param );
+	protected function getId() {
+		return "panelPermissionManager";
+	}
 
-		$this->getOutput()->addModuleStyles(
-			'ext.bluespice.permissionManager.styles'
-		);
-		$this->getOutput()->addModules( 'ext.bluespice.permissionManager' );
-
+	protected function getJSVars() {
 		$helper = Helper::getInstance();
 		$groups = $helper->getGroups();
 
-		$rolesAndPermissions = \BlueSpice\PermissionManager\Extension::getRoles();
+		$rolesAndPermissions = PermissionManager::getRoles();
 		$rolesAndHints = $helper->formatPermissionsToHint( $rolesAndPermissions );
 
-		$groupRoles = \BlueSpice\PermissionManager\Extension::getGroupRoles();
+		$groupRoles = PermissionManager::getGroupRoles();
 
-		$jsVars = [
+		return [
 			'bsPermissionManagerGroupsTree' => $groups,
 			'bsPermissionManagerRoles' => $rolesAndHints,
 			'bsPermissionManagerNamespaces' => $helper->buildNamespaceMetadata(),
 			'bsPermissionManagerGroupRoles' => $groupRoles,
-			'bsPermissionManagerRoleLockdown' => $helper->getNamespaceRolesLockdown()
+			'bsPermissionManagerRoleLockdown' => $helper->getNamespaceRolesLockdown(),
+			'bsPermissionManagerRoleDependencyTree' => $helper->getRoleDependencyTree()
 		];
+	}
 
-		$this->getOutput()->addJsConfigVars( $jsVars );
+	protected function getModules() {
+		return [
+			'ext.bluespice.permissionManager.styles',
+			'ext.bluespice.permissionManager'
+		];
+	}
 
-		$this->getOutput()->addHTML( '<div id="panelPermissionManager"  class="bs-manager-container" style="height: 800px"></div>' );
+	protected function getAttributes() {
+		return [
+			"style" => "height: 800px"
+		];
 	}
 }

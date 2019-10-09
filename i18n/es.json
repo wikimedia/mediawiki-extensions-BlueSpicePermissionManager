@@ -8,7 +8,8 @@
 			"Ryo567",
 			"AlvaroMolina",
 			"MarcoAurelio",
-			"Vanbasten 23"
+			"Vanbasten 23",
+			"Agusbou2015"
 		]
 	},
 	"bs-permissionmanager-desc": "Interfaz administrativa para gestionar permisos de usuarios",
@@ -24,25 +25,6 @@
 	"bs-permissionmanager-btn-save-label": "Guardar",
 	"bs-permissionmanager-btn-save-in-progress-label": "Guardando…",
 	"bs-permissionmanager-save-success": "Se han guardado los permisos.",
-	"bs-permissionmanager-labeltemplates": "Plantillas",
-	"bs-permissionmanager-btn-template-editor": "Editar plantillas",
-	"bs-permissionmanager-labeltpled": "Editor de plantillas",
-	"bs-permissionmanager-labeltpled-desc": "Descripción",
-	"bs-permissionmanager-labeltpled-active": "Activo",
-	"bs-permissionmanager-labeltpled-add": "Nueva",
-	"bs-permissionmanager-labeltpled-edit": "Editar",
-	"bs-permissionmanager-labeltpled-delete": "Borrar",
-	"bs-permissionmanager-labeltpled-cancel": "Cancelar",
-	"bs-permissionmanager-msgtpled-success": "Se ha guardado la plantilla.",
-	"bs-permissionmanager-msgtpled-savefailure": "No se pudo guardar la plantilla.",
-	"bs-permissionmanager-msgtpled-saveonabort": "¿Quieres guardar todos los datos ahora?",
-	"bs-permissionmanager-msgtpled-new": "Nombre de la plantilla:",
-	"bs-permissionmanager-msgtpled-edit": "Nombre nuevo para la plantilla:",
-	"bs-permissionmanager-msgtpled-delete": "Se ha eliminado la plantilla.",
-	"bs-permissionmanager-msgtpled-deletefail": "No se pudo eliminar la plantilla.",
-	"bs-permissionmanager-titletpled-new": "Crear una plantilla",
-	"bs-permissionmanager-titletpled-edit": "Renombrar plantilla",
-	"bs-permissionmanager-titletpled-delete": "Eliminar la plantilla",
 	"bs-permissionmanager-pref-enablerealitycheck": "Activar la comprobación de permisos",
 	"bs-permissionmanager-pref-max-backups": "Límite de copia de seguridad",
 	"bs-permissionmanager-unsaved-changes": "Hay cambios sin guardar. ¿Quieres abandonar la página ahora? Se perderá cualquier cambio no guardado.",
@@ -64,5 +46,6 @@
 	"right-permissionmanager-viewspecialpage": "Otorga acceso a la página especial [[Special:PermissionManager]].",
 	"bs-permissionmanager-role-permissions-column-permission": "Permiso",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Descripción",
-	"bs-premissionmanager-reset-button-label": "Restablecer"
+	"bs-premissionmanager-reset-button-label": "Restablecer",
+	"bs-permissionmanager-header-role": "Papel"
 }

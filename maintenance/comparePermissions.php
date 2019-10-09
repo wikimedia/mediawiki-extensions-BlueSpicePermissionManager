@@ -82,7 +82,7 @@ class comparePermissions extends \Maintenance {
 	 * the role system, until they are added to the registry
 	 *
 	 * @param array $permissions
-	 * @param \BlueSpice\Permission\Registry $permissionRegistry
+	 * @param \BlueSpice\Permission\PermissionRegistry $permissionRegistry
 	 * @return array
 	 */
 	protected function getPermissionsWithNoRoles( $permissions, $permissionRegistry ) {
