@@ -122,6 +122,9 @@
 		"BSGroupManagerGroupDeleted": "\\BlueSpice\\PermissionManager\\Hook\\BSGroupManagerGroupDeleted\\UnassignRoles::callback",
 		"BSGroupManagerGroupNameChanged": [
 			"\\BlueSpice\\PermissionManager\\Hook\\BSGroupManagerGroupNameChanged\\ChangeGroupRoleAssignments::callback"
+		],
+		"LoadExtensionSchemaUpdates": [
+			"\\BlueSpice\\PermissionManager\\Hook\\LoadExtensionSchemaUpdates\\RemoveNonIncludableNamespaces::callback"
 		]
 	},
 	"config_prefix": "bsg",
@@ -134,6 +137,9 @@
 	},
 	"AutoloadNamespaces": {
 		"BlueSpice\\PermissionManager\\" : "src/"
+	},
+	"AutoloadClasses": {
+		"BlueSpice\\PermissionManager\\Maintenance\\RemoveNonIncludableNamespaces": "maintenance/RemoveNonIncludableNamespaces.php"
 	},
 	"callback": "BlueSpice\\PermissionManager\\Extension::onCallback",
 	"load_composer_autoloader": true,

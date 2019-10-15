@@ -157,24 +157,12 @@ class Extension extends \BlueSpice\Extension {
 				$nsConstant = $nsId;
 			}
 
-			$isReadLockdown = false;
 			foreach ( $roles as $roleName => $groups ) {
 				if ( empty( $groups ) ) {
 					continue;
 				}
 				$saveContent .= "\$GLOBALS['bsgNamespaceRolesLockdown'][ $nsConstant ][ '$roleName' ]"
 					. " = array(" . ( count( $groups ) ? "'" . implode( "','", $groups ) . "'" : '' ) . ");\n";
-				$roleObject = self::$roleManager->getRole( $roleName );
-				if ( $roleObject == null ) {
-					continue;
-				}
-				$permissions = $roleObject->getPermissions();
-				if ( in_array( 'read', $permissions ) ) {
-					$isReadLockdown = true;
-				}
-			}
-			if ( $isReadLockdown && $nsId !== NS_TEMPLATE ) {
-				$saveContent .= "\$GLOBALS['wgNonincludableNamespaces'][] = $nsConstant;\n";
 			}
 		}
 
