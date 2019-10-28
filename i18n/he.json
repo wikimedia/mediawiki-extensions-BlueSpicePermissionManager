@@ -40,6 +40,7 @@
 	"bs-permissionmanager-hint": "תפקיד זה כולל את {{PLURAL:$2|ההרשאה הבאה: $1|ההרשאות הבאות: $1}}",
 	"bs-permissionmanager-header-role": "תפקיד",
 	"bs-permissionmanager-write-config-file-error": "אין אפשרות ליצור או לשנות את הקובץ $1",
+	"bs-permissionmanager-show-system-groups-label": "הצגת קבוצות מערכת",
 	"bs-permissionmanager-role-permissions-column-permission": "הרשאות",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "תיאור",
 	"bs-premissionmanager-reset-button-label": "איפוס",
