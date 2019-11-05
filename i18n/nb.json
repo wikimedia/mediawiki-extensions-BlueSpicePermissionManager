@@ -39,5 +39,17 @@
 	"bs-permissionmanager-group-all": "alle",
 	"bs-permissionmanager-hint": "Denne rollen inkluderer følgende {{PLURAL:$2|tillatelse|tillatelser}}: $1",
 	"bs-permissionmanager-header-role": "Rolle",
-	"right-permissionmanager-viewspecialpage": "Gir tilgang til spesialsiden [[Special:PermissionManager]]."
+	"bs-permissionmanager-write-config-file-error": "Kunne ikke opprette eller skrive til $1",
+	"right-permissionmanager-viewspecialpage": "Tilgang til spesialsiden [[Special:PermissionManager]].",
+	"bs-permissionmanager-show-system-groups-label": "Vis systemgrupper",
+	"bs-permissionmanager-role-permissions-label": "Tillatelser i rollen: $1",
+	"bs-permissionmanager-role-permissions-column-permission": "Tillatelse",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Beskrivelse",
+	"bs-premissionmanager-reset-button-label": "Forkast endringer",
+	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|har}} lagt til {{PLURAL:$6|rollen|rollene}} $5 til gruppa $4",
+	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|har}} fjernet {{PLURAL:$6|rollen|rollene}} $5 fra gruppa $4",
+	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|har}} lagt til {{PLURAL:$6|rollen|rollene}} $5 i navnerommet $7 til gruppa $4",
+	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|har}} fjernet {{PLURAL:$6|rollen|rollene}} $5 i navnerommet $7 fra gruppa $4",
+	"bs-permissionmanager-affected-by-dependency-single": "– $1 – tilgjengelig i {{PLURAL:$3|rollen|rollene}}: $2",
+	"bs-permissionmanager-affected-by-dependency": "Denne rollen krever følgende {{PLURAL:$2|tillatelse|tillatelser}}:\n$1"
 }
