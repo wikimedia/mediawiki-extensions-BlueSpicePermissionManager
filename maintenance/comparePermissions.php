@@ -1,5 +1,7 @@
 <?php
 
+use BlueSpice\Services;
+
 $IP = dirname( dirname( dirname( __DIR__ ) ) );
 
 require_once "$IP/maintenance/Maintenance.php";
@@ -17,9 +19,7 @@ class comparePermissions extends \Maintenance {
 		$oldPermissions = $this->getConfig()->get( 'GroupPermissions' );
 
 		// Initialize and apply roles
-		$roleManager = \MediaWiki\MediaWikiServices::getInstance()->getService(
-			'BSRoleManager'
-		);
+		$roleManager = Services::getInstance()->getBSRoleManager();
 		if ( $roleManager->isRoleSystemEnabled() == false ) {
 			$roleManager->enableRoleSystem();
 			$roleManager->applyRoles();
@@ -28,9 +28,7 @@ class comparePermissions extends \Maintenance {
 		// Read new permissions
 		$newPermissions = $this->getConfig()->get( 'GroupPermissions' );
 
-		$permissionRegistry = \MediaWiki\MediaWikiServices::getInstance()->getService(
-			'BSPermissionRegistry'
-		);
+		$permissionRegistry = Services::getInstance()->getBSPermissionRegistry();
 
 		// Compile results
 		$result = [];

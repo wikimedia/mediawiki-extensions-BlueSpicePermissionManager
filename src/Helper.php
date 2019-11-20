@@ -2,6 +2,7 @@
 
 namespace BlueSpice\PermissionManager;
 
+use BlueSpice\Services;
 use BlueSpice\Permission\RoleManager;
 
 class Helper {
@@ -29,12 +30,10 @@ class Helper {
 	}
 
 	protected static function createInstance() {
-		$mainConfig = \MediaWiki\MediaWikiServices::getInstance()
-				->getMainConfig();
+		$mainConfig = Services::getInstance()->getMainConfig();
 
-		$roleManager = \BlueSpice\Services::getInstance()->getBSRoleManager();
-		$config = \MediaWiki\MediaWikiServices::getInstance()
-			->getConfigFactory()->makeConfig( 'bsg' );
+		$roleManager = Services::getInstance()->getBSRoleManager();
+		$config = Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 		$namespaceRolesLockdown = $config->get( 'NamespaceRolesLockdown' );
 
 		return new self( $mainConfig->get( 'ImplicitGroups' ), $namespaceRolesLockdown, $roleManager );
