@@ -2,14 +2,22 @@
 
 namespace BlueSpice\PermissionManager\Api;
 
-use \BlueSpice\PermissionManager\Extension as PermissionManager;
+use BlueSpice\PermissionManager\Extension as PermissionManager;
 
 class RolePermissionsStore extends \BSApiExtJSStoreBase {
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getRequiredPermissions() {
 		return 'wikiadmin';
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getAllowedParams() {
 		$params = parent::getAllowedParams();
 		$params[ 'role' ] = [
@@ -20,6 +28,11 @@ class RolePermissionsStore extends \BSApiExtJSStoreBase {
 		return $params;
 	}
 
+	/**
+	 *
+	 * @param string $query
+	 * @return \stdClass[]
+	 */
 	protected function makeData( $query = '' ) {
 		$role = $this->getParameter( 'role' );
 		$permissions = PermissionManager::getRolePermissions( $role, true );

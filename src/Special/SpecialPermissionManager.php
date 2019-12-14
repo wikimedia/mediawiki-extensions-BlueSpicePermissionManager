@@ -8,16 +8,28 @@ use BlueSpice\PermissionManager\Extension as PermissionManager;
 
 class SpecialPermissionManager extends ManagerBase {
 
+	/**
+	 *
+	 * @var array
+	 */
 	protected $groups = [];
 
 	public function __construct() {
 		parent::__construct( 'PermissionManager', 'permissionmanager-viewspecialpage' );
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getId() {
 		return "panelPermissionManager";
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getJSVars() {
 		$helper = Helper::getInstance();
 		$groups = $helper->getGroups();
@@ -37,6 +49,10 @@ class SpecialPermissionManager extends ManagerBase {
 		];
 	}
 
+	/**
+	 *
+	 * @return string[]
+	 */
 	protected function getModules() {
 		return [
 			'ext.bluespice.permissionManager.styles',
@@ -44,6 +60,10 @@ class SpecialPermissionManager extends ManagerBase {
 		];
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getAttributes() {
 		return [
 			"style" => "height: 800px"

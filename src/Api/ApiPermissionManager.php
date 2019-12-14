@@ -2,8 +2,14 @@
 
 namespace BlueSpice\PermissionManager\Api;
 
+use BlueSpice\Api\Response\Standard;
+
 class ApiPermissionManager extends \BSApiTasksBase {
 
+	/**
+	 *
+	 * @var array
+	 */
 	protected $aTasks = [
 		'saveRoles' => [
 			'examples' => [
@@ -12,6 +18,10 @@ class ApiPermissionManager extends \BSApiTasksBase {
 		]
 	];
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getTaskDataDefinitions() {
 		return [
 			"saveRoles" => [
@@ -29,12 +39,21 @@ class ApiPermissionManager extends \BSApiTasksBase {
 		];
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getRequiredTaskPermissions() {
 		return [
 			'saveRoles' => [ 'wikiadmin' ]
 		];
 	}
 
+	/**
+	 *
+	 * @param \stdClass $data
+	 * @return Standard
+	 */
 	protected function task_saveRoles( $data ) {
 		$ret = $this->makeStandardReturn();
 		$ret->success = true;
@@ -55,10 +74,6 @@ class ApiPermissionManager extends \BSApiTasksBase {
 		}
 
 		return $ret;
-	}
-
-	public function __construct( $main, $action ) {
-		parent::__construct( $main, $action );
 	}
 
 }

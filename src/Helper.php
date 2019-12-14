@@ -6,12 +6,32 @@ use BlueSpice\Services;
 use BlueSpice\Permission\RoleManager;
 
 class Helper {
+	/**
+	 *
+	 * @var Helper
+	 */
 	protected static $instance = null;
 
+	/**
+	 *
+	 * @var array
+	 */
 	protected $implicitGroups;
+	/**
+	 *
+	 * @var array
+	 */
 	protected $namespaceRolesLockdown;
 
+	/**
+	 *
+	 * @var array
+	 */
 	protected $groups = [];
+	/**
+	 *
+	 * @var array
+	 */
 	protected $builtInGroups = [
 		'autoconfirmed', 'emailconfirmed', 'bot', 'sysop', 'bureaucrat', 'developer'
 	];
@@ -22,6 +42,10 @@ class Helper {
 	 */
 	protected $roleManager;
 
+	/**
+	 *
+	 * @return Helper
+	 */
 	public static function getInstance() {
 		if ( self::$instance == null ) {
 			self::$instance = self::createInstance();
@@ -29,6 +53,10 @@ class Helper {
 		return self::$instance;
 	}
 
+	/**
+	 *
+	 * @return Helper
+	 */
 	protected static function createInstance() {
 		$mainConfig = Services::getInstance()->getMainConfig();
 
@@ -39,16 +67,30 @@ class Helper {
 		return new self( $mainConfig->get( 'ImplicitGroups' ), $namespaceRolesLockdown, $roleManager );
 	}
 
+	/**
+	 *
+	 * @param array $implicitGroups
+	 * @param array $namespaceRolesLockdown
+	 * @param RoleManager $roleManager
+	 */
 	protected function __construct( $implicitGroups, $namespaceRolesLockdown, $roleManager ) {
 		$this->implicitGroups = $implicitGroups;
 		$this->namespaceRolesLockdown = $namespaceRolesLockdown;
 		$this->roleManager = $roleManager;
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getNamespaceRolesLockdown() {
 		return $this->namespaceRolesLockdown;
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getRoleDependencyTree() {
 		$roles = $this->roleManager->getRoleNames();
 		$tree = [];
@@ -125,6 +167,10 @@ class Helper {
 		$this->groups[ 'children' ][ 0 ][ 'children' ] = $explicitGroupNodes;
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getGroups() {
 		if ( empty( $this->groups ) ) {
 			$this->setGroups();
@@ -132,6 +178,10 @@ class Helper {
 		return $this->groups;
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function buildNamespaceMetadata() {
 		$lang = \RequestContext::getMain()->getLanguage();
 		$namespaces = $lang->getNamespaces();
@@ -140,7 +190,8 @@ class Helper {
 		$metadata = [];
 
 		foreach ( $namespaces as $nsId => $localizedNSText ) {
-			if ( $nsId < 0 ) { // Filter pseudo namespaces
+			if ( $nsId < 0 ) {
+				// Filter pseudo namespaces
 				continue;
 			}
 
@@ -161,6 +212,11 @@ class Helper {
 		return $metadata;
 	}
 
+	/**
+	 *
+	 * @param array $rolesAndPermissions
+	 * @return array
+	 */
 	public function formatPermissionsToHint( $rolesAndPermissions ) {
 		$res = [];
 		foreach ( $rolesAndPermissions as $roleAndPermissions ) {
