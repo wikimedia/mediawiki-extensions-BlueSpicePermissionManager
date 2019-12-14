@@ -31,6 +31,7 @@
 
 namespace BlueSpice\PermissionManager;
 
+use Message;
 use BlueSpice\Permission\IRole;
 use BlueSpice\Permission\RoleManager;
 use BlueSpice\Services;
@@ -75,12 +76,22 @@ class Extension extends \BlueSpice\Extension {
 		}
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public static function getRoles() {
 		$roleNames = self::$roleManager->getRoleNamesAndPermissions();
 
 		return $roleNames;
 	}
 
+	/**
+	 *
+	 * @param IRole $role
+	 * @param bool $includeDesc
+	 * @return array
+	 */
 	public static function getRolePermissions( $role, $includeDesc = false ) {
 		$role = self::$roleManager->getRole( $role );
 		if ( $role instanceof IRole === false ) {
@@ -100,10 +111,19 @@ class Extension extends \BlueSpice\Extension {
 		return $permissionsAndDescs;
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public static function getGroupRoles() {
 		return self::$roleManager->getGroupRoles();
 	}
 
+	/**
+	 *
+	 * @param \stdClass $data
+	 * @return array
+	 */
 	public static function saveRoles( $data ) {
 		if ( !isset( $data ) || !isset( $data->groupRoles ) || !isset( $data->roleLockdown ) ) {
 			return false;
@@ -122,6 +142,12 @@ class Extension extends \BlueSpice\Extension {
 		return $statusWritePMSettings;
 	}
 
+	/**
+	 *
+	 * @param arra $groupRoles
+	 * @param array $roleLockdown
+	 * @return array
+	 */
 	protected static function writeGroupSettings( $groupRoles, $roleLockdown ) {
 		$config = Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 		$configFile = $config->get( 'ConfigFiles' )[ 'PermissionManager' ];
@@ -141,7 +167,8 @@ class Extension extends \BlueSpice\Extension {
 		$saveContent = "<?php\n";
 		foreach ( $groupRoles as $group => $roleArray ) {
 			foreach ( $roleArray as $role => $value ) {
-				$saveContent .= "\$GLOBALS['bsgGroupRoles']['{$group}']['{$role}'] = " . ( $value ? 'true' : 'false' ) . ";\n";
+				$val = $value ? 'true' : 'false';
+				$saveContent .= "\$GLOBALS['bsgGroupRoles']['$group']['$role'] = $val;\n";
 			}
 		}
 
@@ -185,11 +212,19 @@ class Extension extends \BlueSpice\Extension {
 		} else {
 			return [
 					'success' => false,
-					'message' => wfMessage( 'bs-permissionmanager-write-config-file-error', basename( $configFile ) )->plain()
+					'message' => Message::neWFromKey(
+						'bs-permissionmanager-write-config-file-error',
+						basename( $configFile )
+					)->plain()
 			];
 		}
 	}
 
+	/**
+	 *
+	 * @param array $globalDiff
+	 * @param array $nsDiff
+	 */
 	protected static function doLog( $globalDiff, $nsDiff ) {
 		foreach ( $globalDiff as $group => $roles ) {
 			$addedRoles = [];
@@ -252,6 +287,11 @@ class Extension extends \BlueSpice\Extension {
 		}
 	}
 
+	/**
+	 *
+	 * @param string $type
+	 * @param array $params
+	 */
 	protected static function insertLog( $type, $params ) {
 		$targetTitle = \SpecialPage::getTitleFor( 'PermissionManager' );
 		$user = \RequestContext::getMain()->getUser();
@@ -265,8 +305,6 @@ class Extension extends \BlueSpice\Extension {
 
 	/**
 	 * creates a backup of the current pm-settings.php if it exists.
-	 *
-	 * @global string $bsgConfigFiles
 	 */
 	protected static function backupExistingSettings() {
 		$config = Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );

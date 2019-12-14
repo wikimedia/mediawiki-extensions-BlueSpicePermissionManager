@@ -43,7 +43,11 @@ class comparePermissions extends \Maintenance {
 			];
 		}
 
-		foreach ( $this->getPermissionsWithNoRoles( $oldPermissions, $permissionRegistry ) as $missingPermission ) {
+		$noRolresPermissions = $this->getPermissionsWithNoRoles(
+			$oldPermissions,
+			$permissionRegistry
+		);
+		foreach ( $noRolresPermissions as $missingPermission ) {
 			$result[$missingPermission] = [
 				'oldGroups' => $this->getGroups( $missingPermission, $oldPermissions ),
 				'newGroups' => $this->getGroups( $missingPermission, $newPermissions ),
@@ -105,6 +109,10 @@ class comparePermissions extends \Maintenance {
 		return $missing;
 	}
 
+	/**
+	 *
+	 * @param array $result
+	 */
 	protected function displayResult( $result ) {
 		$format = $this->hasOption( 'html' ) ? 'html' : 'csv';
 		if ( $format === 'html' ) {
@@ -124,6 +132,10 @@ class comparePermissions extends \Maintenance {
 		print $toDisplay;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getHTMLHeader() {
 		$header = \Html::openElement( 'thead' );
 		$header .= \Html::openElement( 'tr' );
@@ -137,6 +149,10 @@ class comparePermissions extends \Maintenance {
 		return $header;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getCSVHeader() {
 		$header = "Permission" . '|';
 		$header .= "Old groups" . '|';
@@ -147,6 +163,12 @@ class comparePermissions extends \Maintenance {
 		return $header;
 	}
 
+	/**
+	 *
+	 * @param string $permission
+	 * @param array $data
+	 * @return string
+	 */
 	protected function getHTMLRow( $permission, $data ) {
 		$row = \Html::openElement( 'tr' );
 		$row .= \Html::element( 'td', [], $permission );
@@ -158,6 +180,12 @@ class comparePermissions extends \Maintenance {
 		return $row;
 	}
 
+	/**
+	 *
+	 * @param string $permission
+	 * @param array $data
+	 * @return string
+	 */
 	protected function getCSVRow( $permission, $data ) {
 		$row = $permission . '|';
 		$row .= implode( ',', $data['oldGroups'] ) . '|';
