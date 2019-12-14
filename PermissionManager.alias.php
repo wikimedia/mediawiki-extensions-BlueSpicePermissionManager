@@ -8,5 +8,10 @@ $specialPageAliases['en'] = [
 
 /** German (Deutsch) */
 $specialPageAliases['de'] = [
-	'PermissionManager' => [ 'PermissionManager', 'Permission Manager', 'Rechteverwaltung', 'Rechtemanager' ],
+	'PermissionManager' => [
+		'PermissionManager',
+		'Permission Manager',
+		'Rechteverwaltung',
+		'Rechtemanager'
+	],
 ];
