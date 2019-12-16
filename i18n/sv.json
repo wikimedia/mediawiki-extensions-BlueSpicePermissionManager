@@ -3,7 +3,8 @@
 		"authors": [
 			"Jopparn",
 			"Lokal Profil",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Mjälten"
 		]
 	},
 	"bs-permissionmanager-desc": "Administrationsgränssnittet för att redigera användarrättigheter",
@@ -20,6 +21,7 @@
 	"bs-permissionmanager-btn-save-in-progress-label": "Sparar...",
 	"bs-permissionmanager-save-success": "Rättigheter sparade.",
 	"bs-permissionmanager-pref-enablerealitycheck": "Aktivera rättighetskontroll",
+	"bs-permissionmanager-pref-max-backups": "Backup-gräns",
 	"bs-permissionmanager-unsaved-changes": "Det finns osparade ändringar. Vill du verkligen lämna sidan nu? De osparade ändringarna kommer att försvinna.",
 	"bs-permissionmanager-error-lockout": "Åtminstone en grupp måste äga rättigheten \"$1\".\nÄndringarna kunde inte sparas.",
 	"log-name-bs-permission-manager": "Logg för behörighetshantering",
