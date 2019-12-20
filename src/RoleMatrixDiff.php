@@ -2,14 +2,42 @@
 
 namespace BlueSpice\PermissionManager;
 
+use Config;
+
 class RoleMatrixDiff {
+	/**
+	 *
+	 * @var Config
+	 */
 	protected $config;
+	/**
+	 *
+	 * @var array
+	 */
 	protected $newGlobal;
+	/**
+	 *
+	 * @var array
+	 */
 	protected $newNSLockdown;
 
+	/**
+	 *
+	 * @var array
+	 */
 	protected $oldGlobal;
+	/**
+	 *
+	 * @var array
+	 */
 	protected $oldNSLockdown;
 
+	/**
+	 *
+	 * @param Config $config
+	 * @param array $newGlobal
+	 * @param array $newNSLockdown
+	 */
 	public function __construct( $config, $newGlobal, $newNSLockdown ) {
 		$this->config = $config;
 		$this->newGlobal = $newGlobal;
@@ -24,14 +52,26 @@ class RoleMatrixDiff {
 		}
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getGlobalDiff() {
 		return $this->globalDiff();
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getNsDiff() {
 		return $this->nsDiff();
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function globalDiff() {
 		$globalDiff = [];
 		foreach ( $this->newGlobal as $group => $roleArray ) {
@@ -46,6 +86,10 @@ class RoleMatrixDiff {
 		return $globalDiff;
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function nsDiff() {
 		$totalDiff = [];
 		// Groups that do not have role lockdown anymore
