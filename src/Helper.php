@@ -2,8 +2,8 @@
 
 namespace BlueSpice\PermissionManager;
 
-use BlueSpice\Services;
 use BlueSpice\Permission\RoleManager;
+use BlueSpice\Services;
 
 class Helper {
 	/**

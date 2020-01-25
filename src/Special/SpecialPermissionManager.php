@@ -2,9 +2,9 @@
 
 namespace BlueSpice\PermissionManager\Special;
 
+use BlueSpice\PermissionManager\Extension as PermissionManager;
 use BlueSpice\PermissionManager\Helper;
 use BlueSpice\Special\ManagerBase;
-use BlueSpice\PermissionManager\Extension as PermissionManager;
 
 class SpecialPermissionManager extends ManagerBase {
 

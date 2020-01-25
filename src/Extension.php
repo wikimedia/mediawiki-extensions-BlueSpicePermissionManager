@@ -31,11 +31,11 @@
 
 namespace BlueSpice\PermissionManager;
 
-use Message;
 use BlueSpice\Permission\IRole;
 use BlueSpice\Permission\RoleManager;
 use BlueSpice\Services;
 use Hooks;
+use Message;
 
 class Extension extends \BlueSpice\Extension {
 	/**

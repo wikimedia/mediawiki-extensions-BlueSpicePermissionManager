@@ -2,8 +2,8 @@
 
 namespace BlueSpice\PermissionManager;
 
-use Message;
 use BlueSpice\IAdminTool;
+use Message;
 
 class AdminTool implements IAdminTool {
 
