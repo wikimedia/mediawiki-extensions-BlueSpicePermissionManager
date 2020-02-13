@@ -27,11 +27,12 @@ class RemoveNonIncludableNamespaces extends LoggedUpdateMaintenance {
 			$this->output(
 				'Removing non-includable namespaces from pm-settings file... done' . PHP_EOL
 			);
-		} else {
-			$this->output(
-				'Removing non-includable namespaces from pm-settings file... failed' . PHP_EOL
-			);
+			return true;
 		}
+		$this->output(
+			'Removing non-includable namespaces from pm-settings file... failed' . PHP_EOL
+		);
+		return false;
 	}
 
 	/**
@@ -39,7 +40,7 @@ class RemoveNonIncludableNamespaces extends LoggedUpdateMaintenance {
 	 * @return string
 	 */
 	protected function getUpdateKey() {
-		return __CLASS__;
+		return 'bs_permissionmanager_removenonincludablenamespaces';
 	}
 }
 
