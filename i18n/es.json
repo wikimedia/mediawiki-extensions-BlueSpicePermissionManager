@@ -48,5 +48,6 @@
 	"bs-permissionmanager-role-permissions-column-permission": "Permiso",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Descripción",
 	"bs-premissionmanager-reset-button-label": "Restablecer",
-	"bs-permissionmanager-header-role": "Papel"
+	"bs-permissionmanager-header-role": "Papel",
+	"bs-permissionmanager-show-system-groups-label": "Mostrar grupos de sistema"
 }
