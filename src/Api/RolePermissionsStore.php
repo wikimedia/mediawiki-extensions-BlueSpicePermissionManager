@@ -23,7 +23,6 @@ class RolePermissionsStore extends \BSApiExtJSStoreBase {
 		$params[ 'role' ] = [
 			\ApiBase::PARAM_TYPE => 'string',
 			\ApiBase::PARAM_REQUIRED => true,
-			\ApiBase::PARAM_DFLT => ''
 		];
 		return $params;
 	}
