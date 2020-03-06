@@ -60,7 +60,7 @@ class Helper {
 	protected static function createInstance() {
 		$mainConfig = Services::getInstance()->getMainConfig();
 
-		$roleManager = Services::getInstance()->getBSRoleManager();
+		$roleManager = Services::getInstance()->getService( 'BSRoleManager' );
 		$config = Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 		$namespaceRolesLockdown = $config->get( 'NamespaceRolesLockdown' );
 
