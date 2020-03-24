@@ -7,7 +7,8 @@
 			"Phenolla",
 			"佛壁灯",
 			"科劳",
-			"VulpesVulpes825"
+			"VulpesVulpes825",
+			"Ps2049"
 		]
 	},
 	"bs-permissionmanager-desc": "用于编辑用户权限的管理界面",
@@ -52,7 +53,7 @@
 	"bs-permissionmanager-role-permissions-column-permission": "权限",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "描述",
 	"bs-premissionmanager-reset-button-label": "重置",
-	"logentry-bs-permission-manager-global-add": "$1添加了角色$5至用户组$4",
+	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|已经}}添加了 {{PLURAL:$6|角色|角色们}} $5至用户组$4",
 	"logentry-bs-permission-manager-global-remove": "$1从用户组$4中移除了角色$5",
 	"logentry-bs-permission-manager-ns-add": "$1在名字空间$7中添加了角色$5至用户组$4",
 	"logentry-bs-permission-manager-ns-remove": "$1从名字空间$7中移除了用户组$4的角色$5",
