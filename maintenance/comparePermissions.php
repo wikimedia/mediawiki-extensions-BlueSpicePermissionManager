@@ -19,7 +19,7 @@ class comparePermissions extends \Maintenance {
 		$oldPermissions = $this->getConfig()->get( 'GroupPermissions' );
 
 		// Initialize and apply roles
-		$roleManager = Services::getInstance()->getBSRoleManager();
+		$roleManager = Services::getInstance()->getService( 'BSRoleManager' );
 		if ( $roleManager->isRoleSystemEnabled() == false ) {
 			$roleManager->enableRoleSystem();
 			$roleManager->applyRoles();
@@ -28,7 +28,7 @@ class comparePermissions extends \Maintenance {
 		// Read new permissions
 		$newPermissions = $this->getConfig()->get( 'GroupPermissions' );
 
-		$permissionRegistry = Services::getInstance()->getBSPermissionRegistry();
+		$permissionRegistry = Services::getInstance()->getService( 'BSPermissionRegistry' );
 
 		// Compile results
 		$result = [];
