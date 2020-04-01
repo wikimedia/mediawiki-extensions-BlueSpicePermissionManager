@@ -44,7 +44,7 @@
 	"bs-permissionmanager-hint": "Ця роль включає {{PLURAL:$2|таке право: $1|такі права: $1}}",
 	"bs-permissionmanager-header-role": "Роль",
 	"bs-permissionmanager-write-config-file-error": "Не вдалося створити чи змінити $1",
-	"right-permissionmanager-viewspecialpage": "доступ до спеціальної сторінки [[Special:PermissionManager]]",
+	"right-permissionmanager-viewspecialpage": "Доступ до спеціальної сторінки [[Special:PermissionManager]]",
 	"bs-permissionmanager-show-system-groups-label": "Показати системні групи",
 	"bs-permissionmanager-role-permissions-label": "Права у ролі: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "Права",
