@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente",
-			"Jkb8",
+			"Athena in Wonderland",
 			"Hamilton Abreu",
-			"Athena in Wonderland"
+			"Jkb8",
+			"Vitorvicentevalente"
 		]
 	},
 	"bs-permissionmanager-desc": "Interface de administração para a edição de privilégios de utilizador",

@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>",
-			"Metalhead64",
-			"Umherirrender",
-			"Jkonrad",
 			"Hwboehm",
-			"Mglaser"
+			"Jkonrad",
+			"Metalhead64",
+			"Mglaser",
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Umherirrender"
 		]
 	},
 	"bs-permissionmanager-desc": "Administrationsoberfläche zur Bearbeitung von Benutzerrechten",

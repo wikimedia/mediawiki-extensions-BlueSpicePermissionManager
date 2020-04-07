@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Mirin",
 			"Robin van der Vliet",
-			"Surfo",
-			"Mirin"
+			"Surfo"
 		]
 	},
 	"bs-permissionmanager-btn-group-label": "Grupo:",

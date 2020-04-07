@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226",
 			"Cwlin0416",
+			"Kly",
 			"LNDDYL",
-			"Kly"
+			"Liuxinyu970226"
 		]
 	},
 	"bs-permissionmanager-desc": "編輯使用者權限的管理介面",
