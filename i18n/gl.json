@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm",
-			"Banjo"
+			"Banjo",
+			"Elisardojm"
 		]
 	},
 	"bs-permissionmanager-desc": "Interface administrativa para xestionar permisos de usuarios",

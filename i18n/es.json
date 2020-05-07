@@ -1,16 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"AVIADOR",
+			"Agusbou2015",
+			"AlvaroMolina",
+			"Amitie 10g",
+			"DannyS712",
 			"Fitoschido",
 			"Macofe",
-			"AVIADOR",
-			"Amitie 10g",
-			"Ryo567",
-			"AlvaroMolina",
 			"MarcoAurelio",
-			"Vanbasten 23",
-			"Agusbou2015",
-			"DannyS712"
+			"Ryo567",
+			"Vanbasten 23"
 		]
 	},
 	"bs-permissionmanager-desc": "Interfaz administrativa para gestionar permisos de usuarios",
