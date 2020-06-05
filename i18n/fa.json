@@ -3,6 +3,7 @@
 		"authors": [
 			"Alirezaaa",
 			"Ebraminio",
+			"FarsiNevis",
 			"Huji"
 		]
 	},
@@ -19,5 +20,9 @@
 	"bs-permissionmanager-btn-save-label": "ذخیره",
 	"bs-permissionmanager-btn-save-in-progress-label": "در حال ذخیره کردن ...",
 	"bs-permissionmanager-save-success": "دسترسی‌ها ذخیره شد.",
-	"bs-permissionmanager-pref-enablerealitycheck": "فعال کردن بررسی دسترسی"
+	"bs-permissionmanager-pref-enablerealitycheck": "فعال کردن بررسی دسترسی",
+	"bs-permissionmanager-group-all": "همه",
+	"bs-permissionmanager-header-role": "نقش",
+	"bs-permissionmanager-write-config-file-error": "ناتوان از ایجاد یا نوشتن $1",
+	"bs-permissionmanager-role-permissions-column-permission": "اجازه‌نامه"
 }
