@@ -6,8 +6,9 @@ $IP = dirname( dirname( dirname( __DIR__ ) ) );
 
 require_once "$IP/maintenance/Maintenance.php";
 
-use BlueSpice\PermissionManager\Extension as PermissionManager;
+use BlueSpice\PermissionManager\PermissionManager;
 use LoggedUpdateMaintenance;
+use MediaWiki\MediaWikiServices;
 use stdClass;
 
 class RemoveNonIncludableNamespaces extends LoggedUpdateMaintenance {
@@ -22,7 +23,11 @@ class RemoveNonIncludableNamespaces extends LoggedUpdateMaintenance {
 		$data->groupRoles = $GLOBALS['bsgGroupRoles'];
 		$data->roleLockdown = $GLOBALS['bsgNamespaceRolesLockdown'];
 
-		$res = PermissionManager::saveRoles( $data );
+		/** @var PermissionManager $permissionManager */
+		$permissionManager = MediaWikiServices::getInstance()->getService(
+		'BlueSpicePermissionManager'
+		);
+		$res = $permissionManager->saveRoles( $data );
 		if ( is_array( $res ) && isset( $res['success'] ) && $res['success'] ) {
 			$this->output(
 				'Removing non-includable namespaces from pm-settings file... done' . PHP_EOL

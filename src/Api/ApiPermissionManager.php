@@ -3,6 +3,8 @@
 namespace BlueSpice\PermissionManager\Api;
 
 use BlueSpice\Api\Response\Standard;
+use BlueSpice\PermissionManager\PermissionManager;
+use MediaWiki\MediaWikiServices;
 
 class ApiPermissionManager extends \BSApiTasksBase {
 
@@ -57,7 +59,12 @@ class ApiPermissionManager extends \BSApiTasksBase {
 	protected function task_saveRoles( $data ) {
 		$ret = $this->makeStandardReturn();
 		$ret->success = true;
-		$arrRes = \BlueSpice\PermissionManager\Extension::saveRoles( $data );
+
+		/** @var PermissionManager $permissionManager */
+		$permissionManager = MediaWikiServices::getInstance()->getService(
+			'BlueSpicePermissionManager'
+		);
+		$arrRes = $permissionManager->saveRoles( $data );
 		if ( is_array( $arrRes ) ) {
 			if ( isset( $arrRes['success'] ) ) {
 				$ret->success = $arrRes['success'];

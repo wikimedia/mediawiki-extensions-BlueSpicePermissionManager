@@ -1,11 +1,10 @@
-Ext.Loader.setPath(
-	'BS.panel.Maximizable',
-		mw.config.get( "wgScriptPath" ) + '/extensions/BlueSpicePermissionManager' +
-	'/resources/BS.panel/Maximizable.js'
-);
-
-Ext.onReady( function(){
-	Ext.create( 'BS.PermissionManager.panel.Manager', {
-		renderTo: 'panelPermissionManager'
+( function( $, mw, d ) {
+	$( function () {
+		$( '#bs-permission-manager-preset-select' ).append(
+			new bs.permissionManager.widget.PresetSelect( {
+				data: mw.config.get( 'bsPermissionManagerPresets' ),
+				$customPanel: $( '#bs-permission-manager-custom-preset' )
+			} ).$element
+		);
 	} );
-} );
+} )( jQuery, mediaWiki, document );
