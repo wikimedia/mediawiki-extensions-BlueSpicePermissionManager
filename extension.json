@@ -19,7 +19,8 @@
 					"className": "BlueSpice\\PermissionManager\\Extension",
 					"extPath": "/BlueSpicePermissionManager",
 					"configDefinitions": {
-						"PermissionManagerMaxBackups": "\\BlueSpice\\PermissionManager\\ConfigDefinition\\PermissionManagerMaxBackups::getInstance"
+						"PermissionManagerMaxBackups": "\\BlueSpice\\PermissionManager\\ConfigDefinition\\PermissionManagerMaxBackups::getInstance",
+						"PermissionManagerActivePreset": "\\BlueSpice\\PermissionManager\\ConfigDefinition\\PermissionManagerActivePresetConfig::getInstance"
 					}
 				}
 			},
@@ -88,7 +89,28 @@
 	"ResourceModules": {
 		"ext.bluespice.permissionManager": {
 			"scripts": [
+				"widget/Preset.js",
+				"widget/PresetSelect.js",
 				"bluespice.permissionManager.js"
+			],
+			"styles":[
+				"stylesheets/bluespice.permissionManager.less"
+			],
+			"messages": [
+				"bs-permissionmanager-switch-preset-confirm",
+				"bs-permissionmanager-preset-save-error"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"oojs-ui"
+			]
+		},
+		"ext.bluespice.permissionManager.customPreset": {
+			"scripts": [
+				"bluespice.permissionManager.customPreset.js"
+			],
+			"styles": [
+				"stylesheets/bluespice.permissionManager.customPreset.css"
 			],
 			"dependencies": [
 				"ext.bluespice.extjs"
@@ -116,9 +138,6 @@
 				"bs-permissionmanager-affected-by-dependency-single",
 				"bs-permissionmanager-affected-by-dependency"
 			]
-		},
-		"ext.bluespice.permissionManager.styles": {
-			"styles": "bluespice.permissionManager.css"
 		}
 	},
 	"Hooks": {
@@ -130,12 +149,18 @@
 			"\\BlueSpice\\PermissionManager\\Hook\\LoadExtensionSchemaUpdates\\RemoveNonIncludableNamespaces::callback"
 		]
 	},
+	"ServiceWiringFiles": [
+		"ServiceWiring.php"
+	],
 	"config_prefix": "bsg",
 	"config": {
 		"PermissionManagerMaxBackups": {
 			"value": 50,
 			"descriptionmsg": "bs-permissionmanager-pref-max-backups",
 			"public": true
+		},
+		"PermissionManagerActivePreset": {
+			"value": "private"
 		}
 	},
 	"AutoloadNamespaces": {

@@ -1,8 +1,8 @@
-#panelPermissionManager {
+#bs-permission-manager-custom-preset {
 	height: 800px;
 }
 
-#panelPermissionManager.fullscreen {
+#bs-permission-manager-custom-preset.fullscreen {
 	height: auto !important;
 	position: absolute;
 	top: 0;
