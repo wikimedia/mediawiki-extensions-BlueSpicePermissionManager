@@ -8,6 +8,7 @@
 			"Ps2049",
 			"VulpesVulpes825",
 			"佛壁灯",
+			"列维劳德",
 			"科劳"
 		]
 	},
@@ -54,8 +55,8 @@
 	"apihelp-bs-role-permission-store-summary": "为权限管理者提供角色描述",
 	"right-permissionmanager-viewspecialpage": "访问页面 [[Special:PermissionManager]] 的权限",
 	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|已经}}添加了 {{PLURAL:$6|角色|角色们}} $5至用户组$4",
-	"logentry-bs-permission-manager-global-remove": "$1从用户组$4中移除了角色$5",
-	"logentry-bs-permission-manager-ns-add": "$1在名字空间$7中添加了角色$5至用户组$4",
-	"logentry-bs-permission-manager-ns-remove": "$1从名字空间$7中移除了用户组$4的角色$5",
+	"logentry-bs-permission-manager-global-remove": "$1{{GENDER:$2|}}从用户组$4中移除了{{PLURAL:$6|角色}}$5",
+	"logentry-bs-permission-manager-ns-add": "$1{{GENDER:$2|}}在名字空间$7中添加了{{PLURAL:$6|角色}}$5至用户组$4",
+	"logentry-bs-permission-manager-ns-remove": "$1{{GENDER:$2|}}从名字空间$7中移除了用户组$4的{{PLURAL:$6|角色}}$5",
 	"bs-permissionmanager-affected-by-dependency": "此身份需要{{PLURAL:$2|以下权限}}：$1"
 }

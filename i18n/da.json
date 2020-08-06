@@ -18,5 +18,6 @@
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Beskrivelse",
 	"bs-premissionmanager-reset-button-label": "Nulstil",
 	"bs-permissionmanager-affected-by-notset": "Ikke sat",
-	"bs-permissionmanager-show-system-groups-label": "Vis systemgrupper"
+	"bs-permissionmanager-show-system-groups-label": "Vis systemgrupper",
+	"bs-permissionmanager-role-permissions-column-permission": "Tilladelse"
 }
