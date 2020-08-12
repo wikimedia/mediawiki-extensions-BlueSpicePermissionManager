@@ -34,6 +34,9 @@
 						"maintenanceadmin"
 					]
 				}
+			},
+			"DynamicSettingsRegistry": {
+				"PermissionManager": "BlueSpice\\PermissionManager\\DynamicSettings\\PmSettings::factory"
 			}
 		}
 	},
