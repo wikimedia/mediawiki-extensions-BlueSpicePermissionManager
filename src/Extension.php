@@ -31,6 +31,7 @@
 
 namespace BlueSpice\PermissionManager;
 
+use BlueSpice\DynamicSettingsManager;
 use Message;
 use BlueSpice\Permission\IRole;
 use BlueSpice\Permission\RoleManager;
@@ -54,8 +55,6 @@ class Extension extends \BlueSpice\Extension {
 	protected static $permissionRegistry;
 
 	public static function onCallback() {
-		$GLOBALS[ 'bsgConfigFiles' ][ 'PermissionManager' ] = BSCONFIGDIR . '/pm-settings.php';
-
 		array_unshift(
 			$GLOBALS['wgExtensionFunctions'],
 			'BlueSpice\PermissionManager\Extension::run'
@@ -150,7 +149,6 @@ class Extension extends \BlueSpice\Extension {
 	 */
 	protected static function writeGroupSettings( $groupRoles, $roleLockdown ) {
 		$config = Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
-		$configFile = $config->get( 'ConfigFiles' )[ 'PermissionManager' ];
 
 		if ( wfReadOnly() ) {
 			return [
@@ -163,7 +161,6 @@ class Extension extends \BlueSpice\Extension {
 		$globalDiff = $roleMatrixDiff->getGlobalDiff();
 		$nsDiff = $roleMatrixDiff->getNsDiff();
 
-		self::backupExistingSettings();
 		$saveContent = "<?php\n";
 		foreach ( $groupRoles as $group => $roleArray ) {
 			foreach ( $roleArray as $role => $value ) {
@@ -204,8 +201,9 @@ class Extension extends \BlueSpice\Extension {
 				$saveContent .= "\$GLOBALS['wgNonincludableNamespaces'][] = $nsConstant;\n";
 			}
 		}
-
-		$res = file_put_contents( $configFile, $saveContent );
+		$dynamicSettingsManager = DynamicSettingsManager::factory();
+		$status = $dynamicSettingsManager->persist( 'PermissionManager', $saveContent );
+		$res = $status->isGood();
 		if ( $res ) {
 			self::doLog( $globalDiff, $nsDiff );
 			return [ 'success' => true ];
@@ -214,7 +212,7 @@ class Extension extends \BlueSpice\Extension {
 					'success' => false,
 					'message' => Message::neWFromKey(
 						'bs-permissionmanager-write-config-file-error',
-						basename( $configFile )
+						'pm-settings.php'
 					)->plain()
 			];
 		}
@@ -301,33 +299,5 @@ class Extension extends \BlueSpice\Extension {
 		$logger->setTarget( $targetTitle );
 		$logger->setParameters( $params );
 		$logger->insert();
-	}
-
-	/**
-	 * creates a backup of the current pm-settings.php if it exists.
-	 */
-	protected static function backupExistingSettings() {
-		$config = Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
-		$configFile = $config->get( 'ConfigFiles' )[ 'PermissionManager' ];
-
-		if ( file_exists( $configFile ) ) {
-			$timestamp = wfTimestampNow();
-			$backupFilename = "pm-settings-backup-{$timestamp}.php";
-			$backupFile = dirname( $configFile ) . "/{$backupFilename}";
-
-			file_put_contents( $backupFile, file_get_contents( $configFile ) );
-		}
-
-		// remove old backup files if max number exceeded
-		$arrConfigFiles = scandir( dirname( $configFile ) . "/", SCANDIR_SORT_ASCENDING );
-		$arrBackupFiles = array_filter( $arrConfigFiles, function ( $elem ) {
-			return ( strpos( $elem, "pm-settings-backup-" ) !== false ) ? true : false;
-		} );
-
-		// default limit to 5 backups, remove all backup files until "maxbackups" files left
-		while ( count( $arrBackupFiles ) > $config->get( "PermissionManagerMaxBackups" ) ) {
-			$oldBackupFile = dirname( $configFile ) . "/" . array_shift( $arrBackupFiles );
-			unlink( $oldBackupFile );
-		}
 	}
 }
