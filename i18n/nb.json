@@ -29,6 +29,7 @@
 	"apihelp-bs-permissionmanager-tasks-description": "Tilbyr oppgaver for tillatelsesbehandlingen",
 	"apihelp-bs-permissionmanager-tasks-summary": "Tilbyr oppgaver for tillatelsesbehandlingen",
 	"apihelp-bs-role-permission-store-summary": "Tilbyr rollebeskrivelser for tillatelsesbehandlingen",
+	"apihelp-bs-role-permission-store-param-role": "Navn på rollen det skal hentes tillatelser for",
 	"action-permissionmanager-viewspecialpage": "se spesialsiden «{{int:bs-permissionmanager-label}}»",
 	"permissionmanager": "Tillatelsesbehandling",
 	"bs-permissionmanager-affected-by-explicit": "Blokkert av $1",

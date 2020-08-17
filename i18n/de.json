@@ -25,7 +25,7 @@
 	"bs-permissionmanager-pref-enablerealitycheck": "Rechteprüfung aktivieren",
 	"bs-permissionmanager-pref-max-backups": "Maximale Anzahl an Sicherungen",
 	"bs-permissionmanager-unsaved-changes": "Es existieren ungespeicherte Änderungen. Willst du die Seite wirklich verlassen? Die ungespeicherten Änderungen gehen in diesem Fall verloren",
-	"bs-permissionmanager-error-lockout": "Mindestens eine Benutzergruppe muss das Recht \"$1\" besitzen.\nDie Änderungen konnten nicht gespeichert werden.",
+	"bs-permissionmanager-error-lockout": "Mindestens eine Benutzergruppe muss das Recht „$1“ besitzen.\nDie Änderungen konnten nicht gespeichert werden.",
 	"log-name-bs-permission-manager": "Rechteverwaltungs-Logbuch",
 	"log-description-bs-permission-manager": "Logbuch von Änderungen an den Gruppenberechtigungen.",
 	"log-show-hide-bs-permission-manager": "$1 Rechteverwaltung-Logbuch",
