@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"MuratTheTurkish",
 			"Rapsar",
 			"Sayginer",
 			"Violetanka",
@@ -33,6 +34,7 @@
 	"apihelp-bs-permissionmanager-tasks-description": "PermissionManager için görevler sağlar",
 	"apihelp-bs-permissionmanager-tasks-summary": "PermissionManager için görevler sağlar",
 	"apihelp-bs-role-permission-store-summary": "PermissionManager için rol açıklaması sağlayın",
+	"apihelp-bs-role-permission-store-param-role": "İzin alınacak rolün adı",
 	"action-permissionmanager-viewspecialpage": "\"{{int:bs-allowmanager-label}}\" özel sayfasını görüntüle",
 	"permissionmanager": "İzin yöneticisi",
 	"bs-permissionmanager-affected-by-explicit": "Engelleyen: $1",
