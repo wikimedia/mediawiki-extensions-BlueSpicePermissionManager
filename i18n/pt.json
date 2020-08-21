@@ -32,6 +32,7 @@
 	"apihelp-bs-permissionmanager-tasks-description": "Fornece tarefas para o PermissionManager",
 	"apihelp-bs-permissionmanager-tasks-summary": "Fornece tarefas para o PermissionManager",
 	"apihelp-bs-role-permission-store-summary": "Fornecer descrição de função para o PermissionManager",
+	"apihelp-bs-role-permission-store-param-role": "Nome da função para a qual obter permissões",
 	"action-permissionmanager-viewspecialpage": "ver a página especial \"{{int:bs-permissionmanager-label}}\"",
 	"permissionmanager": "Administrador de permissões",
 	"bs-permissionmanager-affected-by-explicit": "Bloqueada por $1",
