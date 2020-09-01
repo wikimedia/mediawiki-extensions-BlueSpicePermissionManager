@@ -1,0 +1,50 @@
+#bs-permission-manager-preset-select {
+	.oo-ui-buttonWidget {
+		height: 150px;
+		min-width: 120px;
+		width: auto;
+		&.oo-ui-buttonElement-active {
+			a:focus {
+				background-color: #2a4b8d;
+			}
+		}
+		a {
+			width: inherit;
+			height: inherit;
+			min-width: inherit;
+			margin: 0;
+			padding: 10px;
+			&:not('.oo-ui-buttonElement-active') {
+				background-color: transparent;
+			}
+			span {
+				display: block;
+				&.oo-ui-iconElement-icon {
+					width: 100%;
+					background-size: 50%;
+					background-position-y: 10px;
+					left: 0;
+					margin: 0;
+				}
+				&.oo-ui-labelElement-label {
+					width: 100%;
+					text-align: center;
+					margin-top: 90px;
+					font-size: 1.5em;
+				}
+			}
+		}
+	}
+	.preset-help {
+		margin-top: 20px;
+		font-size: 1.2em;
+	}
+	.oo-ui-messageWidget.oo-ui-flaggedElement-error {
+		margin-bottom: 20px;
+	}
+}
+
+#bs-permission-manager-custom-preset {
+	height: 800px;
+	margin-top: 30px;
+}

@@ -2,11 +2,15 @@
 
 namespace BlueSpice\PermissionManager\Special;
 
-use BlueSpice\PermissionManager\Extension as PermissionManager;
-use BlueSpice\PermissionManager\Helper;
-use BlueSpice\Special\ManagerBase;
+use BlueSpice\LoadPlaceholderRegistry;
+use BlueSpice\PermissionManager\PermissionManager;
+use Html;
+use MediaWiki\MediaWikiServices;
+use SpecialPage;
 
-class SpecialPermissionManager extends ManagerBase {
+class SpecialPermissionManager extends SpecialPage {
+	/** @var PermissionManager */
+	protected $permissionManager;
 
 	/**
 	 *
@@ -16,37 +20,71 @@ class SpecialPermissionManager extends ManagerBase {
 
 	public function __construct() {
 		parent::__construct( 'PermissionManager', 'permissionmanager-viewspecialpage' );
+
+		$this->permissionManager = MediaWikiServices::getInstance()->getService(
+			'BlueSpicePermissionManager'
+		);
 	}
 
 	/**
-	 *
-	 * @return string
+	 * @inheritDoc
 	 */
-	protected function getId() {
-		return "panelPermissionManager";
+	public function execute( $subPage ) {
+		parent::execute( $subPage );
+
+		$this->getOutput()->addHTML(
+			Html::element( 'div', [ 'id' => 'bs-permission-manager-preset-select' ] )
+		);
+		$this->getOutput()->addHTML(
+			Html::openElement( 'div', [ 'id' => 'bs-permission-manager-custom-preset' ] ) .
+			$this->getLoadPlaceholder() .
+			Html::closeElement( 'div' )
+		);
+
+		$this->addJSVars();
+
+		$this->getOutput()->addModules( 'ext.bluespice.permissionManager' );
 	}
 
 	/**
-	 *
-	 * @return array
+	 * Add required JS vars
+	 * Vars for "custom" preset should be loaded over the remove config once its ready
 	 */
-	protected function getJSVars() {
-		$helper = Helper::getInstance();
-		$groups = $helper->getGroups();
+	protected function addJSVars() {
+		$availablePresets = $this->permissionManager->getAvailablePresets();
+		$activePreset = $this->permissionManager->getActivePreset();
+		$presetData = [];
+		foreach ( $availablePresets as $presetName ) {
+			$preset = $this->permissionManager->getPreset( $presetName );
+			if ( $preset === null ) {
+				continue;
+			}
+			$presetData[$preset->getId()] = [
+				'id' => $preset->getId(),
+				'label' => $preset->getLabel(),
+				'help' => $preset->getHelpMessage(),
+				'icon' => $preset->getIcon(),
+				'active' => $activePreset->getId() === $preset->getId(),
+			];
+		}
 
-		$rolesAndPermissions = PermissionManager::getRoles();
-		$rolesAndHints = $helper->formatPermissionsToHint( $rolesAndPermissions );
+		$this->getOutput()->addJsConfigVars( 'bsPermissionManagerPresets', $presetData );
 
-		$groupRoles = PermissionManager::getGroupRoles();
+		$groups = $this->permissionManager->getGroups();
 
-		return [
+		$rolesAndPermissions = $this->permissionManager->getRoleManager()->getRoleNamesAndPermissions();
+		$rolesAndHints = $this->permissionManager->formatPermissionsToHint( $rolesAndPermissions );
+
+		$groupRoles = $this->permissionManager->getRoleManager()->getGroupRoles();
+
+		$this->getOutput()->addJsConfigVars( [
 			'bsPermissionManagerGroupsTree' => $groups,
 			'bsPermissionManagerRoles' => $rolesAndHints,
-			'bsPermissionManagerNamespaces' => $helper->buildNamespaceMetadata(),
+			'bsPermissionManagerNamespaces' => $this->permissionManager->buildNamespaceMetadata(),
 			'bsPermissionManagerGroupRoles' => $groupRoles,
-			'bsPermissionManagerRoleLockdown' => $helper->getNamespaceRolesLockdown(),
-			'bsPermissionManagerRoleDependencyTree' => $helper->getRoleDependencyTree()
-		];
+			'bsPermissionManagerRoleLockdown' => $this->permissionManager->getNamespaceRolesLockdown(),
+			'bsPermissionManagerRoleDependencyTree' => $this->permissionManager->getRoleDependencyTree()
+		] );
 	}
 
 	/**
@@ -61,12 +99,10 @@ class SpecialPermissionManager extends ManagerBase {
 	}
 
 	/**
-	 *
-	 * @return array
+	 * @return string
 	 */
-	protected function getAttributes() {
-		return [
-			"style" => "height: 800px"
-		];
+	private function getLoadPlaceholder() {
+		$registry = new LoadPlaceholderRegistry();
+		return $registry->getParsedTemplate( 'CRUDGrid' );
 	}
 }
