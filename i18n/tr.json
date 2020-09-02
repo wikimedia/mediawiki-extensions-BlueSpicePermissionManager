@@ -57,5 +57,15 @@
 	"logentry-bs-permission-manager-ns-add": "$1, $4 grubuna $7 ad alanında $5 {{GENDER:$6|rol}} {{GENDER:$2|ekledi}}",
 	"logentry-bs-permission-manager-ns-remove": "$1, $4 grubuna $7 ad alanında $5 {{GENDER:$6|rol}} {{GENDER:$2|kaldırdı}}",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - {{PLURAL:$3|rol}} konumunda mevcut: $2",
-	"bs-permissionmanager-affected-by-dependency": "Bu rol {{PLURAL:$2|aşağıdaki izin|aşağıdaki izinler}} gerektirir:\n$1"
+	"bs-permissionmanager-affected-by-dependency": "Bu rol {{PLURAL:$2|aşağıdaki izin|aşağıdaki izinler}} gerektirir:\n$1",
+	"bs-permissionmanager-preset-custom-label": "Özel kurulum",
+	"bs-permissionmanager-preset-custom-help": "Viki için rol atamalarını manüel olarak yapılandırın",
+	"bs-permissionmanager-preset-private-label": "Özel viki",
+	"bs-permissionmanager-preset-private-help": "Viki içerikleri yalnızca oturum açmış kullanıcılar tarafından görülebilir ve düzenleme ve gelişmiş işlemler yalnızca \"düzenleyici\" rolü tarafından kullanılabilir",
+	"bs-permissionmanager-preset-protected-label": "Korumalı viki",
+	"bs-permissionmanager-preset-protected-help": "Viki içeriği herkes tarafından görülebilir, ancak yalnızca oturum açmış kullanıcılar tarafından düzenlenebilir",
+	"bs-permissionmanager-preset-public-label": "Herkese açık viki",
+	"bs-permissionmanager-preset-public-help": "Viki içerikleri herkes tarafından görülebilir ve düzenlenebilir olacak",
+	"bs-permissionmanager-switch-preset-confirm": "Ön ayarın değiştirilmesi, vikideki tüm kullanıcılara hemen uygulanacaktır. Devam etmek istediğine emin misin?",
+	"bs-permissionmanager-preset-save-error": "Yapılandırma kaydedilemez! Değişiklikler uygulanmaz!"
 }
