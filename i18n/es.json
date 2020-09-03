@@ -49,5 +49,9 @@
 	"bs-permissionmanager-show-system-groups-label": "Mostrar grupos de sistema",
 	"bs-permissionmanager-role-permissions-column-permission": "Permiso",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Descripción",
-	"bs-premissionmanager-reset-button-label": "Restablecer"
+	"bs-premissionmanager-reset-button-label": "Restablecer",
+	"bs-permissionmanager-preset-private-label": "Wiki privado",
+	"bs-permissionmanager-preset-protected-label": "Wiki protegido",
+	"bs-permissionmanager-preset-public-label": "Wiki público",
+	"bs-permissionmanager-preset-public-help": "Todos podrán ver y editar el contenido del wiki"
 }

@@ -57,5 +57,15 @@
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|a}} ajouté {{PLURAL:$6|un rôle|des rôles}} $5 dans l'espace de noms $7 au groupe $4",
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|a}} supprimé {{PLURAL:$6|un rôle|des rôles}} $5 dans l'espace de noms $7 du groupe $4",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - disponible dans $3 {{PLURAL:$3|rôle|rôles}}: $2",
-	"bs-permissionmanager-affected-by-dependency": "Ce rôle nécessite {{PLURAL:$2|le droit suivant|les autorisations suivantes}} :\n$1"
+	"bs-permissionmanager-affected-by-dependency": "Ce rôle nécessite {{PLURAL:$2|le droit suivant|les autorisations suivantes}} :\n$1",
+	"bs-permissionmanager-preset-custom-label": "Paramétrage personnalisé",
+	"bs-permissionmanager-preset-custom-help": "Configurer manuellement les affectations de rôle pour le wiki",
+	"bs-permissionmanager-preset-private-label": "Wiki privé",
+	"bs-permissionmanager-preset-private-help": "Le contenu du wiki ne sera visible qu’aux utilisateurs connectés, et la modification et les opérations avancées disponibles uniquement au rôle « éditeur »",
+	"bs-permissionmanager-preset-protected-label": "Wiki protégé",
+	"bs-permissionmanager-preset-protected-help": "Le contenu du wiki sera visible de tous, mais modifiable uniquement par les utilisateurs connectés",
+	"bs-permissionmanager-preset-public-label": "Wiki public",
+	"bs-permissionmanager-preset-public-help": "Le contenu du wiki sera visible te modifiable par tout le monde",
+	"bs-permissionmanager-switch-preset-confirm": "Basculer la présélection sera appliqué immédiatement à tous les utilisateurs du wiki. Êtes-vous sûr de vouloir continuer ?",
+	"bs-permissionmanager-preset-save-error": "La configuration n’a pas pu être enregistrée ! Les modifications ne seront pas appliquées !"
 }
