@@ -24,10 +24,9 @@ class PublicWiki extends PermissionPreset {
 	 * @inheritDoc
 	 */
 	public function apply() {
-		// Everyone can read, only users can edit
+		// Everyone can read, everyone can edit
 		$this->groupRoles['*']['reader'] = true;
 		$this->groupRoles['*']['editor'] = true;
-		// $this->groupRoles['user']['editor'] = true;
 	}
 
 	/**
