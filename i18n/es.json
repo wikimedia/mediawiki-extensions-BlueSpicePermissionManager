@@ -50,6 +50,7 @@
 	"bs-permissionmanager-role-permissions-column-permission": "Permiso",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Descripción",
 	"bs-premissionmanager-reset-button-label": "Restablecer",
+	"bs-permissionmanager-preset-custom-label": "Configuración personalizada",
 	"bs-permissionmanager-preset-private-label": "Wiki privado",
 	"bs-permissionmanager-preset-protected-label": "Wiki protegido",
 	"bs-permissionmanager-preset-public-label": "Wiki público",
