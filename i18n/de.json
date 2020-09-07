@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Elliot",
 			"Hwboehm",
 			"Jkonrad",
 			"Metalhead64",
@@ -25,7 +26,7 @@
 	"bs-permissionmanager-pref-enablerealitycheck": "Rechteprüfung aktivieren",
 	"bs-permissionmanager-pref-max-backups": "Maximale Anzahl an Sicherungen",
 	"bs-permissionmanager-unsaved-changes": "Es existieren ungespeicherte Änderungen. Willst du die Seite wirklich verlassen? Die ungespeicherten Änderungen gehen in diesem Fall verloren",
-	"bs-permissionmanager-error-lockout": "Mindestens eine Benutzergruppe muss das Recht \"$1\" besitzen.\nDie Änderungen konnten nicht gespeichert werden.",
+	"bs-permissionmanager-error-lockout": "Mindestens eine Benutzergruppe muss das Recht „$1“ besitzen.\nDie Änderungen konnten nicht gespeichert werden.",
 	"log-name-bs-permission-manager": "Rechteverwaltungs-Logbuch",
 	"log-description-bs-permission-manager": "Logbuch von Änderungen an den Gruppenberechtigungen.",
 	"log-show-hide-bs-permission-manager": "$1 Rechteverwaltung-Logbuch",
@@ -56,5 +57,6 @@
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|hat}} die {{PLURAL:$6|Rolle|Rollen}} $5 im Namensraum $7 zur Gruppe $4 hinzugefügt",
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|hat}} die {{PLURAL:$6|Rolle|Rollen}} $5 im Namensraum $7 aus der Gruppe $4 entfernt",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - verfügbar in {{PLURAL:$3|der Rolle|den Rollen}}: $2",
-	"bs-permissionmanager-affected-by-dependency": "Diese Rolle benötigt {{PLURAL:$2|das folgende Recht|die folgenden Rechte}}:\n$1"
+	"bs-permissionmanager-affected-by-dependency": "Diese Rolle benötigt {{PLURAL:$2|das folgende Recht|die folgenden Rechte}}:\n$1",
+	"bs-permissionmanager-preset-custom-label": "Personalisierte Einstellungen"
 }

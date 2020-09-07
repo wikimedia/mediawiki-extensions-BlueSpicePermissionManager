@@ -51,5 +51,6 @@
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|har}} lagt til {{PLURAL:$6|rollen|rollene}} $5 i navnerommet $7 til gruppa $4",
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|har}} fjernet {{PLURAL:$6|rollen|rollene}} $5 i navnerommet $7 fra gruppa $4",
 	"bs-permissionmanager-affected-by-dependency-single": "– $1 – tilgjengelig i {{PLURAL:$3|rollen|rollene}}: $2",
-	"bs-permissionmanager-affected-by-dependency": "Denne rollen krever følgende {{PLURAL:$2|tillatelse|tillatelser}}:\n$1"
+	"bs-permissionmanager-affected-by-dependency": "Denne rollen krever følgende {{PLURAL:$2|tillatelse|tillatelser}}:\n$1",
+	"apihelp-bs-role-permission-store-param-role": "Navn på rollen det skal hentes tillatelser for"
 }

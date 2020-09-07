@@ -31,8 +31,8 @@
 	"apihelp-bs-permissionmanager-tasks-summary": "Provides tasks for the PermissionManager",
 	"apihelp-bs-role-permission-store-summary": "Provide role description for the PermissionManager",
 	"apihelp-bs-role-permission-store-param-role": "Name of the role to get permissions for",
-	"action-permissionmanager-viewspecialpage":"view the special page \"{{int:bs-permissionmanager-label}}\"",
-	"permissionmanager":"Permission manager",
+	"action-permissionmanager-viewspecialpage": "view the special page \"{{int:bs-permissionmanager-label}}\"",
+	"permissionmanager": "Permission manager",
 	"bs-permissionmanager-affected-by-explicit": "Blocked by $1",
 	"bs-permissionmanager-affected-by-inherited": "Inherited from $1",
 	"bs-permissionmanager-affected-by-notset": "Not set",
@@ -53,5 +53,15 @@
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|has}} added {{PLURAL:$6|role|roles}} $5 in namespace $7 to group $4",
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|has}} removed {{PLURAL:$6|role|roles}} $5 in namespace $7 from group $4",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - available in {{PLURAL:$3|role|roles}}: $2",
-	"bs-permissionmanager-affected-by-dependency": "This role requires {{PLURAL:$2|the following permission|following permissions}}:\n$1"
+	"bs-permissionmanager-affected-by-dependency": "This role requires {{PLURAL:$2|the following permission|following permissions}}:\n$1",
+	"bs-permissionmanager-preset-custom-label": "Custom setup",
+	"bs-permissionmanager-preset-custom-help": "Manually configure role assignments for the wiki",
+	"bs-permissionmanager-preset-private-label": "Private wiki",
+	"bs-permissionmanager-preset-private-help": "Wiki contents will only be visible to logged in users, and editing and advanced operations only available to \"editor\" role",
+	"bs-permissionmanager-preset-protected-label": "Protected wiki",
+	"bs-permissionmanager-preset-protected-help": "Wiki contents will be visible to everyone, but only editable by logged in users",
+	"bs-permissionmanager-preset-public-label": "Public wiki",
+	"bs-permissionmanager-preset-public-help": "Wiki contents will be visible and editable by everyone",
+	"bs-permissionmanager-switch-preset-confirm": "Switching the preset will be applied immediately to all users in the wiki. Are you sure you want to continue?",
+	"bs-permissionmanager-preset-save-error": "Configuration cannot be saved! Changes are not applied!"
 }
