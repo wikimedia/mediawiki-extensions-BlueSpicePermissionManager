@@ -52,5 +52,15 @@
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|har}} lagt til {{PLURAL:$6|rollen|rollene}} $5 i navnerommet $7 til gruppa $4",
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|har}} fjernet {{PLURAL:$6|rollen|rollene}} $5 i navnerommet $7 fra gruppa $4",
 	"bs-permissionmanager-affected-by-dependency-single": "– $1 – tilgjengelig i {{PLURAL:$3|rollen|rollene}}: $2",
-	"bs-permissionmanager-affected-by-dependency": "Denne rollen krever følgende {{PLURAL:$2|tillatelse|tillatelser}}:\n$1"
+	"bs-permissionmanager-affected-by-dependency": "Denne rollen krever følgende {{PLURAL:$2|tillatelse|tillatelser}}:\n$1",
+	"bs-permissionmanager-preset-custom-label": "Egendefinert oppsett",
+	"bs-permissionmanager-preset-custom-help": "Konfigurer rolletildelinger for wikien manuelt",
+	"bs-permissionmanager-preset-private-label": "Privat wiki",
+	"bs-permissionmanager-preset-private-help": "Wikiens innhold blir bare synlig for innloggede brukere, og redigering og andre handlinger begrenses til rollen «editor»",
+	"bs-permissionmanager-preset-protected-label": "Beskyttet wiki",
+	"bs-permissionmanager-preset-protected-help": "Wikiens innhold blir synlig for alle, men kan bare redigeres av innloggede brukere",
+	"bs-permissionmanager-preset-public-label": "Offentlig wiki",
+	"bs-permissionmanager-preset-public-help": "Wikiens innhold blir synlig og kan redigeres av alle",
+	"bs-permissionmanager-switch-preset-confirm": "Bytting av valget vil gjelde alle brukerne på wikien, umiddelbart. Er du sikker på at du vil fortsette?",
+	"bs-permissionmanager-preset-save-error": "Konfigurasjonen kan ikke lagres! Endringene gjelder ikke!"
 }
