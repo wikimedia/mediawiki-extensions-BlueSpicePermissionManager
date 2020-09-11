@@ -30,6 +30,7 @@ class PrivateWiki extends PermissionPreset {
 		$this->groupRoles['user']['reader'] = true;
 		$this->groupRoles['user']['editor'] = false;
 		$this->groupRoles['editor']['editor'] = true;
+		$this->groupRoles['sysop']['editor'] = true;
 	}
 
 	/**
