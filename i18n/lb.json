@@ -25,5 +25,7 @@
 	"bs-permissionmanager-write-config-file-error": "$1 konnt net ugeluecht oder geschriwwe ginn",
 	"bs-permissionmanager-role-permissions-column-permission": "Autorisatioun",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Beschreiwung",
-	"bs-premissionmanager-reset-button-label": "Zrécksetzen"
+	"bs-premissionmanager-reset-button-label": "Zrécksetzen",
+	"bs-permissionmanager-preset-private-label": "Privat Wiki",
+	"bs-permissionmanager-preset-public-label": "Ëffentlech Wiki"
 }
