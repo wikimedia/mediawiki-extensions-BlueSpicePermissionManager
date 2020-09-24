@@ -43,11 +43,6 @@
 	border-left-color: #fff;
 }
 
-/* Part of BS.panel.Maximizable */
-html.bs-maximizable-panel-fullscreen {
-	overflow: hidden;
-}
-
 .bs-pm-actioncolumn-icon {
 	font-size: 14px;
 }

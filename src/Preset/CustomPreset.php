@@ -30,8 +30,8 @@ class CustomPreset implements IPreset {
 	/**
 	 * @inheritDoc
 	 */
-	public function getLabel(): string {
-		return Message::newFromKey( 'bs-permissionmanager-preset-custom-label' )->text();
+	public function getLabel(): Message {
+		return Message::newFromKey( 'bs-permissionmanager-preset-custom-label' );
 	}
 
 	/**
@@ -48,13 +48,13 @@ class CustomPreset implements IPreset {
 	 * @inheritDoc
 	 */
 	public function getIcon(): string {
-		return 'settings';
+		return 'custom';
 	}
 
 	/**
 	 * @inheritDoc
 	 */
-	public function getHelpMessage(): string {
-		return Message::newFromKey( 'bs-permissionmanager-preset-custom-help' )->text();
+	public function getHelpMessage(): Message {
+		return Message::newFromKey( 'bs-permissionmanager-preset-custom-help' );
 	}
 }

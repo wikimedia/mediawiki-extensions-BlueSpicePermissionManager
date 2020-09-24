@@ -2,12 +2,57 @@
 	bs.util.registerNamespace( 'bs.permissionManager.widget' );
 
 	bs.permissionManager.widget.PresetWidget = function ( data ) {
-
-
-		data.title = data.help;
 		bs.permissionManager.widget.PresetWidget.parent.call( this, data );
+
+		this.icon = new OO.ui.IconWidget( { icon: data.icon } );
+		this.title = new OO.ui.LabelWidget( {
+			label: data.label,
+			classes: [ 'permission-manager-preset-title' ]
+		} );
+		this.desc = new OO.ui.LabelWidget( {
+			label: new OO.ui.HtmlSnippet( data.help ),
+			classes: [ 'permission-manager-preset-help' ]
+		} );
+		this.activeFlag = new OO.ui.IconWidget( { icon: '' } );
+
+		this.$element.append(
+			this.icon.$element,
+			$( '<div>' ).addClass( 'permission-manager-preset-data-wrapper' )
+				.append( this.title.$element, this.desc.$element ),
+			this.activeFlag.$element
+		);
+
+		this.disabled = false;
+
+		this.$element.addClass( 'permission-manager-preset-widget' );
+
+		this.$element.on( 'click', function () {
+			if ( this.disabled ) {
+				return;
+			}
+			this.emit( 'click' );
+		}.bind( this ) );
 	};
 
-	OO.inheritClass( bs.permissionManager.widget.PresetWidget, OO.ui.ButtonWidget );
+	OO.inheritClass( bs.permissionManager.widget.PresetWidget, OO.ui.Widget );
 
+	bs.permissionManager.widget.PresetWidget.static.tagName = 'div';
+
+	bs.permissionManager.widget.PresetWidget.prototype.setActive = function( active ) {
+		this.activeFlag.setIcon( active ? 'check' : '' );
+		if ( active ) {
+			this.$element.addClass( 'active' );
+		} else {
+			this.$element.removeClass( 'active' );
+		}
+	};
+
+	bs.permissionManager.widget.PresetWidget.prototype.setDisabled = function( disabled ) {
+		this.disabled = disabled;
+		if ( disabled ) {
+			this.$element.addClass( 'disabled' );
+		} else {
+			this.$element.removeClass( 'disabled' );
+		}
+	};
 } )( jQuery, mediaWiki, blueSpice, document );

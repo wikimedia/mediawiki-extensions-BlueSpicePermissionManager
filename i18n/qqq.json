@@ -68,5 +68,6 @@
 	"bs-permissionmanager-preset-public-label": "Label of the permission preset \"public\"",
 	"bs-permissionmanager-preset-public-help": "Help message for the permission preset \"public\"",
 	"bs-permissionmanager-switch-preset-confirm": "Confirmation message when switching to a different preset",
-	"bs-permissionmanager-preset-save-error": "Error message when API call to change the preset failed"
+	"bs-permissionmanager-preset-save-error": "Error message when API call to change the preset failed",
+	"bs-permissionmanager-preset-save-success": "Success message when saving the preset selection succeeded"
 }

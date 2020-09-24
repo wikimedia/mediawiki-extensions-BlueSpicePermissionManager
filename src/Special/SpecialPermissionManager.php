@@ -61,8 +61,8 @@ class SpecialPermissionManager extends SpecialPage {
 			}
 			$presetData[$preset->getId()] = [
 				'id' => $preset->getId(),
-				'label' => $preset->getLabel(),
-				'help' => $preset->getHelpMessage(),
+				'label' => $preset->getLabel()->text(),
+				'help' => $preset->getHelpMessage()->parse(),
 				'icon' => $preset->getIcon(),
 				'active' => $activePreset->getId() === $preset->getId(),
 			];

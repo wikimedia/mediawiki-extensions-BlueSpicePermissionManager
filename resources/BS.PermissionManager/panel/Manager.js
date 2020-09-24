@@ -29,35 +29,6 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 			}
 		} );
 
-		me.btnOK = new Ext.Button({
-			text: mw.message( 'bs-permissionmanager-btn-save-label' ).plain(),
-			handler: function() {
-				Ext.create( 'BS.PermissionManager.data.Manager' ).saveRoles( this );
-
-				me.btnOK.setDisabled( true );
-				me.btnCancel.setDisabled( true );
-			},
-			cls: 'x-btn-progressive',
-			disabled: true,
-			scope: this
-		});
-
-		me.btnCancel = new Ext.Button( {
-			text: mw.message( "bs-premissionmanager-reset-button-label" ).plain(),
-			disabled: true,
-			handler: function() {
-				var dataManager = Ext.create( 'BS.PermissionManager.data.Manager' );
-				dataManager.resetAllSettings();
-
-				Ext.data.StoreManager
-					.lookup( 'bs-permissionmanager-role-store' )
-					.loadRawData( dataManager.buildRoleData().roles );
-
-					me.btnOK.setDisabled( true );
-					me.btnCancel.setDisabled( true );
-			}
-		});
-
 		me.chkShowSystemGroups = new Ext.form.field.Checkbox( {
 			boxLabel: mw.message( 'bs-permissionmanager-show-system-groups-label' ).text(),
 			checked: true,
@@ -73,8 +44,7 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 			listeners: {
 				cellclick: function() {
 					var dataManager = Ext.create( 'BS.PermissionManager.data.Manager' );
-					me.btnOK.setDisabled( ! dataManager.isDirty() );
-					me.btnCancel.setDisabled( ! dataManager.isDirty() );
+					me.fireEvent( 'dirtycheck', me, dataManager.isDirty() );
 				}
 			}
 		} );
@@ -91,8 +61,6 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 			me.treeGroups
 		];
 		me.tbar = [
-			me.btnOK,
-			me.btnCancel,
 			me.chkShowSystemGroups,
 			'->'
 		];
@@ -102,6 +70,19 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 			[me]
 		);
 		me.callParent(arguments);
+	},
+
+	onBtnSaveClick: function() {
+		return Ext.create( 'BS.PermissionManager.data.Manager' ).saveRoles( this );
+	},
+
+	onBtnResetClick: function () {
+		var dataManager = Ext.create( 'BS.PermissionManager.data.Manager' );
+		dataManager.resetAllSettings();
+
+		Ext.data.StoreManager
+			.lookup( 'bs-permissionmanager-role-store' )
+			.loadRawData( dataManager.buildRoleData().roles );
 	},
 
 	getHTMLTable: function() {

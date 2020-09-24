@@ -16,8 +16,8 @@ class PrivateWiki extends PermissionPreset {
 	/**
 	 * @inheritDoc
 	 */
-	public function getLabel(): string {
-		return Message::newFromKey( 'bs-permissionmanager-preset-private-label' )->text();
+	public function getLabel(): Message {
+		return Message::newFromKey( 'bs-permissionmanager-preset-private-label' );
 	}
 
 	/**
@@ -37,13 +37,13 @@ class PrivateWiki extends PermissionPreset {
 	 * @inheritDoc
 	 */
 	public function getIcon(): string {
-		return 'key';
+		return 'private';
 	}
 
 	/**
 	 * @inheritDoc
 	 */
-	public function getHelpMessage(): string {
-		return Message::newFromKey( 'bs-permissionmanager-preset-private-help' )->text();
+	public function getHelpMessage(): Message {
+		return Message::newFromKey( 'bs-permissionmanager-preset-private-help' );
 	}
 }

@@ -432,6 +432,7 @@
 	}
 
 	function saveRoles(caller) {
+		var dfd = $.Deferred();
 		// if no caller is given we create a dummy to avoid errors
 		caller = caller || {
 			mask: function () {
@@ -452,8 +453,6 @@
 		).done(function (response) {
 			if (response.success === true) {
 				caller.unmask();
-
-				mw.notify( mw.msg( 'bs-permissionmanager-save-success' ), { title: mw.msg( 'bs-extjs-title-success' ) } );
 
 				// Reset modification cache
 				modifiedValues = {};
@@ -480,16 +479,18 @@
 				Ext.data.StoreManager
 						.lookup( 'bs-permissionmanager-role-store' )
 						.loadRawData( buildRoleData().roles );
+
+				dfd.resolve();
 			} else {
 				caller.unmask();
-				bs.util.alert( 'bs-pm-save-error', {
-					text: result.message
-				});
+				dfd.reject();
 			}
 		}).fail( function ( response ) {
+			dfd.reject();
 			caller.unmask();
 		} );
 
+		return dfd.promise();
 	}
 
 	Ext.define( 'RoleGridModel', {
