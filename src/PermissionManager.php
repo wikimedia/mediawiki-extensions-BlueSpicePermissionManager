@@ -3,13 +3,10 @@
 namespace BlueSpice\PermissionManager;
 
 use BlueSpice\DynamicSettingsManager;
+use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Permission\IRole;
 use BlueSpice\Permission\PermissionRegistry;
 use BlueSpice\Permission\RoleManager;
-use BlueSpice\PermissionManager\Preset\CustomPreset;
-use BlueSpice\PermissionManager\Preset\PrivateWiki;
-use BlueSpice\PermissionManager\Preset\ProtectedWiki;
-use BlueSpice\PermissionManager\Preset\PublicWiki;
 use BsGroupHelper;
 use Config;
 use ManualLogEntry;
@@ -37,8 +34,8 @@ class PermissionManager {
 	private $services;
 	/** @var array */
 	protected $groups = [];
-	/** @var string */
-	private $configFile = '';
+	/** @var ExtensionAttributeBasedRegistry */
+	protected $presets;
 
 	/**
 	 *
@@ -46,13 +43,6 @@ class PermissionManager {
 	 */
 	protected $builtInGroups = [
 		'autoconfirmed', 'emailconfirmed', 'bot', 'sysop', 'bureaucrat', 'developer'
-	];
-
-	private $presetMap = [
-		'public' => [ PublicWiki::class, 'factory' ],
-		'protected' => [ ProtectedWiki::class, 'factory' ],
-		'private' => [ PrivateWiki::class, 'factory' ],
-		'custom' => [ CustomPreset::class, 'factory' ],
 	];
 
 	/**
@@ -77,6 +67,10 @@ class PermissionManager {
 		$this->logger = $logger;
 		$this->hookContainer = $hookContainer;
 		$this->services = $services;
+
+		$this->presets = new ExtensionAttributeBasedRegistry(
+			'BlueSpicePermissionManagerPermissionPresets'
+		);
 	}
 
 	/**
@@ -106,18 +100,18 @@ class PermissionManager {
 	 * @return IPreset
 	 */
 	public function getActivePreset() {
-		$fallback = 'private';
 		$activePreset = $this->config->get( 'PermissionManagerActivePreset' );
 		$preset = $this->getPreset( $activePreset );
 		if ( $preset === null ) {
-			$this->logger->alert(
-				'Attempted to apply unrecognized preset: {preset}, falling back to {fallback}',
+			$this->logger->critical(
+				'Attempted to apply unrecognized preset: {preset}',
 				[
-					'preset' => $activePreset,
-					'fallback' => $fallback
+					'preset' => $activePreset
 				]
 			);
-			$preset = $this->getPreset( $fallback );
+			throw new MWException(
+				"Permission preset \"$activePreset\" is not registered or not allowed"
+			);
 		}
 
 		return $preset;
@@ -129,7 +123,10 @@ class PermissionManager {
 	 * @return array
 	 */
 	public function getAvailablePresets() {
-		return array_keys( $this->presetMap );
+		return array_intersect(
+			$this->presets->getAllKeys(),
+			$this->config->get( 'PermissionManagerAllowedPresets' )
+		);
 	}
 
 	/**
@@ -139,11 +136,14 @@ class PermissionManager {
 	 * @return IPreset|null
 	 */
 	public function getPreset( $name ) {
-		if ( !$this->presetMap[$name] ) {
+		if ( !in_array( $name, $this->config->get( 'PermissionManagerAllowedPresets' ) ) ) {
+			return null;
+		}
+		if ( !$this->presets->getValue( $name, null ) ) {
 			return null;
 		}
 
-		$callable = $this->presetMap[$name];
+		$callable = $this->presets->getValue( $name );
 		$preset = call_user_func( $callable );
 
 		if ( !$preset instanceof IPreset ) {

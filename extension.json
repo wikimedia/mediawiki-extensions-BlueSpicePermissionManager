@@ -39,6 +39,14 @@
 			"DynamicSettingsRegistry": {
 				"PermissionManager": "BlueSpice\\PermissionManager\\DynamicSettings\\PmSettings::factory"
 			}
+		},
+		"BlueSpicePermissionManager": {
+			"PermissionPresets": {
+				"public": "BlueSpice\\PermissionManager\\Preset\\PublicWiki::factory",
+				"protected": "BlueSpice\\PermissionManager\\Preset\\ProtectedWiki::factory",
+				"private": "BlueSpice\\PermissionManager\\Preset\\PrivateWiki::factory",
+				"custom": "BlueSpice\\PermissionManager\\Preset\\CustomPreset::factory"
+			}
 		}
 	},
 	"AvailableRights": [
@@ -97,8 +105,10 @@
 				"stylesheets/bluespice.permissionManager.less"
 			],
 			"messages": [
-				"bs-permissionmanager-switch-preset-confirm",
-				"bs-permissionmanager-preset-save-error"
+				"bs-permissionmanager-preset-save-error",
+				"bs-permissionmanager-preset-save-success",
+				"bs-premissionmanager-reset-button-label",
+				"bs-permissionmanager-btn-save-label"
 			],
 			"dependencies": [
 				"ext.bluespice",
@@ -106,9 +116,6 @@
 			]
 		},
 		"ext.bluespice.permissionManager.customPreset": {
-			"scripts": [
-				"bluespice.permissionManager.customPreset.js"
-			],
 			"styles": [
 				"stylesheets/bluespice.permissionManager.customPreset.css"
 			],
@@ -121,7 +128,6 @@
 				"bs-permissionmanager-header-namespaces",
 				"bs-permissionmanager-header-group",
 				"bs-permissionmanager-btn-group-label",
-				"bs-permissionmanager-btn-save-label",
 				"bs-permissionmanager-btn-save-in-progress-label",
 				"bs-permissionmanager-save-success",
 				"bs-permissionmanager-unsaved-changes",
@@ -134,7 +140,6 @@
 				"bs-permissionmanager-role-permissions-label",
 				"bs-permissionmanager-role-permissions-column-permission",
 				"bs-permissionmanager-role-permissions-column-permission-desc",
-				"bs-premissionmanager-reset-button-label",
 				"bs-permissionmanager-affected-by-dependency-single",
 				"bs-permissionmanager-affected-by-dependency"
 			]
@@ -160,7 +165,15 @@
 			"public": true
 		},
 		"PermissionManagerActivePreset": {
-			"value": "private"
+			"value": "custom"
+		},
+		"PermissionManagerAllowedPresets": {
+			"value": [
+				"public",
+				"protected",
+				"private",
+				"custom"
+			]
 		}
 	},
 	"AutoloadNamespaces": {

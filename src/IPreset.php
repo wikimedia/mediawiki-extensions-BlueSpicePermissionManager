@@ -2,6 +2,7 @@
 
 namespace BlueSpice\PermissionManager;
 
+use Message;
 use MWException;
 
 interface IPreset {
@@ -13,16 +14,16 @@ interface IPreset {
 	/**
 	 * User-friendly display text
 	 *
-	 * @return string
+	 * @return Message
 	 */
-	public function getLabel(): string;
+	public function getLabel(): Message;
 
 	/**
 	 * Explanation text for the preset
 	 *
-	 * @return string
+	 * @return Message
 	 */
-	public function getHelpMessage(): string;
+	public function getHelpMessage(): Message;
 
 	/**
 	 * Icon for the preset in the UI

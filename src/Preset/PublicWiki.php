@@ -16,8 +16,8 @@ class PublicWiki extends PermissionPreset {
 	/**
 	 * @inheritDoc
 	 */
-	public function getLabel(): string {
-		return Message::newFromKey( 'bs-permissionmanager-preset-public-label' )->text();
+	public function getLabel(): Message {
+		return Message::newFromKey( 'bs-permissionmanager-preset-public-label' );
 	}
 
 	/**
@@ -33,14 +33,13 @@ class PublicWiki extends PermissionPreset {
 	 * @inheritDoc
 	 */
 	public function getIcon(): string {
-		// TODO: To use globe once oojs-ui-wikimediaui-icons-location file gets included
-		return 'eye';
+		return 'public';
 	}
 
 	/**
 	 * @inheritDoc
 	 */
-	public function getHelpMessage(): string {
-		return Message::newFromKey( 'bs-permissionmanager-preset-public-help' )->text();
+	public function getHelpMessage(): Message {
+		return Message::newFromKey( 'bs-permissionmanager-preset-public-help' );
 	}
 }

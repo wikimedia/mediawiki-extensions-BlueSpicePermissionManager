@@ -16,8 +16,8 @@ class ProtectedWiki extends PermissionPreset {
 	/**
 	 * @inheritDoc
 	 */
-	public function getLabel(): string {
-		return Message::newFromKey( 'bs-permissionmanager-preset-protected-label' )->text();
+	public function getLabel(): Message {
+		return Message::newFromKey( 'bs-permissionmanager-preset-protected-label' );
 	}
 
 	/**
@@ -34,13 +34,13 @@ class ProtectedWiki extends PermissionPreset {
 	 * @inheritDoc
 	 */
 	public function getIcon(): string {
-		return 'editLock';
+		return 'protected';
 	}
 
 	/**
 	 * @inheritDoc
 	 */
-	public function getHelpMessage(): string {
-		return Message::newFromKey( 'bs-permissionmanager-preset-protected-help' )->text();
+	public function getHelpMessage(): Message {
+		return Message::newFromKey( 'bs-permissionmanager-preset-protected-help' );
 	}
 }
