@@ -27,5 +27,6 @@
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Beschreiwung",
 	"bs-premissionmanager-reset-button-label": "Zrécksetzen",
 	"bs-permissionmanager-preset-private-label": "Privat Wiki",
-	"bs-permissionmanager-preset-public-label": "Ëffentlech Wiki"
+	"bs-permissionmanager-preset-public-label": "Ëffentlech Wiki",
+	"bs-permissionmanager-preset-save-success": "Konfiguratioun gespäichert!"
 }
