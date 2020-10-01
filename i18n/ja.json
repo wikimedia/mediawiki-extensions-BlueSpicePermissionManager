@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"2nd-player",
+			"Portal18",
 			"Shirayuki",
 			"SkyDaisy9",
 			"Suyama"
@@ -28,5 +29,6 @@
 	"log-show-hide-bs-permission-manager": "権限マネージャー記録を$1",
 	"logentry-bs-permission-manager-modify": "$1 はグループ $4 の権限を変更{{GENDER:$2|しました}}",
 	"action-permissionmanager-viewspecialpage": "特別ページ「{{int:bs-permissionmanager-label}}」の閲覧",
-	"right-permissionmanager-viewspecialpage": "特別ページ [[Special:PermissionManager]] を利用"
+	"right-permissionmanager-viewspecialpage": "特別ページ [[Special:PermissionManager]] を利用",
+	"bs-permissionmanager-preset-save-success": "設定を保存しました。"
 }

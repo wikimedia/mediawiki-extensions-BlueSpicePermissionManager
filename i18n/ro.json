@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"NGC 54"
+		]
+	},
+	"bs-permissionmanager-preset-custom-label": "Configurare personalizată",
+	"bs-permissionmanager-preset-private-label": "Wiki privat",
+	"bs-permissionmanager-preset-protected-label": "Wiki protejat",
+	"bs-permissionmanager-preset-public-label": "Wiki public"
+}

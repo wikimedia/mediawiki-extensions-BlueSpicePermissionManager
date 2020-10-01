@@ -55,13 +55,14 @@
 	"bs-permissionmanager-affected-by-dependency": "Este papel requer {{PLURAL:$2|a seguinte permissão|seguintes permissões}}:\n$1",
 	"apihelp-bs-role-permission-store-param-role": "Nome da função para a qual obter permissões",
 	"bs-permissionmanager-preset-custom-label": "Configuração personalizada",
-	"bs-permissionmanager-preset-custom-help": "Configure manualmente as atribuições de função para a wiki",
+	"bs-permissionmanager-preset-custom-help": "* Atribuir funções e grupos manualmente",
 	"bs-permissionmanager-preset-private-label": "Wiki privada",
-	"bs-permissionmanager-preset-private-help": "O conteúdo da Wiki só estará visível para usuários conectados, e as operações de edição e avançadas disponíveis apenas para a função de \"editor\"",
+	"bs-permissionmanager-preset-private-help": "* Apenas usuários entrados podem '''visualizar e editar''' o conteúdo\n* Somente usuários no grupo \"sysop\" podem realizar '''ações administrativas'''",
 	"bs-permissionmanager-preset-protected-label": "Wiki protegida",
-	"bs-permissionmanager-preset-protected-help": "O conteúdo da Wiki será visível para todos, mas apenas editável por usuários entrados",
+	"bs-permissionmanager-preset-protected-help": "* Todos podem '''ver''' o conteúdo - incluindo usuários anônimos\n* Somente usuários entrados podem '''editar''o conteúdo\n* Somente usuários no grupo \"sysop\" podem realizar '''ações administrativas'''",
 	"bs-permissionmanager-preset-public-label": "Wiki pública",
-	"bs-permissionmanager-preset-public-help": "O conteúdo da wiki será visível e editável por todos",
+	"bs-permissionmanager-preset-public-help": "* Todos podem '''ver e editar''' o conteúdo - incluindo usuários anônimos\n* Somente usuários no grupo \"sysop\" podem realizar '''ações administrativas'''",
 	"bs-permissionmanager-switch-preset-confirm": "A troca da predefinição será aplicada imediatamente a todos os usuários da wiki. Você tem certeza que quer continuar?",
-	"bs-permissionmanager-preset-save-error": "A configuração não pode ser salva! As alterações não são aplicadas!"
+	"bs-permissionmanager-preset-save-error": "A configuração não pode ser salva! As alterações não são aplicadas!",
+	"bs-permissionmanager-preset-save-success": "Configuração salva!"
 }

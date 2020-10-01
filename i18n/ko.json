@@ -40,13 +40,14 @@
 	"log-name-bs-permission-manager": "권한 관리자 기록",
 	"right-permissionmanager-viewspecialpage": "[[Special:PermissionManager]] 특수 문서로 접근",
 	"bs-permissionmanager-preset-custom-label": "사용자 지정 설정",
-	"bs-permissionmanager-preset-custom-help": "위키에 대한 역할 분담을 수동으로 구성합니다",
+	"bs-permissionmanager-preset-custom-help": "* 수동으로 역할과 그룹을 할당합니다",
 	"bs-permissionmanager-preset-private-label": "비공개 위키",
-	"bs-permissionmanager-preset-private-help": "위키(Wiki) 내용들은 로그인한 유저에게만 보여지고, 수정하거나 상위의 작업들은 오직 \"편집자\"역할을 가진 사람에게만 가능합니다",
+	"bs-permissionmanager-preset-private-help": "* 로그인한 사용자만 내용을 '''보고 편집'''할 수 있습니다\n* 관리자 그룹에 속한 사용자만  '''관리 작업'''을 수행할 수 있습니다",
 	"bs-permissionmanager-preset-protected-label": "보호된 위키",
-	"bs-permissionmanager-preset-protected-help": "위키 내용들은 모든 사람들이 볼 수 있으나, 로그인한 사용자들만 편집가능합니다",
+	"bs-permissionmanager-preset-protected-help": "* 익명 사용자를 포함한 누구나 내용을 '''볼''' 수 있습니다\n* 로그인한 사용자만 내용을 '''편집'''할 수 있습니다\n* 관리자 그룹에 속한 사용자만  '''관리 작업'''을 수행할 수 있습니다",
 	"bs-permissionmanager-preset-public-label": "공개 위키",
-	"bs-permissionmanager-preset-public-help": "위키 내용은 모든 사람들이 보고 편집할 수 있을 것입니다",
+	"bs-permissionmanager-preset-public-help": "* 익명 사용자를 포함한 누구나 내용을 '''보고 편집'''할 수 있습니다\n* \"관리자\" 그룹에 속한 사용자만 '''관리 작업'''을 수행할 수 있습니다",
 	"bs-permissionmanager-switch-preset-confirm": "사전 설정 수정은 위키의 모든 사용자들에게 즉각적으로 적용됩니다. 정말 계속해서 진행하기를 원하십니까?",
-	"bs-permissionmanager-preset-save-error": "환경 설정을 저장할 수 없습니다! 변경들이 적용되지 않았습니다!"
+	"bs-permissionmanager-preset-save-error": "환경 설정을 저장할 수 없습니다! 변경들이 적용되지 않았습니다!",
+	"bs-permissionmanager-preset-save-success": "설정을 저장했습니다!"
 }
