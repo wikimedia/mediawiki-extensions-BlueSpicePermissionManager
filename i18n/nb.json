@@ -54,13 +54,14 @@
 	"bs-permissionmanager-affected-by-dependency-single": "– $1 – tilgjengelig i {{PLURAL:$3|rollen|rollene}}: $2",
 	"bs-permissionmanager-affected-by-dependency": "Denne rollen krever følgende {{PLURAL:$2|tillatelse|tillatelser}}:\n$1",
 	"bs-permissionmanager-preset-custom-label": "Egendefinert oppsett",
-	"bs-permissionmanager-preset-custom-help": "Konfigurer rolletildelinger for wikien manuelt",
+	"bs-permissionmanager-preset-custom-help": "* Tildel roller og grupper manueltlerk",
 	"bs-permissionmanager-preset-private-label": "Privat wiki",
-	"bs-permissionmanager-preset-private-help": "Wikiens innhold blir bare synlig for innloggede brukere, og redigering og andre handlinger begrenses til rollen «editor»",
+	"bs-permissionmanager-preset-private-help": "* Kun innloggede brukere kan '''vise og redigere''' innholdet\n* Kun brukere i gruppa «sysop» kan utføre '''administrative handlinger'''",
 	"bs-permissionmanager-preset-protected-label": "Beskyttet wiki",
-	"bs-permissionmanager-preset-protected-help": "Wikiens innhold blir synlig for alle, men kan bare redigeres av innloggede brukere",
+	"bs-permissionmanager-preset-protected-help": "* Alle kan '''vise''' innholdet – inkludert anonyme brukere\n* Kun innloggede brukere kan '''redigere''' innholdet\n* Kun brukere i gruppa «sysop» kan utføre '''administrative handlinger'''",
 	"bs-permissionmanager-preset-public-label": "Offentlig wiki",
-	"bs-permissionmanager-preset-public-help": "Wikiens innhold blir synlig og kan redigeres av alle",
+	"bs-permissionmanager-preset-public-help": "* Alle kan '''vise og redigere''' innholdet – inkludert anonyme brukere\n* Kun brukere i gruppa «sysop» kan utføre '''administrative handlinger'''",
 	"bs-permissionmanager-switch-preset-confirm": "Bytting av valget vil gjelde alle brukerne på wikien, umiddelbart. Er du sikker på at du vil fortsette?",
-	"bs-permissionmanager-preset-save-error": "Konfigurasjonen kan ikke lagres! Endringene gjelder ikke!"
+	"bs-permissionmanager-preset-save-error": "Konfigurasjonen kan ikke lagres! Endringene gjelder ikke!",
+	"bs-permissionmanager-preset-save-success": "Konfigurasjon lagret!"
 }
