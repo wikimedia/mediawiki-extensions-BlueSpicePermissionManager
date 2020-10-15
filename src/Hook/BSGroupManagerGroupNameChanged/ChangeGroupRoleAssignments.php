@@ -3,7 +3,7 @@
 namespace BlueSpice\PermissionManager\Hook\BSGroupManagerGroupNameChanged;
 
 use BlueSpice\GroupManager\Hook\BSGroupManagerGroupNameChanged;
-use BlueSpice\PermissionManager\Extension as PermissionManager;
+use MediaWiki\MediaWikiServices;
 
 class ChangeGroupRoleAssignments extends BSGroupManagerGroupNameChanged {
 
@@ -29,7 +29,11 @@ class ChangeGroupRoleAssignments extends BSGroupManagerGroupNameChanged {
 		$data->groupRoles = $groupRoles;
 		$data->roleLockdown = $namespaceLockdown;
 
-		$this->result = PermissionManager::saveRoles( $data );
+		$permissionManager = MediaWikiServices::getInstance()->getService(
+			'BlueSpicePermissionManager'
+		);
+
+		$this->result = $permissionManager->saveRoles( $data );
 		return true;
 	}
 }

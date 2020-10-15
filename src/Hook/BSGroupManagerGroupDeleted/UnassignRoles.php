@@ -3,7 +3,7 @@
 namespace BlueSpice\PermissionManager\Hook\BSGroupManagerGroupDeleted;
 
 use BlueSpice\GroupManager\Hook\BSGroupManagerGroupDeleted;
-use BlueSpice\PermissionManager\Extension as PermissionManager;
+use MediaWiki\MediaWikiServices;
 
 class UnassignRoles extends BSGroupManagerGroupDeleted {
 
@@ -29,7 +29,11 @@ class UnassignRoles extends BSGroupManagerGroupDeleted {
 		$data->groupRoles = $groupRoles;
 		$data->roleLockdown = $namespaceLockdown;
 
-		$this->result = PermissionManager::saveRoles( $data );
+		$permissionManager = MediaWikiServices::getInstance()->getService(
+			'BlueSpicePermissionManager'
+		);
+
+		$this->result = $permissionManager->saveRoles( $data );
 		return true;
 	}
 }
