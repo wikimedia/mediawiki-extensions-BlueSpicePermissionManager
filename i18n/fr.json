@@ -2,8 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Fany",
+			"Fitoschido",
+			"Florian COLLIN",
 			"Gomoko",
 			"Ltrlg",
+			"Pols12",
 			"Thibaut120094",
 			"Windes",
 			"Wladek92"
@@ -56,5 +59,17 @@
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|a}} ajouté {{PLURAL:$6|un rôle|des rôles}} $5 dans l'espace de noms $7 au groupe $4",
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|a}} supprimé {{PLURAL:$6|un rôle|des rôles}} $5 dans l'espace de noms $7 du groupe $4",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - disponible dans $3 {{PLURAL:$3|rôle|rôles}}: $2",
-	"bs-permissionmanager-affected-by-dependency": "Ce rôle nécessite {{PLURAL:$2|le droit suivant|les autorisations suivantes}} :\n$1"
+	"bs-permissionmanager-affected-by-dependency": "Ce rôle nécessite {{PLURAL:$2|le droit suivant|les autorisations suivantes}} :\n$1",
+	"apihelp-bs-role-permission-store-param-role": "Nom du rôle pour lequel obtenir des droits",
+	"bs-permissionmanager-preset-custom-label": "Paramétrage personnalisé",
+	"bs-permissionmanager-preset-custom-help": "* Configurer manuellement les affectations de rôle pour le wiki",
+	"bs-permissionmanager-preset-private-label": "Wiki privé",
+	"bs-permissionmanager-preset-private-help": "* Seuls les utilisateurs connectés peuvent '''afficher et modifier''' le contenu\n* Seuls les utilisateurs du groupe « administrateurs » peuvent effectuer des '''actions administratives'''",
+	"bs-permissionmanager-preset-protected-label": "Wiki protégé",
+	"bs-permissionmanager-preset-protected-help": "* Tout le monde peut '''voir''' le contenu - y compris les utilisateurs anonymes\n* Seuls les utilisateurs connectés peuvent '''éditer''' le contenu\n* Seuls les utilisateurs du groupe « administrateurs » peuvent effectuer des '''actions administratives'''",
+	"bs-permissionmanager-preset-public-label": "Wiki public",
+	"bs-permissionmanager-preset-public-help": "* Tout le monde peut '''afficher et modifier''' le contenu - y compris les utilisateurs anonymes\n* Seuls les utilisateurs du groupe « sysop » peuvent effectuer des '''actions administratives'''",
+	"bs-permissionmanager-switch-preset-confirm": "Changer de présélection prend effet immédiatement pour tous les utilisateurs du wiki. Êtes-vous sûr de vouloir continuer ?",
+	"bs-permissionmanager-preset-save-error": "La configuration n’a pas pu être enregistrée ! Les modifications n’ont pas été appliquées !",
+	"bs-permissionmanager-preset-save-success": "Configuration enregistrée !"
 }

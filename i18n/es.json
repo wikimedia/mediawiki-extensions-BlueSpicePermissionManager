@@ -49,5 +49,12 @@
 	"bs-permissionmanager-show-system-groups-label": "Mostrar grupos de sistema",
 	"bs-permissionmanager-role-permissions-column-permission": "Permiso",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Descripción",
-	"bs-premissionmanager-reset-button-label": "Restablecer"
+	"bs-premissionmanager-reset-button-label": "Restablecer",
+	"bs-permissionmanager-preset-custom-label": "Configuración personalizada",
+	"bs-permissionmanager-preset-private-label": "Wiki privado",
+	"bs-permissionmanager-preset-protected-label": "Wiki protegido",
+	"bs-permissionmanager-preset-protected-help": "* Todos, incluidos los usuarios anónimos, pueden '''ver''' el contenido del wiki\n* Únicamente aquellos que hayan accedido a su cuenta podrán '''editar''' el contenido\n* Únicamente aquellos en el grupo «sysop» podrán efectuar '''acciones administrativas'''",
+	"bs-permissionmanager-preset-public-label": "Wiki público",
+	"bs-permissionmanager-preset-public-help": "* Todos, incluidos los usuarios anónimos, pueden '''ver y editar''' el contenido del wiki\n* Únicamente aquellos en el grupo «sysop» podrán efectuar '''acciones administrativas'''",
+	"bs-permissionmanager-preset-save-success": "Se guardó la configuración."
 }
