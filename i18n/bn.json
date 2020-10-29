@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Aftabuzzaman",
+			"Titodutta",
 			"আজিজ",
 			"আফতাবুজ্জামান"
 		]
@@ -24,5 +25,7 @@
 	"permissionmanager": "অনুমতি ব্যবস্থাপক",
 	"bs-permissionmanager-affected-by-explicit": "$1 দ্বারা অবরুদ্ধ",
 	"bs-permissionmanager-group-all": "সমস্ত",
-	"bs-permissionmanager-header-role": "ভূমিকা"
+	"bs-permissionmanager-header-role": "ভূমিকা",
+	"bs-permissionmanager-preset-private-label": "ব্যক্তিগত উইকি",
+	"bs-permissionmanager-preset-protected-label": "সুরক্ষিত উইকি"
 }

@@ -4,6 +4,7 @@
 			"Jopparn",
 			"Lokal Profil",
 			"Mjälten",
+			"Sabelöga",
 			"WikiPhoenix"
 		]
 	},
@@ -49,5 +50,12 @@
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|lade till}} {{PLURAL:$6|rollen|rollerna}} $5 i namnrymden $7 i gruppen $4",
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|tog bort}} {{PLURAL:$6|rollen|rollerna}} $5 i namnrymden $7 från gruppen $4",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - tillgänglig i {{PLURAL:$3|roll|roller}}: $2",
-	"bs-permissionmanager-affected-by-dependency": "Denna roll kräver följande {{PLURAL:$2|behörighet|behörigheter}}:\n$1"
+	"bs-permissionmanager-affected-by-dependency": "Denna roll kräver följande {{PLURAL:$2|behörighet|behörigheter}}:\n$1",
+	"bs-permissionmanager-preset-custom-label": "Anpassad installation",
+	"bs-permissionmanager-preset-private-label": "Privat wiki",
+	"bs-permissionmanager-preset-protected-label": "Skrivskyddad wiki",
+	"bs-permissionmanager-preset-protected-help": "Wikins innehåll kommer vara synligt för alla men bara kunna redigeras av inloggade användare",
+	"bs-permissionmanager-preset-public-label": "Offentlig wiki",
+	"bs-permissionmanager-preset-public-help": "Wikins innehåll kommer inte kunna visas eller redigeras av alla",
+	"bs-permissionmanager-preset-save-error": "Konfigureringen kunde inte sparas! Ändringarna tillämpades inte!"
 }

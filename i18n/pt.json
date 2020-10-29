@@ -54,5 +54,6 @@
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|adicionou}} {{PLURAL:$6|a função|as funções}} $5 no espaço nominal/domínio $7 ao grupo $4",
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|removeu}} {{PLURAL:$6|a função|as funções}} $5 no espaço nominal/domínio $7 do grupo $4",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - disponível {{PLURAL:$3|na função|nas funções}}: $2",
-	"bs-permissionmanager-affected-by-dependency": "Esta função requer {{PLURAL:$2|a seguinte permissão|as seguintes permissões}}:\n$1"
+	"bs-permissionmanager-affected-by-dependency": "Esta função requer {{PLURAL:$2|a seguinte permissão|as seguintes permissões}}:\n$1",
+	"apihelp-bs-role-permission-store-param-role": "Nome da função para a qual obter permissões"
 }

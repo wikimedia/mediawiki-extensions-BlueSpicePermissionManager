@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kareyac",
 			"StanProg"
 		]
 	},
 	"bs-permissionmanager-header-namespaces": "Именни пространства",
-	"bs-permissionmanager-btn-save-label": "Съхраняване"
+	"bs-permissionmanager-btn-save-label": "Съхраняване",
+	"bs-permissionmanager-group-all": "всички"
 }
