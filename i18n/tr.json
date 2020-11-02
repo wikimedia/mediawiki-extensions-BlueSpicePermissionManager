@@ -64,7 +64,7 @@
 	"bs-permissionmanager-preset-private-label": "Özel viki",
 	"bs-permissionmanager-preset-private-help": "*Sadece giriş yapmış olan kullanıcılar içeriği '''görüntüleyebilir ve düzenleyebilir'''\n*Sadece grup içerisinde '''sysop''' olan kullanıcılar '''yönetimsel işlemler''' gerçekleştirebilir.",
 	"bs-permissionmanager-preset-protected-label": "Korumalı viki",
-	"bs-permissionmanager-preset-protected-help": "*İçeriği herkes '''görüntüleyebilir''' -anonim kullanıcılar dahil\n*Sadece giriş yapmış olan kullanıcılar içeriği '''düzenleyebilir'''\n*Sadece grup içerisinde '''sysop''' olan kullanıcılar '''yönetimsel işlemler''' gerçekleştirebilir.",
+	"bs-permissionmanager-preset-protected-help": "* İçeriği herkes '''görüntüleyebilir''' - anonim kullanıcılar dahil\n* Yalnızca oturum açmış olan kullanıcılar içeriği '''düzenleyebilir'''\n* Yalnızca grup içerisinde '''hizmetli''' olan kullanıcılar '''yönetimsel eylemler''' gerçekleştirebilir.",
 	"bs-permissionmanager-preset-public-label": "Herkese açık viki",
 	"bs-permissionmanager-preset-public-help": "*Herkes içeriği '''görüntüleyebilir ve düzenleyebilir''' -anonim kullanıcılar dahil\n*Sadece grup içerisinde '''sysop''' olan kullanıcılar '''yönetimsel işlemler''' gerçekleştirebilir.",
 	"bs-permissionmanager-switch-preset-confirm": "Ön ayarın değiştirilmesi, vikideki tüm kullanıcılara hemen uygulanacaktır. Devam etmek istediğine emin misin?",

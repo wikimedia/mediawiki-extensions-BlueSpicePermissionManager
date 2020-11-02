@@ -8,6 +8,7 @@
 			"Ltrlg",
 			"Pols12",
 			"Thibaut120094",
+			"Verdy p",
 			"Windes",
 			"Wladek92"
 		]
@@ -66,7 +67,7 @@
 	"bs-permissionmanager-preset-private-label": "Wiki privé",
 	"bs-permissionmanager-preset-private-help": "* Seuls les utilisateurs connectés peuvent '''afficher et modifier''' le contenu\n* Seuls les utilisateurs du groupe « administrateurs » peuvent effectuer des '''actions administratives'''",
 	"bs-permissionmanager-preset-protected-label": "Wiki protégé",
-	"bs-permissionmanager-preset-protected-help": "* Tout le monde peut '''voir''' le contenu - y compris les utilisateurs anonymes\n* Seuls les utilisateurs connectés peuvent '''éditer''' le contenu\n* Seuls les utilisateurs du groupe « administrateurs » peuvent effectuer des '''actions administratives'''",
+	"bs-permissionmanager-preset-protected-help": "* Tout le monde peut '''voir''' le contenu — y compris les utilisateurs anonymes\n* Seuls les utilisateurs connectés peuvent '''modifier''' le contenu\n* Seuls les utilisateurs du groupe « administrateurs » peuvent effectuer des '''actions administratives'''",
 	"bs-permissionmanager-preset-public-label": "Wiki public",
 	"bs-permissionmanager-preset-public-help": "* Tout le monde peut '''afficher et modifier''' le contenu - y compris les utilisateurs anonymes\n* Seuls les utilisateurs du groupe « sysop » peuvent effectuer des '''actions administratives'''",
 	"bs-permissionmanager-switch-preset-confirm": "Changer de présélection prend effet immédiatement pour tous les utilisateurs du wiki. Êtes-vous sûr de vouloir continuer ?",
