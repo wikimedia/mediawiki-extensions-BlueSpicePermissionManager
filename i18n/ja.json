@@ -5,7 +5,8 @@
 			"Portal18",
 			"Shirayuki",
 			"SkyDaisy9",
-			"Suyama"
+			"Suyama",
+			"Waki285"
 		]
 	},
 	"bs-permissionmanager-desc": "利用者権限を編集するための管理インターフェイス",
@@ -30,5 +31,14 @@
 	"logentry-bs-permission-manager-modify": "$1 はグループ $4 の権限を変更{{GENDER:$2|しました}}",
 	"action-permissionmanager-viewspecialpage": "特別ページ「{{int:bs-permissionmanager-label}}」の閲覧",
 	"right-permissionmanager-viewspecialpage": "特別ページ [[Special:PermissionManager]] を利用",
-	"bs-permissionmanager-preset-save-success": "設定を保存しました。"
+	"bs-permissionmanager-preset-save-success": "設定を保存しました。",
+	"bs-permissionmanager-header-role": "ロール",
+	"bs-permissionmanager-write-config-file-error": "「$1」を作成または書き込むことができません",
+	"bs-permissionmanager-show-system-groups-label": "システムグループを表示",
+	"bs-permissionmanager-role-permissions-label": "ロールの権限:$1",
+	"bs-permissionmanager-role-permissions-column-permission": "権限",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "説明",
+	"bs-premissionmanager-reset-button-label": "リセット",
+	"logentry-bs-permission-manager-global-add": "$1{{GENDER:$2|権限を持っている人}}が{{PLURAL:$6|権限|複数の権限}}$5をグループ$4に追加しました",
+	"logentry-bs-permission-manager-global-remove": "$1{{GENDER:$2|権限を持っている人}}がグループ$4から{{PLURAL:$6|権限|複数の権限}}$5を削除しました"
 }

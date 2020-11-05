@@ -59,7 +59,7 @@
 	"bs-permissionmanager-preset-private-label": "Private wiki",
 	"bs-permissionmanager-preset-private-help": "* Only logged-in users can '''view and edit''' the content\n* Only users in the group \"sysop\" can perform '''administrative actions'''",
 	"bs-permissionmanager-preset-protected-label": "Protected wiki",
-	"bs-permissionmanager-preset-protected-help": "* Everyone can '''view''' the content - including anonymous users\n* Only logged-in users can '''edit'' the content\n* Only users in the group \"sysop\" can perform '''administrative actions'''",
+	"bs-permissionmanager-preset-protected-help": "* Everyone can '''view''' the content - including anonymous users\n* Only logged-in users can '''edit''' the content\n* Only users in the group \"sysop\" can perform '''administrative actions'''",
 	"bs-permissionmanager-preset-public-label": "Public wiki",
 	"bs-permissionmanager-preset-public-help": "* Everyone can '''view and edit''' the content - including anonymous users\n* Only users in the group \"sysop\" can perform '''administrative actions'''",
 	"bs-permissionmanager-switch-preset-confirm": "Switching the preset will be applied immediately to all users in the wiki. Are you sure you want to continue?",

@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hanna Tardos"
+		]
+	},
+	"bs-permissionmanager-preset-custom-help": "* Jogosultságok és csoportok manuális hozzárendelése",
+	"bs-permissionmanager-preset-private-help": "* Kizárólag bejelentkezett felhasználók '''tekinthetik meg és szerkeszthetik''' a tartalmat\n* Kizárólag \"sysop\" felhasználók hajthatnak végre '''adminisztratív feladatokat'''",
+	"bs-permissionmanager-preset-protected-help": "* Bárki '''megtekintheti''' a tartalmat - névtelen felhasználók is\n* Kizárólag bejelentkezett felhasználók '''szerkeszthetik''' a tartalmat\n* Kizárólag \"sysop\" felhasználók hajthatnak végre '''adminisztratív feladatokat'''",
+	"bs-permissionmanager-preset-public-help": "* Bárki '''megtekintheti és szerkesztheti''' a tartalmat - névtelen felhasználók is\n* Kizárólag \"sysop\" felhasználók hajthatnak végre '''adminisztratív feladatokat'''",
+	"bs-permissionmanager-preset-save-success": "Változtatások mentve!"
+}

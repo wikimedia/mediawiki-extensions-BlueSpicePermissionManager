@@ -54,5 +54,9 @@
 	"logentry-bs-permission-manager-ns-add": "$1{{GENDER:$2|已}}添加$5{{PLURAL:$6|身份|身份}}至在命名空間$7的群組$4",
 	"logentry-bs-permission-manager-ns-remove": "$1{{GENDER:$2|已}}從在命名空間$7的群組$4移除$5{{PLURAL:$6|身份|身份}}",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - 在以下{{PLURAL:$3|身份}}可用：$2",
-	"bs-permissionmanager-affected-by-dependency": "此身份需要{{PLURAL:$2|以下權限}}：$1"
+	"bs-permissionmanager-affected-by-dependency": "此身份需要{{PLURAL:$2|以下權限}}：$1",
+	"bs-permissionmanager-preset-custom-label": "自訂設定",
+	"bs-permissionmanager-preset-private-label": "私人 wiki",
+	"bs-permissionmanager-preset-protected-label": "受保護 wiki",
+	"bs-permissionmanager-preset-public-label": "公共 wiki"
 }
