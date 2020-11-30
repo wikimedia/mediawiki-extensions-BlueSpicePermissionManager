@@ -133,6 +133,11 @@
 			"value": 50,
 			"descriptionmsg": "bs-permissionmanager-pref-max-backups",
 			"public": true
+		},
+		"NonincludableNamespaceExceptions": {
+			"description": "Defaults to NS_MEDIAWIKI, NS_TEMPLATE",
+			"value": [ 8, 10 ],
+			"public": false
 		}
 	},
 	"AutoloadNamespaces": {

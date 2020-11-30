@@ -197,7 +197,8 @@ class Extension extends \BlueSpice\Extension {
 					$isReadLockdown = true;
 				}
 			}
-			if ( $isReadLockdown && $nsId !== NS_TEMPLATE ) {
+			$nonincludableNamespacesExceptions = $config->get( 'NonincludableNamespaceExceptions' );
+			if ( $isReadLockdown && !in_array( $nsId, $nonincludableNamespacesExceptions ) ) {
 				$saveContent .= "\$GLOBALS['wgNonincludableNamespaces'][] = $nsConstant;\n";
 			}
 		}
