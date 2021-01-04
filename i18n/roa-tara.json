@@ -29,6 +29,7 @@
 	"apihelp-bs-permissionmanager-tasks-description": "Dèje attivitate pu PermissionManager",
 	"apihelp-bs-permissionmanager-tasks-summary": "Dèje attivitate pu PermissionManager",
 	"apihelp-bs-role-permission-store-summary": "Dèje 'an descrizione d'u ruole pu PermissionManager",
+	"apihelp-bs-role-permission-store-param-role": "Nome d'u ruole pe pigghiù le permesse",
 	"action-permissionmanager-viewspecialpage": "'ndruche 'a pàgena speciale \"{{int:bs-permissionmanager-label}}\"",
 	"permissionmanager": "Gestore de le permesse",
 	"bs-permissionmanager-affected-by-explicit": "Bloccate da $1",
@@ -51,5 +52,11 @@
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|ave}} aggiunde {{PLURAL:$6|'u|le}} ruole $5 jndr'à 'u namespace $7 a 'u gruppe $4",
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|ave}} luate {{PLURAL:$6|'u|le}} ruole $5 jndr'à 'u namespace $7 da 'u gruppe $4",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - disponibbele jndr'à {{PLURAL:$3|'u|le}} ruole: $2",
-	"bs-permissionmanager-affected-by-dependency": "Stu ruole vole {{PLURAL:$2|stu permesse|ste permesse}}:\n$1"
+	"bs-permissionmanager-affected-by-dependency": "Stu ruole vole {{PLURAL:$2|stu permesse|ste permesse}}:\n$1",
+	"bs-permissionmanager-preset-custom-label": "Configurazione personalizzate",
+	"bs-permissionmanager-preset-custom-help": "* Assigne le ruole e le gruppe a mane",
+	"bs-permissionmanager-preset-private-label": "Uicchi private",
+	"bs-permissionmanager-preset-protected-label": "Uicchi prutette",
+	"bs-permissionmanager-preset-public-label": "Uicchi pubbleche",
+	"bs-permissionmanager-preset-save-success": "Configurazione reggistrate!"
 }
