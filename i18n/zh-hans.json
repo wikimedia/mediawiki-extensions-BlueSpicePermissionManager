@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"A Chinese Wikipedian",
+			"Lakejason0",
 			"Linforest",
 			"Liuxinyu970226",
 			"Phenolla",
@@ -58,5 +59,6 @@
 	"logentry-bs-permission-manager-global-remove": "$1{{GENDER:$2|}}从用户组$4中移除了{{PLURAL:$6|角色}}$5",
 	"logentry-bs-permission-manager-ns-add": "$1{{GENDER:$2|}}在名字空间$7中添加了{{PLURAL:$6|角色}}$5至用户组$4",
 	"logentry-bs-permission-manager-ns-remove": "$1{{GENDER:$2|}}从名字空间$7中移除了用户组$4的{{PLURAL:$6|角色}}$5",
-	"bs-permissionmanager-affected-by-dependency": "此身份需要{{PLURAL:$2|以下权限}}：$1"
+	"bs-permissionmanager-affected-by-dependency": "此身份需要{{PLURAL:$2|以下权限}}：$1",
+	"bs-permissionmanager-preset-private-label": "非公开wiki"
 }
