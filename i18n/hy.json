@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac"
+		]
+	},
+	"bs-permissionmanager-btn-group-label": "Խումբ՝",
+	"bs-permissionmanager-header-global": "Վիքի",
+	"bs-permissionmanager-header-namespaces": "Անվանատարածքներ",
+	"bs-permissionmanager-header-group": "Խումբ",
+	"bs-permissionmanager-btn-save-label": "Հիշել",
+	"bs-permissionmanager-btn-save-in-progress-label": "Պահպանվում է...",
+	"bs-permissionmanager-group-all": "բոլոր"
+}

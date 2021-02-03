@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Selven"
+			"Selven",
+			"ValeJappo"
 		]
 	},
 	"bs-permissionmanager-desc": "Interfaccia di amministrazione per modificare i diritti utente",
@@ -32,5 +33,10 @@
 	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|ha}} rimosso {{PLURAL:$6|il ruolo|i ruoli}} $5 dal gruppo $4",
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|ha}} aggiunto {{PLURAL:$6|il ruolo|i ruoli}} $5 nel namespace $7 al gruppo $4",
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|ha}} rimosso {{PLURAL:$6|il ruolo|i ruoli}} $5 nel namespace $7 dal gruppo $4",
-	"right-permissionmanager-viewspecialpage": "Accede alla pagina speciale [[Special:PermissionManager]]"
+	"right-permissionmanager-viewspecialpage": "Accede alla pagina speciale [[Special:PermissionManager]]",
+	"bs-permissionmanager-role-permissions-column-permission": "Permessi",
+	"bs-premissionmanager-reset-button-label": "Reimposta",
+	"bs-permissionmanager-preset-private-label": "Wiki privato",
+	"bs-permissionmanager-preset-protected-label": "Wiki protetto",
+	"bs-permissionmanager-preset-public-label": "Wiki pubblico"
 }

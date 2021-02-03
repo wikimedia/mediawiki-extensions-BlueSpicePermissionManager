@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата",
 			"Andriykopanytsia",
 			"Piramidion",
+			"Renamerr",
 			"SimondR",
-			"Vlad5250"
+			"Vlad5250",
+			"Ата"
 		]
 	},
 	"bs-permissionmanager-desc": "Адміністративний інтерфейс для редагування прав користувача",
@@ -44,7 +45,7 @@
 	"bs-permissionmanager-hint": "Ця роль включає {{PLURAL:$2|таке право: $1|такі права: $1}}",
 	"bs-permissionmanager-header-role": "Роль",
 	"bs-permissionmanager-write-config-file-error": "Не вдалося створити чи змінити $1",
-	"right-permissionmanager-viewspecialpage": "доступ до спеціальної сторінки [[Special:PermissionManager]]",
+	"right-permissionmanager-viewspecialpage": "Доступ до спеціальної сторінки [[Special:PermissionManager]]",
 	"bs-permissionmanager-show-system-groups-label": "Показати системні групи",
 	"bs-permissionmanager-role-permissions-label": "Права у ролі: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "Права",
@@ -55,5 +56,6 @@
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|додав|додала}} {{PLURAL:$6|роль|ролі}} $5 у просторі назв $7 до групи $4",
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|вилучив|вилучила}} {{PLURAL:$6|роль|ролі}} $5 у просторі назв $7 із групи$4",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - доступно в {{PLURAL:$3|1=ролі|ролях}}: $2",
-	"bs-permissionmanager-affected-by-dependency": "Ця роль вимагає {{PLURAL:$2|1=таке право|такі права}}:\n$1"
+	"bs-permissionmanager-affected-by-dependency": "Ця роль вимагає {{PLURAL:$2|1=таке право|такі права}}:\n$1",
+	"bs-permissionmanager-preset-custom-help": "* Призначити ролі та групи вручну"
 }

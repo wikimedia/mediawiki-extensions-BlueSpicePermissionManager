@@ -7,5 +7,7 @@
 	"bs-permissionmanager-header-permissions": "అనుమతులు",
 	"bs-permissionmanager-header-global": "వికీ",
 	"bs-permissionmanager-header-namespaces": "పేరుబరులు",
-	"bs-permissionmanager-btn-save-label": "భద్రపరుచు"
+	"bs-permissionmanager-btn-save-label": "భద్రపరుచు",
+	"bs-permissionmanager-role-permissions-column-permission": "అనుమతి",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "వివరణ"
 }

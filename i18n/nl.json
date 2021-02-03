@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Esketti",
+			"Mainframe98",
 			"SPQRobin",
 			"Siebrand",
-			"Esketti",
-			"Sjoerddebruin",
-			"Mainframe98"
+			"Sjoerddebruin"
 		]
 	},
 	"bs-permissionmanager-desc": "Administratie-interface voor het bewerken van gebruikersrechten",
