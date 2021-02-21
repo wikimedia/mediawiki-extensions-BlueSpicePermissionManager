@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpicePermissionManager",
-	"license-name":"GPL-3.0-only",
+	"license-name": "GPL-3.0-only",
 	"version": "4.0.0",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:PermissionManager",
 	"author": "Dejan Savuljesku <savuljesku@hallowelt.com>",
@@ -101,7 +101,7 @@
 				"widget/PresetSelect.js",
 				"bluespice.permissionManager.js"
 			],
-			"styles":[
+			"styles": [
 				"stylesheets/bluespice.permissionManager.less"
 			],
 			"messages": [
@@ -177,7 +177,7 @@
 		}
 	},
 	"AutoloadNamespaces": {
-		"BlueSpice\\PermissionManager\\" : "src/"
+		"BlueSpice\\PermissionManager\\": "src/"
 	},
 	"AutoloadClasses": {
 		"BlueSpice\\PermissionManager\\Maintenance\\RemoveNonIncludableNamespaces": "maintenance/RemoveNonIncludableNamespaces.php"
