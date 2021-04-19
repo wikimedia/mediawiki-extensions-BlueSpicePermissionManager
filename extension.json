@@ -17,12 +17,12 @@
 			"Extensions": {
 				"BlueSpicePermissionManager": {
 					"className": "BlueSpice\\PermissionManager\\Extension",
-					"extPath": "/BlueSpicePermissionManager",
-					"configDefinitions": {
-						"PermissionManagerMaxBackups": "\\BlueSpice\\PermissionManager\\ConfigDefinition\\PermissionManagerMaxBackups::getInstance",
-						"PermissionManagerActivePreset": "\\BlueSpice\\PermissionManager\\ConfigDefinition\\PermissionManagerActivePresetConfig::getInstance"
-					}
+					"extPath": "/BlueSpicePermissionManager"
 				}
+			},
+			"ConfigDefinitionRegistry": {
+				"PermissionManagerMaxBackups": "\\BlueSpice\\PermissionManager\\ConfigDefinition\\PermissionManagerMaxBackups::getInstance",
+				"PermissionManagerActivePreset": "\\BlueSpice\\PermissionManager\\ConfigDefinition\\PermissionManagerActivePresetConfig::getInstance"
 			},
 			"AdminToolRegistry": {
 				"bs-permission-manager": "BlueSpice\\PermissionManager\\AdminTool"
