@@ -523,6 +523,6 @@ class PermissionManager {
 		$logger->setPerformer( $user );
 		$logger->setTarget( $targetTitle );
 		$logger->setParameters( $params );
-		$logger->insert( $this->services->getDBLoadBalancer()->getConnection( DB_MASTER ) );
+		$logger->insert( $this->services->getDBLoadBalancer()->getConnection( DB_PRIMARY ) );
 	}
 }
