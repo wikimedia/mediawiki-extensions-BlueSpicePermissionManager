@@ -196,5 +196,5 @@ class comparePermissions extends \Maintenance {
 	}
 }
 
-$maintClass = 'comparePermissions';
+$maintClass = comparePermissions::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
