@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gitartha.bordoloi"
+			"Simbu123"
 		]
 	},
-	"bs-permissionmanager-labeltpled-add": "নতুন"
+	"bs-permissionmanager-labeltpled-add": "নতুন",
+	"bs-permissionmanager-header-namespaces": "নামস্থান"
 }
