@@ -62,5 +62,13 @@
 	"bs-permissionmanager-preset-custom-label": "Personalisierte Einstellungen",
 	"bs-permissionmanager-preset-private-label": "Privates Wiki",
 	"bs-permissionmanager-preset-protected-label": "Geschütztes Wiki",
-	"bs-permissionmanager-preset-public-label": "Öffentliches Wiki"
+	"bs-permissionmanager-preset-public-label": "Öffentliches Wiki",
+	"apihelp-bs-role-permission-store-param-role": "Name der Rolle, für die die Berechtigungen angefordert werden",
+	"bs-permissionmanager-preset-custom-help": "* Rollen und Gruppen manuell zuweisen",
+	"bs-permissionmanager-preset-private-help": "* Nur eingeloggte Nutzer können den Inhalt '''lesen und bearbeiten'''\n* Nur Nutzer aus der Gruppe ''sysop'' kann '''administrative Aktionen''' durchführen",
+	"bs-permissionmanager-preset-protected-help": "* Jeder - einschließlich anonymer Nutzer - kann Inhalte '''lesen'''\n* Nur eingeloggte Nutzer können Inhalte '''bearbeiten'''\n* Nur Nutzer aus der Gruppe ''sysop'' können '''administrative Aktionen''' durchführen",
+	"bs-permissionmanager-preset-public-help": "* Jeder - einschließlich anonymer Nutzer - kann Inhalte '''lesen und bearbeiten'''\n* Nur Nutzer aus der Gruppe ''sysop'' können '''administrative Aktionen''' durchführen",
+	"bs-permissionmanager-switch-preset-confirm": "Die Änderung der Voreinstellung wird unmittelbar für alle Nutzer des Wikis angewandt. Bist du sicher, dass du fortfahren möchtest?",
+	"bs-permissionmanager-preset-save-error": "Die Konfiguration kann nicht gespeichert werden! Änderungen werden nicht übernommen!",
+	"bs-permissionmanager-preset-save-success": "Konfiguration wurde gespeichert!"
 }

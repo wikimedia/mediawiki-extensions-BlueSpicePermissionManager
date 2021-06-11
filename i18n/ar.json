@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Meno25",
+			"Omda4wady",
 			"باسم",
 			"ديفيد",
 			"محمد أحمد عبد الفتاح"
@@ -56,5 +57,8 @@
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - متوفر في {{PLURAL:$3|دور|أدوار}}: $2",
 	"bs-permissionmanager-affected-by-dependency": "يتضمن هذا الدور {{PLURAL:$2|الصلاحية|الصلاحيات}} التالية:\n$1",
 	"bs-permissionmanager-preset-private-label": "ويكي خاص",
-	"bs-permissionmanager-preset-protected-label": "ويكي محمية"
+	"bs-permissionmanager-preset-protected-label": "ويكي محمية",
+	"bs-permissionmanager-preset-custom-label": "تنصيب مخصص",
+	"bs-permissionmanager-preset-custom-help": "* تعيين الأدوار والمجموعات يدويًا",
+	"bs-permissionmanager-preset-public-label": "ويكي عمومية"
 }

@@ -51,5 +51,17 @@
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|ave}} aggiunde {{PLURAL:$6|'u|le}} ruole $5 jndr'à 'u namespace $7 a 'u gruppe $4",
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|ave}} luate {{PLURAL:$6|'u|le}} ruole $5 jndr'à 'u namespace $7 da 'u gruppe $4",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - disponibbele jndr'à {{PLURAL:$3|'u|le}} ruole: $2",
-	"bs-permissionmanager-affected-by-dependency": "Stu ruole vole {{PLURAL:$2|stu permesse|ste permesse}}:\n$1"
+	"bs-permissionmanager-affected-by-dependency": "Stu ruole vole {{PLURAL:$2|stu permesse|ste permesse}}:\n$1",
+	"apihelp-bs-role-permission-store-param-role": "Nome d'u ruole pe pigghiù le permesse",
+	"bs-permissionmanager-preset-custom-label": "Configurazione personalizzate",
+	"bs-permissionmanager-preset-custom-help": "* Assigne le ruole e le gruppe a mane",
+	"bs-permissionmanager-preset-private-label": "Uicchi private",
+	"bs-permissionmanager-preset-private-help": "* Sulamende le utinde trasute ponne '''<nowiki>'</nowiki>ndrucà e cangià''' 'u condenute\n* Sulamende le utinde jndr'à 'u gruppe \"sysop\" ponne fà '''aziune amministrative'''",
+	"bs-permissionmanager-preset-protected-label": "Uicchi prutette",
+	"bs-permissionmanager-preset-protected-help": "* Cengate pò '''<nowiki>'</nowiki>ndrucà''' 'u condenute - 'ngludenne le utinde anonime\n* Sulamende le utinde trasute ponne '''cangià''' 'u condenute\n* Sulamende le utinde d'u gruppe \"sysop\" ponne fà '''aziune amministrative'''",
+	"bs-permissionmanager-preset-public-label": "Uicchi pubbleche",
+	"bs-permissionmanager-preset-public-help": "* Cengate pò '''<nowiki>'</nowiki>ndrucà e cangià''' 'u condenute - 'ngludenne le utinde anonime\n* Sulamende le utinde d'u gruppe \"sysop\" ponne fà '''aziune amministrative'''",
+	"bs-permissionmanager-switch-preset-confirm": "'U cangiamende d'a pre 'mbostazione avène applecate subbete a tutte le utinde jndr'à uicchi. Sì secure de condinuà?",
+	"bs-permissionmanager-preset-save-error": "'A configurazione non ge pò essere reggistrate! Le cangiaminde non g'avènene applecate!",
+	"bs-permissionmanager-preset-save-success": "Configurazione reggistrate!"
 }

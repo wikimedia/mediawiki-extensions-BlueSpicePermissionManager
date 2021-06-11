@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Balyozxane",
 			"Bikarhêner",
 			"George Animal"
 		]
@@ -12,5 +13,6 @@
 	"bs-permissionmanager-btn-save-label": "Tomar bike",
 	"bs-permissionmanager-btn-save-in-progress-label": "Tê tomarkirin...",
 	"bs-permissionmanager-save-success": "Destûr hatin tomarkirin.",
-	"bs-permissionmanager-unsaved-changes": "Guherandinên netomarkirî hene. Tu niha bi rastî dixwazî ji vê rûpelê derkevî? Guherandinên netormakirî winda bibin."
+	"bs-permissionmanager-unsaved-changes": "Guhartinên netomarkirî hene. Tu niha bi rastî dixwazî ji vê rûpelê derkevî? Guhartinên netormakirî dê winda bibin.",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Danasîn"
 }

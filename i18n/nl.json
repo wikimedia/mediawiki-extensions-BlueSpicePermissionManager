@@ -35,5 +35,7 @@
 	"bs-permissionmanager-header-role": "Rol",
 	"bs-permissionmanager-show-system-groups-label": "Toon systeemgroepen",
 	"bs-permissionmanager-role-permissions-column-permission": "Toestemming",
-	"bs-permissionmanager-role-permissions-column-permission-desc": "Beschrijving"
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Beschrijving",
+	"bs-permissionmanager-preset-private-label": "Privéwiki",
+	"bs-permissionmanager-preset-public-label": "Publieke wiki"
 }

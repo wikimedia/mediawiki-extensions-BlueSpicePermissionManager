@@ -3,6 +3,7 @@
 		"authors": [
 			"Andriykopanytsia",
 			"Piramidion",
+			"Renamerr",
 			"SimondR",
 			"Vlad5250",
 			"Ата"
@@ -55,5 +56,6 @@
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|додав|додала}} {{PLURAL:$6|роль|ролі}} $5 у просторі назв $7 до групи $4",
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|вилучив|вилучила}} {{PLURAL:$6|роль|ролі}} $5 у просторі назв $7 із групи$4",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - доступно в {{PLURAL:$3|1=ролі|ролях}}: $2",
-	"bs-permissionmanager-affected-by-dependency": "Ця роль вимагає {{PLURAL:$2|1=таке право|такі права}}:\n$1"
+	"bs-permissionmanager-affected-by-dependency": "Ця роль вимагає {{PLURAL:$2|1=таке право|такі права}}:\n$1",
+	"bs-permissionmanager-preset-custom-help": "* Призначити ролі та групи вручну"
 }

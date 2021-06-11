@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"W"
+		]
+	},
+	"bs-permissionmanager-header-permissions": "Дазволы",
+	"bs-permissionmanager-header-global": "Вікі",
+	"bs-permissionmanager-header-namespaces": "Прасторы назваў",
+	"bs-permissionmanager-btn-save-label": "Захаваць",
+	"bs-permissionmanager-btn-save-in-progress-label": "Захаваньне ...",
+	"bs-permissionmanager-save-success": "Дазволы захаваныя.",
+	"bs-permissionmanager-group-all": "усе",
+	"bs-permissionmanager-role-permissions-column-permission": "Дазвол",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Апісаньне"
+}

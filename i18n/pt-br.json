@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
+			"Eduardoaddad",
 			"Felipe L. Ewald"
 		]
 	},
@@ -59,7 +60,7 @@
 	"bs-permissionmanager-preset-private-label": "Wiki privada",
 	"bs-permissionmanager-preset-private-help": "* Apenas usuários entrados podem '''visualizar e editar''' o conteúdo\n* Somente usuários no grupo \"sysop\" podem realizar '''ações administrativas'''",
 	"bs-permissionmanager-preset-protected-label": "Wiki protegida",
-	"bs-permissionmanager-preset-protected-help": "* Todos podem '''ver''' o conteúdo - incluindo usuários anônimos\n* Somente usuários entrados podem '''editar''o conteúdo\n* Somente usuários no grupo \"sysop\" podem realizar '''ações administrativas'''",
+	"bs-permissionmanager-preset-protected-help": "* Todos podem '''ver''' o conteúdo - incluindo usuários anônimos\n* Somente usuários entrados podem '''editar''' o conteúdo\n* Somente usuários no grupo \"sysop\" podem realizar '''ações administrativas'''",
 	"bs-permissionmanager-preset-public-label": "Wiki pública",
 	"bs-permissionmanager-preset-public-help": "* Todos podem '''ver e editar''' o conteúdo - incluindo usuários anônimos\n* Somente usuários no grupo \"sysop\" podem realizar '''ações administrativas'''",
 	"bs-permissionmanager-switch-preset-confirm": "A troca da predefinição será aplicada imediatamente a todos os usuários da wiki. Você tem certeza que quer continuar?",
