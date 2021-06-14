@@ -60,5 +60,6 @@
 	"bs-permissionmanager-preset-custom-help": "* تعيين الأدوار والمجموعات يدويًا",
 	"bs-permissionmanager-preset-private-label": "ويكي خاص",
 	"bs-permissionmanager-preset-protected-label": "ويكي محمية",
-	"bs-permissionmanager-preset-public-label": "ويكي عمومية"
+	"bs-permissionmanager-preset-public-label": "ويكي عمومية",
+	"bs-permissionmanager-preset-save-success": "حُفظت الإعدادات!"
 }
