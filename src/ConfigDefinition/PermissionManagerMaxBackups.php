@@ -26,4 +26,11 @@ class PermissionManagerMaxBackups extends IntSetting {
 		return 'bs-permissionmanager-pref-max-backups';
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
+	public function getHelpMessageKey() {
+		return 'bs-permissionmanager-pref-max-backups-help';
+	}
 }
