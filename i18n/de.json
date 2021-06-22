@@ -25,7 +25,7 @@
 	"bs-permissionmanager-btn-save-in-progress-label": "Speichert …",
 	"bs-permissionmanager-save-success": "Rechte wurden gespeichert.",
 	"bs-permissionmanager-pref-enablerealitycheck": "Rechteprüfung aktivieren",
-	"bs-permissionmanager-pref-max-backups": "Maximale Anzahl an Sicherungen",
+	"bs-permissionmanager-pref-max-backups": "Sicherungslimit",
 	"bs-permissionmanager-unsaved-changes": "Es existieren ungespeicherte Änderungen. Willst du die Seite wirklich verlassen? Die ungespeicherten Änderungen gehen in diesem Fall verloren",
 	"bs-permissionmanager-error-lockout": "Mindestens eine Benutzergruppe muss das Recht „$1“ besitzen.\nDie Änderungen konnten nicht gespeichert werden.",
 	"log-name-bs-permission-manager": "Rechteverwaltungs-Logbuch",
@@ -70,5 +70,6 @@
 	"bs-permissionmanager-preset-public-help": "* Jeder - einschließlich anonymer Nutzer - kann Inhalte '''lesen und bearbeiten'''\n* Nur Nutzer aus der Gruppe ''sysop'' können '''administrative Aktionen''' durchführen",
 	"bs-permissionmanager-switch-preset-confirm": "Die Änderung der Voreinstellung wird unmittelbar für alle Nutzer des Wikis angewandt. Bist du sicher, dass du fortfahren möchtest?",
 	"bs-permissionmanager-preset-save-error": "Die Konfiguration kann nicht gespeichert werden! Änderungen werden nicht übernommen!",
-	"bs-permissionmanager-preset-save-success": "Konfiguration wurde gespeichert!"
+	"bs-permissionmanager-preset-save-success": "Konfiguration wurde gespeichert!",
+	"bs-permissionmanager-pref-max-backups-help": "Anzahl der Backups für die letzten Änderungen an der Rechteverwaltung (Spezial:PermissionManager)."
 }
