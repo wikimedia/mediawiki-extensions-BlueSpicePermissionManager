@@ -35,6 +35,7 @@
 	"apihelp-bs-permissionmanager-tasks-description": "Надає завдання для PermissionManager",
 	"apihelp-bs-permissionmanager-tasks-summary": "Забезпечує завдання для Permissionmanager",
 	"apihelp-bs-role-permission-store-summary": "Надає опис ролей для PermissionManager",
+	"apihelp-bs-role-permission-store-param-role": "Назва ролі для отримання дозволів",
 	"action-permissionmanager-viewspecialpage": "перегляд спеціальної сторінки «{{int:bs-permissionmanager-label}}»",
 	"permissionmanager": "Менеджер дозволів",
 	"bs-permissionmanager-affected-by-explicit": "Заблоковано $1",
@@ -61,7 +62,12 @@
 	"bs-permissionmanager-preset-custom-label": "Користувацькі налаштування",
 	"bs-permissionmanager-preset-custom-help": "* Призначити ролі та групи вручну",
 	"bs-permissionmanager-preset-private-label": "Приватна вікі",
+	"bs-permissionmanager-preset-private-help": "* Тільки зареєстровані користувачі можуть '''переглядати та редагувати''' вміст\n* Тільки користувачі групи \"sysop\" можуть виконувати '''адміністративні дії'''",
 	"bs-permissionmanager-preset-protected-label": "Захищена вікі",
+	"bs-permissionmanager-preset-protected-help": "* Кожен може '''переглядати''' вміст, включаючи анонімних користувачів\n* '''Редагувати''' вміст можуть лише зареєстровані користувачі\n* Тільки користувачі групи \"sysop\" можуть виконувати '''адміністративні дії'''",
 	"bs-permissionmanager-preset-public-label": "Публічна вікі",
+	"bs-permissionmanager-preset-public-help": "* Кожен може '''переглядати та редагувати''' вміст, включаючи анонімних користувачів\n* Тільки користувачі групи \"sysop\" можуть виконувати '''адміністративні дії'''",
+	"bs-permissionmanager-switch-preset-confirm": "Перемикання пресету буде негайно застосовано до всіх користувачів у вікі. Ви впевнені, що хочете продовжити?",
+	"bs-permissionmanager-preset-save-error": "Неможливо зберегти конфігурацію! Зміни не застосовуються!",
 	"bs-permissionmanager-preset-save-success": "Скидання конфігурації"
 }
