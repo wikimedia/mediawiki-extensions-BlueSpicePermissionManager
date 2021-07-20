@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Andriykopanytsia",
+			"DDPAT",
 			"Piramidion",
 			"Renamerr",
 			"SimondR",
@@ -57,5 +58,16 @@
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|вилучив|вилучила}} {{PLURAL:$6|роль|ролі}} $5 у просторі назв $7 із групи$4",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - доступно в {{PLURAL:$3|1=ролі|ролях}}: $2",
 	"bs-permissionmanager-affected-by-dependency": "Ця роль вимагає {{PLURAL:$2|1=таке право|такі права}}:\n$1",
-	"bs-permissionmanager-preset-custom-help": "* Призначити ролі та групи вручну"
+	"bs-permissionmanager-preset-custom-help": "* Призначити ролі та групи вручну",
+	"apihelp-bs-role-permission-store-param-role": "Назва ролі для отримання дозволів",
+	"bs-permissionmanager-preset-custom-label": "Користувацькі налаштування",
+	"bs-permissionmanager-preset-private-label": "Приватна вікі",
+	"bs-permissionmanager-preset-private-help": "* Тільки зареєстровані користувачі можуть '''переглядати та редагувати''' вміст\n* Тільки користувачі групи \"sysop\" можуть виконувати '''адміністративні дії'''",
+	"bs-permissionmanager-preset-protected-label": "Захищена вікі",
+	"bs-permissionmanager-preset-protected-help": "* Кожен може '''переглядати''' вміст, включаючи анонімних користувачів\n* '''Редагувати''' вміст можуть лише зареєстровані користувачі\n* Тільки користувачі групи \"sysop\" можуть виконувати '''адміністративні дії'''",
+	"bs-permissionmanager-preset-public-label": "Публічна вікі",
+	"bs-permissionmanager-preset-public-help": "* Кожен може '''переглядати та редагувати''' вміст, включаючи анонімних користувачів\n* Тільки користувачі групи \"sysop\" можуть виконувати '''адміністративні дії'''",
+	"bs-permissionmanager-switch-preset-confirm": "Перемикання пресету буде негайно застосовано до всіх користувачів у вікі. Ви впевнені, що хочете продовжити?",
+	"bs-permissionmanager-preset-save-error": "Неможливо зберегти конфігурацію! Зміни не застосовуються!",
+	"bs-permissionmanager-preset-save-success": "Скидання конфігурації"
 }
