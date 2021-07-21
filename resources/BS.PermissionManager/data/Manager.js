@@ -579,6 +579,11 @@
 			if( fields && ( field = me.getField( name ) ) && field.convert ) {
 				value = field.convert( value, me );
 			}
+			var affected = getAffectedBy( id, value );
+			if( data['affectedBy_Wiki'] ) {
+				data['affectedBy_Wiki'] = affected.message;
+				data['isBlocked_Wiki'] = affected.isBlocked;
+			}
 
 			currentValue = data[ name ];
 			if( !me.isEqual( currentValue, value ) ) {
@@ -614,7 +619,13 @@
 				if( fields && ( field = me.getField( name ) ) && field.convert ) {
 					value = field.convert( value, me );
 				}
+				affected = getAffectedBy( id, value, namespaceId );
+				if( data['affectedBy_' + namespaceId] ) {
+					data['affectedBy_' + namespaceId] = affected.message;
+					data['isBlocked_' + namespaceId] = affected.isBlocked;
+				}
 				currentValue = data[ name ];
+
 				if( !me.isEqual( currentValue, value ) ) {
 					data[ name ] = value;
 					( modifiedFieldNames || ( modifiedFieldNames = [] ) ).push( name );
