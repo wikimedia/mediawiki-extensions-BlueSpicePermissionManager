@@ -5,5 +5,7 @@
 		]
 	},
 	"bs-permissionmanager-btn-group-label": "Gruppu:",
-	"bs-permissionmanager-header-group": "Gruppu"
+	"bs-permissionmanager-header-group": "Gruppu",
+	"bs-permissionmanager-header-global": "Wiki",
+	"bs-permissionmanager-btn-save-label": "Sarva"
 }
