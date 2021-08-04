@@ -145,6 +145,11 @@
 			]
 		}
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "\\BlueSpice\\PermissionManager\\HookHandler\\Main"
+		}
+	},
 	"Hooks": {
 		"BSGroupManagerGroupDeleted": "\\BlueSpice\\PermissionManager\\Hook\\BSGroupManagerGroupDeleted\\UnassignRoles::callback",
 		"BSGroupManagerGroupNameChanged": [
@@ -152,7 +157,8 @@
 		],
 		"LoadExtensionSchemaUpdates": [
 			"\\BlueSpice\\PermissionManager\\Hook\\LoadExtensionSchemaUpdates\\RemoveNonIncludableNamespaces::callback"
-		]
+		],
+		"MWStakeCommonUIRegisterSkinSlotComponents": "main"
 	},
 	"ServiceWiringFiles": [
 		"ServiceWiring.php"
