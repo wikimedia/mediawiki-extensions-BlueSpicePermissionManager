@@ -10,7 +10,8 @@
 			"VulpesVulpes825",
 			"佛壁灯",
 			"列维劳德",
-			"科劳"
+			"科劳",
+			"落花有意12138"
 		]
 	},
 	"bs-permissionmanager-desc": "用于编辑用户权限的管理界面",
@@ -61,5 +62,7 @@
 	"logentry-bs-permission-manager-ns-remove": "$1{{GENDER:$2|}}从名字空间$7中移除了用户组$4的{{PLURAL:$6|角色}}$5",
 	"bs-permissionmanager-affected-by-dependency": "此身份需要{{PLURAL:$2|以下权限}}：$1",
 	"bs-permissionmanager-preset-custom-label": "自定义设置",
-	"bs-permissionmanager-preset-private-label": "非公开wiki"
+	"bs-permissionmanager-preset-private-label": "非公开wiki",
+	"bs-permissionmanager-preset-protected-label": "受保护的维基",
+	"bs-permissionmanager-preset-public-label": "公开维基"
 }
