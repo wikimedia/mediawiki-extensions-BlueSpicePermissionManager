@@ -36,6 +36,11 @@ use MediaWiki\MediaWikiServices;
 class Extension extends \BlueSpice\Extension {
 
 	public static function onCallback() {
+		// Do not apply permission changes within WMF CI, to avoid issues with core tests
+		if ( !empty( $GLOBALS['wgWikimediaJenkinsCI'] ) ) {
+			return;
+		}
+
 		/** @var PermissionManager $permissionManager */
 		$permissionManager = MediaWikiServices::getInstance()->getService(
 			'BlueSpicePermissionManager'
