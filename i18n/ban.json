@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Chinamoonroll",
 			"NoiX180"
 		]
 	},
-	"bs-permissionmanager-btn-save-label": "Raksa"
+	"bs-permissionmanager-btn-save-label": "Raksa",
+	"bs-premissionmanager-reset-button-label": "Jumu"
 }
