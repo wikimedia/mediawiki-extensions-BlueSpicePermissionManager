@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Facenapalm",
 			"Okras",
 			"Striking Blue",
@@ -31,9 +32,16 @@
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|изменил|изменила}} права группы $4",
 	"action-permissionmanager-viewspecialpage": "просмотр служебной страницы «{{int:bs-permissionmanager-label}}»",
 	"bs-permissionmanager-affected-by-explicit": "Заблокирован от $1",
+	"bs-permissionmanager-group-all": "все",
+	"bs-permissionmanager-header-role": "Роль",
 	"right-permissionmanager-viewspecialpage": "доступ к служебной странице [[Special:PermissionManager]]",
 	"bs-permissionmanager-show-system-groups-label": "Показать системные группы",
 	"bs-permissionmanager-role-permissions-column-permission": "Разрешение",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Описание",
-	"bs-premissionmanager-reset-button-label": "Сбросить"
+	"bs-premissionmanager-reset-button-label": "Сбросить",
+	"bs-permissionmanager-preset-custom-label": "Индивидуальная настройка",
+	"bs-permissionmanager-preset-private-label": "Приватная вики",
+	"bs-permissionmanager-preset-protected-label": "Защищенная вики",
+	"bs-permissionmanager-preset-public-label": "Публичная вики",
+	"bs-permissionmanager-preset-save-success": "Конфигурация сохранена!"
 }
