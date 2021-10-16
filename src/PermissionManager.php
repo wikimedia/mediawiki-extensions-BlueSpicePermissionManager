@@ -314,9 +314,15 @@ class PermissionManager {
 			$hintText = wfMessage( 'bs-permissionmanager-hint', $permissionList, $permissionCount )->parse();
 			$res[] = [
 				'role' => $roleAndPermissions[ 'role' ],
-				'hint' => $hintText
+				'hint' => $hintText,
+				'privilegeLevel' => $roleAndPermissions[ 'privilegeLevel' ]
 			];
 		}
+
+		$privilegeColumn = array_column( $res, 'privilegeLevel' );
+		$nameColumn = array_column( $res, 'role' );
+		array_multisort( $privilegeColumn, SORT_ASC, $nameColumn, SORT_ASC, $res );
+
 		return $res;
 	}
 
