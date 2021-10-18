@@ -5,7 +5,7 @@ namespace BlueSpice\PermissionManager\HookHandler;
 use BlueSpice\PermissionManager\GlobalActionsManager;
 use MWStake\MediaWiki\Component\CommonUserInterface\Hook\MWStakeCommonUIRegisterSkinSlotComponents;
 
-class Main implements MWStakeCommonUIRegisterSkinSlotComponents {
+class CommonUserInterface implements MWStakeCommonUIRegisterSkinSlotComponents {
 
 	/**
 	 * @inheritDoc
