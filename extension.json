@@ -146,8 +146,8 @@
 		}
 	},
 	"HookHandlers": {
-		"main": {
-			"class": "\\BlueSpice\\PermissionManager\\HookHandler\\Main"
+		"common-user-interface": {
+			"class": "\\BlueSpice\\PermissionManager\\HookHandler\\CommonUserInterface"
 		}
 	},
 	"Hooks": {
@@ -158,7 +158,7 @@
 		"LoadExtensionSchemaUpdates": [
 			"\\BlueSpice\\PermissionManager\\Hook\\LoadExtensionSchemaUpdates\\RemoveNonIncludableNamespaces::callback"
 		],
-		"MWStakeCommonUIRegisterSkinSlotComponents": "main"
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
 	},
 	"ServiceWiringFiles": [
 		"ServiceWiring.php"
