@@ -3,6 +3,7 @@
 		"authors": [
 			"Beta16",
 			"Selven",
+			"Stefano",
 			"ValeJappo"
 		]
 	},
@@ -38,5 +39,7 @@
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|ha}} rimosso {{PLURAL:$6|il ruolo|i ruoli}} $5 nel namespace $7 dal gruppo $4",
 	"bs-permissionmanager-preset-private-label": "Wiki privato",
 	"bs-permissionmanager-preset-protected-label": "Wiki protetto",
-	"bs-permissionmanager-preset-public-label": "Wiki pubblico"
+	"bs-permissionmanager-preset-public-label": "Wiki pubblico",
+	"bs-permissionmanager-write-config-file-error": "Impossibile creare o scrivere $ 1",
+	"bs-permissionmanager-preset-save-success": "Configurazione salvata"
 }

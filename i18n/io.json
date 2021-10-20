@@ -5,5 +5,6 @@
 		]
 	},
 	"bs-permissionmanager-header-namespaces": "'Namespaces'",
-	"bs-permissionmanager-role-permissions-column-permission-desc": "Deskripto"
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Deskripto",
+	"bs-permissionmanager-group-all": "omna"
 }

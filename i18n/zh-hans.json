@@ -8,20 +8,22 @@
 			"Phenolla",
 			"Ps2049",
 			"VulpesVulpes825",
+			"Xiplus",
 			"佛壁灯",
 			"列维劳德",
-			"科劳"
+			"科劳",
+			"落花有意12138"
 		]
 	},
 	"bs-permissionmanager-desc": "用于编辑用户权限的管理界面",
 	"prefs-permissionmanager": "权限管理器",
 	"bs-permissionmanager-label": "权限管理器",
-	"bs-permissionmanager-grouping-global": "名字空间的独立权限",
-	"bs-permissionmanager-grouping-local": "名字空间的特定权限",
+	"bs-permissionmanager-grouping-global": "命名空间的独立权限",
+	"bs-permissionmanager-grouping-local": "命名空间的特定权限",
 	"bs-permissionmanager-btn-group-label": "组：",
 	"bs-permissionmanager-header-permissions": "权限",
 	"bs-permissionmanager-header-global": "Wiki",
-	"bs-permissionmanager-header-namespaces": "名字空间",
+	"bs-permissionmanager-header-namespaces": "命名空间",
 	"bs-permissionmanager-header-group": "组",
 	"bs-permissionmanager-btn-save-label": "保存",
 	"bs-permissionmanager-btn-save-in-progress-label": "保存中…",
@@ -57,9 +59,11 @@
 	"bs-premissionmanager-reset-button-label": "重置",
 	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|已经}}添加了 {{PLURAL:$6|角色|角色们}} $5至用户组$4",
 	"logentry-bs-permission-manager-global-remove": "$1{{GENDER:$2|}}从用户组$4中移除了{{PLURAL:$6|角色}}$5",
-	"logentry-bs-permission-manager-ns-add": "$1{{GENDER:$2|}}在名字空间$7中添加了{{PLURAL:$6|角色}}$5至用户组$4",
-	"logentry-bs-permission-manager-ns-remove": "$1{{GENDER:$2|}}从名字空间$7中移除了用户组$4的{{PLURAL:$6|角色}}$5",
+	"logentry-bs-permission-manager-ns-add": "$1{{GENDER:$2|}}在命名空间$7中添加了{{PLURAL:$6|角色}}$5至用户组$4",
+	"logentry-bs-permission-manager-ns-remove": "$1{{GENDER:$2|}}从命名空间$7中移除了用户组$4的{{PLURAL:$6|角色}}$5",
 	"bs-permissionmanager-affected-by-dependency": "此身份需要{{PLURAL:$2|以下权限}}：$1",
 	"bs-permissionmanager-preset-private-label": "非公开wiki",
-	"bs-permissionmanager-preset-custom-label": "自定义设置"
+	"bs-permissionmanager-preset-custom-label": "自定义设置",
+	"bs-permissionmanager-preset-protected-label": "受保护的维基",
+	"bs-permissionmanager-preset-public-label": "公开维基"
 }
