@@ -72,5 +72,6 @@
 	"bs-permissionmanager-preset-public-help": "* Tout le monde peut '''afficher et modifier''' le contenu, y compris les utilisateurs anonymes\n* Seuls les utilisateurs du groupe « administrateurs » peuvent effectuer des '''actions administratives'''",
 	"bs-permissionmanager-switch-preset-confirm": "Le basculement de la présélection prendra effet immédiatement pour tous les utilisateurs du wiki. Êtes-vous sûr{{GENDER:||e}} de vouloir continuer ?",
 	"bs-permissionmanager-preset-save-error": "La configuration n’a pas pu être enregistrée ! Les modifications n’ont pas été appliquées !",
-	"bs-permissionmanager-preset-save-success": "Configuration enregistrée !"
+	"bs-permissionmanager-preset-save-success": "Configuration enregistrée !",
+	"bs-permissionmanager-pref-max-backups-help": "Nombre de sauvegardes pour les dernières modifications pour le droit gestionnaire (Spécial:PermissionManager)."
 }
