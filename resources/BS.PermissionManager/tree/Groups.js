@@ -14,6 +14,7 @@ Ext.define('BS.PermissionManager.tree.Groups', {
 			var group = Ext.create( 'BS.PermissionManager.data.Manager' ).getWorkingGroup();
 			var node = panel.getStore().getNodeById( group );
 			panel.getSelectionModel().select(node, false, true);
+			this.showSystemGroups( false );
 		},
 		select: function( self, record ) {
 			var group = record.get( 'text' );

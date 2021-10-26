@@ -31,7 +31,7 @@ Ext.define( 'BS.PermissionManager.panel.Manager', {
 
 		me.chkShowSystemGroups = new Ext.form.field.Checkbox( {
 			boxLabel: mw.message( 'bs-permissionmanager-show-system-groups-label' ).text(),
-			checked: true,
+			checked: false,
 			listeners: {
 				change: function( chk, newValue, oldValue ) {
 					me.treeGroups.showSystemGroups( newValue );
