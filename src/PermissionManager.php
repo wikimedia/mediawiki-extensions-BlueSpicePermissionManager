@@ -7,7 +7,6 @@ use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Permission\IRole;
 use BlueSpice\Permission\PermissionRegistry;
 use BlueSpice\Permission\RoleManager;
-use BsGroupHelper;
 use Config;
 use ManualLogEntry;
 use MediaWiki\HookContainer\HookContainer;
@@ -36,14 +35,6 @@ class PermissionManager {
 	protected $groups = [];
 	/** @var ExtensionAttributeBasedRegistry */
 	protected $presets;
-
-	/**
-	 *
-	 * @var array
-	 */
-	protected $builtInGroups = [
-		'autoconfirmed', 'emailconfirmed', 'bot', 'sysop', 'bureaucrat', 'developer'
-	];
 
 	/**
 	 * @param PermissionRegistry $permissionRegistry
@@ -422,11 +413,14 @@ class PermissionManager {
 	 * Add custom groups
 	 */
 	private function addOtherGroups() {
-		$explicitGroups = BsGroupHelper::getAvailableGroups(
-			[ 'blacklist' => $this->services->getMainConfig()->get( 'ImplicitGroups' ) ]
+		$groupHelper = $this->services->getService( 'BSUtilityFactory' )->getGroupHelper();
+		$explicitGroups = $groupHelper->getAvailableGroups(
+			[ 'filter' => [ 'explicit' ] ]
 		);
 
 		sort( $explicitGroups );
+
+		$usableGroups = $groupHelper->getAvailableGroups();
 
 		$explicitGroupNodes = [];
 		foreach ( $explicitGroups as $explicitGroup ) {
@@ -435,11 +429,11 @@ class PermissionManager {
 				'leaf' => true
 			];
 
-			if ( in_array( $explicitGroup, $this->builtInGroups ) ) {
+			if ( in_array( $explicitGroup, $usableGroups ) ) {
+				$explicitGroupNode[ 'iconCls' ] = 'icon-custom-group';
+			} else {
 				$explicitGroupNode[ 'builtin' ] = true;
 				$explicitGroupNode[ 'iconCls' ] = 'icon-builtin-group';
-			} else {
-				$explicitGroupNode[ 'iconCls' ] = 'icon-custom-group';
 			}
 
 			$explicitGroupNodes[] = $explicitGroupNode;
