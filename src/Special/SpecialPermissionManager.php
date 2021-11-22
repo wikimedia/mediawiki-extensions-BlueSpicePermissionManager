@@ -5,6 +5,7 @@ namespace BlueSpice\PermissionManager\Special;
 use BlueSpice\PermissionManager\Helper;
 use BlueSpice\Special\ManagerBase;
 use BlueSpice\PermissionManager\Extension as PermissionManager;
+use BsGroupHelper;
 
 class SpecialPermissionManager extends ManagerBase {
 
@@ -32,20 +33,25 @@ class SpecialPermissionManager extends ManagerBase {
 	 */
 	protected function getJSVars() {
 		$helper = Helper::getInstance();
-		$groups = $helper->getGroups();
-
+		$groupTree = $helper->getGroups();
+		$availableGroups = array_values(
+			BsGroupHelper::getAvailableGroups(
+				[ 'blacklist' => $this->getConfig()->get( 'ImplicitGroups' ) ]
+			)
+		);
 		$rolesAndPermissions = PermissionManager::getRoles();
 		$rolesAndHints = $helper->formatPermissionsToHint( $rolesAndPermissions );
 
 		$groupRoles = PermissionManager::getGroupRoles();
 
 		return [
-			'bsPermissionManagerGroupsTree' => $groups,
+			'bsPermissionManagerGroupsTree' => $groupTree,
 			'bsPermissionManagerRoles' => $rolesAndHints,
 			'bsPermissionManagerNamespaces' => $helper->buildNamespaceMetadata(),
 			'bsPermissionManagerGroupRoles' => $groupRoles,
 			'bsPermissionManagerRoleLockdown' => $helper->getNamespaceRolesLockdown(),
-			'bsPermissionManagerRoleDependencyTree' => $helper->getRoleDependencyTree()
+			'bsPermissionManagerRoleDependencyTree' => $helper->getRoleDependencyTree(),
+			'bsPermissionManagerAvailableGroups' => $availableGroups,
 		];
 	}
 

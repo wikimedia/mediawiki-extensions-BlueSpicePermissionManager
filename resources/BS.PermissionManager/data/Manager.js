@@ -18,6 +18,7 @@
 	var roles = mw.config.get( 'bsPermissionManagerRoles', [] );
 
 	var groupRoles = Ext.Object.merge( {}, mw.config.get( 'bsPermissionManagerGroupRoles', {} ) );
+	var availableGroups = mw.config.get( 'bsPermissionManagerAvailableGroups' );
 
 	var roleLockdown = Ext.Object.merge( {}, mw.config.get( 'bsPermissionManagerRoleLockdown', {} ) );
 
@@ -275,6 +276,7 @@
 				}
 			}
 		}
+
 		// anything else means this group doesn't have the permission
 		return NOT_ALLOWED;
 	}
@@ -342,19 +344,20 @@
 	}
 
 	function getAffectedBy( role, type, namespace ) {
-		if( type == ALLOWED_EXPLICIT ) {
+		if( type === ALLOWED_EXPLICIT ) {
 			return {
 				message: mw.message( 'bs-permissionmanager-affected-by-explicitlyset' ).plain(),
 				isBlocked: false
 			};
 		}
-		var groups = Object.keys( groupRoles );
+		var groups = availableGroups;
 		var explicitGroupsNS = [];
 		var groupsWiki = [];
 		for( var i = 0; i < groups.length; i++ ) {
 			var group = groups[i];
 			if ( namespace ) {
 				var res = checkRoleInNamespace( role, namespace, group );
+
 				if( res === ALLOWED_EXPLICIT ) {
 					explicitGroupsNS.push( group );
 					continue;
@@ -406,7 +409,7 @@
 			}
 
 			if( groupsWiki[i].group === workingGroup && type === NOT_ALLOWED ) {
-				if ( !sNSGroups && namespace ) {
+				if ( !sNSGroups && typeof namespace === "number" ) {
 					return {
 						message: getDependencyBlockMessage( role, namespace),
 						isBlocked: true
