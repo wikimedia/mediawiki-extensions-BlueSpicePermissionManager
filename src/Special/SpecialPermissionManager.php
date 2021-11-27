@@ -4,6 +4,7 @@ namespace BlueSpice\PermissionManager\Special;
 
 use BlueSpice\LoadPlaceholderRegistry;
 use BlueSpice\PermissionManager\PermissionManager;
+use BsGroupHelper;
 use Html;
 use MediaWiki\MediaWikiServices;
 use SpecialPage;
@@ -70,20 +71,25 @@ class SpecialPermissionManager extends SpecialPage {
 
 		$this->getOutput()->addJsConfigVars( 'bsPermissionManagerPresets', $presetData );
 
-		$groups = $this->permissionManager->getGroups();
-
+		$groupTree = $this->permissionManager->getGroups();
+		$availableGroups = array_values(
+			BsGroupHelper::getAvailableGroups(
+				[ 'blacklist' => $this->getConfig()->get( 'ImplicitGroups' ) ]
+			)
+		);
 		$rolesAndPermissions = $this->permissionManager->getRoleManager()->getRoleNamesAndPermissions();
 		$rolesAndHints = $this->permissionManager->formatPermissionsToHint( $rolesAndPermissions );
 
 		$groupRoles = $this->permissionManager->getRoleManager()->getGroupRoles();
 
 		$this->getOutput()->addJsConfigVars( [
-			'bsPermissionManagerGroupsTree' => $groups,
+			'bsPermissionManagerGroupsTree' => $groupTree,
 			'bsPermissionManagerRoles' => $rolesAndHints,
 			'bsPermissionManagerNamespaces' => $this->permissionManager->buildNamespaceMetadata(),
 			'bsPermissionManagerGroupRoles' => $groupRoles,
 			'bsPermissionManagerRoleLockdown' => $this->permissionManager->getNamespaceRolesLockdown(),
-			'bsPermissionManagerRoleDependencyTree' => $this->permissionManager->getRoleDependencyTree()
+			'bsPermissionManagerRoleDependencyTree' => $this->permissionManager->getRoleDependencyTree(),
+			'bsPermissionManagerAvailableGroups' => $availableGroups,
 		] );
 	}
 
