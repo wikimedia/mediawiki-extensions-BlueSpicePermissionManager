@@ -4,7 +4,8 @@
 			"Cwlin0416",
 			"Kly",
 			"LNDDYL",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Winston Sung"
 		]
 	},
 	"bs-permissionmanager-desc": "編輯使用者權限的管理介面",
@@ -58,5 +59,6 @@
 	"bs-permissionmanager-preset-custom-label": "自訂設定",
 	"bs-permissionmanager-preset-private-label": "私人 wiki",
 	"bs-permissionmanager-preset-protected-label": "受保護 wiki",
-	"bs-permissionmanager-preset-public-label": "公共 wiki"
+	"bs-permissionmanager-preset-public-label": "公共 wiki",
+	"bs-permissionmanager-preset-save-success": "已儲存組態！"
 }

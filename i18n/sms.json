@@ -5,5 +5,7 @@
 		]
 	},
 	"bs-permissionmanager-group-all": "puk",
-	"bs-permissionmanager-btn-save-label": "Ruõkk"
+	"bs-permissionmanager-btn-save-label": "Ruõkk",
+	"action-permissionmanager-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:bs-permissionmanager-label}}\"",
+	"bs-permissionmanager-preset-protected-label": "Suõjjuum wiki"
 }
