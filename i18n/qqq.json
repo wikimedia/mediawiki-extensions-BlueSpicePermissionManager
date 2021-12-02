@@ -12,6 +12,7 @@
 	},
 	"bs-permissionmanager-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of permission manager extension",
 	"prefs-permissionmanager": "Used in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], headline for permission manager section in preferences.\n{{Identical|Permission manager}}",
+	"bs-permissionmanager-text": "Label for global actions menu entry",
 	"bs-permissionmanager-label": "Anchor text for permission manager\n{{Identical|Permission manager}}",
 	"bs-permissionmanager-grouping-global": "Column headline for namespace independent permissions\n{{Identical|Namespace independent permissions}}",
 	"bs-permissionmanager-grouping-local": "Column headline for namespace specific permissions\n{{Identical|Namespace specific permissions}}",

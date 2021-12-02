@@ -48,7 +48,7 @@ class GlobalActionsManager extends RestrictedTextLink {
 	 * @return Message
 	 */
 	public function getText(): Message {
-		return Message::newFromKey( 'bs-permissionmanager-label' );
+		return Message::newFromKey( 'bs-permissionmanager-text' );
 	}
 
 	/**
@@ -64,6 +64,6 @@ class GlobalActionsManager extends RestrictedTextLink {
 	 * @return Message
 	 */
 	public function getAriaLabel(): Message {
-		return Message::newFromKey( 'bs-permissionmanager-label' );
+		return Message::newFromKey( 'bs-permissionmanager-text' );
 	}
 }
