@@ -7,6 +7,7 @@
 	},
 	"bs-permissionmanager-desc": "Administration interface for editing user rights",
 	"prefs-permissionmanager": "Permission manager",
+	"bs-permissionmanager-text": "Permissions",
 	"bs-permissionmanager-label": "Permission manager",
 	"bs-permissionmanager-grouping-global": "Namespace independent permissions",
 	"bs-permissionmanager-grouping-local": "Namespace specific permissions",
