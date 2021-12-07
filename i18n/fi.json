@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"MITO",
 			"Pyscowicz",
 			"Silvonen"
 		]
 	},
+	"bs-permissionmanager-text": "Käyttöoikeudet",
 	"bs-permissionmanager-header-namespaces": "Nimiavaruudet",
 	"bs-permissionmanager-header-group": "Ryhmä",
 	"bs-permissionmanager-btn-save-label": "Tallenna",
