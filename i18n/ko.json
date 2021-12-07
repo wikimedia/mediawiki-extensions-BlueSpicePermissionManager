@@ -52,5 +52,6 @@
 	"bs-permissionmanager-preset-save-success": "설정을 저장했습니다!",
 	"log-description-bs-permission-manager": "그룹 권한의 변경 기록입니다.",
 	"log-show-hide-bs-permission-manager": "$1 권한 관리자 기록",
-	"logentry-bs-permission-manager-modify": "$1님이 $4 그룹의 권한을 변경하였습니다"
+	"logentry-bs-permission-manager-modify": "$1님이 $4 그룹의 권한을 변경하였습니다",
+	"bs-permissionmanager-text": "권한"
 }

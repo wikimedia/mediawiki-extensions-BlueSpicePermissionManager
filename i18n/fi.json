@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"MITO",
 			"Pyscowicz",
 			"Silvonen"
 		]
@@ -10,5 +11,6 @@
 	"bs-permissionmanager-btn-save-label": "Tallenna",
 	"bs-permissionmanager-group-all": "kaikki",
 	"bs-permissionmanager-header-role": "Rooli",
-	"bs-permissionmanager-role-permissions-column-permission-desc": "Kuvaus"
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Kuvaus",
+	"bs-permissionmanager-text": "Käyttöoikeudet"
 }
