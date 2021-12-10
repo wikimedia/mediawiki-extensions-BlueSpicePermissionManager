@@ -19,7 +19,6 @@
 
 	var groupRoles = Ext.Object.merge( {}, mw.config.get( 'bsPermissionManagerGroupRoles', {} ) );
 	var availableGroups = mw.config.get( 'bsPermissionManagerAvailableGroups' );
-
 	var roleLockdown = Ext.Object.merge( {}, mw.config.get( 'bsPermissionManagerRoleLockdown', {} ) );
 
 	var roleDependencyTree = mw.config.get( 'bsPermissionManagerRoleDependencyTree', {} );
@@ -31,6 +30,7 @@
 	var modifiedValues = {
 		user: {}
 	};
+
 	/**
 	 * holds the current pending changes for each group
 	 * @type {object<string, number>}

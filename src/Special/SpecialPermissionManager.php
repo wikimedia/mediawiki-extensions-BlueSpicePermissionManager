@@ -82,6 +82,8 @@ class SpecialPermissionManager extends SpecialPage {
 			'BSUtilityFactory'
 		)->getGroupHelper();
 		$availableGroups = $groupHelper->getAvailableGroups( [ 'filter' => [ 'explicit' ] ] );
+		// Include "implicit" groups as well
+		$availableGroups = array_merge( [ '*', 'user' ], $availableGroups );
 
 		$this->getOutput()->addJsConfigVars( [
 			'bsPermissionManagerGroupsTree' => $groups,
