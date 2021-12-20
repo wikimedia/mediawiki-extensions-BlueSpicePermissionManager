@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Beta16",
 			"Selven",
 			"Stefano",
@@ -29,7 +30,7 @@
 	"bs-permissionmanager-group-all": "tutto",
 	"bs-permissionmanager-hint": "Questo ruolo include {{PLURAL:$2|la seguente autorizzazione: $1|le seguenti autorizzazioni: $1}}",
 	"bs-permissionmanager-header-role": "Ruolo",
-	"bs-permissionmanager-write-config-file-error": "Impossibile creare o scrivere $ 1",
+	"bs-permissionmanager-write-config-file-error": "Impossibile creare o scrivere $1",
 	"right-permissionmanager-viewspecialpage": "Accede alla pagina speciale [[Special:PermissionManager]]",
 	"bs-permissionmanager-role-permissions-column-permission": "Permessi",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Descrizione",
