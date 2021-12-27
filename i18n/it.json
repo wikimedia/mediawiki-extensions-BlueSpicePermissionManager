@@ -4,7 +4,8 @@
 			"Beta16",
 			"Selven",
 			"Stefano",
-			"ValeJappo"
+			"ValeJappo",
+			"Ajeje Brazorf"
 		]
 	},
 	"bs-permissionmanager-desc": "Interfaccia di amministrazione per modificare i diritti utente",
@@ -29,6 +30,7 @@
 	"bs-permissionmanager-group-all": "tutto",
 	"bs-permissionmanager-hint": "Questo ruolo include {{PLURAL:$2|la seguente autorizzazione: $1|le seguenti autorizzazioni: $1}}",
 	"bs-permissionmanager-header-role": "Ruolo",
+	"bs-permissionmanager-write-config-file-error": "Impossibile creare o scrivere $1",
 	"right-permissionmanager-viewspecialpage": "Accede alla pagina speciale [[Special:PermissionManager]]",
 	"bs-permissionmanager-role-permissions-column-permission": "Permessi",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Descrizione",
@@ -40,6 +42,5 @@
 	"bs-permissionmanager-preset-private-label": "Wiki privato",
 	"bs-permissionmanager-preset-protected-label": "Wiki protetto",
 	"bs-permissionmanager-preset-public-label": "Wiki pubblico",
-	"bs-permissionmanager-write-config-file-error": "Impossibile creare o scrivere $ 1",
 	"bs-permissionmanager-preset-save-success": "Configurazione salvata"
 }
