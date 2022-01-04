@@ -6,6 +6,7 @@
 	},
 	"bs-permissionmanager-desc": "Administrasjonsgrensesnitt for å redigere brukerrettigheter",
 	"prefs-permissionmanager": "Tilgangsbehandler",
+	"bs-permissionmanager-text": "Tillatelser",
 	"bs-permissionmanager-label": "Tillatelsesbehandler",
 	"bs-permissionmanager-grouping-global": "Navneromsuavhengige tillatelser",
 	"bs-permissionmanager-grouping-local": "Navneromsspesifikke tillatelser",
