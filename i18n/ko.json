@@ -3,7 +3,8 @@
 		"authors": [
 			"Hwangjy9",
 			"Songhee",
-			"Ykhwong"
+			"Ykhwong",
+			"Yunbj"
 		]
 	},
 	"prefs-permissionmanager": "권한 관리자",
@@ -19,6 +20,7 @@
 	"bs-permissionmanager-btn-save-label": "저장",
 	"bs-permissionmanager-btn-save-in-progress-label": "저장 중 ...",
 	"bs-permissionmanager-save-success": "권한이 저장되었습니다.",
+	"bs-permissionmanager-pref-enablerealitycheck": "권한 검사 활성화",
 	"bs-permissionmanager-pref-max-backups": "백업 제한",
 	"bs-permissionmanager-unsaved-changes": "저장되지 않은 변경사항이 있습니다. 지금 문서를 떠나시겠습니까? 저장되지 않은 변경사항은 잃게 됩니다.",
 	"bs-permissionmanager-error-lockout": "적어도 하나의 그룹이 \"$1\" 권한을 소유하여야 합니다.\n변경사항을 저장하지 못했습니다.",
