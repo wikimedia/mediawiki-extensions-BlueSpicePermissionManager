@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Beta16",
 			"Selven",
 			"Stefano",
-			"ValeJappo",
-			"Ajeje Brazorf"
+			"ValeJappo"
 		]
 	},
 	"bs-permissionmanager-desc": "Interfaccia di amministrazione per modificare i diritti utente",
