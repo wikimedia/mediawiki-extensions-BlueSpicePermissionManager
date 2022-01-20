@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Can",
 			"MuratTheTurkish",
 			"Rapsar",
 			"Sayginer",
@@ -12,6 +13,7 @@
 	},
 	"bs-permissionmanager-desc": "Kullanıcı haklarının düzenlenmesi için yönetim arayüzü",
 	"prefs-permissionmanager": "İzin yöneticisi",
+	"bs-permissionmanager-text": "İzinler",
 	"bs-permissionmanager-label": "İzin yöneticisi",
 	"bs-permissionmanager-grouping-global": "Ad alanından bağımsız izinler",
 	"bs-permissionmanager-grouping-local": "Ad alanına özgü izinler",
