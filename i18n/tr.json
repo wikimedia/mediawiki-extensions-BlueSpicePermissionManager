@@ -7,11 +7,13 @@
 			"Sayginer",
 			"Selcuksntrk",
 			"Violetanka",
-			"Vito Genovese"
+			"Vito Genovese",
+			"Can"
 		]
 	},
 	"bs-permissionmanager-desc": "Kullanıcı haklarının düzenlenmesi için yönetim arayüzü",
 	"prefs-permissionmanager": "İzin yöneticisi",
+	"bs-permissionmanager-text": "İzinler",
 	"bs-permissionmanager-label": "İzin yöneticisi",
 	"bs-permissionmanager-grouping-global": "Ad alanından bağımsız izinler",
 	"bs-permissionmanager-grouping-local": "Ad alanına özgü izinler",
@@ -35,6 +37,7 @@
 	"apihelp-bs-permissionmanager-tasks-description": "PermissionManager için görevler sağlar",
 	"apihelp-bs-permissionmanager-tasks-summary": "PermissionManager için görevler sağlar",
 	"apihelp-bs-role-permission-store-summary": "PermissionManager için rol açıklaması sağlayın",
+	"apihelp-bs-role-permission-store-param-role": "İzin alınacak rolün adı",
 	"action-permissionmanager-viewspecialpage": "\"{{int:bs-allowmanager-label}}\" özel sayfasını görüntüle",
 	"permissionmanager": "İzin yöneticisi",
 	"bs-permissionmanager-affected-by-explicit": "Engelleyen: $1",
@@ -58,7 +61,6 @@
 	"logentry-bs-permission-manager-ns-remove": "$1, $4 grubuna $7 ad alanında $5 {{GENDER:$6|rol}} {{GENDER:$2|kaldırdı}}",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - {{PLURAL:$3|rol}} konumunda mevcut: $2",
 	"bs-permissionmanager-affected-by-dependency": "Bu rol {{PLURAL:$2|aşağıdaki izin|aşağıdaki izinler}} gerektirir:\n$1",
-	"apihelp-bs-role-permission-store-param-role": "İzin alınacak rolün adı",
 	"bs-permissionmanager-preset-custom-label": "Özel kurulum",
 	"bs-permissionmanager-preset-custom-help": "Rolleri ve grupları el ile atayın",
 	"bs-permissionmanager-preset-private-label": "Özel viki",
