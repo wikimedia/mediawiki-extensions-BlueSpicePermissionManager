@@ -324,10 +324,10 @@ class PermissionManager {
 	 * @return array
 	 */
 	private function writeToFile( $groupRoles, $roleLockdown ) {
-		if ( wfReadOnly() ) {
+		if ( $this->services->getReadOnlyMode()->isReadOnly() ) {
 			return [
 				'success' => false,
-				'message' => wfMessage( 'bs-readonly', wfReadOnlyReason() )->plain()
+				'message' => wfMessage( 'bs-readonly', $this->services->getReadOnlyMode()->getReason() )->plain()
 			];
 		}
 
