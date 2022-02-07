@@ -74,5 +74,5 @@
 	"bs-permissionmanager-switch-preset-confirm": "Le basculement de la présélection prendra effet immédiatement pour tous les utilisateurs du wiki. Êtes-vous sûr{{GENDER:||e}} de vouloir continuer ?",
 	"bs-permissionmanager-preset-save-error": "La configuration n’a pas pu être enregistrée ! Les modifications n’ont pas été appliquées !",
 	"bs-permissionmanager-preset-save-success": "Configuration enregistrée !",
-	"bs-permissionmanager-pref-max-backups-help": "Nombre de sauvegardes pour les dernières modifications pour le droit gestionnaire (Spécial:PermissionManager)."
+	"bs-permissionmanager-pref-max-backups-help": "Nombre de sauvegardes pour les dernières modifications du gestionnaire des droits (Spécial:PermissionManager)."
 }
