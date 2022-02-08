@@ -12,6 +12,7 @@
 	},
 	"bs-permissionmanager-desc": "Адміністративний інтерфейс для редагування прав користувача",
 	"prefs-permissionmanager": "Менеджер дозволів",
+	"bs-permissionmanager-text": "Дозволи",
 	"bs-permissionmanager-label": "Менеджер дозволів",
 	"bs-permissionmanager-grouping-global": "Дозволи, не залежні від простору назв",
 	"bs-permissionmanager-grouping-local": "Дозволи, залежні від простору назв",
