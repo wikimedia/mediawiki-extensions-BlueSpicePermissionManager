@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"FiberAhmed",
 			"Meno25",
 			"Omda4wady",
 			"باسم",
@@ -10,6 +11,7 @@
 	},
 	"bs-permissionmanager-desc": "واجهة الإدارة لتحرير صلاحيات المستخدم",
 	"prefs-permissionmanager": "مدير الصلاحية",
+	"bs-permissionmanager-text": "الصلاحيات",
 	"bs-permissionmanager-label": "مدير الصلاحية",
 	"bs-permissionmanager-grouping-global": "صلاحيات النطاق المستقل",
 	"bs-permissionmanager-grouping-local": "صلاحيات النطاق المحدد",
