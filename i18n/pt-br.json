@@ -3,11 +3,13 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Juan90264"
 		]
 	},
 	"bs-permissionmanager-desc": "Interface administrativa para editar direitos dos usuários",
 	"prefs-permissionmanager": "Gerenciador de permissão",
+	"bs-permissionmanager-text": "Permissões",
 	"bs-permissionmanager-label": "Gerenciador de permissão",
 	"bs-permissionmanager-grouping-global": "Permissões independentes do espaço nominal",
 	"bs-permissionmanager-grouping-local": "Permissões específicas do espaço nominal",
@@ -31,6 +33,7 @@
 	"apihelp-bs-permissionmanager-tasks-description": "Fornece tarefas para o Gerenciador de Permissões",
 	"apihelp-bs-permissionmanager-tasks-summary": "Fornece tarefas para o Gerenciador de Permissões",
 	"apihelp-bs-role-permission-store-summary": "Fornecer descrição de função para o Gerente de Permissão",
+	"apihelp-bs-role-permission-store-param-role": "Nome da função para a qual obter permissões",
 	"action-permissionmanager-viewspecialpage": "ver a página especial \"{{int:bs-permissionmanager-label}}\"",
 	"permissionmanager": "Gerenciador de permissão",
 	"bs-permissionmanager-affected-by-explicit": "Bloqueado por $1",
@@ -54,7 +57,6 @@
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|removeu}} {{PLURAL:$6|a função|as funções}} $5 no espaço nominal/domínio $7 do grupo $4",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - disponível em {{PLURAL:$3|papel|papéis}}: $2",
 	"bs-permissionmanager-affected-by-dependency": "Este papel requer {{PLURAL:$2|a seguinte permissão|seguintes permissões}}:\n$1",
-	"apihelp-bs-role-permission-store-param-role": "Nome da função para a qual obter permissões",
 	"bs-permissionmanager-preset-custom-label": "Configuração personalizada",
 	"bs-permissionmanager-preset-custom-help": "* Atribuir funções e grupos manualmente",
 	"bs-permissionmanager-preset-private-label": "Wiki privada",
@@ -65,5 +67,6 @@
 	"bs-permissionmanager-preset-public-help": "* Todos podem '''ver e editar''' o conteúdo - incluindo usuários anônimos\n* Somente usuários no grupo \"sysop\" podem realizar '''ações administrativas'''",
 	"bs-permissionmanager-switch-preset-confirm": "A troca da predefinição será aplicada imediatamente a todos os usuários da wiki. Você tem certeza que quer continuar?",
 	"bs-permissionmanager-preset-save-error": "A configuração não pode ser salva! As alterações não são aplicadas!",
-	"bs-permissionmanager-preset-save-success": "Configuração salva!"
+	"bs-permissionmanager-preset-save-success": "Configuração salva!",
+	"bs-permissionmanager-pref-max-backups-help": "Número de backups das últimas alterações no gerenciador de permissões (Special:PermissionManager)."
 }
