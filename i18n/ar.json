@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"FiberAhmed",
 			"Meno25",
 			"Omda4wady",
 			"باسم",
@@ -61,5 +62,6 @@
 	"bs-permissionmanager-preset-custom-label": "تنصيب مخصص",
 	"bs-permissionmanager-preset-custom-help": "* تعيين الأدوار والمجموعات يدويًا",
 	"bs-permissionmanager-preset-public-label": "ويكي عمومية",
-	"bs-permissionmanager-preset-save-success": "حُفظت الإعدادات!"
+	"bs-permissionmanager-preset-save-success": "حُفظت الإعدادات!",
+	"bs-permissionmanager-text": "الصلاحيات"
 }
