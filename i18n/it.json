@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Beta16",
 			"Selven",
 			"Stefano",
@@ -40,6 +41,6 @@
 	"bs-permissionmanager-preset-private-label": "Wiki privato",
 	"bs-permissionmanager-preset-protected-label": "Wiki protetto",
 	"bs-permissionmanager-preset-public-label": "Wiki pubblico",
-	"bs-permissionmanager-write-config-file-error": "Impossibile creare o scrivere $ 1",
+	"bs-permissionmanager-write-config-file-error": "Impossibile creare o scrivere $1",
 	"bs-permissionmanager-preset-save-success": "Configurazione salvata"
 }

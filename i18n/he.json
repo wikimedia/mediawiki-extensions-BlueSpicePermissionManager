@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Erelon",
 			"Guycn2",
 			"Steeve815"
@@ -13,7 +14,7 @@
 	"bs-permissionmanager-grouping-local": "הרשאות למרחבי שם מסוימים",
 	"bs-permissionmanager-btn-group-label": "קבוצה:",
 	"bs-permissionmanager-header-permissions": "הרשאות",
-	"bs-permissionmanager-header-global": "אתר ויקי",
+	"bs-permissionmanager-header-global": "ויקי",
 	"bs-permissionmanager-header-namespaces": "מרחבי שם",
 	"bs-permissionmanager-header-group": "קבוצה",
 	"bs-permissionmanager-btn-save-label": "שמירה",

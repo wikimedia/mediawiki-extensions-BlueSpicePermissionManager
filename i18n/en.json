@@ -65,5 +65,6 @@
 	"bs-permissionmanager-switch-preset-confirm": "Switching the preset will be applied immediately to all users in the wiki. Are you sure you want to continue?",
 	"bs-permissionmanager-preset-save-error": "Configuration cannot be saved! Changes are not applied!",
 	"bs-permissionmanager-preset-save-success": "Configuration saved!",
-	"bs-permissionmanager-pref-max-backups-help": "Number of backups for last changes to the permission manager (Special:PermissionManager)."
+	"bs-permissionmanager-pref-max-backups-help": "Number of backups for last changes to the permission manager (Special:PermissionManager).",
+	"bs-permissionmanager-text": "Permissions"
 }

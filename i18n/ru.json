@@ -3,6 +3,8 @@
 		"authors": [
 			"DDPAT",
 			"Facenapalm",
+			"Ice bulldog",
+			"Kareyac",
 			"Okras",
 			"Striking Blue",
 			"Vlad5250",
@@ -43,5 +45,6 @@
 	"bs-permissionmanager-preset-private-label": "Приватная вики",
 	"bs-permissionmanager-preset-protected-label": "Защищенная вики",
 	"bs-permissionmanager-preset-public-label": "Публичная вики",
-	"bs-permissionmanager-preset-save-success": "Конфигурация сохранена!"
+	"bs-permissionmanager-preset-save-success": "Конфигурация сохранена!",
+	"bs-permissionmanager-text": "Разрешения"
 }

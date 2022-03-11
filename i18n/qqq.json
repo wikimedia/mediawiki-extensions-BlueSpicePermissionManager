@@ -70,5 +70,6 @@
 	"bs-permissionmanager-switch-preset-confirm": "Confirmation message when switching to a different preset",
 	"bs-permissionmanager-preset-save-error": "Error message when API call to change the preset failed",
 	"bs-permissionmanager-preset-save-success": "Success message when saving the preset selection succeeded",
-	"bs-permissionmanager-pref-max-backups-help": "Description for config variable \"PermissionManagerMaxBackups\""
+	"bs-permissionmanager-pref-max-backups-help": "Description for config variable \"PermissionManagerMaxBackups\"",
+	"bs-permissionmanager-text": "Label for global actions menu entry"
 }
