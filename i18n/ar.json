@@ -5,11 +5,13 @@
 			"Omda4wady",
 			"باسم",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"FiberAhmed"
 		]
 	},
 	"bs-permissionmanager-desc": "واجهة الإدارة لتحرير صلاحيات المستخدم",
 	"prefs-permissionmanager": "مدير الصلاحية",
+	"bs-permissionmanager-text": "الصلاحيات",
 	"bs-permissionmanager-label": "مدير الصلاحية",
 	"bs-permissionmanager-grouping-global": "صلاحيات النطاق المستقل",
 	"bs-permissionmanager-grouping-local": "صلاحيات النطاق المحدد",
@@ -56,10 +58,10 @@
 	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|قد}} تمت إزالة {{PLURAL:$6|دور|أدوار}} $5 في نطاق $7 من مجموعة $4",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - متوفر في {{PLURAL:$3|دور|أدوار}}: $2",
 	"bs-permissionmanager-affected-by-dependency": "يتضمن هذا الدور {{PLURAL:$2|الصلاحية|الصلاحيات}} التالية:\n$1",
-	"bs-permissionmanager-preset-private-label": "ويكي خاص",
-	"bs-permissionmanager-preset-protected-label": "ويكي محمية",
 	"bs-permissionmanager-preset-custom-label": "تنصيب مخصص",
 	"bs-permissionmanager-preset-custom-help": "* تعيين الأدوار والمجموعات يدويًا",
+	"bs-permissionmanager-preset-private-label": "ويكي خاص",
+	"bs-permissionmanager-preset-protected-label": "ويكي محمية",
 	"bs-permissionmanager-preset-public-label": "ويكي عمومية",
 	"bs-permissionmanager-preset-save-success": "حُفظت الإعدادات!"
 }
