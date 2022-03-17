@@ -6,6 +6,7 @@
 	},
 	"bs-permissionmanager-desc": "Interfacie de administration pro modificar derectos de usator",
 	"prefs-permissionmanager": "Gestor de permissiones",
+	"bs-permissionmanager-text": "Permissiones",
 	"bs-permissionmanager-label": "Gestor de permissiones",
 	"bs-permissionmanager-grouping-global": "Permissiones independente del spatio de nomines",
 	"bs-permissionmanager-grouping-local": "Permissiones specific del spatio de nomines",
