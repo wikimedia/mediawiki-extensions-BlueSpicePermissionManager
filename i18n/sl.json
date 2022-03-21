@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Alojz.tic",
-			"Skalcaa"
+			"Skalcaa",
+			"Eleassar"
 		]
 	},
 	"bs-permissionmanager-desc": "Skrbniški vmesnik za urejanje uporabniških pravic",
@@ -19,5 +20,6 @@
 	"bs-permissionmanager-btn-save-in-progress-label": "Shranjevanje ...",
 	"bs-permissionmanager-save-success": "Dovoljenja shranjena.",
 	"bs-permissionmanager-pref-enablerealitycheck": "Vključi preverjanje dovoljenj",
-	"bs-permissionmanager-unsaved-changes": "Obstajajo neshranjene spremembe. Ali res želite zapustiti stran? Neshranjene spremembe bodo izgubljene."
+	"bs-permissionmanager-unsaved-changes": "Obstajajo neshranjene spremembe. Ali res želite zapustiti stran? Neshranjene spremembe bodo izgubljene.",
+	"bs-permissionmanager-group-all": "vse"
 }
