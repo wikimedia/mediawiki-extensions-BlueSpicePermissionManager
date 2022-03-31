@@ -5,10 +5,11 @@
 			"Ebraminio",
 			"FarsiNevis",
 			"Huji",
-			"Jeeputer"
+			"Jeeputer",
+			"Beginneruser"
 		]
 	},
-	"bs-permissionmanager-desc": "رابط مدیریتی برای ویرایش اختیارات کاربران",
+	"bs-permissionmanager-desc": "رابط مدیریتی برای ویرایش امتیازات کاربران",
 	"prefs-permissionmanager": "مدیر دسترسی",
 	"bs-permissionmanager-label": "مدیر دسترسی",
 	"bs-permissionmanager-grouping-global": "دسترسی‌های مستقل فضای نام",
