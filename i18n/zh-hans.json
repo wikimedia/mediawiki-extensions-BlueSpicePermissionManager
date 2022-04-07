@@ -12,11 +12,13 @@
 			"佛壁灯",
 			"列维劳德",
 			"科劳",
-			"落花有意12138"
+			"落花有意12138",
+			"StarrySky"
 		]
 	},
 	"bs-permissionmanager-desc": "用于编辑用户权限的管理界面",
 	"prefs-permissionmanager": "权限管理器",
+	"bs-permissionmanager-text": "权限",
 	"bs-permissionmanager-label": "权限管理器",
 	"bs-permissionmanager-grouping-global": "命名空间的独立权限",
 	"bs-permissionmanager-grouping-local": "命名空间的特定权限",
