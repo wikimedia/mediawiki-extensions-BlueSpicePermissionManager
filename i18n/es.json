@@ -11,11 +11,13 @@
 			"Macofe",
 			"MarcoAurelio",
 			"Ryo567",
-			"Vanbasten 23"
+			"Vanbasten 23",
+			"DiegoAmbrocio"
 		]
 	},
 	"bs-permissionmanager-desc": "Interfaz administrativa para gestionar permisos de usuarios",
 	"prefs-permissionmanager": "Gestor de permisos",
+	"bs-permissionmanager-text": "Permisos",
 	"bs-permissionmanager-label": "Gestor de permisos",
 	"bs-permissionmanager-grouping-global": "Permisos independientes del espacio de nombres.",
 	"bs-permissionmanager-grouping-local": "Permisos específicos del espacio de nombres",
@@ -44,10 +46,13 @@
 	"bs-permissionmanager-affected-by-inherited": "Heredado de $1",
 	"bs-permissionmanager-affected-by-notset": "No establecido",
 	"bs-permissionmanager-affected-by-explicitlyset": "Explícitamente establecido",
+	"bs-permissionmanager-affected-by-setonwiki": "Establecer en el nivel de la wiki",
 	"bs-permissionmanager-group-all": "todos",
 	"bs-permissionmanager-header-role": "Papel",
+	"bs-permissionmanager-write-config-file-error": "No es capaz de crear o escribir $1",
 	"right-permissionmanager-viewspecialpage": "Acceso a la página especial [[Special:PermissionManager]]",
 	"bs-permissionmanager-show-system-groups-label": "Mostrar grupos de sistema",
+	"bs-permissionmanager-role-permissions-label": "Permisos en el rol: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "Permiso",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Descripción",
 	"bs-premissionmanager-reset-button-label": "Restablecer",
