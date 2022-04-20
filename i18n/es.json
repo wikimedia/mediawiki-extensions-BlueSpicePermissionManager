@@ -6,6 +6,7 @@
 			"AlvaroMolina",
 			"Amitie 10g",
 			"DannyS712",
+			"DiegoAmbrocio",
 			"Fitoschido",
 			"Jakeukalane",
 			"Macofe",
@@ -57,5 +58,9 @@
 	"bs-permissionmanager-preset-protected-help": "* Todos, incluidos los usuarios anónimos, pueden '''ver''' el contenido de la wiki\n* Únicamente aquellos que hayan accedido a su cuenta podrán '''editar''' el contenido\n* Únicamente aquellos en el grupo «sysop» podrán efectuar '''acciones administrativas'''",
 	"bs-permissionmanager-preset-public-label": "Wiki público",
 	"bs-permissionmanager-preset-public-help": "* Todos, incluidos los usuarios anónimos, pueden '''ver y editar''' el contenido de la wiki\n* Únicamente aquellos en el grupo «sysop» podrán efectuar '''acciones administrativas'''",
-	"bs-permissionmanager-preset-save-success": "Se guardó la configuración."
+	"bs-permissionmanager-preset-save-success": "Se guardó la configuración.",
+	"bs-permissionmanager-text": "Permisos",
+	"bs-permissionmanager-affected-by-setonwiki": "Establecer en el nivel de la wiki",
+	"bs-permissionmanager-write-config-file-error": "No es capaz de crear o escribir $1",
+	"bs-permissionmanager-role-permissions-label": "Permisos en el rol: $1"
 }

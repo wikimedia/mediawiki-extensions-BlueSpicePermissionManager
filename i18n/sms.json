@@ -7,5 +7,6 @@
 	"bs-permissionmanager-btn-save-label": "Ruõkk",
 	"bs-permissionmanager-group-all": "puk",
 	"bs-permissionmanager-preset-protected-label": "Suõjjuum wiki",
-	"action-permissionmanager-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:bs-permissionmanager-label}}\""
+	"action-permissionmanager-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:bs-permissionmanager-label}}\"",
+	"bs-permissionmanager-header-global": "Wiki"
 }

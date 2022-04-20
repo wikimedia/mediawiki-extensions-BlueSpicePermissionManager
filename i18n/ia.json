@@ -64,5 +64,6 @@
 	"bs-permissionmanager-switch-preset-confirm": "Le commutation del preselection prendera effecto immediatemente pro tote le usatores del wiki. Es tu secur de voler continuar?",
 	"bs-permissionmanager-preset-save-error": "Le configuration non pote esser salveguardate. Le modificationes non ha essite applicate.",
 	"bs-permissionmanager-preset-save-success": "Configuration salveguardate.",
-	"bs-permissionmanager-pref-max-backups-help": "Numero de copias de reserva pro le ultime cambiamentos del gestor de permissiones (Special:PermissionManager)."
+	"bs-permissionmanager-pref-max-backups-help": "Numero de copias de reserva pro le ultime cambiamentos del gestor de permissiones (Special:PermissionManager).",
+	"bs-permissionmanager-text": "Permissiones"
 }

@@ -7,6 +7,7 @@
 			"Liuxinyu970226",
 			"Phenolla",
 			"Ps2049",
+			"StarrySky",
 			"VulpesVulpes825",
 			"Xiplus",
 			"佛壁灯",
@@ -65,5 +66,6 @@
 	"bs-permissionmanager-preset-private-label": "非公开wiki",
 	"bs-permissionmanager-preset-custom-label": "自定义设置",
 	"bs-permissionmanager-preset-protected-label": "受保护的维基",
-	"bs-permissionmanager-preset-public-label": "公开维基"
+	"bs-permissionmanager-preset-public-label": "公开维基",
+	"bs-permissionmanager-text": "权限"
 }
