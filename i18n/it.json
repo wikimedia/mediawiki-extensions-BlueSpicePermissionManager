@@ -3,6 +3,7 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
+			"GpieroMW",
 			"Selven",
 			"Stefano",
 			"ValeJappo"
@@ -10,6 +11,7 @@
 	},
 	"bs-permissionmanager-desc": "Interfaccia di amministrazione per modificare i diritti utente",
 	"prefs-permissionmanager": "Gestione autorizzazioni",
+	"bs-permissionmanager-text": "Autorizzazioni",
 	"bs-permissionmanager-label": "Gestione autorizzazioni",
 	"bs-permissionmanager-grouping-global": "Autorizzazioni indipendenti del namespace",
 	"bs-permissionmanager-btn-group-label": "Gruppo:",
