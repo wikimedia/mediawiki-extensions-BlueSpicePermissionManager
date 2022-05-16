@@ -64,5 +64,6 @@
 	"bs-permissionmanager-preset-public-help": "* Alle kan '''vise og redigere''' innholdet – inkludert anonyme brukere\n* Kun brukere i gruppa «sysop» kan utføre '''administrative handlinger'''",
 	"bs-permissionmanager-switch-preset-confirm": "Bytting av valget vil gjelde alle brukerne på wikien, umiddelbart. Er du sikker på at du vil fortsette?",
 	"bs-permissionmanager-preset-save-error": "Konfigurasjonen kan ikke lagres! Endringene gjelder ikke!",
-	"bs-permissionmanager-preset-save-success": "Konfigurasjon lagret!"
+	"bs-permissionmanager-preset-save-success": "Konfigurasjon lagret!",
+	"bs-permissionmanager-pref-max-backups-help": "Antall sikkerhetskopier for de siste endringene i tillatelsesbehandleren (Special:PermissionManager)."
 }
