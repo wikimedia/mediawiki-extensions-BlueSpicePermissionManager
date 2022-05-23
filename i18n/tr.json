@@ -8,7 +8,8 @@
 			"Sayginer",
 			"Selcuksntrk",
 			"Violetanka",
-			"Vito Genovese"
+			"Vito Genovese",
+			"SaldırganSincap"
 		]
 	},
 	"bs-permissionmanager-desc": "Kullanıcı haklarının düzenlenmesi için yönetim arayüzü",
@@ -57,8 +58,8 @@
 	"bs-premissionmanager-reset-button-label": "Sıfırla",
 	"logentry-bs-permission-manager-global-add": "$1, $4 grubuna $5 {{PLURAL:$6|rolü}} {{GENDER:$2|ekledi}}",
 	"logentry-bs-permission-manager-global-remove": "$1, $4 grubuna $5 {{PLURAL:$6|rolü}} {{GENDER:$2|kaldırdı}}",
-	"logentry-bs-permission-manager-ns-add": "$1, $4 grubuna $7 ad alanında $5 {{GENDER:$6|rol}} {{GENDER:$2|ekledi}}",
-	"logentry-bs-permission-manager-ns-remove": "$1, $4 grubuna $7 ad alanında $5 {{GENDER:$6|rol}} {{GENDER:$2|kaldırdı}}",
+	"logentry-bs-permission-manager-ns-add": "$1, $4 grubuna $7 ad alanında $5 {{GENDER:$6|rolü}} {{GENDER:$2|ekledi}}",
+	"logentry-bs-permission-manager-ns-remove": "$1, $4 grubuna $7 ad alanında $5 {{GENDER:$6|rolü}} {{GENDER:$2|kaldırdı}}",
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - {{PLURAL:$3|rol}} konumunda mevcut: $2",
 	"bs-permissionmanager-affected-by-dependency": "Bu rol {{PLURAL:$2|aşağıdaki izin|aşağıdaki izinler}} gerektirir:\n$1",
 	"bs-permissionmanager-preset-custom-label": "Özel kurulum",
