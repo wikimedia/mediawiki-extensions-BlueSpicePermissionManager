@@ -7,5 +7,7 @@
 	},
 	"bs-permissionmanager-btn-save-label": "سانڍيو",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "تشريح",
-	"bs-premissionmanager-reset-button-label": "ٻيھر مرتب ڪريو"
+	"bs-premissionmanager-reset-button-label": "ٻيھر مرتب ڪريو",
+	"bs-permissionmanager-btn-group-label": "گروھ:",
+	"bs-permissionmanager-header-group": "گروھ"
 }
