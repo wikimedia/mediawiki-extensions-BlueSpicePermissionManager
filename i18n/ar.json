@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"FiberAhmed",
 			"Meno25",
 			"Omda4wady",
+			"أَحمد",
 			"باسم",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح",
-			"FiberAhmed"
+			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"bs-permissionmanager-desc": "واجهة الإدارة لتحرير صلاحيات المستخدم",
