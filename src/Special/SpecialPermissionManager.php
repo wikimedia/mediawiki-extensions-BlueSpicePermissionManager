@@ -4,6 +4,7 @@ namespace BlueSpice\PermissionManager\Special;
 
 use BlueSpice\LoadPlaceholderRegistry;
 use BlueSpice\PermissionManager\PermissionManager;
+use BlueSpice\PermissionManager\Preset\CustomPreset;
 use BlueSpice\Utility\GroupHelper;
 use Html;
 use MediaWiki\MediaWikiServices;
@@ -76,7 +77,6 @@ class SpecialPermissionManager extends SpecialPage {
 		$rolesAndPermissions = $this->permissionManager->getRoleManager()->getRoleNamesAndPermissions();
 		$rolesAndHints = $this->permissionManager->formatPermissionsToHint( $rolesAndPermissions );
 
-		$groupRoles = $this->permissionManager->getRoleManager()->getGroupRoles();
 		/** @var GroupHelper $groupHelper */
 		$groupHelper = MediaWikiServices::getInstance()->getService(
 			'BSUtilityFactory'
@@ -85,12 +85,26 @@ class SpecialPermissionManager extends SpecialPage {
 		// Include "implicit" groups as well
 		$availableGroups = array_merge( [ '*', 'user' ], $availableGroups );
 
+		$groupRoles = $this->permissionManager->getRoleManager()->getGroupRoles();
+		$nsLockdown = $this->permissionManager->getNamespaceRolesLockdown();
+		if ( $this->permissionManager->getActivePreset()->getId() !== 'custom' ) {
+			// If custom is already applied, pm-settings is already and available
+			/** @var CustomPreset $customPreset */
+			$customPreset = $this->permissionManager->getPreset( 'custom' );
+			$roles = $customPreset->evaluateSettingsFile();
+			if ( is_array( $roles ) ) {
+				$groupRoles = $roles['bsgGroupRoles'] ?? [];
+				$nsLockdown = $roles['bsgNamespaceRolesLockdown'] ?? [];
+			}
+			// In case $roles is not an array, parsing failed,
+			// lets apply whatever is loaded in the role system
+		}
 		$this->getOutput()->addJsConfigVars( [
 			'bsPermissionManagerGroupsTree' => $groups,
 			'bsPermissionManagerRoles' => $rolesAndHints,
 			'bsPermissionManagerNamespaces' => $this->permissionManager->buildNamespaceMetadata(),
 			'bsPermissionManagerGroupRoles' => $groupRoles,
-			'bsPermissionManagerRoleLockdown' => $this->permissionManager->getNamespaceRolesLockdown(),
+			'bsPermissionManagerRoleLockdown' => $nsLockdown,
 			'bsPermissionManagerRoleDependencyTree' => $this->permissionManager->getRoleDependencyTree(),
 			'bsPermissionManagerAvailableGroups' => $availableGroups,
 		] );

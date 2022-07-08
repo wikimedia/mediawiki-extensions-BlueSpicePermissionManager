@@ -183,7 +183,8 @@
 		}
 	},
 	"AutoloadNamespaces": {
-		"BlueSpice\\PermissionManager\\": "src/"
+		"BlueSpice\\PermissionManager\\": "src/",
+		"BlueSpice\\PermissionManager\\Tests\\": "tests/phpunit/"
 	},
 	"AutoloadClasses": {
 		"BlueSpice\\PermissionManager\\Maintenance\\RemoveNonIncludableNamespaces": "maintenance/RemoveNonIncludableNamespaces.php"
