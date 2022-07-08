@@ -4,6 +4,7 @@ namespace BlueSpice\PermissionManager\Preset;
 
 use BlueSpice\PermissionManager\IPreset;
 use Message;
+use ParseError;
 
 class CustomPreset implements IPreset {
 	/** @var string */
@@ -41,6 +42,27 @@ class CustomPreset implements IPreset {
 		// :-/
 		if ( file_exists( $this->settingsFile ) ) {
 			include $this->settingsFile;
+		}
+	}
+
+	/**
+	 * Parse and evaluate pm-settings file without applying it
+	 * @return array|null on parse failure
+	 */
+	public function evaluateSettingsFile(): ?array {
+		if ( !file_exists( $this->settingsFile ) ) {
+			return [];
+		}
+		$content = file_get_contents( $this->settingsFile );
+		$content = preg_replace( '/\$GLOBALS/', '$roles', $content );
+		$content = preg_replace( '/<\?php/', '', $content );
+
+		try {
+			$roles = [];
+			eval( $content );
+			return $roles;
+		} catch ( ParseError $ex ) {
+			return null;
 		}
 	}
 
