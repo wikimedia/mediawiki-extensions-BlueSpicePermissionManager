@@ -8,10 +8,11 @@
 			"Okras",
 			"Striking Blue",
 			"Vlad5250",
-			"Марио"
+			"Марио",
+			"Pacha Tchernof"
 		]
 	},
-	"bs-permissionmanager-desc": "Интерфейс администрирования для изменения прав пользователя",
+	"bs-permissionmanager-desc": "Интерфейс администрирования по изменению прав участников",
 	"prefs-permissionmanager": "Управление разрешениями",
 	"bs-permissionmanager-text": "Разрешения",
 	"bs-permissionmanager-label": "Управление разрешениями",
