@@ -44,5 +44,9 @@
 	"bs-permissionmanager-preset-private-label": "Wiki privato",
 	"bs-permissionmanager-preset-protected-label": "Wiki protetto",
 	"bs-permissionmanager-preset-public-label": "Wiki pubblico",
-	"bs-permissionmanager-preset-save-success": "Configurazione salvata"
+	"bs-permissionmanager-preset-save-success": "Configurazione salvata",
+	"bs-permissionmanager-grouping-local": "Autorizzazioni specifiche del namespace",
+	"bs-permissionmanager-unsaved-changes": "Ci sono modifiche non salvate. Vuoi abbandonare la pagina adesso? Le modifiche non salvate andranno perse.",
+	"bs-permissionmanager-error-lockout": "Almeno un gruppo deve possedere il permesso \"$1\".\nNon è stato possibile salvare le modifiche.",
+	"log-description-bs-permission-manager": "Questo è il registro delle modifiche per le autorizzazioni del gruppo."
 }
