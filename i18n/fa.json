@@ -11,6 +11,7 @@
 	},
 	"bs-permissionmanager-desc": "رابط مدیریتی برای ویرایش‌کردن اختیارات کاربر",
 	"prefs-permissionmanager": "مدیر دسترسی",
+	"bs-permissionmanager-text": "دسترسی‌ها",
 	"bs-permissionmanager-label": "مدیر دسترسی",
 	"bs-permissionmanager-grouping-global": "دسترسی‌های مستقل فضای نام",
 	"bs-permissionmanager-grouping-local": "دسترسی‌های ویژه فضای نام",
