@@ -48,5 +48,6 @@
 	"bs-permissionmanager-grouping-local": "Autorizzazioni specifiche del namespace",
 	"bs-permissionmanager-unsaved-changes": "Ci sono modifiche non salvate. Vuoi abbandonare la pagina adesso? Le modifiche non salvate andranno perse.",
 	"bs-permissionmanager-error-lockout": "Almeno un gruppo deve possedere il permesso \"$1\".\nNon è stato possibile salvare le modifiche.",
-	"log-description-bs-permission-manager": "Questo è il registro delle modifiche per le autorizzazioni del gruppo."
+	"log-description-bs-permission-manager": "Questo è il registro delle modifiche per le autorizzazioni del gruppo.",
+	"log-name-bs-permission-manager": "Registro del gestore delle autorizzazioni"
 }
