@@ -26,6 +26,7 @@
 	"bs-permissionmanager-pref-max-backups": "Numero massimo di backup",
 	"bs-permissionmanager-unsaved-changes": "Ci sono modifiche non salvate. Vuoi abbandonare la pagina adesso? Le modifiche non salvate andranno perse.",
 	"bs-permissionmanager-error-lockout": "Almeno un gruppo deve possedere il permesso \"$1\".\nNon è stato possibile salvare le modifiche.",
+	"log-name-bs-permission-manager": "Registro del gestore delle autorizzazioni",
 	"log-description-bs-permission-manager": "Questo è il registro delle modifiche per le autorizzazioni del gruppo.",
 	"action-permissionmanager-viewspecialpage": "visualizzare la pagina speciale \"{{int:bs-permissionmanager-label}}\"",
 	"permissionmanager": "Gestione autorizzazioni",
