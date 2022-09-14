@@ -34,7 +34,7 @@
 	"bs-permissionmanager-header-role": "Ruolo",
 	"bs-permissionmanager-write-config-file-error": "Impossibile creare o scrivere $1",
 	"right-permissionmanager-viewspecialpage": "Accede alla pagina speciale [[Special:PermissionManager]]",
-	"bs-permissionmanager-role-permissions-column-permission": "Permessi",
+	"bs-permissionmanager-role-permissions-column-permission": "Autorizzazione",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Descrizione",
 	"bs-premissionmanager-reset-button-label": "Reimposta",
 	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|ha}} aggiunto {{PLURAL:$6|il ruolo|i ruoli}} $5 al gruppo $4",
@@ -49,5 +49,13 @@
 	"bs-permissionmanager-unsaved-changes": "Ci sono modifiche non salvate. Vuoi abbandonare la pagina adesso? Le modifiche non salvate andranno perse.",
 	"bs-permissionmanager-error-lockout": "Almeno un gruppo deve possedere il permesso \"$1\".\nNon è stato possibile salvare le modifiche.",
 	"log-description-bs-permission-manager": "Questo è il registro delle modifiche per le autorizzazioni del gruppo.",
-	"log-name-bs-permission-manager": "Registro del gestore delle autorizzazioni"
+	"log-name-bs-permission-manager": "Registro del gestore delle autorizzazioni",
+	"bs-permissionmanager-pref-enablerealitycheck": "Attiva il controllo delle autorizzazioni",
+	"log-show-hide-bs-permission-manager": "Registro di gestione delle autorizzazioni $1",
+	"logeventslist-bs-permission-manager-log": "Registro del gestore delle autorizzazioni",
+	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|ha}} cambiato le autorizzazioni del gruppo $4",
+	"apihelp-bs-role-permission-store-param-role": "Nome del ruolo per cui ottenere le autorizzazioni",
+	"bs-permissionmanager-role-permissions-label": "Autorizzazzioni nel ruolo: $1",
+	"bs-permissionmanager-preset-protected-help": "* Tutti possono '''visualizzare''' il contenuto, inclusi gli utenti anonimi\n* Solo gli utenti che hanno effettuato l'accesso possono '''modificare''' il contenuto\n* Solo gli utenti del gruppo \"sysop\" possono eseguire '''azioni amministrative'''",
+	"bs-permissionmanager-preset-save-error": "La configurazione non può essere salvata! Le modifiche non vengono applicate!"
 }
