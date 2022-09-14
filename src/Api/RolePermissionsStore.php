@@ -2,8 +2,6 @@
 
 namespace BlueSpice\PermissionManager\Api;
 
-use MediaWiki\MediaWikiServices;
-
 class RolePermissionsStore extends \BSApiExtJSStoreBase {
 
 	/**
@@ -36,9 +34,7 @@ class RolePermissionsStore extends \BSApiExtJSStoreBase {
 		$role = $this->getParameter( 'role' );
 
 		/** @var \BlueSpice\PermissionManager\PermissionManager $permissionManager */
-		$permissionManager = MediaWikiServices::getInstance()->getService(
-			'BlueSpicePermissionManager'
-		);
+		$permissionManager = $this->services->getService( 'BlueSpicePermissionManager' );
 		$permissions = $permissionManager->getRolePermissions( $role, true );
 
 		$result = [];
