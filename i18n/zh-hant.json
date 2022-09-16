@@ -5,11 +5,13 @@
 			"Kly",
 			"LNDDYL",
 			"Liuxinyu970226",
+			"Willy1018",
 			"Winston Sung"
 		]
 	},
 	"bs-permissionmanager-desc": "編輯使用者權限的管理介面",
 	"prefs-permissionmanager": "權限管理者",
+	"bs-permissionmanager-text": "權限",
 	"bs-permissionmanager-label": "權限管理者",
 	"bs-permissionmanager-grouping-global": "命名空間獨立權限",
 	"bs-permissionmanager-grouping-local": "命名空間特定權限",
