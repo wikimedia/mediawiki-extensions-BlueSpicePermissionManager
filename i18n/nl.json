@@ -70,5 +70,6 @@
 	"bs-permissionmanager-preset-public-help": "* Iedereen kan de inhoud '''bekijken en bewerken''', ook anonieme gebruikers\n* Alleen gebruikers in de groep \"sysop\" kunnen '''beheerhandelingen''' verrichten",
 	"bs-permissionmanager-switch-preset-confirm": "Het wisselen van de voorinstelling wordt onmiddellijk toegepast op alle gebruikers in de wiki. Weet u zeker dat u door wilt gaan?",
 	"bs-permissionmanager-preset-save-error": "De instellingen kunnen niet worden opgeslagen. De wijzigingen zijn niet doorgevoerd.",
-	"bs-permissionmanager-preset-save-success": "De instellingen zijn opgeslagen."
+	"bs-permissionmanager-preset-save-success": "De instellingen zijn opgeslagen.",
+	"bs-permissionmanager-pref-max-backups-help": "Aantal back-ups voor de laatste wijzigingen op de pagina rechtenbeheer (Special:PermissionManager)."
 }
