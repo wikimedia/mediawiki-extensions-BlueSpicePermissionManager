@@ -57,5 +57,8 @@
 	"apihelp-bs-role-permission-store-param-role": "Nome del ruolo per cui ottenere le autorizzazioni",
 	"bs-permissionmanager-role-permissions-label": "Autorizzazzioni nel ruolo: $1",
 	"bs-permissionmanager-preset-protected-help": "* Tutti possono '''visualizzare''' il contenuto, inclusi gli utenti anonimi\n* Solo gli utenti che hanno effettuato l'accesso possono '''modificare''' il contenuto\n* Solo gli utenti del gruppo \"sysop\" possono eseguire '''azioni amministrative'''",
-	"bs-permissionmanager-preset-save-error": "La configurazione non può essere salvata! Le modifiche non vengono applicate!"
+	"bs-permissionmanager-preset-save-error": "La configurazione non può essere salvata! Le modifiche non vengono applicate!",
+	"bs-permissionmanager-affected-by-dependency": "Questo ruolo richiede {{PLURAL:$2|la seguente autorizzazione|le seguenti autorizzazioni}}:\n$1",
+	"bs-permissionmanager-preset-custom-help": "* Assegnare ruoli e gruppi manualmente",
+	"bs-permissionmanager-preset-private-help": "* Solo gli utenti che hanno effettuato l'accesso possono '''visualizzare e modificare''' il contenuto\n* Solo gli utenti del gruppo \"sysop\" possono eseguire '''azioni amministrative'''"
 }
