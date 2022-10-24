@@ -2,6 +2,8 @@
 
 namespace BlueSpice\PermissionManager\Api;
 
+use Wikimedia\ParamValidator\ParamValidator;
+
 class RolePermissionsStore extends \BSApiExtJSStoreBase {
 
 	/**
@@ -19,8 +21,8 @@ class RolePermissionsStore extends \BSApiExtJSStoreBase {
 	public function getAllowedParams() {
 		$params = parent::getAllowedParams();
 		$params[ 'role' ] = [
-			\ApiBase::PARAM_TYPE => 'string',
-			\ApiBase::PARAM_REQUIRED => true,
+			ParamValidator::PARAM_TYPE => 'string',
+			ParamValidator::PARAM_REQUIRED => true,
 		];
 		return $params;
 	}
