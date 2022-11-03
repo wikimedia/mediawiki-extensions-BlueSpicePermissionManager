@@ -36,6 +36,7 @@
 	"apihelp-bs-permissionmanager-tasks-description": "يوفر المهام لـPermissionManager",
 	"apihelp-bs-permissionmanager-tasks-summary": "يوفر المهام لـPermissionManager",
 	"apihelp-bs-role-permission-store-summary": "توفر وصف الدور لمدير السماحات",
+	"apihelp-bs-role-permission-store-param-role": "اسم الدور المطلوب الحصول على أذونات له",
 	"action-permissionmanager-viewspecialpage": "انظر الصفحة الخاصَّة \"{{int:bs-permissionmanager-label}}\"",
 	"permissionmanager": "مدير الأذون",
 	"bs-permissionmanager-affected-by-explicit": "تم منعه بواسطة $1",
@@ -62,7 +63,13 @@
 	"bs-permissionmanager-preset-custom-label": "تنصيب مخصص",
 	"bs-permissionmanager-preset-custom-help": "* تعيين الأدوار والمجموعات يدويًا",
 	"bs-permissionmanager-preset-private-label": "ويكي خاص",
+	"bs-permissionmanager-preset-private-help": "* يمكن للمستخدمين المسجلين فقط عرض '' 'المحتوى وتحريره! N! * يمكن فقط للمستخدمين في المجموعة \"sysop\" تنفيذ' 'الإجراءات الإدارية' ''",
 	"bs-permissionmanager-preset-protected-label": "ويكي محمية",
+	"bs-permissionmanager-preset-protected-help": "* يمكن للجميع '' 'عرض' '' المحتوى - بما في ذلك المستخدمون المجهولون! N! * يمكن للمستخدمين المسجلين فقط '' '' تحرير '' 'المحتوى! N! * يمكن فقط للمستخدمين في المجموعة \"sysop\" أداء' '' إجراءات إدارية ''",
 	"bs-permissionmanager-preset-public-label": "ويكي عمومية",
-	"bs-permissionmanager-preset-save-success": "حُفظت الإعدادات!"
+	"bs-permissionmanager-preset-public-help": "* يمكن للجميع '' 'عرض وتحرير' '' 'المحتوى - بما في ذلك المستخدمين المجهولين! N! * يمكن فقط للمستخدمين في المجموعة \"sysop\" تنفيذ' 'الإجراءات الإدارية' ''",
+	"bs-permissionmanager-switch-preset-confirm": "سيتم تطبيق تبديل الإعداد المسبق على الفور على جميع المستخدمين في الويكي. هل أنت متأكد أنك تريد الاستمرار؟",
+	"bs-permissionmanager-preset-save-error": "لا يمكن حفظ التكوين! لم يتم تطبيق التغييرات!",
+	"bs-permissionmanager-preset-save-success": "حُفظت الإعدادات!",
+	"bs-permissionmanager-pref-max-backups-help": "عدد النسخ الاحتياطية للتغييرات الأخيرة في مدير الأذونات (خاص: PermissionManager)."
 }
