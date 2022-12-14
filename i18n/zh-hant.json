@@ -6,7 +6,8 @@
 			"LNDDYL",
 			"Liuxinyu970226",
 			"Willy1018",
-			"Winston Sung"
+			"Winston Sung",
+			"捍粵者"
 		]
 	},
 	"bs-permissionmanager-desc": "編輯使用者權限的管理介面",
@@ -59,7 +60,7 @@
 	"bs-permissionmanager-affected-by-dependency-single": "- $1 - 在以下{{PLURAL:$3|身份}}可用：$2",
 	"bs-permissionmanager-affected-by-dependency": "此身份需要{{PLURAL:$2|以下權限}}：$1",
 	"bs-permissionmanager-preset-custom-label": "自訂設定",
-	"bs-permissionmanager-preset-private-label": "私人 wiki",
+	"bs-permissionmanager-preset-private-label": "私人wiki",
 	"bs-permissionmanager-preset-protected-label": "受保護 wiki",
 	"bs-permissionmanager-preset-public-label": "公共 wiki",
 	"bs-permissionmanager-preset-save-success": "已儲存組態！"
