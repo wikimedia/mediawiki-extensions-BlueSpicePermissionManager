@@ -64,5 +64,6 @@
 	"bs-permissionmanager-switch-preset-confirm": "'U cangiamende d'a pre 'mbostazione avène applecate subbete a tutte le utinde jndr'à uicchi. Sì secure de condinuà?",
 	"bs-permissionmanager-preset-save-error": "'A configurazione non ge pò essere reggistrate! Le cangiaminde non g'avènene applecate!",
 	"bs-permissionmanager-preset-save-success": "Configurazione reggistrate!",
-	"bs-permissionmanager-pref-max-backups-help": "Numere de copie pe l'urteme cangiaminde a 'u gestione de le permesse (Special:PermissionManager)."
+	"bs-permissionmanager-pref-max-backups-help": "Numere de copie pe l'urteme cangiaminde a 'u gestione de le permesse (Special:PermissionManager).",
+	"bs-permissionmanager-text": "Permesse"
 }
