@@ -10,5 +10,6 @@
 	"bs-permissionmanager-btn-save-label": "Ruõkk",
 	"action-permissionmanager-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:bs-permissionmanager-label}}\"",
 	"bs-permissionmanager-group-all": "puk",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Deskriptt",
 	"bs-permissionmanager-preset-protected-label": "Suõjjuum wiki"
 }

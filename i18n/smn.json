@@ -6,5 +6,6 @@
 	},
 	"bs-permissionmanager-header-namespaces": "Nommâkomovuođah",
 	"bs-permissionmanager-btn-save-label": "Vuorkkii",
-	"bs-permissionmanager-group-all": "puoh"
+	"bs-permissionmanager-group-all": "puoh",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Kuvvim"
 }
