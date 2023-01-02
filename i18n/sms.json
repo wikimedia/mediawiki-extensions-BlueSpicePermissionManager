@@ -10,5 +10,6 @@
 	"bs-permissionmanager-group-all": "puk",
 	"bs-permissionmanager-preset-protected-label": "Suõjjuum wiki",
 	"bs-permissionmanager-btn-group-label": "Joukk:",
-	"bs-permissionmanager-header-group": "Joukk"
+	"bs-permissionmanager-header-group": "Joukk",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Deskriptt"
 }
