@@ -21,5 +21,6 @@
 	"bs-permissionmanager-save-success": "Dovoljenja shranjena.",
 	"bs-permissionmanager-pref-enablerealitycheck": "Vklopi preverjanje dovoljenj",
 	"bs-permissionmanager-unsaved-changes": "Obstajajo neshranjene spremembe. Ali res želite zapustiti stran? Neshranjene spremembe bodo izgubljene.",
-	"bs-permissionmanager-group-all": "vse"
+	"bs-permissionmanager-group-all": "vse",
+	"bs-permissionmanager-show-system-groups-label": "Prikaži sistemske skupine"
 }
