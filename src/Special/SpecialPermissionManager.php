@@ -89,15 +89,16 @@ class SpecialPermissionManager extends SpecialPage {
 		$nsLockdown = $this->permissionManager->getNamespaceRolesLockdown();
 		if ( $this->permissionManager->getActivePreset()->getId() !== 'custom' ) {
 			// If custom is already applied, pm-settings is already and available
-			/** @var CustomPreset $customPreset */
 			$customPreset = $this->permissionManager->getPreset( 'custom' );
-			$roles = $customPreset->evaluateSettingsFile();
-			if ( is_array( $roles ) ) {
-				$groupRoles = $roles['bsgGroupRoles'] ?? [];
-				$nsLockdown = $roles['bsgNamespaceRolesLockdown'] ?? [];
+			if ( $customPreset instanceof CustomPreset ) {
+				$roles = $customPreset->evaluateSettingsFile();
+				if ( is_array( $roles ) ) {
+					$groupRoles = $roles['bsgGroupRoles'] ?? [];
+					$nsLockdown = $roles['bsgNamespaceRolesLockdown'] ?? [];
+				}
+				// In case $roles is not an array, parsing failed,
+				// lets apply whatever is loaded in the role system
 			}
-			// In case $roles is not an array, parsing failed,
-			// lets apply whatever is loaded in the role system
 		}
 		$this->getOutput()->addJsConfigVars( [
 			'bsPermissionManagerGroupsTree' => $groups,
