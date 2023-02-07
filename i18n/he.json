@@ -28,6 +28,7 @@
 	"log-name-bs-permission-manager": "יומן ניהול הרשאות",
 	"log-description-bs-permission-manager": "יומן זה מציג את השינויים בהרשאות של הקבוצות.",
 	"log-show-hide-bs-permission-manager": "$1 יומן ניהול הרשאות",
+	"logeventslist-bs-permission-manager-log": "יומן ניהול הרשאות",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|שינה|שינתה}} את ההרשאות של הקבוצה \"$4\"",
 	"apihelp-bs-permissionmanager-tasks-description": "אספקת משימות עבור ההרחבה PermissionManager",
 	"apihelp-bs-permissionmanager-tasks-summary": "אספקת משימות עבור ההרחבה PermissionManager",
