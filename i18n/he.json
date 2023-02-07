@@ -53,5 +53,7 @@
 	"bs-permissionmanager-preset-private-label": "ויקי פרטי",
 	"bs-permissionmanager-preset-protected-label": "ויקי מוגן",
 	"bs-permissionmanager-preset-public-label": "ויקי ציבורי",
-	"logeventslist-bs-permission-manager-log": "יומן ניהול הרשאות"
+	"logeventslist-bs-permission-manager-log": "יומן ניהול הרשאות",
+	"bs-permissionmanager-preset-custom-label": "תצורה מותאמת",
+	"bs-permissionmanager-preset-save-success": "התצורה נשמרה!"
 }
