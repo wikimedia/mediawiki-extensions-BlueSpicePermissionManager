@@ -3,6 +3,7 @@
 		"authors": [
 			"FiberAhmed",
 			"Meno25",
+			"Michel Bakni",
 			"Omda4wady",
 			"أَحمد",
 			"باسم",
@@ -38,7 +39,7 @@
 	"apihelp-bs-role-permission-store-summary": "توفر وصف الدور لمدير السماحات",
 	"action-permissionmanager-viewspecialpage": "انظر الصفحة الخاصَّة \"{{int:bs-permissionmanager-label}}\"",
 	"permissionmanager": "مدير الأذون",
-	"bs-permissionmanager-affected-by-explicit": "تم منعه بواسطة $1",
+	"bs-permissionmanager-affected-by-explicit": "مُنِع بواسطة $1",
 	"bs-permissionmanager-affected-by-inherited": "موروثة من $1",
 	"bs-permissionmanager-affected-by-notset": "غير مضبوطة",
 	"bs-permissionmanager-affected-by-explicitlyset": "محددة صراحةً",
