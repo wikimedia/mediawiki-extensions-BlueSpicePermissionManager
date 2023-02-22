@@ -12,5 +12,6 @@
 	"bs-permissionmanager-group-all": "kaikki",
 	"bs-permissionmanager-header-role": "Rooli",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Kuvaus",
-	"bs-permissionmanager-text": "Käyttöoikeudet"
+	"bs-permissionmanager-text": "Käyttöoikeudet",
+	"bs-permissionmanager-header-global": "Wiki"
 }
