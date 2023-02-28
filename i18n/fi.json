@@ -3,10 +3,12 @@
 		"authors": [
 			"MITO",
 			"Pyscowicz",
-			"Silvonen"
+			"Silvonen",
+			"Kimberli Mäkäräinen (WMNO)"
 		]
 	},
 	"bs-permissionmanager-text": "Käyttöoikeudet",
+	"bs-permissionmanager-header-global": "Wiki",
 	"bs-permissionmanager-header-namespaces": "Nimiavaruudet",
 	"bs-permissionmanager-header-group": "Ryhmä",
 	"bs-permissionmanager-btn-save-label": "Tallenna",
