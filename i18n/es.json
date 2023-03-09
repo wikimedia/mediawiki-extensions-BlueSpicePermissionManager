@@ -43,7 +43,7 @@
 	"apihelp-bs-permissionmanager-tasks-summary": "Brinda tareas para el Gestor de permisos",
 	"action-permissionmanager-viewspecialpage": "ver la página especial \"{{int:bs-permissionmanager-label}}\"",
 	"permissionmanager": "Gestor de permisos",
-	"bs-permissionmanager-affected-by-explicit": "$1 te bloqueo",
+	"bs-permissionmanager-affected-by-explicit": "Bloqueado por $1",
 	"bs-permissionmanager-affected-by-inherited": "Heredado de $1",
 	"bs-permissionmanager-affected-by-notset": "No establecido",
 	"bs-permissionmanager-affected-by-explicitlyset": "Explícitamente establecido",
