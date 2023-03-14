@@ -2,6 +2,7 @@
 <ruleset>
 	<rule ref="./vendor/mediawiki/mediawiki-codesniffer/MediaWiki">
 		<exclude name="MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName" />
+		<exclude name="MediaWiki.Usage.ForbiddenFunctions.eval" />
 		<exclude name="Squiz.Classes.ValidClassName.NotCamelCaps" />
 	</rule>
 	<file>.</file>
