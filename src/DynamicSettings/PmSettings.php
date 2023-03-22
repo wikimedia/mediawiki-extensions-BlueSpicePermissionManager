@@ -2,9 +2,8 @@
 
 namespace BlueSpice\PermissionManager\DynamicSettings;
 
+use BlueSpice\Config;
 use BlueSpice\DynamicSettings\BSConfigDirSettingsFile;
-use BlueSpice\PermissionManager\IPreset;
-use BlueSpice\PermissionManager\PermissionManager;
 use MediaWiki\MediaWikiServices;
 
 class PmSettings extends BSConfigDirSettingsFile {
@@ -18,12 +17,12 @@ class PmSettings extends BSConfigDirSettingsFile {
 	}
 
 	protected function shouldApply() {
-		/** @var PermissionManager $permissionManager */
-		$permissionManager = MediaWikiServices::getInstance()->getService(
-			'BlueSpicePermissionManager'
-		);
-		$preset = $permissionManager->getActivePreset();
-		if ( $preset instanceof IPreset && $preset->getId() === 'custom' ) {
+		// We intentionally do not use the `BlueSpicePermissionManager` service here, as it would
+		// trigger a `PHP Deprecated:  Premature access to service container` error.
+		// By this we initialize the database based `BlueSpice\Config` very early, but this has no
+		// sideeffect currently. If this changes, we need to find a better solution.
+		$presetId = Config::newInstance()->get( 'PermissionManagerActivePreset' );
+		if ( $presetId === 'custom' ) {
 			return true;
 		}
 
