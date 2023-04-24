@@ -9,5 +9,7 @@
 	"bs-permissionmanager-header-group": "گروھ",
 	"bs-permissionmanager-btn-save-label": "سانڍيو",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "تشريح",
-	"bs-premissionmanager-reset-button-label": "ٻيھر مرتب ڪريو"
+	"bs-premissionmanager-reset-button-label": "ٻيھر مرتب ڪريو",
+	"bs-permissionmanager-header-namespaces": "نانءُپولارَ",
+	"bs-permissionmanager-group-all": "سڀ"
 }
