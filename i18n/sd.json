@@ -6,8 +6,10 @@
 		]
 	},
 	"bs-permissionmanager-btn-group-label": "گروھ:",
+	"bs-permissionmanager-header-namespaces": "نانءُپولارَ",
 	"bs-permissionmanager-header-group": "گروھ",
 	"bs-permissionmanager-btn-save-label": "سانڍيو",
+	"bs-permissionmanager-group-all": "سڀ",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "تشريح",
 	"bs-premissionmanager-reset-button-label": "ٻيھر مرتب ڪريو"
 }
