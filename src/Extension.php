@@ -45,10 +45,10 @@ class Extension extends \BlueSpice\Extension {
 		$permissionManager = MediaWikiServices::getInstance()->getService(
 			'BlueSpicePermissionManager'
 		);
-		// Implicitly enable the role system
-		$permissionManager->enableRoleSystem();
 
 		// Apply preset
 		$permissionManager->applyCurrentPreset();
+		// Implicitly enable the role system
+		$permissionManager->enableRoleSystem();
 	}
 }
