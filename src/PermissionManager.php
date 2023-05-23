@@ -2,7 +2,6 @@
 
 namespace BlueSpice\PermissionManager;
 
-use BlueSpice\DynamicSettingsManager;
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Permission\IRole;
 use BlueSpice\Permission\PermissionRegistry;
@@ -13,6 +12,7 @@ use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\MediaWikiServices;
 use Message;
 use MWException;
+use MWStake\MediaWiki\Component\DynamicConfig\DynamicConfigManager;
 use Psr\Log\LoggerInterface;
 use RequestContext;
 use SpecialPage;
@@ -206,7 +206,7 @@ class PermissionManager {
 			return [ 'success' => false ];
 		}
 
-		return $this->writeToFile( $groupRoles, $roleLockdown );
+		return $this->persistRoles( $groupRoles, $roleLockdown );
 	}
 
 	/**
@@ -323,7 +323,7 @@ class PermissionManager {
 	 * @param array $roleLockdown
 	 * @return array
 	 */
-	private function writeToFile( $groupRoles, $roleLockdown ) {
+	private function persistRoles( $groupRoles, $roleLockdown ) {
 		if ( $this->services->getReadOnlyMode()->isReadOnly() ) {
 			return [
 				'success' => false,
@@ -335,40 +335,13 @@ class PermissionManager {
 		$globalDiff = $roleMatrixDiff->getGlobalDiff();
 		$nsDiff = $roleMatrixDiff->getNsDiff();
 
-		$saveContent = "<?php\n";
-		foreach ( $groupRoles as $group => $roleArray ) {
-			foreach ( $roleArray as $role => $value ) {
-				$val = $value ? 'true' : 'false';
-				$saveContent .= "\$GLOBALS['bsgGroupRoles']['$group']['$role'] = $val;\n";
-			}
-		}
-
-		foreach ( $roleLockdown as $nsId => $roles ) {
-			$nsId = (int)$nsId;
-			$namespaceInfo = $this->services->getNamespaceInfo();
-			$nsCanonicalName = $namespaceInfo->getCanonicalName( $nsId );
-			if ( $nsId == NS_MAIN ) {
-				$nsCanonicalName = 'MAIN';
-			}
-
-			$nsConstant = "NS_" . strtoupper( $nsCanonicalName );
-			if ( !defined( $nsConstant ) ) {
-				$nsConstant = $nsId;
-			}
-
-			foreach ( $roles as $roleName => $groups ) {
-				if ( empty( $groups ) ) {
-					continue;
-				}
-				$saveContent .= "\$GLOBALS['bsgNamespaceRolesLockdown'][ $nsConstant ][ '$roleName' ]"
-					. " = array(" . ( count( $groups ) ? "'" . implode( "','", $groups ) . "'" : '' ) . ");\n";
-			}
-		}
-
-		$dynamicSettingsManager = DynamicSettingsManager::factory();
-		$status = $dynamicSettingsManager->persist( 'PermissionManager', $saveContent );
-		$res = $status->isGood();
-		if ( $res ) {
+		/** @var DynamicConfigManager $dynamicConfigManager */
+		$dynamicConfigManager = $this->services->getService( 'MWStakeDynamicConfigManager' );
+		$status = $dynamicConfigManager->storeConfig(
+			$dynamicConfigManager->getConfigObject( 'bs-permissionmanager-roles' ),
+			[ 'groupRoles' => $groupRoles, 'roleLockdown' => $roleLockdown ]
+		);
+		if ( $status ) {
 			$this->doLog( $globalDiff, $nsDiff );
 			return [ 'success' => true ];
 		} else {
@@ -376,7 +349,7 @@ class PermissionManager {
 				'success' => false,
 				'message' => Message::newFromKey(
 					'bs-permissionmanager-write-config-file-error',
-					'pm-settings.php'
+					'bs-permissionmanager-roles'
 				)->plain()
 			];
 		}

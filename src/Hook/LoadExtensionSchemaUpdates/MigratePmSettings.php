@@ -3,9 +3,9 @@
 namespace BlueSpice\PermissionManager\Hook\LoadExtensionSchemaUpdates;
 
 use BlueSpice\Hook\LoadExtensionSchemaUpdates;
-use BlueSpice\PermissionManager\Maintenance\RemoveNonIncludableNamespaces as MaintenanceScript;
+use BlueSpice\PermissionManager\Maintenance\MigratePmSettings as MaintenanceScript;
 
-class RemoveNonIncludableNamespaces extends LoadExtensionSchemaUpdates {
+class MigratePmSettings extends LoadExtensionSchemaUpdates {
 
 	protected function doProcess() {
 		$this->updater->addPostDatabaseUpdateMaintenance(
