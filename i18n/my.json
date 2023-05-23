@@ -7,6 +7,11 @@
 	},
 	"bs-permissionmanager-text": "ခွင့်ပြုချက်များ",
 	"bs-permissionmanager-btn-group-label": "အုပ်စု:",
+	"bs-permissionmanager-header-global": "ဝီကီ",
 	"bs-permissionmanager-header-namespaces": "အမည်ညွှန်းများ",
-	"bs-permissionmanager-header-group": "အုပ်စု"
+	"bs-permissionmanager-header-group": "အုပ်စု",
+	"bs-permissionmanager-btn-save-label": "သိမ်းရန်",
+	"bs-permissionmanager-btn-save-in-progress-label": "သိမ်းဆည်းနေသည်...",
+	"bs-permissionmanager-role-permissions-column-permission-desc": "ဖော်ပြချက်",
+	"bs-premissionmanager-reset-button-label": "ပြန်စရန်"
 }
