@@ -11,7 +11,8 @@ return [
 			$services,
 			$services->getConfigFactory()->makeConfig( 'bsg' ),
 			LoggerFactory::getInstance( 'permissionmanager' ),
-			$services->getHookContainer()
+			$services->getHookContainer(),
+			$services->getService( 'MWStakeDynamicConfigManager' )
 		);
 	}
 ];
