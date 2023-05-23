@@ -35,9 +35,6 @@
 						"maintenanceadmin"
 					]
 				}
-			},
-			"DynamicSettingsRegistry": {
-				"PermissionManager": "BlueSpice\\PermissionManager\\DynamicSettings\\PmSettings::factory"
 			}
 		},
 		"BlueSpicePermissionManager": {
@@ -148,6 +145,9 @@
 	"HookHandlers": {
 		"common-user-interface": {
 			"class": "\\BlueSpice\\PermissionManager\\HookHandler\\CommonUserInterface"
+		},
+		"registerDynamicConfig": {
+			"class": "\\BlueSpice\\PermissionManager\\Hook\\RegisterDynamicConfig"
 		}
 	},
 	"Hooks": {
@@ -156,9 +156,10 @@
 			"\\BlueSpice\\PermissionManager\\Hook\\BSGroupManagerGroupNameChanged\\ChangeGroupRoleAssignments::callback"
 		],
 		"LoadExtensionSchemaUpdates": [
-			"\\BlueSpice\\PermissionManager\\Hook\\LoadExtensionSchemaUpdates\\RemoveNonIncludableNamespaces::callback"
+			"\\BlueSpice\\PermissionManager\\Hook\\LoadExtensionSchemaUpdates\\MigratePmSettings::callback"
 		],
-		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
+		"MWStakeDynamicConfigRegisterConfigs": "registerDynamicConfig"
 	},
 	"ServiceWiringFiles": [
 		"ServiceWiring.php"

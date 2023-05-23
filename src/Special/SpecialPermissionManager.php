@@ -91,7 +91,7 @@ class SpecialPermissionManager extends SpecialPage {
 			// If custom is already applied, pm-settings is already and available
 			$customPreset = $this->permissionManager->getPreset( 'custom' );
 			if ( $customPreset instanceof CustomPreset ) {
-				$roles = $customPreset->evaluateSettingsFile();
+				$roles = $customPreset->readOutSettings();
 				if ( is_array( $roles ) ) {
 					$groupRoles = $roles['bsgGroupRoles'] ?? [];
 					$nsLockdown = $roles['bsgNamespaceRolesLockdown'] ?? [];

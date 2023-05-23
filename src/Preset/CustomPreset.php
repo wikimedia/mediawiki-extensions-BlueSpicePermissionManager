@@ -3,22 +3,26 @@
 namespace BlueSpice\PermissionManager\Preset;
 
 use BlueSpice\PermissionManager\IPreset;
+use MediaWiki\MediaWikiServices;
 use Message;
-use ParseError;
+use MWStake\MediaWiki\Component\DynamicConfig\DynamicConfigManager;
 
 class CustomPreset implements IPreset {
-	/** @var string */
-	private $settingsFile;
+
+	/** @var DynamicConfigManager */
+	private $configManager;
 
 	public static function factory() {
-		return new static( BSCONFIGDIR . '/pm-settings.php' );
+		return new static(
+			MediaWikiServices::getInstance()->getService( 'MWStakeDynamicConfigManager' )
+		);
 	}
 
 	/**
-	 * @inheritDoc
+	 * @param DynamicConfigManager $configManager
 	 */
-	public function __construct( $settingFilePath ) {
-		$this->settingsFile = $settingFilePath;
+	public function __construct( DynamicConfigManager $configManager ) {
+		$this->configManager = $configManager;
 	}
 
 	/**
@@ -39,31 +43,22 @@ class CustomPreset implements IPreset {
 	 * Read and load settings file
 	 */
 	public function apply() {
-		// :-/
-		if ( file_exists( $this->settingsFile ) ) {
-			include $this->settingsFile;
-		}
+		$config = $this->configManager->getConfigObject( 'bs-permissionmanager-roles' );
+		$this->configManager->applyConfig( $config );
 	}
 
 	/**
 	 * Parse and evaluate pm-settings file without applying it
 	 * @return array|null on parse failure
 	 */
-	public function evaluateSettingsFile(): ?array {
-		if ( !file_exists( $this->settingsFile ) ) {
-			return [];
-		}
-		$content = file_get_contents( $this->settingsFile );
-		$content = preg_replace( '/\$GLOBALS/', '$roles', $content );
-		$content = preg_replace( '/<\?php/', '', $content );
-
-		try {
-			$roles = [];
-			eval( $content );
-			return $roles;
-		} catch ( ParseError $ex ) {
+	public function readOutSettings(): ?array {
+		$raw = $this->configManager->retrieveRaw(
+			$this->configManager->getConfigObject( 'bs-permissionmanager-roles' )
+		);
+		if ( $raw === null ) {
 			return null;
 		}
+		return json_decode( $raw, true );
 	}
 
 	/**
