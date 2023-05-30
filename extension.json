@@ -187,9 +187,6 @@
 		"BlueSpice\\PermissionManager\\": "src/",
 		"BlueSpice\\PermissionManager\\Tests\\": "tests/phpunit/"
 	},
-	"AutoloadClasses": {
-		"BlueSpice\\PermissionManager\\Maintenance\\RemoveNonIncludableNamespaces": "maintenance/RemoveNonIncludableNamespaces.php"
-	},
 	"callback": "BlueSpice\\PermissionManager\\Extension::onCallback",
 	"load_composer_autoloader": true,
 	"manifest_version": 2
