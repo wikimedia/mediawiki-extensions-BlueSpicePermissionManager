@@ -2,12 +2,9 @@
 
 namespace BlueSpice\PermissionManager\DynamicConfig;
 
-use MWStake\MediaWiki\Component\DynamicConfig\GlobalsAwareDynamicConfig;
 use MWStake\MediaWiki\Component\DynamicConfig\IDynamicConfig;
 
-class Roles implements IDynamicConfig, GlobalsAwareDynamicConfig {
-	/** @var array */
-	private $mwGlobals;
+class Roles implements IDynamicConfig {
 
 	/**
 	 * @return string
@@ -24,7 +21,7 @@ class Roles implements IDynamicConfig, GlobalsAwareDynamicConfig {
 	public function apply( string $serialized ): bool {
 		$unserialized = json_decode( $serialized, true );
 		foreach ( $unserialized as $global => $value ) {
-			$this->mwGlobals[$global] = array_merge( $this->mwGlobals[$global] ?? [], $value );
+			$GLOBALS[$global] = array_merge( $GLOBALS[$global] ?? [], $value );
 		}
 		return true;
 	}
@@ -46,14 +43,5 @@ class Roles implements IDynamicConfig, GlobalsAwareDynamicConfig {
 	 */
 	public function shouldAutoApply(): bool {
 		return false;
-	}
-
-	/**
-	 * @param array &$globals
-	 *
-	 * @return mixed|void
-	 */
-	public function setMwGlobals( array &$globals ) {
-		$this->mwGlobals = &$globals;
 	}
 }
