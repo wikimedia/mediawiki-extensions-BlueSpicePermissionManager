@@ -41,14 +41,18 @@ class Extension extends \BlueSpice\Extension {
 			return;
 		}
 
-		/** @var PermissionManager $permissionManager */
-		$permissionManager = MediaWikiServices::getInstance()->getService(
-			'BlueSpicePermissionManager'
-		);
+		$GLOBALS['wgHooks']['SetupAfterCache'] = $GLOBALS['wgHooks']['SetupAfterCache'] ?? [];
+		array_unshift( $GLOBALS['wgHooks']['SetupAfterCache'], static function () {
+			// Earliest that we have DB service available
+			/** @var PermissionManager $permissionManager */
+			$permissionManager = MediaWikiServices::getInstance()->getService(
+				'BlueSpicePermissionManager'
+			);
 
-		// Apply preset
-		$permissionManager->applyCurrentPreset();
-		// Implicitly enable the role system
-		$permissionManager->enableRoleSystem();
+			// Apply preset
+			$permissionManager->applyCurrentPreset();
+			// Implicitly enable the role system
+			$permissionManager->enableRoleSystem();
+		} );
 	}
 }
