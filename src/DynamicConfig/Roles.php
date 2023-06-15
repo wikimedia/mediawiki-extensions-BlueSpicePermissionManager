@@ -21,9 +21,39 @@ class Roles implements IDynamicConfig {
 	public function apply( string $serialized ): bool {
 		$unserialized = json_decode( $serialized, true );
 		foreach ( $unserialized as $global => $value ) {
+			if ( $global === 'bsgNamespaceRolesLockdown' ) {
+				// In some setups it was discovered that this global is set to a value
+				// of group names, but empty roles. Such setting will, instead of disregarding
+				// locking, actually lock down for everybody. So we need to remove those
+				// Why this value appeared in the DB is still unclear
+				$value = $this->removeEmptyValues( $value );
+			}
 			$GLOBALS[$global] = array_merge( $GLOBALS[$global] ?? [], $value );
 		}
 		return true;
+	}
+
+	/**
+	 * Remove values like `[NS_MAIN => [ 'editor' => [] ] ]`,
+	 * but keep [NS_MAIN => [ 'editor' => [ 'reader' ] ] ]`
+	 * @param array $values
+	 *
+	 * @return array
+	 */
+	protected function removeEmptyValues( array $values ): array {
+		$final = [];
+		foreach ( $values as $ns => $data ) {
+			foreach ( $data as $group => $roles ) {
+				if ( !empty( $roles ) ) {
+					if ( !isset( $final[$ns] ) ) {
+						$final[$ns] = [];
+					}
+					$final[$ns][$group] = $roles;
+				}
+			}
+		}
+
+		return $final;
 	}
 
 	/**
