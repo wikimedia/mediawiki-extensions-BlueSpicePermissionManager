@@ -34,7 +34,6 @@
 	"log-show-hide-bs-permission-manager": "$1 سجل مدير الصلاحية",
 	"logeventslist-bs-permission-manager-log": "سجل مدير الصلاحية",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|غير|غيرت}} صلاحيات المجموعة $4",
-	"apihelp-bs-permissionmanager-tasks-description": "يوفر المهام لـPermissionManager",
 	"apihelp-bs-permissionmanager-tasks-summary": "يوفر المهام لـPermissionManager",
 	"apihelp-bs-role-permission-store-summary": "توفر وصف الدور لمدير السماحات",
 	"apihelp-bs-role-permission-store-param-role": "اسم الدور المطلوب الحصول على أذونات له",

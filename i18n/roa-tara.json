@@ -27,7 +27,6 @@
 	"log-show-hide-bs-permission-manager": "$1 archivije d'u gestore de permesse",
 	"logeventslist-bs-permission-manager-log": "Archivije d'u gestore de permesse",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|ave}} cangiate 'u permesse d'u gruppe $4",
-	"apihelp-bs-permissionmanager-tasks-description": "Dèje attivitate pu PermissionManager",
 	"apihelp-bs-permissionmanager-tasks-summary": "Dèje attivitate pu PermissionManager",
 	"apihelp-bs-role-permission-store-summary": "Dèje 'an descrizione d'u ruole pu PermissionManager",
 	"apihelp-bs-role-permission-store-param-role": "Nome d'u ruole pe pigghiù le permesse",

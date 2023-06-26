@@ -35,7 +35,6 @@
 	"log-show-hide-bs-permission-manager": "$1 izin yöneticisi günlüğü",
 	"logeventslist-bs-permission-manager-log": "İzin yöneticisi günlüğü",
 	"logentry-bs-permission-manager-modify": "$1, $4 grubunun izinlerini {{GENDER:$2|değiştirdi}}",
-	"apihelp-bs-permissionmanager-tasks-description": "PermissionManager için görevler sağlar",
 	"apihelp-bs-permissionmanager-tasks-summary": "PermissionManager için görevler sağlar",
 	"apihelp-bs-role-permission-store-summary": "PermissionManager için rol açıklaması sağlayın",
 	"apihelp-bs-role-permission-store-param-role": "İzin alınacak rolün adı",

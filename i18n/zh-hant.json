@@ -33,7 +33,6 @@
 	"log-show-hide-bs-permission-manager": "$1權限管理日誌",
 	"logeventslist-bs-permission-manager-log": "權限管理日誌",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|已}}變更群組 $4 的權限",
-	"apihelp-bs-permissionmanager-tasks-description": "為 PermissionManager 提供任務",
 	"apihelp-bs-permissionmanager-tasks-summary": "為 PermissionManager 提供任務",
 	"apihelp-bs-role-permission-store-summary": "為 PermissionManager 提供身份描述",
 	"action-permissionmanager-viewspecialpage": "檢視特殊頁面「{{int:bs-permissionmanager-label}}」",

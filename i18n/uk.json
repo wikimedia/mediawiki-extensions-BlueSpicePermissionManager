@@ -34,7 +34,6 @@
 	"log-show-hide-bs-permission-manager": "$1 журнал менеджера дозволів",
 	"logeventslist-bs-permission-manager-log": "Журнал керування правами",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|змінив|змінила}} дозволи групи $4",
-	"apihelp-bs-permissionmanager-tasks-description": "Надає завдання для PermissionManager",
 	"apihelp-bs-permissionmanager-tasks-summary": "Забезпечує завдання для Permissionmanager",
 	"apihelp-bs-role-permission-store-summary": "Надає опис ролей для PermissionManager",
 	"apihelp-bs-role-permission-store-param-role": "Назва ролі для отримання дозволів",

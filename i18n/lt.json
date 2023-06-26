@@ -29,7 +29,6 @@
 	"log-show-hide-bs-permission-manager": "$1 leidimo tvarkymo žurnalas",
 	"logeventslist-bs-permission-manager-log": "Leidimo tvarkymo žurnalas",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|pakeitė}} grupės $4 leidimus",
-	"apihelp-bs-permissionmanager-tasks-description": "Pateikia užduotis, skirtas PermissionManager",
 	"apihelp-bs-permissionmanager-tasks-summary": "Pateikia užduotis, skirtas PermissionManager",
 	"apihelp-bs-role-permission-store-summary": "Pateikite PermissionManager rolių aprašymą",
 	"apihelp-bs-role-permission-store-param-role": "Vaidmens, kuriam reikia gauti leidimus, pavadinimas",

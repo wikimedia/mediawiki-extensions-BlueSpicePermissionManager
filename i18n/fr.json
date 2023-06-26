@@ -36,7 +36,6 @@
 	"log-show-hide-bs-permission-manager": "$1 le journal du gestionnaire d’autorisations",
 	"logeventslist-bs-permission-manager-log": "Journal du gestionnaire d’autorisations",
 	"logentry-bs-permission-manager-modify": "$1{{GENDER:$2|}} a modifié les droits du groupe $4",
-	"apihelp-bs-permissionmanager-tasks-description": "Fournit les tâches du Gestionnaire d’autorisations",
 	"apihelp-bs-permissionmanager-tasks-summary": "Fournit des tâches pour le Gestionnaire d’autorisations",
 	"apihelp-bs-role-permission-store-summary": "Fournir une description du rôle pour le Gestionnaire d’autorisations",
 	"apihelp-bs-role-permission-store-param-role": "Nom du rôle pour lequel obtenir des droits",

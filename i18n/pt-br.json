@@ -30,7 +30,6 @@
 	"log-show-hide-bs-permission-manager": "$1 log do gerenciador de permissão",
 	"logeventslist-bs-permission-manager-log": "Registo de administração de permissões",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|alterou}} as permissões do grupo $4",
-	"apihelp-bs-permissionmanager-tasks-description": "Fornece tarefas para o Gerenciador de Permissões",
 	"apihelp-bs-permissionmanager-tasks-summary": "Fornece tarefas para o Gerenciador de Permissões",
 	"apihelp-bs-role-permission-store-summary": "Fornecer descrição de função para o Gerente de Permissão",
 	"apihelp-bs-role-permission-store-param-role": "Nome da função para a qual obter permissões",

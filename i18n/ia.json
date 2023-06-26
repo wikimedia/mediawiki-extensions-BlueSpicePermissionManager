@@ -27,7 +27,6 @@
 	"log-show-hide-bs-permission-manager": "$1 le registro del gestor de permissiones",
 	"logeventslist-bs-permission-manager-log": "Registro del gestor de permissiones",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|ha}} cambiate le permissiones del gruppo $4",
-	"apihelp-bs-permissionmanager-tasks-description": "Forni processos pro le gestor de permissiones",
 	"apihelp-bs-permissionmanager-tasks-summary": "Forni processos pro le gestor de permissiones",
 	"apihelp-bs-role-permission-store-summary": "Forni description de rolo pro le gestor de permissiones",
 	"apihelp-bs-role-permission-store-param-role": "Nomine del rolo pro le qual obtener permissiones",

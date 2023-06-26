@@ -34,7 +34,6 @@
 	"log-show-hide-bs-permission-manager": "$1 Rechteverwaltung-Logbuch",
 	"logeventslist-bs-permission-manager-log": "Berechtigungsverwaltungs-Logbuch",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|hat}} die Rechte für Gruppe $4 geändert",
-	"apihelp-bs-permissionmanager-tasks-description": "Bietet Aufgaben zur Rechteverwaltung",
 	"apihelp-bs-permissionmanager-tasks-summary": "Stellt die Aufgaben für die Erweiterung „PermissionManager“ bereit.",
 	"apihelp-bs-role-permission-store-summary": "Stellt eine Rollenbeschreibung für den PermissionManager zur Verfügung",
 	"apihelp-bs-role-permission-store-param-role": "Name der Rolle, für die die Berechtigungen angefordert werden",

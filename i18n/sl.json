@@ -29,7 +29,6 @@
 	"log-show-hide-bs-permission-manager": "$1 dnevnik upravljanja dovoljenj",
 	"logeventslist-bs-permission-manager-log": "Dnevnik upravljanja dovoljenj",
 	"logentry-bs-permission-manager-modify": "$1 je {{GENDER:$2|spremenil|spremenila|spremenil_a}} dovoljenja skupine $4",
-	"apihelp-bs-permissionmanager-tasks-description": "Zagotavlja naloge za PermissionManager",
 	"apihelp-bs-permissionmanager-tasks-summary": "Zagotavlja naloge za PermissionManager",
 	"apihelp-bs-role-permission-store-summary": "Zagotovi opis vlog za PermissionManager",
 	"apihelp-bs-role-permission-store-param-role": "Ime vloge, za katero naj se pridobijo dovoljenja",
