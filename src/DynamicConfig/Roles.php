@@ -27,8 +27,12 @@ class Roles implements IDynamicConfig {
 				// locking, actually lock down for everybody. So we need to remove those
 				// Why this value appeared in the DB is still unclear
 				$value = $this->removeEmptyValues( $value );
+				$value = $this->mergeWithGlobal( $GLOBALS[$global], $value );
+			} else {
+				$value = array_merge( $GLOBALS[$global] ?? [], $value );
 			}
-			$GLOBALS[$global] = array_merge( $GLOBALS[$global] ?? [], $value );
+
+			$GLOBALS[$global] = $value;
 		}
 		return true;
 	}
@@ -73,5 +77,27 @@ class Roles implements IDynamicConfig {
 	 */
 	public function shouldAutoApply(): bool {
 		return false;
+	}
+
+	/**
+	 * @param mixed $global
+	 * @param array $value
+	 *
+	 * @return array
+	 */
+	private function mergeWithGlobal( $global, array $value ) {
+		if ( !is_array( $global ) ) {
+			return $value;
+		}
+		// Add settings for namespaces and roles that are NOT set in dynamic config
+		// otherwise use dynamic config values
+		foreach ( $global as $ns => $data ) {
+			if ( isset( $value[$ns] ) ) {
+				$value[$ns] = array_merge( $data, $value[$ns] );
+			} else {
+				$value[$ns] = $data;
+			}
+		}
+		return $value;
 	}
 }
