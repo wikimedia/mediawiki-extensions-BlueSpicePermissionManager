@@ -59,7 +59,7 @@ class MigratePmSettings extends LoggedUpdateMaintenance {
 	private function parseOldSettings(): ?array {
 		$path = BS_LEGACY_CONFIGDIR . '/pm-settings.php';
 		if ( !file_exists( $path ) ) {
-			$this->output( 'Old settings file not found. Nothing to do.' );
+			$this->output( "Old settings file not found. Nothing to do.\n" );
 			return null;
 		}
 		return $this->doParse( file_get_contents( $path ) );
@@ -72,7 +72,7 @@ class MigratePmSettings extends LoggedUpdateMaintenance {
 	 */
 	private function doParse( $source ): ?array {
 		if ( $source === false ) {
-			$this->output( 'Could not read old settings file' );
+			$this->output( "Could not read old settings file\n" );
 			return null;
 		}
 		$groupRoles = $this->parseGroupRoles( $source );
@@ -97,10 +97,27 @@ class MigratePmSettings extends LoggedUpdateMaintenance {
 	 * @return array
 	 */
 	private function parseGroupRoles( string $source ) {
+		$regexes = [
+			'/\$GLOBALS\[\'bsgGroupRoles\'\]\[\'(.*?)\'\]\[\'(.*?)\'\]\s=\s(.*?);/'
+		];
+		$roles = [];
+		foreach ( $regexes as $regex ) {
+			$roles = array_merge( $this->parseRolesFromRegex( $regex, $source ), $roles );
+		}
+		return $roles;
+	}
+
+	/**
+	 * @param string $regex
+	 * @param string $source
+	 *
+	 * @return array
+	 */
+	private function parseRolesFromRegex( string $regex, string $source ) {
 		$roles = [];
 		$matches = [];
 		$hasMatches = preg_match_all(
-			'/\$GLOBALS\[\'bsgGroupRoles\'\]\[\'(.*?)\'\]\[\'(.*?)\'\]\s=\s(.*?);/', $source, $matches
+			$regex, $source, $matches
 		);
 		if ( !$hasMatches ) {
 			return $roles;
@@ -126,31 +143,63 @@ class MigratePmSettings extends LoggedUpdateMaintenance {
 	 * @return array
 	 */
 	private function parseNamespaceLockdown( string $source ) {
+		$regexes = [
+			'/\$GLOBALS\[\'bsgNamespaceRolesLockdown\'\]\[(.*?)\]\[(.*?)\]\s=\s\[(.*?)\];/',
+			'/\$GLOBALS\[\'bsgNamespaceRolesLockdown\'\]\[(.*?)\]\[(.*?)\]\s=\sarray\((.*?)\);/'
+		];
+		$lockdown = [];
+		foreach ( $regexes as $regex ) {
+			$lockdownRound = $this->parseNamespaceLockdownFromRegex( $regex, $source );
+			foreach ( $lockdownRound as $ns => $data ) {
+				if ( !isset( $lockdown[$ns] ) ) {
+					$lockdown[$ns] = [];
+				}
+				$lockdown[$ns] = array_merge( $lockdown[$ns], $data );
+			}
+		}
+		return $lockdown;
+	}
+
+	/**
+	 * @param string $regex
+	 * @param string $source
+	 *
+	 * @return array
+	 */
+	private function parseNamespaceLockdownFromRegex( string $regex, string $source ) {
 		$lockdown = [];
 		$matches = [];
-		$hasMatches = preg_match_all(
-			'/\$GLOBALS\[\'bsgNamespaceRoleLockdown\'\]\[(.*?)\]\[\'(.*?)\'\]\s=\s\[(.*?)\];/', $source, $matches
-		);
+		$hasMatches = preg_match_all( $regex, $source, $matches );
 		if ( !$hasMatches ) {
 			return $lockdown;
 		}
 		foreach ( $matches[1] as $i => $namespace ) {
-			$nsConst = $namespace;
-			$namespace = $this->getNsIndex( $nsConst );
-			if ( $namespace === null ) {
-				$this->output( 'Warning: Cannot find ID for namespace ' . $nsConst . '. Skipping.' );
+			$namespace = trim( $namespace );
+			if ( is_numeric( $namespace ) ) {
+				$namespace = (int)$namespace;
+			} elseif ( strpos( $namespace, 'NS_' ) === 0 ) {
+				$nsConst = $namespace;
+				$namespace = $this->getNsIndex( $nsConst );
+				if ( $namespace === null ) {
+					$this->output( 'Warning: Cannot find ID for namespace ' . $nsConst . ". Skipping.\n" );
+					continue;
+				}
+			} else {
+				// Don't know what it is
 				continue;
 			}
+
 			if ( !isset( $lockdown[$namespace] ) ) {
 				$lockdown[$namespace] = [];
 			}
-			$role = $matches[2][$i];
+			$role = trim( $matches[2][$i], '\'" ' );
 			$groups = explode( ',', $matches[3][$i] );
 			$groups = array_map( static function ( $group ) {
 				return trim( $group, '\'" ' );
 			}, $groups );
 			$lockdown[$namespace][$role] = $groups;
 		}
+
 		return $lockdown;
 	}
 
