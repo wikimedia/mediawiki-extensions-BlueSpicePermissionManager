@@ -5,5 +5,6 @@
 		]
 	},
 	"bs-permissionmanager-btn-save-label": "Сактоо",
-	"bs-permissionmanager-btn-save-in-progress-label": "Сакталууда..."
+	"bs-permissionmanager-btn-save-in-progress-label": "Сакталууда...",
+	"bs-permissionmanager-header-global": "Вики"
 }
