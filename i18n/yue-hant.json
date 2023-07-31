@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"action-permissionmanager-viewspecialpage": "睇下特殊頁面“{{int:bs-permissionmanager-label}}”",
+	"permissionmanager": "權限管理"
+}
