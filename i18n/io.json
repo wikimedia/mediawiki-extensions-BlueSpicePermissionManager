@@ -8,5 +8,6 @@
 	"bs-permissionmanager-header-namespaces": "'Namespaces'",
 	"bs-permissionmanager-btn-save-label": "Konservez",
 	"bs-permissionmanager-group-all": "omna",
-	"bs-permissionmanager-role-permissions-column-permission-desc": "Deskripto"
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Deskripto",
+	"bs-permissionmanager-btn-save-in-progress-label": "Konservado en progreso..."
 }
