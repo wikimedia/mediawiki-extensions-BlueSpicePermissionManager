@@ -15,5 +15,18 @@
 	"bs-permissionmanager-role-permissions-label": "Дозволе у улози: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "Дозвола",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Опис",
-	"bs-premissionmanager-reset-button-label": "Ресетуј"
+	"bs-premissionmanager-reset-button-label": "Ресетуј",
+	"bs-permissionmanager-text": "Дозволе",
+	"bs-permissionmanager-btn-group-label": "Група:",
+	"bs-permissionmanager-header-permissions": "Дозволе",
+	"bs-permissionmanager-header-global": "Вики",
+	"bs-permissionmanager-header-group": "Група",
+	"bs-permissionmanager-save-success": "Дозволе су сачуване.",
+	"bs-permissionmanager-affected-by-notset": "Није постављено",
+	"bs-permissionmanager-header-role": "Улога",
+	"bs-permissionmanager-preset-private-label": "Приватан вики",
+	"bs-permissionmanager-preset-protected-label": "Заштићен вики",
+	"bs-permissionmanager-preset-public-label": "Јавни вики",
+	"bs-permissionmanager-preset-save-error": "Није могуће чување подешавања! Измене нису примењене!",
+	"bs-permissionmanager-preset-save-success": "Подешавања су сачувана!"
 }
