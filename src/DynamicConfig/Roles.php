@@ -48,7 +48,7 @@ class Roles implements IDynamicConfig {
 		$final = [];
 		foreach ( $values as $ns => $data ) {
 			foreach ( $data as $group => $roles ) {
-				if ( !empty( $roles ) ) {
+				if ( is_array( $roles ) && !empty( $roles ) ) {
 					if ( !isset( $final[$ns] ) ) {
 						$final[$ns] = [];
 					}
@@ -66,6 +66,11 @@ class Roles implements IDynamicConfig {
 	 * @return string
 	 */
 	public function serialize( ?array $additionalData = [] ): string {
+		foreach ( $additionalData['groupRoles'] as $group => &$data ) {
+			if ( $data === null ) {
+				$data = [];
+			}
+		}
 		return json_encode( [
 			'bsgGroupRoles' => $additionalData[ 'groupRoles' ] ?? [],
 			'bsgNamespaceRolesLockdown' => $additionalData[ 'roleLockdown' ] ?? [],
