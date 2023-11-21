@@ -4,13 +4,26 @@
 			"Milicevic01"
 		]
 	},
+	"bs-permissionmanager-text": "Dozvole",
+	"bs-permissionmanager-btn-group-label": "Grupa:",
+	"bs-permissionmanager-header-permissions": "Dozvole",
+	"bs-permissionmanager-header-global": "Viki",
 	"bs-permissionmanager-header-namespaces": "Imenski prostori",
+	"bs-permissionmanager-header-group": "Grupa",
 	"bs-permissionmanager-btn-save-label": "Sačuvaj",
 	"bs-permissionmanager-btn-save-in-progress-label": "Čuvanje...",
+	"bs-permissionmanager-save-success": "Dozvole su sačuvane.",
+	"bs-permissionmanager-affected-by-notset": "Nije postavljeno",
 	"bs-permissionmanager-group-all": "sve",
+	"bs-permissionmanager-header-role": "Uloga",
 	"bs-permissionmanager-show-system-groups-label": "Prikaži grupe sistema",
 	"bs-permissionmanager-role-permissions-label": "Dozvole u ulozi: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "Dozvola",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Opis",
-	"bs-premissionmanager-reset-button-label": "Resetuj"
+	"bs-premissionmanager-reset-button-label": "Resetuj",
+	"bs-permissionmanager-preset-private-label": "Privatan viki",
+	"bs-permissionmanager-preset-protected-label": "Zaštićen viki",
+	"bs-permissionmanager-preset-public-label": "Javni viki",
+	"bs-permissionmanager-preset-save-error": "Nije moguće čuvanje podešavanja! Izmene nisu primenjene!",
+	"bs-permissionmanager-preset-save-success": "Podešavanja su sačuvana!"
 }
