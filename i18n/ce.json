@@ -8,5 +8,10 @@
 	"bs-permissionmanager-header-namespaces": "ЦӀерийн меттиг",
 	"bs-permissionmanager-header-group": "Тоба",
 	"bs-permissionmanager-btn-save-label": "Ӏалашйан",
-	"bs-permissionmanager-btn-save-in-progress-label": "Ӏалашйеш йу..."
+	"bs-permissionmanager-btn-save-in-progress-label": "Ӏалашйеш йу...",
+	"bs-permissionmanager-header-permissions": "Магор",
+	"bs-permissionmanager-header-global": "Вики",
+	"bs-permissionmanager-group-all": "йерриге",
+	"bs-permissionmanager-header-role": "Роль",
+	"bs-premissionmanager-reset-button-label": "Кхосса"
 }
