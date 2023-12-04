@@ -3,7 +3,8 @@
 		"authors": [
 			"Alojz.tic",
 			"Eleassar",
-			"Skalcaa"
+			"Skalcaa",
+			"Upwinxp"
 		]
 	},
 	"bs-permissionmanager-desc": "Skrbniški vmesnik za urejanje uporabniških pravic",
@@ -28,7 +29,7 @@
 	"log-description-bs-permission-manager": "To je dnevnik sprememb dovoljenj skupin",
 	"log-show-hide-bs-permission-manager": "$1 dnevnik upravljanja dovoljenj",
 	"logeventslist-bs-permission-manager-log": "Dnevnik upravljanja dovoljenj",
-	"logentry-bs-permission-manager-modify": "$1 je {{GENDER:$2|spremenil|spremenila|spremenil_a}} dovoljenja skupine $4",
+	"logentry-bs-permission-manager-modify": "$1 je {{GENDER:$2|spremenil|spremenila|spremenil/a}} dovoljenja skupine $4",
 	"apihelp-bs-permissionmanager-tasks-description": "Zagotavlja naloge za PermissionManager",
 	"apihelp-bs-permissionmanager-tasks-summary": "Zagotavlja naloge za PermissionManager",
 	"apihelp-bs-role-permission-store-summary": "Zagotovi opis vlog za PermissionManager",
