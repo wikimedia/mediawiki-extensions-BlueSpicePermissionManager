@@ -9,6 +9,7 @@
 	},
 	"bs-permissionmanager-desc": "Interfejs administracyjny do edycji uprawnień użytkowników",
 	"prefs-permissionmanager": "Menedżer uprawnień",
+	"bs-permissionmanager-text": "Uprawnienia",
 	"bs-permissionmanager-label": "Menedżer uprawnień",
 	"bs-permissionmanager-btn-group-label": "Grupa:",
 	"bs-permissionmanager-header-permissions": "Uprawnienia",
@@ -30,5 +31,6 @@
 	"right-permissionmanager-viewspecialpage": "Dostęp do strony specjalnej [[Special:PermissionManager]].",
 	"bs-permissionmanager-role-permissions-column-permission": "Uprawnienia",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Opis",
-	"bs-premissionmanager-reset-button-label": "Zresetuj"
+	"bs-premissionmanager-reset-button-label": "Zresetuj",
+	"bs-permissionmanager-preset-save-success": "Konfiguracja zapisana!"
 }
