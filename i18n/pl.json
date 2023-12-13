@@ -30,5 +30,7 @@
 	"right-permissionmanager-viewspecialpage": "Dostęp do strony specjalnej [[Special:PermissionManager]].",
 	"bs-permissionmanager-role-permissions-column-permission": "Uprawnienia",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Opis",
-	"bs-premissionmanager-reset-button-label": "Zresetuj"
+	"bs-premissionmanager-reset-button-label": "Zresetuj",
+	"bs-permissionmanager-text": "Uprawnienia",
+	"bs-permissionmanager-preset-save-success": "Konfiguracja zapisana!"
 }
