@@ -28,6 +28,7 @@ class ProtectedWiki extends PermissionPreset {
 		$this->groupRoles['*']['reader'] = true;
 		$this->groupRoles['*']['editor'] = false;
 		$this->groupRoles['user']['editor'] = true;
+		$this->groupRoles['bot']['bot'] = true;
 	}
 
 	/**
