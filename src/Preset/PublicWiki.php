@@ -27,6 +27,7 @@ class PublicWiki extends PermissionPreset {
 		// Everyone can read, everyone can edit
 		$this->groupRoles['*']['reader'] = true;
 		$this->groupRoles['*']['editor'] = true;
+		$this->groupRoles['bot']['bot'] = true;
 	}
 
 	/**
