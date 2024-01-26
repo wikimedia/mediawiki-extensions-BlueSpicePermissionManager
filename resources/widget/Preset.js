@@ -24,7 +24,9 @@
 
 		this.disabled = false;
 
-		this.$element.addClass( 'permission-manager-preset-widget' );
+		this.$element.addClass( 'permission-manager-preset-widget' )
+			.attr( 'role', 'button')
+			.attr( 'tabindex', '0');
 
 		this.$element.on( 'click', function () {
 			if ( this.disabled ) {
