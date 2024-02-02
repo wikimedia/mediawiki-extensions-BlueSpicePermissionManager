@@ -23,8 +23,13 @@
 	&:last-of-type {
 		border-bottom: none;
 	}
+	&:focus-visible,
 	&:hover {
 		background-color: #e8e8e8;
+	}
+	&:focus-visible {
+		outline: 0;
+		box-shadow: 0 0 0 .1em #3e5893;
 	}
 	&.active {
 		background-color: #cecece;
