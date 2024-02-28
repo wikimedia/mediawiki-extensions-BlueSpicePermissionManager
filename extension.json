@@ -35,6 +35,9 @@
 						"maintenanceadmin"
 					]
 				}
+			},
+			"PermissionLockdownRegistry": {
+				"special-pages": "\\BlueSpice\\PermissionManager\\Lockdown\\SpecialPages::getInstance"
 			}
 		},
 		"BlueSpicePermissionManager": {
