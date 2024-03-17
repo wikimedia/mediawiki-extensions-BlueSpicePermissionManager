@@ -13,7 +13,7 @@ class PermissionManagerMaxBackups extends IntSetting {
 	public function getPaths() {
 		return [
 			static::MAIN_PATH_FEATURE . '/' . static::FEATURE_ADMINISTRATION . '/BlueSpicePermissionManager',
-			static::MAIN_PATH_EXTENSION . '/BlueSpicePermissionManager/' . static::FEATURE_ADMINISTRATION ,
+			static::MAIN_PATH_EXTENSION . '/BlueSpicePermissionManager/' . static::FEATURE_ADMINISTRATION,
 			static::MAIN_PATH_PACKAGE . '/' . static::PACKAGE_FREE . '/BlueSpicePermissionManager',
 		];
 	}
