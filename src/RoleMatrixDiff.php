@@ -154,16 +154,16 @@ class RoleMatrixDiff {
 				$value = (array)$value;
 			}
 			if ( array_key_exists( $key, $new ) ) {
-			if ( is_array( $value ) ) {
-				$recursiveDiff = $this->arrayDiffDeep( $value, $new[ $key ] );
-				if ( count( $recursiveDiff ) ) {
-					$return[ $key ] = $recursiveDiff;
+				if ( is_array( $value ) ) {
+					$recursiveDiff = $this->arrayDiffDeep( $value, $new[ $key ] );
+					if ( count( $recursiveDiff ) ) {
+						$return[ $key ] = $recursiveDiff;
+					}
+				} else {
+					if ( $value != $new[ $key ] ) {
+						$return[ $key ] = $value;
+					}
 				}
-			} else {
-				if ( $value != $new[ $key ] ) {
-					$return[ $key ] = $value;
-				}
-			}
 			} else {
 				$return[ $key ] = $value;
 			}
