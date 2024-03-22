@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Arielyurusova",
+			"Cookai1205",
 			"Cwlin0416",
 			"Kly",
 			"LNDDYL",
@@ -68,7 +69,7 @@
 	"apihelp-bs-role-permission-store-param-role": "要取得權限的角色名稱",
 	"bs-permissionmanager-preset-custom-help": "* 手動分配角色和群組",
 	"bs-permissionmanager-preset-private-help": "* 只有登入使用者才能“檢視和編輯”內容！N！* 只有“sysop”群組中的使用者才能執行“管理操作”",
-	"bs-permissionmanager-preset-protected-help": "* 每個人都可以「檢視」內容 - 包含匿名使用者！N！* 只有登入使用者才能「編輯」內容！N！* 只有「sysop」群組中的使用者才能執行「''行政行為'''",
+	"bs-permissionmanager-preset-protected-help": "* 每個人都可以'''檢視'''內容 - 包含匿名使用者\n* 只有登入使用者才能'''編輯'''內容\n* 只有「sysop」群組中的使用者才能執行'''管理操作'''",
 	"bs-permissionmanager-preset-public-help": "* 每個人都可以“查看和編輯”內容 - 包括匿名用戶！N！* 只有“sysop”群組中的用戶才能執行“管理操作”",
 	"bs-permissionmanager-switch-preset-confirm": "切換預設將立即套用於 wiki 中的所有使用者。你確定你要繼續嗎？",
 	"bs-permissionmanager-preset-save-error": "配置無法儲存！更改未套用！",
