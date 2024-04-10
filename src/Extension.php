@@ -37,7 +37,7 @@ class Extension extends \BlueSpice\Extension {
 
 	public static function onCallback() {
 		// Do not apply permission changes within WMF CI, to avoid issues with core tests
-		if ( !empty( $GLOBALS['wgWikimediaJenkinsCI'] ) ) {
+		if ( defined( 'MW_QUIBBLE_CI' ) ) {
 			return;
 		}
 
