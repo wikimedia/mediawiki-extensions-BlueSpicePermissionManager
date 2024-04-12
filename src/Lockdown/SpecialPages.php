@@ -9,12 +9,9 @@ use User;
 
 class SpecialPages extends Module {
 
-	/** @var string */
-	private const PUBLIC_WIKI = 'public';
-
 	/** @var string[] */
 	private const SPECIAL_PAGES_LOCKDOWN = [
-		'AdminDashboard',
+		'ActiveUsers',
 		'AutoblockList',
 		'UserRights',
 		'ListUsers',
@@ -27,11 +24,10 @@ class SpecialPages extends Module {
 	 * @inheritDoc
 	 */
 	public function applies( Title $title, User $user ) {
-		if ( !$title->isSpecialPage() ) {
+		if ( defined( 'MW_QUIBBLE_CI' ) ) {
 			return false;
 		}
-		$activePreset = $this->config->get( 'PermissionManagerActivePreset' );
-		if ( $activePreset !== self::PUBLIC_WIKI ) {
+		if ( !$title->isSpecialPage() ) {
 			return false;
 		}
 		$userGroups = $this->getUserGroups( $user );
