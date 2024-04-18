@@ -37,8 +37,11 @@ class SpecialPages extends Module {
 
 		$specialPageFactory = $this->services->getSpecialPageFactory();
 		foreach ( self::SPECIAL_PAGES_LOCKDOWN as $pageLockdown ) {
-			$specialPage = $specialPageFactory->getPage( $pageLockdown )->getPageTitle();
-			if ( $title->equals( $specialPage ) ) {
+			$specialPage = $specialPageFactory->getPage( $pageLockdown );
+			if ( !$specialPage ) {
+				continue;
+			}
+			if ( $title->equals( $specialPage->getPageTitle() ) ) {
 				return true;
 			}
 		}
