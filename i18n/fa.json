@@ -26,7 +26,7 @@
 	"bs-permissionmanager-pref-enablerealitycheck": "فعال کردن بررسی دسترسی",
 	"bs-permissionmanager-pref-max-backups": "محدودیت پشتیبان‌گیری",
 	"bs-permissionmanager-unsaved-changes": "تغییرات ذخیره‌نشده‌ای وجود دارند. آیا واقعاً می‌خواهید همین حالا صفحه را ترک کنید؟ تغییرات ذخیره‌نشده از دست خواهد رفت.",
-	"bs-permissionmanager-error-lockout": "دست کم یک گروه باید دسترسی «$1» را داشته‌باشد.\nناتوان در ذخیرهٔ تغییرات.",
+	"bs-permissionmanager-error-lockout": "دست کم یک گروه باید دسترسی «$1» را داشته باشد.\nناتوان در ذخیرهٔ تغییرات.",
 	"log-name-bs-permission-manager": "سیاههٔ مدیریت دسترسی",
 	"log-description-bs-permission-manager": "این سیاهه‌ای است از تغییرات در دسترسی گروه",
 	"log-show-hide-bs-permission-manager": "سیاههٔ مدیریت دسترسی $1",
