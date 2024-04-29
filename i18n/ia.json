@@ -16,7 +16,7 @@
 	"bs-permissionmanager-header-namespaces": "Spatios de nomines",
 	"bs-permissionmanager-header-group": "Gruppo",
 	"bs-permissionmanager-btn-save-label": "Salveguardar",
-	"bs-permissionmanager-btn-save-in-progress-label": "Salveguarda…",
+	"bs-permissionmanager-btn-save-in-progress-label": "Salveguarda\u2026",
 	"bs-permissionmanager-save-success": "Permissiones salveguardate.",
 	"bs-permissionmanager-pref-enablerealitycheck": "Activar le verification de permissiones",
 	"bs-permissionmanager-pref-max-backups": "Limite de copias de securitate",
