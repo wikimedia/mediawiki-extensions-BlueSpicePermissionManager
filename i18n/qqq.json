@@ -26,7 +26,7 @@
 	"bs-permissionmanager-save-success": "Success message for permissions saved.",
 	"bs-permissionmanager-pref-enablerealitycheck": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], checkbox label for activate permission check",
 	"bs-permissionmanager-pref-max-backups": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label for number of maximum backups",
-	"bs-permissionmanager-unsaved-changes": "Hint about data loss when a user leaves the page without saving her\/his changes",
+	"bs-permissionmanager-unsaved-changes": "Hint about data loss when a user leaves the page without saving her/his changes",
 	"bs-permissionmanager-error-lockout": "Error message for changes in settings that couldn't be saved, because some essential rights are not enabled for any user group.",
 	"log-name-bs-permission-manager": "Used in [[Special:Log]], title of the log type",
 	"log-description-bs-permission-manager": "Used in [[Special:Log]], description of the log type",

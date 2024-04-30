@@ -5,10 +5,10 @@
 		]
 	},
 	"bs-permissionmanager-header-namespaces": "Imenski prostori",
-	"bs-permissionmanager-btn-save-label": "Sa\u010duvaj",
-	"bs-permissionmanager-btn-save-in-progress-label": "\u010cuvanje...",
+	"bs-permissionmanager-btn-save-label": "Sačuvaj",
+	"bs-permissionmanager-btn-save-in-progress-label": "Čuvanje...",
 	"bs-permissionmanager-group-all": "sve",
-	"bs-permissionmanager-show-system-groups-label": "Prika\u017ei grupe sistema",
+	"bs-permissionmanager-show-system-groups-label": "Prikaži grupe sistema",
 	"bs-permissionmanager-role-permissions-label": "Dozvole u ulozi: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "Dozvola",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Opis",
@@ -18,12 +18,12 @@
 	"bs-permissionmanager-header-permissions": "Dozvole",
 	"bs-permissionmanager-header-global": "Viki",
 	"bs-permissionmanager-header-group": "Grupa",
-	"bs-permissionmanager-save-success": "Dozvole su sa\u010duvane.",
+	"bs-permissionmanager-save-success": "Dozvole su sačuvane.",
 	"bs-permissionmanager-affected-by-notset": "Nije postavljeno",
 	"bs-permissionmanager-header-role": "Uloga",
 	"bs-permissionmanager-preset-private-label": "Privatan viki",
-	"bs-permissionmanager-preset-protected-label": "Za\u0161ti\u0107en viki",
+	"bs-permissionmanager-preset-protected-label": "Zaštićen viki",
 	"bs-permissionmanager-preset-public-label": "Javni viki",
-	"bs-permissionmanager-preset-save-error": "Nije mogu\u0107e \u010duvanje pode\u0161avanja! Izmene nisu primenjene!",
-	"bs-permissionmanager-preset-save-success": "Pode\u0161avanja su sa\u010duvana!"
+	"bs-permissionmanager-preset-save-error": "Nije moguće čuvanje podešavanja! Izmene nisu primenjene!",
+	"bs-permissionmanager-preset-save-success": "Podešavanja su sačuvana!"
 }
