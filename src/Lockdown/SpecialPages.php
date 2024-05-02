@@ -16,7 +16,6 @@ class SpecialPages extends Module {
 		'UserRights',
 		'ListUsers',
 		'BlockList',
-		'PasswordReset',
 		'SocialProfiles'
 	];
 
