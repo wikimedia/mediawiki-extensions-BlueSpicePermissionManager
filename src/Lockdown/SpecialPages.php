@@ -3,6 +3,7 @@
 namespace BlueSpice\PermissionManager\Lockdown;
 
 use BlueSpice\Permission\Lockdown\Module;
+use BlueSpice\Permission\RoleManager;
 use Message;
 use Title;
 use User;
@@ -29,11 +30,21 @@ class SpecialPages extends Module {
 		if ( !$title->isSpecialPage() ) {
 			return false;
 		}
-		$userGroups = $this->getUserGroups( $user );
-		if ( in_array( 'sysop', $userGroups ) ) {
+		if ( !$this->isLockdownPage( $title ) ) {
+			return false;
+		}
+		if ( $this->hasAdminRole( $user ) ) {
 			return false;
 		}
 
+		return true;
+	}
+
+	/**
+	 * @param Title $title
+	 * @return bool
+	 */
+	private function isLockdownPage( Title $title ): bool {
 		$specialPageFactory = $this->services->getSpecialPageFactory();
 		foreach ( self::SPECIAL_PAGES_LOCKDOWN as $pageLockdown ) {
 			$specialPage = $specialPageFactory->getPage( $pageLockdown );
@@ -42,6 +53,28 @@ class SpecialPages extends Module {
 			}
 			if ( $title->equals( $specialPage->getPageTitle() ) ) {
 				return true;
+			}
+		}
+
+		return false;
+	}
+
+	/**
+	 * @param User $user
+	 * @return bool
+	 */
+	private function hasAdminRole( User $user ): bool {
+		$userGroups = $this->getUserGroups( $user );
+		/** @var RoleManager $roleManager */
+		$roleManager = $this->services->getService( 'BSRoleManager' );
+		foreach ( $userGroups as $group ) {
+			$groupRoles = $roleManager->getGroupRoles( $group );
+			foreach ( $groupRoles as $group => $roles ) {
+				foreach ( $roles as $role => $active ) {
+					if ( $role === 'admin' && $active === true ) {
+						return true;
+					}
+				}
 			}
 		}
 
@@ -59,6 +92,6 @@ class SpecialPages extends Module {
 	 * @inheritDoc
 	 */
 	public function getLockdownReason( Title $title, User $user, $action ) {
-		return Message::newFromKey( 'badaccess-groups', 'sysop' );
+		return Message::newFromKey( 'badaccess-group0' );
 	}
 }
