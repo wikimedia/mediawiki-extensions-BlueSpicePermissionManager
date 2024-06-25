@@ -12,7 +12,6 @@ use BlueSpice\ConfigDefinition\StringSetting;
 class PermissionManagerActivePresetConfig extends StringSetting {
 
 	/**
-	 *
 	 * @return string[]
 	 */
 	public function getPaths() {
@@ -20,13 +19,15 @@ class PermissionManagerActivePresetConfig extends StringSetting {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
 		return '';
 	}
 
+	/**
+	 * @return bool
+	 */
 	public function isHidden() {
 		return true;
 	}
