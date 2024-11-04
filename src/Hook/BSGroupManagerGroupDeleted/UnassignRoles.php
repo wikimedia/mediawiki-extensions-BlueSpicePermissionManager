@@ -20,7 +20,7 @@ class UnassignRoles extends BSGroupManagerGroupDeleted {
 						unset( $namespaceLockdown[$ns][$role] );
 						continue;
 					}
-					$groups = array_diff( $groups, [ $this->group ] );
+					$groups = array_values( array_diff( $groups, [ $this->group ] ) );
 				}
 			}
 		}

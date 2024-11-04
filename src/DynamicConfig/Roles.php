@@ -27,6 +27,12 @@ class Roles implements IDynamicConfig {
 				// locking, actually lock down for everybody. So we need to remove those
 				// Why this value appeared in the DB is still unclear
 				$value = $this->removeEmptyValues( $value );
+				// Normalization for legacy data where array is keyed
+				foreach ( $value as &$roles ) {
+					foreach ( $roles as &$groups ) {
+						$groups = array_values( array_unique( $groups ) );
+					}
+				}
 				$value = $this->mergeWithGlobal( $GLOBALS[$global], $value );
 			} else {
 				$value = array_merge( $GLOBALS[$global] ?? [], $value );
