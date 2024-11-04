@@ -13,7 +13,8 @@
 			"佛壁灯",
 			"列维劳德",
 			"科劳",
-			"落花有意12138"
+			"落花有意12138",
+			"沈澄心"
 		]
 	},
 	"bs-permissionmanager-desc": "用于编辑用户权限的管理界面",
@@ -42,6 +43,7 @@
 	"apihelp-bs-permissionmanager-tasks-description": "为权限管理器提供任务",
 	"apihelp-bs-permissionmanager-tasks-summary": "为权限管理器提供任务",
 	"apihelp-bs-role-permission-store-summary": "为权限管理者提供角色描述",
+	"apihelp-bs-role-permission-store-param-role": "获取权限的角色名称",
 	"action-permissionmanager-viewspecialpage": "查看特殊页面“{{int:bs-permissionmanager-label}}”",
 	"permissionmanager": "权限管理器",
 	"bs-permissionmanager-affected-by-explicit": "已由$1封禁",
