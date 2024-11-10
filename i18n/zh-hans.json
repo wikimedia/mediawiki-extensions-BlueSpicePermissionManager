@@ -12,6 +12,7 @@
 			"Xiplus",
 			"佛壁灯",
 			"列维劳德",
+			"沈澄心",
 			"科劳",
 			"落花有意12138"
 		]
@@ -69,5 +70,6 @@
 	"bs-permissionmanager-preset-protected-label": "受保护的维基",
 	"bs-permissionmanager-preset-public-label": "公开维基",
 	"bs-permissionmanager-preset-save-error": "无法保存配置！未应用更改！",
-	"bs-permissionmanager-preset-save-success": "配置已保存！"
+	"bs-permissionmanager-preset-save-success": "配置已保存！",
+	"apihelp-bs-role-permission-store-param-role": "获取权限的角色名称"
 }
