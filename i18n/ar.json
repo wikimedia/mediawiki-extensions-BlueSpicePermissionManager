@@ -68,7 +68,7 @@
 	"bs-permissionmanager-preset-protected-label": "ويكي محمية",
 	"bs-permissionmanager-preset-protected-help": "* يمكن للجميع '' 'عرض' '' المحتوى - بما في ذلك المستخدمون المجهولون! N! * يمكن للمستخدمين المسجلين فقط '' '' تحرير '' 'المحتوى! N! * يمكن فقط للمستخدمين في المجموعة \"sysop\" أداء' '' إجراءات إدارية ''",
 	"bs-permissionmanager-preset-public-label": "ويكي عمومية",
-	"bs-permissionmanager-preset-public-help": "* يمكن للجميع '' 'عرض وتحرير' '' 'المحتوى - بما في ذلك المستخدمين المجهولين! N! * يمكن فقط للمستخدمين في المجموعة \"sysop\" تنفيذ' 'الإجراءات الإدارية' ''",
+	"bs-permissionmanager-preset-public-help": "* يمكن للجميع '''عرض وتحرير''' المحتوى - بما في ذلك المستخدمون المجهولون\n* فقط المستخدمون في المجموعة \"sysop\" يمكنهم تنفيذ '''إجراءات إدارية'''",
 	"bs-permissionmanager-switch-preset-confirm": "سيتم تطبيق تبديل الإعداد المسبق على الفور على جميع المستخدمين في الويكي. هل أنت متأكد أنك تريد الاستمرار؟",
 	"bs-permissionmanager-preset-save-error": "لا يمكن حفظ التكوين! لم يتم تطبيق التغييرات!",
 	"bs-permissionmanager-preset-save-success": "حُفظت الإعدادات!",
