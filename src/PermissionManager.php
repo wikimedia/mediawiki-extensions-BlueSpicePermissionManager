@@ -4,23 +4,21 @@ namespace BlueSpice\PermissionManager;
 
 use BlueSpice\ExtensionAttributeBasedRegistry;
 use BlueSpice\Permission\IRole;
-use BlueSpice\Permission\PermissionRegistry;
 use BlueSpice\Permission\RoleManager;
 use Config;
+use InvalidArgumentException;
 use ManualLogEntry;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\MediaWikiServices;
 use Message;
-use MWException;
 use MWStake\MediaWiki\Component\DynamicConfig\DynamicConfigManager;
 use Psr\Log\LoggerInterface;
 use RequestContext;
 use SpecialPage;
-use stdClass;
+use Throwable;
+use UnexpectedValueException;
 
 class PermissionManager {
-	/** @var PermissionRegistry */
-	private $permissionRegistry;
 	/** @var RoleManager */
 	private $roleManager;
 	/** @var Config */
@@ -35,29 +33,31 @@ class PermissionManager {
 	protected $groups = [];
 	/** @var ExtensionAttributeBasedRegistry */
 	protected $presets;
+	/** @var DynamicConfigManager */
+	private DynamicConfigManager $dynamicConfigManager;
 
 	/**
-	 * @param PermissionRegistry $permissionRegistry
 	 * @param RoleManager $roleManager
 	 * @param MediaWikiServices $services
 	 * @param Config $config
 	 * @param LoggerInterface $logger
 	 * @param HookContainer $hookContainer
+	 * @param DynamicConfigManager $dynamicConfigManager
 	 */
 	public function __construct(
-		PermissionRegistry $permissionRegistry,
 		RoleManager $roleManager,
 		MediaWikiServices $services,
 		Config $config,
 		LoggerInterface $logger,
-		HookContainer $hookContainer
+		HookContainer $hookContainer,
+		DynamicConfigManager $dynamicConfigManager
 	) {
-		$this->permissionRegistry = $permissionRegistry;
 		$this->roleManager = $roleManager;
 		$this->config = $config;
 		$this->logger = $logger;
 		$this->hookContainer = $hookContainer;
 		$this->services = $services;
+		$this->dynamicConfigManager = $dynamicConfigManager;
 
 		$this->presets = new ExtensionAttributeBasedRegistry(
 			'BlueSpicePermissionManagerPermissionPresets'
@@ -77,7 +77,7 @@ class PermissionManager {
 	public function applyCurrentPreset() {
 		try {
 			$this->getActivePreset()->apply();
-		} catch ( MWException $exception ) {
+		} catch ( Throwable $exception ) {
 			$this->logger->critical(
 				'Exception while applying preset: {error}',
 				[
@@ -100,7 +100,7 @@ class PermissionManager {
 					'preset' => $activePreset
 				]
 			);
-			throw new MWException(
+			throw new UnexpectedValueException(
 				"Permission preset \"$activePreset\" is not registered or not allowed"
 			);
 		}
@@ -154,11 +154,14 @@ class PermissionManager {
 	/**
 	 * Get all permissions assigned to given role
 	 *
-	 * @param IRole $role
+	 * @param IRole|string $role
 	 * @param bool $includeDesc
 	 * @return array
 	 */
 	public function getRolePermissions( $role, $includeDesc = false ) {
+		if ( $role instanceof IRole ) {
+			$role = $role->getName();
+		}
 		$role = $this->roleManager->getRole( $role );
 		if ( $role instanceof IRole === false ) {
 			return [];
@@ -187,23 +190,23 @@ class PermissionManager {
 
 	/**
 	 *
-	 * @param stdClass $data
+	 * @param array $data
 	 * @return array
 	 */
 	public function saveRoles( $data ) {
-		if ( !isset( $data ) || !isset( $data->groupRoles ) || !isset( $data->roleLockdown ) ) {
-			return [ 'success' => false ];
+		if ( !isset( $data ) || !isset( $data['groupRoles'] ) || !isset( $data['roleLockdown'] ) ) {
+			throw new InvalidArgumentException();
 		}
 
-		$groupRoles = (array)$data->groupRoles;
-		$roleLockdown = (array)$data->roleLockdown;
+		$groupRoles = $data['groupRoles'];
+		$roleLockdown = $data['roleLockdown'];
 
 		$status = $this->hookContainer->run(
 			'BsPermissionManager::beforeSaveRoles', [ &$groupRoles, &$roleLockdown ]
 		);
 
 		if ( !$status ) {
-			return [ 'success' => false ];
+			throw new \RuntimeException( 'Hook aborted' );
 		}
 
 		return $this->persistRoles( $groupRoles, $roleLockdown );
@@ -248,77 +251,6 @@ class PermissionManager {
 
 	/**
 	 *
-	 * @return array
-	 */
-	public function getGroups() {
-		if ( empty( $this->groups ) ) {
-			$this->setGroups();
-		}
-		return $this->groups;
-	}
-
-	/**
-	 *
-	 * @return array
-	 */
-	public function buildNamespaceMetadata() {
-		$lang = RequestContext::getMain()->getLanguage();
-		$namespaces = $lang->getNamespaces();
-		ksort( $namespaces );
-
-		$metadata = [];
-
-		foreach ( $namespaces as $nsId => $localizedNSText ) {
-			if ( $nsId < 0 ) {
-				// Filter pseudo namespaces
-				continue;
-			}
-
-			$nsText = str_replace( '_', ' ', $localizedNSText );
-			if ( $nsId == NS_MAIN ) {
-				$nsText = wfMessage( 'bs-ns_main' )->text();
-			}
-
-			$namespaceInfo = $this->services->getNamespaceInfo();
-			$metadata[] = [
-				'id' => $nsId,
-				'name' => $nsText,
-				'hideable' => $nsId !== NS_MAIN,
-				'content' => $namespaceInfo->isContent( $nsId ),
-				'talk' => $namespaceInfo->isTalk( $nsId ),
-			];
-		}
-
-		return $metadata;
-	}
-
-	/**
-	 *
-	 * @param array $rolesAndPermissions
-	 * @return array
-	 */
-	public function formatPermissionsToHint( $rolesAndPermissions ) {
-		$res = [];
-		foreach ( $rolesAndPermissions as $roleAndPermissions ) {
-			$permissionList = implode( ', ', $roleAndPermissions[ 'permissions' ] );
-			$permissionCount = count( $roleAndPermissions[ 'permissions' ] );
-			$hintText = wfMessage( 'bs-permissionmanager-hint', $permissionList, $permissionCount )->parse();
-			$res[] = [
-				'role' => $roleAndPermissions[ 'role' ],
-				'hint' => $hintText,
-				'privilegeLevel' => $roleAndPermissions[ 'privilegeLevel' ]
-			];
-		}
-
-		$privilegeColumn = array_column( $res, 'privilegeLevel' );
-		$nameColumn = array_column( $res, 'role' );
-		array_multisort( $privilegeColumn, SORT_ASC, $nameColumn, SORT_ASC, $res );
-
-		return $res;
-	}
-
-	/**
-	 *
 	 * @param array $groupRoles
 	 * @param array $roleLockdown
 	 * @return array
@@ -335,10 +267,8 @@ class PermissionManager {
 		$globalDiff = $roleMatrixDiff->getGlobalDiff();
 		$nsDiff = $roleMatrixDiff->getNsDiff();
 
-		/** @var DynamicConfigManager $dynamicConfigManager */
-		$dynamicConfigManager = $this->services->getService( 'MWStakeDynamicConfigManager' );
-		$status = $dynamicConfigManager->storeConfig(
-			$dynamicConfigManager->getConfigObject( 'bs-permissionmanager-roles' ),
+		$status = $this->dynamicConfigManager->storeConfig(
+			$this->dynamicConfigManager->getConfigObject( 'bs-permissionmanager-roles' ),
 			[ 'groupRoles' => $groupRoles, 'roleLockdown' => $roleLockdown ]
 		);
 		if ( $status ) {
@@ -353,66 +283,6 @@ class PermissionManager {
 				)->plain()
 			];
 		}
-	}
-
-	/**
-	 * Set groups hierarchy
-	 */
-	private function setGroups() {
-		$this->groups = [];
-
-		$this->groups = [
-			'text' => '*',
-			'builtin' => true,
-			'implicit' => true,
-			'expanded' => true,
-			'children' => [
-				[
-					'text' => 'user',
-					'builtin' => true,
-					'implicit' => true,
-					'expanded' => true,
-					'children' => [
-
-					]
-				]
-			]
-		];
-
-		$this->addOtherGroups();
-	}
-
-	/**
-	 * Add custom groups
-	 */
-	private function addOtherGroups() {
-		$groupHelper = $this->services->getService( 'BSUtilityFactory' )->getGroupHelper();
-		$explicitGroups = $groupHelper->getAvailableGroups(
-			[ 'filter' => [ 'explicit' ] ]
-		);
-
-		sort( $explicitGroups );
-
-		$usableGroups = $groupHelper->getAvailableGroups();
-
-		$explicitGroupNodes = [];
-		foreach ( $explicitGroups as $explicitGroup ) {
-			$explicitGroupNode = [
-				'text' => $explicitGroup,
-				'leaf' => true
-			];
-
-			if ( in_array( $explicitGroup, $usableGroups ) ) {
-				$explicitGroupNode[ 'iconCls' ] = 'icon-custom-group';
-			} else {
-				$explicitGroupNode[ 'builtin' ] = true;
-				$explicitGroupNode[ 'iconCls' ] = 'icon-builtin-group';
-			}
-
-			$explicitGroupNodes[] = $explicitGroupNode;
-		}
-
-		$this->groups[ 'children' ][ 0 ][ 'children' ] = $explicitGroupNodes;
 	}
 
 	/**
