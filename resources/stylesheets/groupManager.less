@@ -1,0 +1,78 @@
+.bs-permission-manager-group-manager {
+  .group-panel {
+    display: block;
+    padding: 5px 0 5px 12px;
+    margin-right: 0;
+    .group-item {
+      margin-left: 0;
+      display: flex;
+      &:not(.oo-ui-optionWidget-selected):hover {
+        background-color: #f9f9f9;
+      }
+      &.oo-ui-optionWidget-selected a {
+        color: var(--color-progressive, #36c);
+      }
+      >a {
+        flex-grow: 1;
+        word-wrap: break-word;
+        min-width:0;
+        overflow-wrap: break-word;
+        margin: 0;
+        padding: 3px;
+        font-weight: normal;
+        text-wrap-mode: unset;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+      &:not(.edit-mode) {
+        .group-edit-button, .group-remove-button {
+          display: none;
+        }
+      }
+      &.dirty {
+        border-right: 5px solid red;
+      }
+      .group-editing-panel {
+        min-width: 70px;
+        text-align: right;
+      }
+      .group-meta {
+        display: block;
+        .group-name {
+          font-weight: bold;
+          font-size: 0.8em;
+          color: grey;
+        }
+      }
+      .group-type {
+        margin-left: 10px;
+        color: white;
+        font-size: 0.8em;
+        padding: 2px 5px;
+        border-radius: 5px;
+        &.type-builtin {
+          background-color: #f68e38;
+        }
+        &.type-custom {
+          background-color: #598d53;
+        }
+        &.type-implicit {
+          background-color: #abadab;
+        }
+      }
+    }
+  }
+  .group-toggle-edit-mode-button {
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+  }
+  .group-create-layout {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  &:not(.edit-mode) .group-create-layout {
+    display: none;
+  }
+}

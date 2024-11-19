@@ -1,8 +1,14 @@
+
 ( function( $, mw, d ) {
 	$( function () {
-		$( '#bs-permission-manager-preset-select' ).append(
+		var $cnt = $( '#bs-permission-manager-preset-select' );
+		if ( !$cnt.length ) {
+			return;
+		}
+
+		$cnt.html(
 			new bs.permissionManager.widget.PresetSelect( {
-				data: mw.config.get( 'bsPermissionManagerPresets' ),
+				data: JSON.parse( $cnt.attr( 'data' ) ),
 				$customPanel: $( '#bs-permission-manager-custom-preset' )
 			} ).$element
 		);
