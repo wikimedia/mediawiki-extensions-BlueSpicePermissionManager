@@ -5,18 +5,11 @@
 			"Nikosgranturismogt"
 		]
 	},
-	"bs-permissionmanager-btn-group-label": "Ομάδα:",
 	"bs-permissionmanager-header-permissions": "Άδειες",
 	"bs-permissionmanager-header-global": "Βίκι",
-	"bs-permissionmanager-header-namespaces": "Ονοματοχώροι",
-	"bs-permissionmanager-header-group": "Ομάδα",
 	"bs-permissionmanager-btn-save-label": "Αποθήκευση",
-	"bs-permissionmanager-btn-save-in-progress-label": "Γίνεται αποθήκευση…",
-	"bs-permissionmanager-save-success": "Οι άδειες αποθηκεύτηκαν.",
 	"bs-permissionmanager-pref-enablerealitycheck": "Ενεργοποίηση ελέγχου άδειας",
 	"bs-permissionmanager-group-all": "όλα",
 	"bs-permissionmanager-header-role": "Ρόλος",
-	"bs-permissionmanager-role-permissions-column-permission": "Άδεια",
-	"bs-permissionmanager-role-permissions-column-permission-desc": "Περιγραφή",
 	"bs-premissionmanager-reset-button-label": "Επαναφορά"
 }

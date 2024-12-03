@@ -4,12 +4,8 @@
 			"Yupik"
 		]
 	},
-	"bs-permissionmanager-btn-group-label": "Joukk:",
 	"bs-permissionmanager-header-global": "Wiki",
-	"bs-permissionmanager-header-group": "Joukk",
 	"bs-permissionmanager-btn-save-label": "Ruõkk",
-	"action-permissionmanager-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:bs-permissionmanager-label}}\"",
 	"bs-permissionmanager-group-all": "puk",
-	"bs-permissionmanager-role-permissions-column-permission-desc": "Deskriptt",
 	"bs-permissionmanager-preset-protected-label": "Suõjjuum wiki"
 }

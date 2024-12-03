@@ -6,12 +6,8 @@
 	},
 	"prefs-permissionmanager": "Merour an aotreoù",
 	"bs-permissionmanager-label": "Merour an aotreoù",
-	"bs-permissionmanager-btn-group-label": "Strollad :",
 	"bs-permissionmanager-header-permissions": "Aotreoù",
 	"bs-permissionmanager-header-global": "Wiki",
-	"bs-permissionmanager-header-group": "Strollad",
 	"bs-permissionmanager-btn-save-label": "Enrollañ",
-	"bs-permissionmanager-btn-save-in-progress-label": "Oc'h enrollañ...",
-	"bs-permissionmanager-save-success": "Aotreoù enrollet.",
 	"bs-permissionmanager-pref-enablerealitycheck": "Gweredekaat ar gwiriañ aotreoù"
 }

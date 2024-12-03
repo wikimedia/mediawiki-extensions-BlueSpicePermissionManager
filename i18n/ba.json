@@ -12,15 +12,9 @@
 	"bs-permissionmanager-label": "Рөхсәт биреү",
 	"bs-permissionmanager-grouping-global": "Исемдәр тупланмаһындағы бойондороҡһоҙ сиселештәр",
 	"bs-permissionmanager-grouping-local": "Исемдәр тупланмаһындағы аныҡ сиселештәр",
-	"bs-permissionmanager-btn-group-label": "Төркөм:",
 	"bs-permissionmanager-header-permissions": "Рөхсәт",
 	"bs-permissionmanager-header-global": "Вики",
-	"bs-permissionmanager-header-namespaces": "Исемдәр арауығы",
-	"bs-permissionmanager-header-group": "Төркөм",
 	"bs-permissionmanager-btn-save-label": "Һаҡларға",
-	"bs-permissionmanager-btn-save-in-progress-label": "Һаҡлана...",
-	"bs-permissionmanager-save-success": "Рөхсәттәр һаҡланды.",
 	"bs-permissionmanager-pref-enablerealitycheck": "Тикшереүҙәр рөхсәтен әүҙемләштерергә",
-	"bs-permissionmanager-unsaved-changes": "Һаҡланмаған үҙгәртеүҙәр бар. Биттән ысынлап сығырға уйлайһығыҙмы? Был осраҡта һаҡланмаған үҙгәртеүҙәр юғаласаҡ.",
 	"log-name-bs-permission-manager": "Рөхсәттәр менән идара итеү журналы"
 }

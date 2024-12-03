@@ -5,9 +5,6 @@
 			"Fitoschido"
 		]
 	},
-	"bs-permissionmanager-btn-group-label": "Grup:",
 	"bs-permissionmanager-header-global": "Wiki",
-	"bs-permissionmanager-header-group": "Grup",
-	"bs-permissionmanager-btn-save-label": "Desar",
-	"bs-permissionmanager-btn-save-in-progress-label": "S’està desant…"
+	"bs-permissionmanager-btn-save-label": "Desar"
 }

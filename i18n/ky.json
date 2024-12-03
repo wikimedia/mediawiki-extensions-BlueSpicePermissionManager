@@ -4,9 +4,6 @@
 			"Bosogo"
 		]
 	},
-	"bs-permissionmanager-btn-group-label": "Топ:",
 	"bs-permissionmanager-header-global": "Вики",
-	"bs-permissionmanager-header-group": "Топ",
-	"bs-permissionmanager-btn-save-label": "Сактоо",
-	"bs-permissionmanager-btn-save-in-progress-label": "Сакталууда..."
+	"bs-permissionmanager-btn-save-label": "Сактоо"
 }

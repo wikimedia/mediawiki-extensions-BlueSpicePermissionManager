@@ -4,12 +4,8 @@
 			"Purodha"
 		]
 	},
-	"bs-permissionmanager-btn-group-label": "Jropp",
 	"bs-permissionmanager-header-global": "Wikki",
-	"bs-permissionmanager-header-namespaces": "Appachtemangs",
-	"bs-permissionmanager-header-group": "Jropp",
 	"bs-permissionmanager-btn-save-label": "Seschere",
-	"bs-permissionmanager-pref-max-backups": "De hüschße Zahl Sescheronge",
 	"bs-permissionmanager-error-lockout": "Winneschsdens ein Jropp moß dat Rääsch „$1“\nhan.\nDe Änderonge kunnte nit faßjehallde wähde.",
 	"log-name-bs-permission-manager": "Logbohch vun de Verwalldong vun de Rääschde",
 	"log-description-bs-permission-manager": "Logbohch vun de Ännderonge aan Jropperääschte.",
