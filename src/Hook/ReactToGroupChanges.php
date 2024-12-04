@@ -5,7 +5,6 @@ namespace BlueSpice\PermissionManager\Hook;
 use BlueSpice\PermissionManager\PermissionManager;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Permissions\Authority;
-use stdClass;
 
 class ReactToGroupChanges implements BSPermissionManagerGroupEditedHook, BSPermissionManagerGroupDeletedHook {
 
@@ -96,10 +95,7 @@ class ReactToGroupChanges implements BSPermissionManagerGroupEditedHook, BSPermi
 	 * @return void
 	 */
 	private function save( array $groupRoles, array $namespaceLockdown ): void {
-		$data = new stdClass();
-		$data->groupRoles = $groupRoles;
-		$data->roleLockdown = $namespaceLockdown;
-
+		$data = [ 'groupRoles' => $groupRoles, 'roleLockdown' => $namespaceLockdown ];
 		$this->bsPermissionManager->saveRoles( $data );
 	}
 }

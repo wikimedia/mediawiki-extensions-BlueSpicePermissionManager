@@ -225,7 +225,7 @@ class GroupManager {
 	 */
 	private function unassignUsers( string $name ) {
 		$db = $this->lb->getConnection( DB_PRIMARY );
-		$res = $db->delete(
+		$db->delete(
 			'user_groups',
 			[ 'ug_group' => $name ],
 			__METHOD__

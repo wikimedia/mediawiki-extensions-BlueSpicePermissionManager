@@ -18,7 +18,7 @@ bs.permissionManager.panel.PermissionManager.prototype.init = async function() {
 	this.groupSelector = new bs.permissionManager.panel.GroupManager( {
 		editable: true,
 		classes: [ 'permission-manager-group-selector' ],
-		types: [ 'core-minimal', 'implicit', 'core-extended', 'custom' ],
+		types: [ 'core-minimal', 'implicit', 'custom', 'extension-minimal' ],
 		blacklist: [ 'autoconfirmed' ]
 	} );
 

@@ -25,54 +25,63 @@
           background-color: transparent;
         }
       }
-      &:not(.edit-mode) {
-        .group-edit-button, .group-remove-button {
-          display: none;
+      .group-editing-panel {
+        visibility: hidden;
+        margin-left: 10px;
+        min-width: 70px;
+        text-align: right;
+      }
+      &:hover {
+        .group-editing-panel {
+          visibility: visible;
         }
       }
       &.dirty {
         border-right: 5px solid red;
       }
-      .group-editing-panel {
-        min-width: 70px;
-        text-align: right;
-      }
+
       .group-meta {
         display: block;
         .group-name {
           font-weight: bold;
           font-size: 0.8em;
-          color: grey;
+          color: #555;
         }
       }
       .group-type {
         margin-left: 10px;
-        color: white;
         font-size: 0.8em;
         padding: 2px 5px;
         border-radius: 5px;
+        color: rgb(37, 37, 37);
         &.type-builtin {
-          background-color: #f68e38;
+          background-color: #ffab66;
         }
         &.type-custom {
-          background-color: #598d53;
-        }
-        &.type-implicit {
-          background-color: #abadab;
+          background-color: #9cd396;
         }
       }
     }
+    .group-section-header {
+      margin: 10px 0 5px 10px;
+      font-size: 1.1em;
+      font-weight: bold;
+      /* to undo "disabled" color */
+      color: rgb(37, 37, 37);
+    }
   }
-  .group-toggle-edit-mode-button {
-    margin-top: 10px;
-    display: block;
-    text-align: right;
-  }
-  .group-create-layout {
+  .group-manager-header {
+    display: flex;
     padding: 10px;
-    border-top: 1px solid #ddd;
-  }
-  &:not(.edit-mode) .group-create-layout {
-    display: none;
+    border-bottom: 1px solid #cecece;
+    >label {
+      font-size: 1.2em;
+      font-weight: bold;
+      flex-grow: 2;
+      line-height: 1.8em;
+    }
+    .group-manager-header-actions {
+      padding-left: 10px;
+    }
   }
 }
