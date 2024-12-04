@@ -76,13 +76,9 @@ bs.permissionManager.widget.SimpleMatrixRoleItem.prototype.makeMeta = function( 
 	}
 	if ( meta.assignment === 'global' && meta.hasOwnProperty( 'nsId' ) ) {
 		label = mw.msg( 'bs-permissionmanager-simple-setonwiki' );
-		sub = mw.msg( 'bs-permissionmanager-simple-setonwiki-sub' );
 	}
 	if ( meta.assignment === false ) {
 		label = mw.msg( 'bs-permissionmanager-simple-notset' );
-		if( this.type !== 'global' ) {
-			sub = mw.msg( 'bs-permissionmanager-simple-setonwiki-sub' );
-		}
 		cls = 'role-denied';
 	}
 	if ( meta.assignment === 'explicit' || ( meta.assignment !== false && !blocked ) ) {
@@ -90,7 +86,6 @@ bs.permissionManager.widget.SimpleMatrixRoleItem.prototype.makeMeta = function( 
 	} else if ( blocked ) {
 		if ( meta.dependencies ) {
 			label = mw.msg( 'bs-permissionmanager-simple-notset' );
-			sub = mw.msg( 'bs-permissionmanager-simple-setonwiki-sub' );
 			cls = 'role-denied';
 		} else if ( meta.assignment !== 'explicit' ) {
 			var blocking = meta.blocking.map( function( role ) {
@@ -103,12 +98,8 @@ bs.permissionManager.widget.SimpleMatrixRoleItem.prototype.makeMeta = function( 
 	}
 	this.mainLabel.$element.removeClass( 'role-granted role-denied' ).addClass( cls );
 
-	if ( label ) {
-		this.mainLabel.setLabel( new OO.ui.HtmlSnippet( label ) );
-	}
-	if ( sub ) {
-		this.subLabel.setLabel( sub );
-	}
+	this.mainLabel.setLabel( new OO.ui.HtmlSnippet( label ) );
+	this.subLabel.setLabel( sub );
 };
 
 bs.permissionManager.widget.SimpleMatrixRoleItem.prototype.setMeta = function( meta ) {

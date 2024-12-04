@@ -28,10 +28,7 @@ class GlobalActionsAdministration extends RestrictedTextLink {
 	 * @return array
 	 */
 	public function getPermissions(): array {
-		$permissions = [
-			'permissionmanager-viewspecialpage'
-		];
-		return $permissions;
+		return [ 'wikiadmin' ];
 	}
 
 	/**

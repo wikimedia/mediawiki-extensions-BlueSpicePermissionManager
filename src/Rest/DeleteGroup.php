@@ -35,6 +35,7 @@ class DeleteGroup extends SimpleHandler {
 				$params['name'], RequestContext::getMain()->getAuthority()
 			);
 		} catch ( Throwable $e ) {
+			error_log( $e->getTraceAsString() );
 			throw new HttpException( $e->getMessage(), 500 );
 		}
 		return $this->getResponseFactory()->createNoContent();

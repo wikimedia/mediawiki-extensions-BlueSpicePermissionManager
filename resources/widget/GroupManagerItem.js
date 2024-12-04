@@ -8,20 +8,21 @@ bs.permissionManager.widget.GroupManagerItem = function( cfg ) {
 	this.isCustom = cfg.custom_group || false;
 	this.groupType = cfg.group_type;
 	this.editable = cfg.editable;
-	this.isInEditMode = cfg.isInEditMode || false;
 
 	var type = this.isCustom ? 'custom' : cfg.group_type === 'implicit' ? 'implicit' : 'builtin';
 	if ( cfg.group_name !== cfg.displayname ) {
-		this.$groupMeta = $( '<div>' ).addClass( 'group-meta' );
-		this.$label.append( this.$groupMeta );
-		this.$groupMeta.append( $( '<span>' ).addClass( 'group-name' ).text( cfg.group_name ) );
-		this.$groupMeta.append(
-			$( '<span>' )
-				.addClass( 'group-type' )
-				.addClass( 'type-' + type )
-				.text( mw.msg( 'bs-permissionmanager-group-type-' + type ) )
-		);
-	} else {
+		if ( this.groupType !== 'implicit' ) {
+			this.$groupMeta = $( '<div>' ).addClass( 'group-meta' );
+			this.$label.append( this.$groupMeta );
+			this.$groupMeta.append( $( '<span>' ).addClass( 'group-name' ).text( cfg.group_name ) );
+			this.$groupMeta.append(
+				$( '<span>' )
+					.addClass( 'group-type' )
+					.addClass( 'type-' + type )
+					.text( mw.msg( 'bs-permissionmanager-group-type-' + type ) )
+			);
+		}
+	} else if ( this.groupType !== 'implicit' ) {
 		this.$label.append(
 			$( '<span>' )
 				.addClass( 'group-type' )
@@ -58,14 +59,10 @@ bs.permissionManager.widget.GroupManagerItem = function( cfg ) {
 		} } );
 		$editingPanel.append( editButton.$element );
 	}
-	this.setEditMode( this.isInEditMode );
 };
 
 OO.inheritClass( bs.permissionManager.widget.GroupManagerItem, OO.ui.ButtonOptionWidget );
 
-bs.permissionManager.widget.GroupManagerItem.prototype.setEditMode = function( isEditMode ) {
-	this.$element.toggleClass( 'edit-mode', isEditMode );
-};
 
 bs.permissionManager.widget.GroupManagerItem.prototype.setDirty = function( dirty ) {
 	this.$element.toggleClass( 'dirty', dirty );
