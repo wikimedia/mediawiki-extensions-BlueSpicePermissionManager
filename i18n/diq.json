@@ -9,5 +9,6 @@
 	"bs-permissionmanager-header-group": "Grube",
 	"bs-permissionmanager-btn-save-label": "Qeyd ke",
 	"bs-permissionmanager-btn-save-in-progress-label": "Qeyd beno...",
-	"bs-permissionmanager-group-all": "pêro"
+	"bs-permissionmanager-group-all": "pêro",
+	"bs-permissionmanager-namespace-picker": "Heruna nameyan"
 }

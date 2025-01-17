@@ -73,5 +73,6 @@
 	"bs-permissionmanager-preset-public-help": "* 每個人都可以“查看和編輯”內容 - 包括匿名用戶！N！* 只有“sysop”群組中的用戶才能執行“管理操作”",
 	"bs-permissionmanager-switch-preset-confirm": "切換預設將立即套用於 wiki 中的所有使用者。你確定你要繼續嗎？",
 	"bs-permissionmanager-preset-save-error": "配置無法儲存！更改未套用！",
-	"bs-permissionmanager-pref-max-backups-help": "權限管理器（特殊：PermissionManager）上次更改的備份數量。"
+	"bs-permissionmanager-pref-max-backups-help": "權限管理器（特殊：PermissionManager）上次更改的備份數量。",
+	"bs-permissionmanager-namespace-picker": "命名空間"
 }

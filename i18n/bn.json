@@ -27,5 +27,6 @@
 	"bs-permissionmanager-group-all": "সমস্ত",
 	"bs-permissionmanager-header-role": "ভূমিকা",
 	"bs-permissionmanager-preset-private-label": "ব্যক্তিগত উইকি",
-	"bs-permissionmanager-preset-protected-label": "সুরক্ষিত উইকি"
+	"bs-permissionmanager-preset-protected-label": "সুরক্ষিত উইকি",
+	"bs-permissionmanager-namespace-picker": "নামস্থান"
 }

@@ -9,5 +9,6 @@
 	"bs-permissionmanager-header-namespaces": "Nammagomuvuođat",
 	"bs-permissionmanager-btn-save-label": "Vurke",
 	"bs-permissionmanager-group-all": "buot",
-	"bs-permissionmanager-role-permissions-column-permission-desc": "Govvádus"
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Govvádus",
+	"bs-permissionmanager-namespace-picker": "Nammagomuvuođat"
 }

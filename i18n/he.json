@@ -68,5 +68,6 @@
 	"bs-permissionmanager-switch-preset-confirm": "החלפת ערכת ההגדרות תחול מייד על כל המשתמשים בוויקי. האם באמת להמשיך?",
 	"bs-permissionmanager-preset-save-error": "לא ניתן לשמור את התצורה! השינויים לא הוחלו!",
 	"bs-permissionmanager-preset-save-success": "התצורה נשמרה!",
-	"bs-permissionmanager-pref-max-backups-help": "מספר הגיבויים לשינויים אחרונים במנהל ההרשאות (Special:PermissionManager)."
+	"bs-permissionmanager-pref-max-backups-help": "מספר הגיבויים לשינויים אחרונים במנהל ההרשאות (Special:PermissionManager).",
+	"bs-permissionmanager-namespace-picker": "מרחבי שם"
 }

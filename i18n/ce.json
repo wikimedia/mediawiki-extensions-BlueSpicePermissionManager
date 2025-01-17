@@ -13,5 +13,6 @@
 	"bs-permissionmanager-btn-save-in-progress-label": "Ӏалашйеш йу...",
 	"bs-permissionmanager-group-all": "йерриге",
 	"bs-permissionmanager-header-role": "Роль",
-	"bs-premissionmanager-reset-button-label": "Кхосса"
+	"bs-premissionmanager-reset-button-label": "Кхосса",
+	"bs-permissionmanager-namespace-picker": "ЦӀерийн меттиг"
 }

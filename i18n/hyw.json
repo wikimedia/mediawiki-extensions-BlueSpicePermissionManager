@@ -5,5 +5,6 @@
 		]
 	},
 	"bs-permissionmanager-header-namespaces": "Անուանատարածքներ",
-	"bs-permissionmanager-btn-save-label": "Պահել"
+	"bs-permissionmanager-btn-save-label": "Պահել",
+	"bs-permissionmanager-namespace-picker": "Անուանատարածքներ"
 }

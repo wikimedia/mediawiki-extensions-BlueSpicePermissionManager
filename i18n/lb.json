@@ -28,5 +28,6 @@
 	"bs-premissionmanager-reset-button-label": "Zrécksetzen",
 	"bs-permissionmanager-preset-private-label": "Privat Wiki",
 	"bs-permissionmanager-preset-public-label": "Ëffentlech Wiki",
-	"bs-permissionmanager-preset-save-success": "Konfiguratioun gespäichert!"
+	"bs-permissionmanager-preset-save-success": "Konfiguratioun gespäichert!",
+	"bs-permissionmanager-namespace-picker": "Nummraim"
 }

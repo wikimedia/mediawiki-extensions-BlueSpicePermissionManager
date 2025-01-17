@@ -50,5 +50,6 @@
 	"bs-permissionmanager-preset-public-label": "Публичная вики",
 	"bs-permissionmanager-preset-save-success": "Конфигурация сохранена!",
 	"bs-permissionmanager-pref-max-backups": "Лимит резервного копирования",
-	"bs-permissionmanager-affected-by-notset": "Не задано"
+	"bs-permissionmanager-affected-by-notset": "Не задано",
+	"bs-permissionmanager-namespace-picker": "Пространства имён"
 }

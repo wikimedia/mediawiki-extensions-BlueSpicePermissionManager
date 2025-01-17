@@ -39,5 +39,6 @@
 	"bs-permissionmanager-role-permissions-column-permission": "Дозвола",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Опис",
 	"bs-premissionmanager-reset-button-label": "Одново",
-	"bs-permissionmanager-affected-by-dependency": "Оваа улога {{PLURAL:$2|ја бара следнава дозвола|ги бара следниве дозволи}}:\n$1"
+	"bs-permissionmanager-affected-by-dependency": "Оваа улога {{PLURAL:$2|ја бара следнава дозвола|ги бара следниве дозволи}}:\n$1",
+	"bs-permissionmanager-namespace-picker": "Именски простори"
 }
