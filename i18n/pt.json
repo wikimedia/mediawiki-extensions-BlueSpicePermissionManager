@@ -68,5 +68,6 @@
 	"bs-permissionmanager-switch-preset-confirm": "Alternar o valor predefinido tem efeito imediato para todos os utilizadores da wiki. Tem a certeza de que pretende continuar?",
 	"bs-permissionmanager-preset-save-error": "A configuração não pode ser gravada! As alterações não foram aplicadas!",
 	"bs-permissionmanager-preset-save-success": "Configuração gravada!",
-	"bs-permissionmanager-pref-max-backups-help": "Número de cópias de segurança das últimas alterações do administrador de permissões (Especial:PermissionManager)."
+	"bs-permissionmanager-pref-max-backups-help": "Número de cópias de segurança das últimas alterações do administrador de permissões (Especial:PermissionManager).",
+	"bs-permissionmanager-namespace-picker": "Espaços nominais"
 }

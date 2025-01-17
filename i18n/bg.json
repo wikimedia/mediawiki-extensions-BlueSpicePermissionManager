@@ -7,5 +7,6 @@
 	},
 	"bs-permissionmanager-header-namespaces": "Именни пространства",
 	"bs-permissionmanager-btn-save-label": "Съхраняване",
-	"bs-permissionmanager-group-all": "всички"
+	"bs-permissionmanager-group-all": "всички",
+	"bs-permissionmanager-namespace-picker": "Именни пространства"
 }

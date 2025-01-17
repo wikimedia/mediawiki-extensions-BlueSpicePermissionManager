@@ -10,5 +10,6 @@
 	"bs-permissionmanager-header-namespaces": "ಪುದರ್‍ದ ವರ್ಗೊಲು",
 	"bs-permissionmanager-header-group": "ಗುಂಪು",
 	"bs-permissionmanager-btn-save-label": "ಒರಿಪಾಲೆ",
-	"bs-permissionmanager-btn-save-in-progress-label": "ಓರಿಪಾವೊಂತುಂಡು..."
+	"bs-permissionmanager-btn-save-in-progress-label": "ಓರಿಪಾವೊಂತುಂಡು...",
+	"bs-permissionmanager-namespace-picker": "ಪುದರ್‍ದ ವರ್ಗೊಲು"
 }

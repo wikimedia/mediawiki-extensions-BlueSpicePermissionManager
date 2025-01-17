@@ -65,5 +65,6 @@
 	"bs-permissionmanager-preset-private-label": "私人wiki",
 	"bs-permissionmanager-preset-protected-label": "受保護 wiki",
 	"bs-permissionmanager-preset-public-label": "公共 wiki",
-	"bs-permissionmanager-preset-save-success": "已儲存組態！"
+	"bs-permissionmanager-preset-save-success": "已儲存組態！",
+	"bs-permissionmanager-namespace-picker": "命名空間"
 }

@@ -36,5 +36,6 @@
 	"bs-permissionmanager-affected-by-explicitlyset": "Definido explícitamente",
 	"bs-permissionmanager-affected-by-setonwiki": "Definido a nivel da wiki",
 	"bs-permissionmanager-group-all": "todos",
-	"bs-permissionmanager-header-role": "Rol"
+	"bs-permissionmanager-header-role": "Rol",
+	"bs-permissionmanager-namespace-picker": "Espazos de nomes"
 }

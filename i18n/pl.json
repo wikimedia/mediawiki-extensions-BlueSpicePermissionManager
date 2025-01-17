@@ -32,5 +32,6 @@
 	"bs-permissionmanager-role-permissions-column-permission": "Uprawnienia",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Opis",
 	"bs-premissionmanager-reset-button-label": "Zresetuj",
-	"bs-permissionmanager-preset-save-success": "Konfiguracja zapisana!"
+	"bs-permissionmanager-preset-save-success": "Konfiguracja zapisana!",
+	"bs-permissionmanager-namespace-picker": "Przestrzenie nazw"
 }

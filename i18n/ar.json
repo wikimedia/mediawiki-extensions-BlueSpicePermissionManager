@@ -73,5 +73,6 @@
 	"bs-permissionmanager-switch-preset-confirm": "سيتم تطبيق تبديل الإعداد المسبق على الفور على جميع المستخدمين في الويكي. هل أنت متأكد أنك تريد الاستمرار؟",
 	"bs-permissionmanager-preset-save-error": "لا يمكن حفظ التكوين! لم يتم تطبيق التغييرات!",
 	"bs-permissionmanager-preset-save-success": "حُفظت الإعدادات!",
-	"bs-permissionmanager-pref-max-backups-help": "عدد النسخ الاحتياطية للتغييرات الأخيرة في مدير الأذونات (خاص: PermissionManager)."
+	"bs-permissionmanager-pref-max-backups-help": "عدد النسخ الاحتياطية للتغييرات الأخيرة في مدير الأذونات (خاص: PermissionManager).",
+	"bs-permissionmanager-namespace-picker": "النطاقات"
 }

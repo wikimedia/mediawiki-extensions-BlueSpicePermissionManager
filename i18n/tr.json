@@ -72,5 +72,6 @@
 	"bs-permissionmanager-preset-public-help": "*Herkes içeriği '''görüntüleyebilir ve düzenleyebilir''' -anonim kullanıcılar dahil\n*Sadece grup içerisinde '''sysop''' olan kullanıcılar '''yönetimsel işlemler''' gerçekleştirebilir.",
 	"bs-permissionmanager-switch-preset-confirm": "Ön ayarın değiştirilmesi, vikideki tüm kullanıcılara hemen uygulanacaktır. Devam etmek istediğine emin misin?",
 	"bs-permissionmanager-preset-save-error": "Yapılandırma kaydedilemez! Değişiklikler uygulanmaz!",
-	"bs-permissionmanager-preset-save-success": "Yapılandırma kaydedildi!"
+	"bs-permissionmanager-preset-save-success": "Yapılandırma kaydedildi!",
+	"bs-permissionmanager-namespace-picker": "Ad alanları"
 }
