@@ -53,7 +53,7 @@
 	"bs-permissionmanager-pref-max-backups-help": "Number of backups for last changes to the permission manager (Special:PermissionManager).",
 	"group-anon": "Anonymous users",
 	"bs-permissionmanager-group-not-found": "Group not found",
-	"bs-permissionmanager-groupmanager-invalid-name": "The group name contains {{PLURAL:$1|an|}} invalid {{PLURAL:$1|character|characters}}: $2",
+	"bs-permissionmanager-groupmanager-invalid-name": "The group name contains {{PLURAL:$1|an invalid character|invalid characters}}: $2",
 	"bs-permissionmanager-groupmanager-invalid-name-length": "The group name cannot be longer than 255 characters.",
 	"bs-permissionmanager-groupmanager-invalid-name-numeric": "The group name needs to have at least one character.",
 	"bs-permissionmanager-group-already-exists": "Group already exists",
