@@ -6,13 +6,7 @@
 			"George Animal"
 		]
 	},
-	"bs-permissionmanager-btn-group-label": "Kom:",
 	"bs-permissionmanager-header-permissions": "Destûr",
 	"bs-permissionmanager-header-global": "Wîkî",
-	"bs-permissionmanager-header-group": "Kom",
-	"bs-permissionmanager-btn-save-label": "Tomar bike",
-	"bs-permissionmanager-btn-save-in-progress-label": "Tê tomarkirin...",
-	"bs-permissionmanager-save-success": "Destûr hatin tomarkirin.",
-	"bs-permissionmanager-unsaved-changes": "Guhartinên netomarkirî hene. Tu niha bi rastî dixwazî ji vê rûpelê derkevî? Guhartinên netormakirî dê winda bibin.",
-	"bs-permissionmanager-role-permissions-column-permission-desc": "Danasîn"
+	"bs-permissionmanager-btn-save-label": "Tomar bike"
 }

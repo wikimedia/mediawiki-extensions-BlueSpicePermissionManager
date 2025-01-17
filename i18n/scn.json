@@ -4,14 +4,11 @@
 			"Ajeje Brazorf"
 		]
 	},
-	"bs-permissionmanager-btn-group-label": "Gruppu:",
 	"bs-permissionmanager-header-global": "Wiki",
-	"bs-permissionmanager-header-namespaces": "Namespace",
-	"bs-permissionmanager-header-group": "Gruppu",
 	"bs-permissionmanager-btn-save-label": "Sarva",
 	"bs-permissionmanager-group-all": "tuttu",
-	"bs-permissionmanager-show-system-groups-label": "Ammustra li gruppi sistema",
 	"bs-permissionmanager-preset-private-label": "Wiki privatu",
 	"bs-permissionmanager-preset-protected-label": "Wiki prutettu",
-	"bs-permissionmanager-preset-public-label": "Wiki pubblicu"
+	"bs-permissionmanager-preset-public-label": "Wiki pubblicu",
+	"bs-permissionmanager-namespace-picker": "Namespace"
 }

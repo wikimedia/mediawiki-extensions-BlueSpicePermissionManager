@@ -55,6 +55,7 @@
 	"bs-permissionmanager-switch-preset-confirm": "Confirmation message when switching to a different preset",
 	"bs-permissionmanager-preset-save-error": "Error message when API call to change the preset failed",
 	"bs-permissionmanager-preset-save-success": "Success message when saving the preset selection succeeded",
+	"bs-permissionmanager-pref-max-backups-help": "Description for config variable \"PermissionManagerMaxBackups\"",
 	"group-anon": "Group name for `*` implicit group",
 	"bs-permissionmanager-group-not-found": "Error message when a group is not found",
 	"bs-permissionmanager-groupmanager-invalid-name": "Error message that the group name contains an invalid character or invalid characters\n*$1 is the number of invalid characetares\n*$2 are the invalid characters",
@@ -78,7 +79,6 @@
 	"bs-permissionmanager-group-type-implicit": "Group type badge label",
 	"bs-permissionmanager-namespace-picker": "Label for the namespace picker",
 	"group-bs-user": "Group name for `user` implicit group, but more clear for purposes of PermissionManager",
-
 	"bs-permissionmanager-advanced-switch": "Label for the advanced switch",
 	"bs-permissionmanager-advanced-switch-confirm": "Warning if the user tries to switch to the advanced mode while there are unsaved changes",
 	"bs-permission-manager-simple-matrix-global": "Heading label for global permission section",

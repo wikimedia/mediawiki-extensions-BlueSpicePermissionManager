@@ -7,18 +7,13 @@
 	},
 	"prefs-permissionmanager": "Baimen kudeatzailea",
 	"bs-permissionmanager-label": "Baimen kudeatzailea",
-	"bs-permissionmanager-btn-group-label": "Taldea:",
 	"bs-permissionmanager-header-permissions": "Baimenak",
 	"bs-permissionmanager-header-global": "Wiki",
-	"bs-permissionmanager-header-namespaces": "Izen-tarteak",
-	"bs-permissionmanager-header-group": "Taldea",
 	"bs-permissionmanager-btn-save-label": "Gorde",
-	"bs-permissionmanager-btn-save-in-progress-label": "Gordetzen...",
-	"bs-permissionmanager-save-success": "Baimenak gorde dira.",
-	"bs-permissionmanager-unsaved-changes": "Gorde gabeko aldaketak daude. Benetan orrialdetik irten nahi duzu? Gorde gabeko aldaketak galduko dira.",
 	"bs-permissionmanager-affected-by-explicit": "$1 blokeatu da",
 	"bs-permissionmanager-affected-by-inherited": "$1tik oinordetzan jasota",
 	"bs-permissionmanager-affected-by-notset": "Ez da aktibatu",
 	"bs-permissionmanager-affected-by-explicitlyset": "Bereziki aktibatuta",
-	"bs-permissionmanager-affected-by-setonwiki": "Wiki maila aktibatu"
+	"bs-permissionmanager-affected-by-setonwiki": "Wiki maila aktibatu",
+	"bs-permissionmanager-namespace-picker": "Izen-tarteak"
 }

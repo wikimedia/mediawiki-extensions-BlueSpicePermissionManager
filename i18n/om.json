@@ -5,8 +5,5 @@
 			"Tumsaa"
 		]
 	},
-	"bs-permissionmanager-btn-group-label": "Garee:",
-	"bs-permissionmanager-header-group": "Garee",
-	"bs-permissionmanager-btn-save-label": "Ol kaa'i",
-	"bs-permissionmanager-btn-save-in-progress-label": "Olkaawamaara..."
+	"bs-permissionmanager-btn-save-label": "Ol kaa'i"
 }
