@@ -4,7 +4,7 @@ namespace BlueSpice\PermissionManager\Logging;
 
 use ManualLogEntry;
 use MediaWiki\Permissions\Authority;
-use Title;
+use MediaWiki\Title\Title;
 
 class GroupManagerSpecialLogLogger {
 
