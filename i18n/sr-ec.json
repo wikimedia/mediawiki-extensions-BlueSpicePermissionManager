@@ -29,5 +29,7 @@
 	"bs-permissionmanager-preset-public-label": "Јавни вики",
 	"bs-permissionmanager-preset-save-error": "Није могуће чување подешавања! Измене нису примењене!",
 	"bs-permissionmanager-preset-save-success": "Подешавања су сачувана!",
-	"bs-permissionmanager-namespace-picker": "Именски простори"
+	"bs-permissionmanager-namespace-picker": "Именски простори",
+	"bs-permissionmanager-group-create": "Направи",
+	"bs-permissionmanager-cancel": "Откажи"
 }
