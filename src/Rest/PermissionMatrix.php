@@ -5,6 +5,7 @@ namespace BlueSpice\PermissionManager\Rest;
 use BlueSpice\PermissionManager\PermissionManager as BSPermissionManager;
 use BlueSpice\PermissionManager\Preset\CustomPreset;
 use MediaWiki\Config\ConfigFactory;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Language\Language;
 use MediaWiki\Rest\HttpException;
 use MediaWiki\Rest\SimpleHandler;
@@ -83,7 +84,7 @@ class PermissionMatrix extends SimpleHandler {
 	 * @throws HttpException
 	 */
 	private function assertUserCan() {
-		$user = \RequestContext::getMain()->getUser();
+		$user = RequestContext::getMain()->getUser();
 		if ( !$user->isAllowed( 'wikiadmin' ) ) {
 			throw new HttpException( 'Permission denied', 403 );
 		}

@@ -3,6 +3,7 @@
 namespace BlueSpice\PermissionManager\Rest;
 
 use BlueSpice\PermissionManager\PermissionManager as BSPermissionManager;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Rest\HttpException;
 use MediaWiki\Rest\SimpleHandler;
 use Wikimedia\ParamValidator\ParamValidator;
@@ -58,7 +59,7 @@ class SavePermissions extends SimpleHandler {
 	 * @throws HttpException
 	 */
 	private function assertUserCan() {
-		$user = \RequestContext::getMain()->getUser();
+		$user = RequestContext::getMain()->getUser();
 		if ( !$user->isAllowed( 'wikiadmin' ) ) {
 			throw new HttpException( 'Permission denied', 403 );
 		}
