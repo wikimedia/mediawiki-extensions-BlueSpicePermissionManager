@@ -46,5 +46,6 @@
 	"bs-permissionmanager-preset-protected-label": "Apsaugotas viki",
 	"bs-permissionmanager-preset-public-label": "Viešas viki",
 	"bs-permissionmanager-preset-save-error": "Konfigūracijos išsaugoti negalima! Pakeitimai netaikomi!",
-	"bs-permissionmanager-preset-save-success": "Konfigūracija išsaugota!"
+	"bs-permissionmanager-preset-save-success": "Konfigūracija išsaugota!",
+	"bs-permissionmanager-namespace-picker": "Vardų sritys"
 }

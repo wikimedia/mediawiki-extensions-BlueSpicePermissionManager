@@ -39,5 +39,6 @@
 	"bs-permissionmanager-preset-private-label": "Приватная вики",
 	"bs-permissionmanager-preset-protected-label": "Защищенная вики",
 	"bs-permissionmanager-preset-public-label": "Публичная вики",
-	"bs-permissionmanager-preset-save-success": "Конфигурация сохранена!"
+	"bs-permissionmanager-preset-save-success": "Конфигурация сохранена!",
+	"bs-permissionmanager-namespace-picker": "Пространства имён"
 }

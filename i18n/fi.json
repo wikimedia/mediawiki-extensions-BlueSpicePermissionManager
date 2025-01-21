@@ -11,5 +11,6 @@
 	"bs-permissionmanager-header-global": "Wiki",
 	"bs-permissionmanager-btn-save-label": "Tallenna",
 	"bs-permissionmanager-group-all": "kaikki",
-	"bs-permissionmanager-header-role": "Rooli"
+	"bs-permissionmanager-header-role": "Rooli",
+	"bs-permissionmanager-namespace-picker": "Nimiavaruudet"
 }

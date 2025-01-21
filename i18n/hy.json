@@ -6,5 +6,6 @@
 	},
 	"bs-permissionmanager-header-global": "Վիքի",
 	"bs-permissionmanager-btn-save-label": "Հիշել",
-	"bs-permissionmanager-group-all": "բոլոր"
+	"bs-permissionmanager-group-all": "բոլոր",
+	"bs-permissionmanager-namespace-picker": "Անվանատարածքներ"
 }

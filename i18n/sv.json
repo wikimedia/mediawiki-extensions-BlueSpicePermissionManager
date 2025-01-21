@@ -45,5 +45,6 @@
 	"bs-permissionmanager-preset-protected-help": "Wikins innehåll kommer vara synligt för alla men bara kunna redigeras av inloggade användare",
 	"bs-permissionmanager-preset-public-label": "Offentlig wiki",
 	"bs-permissionmanager-preset-public-help": "Wikins innehåll kommer inte kunna visas eller redigeras av alla",
-	"bs-permissionmanager-preset-save-error": "Konfigureringen kunde inte sparas! Ändringarna tillämpades inte!"
+	"bs-permissionmanager-preset-save-error": "Konfigureringen kunde inte sparas! Ändringarna tillämpades inte!",
+	"bs-permissionmanager-namespace-picker": "Namnrymder"
 }

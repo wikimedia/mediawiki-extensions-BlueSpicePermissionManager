@@ -6,5 +6,6 @@
 	},
 	"bs-permissionmanager-header-permissions": "అనుమతులు",
 	"bs-permissionmanager-header-global": "వికీ",
-	"bs-permissionmanager-btn-save-label": "భద్రపరుచు"
+	"bs-permissionmanager-btn-save-label": "భద్రపరుచు",
+	"bs-permissionmanager-namespace-picker": "పేరుబరులు"
 }

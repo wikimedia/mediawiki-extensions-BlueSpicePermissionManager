@@ -10,5 +10,6 @@
 	"log-name-bs-permission-manager": "Logbohch vun de Verwalldong vun de Rääschde",
 	"log-description-bs-permission-manager": "Logbohch vun de Ännderonge aan Jropperääschte.",
 	"log-show-hide-bs-permission-manager": "$1 et Logbohch vun de Rääschdeverwalldong",
-	"logentry-bs-permission-manager-modify": "{{GENDER:$2|Dä Metmaacher|De Metmaacherėn|Dä Metmaacher|De Metmaacherėn|Dä Metmaacher}} $1 hät de Zohjangsrääschde vun de Jropp $4 veränndert."
+	"logentry-bs-permission-manager-modify": "{{GENDER:$2|Dä Metmaacher|De Metmaacherėn|Dä Metmaacher|De Metmaacherėn|Dä Metmaacher}} $1 hät de Zohjangsrääschde vun de Jropp $4 veränndert.",
+	"bs-permissionmanager-namespace-picker": "Appachtemangs"
 }

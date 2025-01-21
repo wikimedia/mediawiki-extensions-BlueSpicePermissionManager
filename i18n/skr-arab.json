@@ -9,5 +9,8 @@
 	"bs-permissionmanager-affected-by-setonwiki": "وکی دی سطح تے پورا پورا فٹ تھی ڳئے",
 	"bs-permissionmanager-group-all": "یکے",
 	"bs-permissionmanager-header-role": "رول",
-	"bs-premissionmanager-reset-button-label": "ولدا ٹھیک کرو"
+	"bs-premissionmanager-reset-button-label": "ولدا ٹھیک کرو",
+	"bs-permissionmanager-save": "بچاؤ",
+	"bs-permissionmanager-cancel": "منسوخ",
+	"bs-permissionmanager-group-type-implicit": "پوشیدہ"
 }

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"bs-permissionmanager-grouping-local": "Spezifesch Nummraum-Rechter",
@@ -20,5 +21,19 @@
 	"bs-premissionmanager-reset-button-label": "Zrécksetzen",
 	"bs-permissionmanager-preset-private-label": "Privat Wiki",
 	"bs-permissionmanager-preset-public-label": "Ëffentlech Wiki",
-	"bs-permissionmanager-preset-save-success": "Konfiguratioun gespäichert!"
+	"bs-permissionmanager-preset-save-success": "Konfiguratioun gespäichert!",
+	"bs-permissionmanager-group-not-found": "Grupp net fonnt",
+	"bs-permissionmanager-groupmanager-invalid-name": "Am Gruppennumm {{PLURAL:$1|kënnt en ongültegt Zeeche|kommen ongülteg Zeeche}} vir: $2",
+	"bs-permissionmanager-group-already-exists": "D'Grupp existéiert schonn",
+	"bs-permissionmanager-group-remove": "Grupp ewechhuelen",
+	"bs-permissionmanager-group-edit": "Grupp änneren",
+	"bs-permissionmanager-error": "Et ass e Feeler geschitt",
+	"bs-permissionmanager-group-create-label": "Nei Grupp derbäisetzen",
+	"bs-permissionmanager-group-create": "Uleeën",
+	"bs-permissionmanager-edit-group": "Grupp änneren",
+	"bs-permissionmanager-save": "Späicheren",
+	"bs-permissionmanager-cancel": "Ofbriechen",
+	"bs-permissionmanager-group-name": "Gruppennumm",
+	"bs-permissionmanager-group-type-implicit": "implizitt",
+	"bs-permissionmanager-namespace-picker": "Nummraim"
 }

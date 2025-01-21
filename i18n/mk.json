@@ -28,5 +28,6 @@
 	"bs-permissionmanager-header-role": "Улога",
 	"bs-permissionmanager-write-config-file-error": "Не може да се создаде или измени $1",
 	"bs-premissionmanager-reset-button-label": "Одново",
-	"bs-permissionmanager-affected-by-dependency": "Оваа улога {{PLURAL:$2|ја бара следнава дозвола|ги бара следниве дозволи}}:\n$1"
+	"bs-permissionmanager-affected-by-dependency": "Оваа улога {{PLURAL:$2|ја бара следнава дозвола|ги бара следниве дозволи}}:\n$1",
+	"bs-permissionmanager-namespace-picker": "Именски простори"
 }

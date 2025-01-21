@@ -50,5 +50,6 @@
 	"bs-permissionmanager-preset-public-label": "Wiki público",
 	"bs-permissionmanager-preset-public-help": "* Todos, incluidos los usuarios anónimos, pueden '''ver y editar''' el contenido de la wiki\n* Únicamente aquellos en el grupo «sysop» podrán efectuar '''acciones administrativas'''",
 	"bs-permissionmanager-preset-save-error": "No se puede guardar la configuración. No se han aplicado los cambios.",
-	"bs-permissionmanager-preset-save-success": "Se guardó la configuración."
+	"bs-permissionmanager-preset-save-success": "Se guardó la configuración.",
+	"bs-permissionmanager-namespace-picker": "Espacios de nombres"
 }

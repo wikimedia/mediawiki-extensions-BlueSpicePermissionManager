@@ -11,5 +11,6 @@
 	"bs-permissionmanager-pref-enablerealitycheck": "Ενεργοποίηση ελέγχου άδειας",
 	"bs-permissionmanager-group-all": "όλα",
 	"bs-permissionmanager-header-role": "Ρόλος",
-	"bs-premissionmanager-reset-button-label": "Επαναφορά"
+	"bs-premissionmanager-reset-button-label": "Επαναφορά",
+	"bs-permissionmanager-namespace-picker": "Ονοματοχώροι"
 }

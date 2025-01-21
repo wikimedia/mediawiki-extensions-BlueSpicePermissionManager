@@ -16,5 +16,6 @@
 	"bs-permissionmanager-preset-protected-label": "Zaštićen viki",
 	"bs-permissionmanager-preset-public-label": "Javni viki",
 	"bs-permissionmanager-preset-save-error": "Nije moguće čuvanje podešavanja! Izmene nisu primenjene!",
-	"bs-permissionmanager-preset-save-success": "Podešavanja su sačuvana!"
+	"bs-permissionmanager-preset-save-success": "Podešavanja su sačuvana!",
+	"bs-permissionmanager-namespace-picker": "Imenski prostori"
 }

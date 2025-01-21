@@ -24,5 +24,6 @@
 	"bs-permissionmanager-header-role": "Rola",
 	"right-permissionmanager-viewspecialpage": "Dostęp do strony specjalnej [[Special:PermissionManager]].",
 	"bs-premissionmanager-reset-button-label": "Zresetuj",
-	"bs-permissionmanager-preset-save-success": "Konfiguracja zapisana!"
+	"bs-permissionmanager-preset-save-success": "Konfiguracja zapisana!",
+	"bs-permissionmanager-namespace-picker": "Przestrzenie nazw"
 }
