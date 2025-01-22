@@ -2,7 +2,7 @@
 
 namespace BlueSpice\PermissionManager;
 
-use Message;
+use MediaWiki\Message\Message;
 use MWException;
 
 interface IPreset {

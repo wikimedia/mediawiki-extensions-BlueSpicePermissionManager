@@ -4,7 +4,7 @@ namespace BlueSpice\PermissionManager\Preset;
 
 use BlueSpice\PermissionManager\IPreset;
 use MediaWiki\MediaWikiServices;
-use Message;
+use MediaWiki\Message\Message;
 use MWStake\MediaWiki\Component\DynamicConfig\DynamicConfigManager;
 
 class CustomPreset implements IPreset {

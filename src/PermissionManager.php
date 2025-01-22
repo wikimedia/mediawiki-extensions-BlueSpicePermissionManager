@@ -11,7 +11,7 @@ use ManualLogEntry;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\MediaWikiServices;
-use Message;
+use MediaWiki\Message\Message;
 use MWStake\MediaWiki\Component\DynamicConfig\DynamicConfigManager;
 use Psr\Log\LoggerInterface;
 use SpecialPage;
