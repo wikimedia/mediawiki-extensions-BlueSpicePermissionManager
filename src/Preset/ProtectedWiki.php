@@ -2,7 +2,7 @@
 
 namespace BlueSpice\PermissionManager\Preset;
 
-use Message;
+use MediaWiki\Message\Message;
 
 class ProtectedWiki extends PermissionPreset {
 
