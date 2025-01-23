@@ -2,7 +2,7 @@
 
 namespace BlueSpice\PermissionManager;
 
-use Config;
+use MediaWiki\Config\Config;
 
 class RoleMatrixDiff {
 	/**
