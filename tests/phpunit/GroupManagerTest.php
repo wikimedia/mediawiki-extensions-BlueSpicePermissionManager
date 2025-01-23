@@ -4,8 +4,8 @@ namespace BlueSpice\PermissionManager\Tests;
 
 use BlueSpice\PermissionManager\GroupManager;
 use BlueSpice\PermissionManager\Logging\GroupManagerSpecialLogLogger;
-use Config;
 use Exception;
+use MediaWiki\Config\Config;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Permissions\Authority;
 use MWStake\MediaWiki\Component\DynamicConfig\DynamicConfigManager;

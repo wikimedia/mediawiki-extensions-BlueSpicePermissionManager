@@ -3,9 +3,9 @@
 namespace BlueSpice\PermissionManager;
 
 use BlueSpice\PermissionManager\Logging\GroupManagerSpecialLogLogger;
-use Config;
 use Exception;
 use InvalidArgumentException;
+use MediaWiki\Config\Config;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Message\Message;
 use MediaWiki\Permissions\Authority;
