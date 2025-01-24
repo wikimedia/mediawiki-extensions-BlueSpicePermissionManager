@@ -70,5 +70,10 @@
 	"bs-permissionmanager-save": "저장",
 	"bs-permissionmanager-cancel": "취소",
 	"bs-permissionmanager-group-name": "그룹 이름",
-	"group-bs-user": "로그인한 모든 사용자"
+	"group-bs-user": "로그인한 모든 사용자",
+	"bs-permissionmanager-group-edit": "그룹 편집",
+	"bs-permissionmanager-group-create-label": "새 그룹 추가",
+	"bs-permission-manager-simple-matrix-global": "전역 권한",
+	"bs-permissionmanager-simple-notset": "부여되지 않음",
+	"bs-permissionmanager-search-namespaces": "이름공간 찾기..."
 }
