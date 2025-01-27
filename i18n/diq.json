@@ -10,5 +10,8 @@
 	"bs-permissionmanager-btn-save-label": "Qeyd ke",
 	"bs-permissionmanager-btn-save-in-progress-label": "Qeyd beno...",
 	"bs-permissionmanager-group-all": "pêro",
-	"bs-permissionmanager-namespace-picker": "Heruna nameyan"
+	"bs-permissionmanager-namespace-picker": "Heruna nameyan",
+	"bs-permissionmanager-group-create": "Vıraze",
+	"bs-permissionmanager-save": "Qeyd ke",
+	"bs-permissionmanager-cancel": "Bıtexelne"
 }

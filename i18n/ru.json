@@ -51,5 +51,6 @@
 	"bs-permissionmanager-preset-save-success": "Конфигурация сохранена!",
 	"bs-permissionmanager-pref-max-backups": "Лимит резервного копирования",
 	"bs-permissionmanager-affected-by-notset": "Не задано",
-	"bs-permissionmanager-namespace-picker": "Пространства имён"
+	"bs-permissionmanager-namespace-picker": "Пространства имён",
+	"bs-permissionmanager-group-create": "Создать"
 }
