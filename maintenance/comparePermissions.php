@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 
 $IP = dirname( dirname( dirname( __DIR__ ) ) );
@@ -115,7 +116,7 @@ class comparePermissions extends \Maintenance {
 	protected function displayResult( $result ) {
 		$format = $this->hasOption( 'html' ) ? 'html' : 'csv';
 		if ( $format === 'html' ) {
-			$toDisplay = \Html::openElement( 'table' );
+			$toDisplay = Html::openElement( 'table' );
 			$toDisplay .= $this->getHTMLHeader();
 		} else {
 			$toDisplay = $this->getCSVHeader();
@@ -126,7 +127,7 @@ class comparePermissions extends \Maintenance {
 				$this->getCSVRow( $permission, $data );
 		}
 		if ( $format === 'html' ) {
-			$toDisplay .= \Html::closeElement( 'table' );
+			$toDisplay .= Html::closeElement( 'table' );
 		}
 		print $toDisplay;
 	}
@@ -136,14 +137,14 @@ class comparePermissions extends \Maintenance {
 	 * @return string
 	 */
 	protected function getHTMLHeader() {
-		$header = \Html::openElement( 'thead' );
-		$header .= \Html::openElement( 'tr' );
-		$header .= \Html::element( 'td', [], "Permission" );
-		$header .= \Html::element( 'td', [], "Old groups" );
-		$header .= \Html::element( 'td', [], "New groups" );
-		$header .= \Html::element( 'td', [], "Roles" );
-		$header .= \Html::element( 'td', [], "In registry" );
-		$header .= \Html::closeElement( 'tr' );
+		$header = Html::openElement( 'thead' );
+		$header .= Html::openElement( 'tr' );
+		$header .= Html::element( 'td', [], "Permission" );
+		$header .= Html::element( 'td', [], "Old groups" );
+		$header .= Html::element( 'td', [], "New groups" );
+		$header .= Html::element( 'td', [], "Roles" );
+		$header .= Html::element( 'td', [], "In registry" );
+		$header .= Html::closeElement( 'tr' );
 
 		return $header;
 	}
@@ -169,13 +170,13 @@ class comparePermissions extends \Maintenance {
 	 * @return string
 	 */
 	protected function getHTMLRow( $permission, $data ) {
-		$row = \Html::openElement( 'tr' );
-		$row .= \Html::element( 'td', [], $permission );
-		$row .= \Html::element( 'td', [], implode( ',', $data['oldGroups'] ) );
-		$row .= \Html::element( 'td', [], implode( ',', $data['newGroups'] ) );
-		$row .= \Html::element( 'td', [], implode( ',', $data['roles'] ) );
-		$row .= \Html::element( 'td', [], $data['inRegistry'] );
-		$row .= \Html::closeElement( 'tr' );
+		$row = Html::openElement( 'tr' );
+		$row .= Html::element( 'td', [], $permission );
+		$row .= Html::element( 'td', [], implode( ',', $data['oldGroups'] ) );
+		$row .= Html::element( 'td', [], implode( ',', $data['newGroups'] ) );
+		$row .= Html::element( 'td', [], implode( ',', $data['roles'] ) );
+		$row .= Html::element( 'td', [], $data['inRegistry'] );
+		$row .= Html::closeElement( 'tr' );
 		return $row;
 	}
 
