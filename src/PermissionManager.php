@@ -12,9 +12,9 @@ use MediaWiki\Context\RequestContext;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
+use MediaWiki\SpecialPage\SpecialPage;
 use MWStake\MediaWiki\Component\DynamicConfig\DynamicConfigManager;
 use Psr\Log\LoggerInterface;
-use SpecialPage;
 use Throwable;
 use UnexpectedValueException;
 
