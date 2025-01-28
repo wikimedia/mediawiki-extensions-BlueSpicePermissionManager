@@ -3,7 +3,7 @@
 namespace BlueSpice\PermissionManager\Special;
 
 use BlueSpice\PermissionManager\PermissionManager;
-use Html;
+use MediaWiki\Html\Html;
 use MediaWiki\SpecialPage\SpecialPage;
 
 class SpecialPermissionManager extends SpecialPage {
