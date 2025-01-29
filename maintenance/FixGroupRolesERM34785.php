@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Json\FormatJson;
+
 require_once __DIR__ . '/../../../maintenance/Maintenance.php';
 
 class FixGroupRolesERM34785 extends Maintenance {
