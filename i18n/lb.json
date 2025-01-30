@@ -35,5 +35,9 @@
 	"bs-permissionmanager-cancel": "Ofbriechen",
 	"bs-permissionmanager-group-name": "Gruppennumm",
 	"bs-permissionmanager-group-type-implicit": "implizitt",
-	"bs-permissionmanager-namespace-picker": "Nummraim"
+	"bs-permissionmanager-namespace-picker": "Nummraim",
+	"group-anon": "Anonym Benotzer",
+	"bs-permissionmanager-group-disable-edit": "Änneren desaktivéieren",
+	"bs-permissionmanager-group-enable-edit": "Gruppen änneren",
+	"group-bs-user": "All ageloggt Benotzer"
 }

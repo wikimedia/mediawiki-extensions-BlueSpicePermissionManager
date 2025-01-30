@@ -76,5 +76,9 @@
 	"bs-permissionmanager-namespace-picker": "Espaces de noms",
 	"bs-permissionmanager-advanced-switch": "Mode avancé",
 	"bs-permission-manager-simple-matrix-global": "Droits globaux",
-	"bs-permissionmanager-simple-notset": "Non accordé"
+	"bs-permissionmanager-simple-notset": "Non accordé",
+	"group-anon": "Utilisateurs anonymes",
+	"bs-permissionmanager-group-disable-edit": "Désactiver les modifications",
+	"bs-permissionmanager-group-enable-edit": "Modifier les groupes",
+	"group-bs-user": "Tous les utilisateurs connectés"
 }

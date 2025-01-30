@@ -96,5 +96,7 @@
 	"group-editor": "Group label",
 	"group-reviewer": "Group label",
 	"bs-permissionmanager-group-header-implicit": "Label of the section showing implicit groups",
-	"bs-permissionmanager-group-header-groups": "Label of the section showing custom and built-in groups"
+	"bs-permissionmanager-group-header-groups": "Label of the section showing custom and built-in groups",
+	"bs-permissionmanager-group-disable-edit": "Button label to disable group editing mode",
+	"bs-permissionmanager-group-enable-edit": "Button label to enable group editing mode"
 }

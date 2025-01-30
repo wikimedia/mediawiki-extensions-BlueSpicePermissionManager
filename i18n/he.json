@@ -83,5 +83,11 @@
 	"bs-permissionmanager-simple-blocked": "נשללה - הוענקה באופן בלעדי {{PLURAL:$2| לקבוצה|לקבוצות}} $1",
 	"bs-permissionmanager-simple-blocked-sub": "נא לבחור את זה כדי להוסיף את הקבוצה הזאת לרשימת הקבוצות שהתפקיד הזה הוענק להן",
 	"bs-permissionmanager-simple-notset": "לא הוענקה",
-	"bs-permissionmanager-search-namespaces": "חיפוש מרחב שם..."
+	"bs-permissionmanager-search-namespaces": "חיפוש מרחב שם...",
+	"group-anon": "משתמשים אלמוניים",
+	"bs-permissionmanager-group-disable-edit": "השבתת עריכה",
+	"bs-permissionmanager-group-enable-edit": "עריכת קבוצות",
+	"group-bs-user": "כל המשתמשים שנכנסו לחשבון",
+	"bs-permission-manager-simple-matrix-namespace-sub": "הצגת תוכן ומרחבי שם מותאמים אישית",
+	"bs-permissionmanager-simple-setonwiki-sub": "יש לבחור את זה כדי להעניק את התפקיד הזה לקבוצה הזאת בלבד (ולחסום את כל הקבוצות האחרות)"
 }
