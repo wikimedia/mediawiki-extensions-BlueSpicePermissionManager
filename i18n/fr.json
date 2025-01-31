@@ -7,6 +7,7 @@
 			"Gomoko",
 			"Ltrlg",
 			"Pols12",
+			"SleaY",
 			"Thibaut120094",
 			"Verdy p",
 			"Windes",
@@ -96,5 +97,7 @@
 	"group-bs-user": "Tous les utilisateurs connectés",
 	"bs-permissionmanager-advanced-switch": "Mode avancé",
 	"bs-permission-manager-simple-matrix-global": "Droits globaux",
-	"bs-permissionmanager-simple-notset": "Non accordé"
+	"bs-permissionmanager-simple-notset": "Non accordé",
+	"bs-permissionmanager-groupmanager-invalid-name-length": "Le nom du groupe ne peut pas dépasser 255 caractères.",
+	"bs-permissionmanager-groupmanager-invalid-name-numeric": "Le nom du groupe doit comporter au moins un caractère."
 }
