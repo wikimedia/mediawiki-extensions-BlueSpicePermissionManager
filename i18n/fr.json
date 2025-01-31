@@ -7,6 +7,7 @@
 			"Gomoko",
 			"Ltrlg",
 			"Pols12",
+			"SleaY",
 			"Thibaut120094",
 			"Verdy p",
 			"Windes",
@@ -80,5 +81,7 @@
 	"group-anon": "Utilisateurs anonymes",
 	"bs-permissionmanager-group-disable-edit": "Désactiver les modifications",
 	"bs-permissionmanager-group-enable-edit": "Modifier les groupes",
-	"group-bs-user": "Tous les utilisateurs connectés"
+	"group-bs-user": "Tous les utilisateurs connectés",
+	"bs-permissionmanager-groupmanager-invalid-name-length": "Le nom du groupe ne peut pas dépasser 255 caractères.",
+	"bs-permissionmanager-groupmanager-invalid-name-numeric": "Le nom du groupe doit comporter au moins un caractère."
 }
