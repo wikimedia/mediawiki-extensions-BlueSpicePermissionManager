@@ -78,6 +78,8 @@
 	"bs-permissionmanager-pref-max-backups-help": "Nombre de sauvegardes pour les dernières modifications du gestionnaire des droits (Spécial:PermissionManager).",
 	"group-anon": "Utilisateurs anonymes",
 	"bs-permissionmanager-group-not-found": "Groupe non trouvé",
+	"bs-permissionmanager-groupmanager-invalid-name-length": "Le nom du groupe ne peut pas dépasser 255 caractères.",
+	"bs-permissionmanager-groupmanager-invalid-name-numeric": "Le nom du groupe doit comporter au moins un caractère.",
 	"bs-permissionmanager-group-already-exists": "Le groupe existe déjà",
 	"bs-permissionmanager-group-disable-edit": "Désactiver les modifications",
 	"bs-permissionmanager-group-enable-edit": "Modifier les groupes",
@@ -97,7 +99,5 @@
 	"group-bs-user": "Tous les utilisateurs connectés",
 	"bs-permissionmanager-advanced-switch": "Mode avancé",
 	"bs-permission-manager-simple-matrix-global": "Droits globaux",
-	"bs-permissionmanager-simple-notset": "Non accordé",
-	"bs-permissionmanager-groupmanager-invalid-name-length": "Le nom du groupe ne peut pas dépasser 255 caractères.",
-	"bs-permissionmanager-groupmanager-invalid-name-numeric": "Le nom du groupe doit comporter au moins un caractère."
+	"bs-permissionmanager-simple-notset": "Non accordé"
 }
