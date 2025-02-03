@@ -99,5 +99,9 @@
 	"bs-permission-manager-simple-matrix-global": "Droits globaux",
 	"bs-permissionmanager-simple-notset": "Non accordé",
 	"bs-permissionmanager-groupmanager-invalid-name-length": "Le nom du groupe ne peut pas dépasser 255 caractères.",
-	"bs-permissionmanager-groupmanager-invalid-name-numeric": "Le nom du groupe doit comporter au moins un caractère."
+	"bs-permissionmanager-groupmanager-invalid-name-numeric": "Le nom du groupe doit comporter au moins un caractère.",
+	"bs-permissionmanager-simple-inherited": "Accordé - hérité du groupe $1",
+	"bs-permissionmanager-simple-explicit": "Accordé explicitement",
+	"bs-permissionmanager-simple-setonwiki": "Accordé - hérité des autorisations globales",
+	"bs-permissionmanager-search-namespaces": "Recherche d'un espace de noms..."
 }
