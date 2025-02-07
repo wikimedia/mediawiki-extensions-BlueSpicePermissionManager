@@ -3,7 +3,7 @@
 namespace BlueSpice\PermissionManager\Maintenance;
 
 use Exception;
-use LoggedUpdateMaintenance;
+use MediaWiki\Maintenance\LoggedUpdateMaintenance;
 use MediaWiki\MediaWikiServices;
 use MWStake\MediaWiki\Component\DynamicConfig\DynamicConfigManager;
 
