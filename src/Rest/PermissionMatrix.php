@@ -9,7 +9,7 @@ use MediaWiki\Context\RequestContext;
 use MediaWiki\Language\Language;
 use MediaWiki\Rest\HttpException;
 use MediaWiki\Rest\SimpleHandler;
-use NamespaceInfo;
+use MediaWiki\Title\NamespaceInfo;
 
 class PermissionMatrix extends SimpleHandler {
 
