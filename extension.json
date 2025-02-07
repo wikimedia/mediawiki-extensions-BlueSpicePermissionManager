@@ -9,7 +9,8 @@
 	"requires": {
 		"MediaWiki": ">= 1.39.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 4.3"
+			"BlueSpiceFoundation": ">= 4.3",
+			"OOJSPlus": "*"
 		}
 	},
 	"attributes": {
@@ -84,13 +85,17 @@
 			],
 			"dependencies": [
 				"ext.bluespice",
-				"oojs-ui"
+				"oojs-ui",
+				"ext.oOJSPlus.managerPanel"
 			]
 		},
 		"ext.bluespice.permissionManager.groupManager": {
 			"scripts": [
 				"widget/GroupManagerItem.js",
+				"widget/GroupManagerSectionHeader.js",
+				"dialog/GroupNameDialog.js",
 				"dialog/EditGroup.js",
+				"dialog/AddGroup.js",
 				"panel/GroupManager.js"
 			],
 			"dependencies": [
@@ -104,8 +109,6 @@
 				"stylesheets/groupManager.less"
 			],
 			"messages": [
-				"bs-permissionmanager-group-disable-edit",
-				"bs-permissionmanager-group-enable-edit",
 				"bs-permissionmanager-group-remove",
 				"bs-permissionmanager-group-edit",
 				"bs-permissionmanager-error",
@@ -118,7 +121,10 @@
 				"bs-permissionmanager-group-name",
 				"bs-permissionmanager-group-type-custom",
 				"bs-permissionmanager-group-type-builtin",
-				"bs-permissionmanager-group-type-implicit"
+				"bs-permissionmanager-group-type-implicit",
+				"bs-permissionmanager-group-manager-heading",
+				"bs-permissionmanager-group-header-implicit",
+				"bs-permissionmanager-group-header-groups"
 			]
 		},
 		"ext.bluespice.permissionManager.customPresetManager": {
@@ -168,7 +174,8 @@
 				"bs-permissionmanager-simple-blocked",
 				"bs-permissionmanager-simple-blocked-sub",
 				"bs-permissionmanager-simple-notset",
-				"bs-permissionmanager-search-namespaces"
+				"bs-permissionmanager-search-namespaces",
+				"bs-permission-manager-simple-matrix-group"
 			],
 			"dependencies": [
 				"ext.bluespice",
@@ -222,8 +229,8 @@
 			"services": [ "BSUtilityFactory" ]
 		},
 		{
-			"method": "PUT",
-			"path": "/bs-permission-manager/v1/groups/{name}",
+			"method": "POST",
+			"path": "/bs-permission-manager/v1/groups/create/{name}",
 			"class": "BlueSpice\\PermissionManager\\Rest\\AddGroup",
 			"services": [ "BlueSpice.PermissionManager.GroupManager" ]
 		},
@@ -234,8 +241,8 @@
 			"services": [ "BlueSpice.PermissionManager.GroupManager" ]
 		},
 		{
-			"method": "DELETE",
-			"path": "/bs-permission-manager/v1/groups/{name}",
+			"method": "POST",
+			"path": "/bs-permission-manager/v1/groups/delete/{name}",
 			"class": "BlueSpice\\PermissionManager\\Rest\\DeleteGroup",
 			"services": [ "BlueSpice.PermissionManager.GroupManager" ]
 		},

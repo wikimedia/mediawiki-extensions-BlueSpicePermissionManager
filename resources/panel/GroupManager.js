@@ -10,13 +10,13 @@ bs.permissionManager.panel.GroupManager = function( cfg ) {
 
 	this.$element.addClass( 'bs-permission-manager-group-manager' );
 
-	this.isInEditMode = false;
 	this.groupWidgets = [];
 };
 
 OO.inheritClass( bs.permissionManager.panel.GroupManager, OO.ui.PanelLayout );
 
 bs.permissionManager.panel.GroupManager.prototype.init = async function() {
+	this.renderHeader();
 	await this.getGroups();
 	this.groupPanel = new OO.ui.ButtonSelectWidget( {
 		items: [],
@@ -25,9 +25,6 @@ bs.permissionManager.panel.GroupManager.prototype.init = async function() {
 	this.groupPanel.connect( this, { select: 'groupSelected' } );
 	this.$element.append( this.groupPanel.$element );
 	this.renderGroups();
-	if ( this.editable ) {
-		this.addEditOption();
-	}
 };
 
 bs.permissionManager.panel.GroupManager.prototype.getGroups = async function() {
@@ -61,6 +58,28 @@ bs.permissionManager.panel.GroupManager.prototype.doGetGroups = async function()
 	} );
 };
 
+bs.permissionManager.panel.GroupManager.prototype.renderHeader = function() {
+	this.$header = $( '<div>' ).addClass( 'group-manager-header' );
+	var label = new OO.ui.LabelWidget( {
+		label: mw.msg( 'bs-permissionmanager-group-manager-heading' ),
+	} );
+	this.$header.append( label.$element );
+	if ( this.editable ) {
+		this.addButton = new OO.ui.ButtonWidget( {
+			icon: 'add',
+			title: mw.msg( 'bs-permissionmanager-group-create' ),
+			flags: [ 'progressive' ],
+			framed: false
+		} );
+		this.addButton.connect( this, { click: 'addGroup' } );
+		this.$header.append(
+			$( '<div>' ).addClass( 'group-manager-header-actions' ).append( this.addButton.$element )
+		);
+	}
+
+	this.$element.append( this.$header );
+};
+
 bs.permissionManager.panel.GroupManager.prototype.selectFirst = function() {
 	this.groupPanel.selectItem( this.groupPanel.findFirstSelectableItem() );
 };
@@ -71,63 +90,30 @@ bs.permissionManager.panel.GroupManager.prototype.renderGroups = function() {
 	let groups;
 	groups = this.getSortedGroups( this.groups );
 
+	let currentGroup = null;
+	let menuItems = [];
 	for ( var i = 0; i < groups.length; i++ ) {
+		if ( currentGroup === null ) {
+			menuItems.push( new bs.permissionManager.widget.GroupManagerSectionHeader( {
+				label: mw.msg( 'bs-permissionmanager-group-header-implicit' )
+			} ) );
+			currentGroup = 'implicit';
+		}
 		var group = groups[i];
+		if ( group.group_type !== 'implicit' && currentGroup === 'implicit' ) {
+			menuItems.push( new bs.permissionManager.widget.GroupManagerSectionHeader( {
+				label: mw.msg( 'bs-permissionmanager-group-header-groups' )
+			} ) );
+			currentGroup = group.group_type;
+		};
 		var groupItem = new bs.permissionManager.widget.GroupManagerItem( $.extend(
-			group, { editable: this.editable, isInEditMode: this.isInEditMode }
+			group, { editable: this.editable  }
 		) );
 		groupItem.connect( this, { remove: 'removeGroup', edit: 'editGroup' } );
 		this.groupWidgets[group.group_name] = groupItem;
+		menuItems.push( groupItem );
 	}
-	this.groupPanel.addItems( Object.values( this.groupWidgets ) );
-};
-
-bs.permissionManager.panel.GroupManager.prototype.addEditOption = function() {
-	this.enableEditButton = new OO.ui.ButtonWidget( {
-		label: mw.msg( 'bs-permissionmanager-group-enable-edit' ),
-		icon: 'edit',
-		framed: false,
-		flags: [ 'progressive' ],
-		classes: [ 'group-toggle-edit-mode-button' ]
-	} );
-	this.enableEditButton.connect( this, { click: 'toggleEditMode' } );
-
-	this.newGroupInput = new OO.ui.TextInputWidget( { required: true } );
-	this.newGroupInput.connect( this, { change: 'onNewGroupInputChange'	} );
-	this.newGroupConfirm = new OO.ui.ButtonWidget( {
-		label: mw.msg( 'bs-permissionmanager-group-create' ),
-		icon: 'add',
-		flags: [ 'progressive' ]
-	} );
-	this.newGroupConfirm.connect( this, { click: 'createGroup' } );
-
-	this.newGroupLayout = new OO.ui.ActionFieldLayout( this.newGroupInput, this.newGroupConfirm, {
-		align: 'top',
-		label: mw.msg( 'bs-permissionmanager-group-create-label' ),
-		classes: [ 'group-create-layout' ]
-	} );
-	this.$element.append( this.newGroupLayout.$element, this.enableEditButton.$element );
-};
-
-bs.permissionManager.panel.GroupManager.prototype.toggleEditMode = function() {
-	if ( !this.editable ) {
-		return;
-	}
-	this.isInEditMode = !this.isInEditMode;
-	this.enableEditButton.setLabel( mw.msg(
-		this.isInEditMode ? 'bs-permissionmanager-group-disable-edit' : 'bs-permissionmanager-group-enable-edit'
-	) );
-	this.enableEditButton.setIcon( this.isInEditMode ? 'cancel' : 'edit' );
-	this.enableEditButton.setFlags( this.isInEditMode ? [ 'destructive' ] : [ 'progressive', 'primary' ] );
-	// This seems to be a bug in OOJS, destructive class never gets removed
-	this.enableEditButton.$element.toggleClass( 'oo-ui-flaggedElement-destructive', this.isInEditMode );
-	this.$element.toggleClass( 'edit-mode', this.isInEditMode );
-	for ( var key in this.groupWidgets ) {
-		if ( !this.groupWidgets.hasOwnProperty( key ) ) {
-			continue;
-		}
-		this.groupWidgets[key].setEditMode( this.isInEditMode );
-	}
+	this.groupPanel.addItems( menuItems );
 };
 
 bs.permissionManager.panel.GroupManager.prototype.getGroupLabel = function( group ) {
@@ -155,26 +141,32 @@ bs.permissionManager.panel.GroupManager.prototype.showError = function( error ) 
 };
 
 bs.permissionManager.panel.GroupManager.prototype.getSortedGroups = function( groups ) {
-	// Sort groups by `group_type`, in order `implicit`, `custom` and the others
+	// Order: implicit first, custom, then the rest. Alphabetically sorted within each group
 	return groups.sort( function( a, b ) {
-		if ( a.group_type === 'implicit' && b.group_type !== 'implicit' ) {
+		const order = [ 'implicit', 'extension-minimal', 'core-minimal', 'custom' ];
+		const aIndex = order.indexOf( a.group_type );
+		const bIndex = order.indexOf( b.group_type );
+
+		if ( aIndex !== -1 && bIndex !== -1 ) {
+			if ( aIndex !== bIndex ) {
+				return aIndex - bIndex;
+			}
+			// If group_type is the same, sort by group_name
+			return a.group_name.localeCompare( b.group_name );
+		}
+		if ( aIndex !== -1 ) {
 			return -1;
 		}
-		if ( a.group_type !== 'implicit' && b.group_type === 'implicit' ) {
+		if ( bIndex !== -1 ) {
 			return 1;
 		}
-		if ( a.group_type === 'custom' && b.group_type !== 'custom' ) {
-			return -1;
-		}
-		if ( a.group_type !== 'custom' && b.group_type === 'custom' ) {
-			return 1;
-		}
-		return 0;
+		// If group_type is not in the order array, sort by group_name
+		return a.group_name.localeCompare( b.group_name );
 	} );
 };
 
 bs.permissionManager.panel.GroupManager.prototype.removeGroup = function( groupName ) {
-	OO.ui.confirm( mw.msg( 'bs-permissionmanager-group-remove-confirm', groupName ) )
+	OO.ui.confirm( mw.msg( 'bs-permissionmanager-group-remove-confirm', groupName ), { size: 'medium' } )
 		.done( async function( confirmed ) {
 			if ( !confirmed ) {
 				return;
@@ -188,8 +180,8 @@ bs.permissionManager.panel.GroupManager.prototype.removeGroup = function( groupN
 bs.permissionManager.panel.GroupManager.prototype.doRemoveGroup = async function( groupName ) {
 	return new Promise( ( resolve, reject ) => {
 		$.ajax( {
-			url: mw.util.wikiScript( 'rest' ) + '/bs-permission-manager/v1/groups/' + groupName,
-			type: 'DELETE',
+			url: mw.util.wikiScript( 'rest' ) + '/bs-permission-manager/v1/groups/delete/' + groupName,
+			type: 'POST',
 			success: function() {
 				resolve();
 			},
@@ -200,10 +192,18 @@ bs.permissionManager.panel.GroupManager.prototype.doRemoveGroup = async function
 	} );
 };
 
+bs.permissionManager.panel.GroupManager.prototype.addGroup = function() {
+	var dialog = new bs.permissionManager.dialog.AddGroup( {} );
+	this.openGroupNameDialog( dialog );
+};
+
 bs.permissionManager.panel.GroupManager.prototype.editGroup = function( groupName ) {
-	// Open dialog
-	var dialog = new bs.permissionManager.dialog.EditGroup( { group: groupName } ),
-		windowManager = new OO.ui.WindowManager();
+	var dialog = new bs.permissionManager.dialog.EditGroup( { group: groupName } );
+	this.openGroupNameDialog( dialog );
+};
+
+bs.permissionManager.panel.GroupManager.prototype.openGroupNameDialog = function( dialog ) {
+	const windowManager = new OO.ui.WindowManager();
 	$( 'body' ).append( windowManager.$element );
 	windowManager.addWindows( [ dialog ] );
 	windowManager.openWindow( dialog ).closed.then( async function( data ) {
@@ -211,51 +211,9 @@ bs.permissionManager.panel.GroupManager.prototype.editGroup = function( groupNam
 			await this.getGroups();
 			this.renderGroups();
 			this.groupPanel.selectItemByData( data.newGroup );
+			windowManager.destroy();
 		}
 	}.bind( this ) );
-};
-
-bs.permissionManager.panel.GroupManager.prototype.createGroup = function() {
-	this.newGroupInput.setDisabled( true );
-	this.newGroupConfirm.setDisabled( true );
-	this.newGroupInput.getValidity().done( async function() {
-		const value = this.newGroupInput.getValue();
-		try {
-			await this.doCreateGroup( value );
-			await this.getGroups();
-			this.renderGroups();
-			this.newGroupInput.setValue( '' );
-			this.groupPanel.selectItemByData( value );
-		} catch ( e ) {
-			this.newGroupLayout.setErrors( [ e ] );
-		}
-	}.bind( this ) ).always( function() {
-		this.newGroupInput.setDisabled( false );
-		this.newGroupConfirm.setDisabled( false );
-	}.bind( this ) );
-};
-
-bs.permissionManager.panel.GroupManager.prototype.doCreateGroup = async function( groupName ) {
-	return new Promise( ( resolve, reject ) => {
-		$.ajax( {
-			url: mw.util.wikiScript( 'rest' ) + '/bs-permission-manager/v1/groups/' + groupName,
-			type: 'PUT',
-			success: function() {
-				resolve();
-			},
-			error: function( xhr ) {
-				if ( xhr.hasOwnProperty( 'responseJSON' ) && xhr.responseJSON.hasOwnProperty( 'message' ) ) {
-					reject( xhr.responseJSON.message );
-				}
-				reject();
-			}
-		} );
-	} );
-};
-
-bs.permissionManager.panel.GroupManager.prototype.onNewGroupInputChange = function( value ) {
-	// Clear errors after input change
-	this.newGroupLayout.setErrors( [] );
 };
 
 bs.permissionManager.panel.GroupManager.prototype.setDirty = function( group, dirty ) {

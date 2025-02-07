@@ -32,7 +32,7 @@ bs.permissionManager.panel.SimpleMatrix.prototype.setUsableRoles = function() {
 
 bs.permissionManager.panel.SimpleMatrix.prototype.setUsableNamespaces = function() {
 	this.usableNamespaces = this.manager.permissionRawData.namespaces.filter( ( ns ) => {
-		return ( ns.content || ns.custom ) && ns.talk === false;
+		return ns.content && ns.talk === false;
 	} );
 };
 
@@ -79,11 +79,20 @@ bs.permissionManager.panel.SimpleMatrix.prototype.makeView = function( group, da
 		padded: false
 	} );
 	view.$element.addClass( 'bs-permission-manager-simple-matrix-view' );
+	view.$element.append( this.getGroupHeader( group ).$element );
 	this.makeGlobal( data );
 	this.makeNamespaces( data );
 
 	view.$element.append( this.global.$element, this.namespaces.$element );
 	return view;
+};
+
+bs.permissionManager.panel.SimpleMatrix.prototype.getGroupHeader = function( group ) {
+	var groupLabel = this.manager.groupSelector.getGroupLabel( group );
+	return new OO.ui.LabelWidget( {
+		label: mw.message( 'bs-permission-manager-simple-matrix-group', groupLabel ).text(),
+		classes: [ 'bs-permission-manager-simple-matrix-group-header' ]
+	} );
 };
 
 bs.permissionManager.panel.SimpleMatrix.prototype.makeGlobal = function( data ) {
@@ -130,7 +139,11 @@ bs.permissionManager.panel.SimpleMatrix.prototype.makeNamespaces = function( dat
 		label: mw.message( 'bs-permission-manager-simple-matrix-namespace-sub' ).text(),
 		classes: [ 'bs-permission-manager-simple-matrix-subtitle' ]
 	} );
-	this.namespaces.$element.append( heading.$element, subtitle.$element );
+	var hint = new OO.ui.LabelWidget( {
+		label: mw.message( 'bs-permissionmanager-simple-setonwiki-sub' ).text(),
+		classes: [ 'bs-permission-manager-simple-matrix-subtitle', 'hint' ]
+	} );
+	this.namespaces.$element.append( heading.$element, subtitle.$element, hint.$element );
 	if ( this.usableNamespaces.length > 5 ) {
 		this.makeNamespaceSearch();
 	}

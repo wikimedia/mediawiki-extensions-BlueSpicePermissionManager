@@ -14,6 +14,7 @@ bs.permissionManager.widget.PresetSelect = function ( cfg ) {
 	this.errorWidget = null;
 	this.dirty = false;
 
+	this.makeToolbar();
 	this.initialActive = false;
 	for ( var presetId in this.presets ) {
 		if ( !this.presets.hasOwnProperty( presetId ) ) {
@@ -31,8 +32,7 @@ bs.permissionManager.widget.PresetSelect = function ( cfg ) {
 		}
 	}
 
-	this.makeButtons();
-	this.$customPresetPanel.insertBefore( this.buttonLayout.$element );
+	this.$element.append( this.$customPresetPanel );
 
 	this.presetChange( this.initialActive, true );
 };
@@ -62,43 +62,29 @@ bs.permissionManager.widget.PresetSelect.prototype.presetChange = function( pres
 	this.setActive( presetId );
 };
 
-bs.permissionManager.widget.PresetSelect.prototype.makeButtons = function() {
-	this.saveButton = new OO.ui.ButtonWidget( {
-		label: mw.message( 'bs-permissionmanager-btn-save-label' ).text(),
-		flags: [ 'primary', 'progressive' ],
-		disabled: true
+bs.permissionManager.widget.PresetSelect.prototype.makeToolbar = function() {
+	this.toolbar = new OOJSPlus.ui.toolbar.ManagerToolbar( {
+		saveable: true,
+		cancelable: true
 	} );
-
-	this.resetButton = new OO.ui.ButtonWidget( {
-		label: mw.message( 'bs-premissionmanager-reset-button-label' ).text(),
-		disabled: true
+	this.toolbar.connect( this, {
+		save: 'onSave',
+		cancel: 'onReset',
+		initialize: function() {
+			this.toolbar.setAbilities( { cancel: false, save: false } );
+		}
 	} );
+	this.$element.append( this.toolbar.$element );
+	this.toolbar.setup();
+	this.toolbar.initialize();
 
-	this.saveButton.connect( this, {
-		click: 'onSave'
-	} );
-
-	this.resetButton.connect( this, {
-		click: 'onReset'
-	} );
-
-	this.buttonLayout = new OO.ui.HorizontalLayout( {
-		items: [
-			this.saveButton,
-			this.resetButton
-		],
-		classes: [ 'button-layout' ]
-	} );
-
-	this.$element.append( this.buttonLayout.$element );
-	this.resetButton.$element.hide();
 };
 
 bs.permissionManager.widget.PresetSelect.prototype.setButtonState = function ( dirty ) {
 	dirty = dirty || false;
-	this.saveButton.setDisabled( !(dirty || this.dirty ) );
+	this.toolbar.setAbilities( { save: dirty || this.dirty } );
 	if ( this.active === 'custom' ) {
-		this.resetButton.setDisabled( !dirty );
+		this.toolbar.setAbilities( { cancel: dirty } );
 	}
 };
 
@@ -113,10 +99,7 @@ bs.permissionManager.widget.PresetSelect.prototype.onSave = function() {
 	mainPromise = Promise.all( promises );
 	mainPromise.then(
 		function() {
-			this.showSuccess();
-			this.initialActive = this.active;
-			this.dirty = false;
-			this.setButtonState();
+			window.location.reload();
 		}.bind( this ),
 		function() {
 			this.reportError();
@@ -140,10 +123,8 @@ bs.permissionManager.widget.PresetSelect.prototype.setActive = function( presetI
 
 	if ( presetId === 'custom' ) {
 		this.showCustom();
-		this.resetButton.$element.show();
 	} else {
 		this.hideCustom();
-		this.resetButton.$element.hide();
 	}
 };
 

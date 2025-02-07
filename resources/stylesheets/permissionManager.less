@@ -53,6 +53,13 @@
   .bs-permission-manager-simple-matrix {
     padding-top: 0;
     .bs-permission-manager-simple-matrix-view {
+      .bs-permission-manager-simple-matrix-group-header {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #cecece;
+        width: 100%;
+        padding-bottom: 10px;
+      }
       .bs-permission-manager-simple-matrix-heading {
         font-weight: bold;
         font-size: 1.2em;
@@ -61,6 +68,10 @@
       .bs-permission-manager-simple-matrix-subtitle {
         margin-bottom: 10px;
         font-size: 0.9em;
+        &.hint {
+          font-weight: bold;
+          display: block;
+        }
       }
       .bs-permission-manager-simple-matrix-ns-search {
         margin-bottom: 10px;
@@ -78,7 +89,7 @@
           color: white;
         }
         &.role-denied {
-          background-color: #fd6363;
+          background-color: #d02626;
           color: white;
         }
       }
@@ -93,7 +104,7 @@
           display: block;
           padding: 10px;
           margin-bottom: 10px;
-          background-color: #cecece;
+          border: 1px solid #cecece;
           >.oo-ui-labelWidget {
             font-size: 1.1em;
             font-weight: bold;
