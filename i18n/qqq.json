@@ -108,5 +108,11 @@
 	"bs-permissionmanager-simple-blocked": "Notice when role is blocked.\n$1 - name of the group or groups having the role\n$2 - count of groups having the role",
 	"bs-permissionmanager-simple-blocked-sub": "Additional notice when role is blocked.\n$1 - name of the group or groups having the role\n$2 - count of groups having the role",
 	"bs-permissionmanager-simple-notset": "Notice when role is not set",
-	"bs-permissionmanager-search-namespaces": "Search field placeholder"
+	"bs-permissionmanager-search-namespaces": "Search field placeholder",
+	"bs-permission-manager-simple-matrix-group": "Panel heading letting user know which group's permissions are being edited.\n$1- group name",
+	"bs-permissionmanager-group-manager-heading": "Heading for group manager panel",
+	"group-editor": "Group label",
+	"group-reviewer": "Group label",
+	"bs-permissionmanager-group-header-implicit": "Label of the section showing implicit groups",
+	"bs-permissionmanager-group-header-groups": "Label of the section showing custom and built-in groups"
 }
