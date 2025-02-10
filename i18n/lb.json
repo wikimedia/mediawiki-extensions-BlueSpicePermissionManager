@@ -31,7 +31,7 @@
 	"bs-permissionmanager-preset-public-label": "Ëffentlech Wiki",
 	"bs-permissionmanager-preset-save-success": "Konfiguratioun gespäichert!",
 	"bs-permissionmanager-namespace-picker": "Nummraim",
-	"group-anon": "Anonym Benotzer",
+	"group-anon": "Net-confirméiert Benotzer",
 	"bs-permissionmanager-group-not-found": "Grupp net fonnt",
 	"bs-permissionmanager-groupmanager-invalid-name": "Am Gruppennumm {{PLURAL:$1|kënnt en ongültegt Zeeche|kommen ongülteg Zeeche}} vir: $2",
 	"bs-permissionmanager-group-already-exists": "D'Grupp existéiert schonn",
@@ -47,5 +47,9 @@
 	"bs-permissionmanager-cancel": "Ofbriechen",
 	"bs-permissionmanager-group-name": "Gruppennumm",
 	"bs-permissionmanager-group-type-implicit": "implizitt",
-	"group-bs-user": "All ageloggt Benotzer"
+	"group-bs-user": "Confirméiert Benotzer",
+	"bs-permission-manager-simple-matrix-group": "Astellunge fir d'Grupp: $1",
+	"bs-permissionmanager-group-manager-heading": "Gruppen",
+	"bs-permissionmanager-group-header-implicit": "Automatesch Gruppen",
+	"bs-permissionmanager-group-header-groups": "Gruppen"
 }

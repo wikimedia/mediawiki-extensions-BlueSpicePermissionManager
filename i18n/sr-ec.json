@@ -31,5 +31,10 @@
 	"bs-permissionmanager-preset-save-success": "Подешавања су сачувана!",
 	"bs-permissionmanager-namespace-picker": "Именски простори",
 	"bs-permissionmanager-group-create": "Направи",
-	"bs-permissionmanager-cancel": "Откажи"
+	"bs-permissionmanager-cancel": "Откажи",
+	"group-anon": "Неаутентификовани корисници",
+	"group-bs-user": "Аутентификовани корисници",
+	"group-editor": "Уредници",
+	"bs-permissionmanager-group-header-implicit": "Аутоматске групе",
+	"bs-permissionmanager-group-header-groups": "Групе"
 }
