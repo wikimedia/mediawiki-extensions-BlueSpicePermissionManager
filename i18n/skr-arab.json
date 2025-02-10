@@ -14,5 +14,8 @@
 	"bs-premissionmanager-reset-button-label": "ولدا ٹھیک کرو",
 	"bs-permissionmanager-save": "بچاؤ",
 	"bs-permissionmanager-cancel": "منسوخ",
-	"bs-permissionmanager-group-type-implicit": "پوشیدہ"
+	"bs-permissionmanager-group-type-implicit": "پوشیدہ",
+	"bs-permissionmanager-group-manager-heading": "گروپس",
+	"group-editor": "ایڈیٹر",
+	"bs-permissionmanager-group-header-groups": "گروپس"
 }
