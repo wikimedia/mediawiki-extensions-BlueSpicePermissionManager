@@ -65,8 +65,6 @@
 	"bs-permissionmanager-groupmanager-invalid-name-length": "Le nom du groupe ne peut pas dépasser 255 caractères.",
 	"bs-permissionmanager-groupmanager-invalid-name-numeric": "Le nom du groupe doit comporter au moins un caractère.",
 	"bs-permissionmanager-group-already-exists": "Le groupe existe déjà",
-	"bs-permissionmanager-group-disable-edit": "Désactiver les modifications",
-	"bs-permissionmanager-group-enable-edit": "Modifier les groupes",
 	"bs-permissionmanager-group-remove": "Supprimer le groupe",
 	"bs-permissionmanager-group-edit": "Modifier le groupe",
 	"bs-permissionmanager-error": "Une erreur s’est produite",

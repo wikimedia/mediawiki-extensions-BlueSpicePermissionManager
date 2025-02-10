@@ -62,8 +62,6 @@
 	"bs-permissionmanager-groupmanager-invalid-name-length": "De naam van de groep kan niet langer zijn dan 255 tekens.",
 	"bs-permissionmanager-groupmanager-invalid-name-numeric": "De naam van de groep moet ten minste één teken bevatten.",
 	"bs-permissionmanager-group-already-exists": "De groep bestaat al",
-	"bs-permissionmanager-group-disable-edit": "Bewerken uitschakelen",
-	"bs-permissionmanager-group-enable-edit": "Groepen bewerken",
 	"bs-permissionmanager-group-remove": "Groep verwijderen",
 	"bs-permissionmanager-group-edit": "Groep bewerken",
 	"bs-permissionmanager-error": "Er is een fout opgetreden",

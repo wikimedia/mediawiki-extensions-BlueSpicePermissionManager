@@ -59,8 +59,6 @@
 	"bs-permissionmanager-groupmanager-invalid-name-length": "שם הקבוצה לא יכול להיות ארוך מ־255 תווים.",
 	"bs-permissionmanager-groupmanager-invalid-name-numeric": "שם הקבוצה צריך להכיל תו אחד לפחות.",
 	"bs-permissionmanager-group-already-exists": "הקבוצה כבר קיימת",
-	"bs-permissionmanager-group-disable-edit": "השבתת עריכה",
-	"bs-permissionmanager-group-enable-edit": "עריכת קבוצות",
 	"bs-permissionmanager-group-remove": "הסרת הקבוצה",
 	"bs-permissionmanager-group-edit": "עריכת קבוצה",
 	"bs-permissionmanager-error": "אירעה שגיאה",
