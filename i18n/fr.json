@@ -99,9 +99,9 @@
 	"group-bs-user": "Tous les utilisateurs connectés",
 	"bs-permissionmanager-advanced-switch": "Mode avancé",
 	"bs-permission-manager-simple-matrix-global": "Droits globaux",
-	"bs-permissionmanager-simple-notset": "Non accordé",
 	"bs-permissionmanager-simple-inherited": "Accordé - hérité du groupe $1",
 	"bs-permissionmanager-simple-explicit": "Accordé explicitement",
 	"bs-permissionmanager-simple-setonwiki": "Accordé - hérité des autorisations globales",
+	"bs-permissionmanager-simple-notset": "Non accordé",
 	"bs-permissionmanager-search-namespaces": "Recherche d'un espace de noms..."
 }
