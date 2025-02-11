@@ -56,15 +56,12 @@
 	"bs-permissionmanager-preset-save-error": "De instellingen kunnen niet worden opgeslagen. De wijzigingen zijn niet doorgevoerd.",
 	"bs-permissionmanager-preset-save-success": "De instellingen zijn opgeslagen.",
 	"bs-permissionmanager-pref-max-backups-help": "Aantal back-ups voor de laatste wijzigingen op de pagina rechtenbeheer (Special:PermissionManager).",
-	"bs-permissionmanager-namespace-picker": "Naamruimten",
 	"group-anon": "Anonieme gebruikers",
 	"bs-permissionmanager-group-not-found": "Groep niet gevonden",
 	"bs-permissionmanager-groupmanager-invalid-name": "De naam van de groep bevat {{PLURAL:$1|een ongeldig teken|ongeldige tekens}}: $2",
 	"bs-permissionmanager-groupmanager-invalid-name-length": "De naam van de groep kan niet langer zijn dan 255 tekens.",
 	"bs-permissionmanager-groupmanager-invalid-name-numeric": "De naam van de groep moet ten minste één teken bevatten.",
 	"bs-permissionmanager-group-already-exists": "De groep bestaat al",
-	"bs-permissionmanager-group-disable-edit": "Bewerken uitschakelen",
-	"bs-permissionmanager-group-enable-edit": "Groepen bewerken",
 	"bs-permissionmanager-group-remove": "Groep verwijderen",
 	"bs-permissionmanager-group-edit": "Groep bewerken",
 	"bs-permissionmanager-error": "Er is een fout opgetreden",
@@ -78,6 +75,7 @@
 	"bs-permissionmanager-group-type-custom": "aangepast",
 	"bs-permissionmanager-group-type-builtin": "ingebouwd",
 	"bs-permissionmanager-group-type-implicit": "impliciet",
+	"bs-permissionmanager-namespace-picker": "Naamruimten",
 	"group-bs-user": "Alle aangemelde gebruikers",
 	"bs-permissionmanager-advanced-switch": "Geavanceerde modus",
 	"bs-permissionmanager-advanced-switch-confirm": "Er zijn niet-opgeslagen wijzigingen. Als u van modus verandert, gaan die wijzigingen verloren!",
@@ -92,5 +90,7 @@
 	"bs-permissionmanager-simple-blocked": "Geweigerd (uitsluitend toegekend aan de groep{{PLURAL:$2||en}} $1)",
 	"bs-permissionmanager-simple-blocked-sub": "Selecteer dit om deze groep toe te voegen aan de lijst met groepen waaraan deze rol is toegekend",
 	"bs-permissionmanager-simple-notset": "Niet toegekend",
-	"bs-permissionmanager-search-namespaces": "Een naamruimte zoeken…"
+	"bs-permissionmanager-search-namespaces": "Een naamruimte zoeken…",
+	"bs-permissionmanager-group-disable-edit": "Bewerken uitschakelen",
+	"bs-permissionmanager-group-enable-edit": "Groepen bewerken"
 }
