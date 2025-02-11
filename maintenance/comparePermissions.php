@@ -1,13 +1,14 @@
 <?php
 
 use MediaWiki\Html\Html;
+use MediaWiki\Maintenance\Maintenance;
 use MediaWiki\MediaWikiServices;
 
 $IP = dirname( dirname( dirname( __DIR__ ) ) );
 
 require_once "$IP/maintenance/Maintenance.php";
 
-class comparePermissions extends \Maintenance {
+class comparePermissions extends Maintenance {
 	public function __construct() {
 		parent::__construct();
 
