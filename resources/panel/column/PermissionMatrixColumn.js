@@ -94,7 +94,10 @@ bs.permissionManager.panel.column.PermissionMatrixColumn.prototype.decorateCell 
 	if ( meta.assignment === 'explicit' || ( meta.assignment !== false && !blocked ) ) {
 		$cell.addClass( 'bs-permission-manager-assigned' );
 	} else if ( blocked ) {
-		if ( meta.dependencies ) {
+		if ( meta.assignment !== 'explicit' && meta.blocking.length ) {
+			$cell.attr( 'title', mw.msg( 'bs-permissionmanager-affected-by-explicit', meta.blocking.join( ', ' ) ) );
+			$cell.addClass( 'bs-permission-manager-blocked' );
+		} else if ( meta.dependencies ) {
 			var dependencyLines = [];
 			for ( var key in meta.dependencies ) {
 				dependencyLines.push( mw.msg( 'bs-permissionmanager-affected-by-dependency-single', key, meta.dependencies[key].join( ', ' ) ) );
@@ -105,9 +108,6 @@ bs.permissionManager.panel.column.PermissionMatrixColumn.prototype.decorateCell 
 				dependencyLines.join( '\n' ),
 				Object.keys( meta.dependencies ).length
 			);
-			$cell.addClass( 'bs-permission-manager-blocked' );
-		} else if ( meta.assignment !== 'explicit' ) {
-			$cell.attr( 'title', mw.msg( 'bs-permissionmanager-affected-by-explicit', meta.blocking.join( ', ' ) ) );
 			$cell.addClass( 'bs-permission-manager-blocked' );
 		}
 	}
