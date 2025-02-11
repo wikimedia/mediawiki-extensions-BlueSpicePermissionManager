@@ -226,9 +226,8 @@ bs.permissionManager.panel.PermissionManager.prototype.getBlockingDependencies =
 		}
 		var roles = dependencies[permission];
 		for ( var i = 0; i < roles.length; i++ ) {
-			 var blocking = this.getAssignedGroupsForNamespaceAndRole( namespace, roles[i] )
-				 .filter( ( g ) => { return g !== group; } );
-			if ( blocking.length > 0 ) {
+			 var blocking = this.getAssignedGroupsForNamespaceAndRole( namespace, roles[i] );
+			if ( blocking.length > 0 && blocking.indexOf( group ) === -1 ) {
 				if ( !res.hasOwnProperty( permission ) ) {
 					res[permission] = [];
 				}

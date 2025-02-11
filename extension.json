@@ -181,6 +181,21 @@
 				"ext.bluespice",
 				"oojs-ui"
 			]
+		},
+		"ext.bluespice.permissionManager.roleDetailsDialog": {
+			"scripts": [
+				"dialog/RoleDetailsDialog.js"
+			],
+			"messages": [
+				"bs-permissionmanager-header-permissions",
+				"bs-permissionmanager-cancel",
+				"bs-permissionmanager-header-description"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"oojs-ui",
+				"ext.oOJSPlus.data"
+			]
 		}
 	},
 	"HookHandlers": {
@@ -255,6 +270,11 @@
 			"method": "POST",
 			"path": "/bs-permission-manager/v1/permissions",
 			"class": "BlueSpice\\PermissionManager\\Rest\\SavePermissions",
+			"services": [ "BlueSpicePermissionManager" ]
+		},
+		{
+			"path": "/bs-permission-manager/v1/role_details/{role}",
+			"class": "BlueSpice\\PermissionManager\\Rest\\RoleDetails",
 			"services": [ "BlueSpicePermissionManager" ]
 		}
 	],
