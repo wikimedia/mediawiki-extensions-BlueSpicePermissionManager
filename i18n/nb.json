@@ -50,5 +50,7 @@
 	"bs-permissionmanager-preset-save-error": "Konfigurasjonen kan ikke lagres! Endringene gjelder ikke!",
 	"bs-permissionmanager-preset-save-success": "Konfigurasjon lagret!",
 	"bs-permissionmanager-pref-max-backups-help": "Antall sikkerhetskopier for de siste endringene i tillatelsesbehandleren (Special:PermissionManager).",
-	"bs-permissionmanager-namespace-picker": "Navnerom"
+	"bs-permissionmanager-namespace-picker": "Navnerom",
+	"bs-permissionmanager-group-manager-heading": "Grupper",
+	"bs-permissionmanager-group-header-groups": "Grupper"
 }

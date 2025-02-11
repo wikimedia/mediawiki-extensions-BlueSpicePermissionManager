@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Cabadeck",
 			"DDPAT",
 			"Facenapalm",
 			"Ice bulldog",
@@ -41,5 +42,10 @@
 	"bs-permissionmanager-preset-public-label": "Публичная вики",
 	"bs-permissionmanager-preset-save-success": "Конфигурация сохранена!",
 	"bs-permissionmanager-group-create": "Создать",
-	"bs-permissionmanager-namespace-picker": "Пространства имён"
+	"bs-permissionmanager-namespace-picker": "Пространства имён",
+	"group-anon": "Неаутентифицированные пользователи",
+	"bs-permission-manager-simple-matrix-namespace-sub": "Показывать пространства имен контента",
+	"bs-permissionmanager-simple-setonwiki-sub": "Выберите роли, которые будут предоставлены этой группе исключительно в выбранном пространстве имен (блокируя все остальные группы)",
+	"group-reviewer": "Рецензенты",
+	"bs-permissionmanager-group-header-groups": "Группы"
 }
