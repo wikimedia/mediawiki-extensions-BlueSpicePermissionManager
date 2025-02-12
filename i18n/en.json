@@ -93,5 +93,6 @@
 	"bs-permissionmanager-group-header-implicit": "Automatic groups",
 	"bs-permissionmanager-group-header-groups": "Groups",
 	"bs-permissionmanager-group-disable-edit": "Disable editing",
-	"bs-permissionmanager-group-enable-edit": "Edit groups"
+	"bs-permissionmanager-group-enable-edit": "Edit groups",
+	"bs-permissionmanager-header-description": "Description"
 }

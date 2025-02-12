@@ -101,12 +101,16 @@ bs.permissionManager.panel.GridMatrix.prototype.render = function( data ) {
 				var btn = new OO.ui.ButtonWidget( {
 					label: value,
 					framed: false,
-					title: hint,
-					data: row.roleHintHtml || hint,
+					title: row.roleHint || '',
+					data: row
 				} );
 				btn.connect( btn, {
 					click: function() {
-						OO.ui.alert( new OO.ui.HtmlSnippet( this.data ), { size: 'large' } );
+						const role = this.getData().role;
+						if ( !role ) {
+							return;
+						}
+						bs.permissionManager.util.openRoleDetailsDialog( role );
 					}
 				} );
 				return btn;
