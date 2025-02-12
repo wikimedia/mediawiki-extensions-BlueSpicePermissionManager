@@ -8,7 +8,8 @@
 			"Metalhead64",
 			"Mglaser",
 			"Stephan Muggli <muggli@hallowelt.biz>",
-			"Umherirrender"
+			"Umherirrender",
+			"Vhoesl"
 		]
 	},
 	"bs-permissionmanager-desc": "Administrationsoberfläche zur Bearbeitung von Benutzerrechten",
@@ -57,5 +58,24 @@
 	"bs-permissionmanager-preset-save-error": "Die Konfiguration kann nicht gespeichert werden! Änderungen werden nicht übernommen!",
 	"bs-permissionmanager-preset-save-success": "Konfiguration wurde gespeichert!",
 	"bs-permissionmanager-pref-max-backups-help": "Anzahl der Backups für die letzten Änderungen an der Rechteverwaltung (Spezial:PermissionManager).",
-	"bs-permissionmanager-namespace-picker": "Namensräume"
+	"bs-permissionmanager-namespace-picker": "Namensräume",
+	"group-bs-user": "Authentifizierte Benutzer",
+	"bs-permissionmanager-advanced-switch": "Erweiterter Modus",
+	"bs-permissionmanager-advanced-switch-confirm": "Es gibt ungespeicherte Änderungen. Wenn der Modus gewechselt wird, gehen diese Änderungen verloren!",
+	"bs-permission-manager-simple-matrix-global": "Globale Berechtigungen",
+	"bs-permission-manager-simple-matrix-global-sub": "Rollen für jeden Namensraum im Wiki gewähren, außer sie sind explizit gesperrt",
+	"bs-permission-manager-simple-matrix-namespace": "Namensraumspezifische Berechtigungen",
+	"bs-permission-manager-simple-matrix-namespace-sub": "Anzeigen von Inhaltsnamensräumen",
+	"bs-permissionmanager-simple-inherited": "Gewährt - geerbt von Gruppe $1",
+	"bs-permissionmanager-simple-explicit": "Explizit gewährt",
+	"bs-permissionmanager-simple-setonwiki": "Gewährt - geerbt von globalen Berechtigungen",
+	"bs-permissionmanager-simple-setonwiki-sub": "Wähle die Rollen, die dieser Gruppe im ausgewählten Namensraum exklusiv gewährt werden sollen (alle anderen Gruppen werden blockiert)",
+	"bs-permissionmanager-simple-blocked": "Verweigert - exklusiv für {{PLURAL:$2|Gruppe|Gruppen}} $1 gewährt",
+	"bs-permissionmanager-simple-blocked-sub": "Auswählen, um diese Gruppe zur Liste der Gruppen hinzuzufügen, denen diese Rolle gewährt wird",
+	"bs-permissionmanager-simple-notset": "Nicht gewährt",
+	"bs-permissionmanager-search-namespaces": "Suche nach einem Namensraum…",
+	"bs-permission-manager-simple-matrix-group": "Einstellungen für Gruppe: $1",
+	"bs-permissionmanager-group-manager-heading": "Gruppen",
+	"bs-permissionmanager-group-header-implicit": "Automatisch erstellte Gruppen",
+	"bs-permissionmanager-group-header-groups": "Gruppen"
 }
