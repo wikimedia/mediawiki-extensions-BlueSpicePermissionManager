@@ -33,6 +33,7 @@ bs.permissionManager.dialog.RoleDetailsDialog.prototype.initialize = function ()
 	this.grid = new OOJSPlus.ui.data.GridWidget( {
 		store: this.store,
 		exportable: true,
+		$overlay: this.$overlay,
 		columns: {
 			permission: {
 				headerText: mw.msg( 'bs-permissionmanager-header-permissions' ),
