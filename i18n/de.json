@@ -77,5 +77,8 @@
 	"bs-permission-manager-simple-matrix-group": "Einstellungen für Gruppe: $1",
 	"bs-permissionmanager-group-manager-heading": "Gruppen",
 	"bs-permissionmanager-group-header-implicit": "Automatisch erstellte Gruppen",
-	"bs-permissionmanager-group-header-groups": "Gruppen"
+	"bs-permissionmanager-group-header-groups": "Gruppen",
+	"bs-permissionmanager-group-disable-edit": "Bearbeitung deaktivieren",
+	"bs-permissionmanager-group-enable-edit": "Gruppen bearbeiten",
+	"bs-permissionmanager-header-description": "Beschreibung"
 }

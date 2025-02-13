@@ -95,5 +95,6 @@
 	"group-editor": "עורכים",
 	"group-reviewer": "סוקרים",
 	"bs-permissionmanager-group-header-implicit": "קבוצות אוטומטיות",
-	"bs-permissionmanager-group-header-groups": "קבוצות"
+	"bs-permissionmanager-group-header-groups": "קבוצות",
+	"bs-permissionmanager-header-description": "תיאור"
 }
