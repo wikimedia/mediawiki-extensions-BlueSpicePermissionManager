@@ -90,5 +90,7 @@
 	"bs-permissionmanager-simple-blocked": "Geweigerd (uitsluitend toegekend aan de groep{{PLURAL:$2||en}} $1)",
 	"bs-permissionmanager-simple-blocked-sub": "Selecteer dit om deze groep toe te voegen aan de lijst met groepen waaraan deze rol is toegekend",
 	"bs-permissionmanager-simple-notset": "Niet toegekend",
-	"bs-permissionmanager-search-namespaces": "Een naamruimte zoeken…"
+	"bs-permissionmanager-search-namespaces": "Een naamruimte zoeken…",
+	"bs-permissionmanager-group-disable-edit": "Bewerken uitschakelen",
+	"bs-permissionmanager-group-enable-edit": "Groepen bewerken"
 }

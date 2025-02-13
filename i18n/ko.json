@@ -46,7 +46,7 @@
 	"bs-permissionmanager-switch-preset-confirm": "사전 설정 수정은 위키의 모든 사용자들에게 즉각적으로 적용됩니다. 정말 계속해서 진행하기를 원하십니까?",
 	"bs-permissionmanager-preset-save-error": "환경 설정을 저장할 수 없습니다! 변경들이 적용되지 않았습니다!",
 	"bs-permissionmanager-preset-save-success": "설정을 저장했습니다!",
-	"group-anon": "익명 사용자",
+	"group-anon": "인증되지 않은 사용자",
 	"bs-permissionmanager-group-not-found": "그룹을 찾을 수 없습니다",
 	"bs-permissionmanager-group-already-exists": "그룹이 이미 존재합니다",
 	"bs-permissionmanager-group-remove": "그룹 제거",
@@ -62,5 +62,9 @@
 	"group-bs-user": "로그인한 모든 사용자",
 	"bs-permission-manager-simple-matrix-global": "전역 권한",
 	"bs-permissionmanager-simple-notset": "부여되지 않음",
-	"bs-permissionmanager-search-namespaces": "이름공간 찾기..."
+	"bs-permissionmanager-search-namespaces": "이름공간 찾기...",
+	"bs-permissionmanager-group-manager-heading": "그룹",
+	"bs-permissionmanager-group-header-groups": "그룹",
+	"bs-permissionmanager-group-enable-edit": "그룹 편집",
+	"bs-permissionmanager-header-description": "설명"
 }

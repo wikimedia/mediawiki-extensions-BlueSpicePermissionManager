@@ -85,5 +85,7 @@
 	"bs-permissionmanager-simple-explicit": "Accordé explicitement",
 	"bs-permissionmanager-simple-setonwiki": "Accordé - hérité des autorisations globales",
 	"bs-permissionmanager-simple-notset": "Non accordé",
-	"bs-permissionmanager-search-namespaces": "Recherche d'un espace de noms..."
+	"bs-permissionmanager-search-namespaces": "Recherche d'un espace de noms...",
+	"bs-permissionmanager-group-disable-edit": "Désactiver les modifications",
+	"bs-permissionmanager-group-enable-edit": "Modifier les groupes"
 }

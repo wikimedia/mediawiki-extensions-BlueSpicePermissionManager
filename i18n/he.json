@@ -93,5 +93,8 @@
 	"group-editor": "עורכים",
 	"group-reviewer": "סוקרים",
 	"bs-permissionmanager-group-header-implicit": "קבוצות אוטומטיות",
-	"bs-permissionmanager-group-header-groups": "קבוצות"
+	"bs-permissionmanager-group-header-groups": "קבוצות",
+	"bs-permissionmanager-group-disable-edit": "השבתת עריכה",
+	"bs-permissionmanager-group-enable-edit": "עריכת קבוצות",
+	"bs-permissionmanager-header-description": "תיאור"
 }
