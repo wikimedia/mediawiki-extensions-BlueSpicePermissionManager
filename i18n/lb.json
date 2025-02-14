@@ -51,5 +51,6 @@
 	"bs-permission-manager-simple-matrix-group": "Astellunge fir d'Grupp: $1",
 	"bs-permissionmanager-group-manager-heading": "Gruppen",
 	"bs-permissionmanager-group-header-implicit": "Automatesch Gruppen",
-	"bs-permissionmanager-group-header-groups": "Gruppen"
+	"bs-permissionmanager-group-header-groups": "Gruppen",
+	"bs-permissionmanager-header-description": "Beschreiwung"
 }
