@@ -58,6 +58,7 @@
 	"bs-permissionmanager-preset-save-error": "Die Konfiguration kann nicht gespeichert werden! Änderungen werden nicht übernommen!",
 	"bs-permissionmanager-preset-save-success": "Konfiguration wurde gespeichert!",
 	"bs-permissionmanager-pref-max-backups-help": "Anzahl der Backups für die letzten Änderungen an der Rechteverwaltung (Spezial:PermissionManager).",
+	"group-anon": "Nicht authentifizierte Benutzer",
 	"bs-permissionmanager-namespace-picker": "Namensräume",
 	"group-bs-user": "Authentifizierte Benutzer",
 	"bs-permissionmanager-advanced-switch": "Erweiterter Modus",

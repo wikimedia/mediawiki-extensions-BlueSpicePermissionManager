@@ -43,5 +43,6 @@
 	"bs-permissionmanager-group-header-implicit": "Automatesch Gruppen",
 	"bs-permissionmanager-group-header-groups": "Gruppen",
 	"bs-permissionmanager-group-disable-edit": "Änneren desaktivéieren",
-	"bs-permissionmanager-group-enable-edit": "Gruppen änneren"
+	"bs-permissionmanager-group-enable-edit": "Gruppen änneren",
+	"bs-permissionmanager-header-description": "Beschreiwung"
 }
