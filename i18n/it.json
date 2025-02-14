@@ -53,5 +53,6 @@
 	"group-anon": "Utenti non autenticati",
 	"bs-permissionmanager-group-manager-heading": "Gruppi",
 	"bs-permissionmanager-group-header-implicit": "Gruppi automatici",
-	"bs-permissionmanager-group-header-groups": "Gruppi"
+	"bs-permissionmanager-group-header-groups": "Gruppi",
+	"bs-permissionmanager-header-description": "Descrizione"
 }
