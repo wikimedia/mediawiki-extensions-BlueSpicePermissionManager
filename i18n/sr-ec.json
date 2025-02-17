@@ -38,5 +38,6 @@
 	"bs-permissionmanager-group-header-implicit": "Аутоматске групе",
 	"bs-permissionmanager-group-header-groups": "Групе",
 	"bs-permission-manager-simple-matrix-group": "Подешавања за групу: $1",
-	"bs-permissionmanager-group-manager-heading": "Групе"
+	"bs-permissionmanager-group-manager-heading": "Групе",
+	"bs-permissionmanager-header-description": "Опис"
 }
