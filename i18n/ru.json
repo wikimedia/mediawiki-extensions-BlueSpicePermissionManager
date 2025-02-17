@@ -47,5 +47,7 @@
 	"bs-permission-manager-simple-matrix-namespace-sub": "Показывать пространства имен контента",
 	"bs-permissionmanager-simple-setonwiki-sub": "Выберите роли, которые будут предоставлены этой группе исключительно в выбранном пространстве имен (блокируя все остальные группы)",
 	"group-reviewer": "Рецензенты",
-	"bs-permissionmanager-group-header-groups": "Группы"
+	"bs-permissionmanager-group-header-groups": "Группы",
+	"bs-permissionmanager-group-manager-heading": "Группы",
+	"bs-permissionmanager-header-description": "Описание"
 }
