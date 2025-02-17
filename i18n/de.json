@@ -74,6 +74,9 @@
 	"bs-permissionmanager-preset-save-error": "Die Konfiguration kann nicht gespeichert werden! Änderungen werden nicht übernommen!",
 	"bs-permissionmanager-preset-save-success": "Konfiguration wurde gespeichert!",
 	"bs-permissionmanager-pref-max-backups-help": "Anzahl der Backups für die letzten Änderungen an der Rechteverwaltung (Spezial:PermissionManager).",
+	"group-anon": "Nicht authentifizierte Benutzer",
+	"bs-permissionmanager-group-disable-edit": "Bearbeitung deaktivieren",
+	"bs-permissionmanager-group-enable-edit": "Gruppen bearbeiten",
 	"bs-permissionmanager-namespace-picker": "Namensräume",
 	"group-bs-user": "Authentifizierte Benutzer",
 	"bs-permissionmanager-advanced-switch": "Erweiterter Modus",
@@ -94,8 +97,5 @@
 	"bs-permissionmanager-group-manager-heading": "Gruppen",
 	"bs-permissionmanager-group-header-implicit": "Automatisch erstellte Gruppen",
 	"bs-permissionmanager-group-header-groups": "Gruppen",
-	"bs-permissionmanager-group-disable-edit": "Bearbeitung deaktivieren",
-	"bs-permissionmanager-group-enable-edit": "Gruppen bearbeiten",
-	"bs-permissionmanager-header-description": "Beschreibung",
-	"group-anon": "Nicht authentifizierte Benutzer"
+	"bs-permissionmanager-header-description": "Beschreibung"
 }

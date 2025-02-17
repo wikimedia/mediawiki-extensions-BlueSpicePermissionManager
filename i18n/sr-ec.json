@@ -29,14 +29,14 @@
 	"bs-permissionmanager-preset-public-label": "Јавни вики",
 	"bs-permissionmanager-preset-save-error": "Није могуће чување подешавања! Измене нису примењене!",
 	"bs-permissionmanager-preset-save-success": "Подешавања су сачувана!",
+	"group-anon": "Неаутентификовани корисници",
 	"bs-permissionmanager-group-create": "Направи",
 	"bs-permissionmanager-cancel": "Откажи",
 	"bs-permissionmanager-namespace-picker": "Именски простори",
-	"group-anon": "Неаутентификовани корисници",
 	"group-bs-user": "Аутентификовани корисници",
+	"bs-permission-manager-simple-matrix-group": "Подешавања за групу: $1",
+	"bs-permissionmanager-group-manager-heading": "Групе",
 	"group-editor": "Уредници",
 	"bs-permissionmanager-group-header-implicit": "Аутоматске групе",
-	"bs-permissionmanager-group-header-groups": "Групе",
-	"bs-permission-manager-simple-matrix-group": "Подешавања за групу: $1",
-	"bs-permissionmanager-group-manager-heading": "Групе"
+	"bs-permissionmanager-group-header-groups": "Групе"
 }
