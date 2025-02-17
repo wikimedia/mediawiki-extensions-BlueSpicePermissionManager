@@ -29,5 +29,6 @@
 	"bs-permissionmanager-group-manager-heading": "Групе",
 	"group-editor": "Уредници",
 	"bs-permissionmanager-group-header-implicit": "Аутоматске групе",
-	"bs-permissionmanager-group-header-groups": "Групе"
+	"bs-permissionmanager-group-header-groups": "Групе",
+	"bs-permissionmanager-header-description": "Опис"
 }

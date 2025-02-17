@@ -7,5 +7,8 @@
 	"bs-permissionmanager-header-global": "Վիքի",
 	"bs-permissionmanager-btn-save-label": "Հիշել",
 	"bs-permissionmanager-group-all": "բոլոր",
-	"bs-permissionmanager-namespace-picker": "Անվանատարածքներ"
+	"bs-permissionmanager-namespace-picker": "Անվանատարածքներ",
+	"bs-permissionmanager-group-manager-heading": "Խմբեր",
+	"bs-permissionmanager-group-header-groups": "Խմբեր",
+	"bs-permissionmanager-header-description": "Նկարագրություն"
 }

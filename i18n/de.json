@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ameisenigel",
+			"Brettchenweber",
 			"Elliot",
 			"Hwboehm",
 			"Jkonrad",
@@ -67,9 +68,9 @@
 	"bs-permission-manager-simple-matrix-global-sub": "Rollen für jeden Namensraum im Wiki gewähren, außer sie sind explizit gesperrt",
 	"bs-permission-manager-simple-matrix-namespace": "Namensraumspezifische Berechtigungen",
 	"bs-permission-manager-simple-matrix-namespace-sub": "Anzeigen von Inhaltsnamensräumen",
-	"bs-permissionmanager-simple-inherited": "Gewährt - geerbt von Gruppe $1",
+	"bs-permissionmanager-simple-inherited": "Gewährt – geerbt von Gruppe $1",
 	"bs-permissionmanager-simple-explicit": "Explizit gewährt",
-	"bs-permissionmanager-simple-setonwiki": "Gewährt - geerbt von globalen Berechtigungen",
+	"bs-permissionmanager-simple-setonwiki": "Gewährt – geerbt von globalen Berechtigungen",
 	"bs-permissionmanager-simple-setonwiki-sub": "Wähle die Rollen, die dieser Gruppe im ausgewählten Namensraum exklusiv gewährt werden sollen (alle anderen Gruppen werden blockiert)",
 	"bs-permissionmanager-simple-blocked": "Verweigert - exklusiv für {{PLURAL:$2|Gruppe|Gruppen}} $1 gewährt",
 	"bs-permissionmanager-simple-blocked-sub": "Auswählen, um diese Gruppe zur Liste der Gruppen hinzuzufügen, denen diese Rolle gewährt wird",
