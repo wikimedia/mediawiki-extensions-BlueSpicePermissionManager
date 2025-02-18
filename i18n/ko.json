@@ -63,8 +63,8 @@
 	"bs-permission-manager-simple-matrix-global": "전역 권한",
 	"bs-permissionmanager-simple-notset": "부여되지 않음",
 	"bs-permissionmanager-search-namespaces": "이름공간 찾기...",
-	"bs-permissionmanager-group-enable-edit": "그룹 편집",
 	"bs-permissionmanager-group-manager-heading": "그룹",
 	"bs-permissionmanager-group-header-groups": "그룹",
+	"bs-permissionmanager-group-enable-edit": "그룹 편집",
 	"bs-permissionmanager-header-description": "설명"
 }

@@ -41,13 +41,13 @@
 	"bs-permissionmanager-preset-protected-label": "Защищенная вики",
 	"bs-permissionmanager-preset-public-label": "Публичная вики",
 	"bs-permissionmanager-preset-save-success": "Конфигурация сохранена!",
+	"group-anon": "Неаутентифицированные пользователи",
 	"bs-permissionmanager-group-create": "Создать",
 	"bs-permissionmanager-namespace-picker": "Пространства имён",
-	"group-anon": "Неаутентифицированные пользователи",
 	"bs-permission-manager-simple-matrix-namespace-sub": "Показывать пространства имен контента",
 	"bs-permissionmanager-simple-setonwiki-sub": "Выберите роли, которые будут предоставлены этой группе исключительно в выбранном пространстве имен (блокируя все остальные группы)",
+	"bs-permissionmanager-group-manager-heading": "Группы",
 	"group-reviewer": "Рецензенты",
 	"bs-permissionmanager-group-header-groups": "Группы",
-	"bs-permissionmanager-group-manager-heading": "Группы",
 	"bs-permissionmanager-header-description": "Описание"
 }
