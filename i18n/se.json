@@ -8,5 +8,6 @@
 	"bs-permissionmanager-text": "Geavahanvuoigatvuođat",
 	"bs-permissionmanager-btn-save-label": "Vurke",
 	"bs-permissionmanager-group-all": "buot",
-	"bs-permissionmanager-namespace-picker": "Nammagomuvuođat"
+	"bs-permissionmanager-namespace-picker": "Nammagomuvuođat",
+	"bs-permissionmanager-group-create": "Ráhkat"
 }
