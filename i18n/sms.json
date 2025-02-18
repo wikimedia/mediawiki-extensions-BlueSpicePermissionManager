@@ -11,5 +11,6 @@
 	"action-permissionmanager-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:bs-permissionmanager-label}}\"",
 	"bs-permissionmanager-group-all": "puk",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Deskriptt",
-	"bs-permissionmanager-preset-protected-label": "Suõjjuum wiki"
+	"bs-permissionmanager-preset-protected-label": "Suõjjuum wiki",
+	"bs-permissionmanager-group-create": "Raaj"
 }
