@@ -98,5 +98,22 @@
 	"bs-permissionmanager-group-disable-edit": "Bearbeitung deaktivieren",
 	"bs-permissionmanager-group-enable-edit": "Gruppen bearbeiten",
 	"bs-permissionmanager-header-description": "Beschreibung",
-	"group-anon": "Nicht authentifizierte Benutzer"
+	"group-anon": "Nicht authentifizierte Benutzer",
+	"bs-permissionmanager-group-not-found": "Gruppe nicht gefunden",
+	"bs-permissionmanager-groupmanager-invalid-name-length": "Der Gruppenname darf nicht länger als 255 Zeichen sein.",
+	"bs-permissionmanager-groupmanager-invalid-name-numeric": "Der Gruppenname muss mindestens einen Buchstaben beinhalten.",
+	"bs-permissionmanager-group-already-exists": "Die Gruppe ist bereits vorhanden.",
+	"bs-permissionmanager-group-remove": "Gruppe entfernen",
+	"bs-permissionmanager-group-edit": "Gruppe bearbeiten",
+	"bs-permissionmanager-error": "Es ist ein Fehler aufgetreten",
+	"bs-permissionmanager-group-create-label": "Neue Gruppe hinzufügen",
+	"bs-permissionmanager-group-create": "Erstellen",
+	"bs-permissionmanager-edit-group": "Gruppe bearbeiten",
+	"bs-permissionmanager-save": "Speichern",
+	"bs-permissionmanager-cancel": "Abbrechen",
+	"bs-permissionmanager-group-name": "Gruppenname",
+	"bs-permissionmanager-group-type-custom": "Benutzerdefiniert",
+	"bs-permissionmanager-group-type-implicit": "implizit",
+	"group-editor": "Bearbeiter",
+	"group-reviewer": "Begutachter"
 }
