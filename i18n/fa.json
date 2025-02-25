@@ -51,8 +51,8 @@
 	"bs-permissionmanager-preset-save-error": "تنظیمات را نمی‌توان ذخیره کرد! تغییرات اعمال نشدند!",
 	"bs-permissionmanager-preset-save-success": "تنظیمات ذخیره شد!",
 	"group-anon": "کاربران ناشناس",
+	"bs-permissionmanager-groupmanager-invalid-name": "نام گروه حاوی {{PLURAL:$1|یک نویسهٔ نامعتبر|نویسه‌های نامعتبر}} است: $2",
 	"bs-permissionmanager-namespace-picker": "فضاهای نام",
 	"group-bs-user": "تمام کاربران واردشده به سامانه",
-	"bs-permissionmanager-groupmanager-invalid-name": "نام گروه حاوی {{PLURAL:$1|یک نویسهٔ نامعتبر|نویسه‌های نامعتبر}} است: $2",
 	"bs-permissionmanager-header-description": "توضیح"
 }
