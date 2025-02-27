@@ -80,10 +80,8 @@ bs.permissionManager.panel.SimpleMatrix.prototype.makeView = function( group, da
 	} );
 	view.$element.addClass( 'bs-permission-manager-simple-matrix-view' );
 	view.$element.append( this.getGroupHeader( group ).$element );
-	this.makeGlobal( data );
-	this.makeNamespaces( data );
-
-	view.$element.append( this.global.$element, this.namespaces.$element );
+	view.$element.append( this.makeGlobal( data ).$element );
+	view.$element.append( this.makeNamespaces( data ).$element );
 	return view;
 };
 
@@ -96,7 +94,7 @@ bs.permissionManager.panel.SimpleMatrix.prototype.getGroupHeader = function( gro
 };
 
 bs.permissionManager.panel.SimpleMatrix.prototype.makeGlobal = function( data ) {
-	this.global = new OO.ui.PanelLayout( {
+	const global = new OO.ui.PanelLayout( {
 		expanded: false,
 		padded: false,
 		classes: [ 'bs-permission-manager-simple-matrix-global' ]
@@ -109,7 +107,7 @@ bs.permissionManager.panel.SimpleMatrix.prototype.makeGlobal = function( data ) 
 		label: mw.message( 'bs-permission-manager-simple-matrix-global-sub' ).text(),
 		classes: [ 'bs-permission-manager-simple-matrix-subtitle' ]
 	} );
-	this.global.$element.append( heading.$element, subtitle.$element );
+	global.$element.append( heading.$element, subtitle.$element );
 	for ( var i = 0; i < this.usableRoles.length; i++ ) {
 		var role = this.usableRoles[i],
 			roleData = this.findRoleData( role.role, data );
@@ -117,16 +115,17 @@ bs.permissionManager.panel.SimpleMatrix.prototype.makeGlobal = function( data ) 
 			continue;
 		}
 
-		this.global.$element.append( this.makeRoleItem(
+		global.$element.append( this.makeRoleItem(
 			role,
 			roleData.global,
 			roleData.global_meta
 		).$element );
 	}
+	return global;
 };
 
 bs.permissionManager.panel.SimpleMatrix.prototype.makeNamespaces = function( data ) {
-	this.namespaces = new OO.ui.PanelLayout( {
+	const namespaces = new OO.ui.PanelLayout( {
 		expanded: false,
 		padded: false,
 		classes: [ 'bs-permission-manager-simple-matrix-ns' ]
@@ -143,9 +142,13 @@ bs.permissionManager.panel.SimpleMatrix.prototype.makeNamespaces = function( dat
 		label: mw.message( 'bs-permissionmanager-simple-setonwiki-sub' ).text(),
 		classes: [ 'bs-permission-manager-simple-matrix-subtitle', 'hint' ]
 	} );
-	this.namespaces.$element.append( heading.$element, subtitle.$element, hint.$element );
+	namespaces.$element.append( heading.$element, subtitle.$element, hint.$element );
 	if ( this.usableNamespaces.length > 5 ) {
-		this.makeNamespaceSearch();
+		const search = this.makeNamespaceSearch();
+		namespaces.$element.append( search.$element );
+		search.connect( this, {
+			change: 'filterNamespaces'
+		} );
 	}
 	for ( var i = 0; i < this.usableNamespaces.length; i++ ) {
 		var nsPanel = new OO.ui.PanelLayout( {
@@ -154,7 +157,8 @@ bs.permissionManager.panel.SimpleMatrix.prototype.makeNamespaces = function( dat
 			classes: [ 'bs-permission-manager-simple-matrix-ns-panel' ]
 		} );
 		var label = new OO.ui.LabelWidget( {
-			label: this.usableNamespaces[i].name
+			label: this.usableNamespaces[i].name,
+			classes: [ 'bs-permission-manager-simple-matrix-ns-label' ]
 		} );
 		nsPanel.$element.append( label.$element );
 		for ( var j = 0; j < this.usableNsRoles.length; j++ ) {
@@ -169,30 +173,36 @@ bs.permissionManager.panel.SimpleMatrix.prototype.makeNamespaces = function( dat
 				{ nsId: this.usableNamespaces[i].id, nsName: this.usableNamespaces[i].name }
 			).$element );
 		}
-		this.namespaces.$element.append( nsPanel.$element );
+		namespaces.$element.append( nsPanel.$element );
 	}
+	return namespaces;
 };
 
 bs.permissionManager.panel.SimpleMatrix.prototype.makeNamespaceSearch = function() {
-	var nsSearch = new OO.ui.SearchInputWidget( {
+	return new OO.ui.SearchInputWidget( {
 		placeholder: mw.msg( 'bs-permissionmanager-search-namespaces' ),
 		classes: [ 'bs-permission-manager-simple-matrix-ns-search' ]
 	} );
-	this.namespaces.$element.append( nsSearch.$element );
-	nsSearch.connect( this, {
-		change: function ( val ) {
-			this.namespaces.$element.find( '.bs-permission-manager-simple-matrix-ns-panel' ).each( function() {
-				var $panel = $( this );
-				if ( val === '' || $panel.text().toLowerCase().indexOf( val.toLowerCase() ) !== -1 ) {
-					$panel.show();
-				} else {
-					$panel.hide();
-				}
-			} );
+};
+
+bs.permissionManager.panel.SimpleMatrix.prototype.filterNamespaces = function( val ) {
+	if ( !this.activeView ) {
+		return;
+	}
+	const nsPanel = this.activeView.$element.find( '.bs-permission-manager-simple-matrix-ns' );
+	if ( nsPanel.length === 0 ) {
+		return;
+	}
+	nsPanel.find( '.bs-permission-manager-simple-matrix-ns-panel' ).each( function() {
+		var $nsItem = $( this );
+		const $label = $nsItem.find( '.bs-permission-manager-simple-matrix-ns-label' );
+		if ( $label.length === 0 || val === '' || $label.text().toLowerCase().indexOf( val.toLowerCase() ) !== -1 ) {
+			$nsItem.show();
+		} else {
+			$nsItem.hide();
 		}
 	} );
-	return nsSearch;
-}
+};
 
 bs.permissionManager.panel.SimpleMatrix.prototype.findRoleData = function( role, data ) {
 	for ( var i = 0; i < data.length; i++ ) {
