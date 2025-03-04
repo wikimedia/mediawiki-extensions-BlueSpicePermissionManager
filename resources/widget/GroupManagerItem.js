@@ -13,7 +13,7 @@ bs.permissionManager.widget.GroupManagerItem = function( cfg ) {
 	if ( cfg.group_name !== cfg.displayname ) {
 		if ( this.groupType !== 'implicit' ) {
 			this.$groupMeta = $( '<div>' ).addClass( 'group-meta' );
-			this.$label.append( this.$groupMeta );
+			this.$groupMeta.insertAfter( this.$label );
 			this.$groupMeta.append( $( '<span>' ).addClass( 'group-name' ).text( cfg.group_name ) );
 			this.$groupMeta.append(
 				$( '<span>' )
@@ -23,13 +23,14 @@ bs.permissionManager.widget.GroupManagerItem = function( cfg ) {
 			);
 		}
 	} else if ( this.groupType !== 'implicit' ) {
-		this.$label.append(
-			$( '<span>' )
-				.addClass( 'group-type' )
-				.addClass( 'type-' + type )
-				.text( mw.msg( 'bs-permissionmanager-group-type-' + type ) )
-		);
+		$( '<span>' )
+			.addClass( 'group-type' )
+			.addClass( 'type-' + type )
+			.text( mw.msg( 'bs-permissionmanager-group-type-' + type ) )
+			.insertAfter( this.$label );
 	}
+
+	this.$label.addClass( 'group-name' );
 
 	this.$element.addClass( 'group-item' );
 	this.$element.addClass( 'oo-ui-outlineOptionWidget' );
