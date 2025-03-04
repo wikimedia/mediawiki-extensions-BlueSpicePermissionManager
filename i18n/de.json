@@ -10,7 +10,8 @@
 			"Mglaser",
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Umherirrender",
-			"Vhoesl"
+			"Vhoesl",
+			"Justman10000"
 		]
 	},
 	"bs-permissionmanager-desc": "Administrationsoberfläche zur Bearbeitung von Benutzerrechten",
@@ -61,6 +62,7 @@
 	"bs-permissionmanager-pref-max-backups-help": "Anzahl der Backups für die letzten Änderungen an der Rechteverwaltung (Spezial:PermissionManager).",
 	"group-anon": "Nicht authentifizierte Benutzer",
 	"bs-permissionmanager-group-not-found": "Gruppe nicht gefunden",
+	"bs-permissionmanager-groupmanager-invalid-name": "Der Gruppenname enthält {{PLURAL:$1|ein ungültiges Zeichen|ungültige Zeichen}}: $2",
 	"bs-permissionmanager-groupmanager-invalid-name-length": "Der Gruppenname darf nicht länger als 255 Zeichen sein.",
 	"bs-permissionmanager-groupmanager-invalid-name-numeric": "Der Gruppenname muss mindestens einen Buchstaben beinhalten.",
 	"bs-permissionmanager-group-already-exists": "Die Gruppe ist bereits vorhanden.",
@@ -69,11 +71,13 @@
 	"bs-permissionmanager-error": "Es ist ein Fehler aufgetreten",
 	"bs-permissionmanager-group-create-label": "Neue Gruppe hinzufügen",
 	"bs-permissionmanager-group-create": "Erstellen",
+	"bs-permissionmanager-group-remove-confirm": "Wenn du die Gruppe „$1“ löschst, werden sofort und unwiderruflich alle Benutzer aus dieser Gruppe entfernt und somit auch alle dieser Gruppe gewährten Berechtigungen entzogen. Bist du sicher, dass du fortfahren möchtest?",
 	"bs-permissionmanager-edit-group": "Gruppe bearbeiten",
 	"bs-permissionmanager-save": "Speichern",
 	"bs-permissionmanager-cancel": "Abbrechen",
 	"bs-permissionmanager-group-name": "Gruppenname",
 	"bs-permissionmanager-group-type-custom": "Benutzerdefiniert",
+	"bs-permissionmanager-group-type-builtin": "eingebaut",
 	"bs-permissionmanager-group-type-implicit": "implizit",
 	"bs-permissionmanager-namespace-picker": "Namensräume",
 	"group-bs-user": "Authentifizierte Benutzer",
