@@ -79,7 +79,7 @@
 	"bs-permissionmanager-group-type-builtin": "intégré",
 	"bs-permissionmanager-group-type-implicit": "implicite",
 	"bs-permissionmanager-namespace-picker": "Espaces de noms",
-	"group-bs-user": "Tous les utilisateurs connectés",
+	"group-bs-user": "Utilisateurs authentifiés",
 	"bs-permissionmanager-advanced-switch": "Mode avancé",
 	"bs-permission-manager-simple-matrix-global": "Droits globaux",
 	"bs-permissionmanager-simple-inherited": "Accordé - hérité du groupe $1",

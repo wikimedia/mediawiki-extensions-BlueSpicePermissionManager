@@ -91,6 +91,13 @@
 	"bs-permissionmanager-simple-blocked-sub": "Selecteer dit om deze groep toe te voegen aan de lijst met groepen waaraan deze rol is toegekend",
 	"bs-permissionmanager-simple-notset": "Niet toegekend",
 	"bs-permissionmanager-search-namespaces": "Een naamruimte zoeken…",
+	"bs-permission-manager-simple-matrix-group": "Instellingen voor groep: $1",
+	"bs-permissionmanager-group-manager-heading": "Groepen",
+	"group-editor": "Bewerkers",
+	"group-reviewer": "Controleurs",
+	"bs-permissionmanager-group-header-implicit": "Automatische groepen",
+	"bs-permissionmanager-group-header-groups": "Groepen",
 	"bs-permissionmanager-group-disable-edit": "Bewerken uitschakelen",
-	"bs-permissionmanager-group-enable-edit": "Groepen bewerken"
+	"bs-permissionmanager-group-enable-edit": "Groepen bewerken",
+	"bs-permissionmanager-header-description": "Beschrijving"
 }
