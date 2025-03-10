@@ -11,7 +11,8 @@
 			"Thibaut120094",
 			"Verdy p",
 			"Windes",
-			"Wladek92"
+			"Wladek92",
+			"JLTRY"
 		]
 	},
 	"bs-permissionmanager-desc": "Interface d’administration pour la modification des droits des utilisateurs",
@@ -76,7 +77,7 @@
 	"bs-permissionmanager-preset-save-error": "La configuration n’a pas pu être enregistrée ! Les modifications n’ont pas été appliquées !",
 	"bs-permissionmanager-preset-save-success": "Configuration enregistrée !",
 	"bs-permissionmanager-pref-max-backups-help": "Nombre de sauvegardes pour les dernières modifications du gestionnaire des droits (Spécial:PermissionManager).",
-	"group-anon": "Utilisateurs anonymes",
+	"group-anon": "Utilisateurs non authentifiés",
 	"bs-permissionmanager-group-not-found": "Groupe non trouvé",
 	"bs-permissionmanager-groupmanager-invalid-name-length": "Le nom du groupe ne peut pas dépasser 255 caractères.",
 	"bs-permissionmanager-groupmanager-invalid-name-numeric": "Le nom du groupe doit comporter au moins un caractère.",
