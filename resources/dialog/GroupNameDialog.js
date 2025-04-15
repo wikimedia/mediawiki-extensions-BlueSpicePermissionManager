@@ -1,6 +1,6 @@
 bs.util.registerNamespace( 'bs.permissionManager.dialog' );
 
-bs.permissionManager.dialog.GroupNameDialog = function( cfg ) {
+bs.permissionManager.dialog.GroupNameDialog = function ( cfg ) {
 	bs.permissionManager.dialog.GroupNameDialog.parent.call( this, cfg );
 
 	this.group = cfg.group;
@@ -13,7 +13,7 @@ bs.permissionManager.dialog.GroupNameDialog.static.actions = [
 	{ action: 'close', label: mw.msg( 'bs-permissionmanager-cancel' ), flags: 'safe' }
 ];
 
-bs.permissionManager.dialog.GroupNameDialog.prototype.initialize = function() {
+bs.permissionManager.dialog.GroupNameDialog.prototype.initialize = function () {
 	bs.permissionManager.dialog.GroupNameDialog.parent.prototype.initialize.apply( this, arguments );
 
 	this.panel = new OO.ui.PanelLayout( {
@@ -33,21 +33,21 @@ bs.permissionManager.dialog.GroupNameDialog.prototype.initialize = function() {
 	this.$body.append( this.panel.$element );
 };
 
-bs.permissionManager.dialog.GroupNameDialog.prototype.getActionProcess = function( action ) {
+bs.permissionManager.dialog.GroupNameDialog.prototype.getActionProcess = function ( action ) {
 	if ( action === 'save' ) {
-		return new OO.ui.Process( function() {
-			var dfd = $.Deferred();
+		return new OO.ui.Process( () => {
+			const dfd = $.Deferred();
 			this.pushPending();
-			this.input.getValidity().done( function() {
-				var value = this.input.getValue();
+			this.input.getValidity().done( () => {
+				const value = this.input.getValue();
 				$.ajax( {
 					url: this.getUrl( value ),
 					type: this.getMethod(),
-					success: function() {
+					success: () => {
 						dfd.resolve();
 						this.close( { action: 'save', newGroup: value } );
-					}.bind( this ),
-					error: function( xhr ) {
+					},
+					error: ( xhr ) => {
 						this.popPending();
 						if ( xhr.hasOwnProperty( 'responseJSON' ) ) {
 							dfd.reject(
@@ -56,16 +56,16 @@ bs.permissionManager.dialog.GroupNameDialog.prototype.getActionProcess = functio
 						} else {
 							dfd.reject();
 						}
-					}.bind( this )
+					}
 				} );
-			}.bind( this ) ).fail( function() {
+			} ).fail( () => {
 				this.popPending();
 				this.input.setValidityFlag( false );
 				dfd.reject();
-			}.bind( this ) );
+			} );
 
 			return dfd.promise();
-		}.bind( this ) );
+		} );
 	}
 	if ( action === 'close' ) {
 		this.close( { action: 'cancel' } );
@@ -74,19 +74,19 @@ bs.permissionManager.dialog.GroupNameDialog.prototype.getActionProcess = functio
 	return bs.permissionManager.dialog.GroupNameDialog.parent.prototype.getActionProcess.call( this, action );
 };
 
-bs.permissionManager.dialog.GroupNameDialog.prototype.getUrl = function( value ) {
+bs.permissionManager.dialog.GroupNameDialog.prototype.getUrl = function ( value ) { // eslint-disable-line no-unused-vars
 	return '';
 };
 
-bs.permissionManager.dialog.GroupNameDialog.prototype.getMethod = function() {
+bs.permissionManager.dialog.GroupNameDialog.prototype.getMethod = function () {
 	return '';
 };
 
 bs.permissionManager.dialog.GroupNameDialog.prototype.getBodyHeight = function () {
 	if ( !this.$errors.hasClass( 'oo-ui-element-hidden' ) ) {
-		return this.$element.find( '.oo-ui-processDialog-errors' )[0].scrollHeight;
+		return this.$element.find( '.oo-ui-processDialog-errors' )[ 0 ].scrollHeight;
 	}
-	return this.$body[0].scrollHeight + 20;
+	return this.$body[ 0 ].scrollHeight + 20;
 };
 
 bs.permissionManager.dialog.GroupNameDialog.prototype.onDismissErrorButtonClick = function () {

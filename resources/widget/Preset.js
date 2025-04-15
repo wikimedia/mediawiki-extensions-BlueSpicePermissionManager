@@ -24,22 +24,22 @@ bs.permissionManager.widget.PresetWidget = function ( data ) {
 	this.disabled = false;
 
 	this.$element.addClass( 'permission-manager-preset-widget' )
-		.attr( 'role', 'button')
-		.attr( 'tabindex', '0');
+		.attr( 'role', 'button' )
+		.attr( 'tabindex', '0' );
 
-	this.$element.on( 'click', function () {
+	this.$element.on( 'click', () => {
 		if ( this.disabled ) {
 			return;
 		}
 		this.emit( 'click' );
-	}.bind( this ) );
+	} );
 };
 
 OO.inheritClass( bs.permissionManager.widget.PresetWidget, OO.ui.Widget );
 
 bs.permissionManager.widget.PresetWidget.static.tagName = 'div';
 
-bs.permissionManager.widget.PresetWidget.prototype.setActive = function( active ) {
+bs.permissionManager.widget.PresetWidget.prototype.setActive = function ( active ) {
 	this.activeFlag.setIcon( active ? 'check' : '' );
 	if ( active ) {
 		this.$element.addClass( 'active' );
@@ -48,7 +48,7 @@ bs.permissionManager.widget.PresetWidget.prototype.setActive = function( active 
 	}
 };
 
-bs.permissionManager.widget.PresetWidget.prototype.setDisabled = function( disabled ) {
+bs.permissionManager.widget.PresetWidget.prototype.setDisabled = function ( disabled ) {
 	this.disabled = disabled;
 	if ( disabled ) {
 		this.$element.addClass( 'disabled' );

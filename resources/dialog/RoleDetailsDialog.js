@@ -1,6 +1,6 @@
 bs.util.registerNamespace( 'bs.permissionManager.dialog' );
 
-bs.permissionManager.dialog.RoleDetailsDialog = function( cfg ) {
+bs.permissionManager.dialog.RoleDetailsDialog = function ( cfg ) {
 	bs.permissionManager.dialog.RoleDetailsDialog.parent.call( this, cfg );
 	this.role = cfg.role;
 
@@ -27,7 +27,7 @@ bs.permissionManager.dialog.RoleDetailsDialog.prototype.initialize = function ()
 		padded: true
 	} );
 	this.store = new OOJSPlus.ui.data.store.RemoteRestStore( {
-		path: 'bs-permission-manager/v1/role_details/' + this.role,
+		path: 'bs-permission-manager/v1/role_details/' + this.role
 	} );
 
 	this.grid = new OOJSPlus.ui.data.GridWidget( {
@@ -37,7 +37,7 @@ bs.permissionManager.dialog.RoleDetailsDialog.prototype.initialize = function ()
 		columns: {
 			permission: {
 				headerText: mw.msg( 'bs-permissionmanager-header-permissions' ),
-				minWidth: 200,
+				minWidth: 200
 			},
 			description: {
 				headerText: mw.msg( 'bs-permissionmanager-header-description' ),
@@ -62,7 +62,7 @@ bs.permissionManager.dialog.RoleDetailsDialog.prototype.initialize = function ()
 
 					$table.append( $row );
 					for ( const id in response.results ) {
-						if ( response.results.hasOwnProperty( id ) ) { // eslint-disable-line no-prototype-builtins
+						if ( response.results.hasOwnProperty( id ) ) {
 							const record = response.results[ id ];
 							$row = $( '<tr>' );
 							$row.append( $( '<td>' ).text( record.permission ) );
@@ -97,5 +97,5 @@ bs.permissionManager.dialog.RoleDetailsDialog.prototype.getActionProcess = funct
 };
 
 bs.permissionManager.dialog.RoleDetailsDialog.prototype.getBodyHeight = function () {
-	return this.$body[0].scrollHeight + 50;
-}
+	return this.$body[ 0 ].scrollHeight + 50;
+};
