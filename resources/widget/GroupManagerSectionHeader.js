@@ -1,6 +1,6 @@
 bs.util.registerNamespace( 'bs.permissionManager.widget' );
 
-bs.permissionManager.widget.GroupManagerSectionHeader = function( cfg ) {
+bs.permissionManager.widget.GroupManagerSectionHeader = function ( cfg ) {
 	cfg.disabled = true;
 	bs.permissionManager.widget.GroupManagerSectionHeader.parent.call( this, cfg );
 
@@ -13,6 +13,6 @@ bs.permissionManager.widget.GroupManagerSectionHeader = function( cfg ) {
 
 OO.inheritClass( bs.permissionManager.widget.GroupManagerSectionHeader, OO.ui.ButtonOptionWidget );
 
-bs.permissionManager.widget.GroupManagerSectionHeader.prototype.setDirty = function() {
+bs.permissionManager.widget.GroupManagerSectionHeader.prototype.setDirty = function () {
 	// NOOP
 };

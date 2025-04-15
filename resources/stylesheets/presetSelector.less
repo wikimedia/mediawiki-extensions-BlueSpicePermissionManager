@@ -2,6 +2,7 @@
 	.oo-ui-messageWidget.oo-ui-flaggedElement-error {
 		margin-bottom: 20px;
 	}
+
 	.button-layout {
 		margin: 20px 0 0 0;
 	}
@@ -13,40 +14,49 @@
 	padding: 20px 10px 20px 0;
 	border-bottom: 2px solid #cecece;
 	cursor: pointer;
+
 	&:last-of-type {
-		border-bottom: none;
+		border-bottom: none; /* stylelint-disable-line declaration-property-value-disallowed-list */
 	}
+
 	&:focus-visible,
 	&:hover {
 		background-color: #e8e8e8;
 	}
+
 	&:focus-visible {
 		outline: 0;
-		box-shadow: 0 0 0 .1em #3e5893;
+		box-shadow: 0 0 0 0.1em #3e5893;
 	}
+
 	&.active {
 		background-color: #cecece;
 	}
+
 	&.disabled {
 		cursor: default;
 	}
+
 	.oo-ui-iconWidget {
 		display: table-cell;
 		width: 100px;
 		text-align: center;
-		line-height: 70px;
+		line-height: 70px; /* stylelint-disable-line declaration-property-unit-disallowed-list */
 		cursor: inherit;
 	}
+
 	.permission-manager-preset-data-wrapper {
 		display: table-cell;
 		padding-left: 10px;
 		cursor: inherit;
+
 		.permission-manager-preset-title {
 			cursor: inherit;
-			font-weight: 700;
+			font-weight: bold;
 			display: block;
 			font-size: 1.3em;
 		}
+
 		.permission-manager-preset-help {
 			cursor: inherit;
 			font-weight: 300;
@@ -55,35 +65,42 @@
 
 	.oo-ui-iconWidget {
 		text-indent: 0;
+
 		&::before {
 			vertical-align: top;
-			font-family: fontawesome;
-			font-size: 70px;
+			font-family: 'fontawesome';
+			font-size: 70px; /* stylelint-disable-line declaration-property-unit-disallowed-list */
 		}
+
 		&.oo-ui-icon-public {
 			&::before {
 				content: '\f0ac';
 			}
 		}
+
 		&.oo-ui-icon-protected {
 			&::before {
 				content: '\f023';
 			}
 		}
+
 		&.oo-ui-icon-private {
 			&::before {
 				content: '\f070';
 			}
 		}
+
 		&.oo-ui-icon-custom {
 			&::before {
 				content: '\f085';
 			}
 		}
+
 		&.oo-ui-icon-check {
 			background-size: 60%;
 		}
 	}
+
 	.permission-manager-info-message {
 		margin-bottom: 10px;
 	}

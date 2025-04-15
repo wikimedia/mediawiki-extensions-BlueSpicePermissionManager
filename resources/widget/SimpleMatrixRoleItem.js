@@ -1,6 +1,6 @@
 bs.util.registerNamespace( 'bs.permissionManager.widget' );
 
-bs.permissionManager.widget.SimpleMatrixRoleItem = function( cfg ) {
+bs.permissionManager.widget.SimpleMatrixRoleItem = function ( cfg ) {
 	cfg = cfg || {};
 
 	this.role = cfg.role;
@@ -15,14 +15,14 @@ bs.permissionManager.widget.SimpleMatrixRoleItem = function( cfg ) {
 
 	this.input = new OO.ui.CheckboxInputWidget( {
 		selected: this.value,
-		data: $.extend( { role: this.role.role }, this.additionalData )
+		data: Object.assign( { role: this.role.role }, this.additionalData )
 	} );
 	this.input.connect( this, {
-		change: function( value ) {
+		change: function ( value ) {
 			if ( this.eventsDisabled ) {
 				return;
 			}
-			var dirty = false;
+			let dirty = false;
 			if ( this.originalValue !== value ) {
 				dirty = true;
 			}
@@ -30,7 +30,7 @@ bs.permissionManager.widget.SimpleMatrixRoleItem = function( cfg ) {
 			this.matrix.valueChange( this.role.role, this.type, value, dirty );
 		}
 	} );
-	var items = [
+	let items = [
 		this.input,
 		new OO.ui.LabelWidget( {
 			label: this.role.label
@@ -55,17 +55,17 @@ bs.permissionManager.widget.SimpleMatrixRoleItem = function( cfg ) {
 
 OO.inheritClass( bs.permissionManager.widget.SimpleMatrixRoleItem, OO.ui.HorizontalLayout );
 
-bs.permissionManager.widget.SimpleMatrixRoleItem.prototype.setValue = function( value ) {
+bs.permissionManager.widget.SimpleMatrixRoleItem.prototype.setValue = function ( value ) {
 	this.eventsDisabled = true;
 	this.input.setSelected( value );
 	this.eventsDisabled = false;
 };
 
-bs.permissionManager.widget.SimpleMatrixRoleItem.prototype.makeMeta = function( meta ) {
-	var blocked = meta.isBlocked || false,
-		label = '',
-		cls = '',
-		sub = '';
+bs.permissionManager.widget.SimpleMatrixRoleItem.prototype.makeMeta = function ( meta ) {
+	const blocked = meta.isBlocked || false;
+	let label = '';
+	let cls = '';
+	let sub = '';
 	if ( meta.assignment === 'inherit' ) {
 		label = mw.msg( 'bs-permissionmanager-simple-inherited', meta.inheritFrom );
 		cls = 'role-granted';
@@ -88,20 +88,18 @@ bs.permissionManager.widget.SimpleMatrixRoleItem.prototype.makeMeta = function( 
 			label = mw.msg( 'bs-permissionmanager-simple-notset' );
 			cls = 'role-denied';
 		} else if ( meta.assignment !== 'explicit' ) {
-			var blocking = meta.blocking.map( function( role ) {
-				return '<b>' + role + '</b>';
-			} );
+			const blocking = meta.blocking.map( ( role ) => '<b>' + role + '</b>' );
 			label = mw.msg( 'bs-permissionmanager-simple-blocked', blocking.join( ', ' ), blocking.length );
 			sub = mw.msg( 'bs-permissionmanager-simple-blocked-sub' );
 			cls = 'role-denied';
 		}
 	}
-	this.mainLabel.$element.removeClass( 'role-granted role-denied' ).addClass( cls );
+	this.mainLabel.$element.removeClass( 'role-granted role-denied' ).addClass( cls ); // eslint-disable-line mediawiki/class-doc
 
 	this.mainLabel.setLabel( new OO.ui.HtmlSnippet( label ) );
 	this.subLabel.setLabel( sub );
 };
 
-bs.permissionManager.widget.SimpleMatrixRoleItem.prototype.setMeta = function( meta ) {
+bs.permissionManager.widget.SimpleMatrixRoleItem.prototype.setMeta = function ( meta ) {
 	this.makeMeta( meta );
 };
