@@ -1,6 +1,6 @@
 bs.util.registerNamespace( 'bs.permissionManager.util' );
-bs.permissionManager.util.openRoleDetailsDialog = function( role ) {
-	mw.loader.using( [ "ext.bluespice.permissionManager.roleDetailsDialog" ], function() {
+bs.permissionManager.util.openRoleDetailsDialog = function ( role ) {
+	mw.loader.using( [ 'ext.bluespice.permissionManager.roleDetailsDialog' ], () => {
 		const manager = OO.ui.getWindowManager();
 		const dialog = new bs.permissionManager.dialog.RoleDetailsDialog( {
 			role: role
@@ -10,8 +10,8 @@ bs.permissionManager.util.openRoleDetailsDialog = function( role ) {
 	} );
 };
 
-$( function () {
-	var $cnt = $( '#bs-permission-manager-preset-select' );
+$( () => {
+	const $cnt = $( '#bs-permission-manager-preset-select' );
 	if ( !$cnt.length ) {
 		return;
 	}

@@ -8,7 +8,7 @@ $IP = dirname( dirname( dirname( __DIR__ ) ) );
 
 require_once "$IP/maintenance/Maintenance.php";
 
-class comparePermissions extends Maintenance {
+class comparePermissions extends Maintenance { // phpcs:ignore Squiz.Classes.ValidClassName.NotCamelCaps
 	public function __construct() {
 		parent::__construct();
 

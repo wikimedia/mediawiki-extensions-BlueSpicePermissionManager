@@ -1,7 +1,23 @@
 {
 	"root": true,
 	"extends": [
-		"wikimedia/client-es5",
+		"wikimedia/client-es6",
+		"wikimedia/jquery",
 		"wikimedia/mediawiki"
-	]
+	],
+	"globals": {
+		"bs": "readonly",
+		"OOJSPlus": "readonly"
+	},
+	"rules": {
+		"es-x/no-async-functions": "off",
+		"max-len": "off",
+		"no-jquery/no-class-state": "off",
+		"no-jquery/no-global-selector": "off",
+		"no-jquery/variable-pattern": "off",
+		"no-prototype-builtins": "off"
+	},
+	"parserOptions": {
+		"ecmaVersion": 2017
+	}
 }

@@ -1,129 +1,156 @@
 #bs-permission-manager-custom-preset {
-  border: 1px solid #cecece;
-  margin-top: 0;
-  .bs-permission-manager-inner {
-    display: flex;
-    .permission-manager-group-selector {
-      max-width: 300px;
-      border-right: 1px solid #ddd;
-      margin-right: 10px;
-      transition: max-width 0.5s;
-      padding-bottom: 10px;
-      &.edit-mode {
-        max-width: 600px;
-      }
-      .group-panel {
-        padding: 0;
-      }
-    }
-    .permission-manager-matrix {
-      padding-top: 10px;
-      flex-grow: 2;
-      /* weird flex stuff */
-      width: 1px;
-      .permission-manager-matrix-header {
-        text-align: right;
-        padding: 0 10px;
-        .oo-ui-fieldLayout-align-right {
-          display: inline-block;
-          .oo-ui-fieldLayout-field {
-            width: 60px;
-          }
-        }
-      }
-      .permission-manager-namespace-picker-btn {
-        margin-left: 20px;
-        z-index: 1;
-      }
-      .oojsplus-data-gridWidget-cell.bs-permission-manager-matrix-cell {
-        text-align: center;
-        &.bs-permission-manager-assigned {
-          background-color: #d0f573 !important;
-        }
-        &.bs-permission-manager-blocked {
-          background-color: #8a8a8a !important;
-        }
-        &.bs-permission-manager-matrix-dirty {
-          border: 2px dashed red !important;
-        }
-      }
-    }
-  }
+	border: 1px solid #cecece;
+	margin-top: 0;
 
-  .bs-permission-manager-simple-matrix {
-    padding-top: 0;
-    .bs-permission-manager-simple-matrix-view {
-      .bs-permission-manager-simple-matrix-group-header {
-        font-size: 1.2em;
-        margin-bottom: 10px;
-        border-bottom: 1px solid #cecece;
-        width: 100%;
-        padding-bottom: 10px;
-      }
-      .bs-permission-manager-simple-matrix-heading {
-        font-weight: bold;
-        font-size: 1.2em;
-        display: block;
-      }
-      .bs-permission-manager-simple-matrix-subtitle {
-        margin-bottom: 10px;
-        font-size: 0.9em;
-        &.hint {
-          font-weight: bold;
-          display: block;
-        }
-      }
-      .bs-permission-manager-simple-matrix-ns-search {
-        margin-bottom: 10px;
-      }
-      .bs-permission-manager-simple-matrix-role {
-        padding: 10px 0;
-      }
-      .bs-permission-manager-simple-matrix-meta {
-        font-size: 0.9em;
-        background-color: #e0dddd;
-        padding: 0 10px;
-        border-radius: 10px;
-        &.role-granted {
-          background-color: #598d53;
-          color: white;
-        }
-        &.role-denied {
-          background-color: #d02626;
-          color: white;
-        }
-      }
-      .bs-permission-manager-simple-matrix-meta-sub {
-        font-size: 0.8em;
-        font-weight: bold;
-        display: block;
-      }
-      .bs-permission-manager-simple-matrix-ns {
-        margin-top: 20px;
-        .bs-permission-manager-simple-matrix-ns-panel {
-          display: block;
-          padding: 10px;
-          margin-bottom: 10px;
-          border: 1px solid #cecece;
-          >.oo-ui-labelWidget {
-            font-size: 1.1em;
-            font-weight: bold;
-          }
-        }
-      }
-      .bs-permission-manager-matrix-dirty {
-        border-bottom: 2px solid red;
-      }
-    }
-  }
+	.bs-permission-manager-inner {
+		display: flex;
+
+		.permission-manager-group-selector {
+			max-width: 300px;
+			border-right: 1px solid #ddd;
+			margin-right: 10px;
+			transition: max-width 0.5s;
+			padding-bottom: 10px;
+
+			&.edit-mode {
+				max-width: 600px;
+			}
+
+			.group-panel {
+				padding: 0;
+			}
+		}
+
+		.permission-manager-matrix {
+			padding-top: 10px;
+			flex-grow: 2;
+			/* weird flex stuff */
+			width: 1px;
+
+			.permission-manager-matrix-header {
+				text-align: right;
+				padding: 0 10px;
+
+				.oo-ui-fieldLayout-align-right {
+					display: inline-block;
+
+					.oo-ui-fieldLayout-field {
+						width: 60px;
+					}
+				}
+			}
+
+			.permission-manager-namespace-picker-btn {
+				margin-left: 20px;
+				z-index: 1;
+			}
+
+			.oojsplus-data-gridWidget-cell.bs-permission-manager-matrix-cell {
+				text-align: center;
+
+				&.bs-permission-manager-assigned {
+					background-color: #d0f573 !important;
+				}
+
+				&.bs-permission-manager-blocked {
+					background-color: #8a8a8a !important;
+				}
+
+				&.bs-permission-manager-matrix-dirty {
+					border: 2px dashed red !important;
+				}
+			}
+		}
+	}
+
+	.bs-permission-manager-simple-matrix {
+		padding-top: 0;
+
+		.bs-permission-manager-simple-matrix-view {
+			.bs-permission-manager-simple-matrix-group-header {
+				font-size: 1.2em;
+				margin-bottom: 10px;
+				border-bottom: 1px solid #cecece;
+				width: 100%;
+				padding-bottom: 10px;
+			}
+
+			.bs-permission-manager-simple-matrix-heading {
+				font-weight: bold;
+				font-size: 1.2em;
+				display: block;
+			}
+
+			.bs-permission-manager-simple-matrix-subtitle {
+				margin-bottom: 10px;
+				font-size: 0.9em;
+
+				&.hint {
+					font-weight: bold;
+					display: block;
+				}
+			}
+
+			.bs-permission-manager-simple-matrix-ns-search {
+				margin-bottom: 10px;
+			}
+
+			.bs-permission-manager-simple-matrix-role {
+				padding: 10px 0;
+			}
+
+			.bs-permission-manager-simple-matrix-meta {
+				font-size: 0.9em;
+				background-color: #e0dddd;
+				padding: 0 10px;
+				border-radius: 10px;
+
+				&.role-granted {
+					background-color: #598d53;
+					color: white;
+				}
+
+				&.role-denied {
+					background-color: #d02626;
+					color: white;
+				}
+			}
+
+			.bs-permission-manager-simple-matrix-meta-sub {
+				font-size: 0.8em;
+				font-weight: bold;
+				display: block;
+			}
+
+			.bs-permission-manager-simple-matrix-ns {
+				margin-top: 20px;
+
+				.bs-permission-manager-simple-matrix-ns-panel {
+					display: block;
+					padding: 10px;
+					margin-bottom: 10px;
+					border: 1px solid #cecece;
+
+					>.oo-ui-labelWidget {
+						font-size: 1.1em;
+						font-weight: bold;
+					}
+				}
+			}
+
+			.bs-permission-manager-matrix-dirty {
+				border-bottom: 2px solid red;
+			}
+		}
+	}
 }
 
 .bs-permission-manager-permission {
-  background-color: #d7d5d5;
-  padding: 0 10px;
-  border-radius: 10px;
-  margin-right: 5px;
-  white-space: nowrap;
-  display: inline-block;
-  margin-top: 3px;
+	background-color: #d7d5d5;
+	padding: 0 10px;
+	border-radius: 10px;
+	margin-right: 5px;
+	white-space: nowrap;
+	display: inline-block;
+	margin-top: 3px;
 }
