@@ -38,14 +38,24 @@ class RetrieveGroups extends SimpleHandler {
 
 		foreach ( $groups as $group ) {
 			$display = $group;
-			$labelMsg = "group-$group";
+
+			// Possible values:
+			// - bs-permissionmanager-group-explicit-editor
+			// - bs-permissionmanager-group-explicit-reader
+			// - bs-permissionmanager-group-explicit-reviewer
+			// - bs-permissionmanager-group-explicit-sysop
+			$labelMsg = "bs-permissionmanager-group-explicit-$group";
 			if ( $group === '*' ) {
-				$labelMsg = "group-anon";
+				$labelMsg = 'bs-permissionmanager-group-implicit-anon';
 			}
 			if ( $group === 'user' ) {
-				$labelMsg = "group-bs-user";
+				$labelMsg = 'bs-permissionmanager-group-implicit-user';
 			}
 			$labelMsg = wfMessage( $labelMsg );
+			if ( !$labelMsg->exists() ) {
+				// Fallback to MediaWiki default message pattern
+				$labelMsg = wfMessage( "group-$group" );
+			}
 			if ( $labelMsg->exists() ) {
 				$display = $labelMsg->plain();
 			}
