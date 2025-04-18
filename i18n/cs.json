@@ -13,5 +13,5 @@
 	"bs-permissionmanager-hint": "Tato role obsahuje následující {{PLURAL:$2|povolení: $1}}",
 	"bs-permissionmanager-header-role": "Role",
 	"bs-permissionmanager-write-config-file-error": "Není možno vytvořit či napsat $1",
-	"group-editor": "Editoři"
+	"bs-permissionmanager-group-explicit-editor": "Editoři"
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"EmDashUser002",
 			"Fany",
 			"Fitoschido",
 			"Florian COLLIN",
@@ -61,7 +62,6 @@
 	"bs-permissionmanager-preset-save-error": "La configuration n’a pas pu être enregistrée ! Les modifications n’ont pas été appliquées !",
 	"bs-permissionmanager-preset-save-success": "Configuration enregistrée !",
 	"bs-permissionmanager-pref-max-backups-help": "Nombre de sauvegardes pour les dernières modifications du gestionnaire des droits (Spécial:PermissionManager).",
-	"group-anon": "Utilisateurs non authentifiés",
 	"bs-permissionmanager-group-not-found": "Groupe non trouvé",
 	"bs-permissionmanager-groupmanager-invalid-name": "Le nom du groupe contient {{PLURAL:$1|un caractère non valide|des caractères non valides}} : $2",
 	"bs-permissionmanager-groupmanager-invalid-name-length": "Le nom du groupe ne peut pas dépasser 255 caractères.",
@@ -81,7 +81,6 @@
 	"bs-permissionmanager-group-type-builtin": "intégré",
 	"bs-permissionmanager-group-type-implicit": "implicite",
 	"bs-permissionmanager-namespace-picker": "Espaces de noms",
-	"group-bs-user": "Utilisateurs authentifiés",
 	"bs-permissionmanager-advanced-switch": "Mode avancé",
 	"bs-permissionmanager-advanced-switch-confirm": "Il y a des modifications non enregistrées. Si vous changez de mode, ces modifications seront perdues !",
 	"bs-permission-manager-simple-matrix-global": "Droits globaux",
@@ -98,11 +97,15 @@
 	"bs-permissionmanager-search-namespaces": "Recherche d'un espace de noms...",
 	"bs-permission-manager-simple-matrix-group": "Paramètres pour le groupe : $1",
 	"bs-permissionmanager-group-manager-heading": "Groupes",
-	"group-editor": "Rédacteurs",
-	"group-reviewer": "Relecteurs",
 	"bs-permissionmanager-group-header-implicit": "Groupes automatiques",
 	"bs-permissionmanager-group-header-groups": "Groupes",
 	"bs-permissionmanager-group-disable-edit": "Désactiver les modifications",
 	"bs-permissionmanager-group-enable-edit": "Modifier les groupes",
-	"bs-permissionmanager-header-description": "Description"
+	"bs-permissionmanager-header-description": "Description",
+	"bs-permissionmanager-group-implicit-anon": "Utilisateurs non authentifiés",
+	"bs-permissionmanager-group-implicit-user": "Utilisateurs authentifiés",
+	"bs-permissionmanager-group-explicit-editor": "Rédacteurs",
+	"bs-permissionmanager-group-explicit-reader": "Lecteurs",
+	"bs-permissionmanager-group-explicit-reviewer": "Relecteurs",
+	"bs-permissionmanager-group-explicit-sysop": "Administrateurs"
 }

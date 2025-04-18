@@ -56,7 +56,6 @@
 	"bs-permissionmanager-preset-save-error": "De instellingen kunnen niet worden opgeslagen. De wijzigingen zijn niet doorgevoerd.",
 	"bs-permissionmanager-preset-save-success": "De instellingen zijn opgeslagen.",
 	"bs-permissionmanager-pref-max-backups-help": "Aantal back-ups voor de laatste wijzigingen op de pagina rechtenbeheer (Special:PermissionManager).",
-	"group-anon": "Niet geauthenticeerde gebruikers",
 	"bs-permissionmanager-group-not-found": "Groep niet gevonden",
 	"bs-permissionmanager-groupmanager-invalid-name": "De naam van de groep bevat {{PLURAL:$1|een ongeldig teken|ongeldige tekens}}: $2",
 	"bs-permissionmanager-groupmanager-invalid-name-length": "De naam van de groep kan niet langer zijn dan 255 tekens.",
@@ -76,7 +75,6 @@
 	"bs-permissionmanager-group-type-builtin": "ingebouwd",
 	"bs-permissionmanager-group-type-implicit": "impliciet",
 	"bs-permissionmanager-namespace-picker": "Naamruimten",
-	"group-bs-user": "Geauthenticeerde gebruikers",
 	"bs-permissionmanager-advanced-switch": "Geavanceerde modus",
 	"bs-permissionmanager-advanced-switch-confirm": "Er zijn niet-opgeslagen wijzigingen. Als u van modus verandert, gaan die wijzigingen verloren!",
 	"bs-permission-manager-simple-matrix-global": "Globale machtigingen",
@@ -93,11 +91,13 @@
 	"bs-permissionmanager-search-namespaces": "Een naamruimte zoeken…",
 	"bs-permission-manager-simple-matrix-group": "Instellingen voor groep: $1",
 	"bs-permissionmanager-group-manager-heading": "Groepen",
-	"group-editor": "Bewerkers",
-	"group-reviewer": "Controleurs",
 	"bs-permissionmanager-group-header-implicit": "Automatische groepen",
 	"bs-permissionmanager-group-header-groups": "Groepen",
 	"bs-permissionmanager-group-disable-edit": "Bewerken uitschakelen",
 	"bs-permissionmanager-group-enable-edit": "Groepen bewerken",
-	"bs-permissionmanager-header-description": "Beschrijving"
+	"bs-permissionmanager-header-description": "Beschrijving",
+	"bs-permissionmanager-group-implicit-anon": "Niet geauthenticeerde gebruikers",
+	"bs-permissionmanager-group-implicit-user": "Geauthenticeerde gebruikers",
+	"bs-permissionmanager-group-explicit-editor": "Bewerkers",
+	"bs-permissionmanager-group-explicit-reviewer": "Controleurs"
 }

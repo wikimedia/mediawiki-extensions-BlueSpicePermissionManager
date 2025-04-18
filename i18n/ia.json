@@ -50,7 +50,6 @@
 	"bs-permissionmanager-preset-save-error": "Le configuration non pote esser salveguardate. Le modificationes non ha essite applicate.",
 	"bs-permissionmanager-preset-save-success": "Configuration salveguardate.",
 	"bs-permissionmanager-pref-max-backups-help": "Numero de copias de reserva pro le ultime cambiamentos del gestor de permissiones (Special:PermissionManager).",
-	"group-anon": "Usatores non authenticate",
 	"bs-permissionmanager-group-not-found": "Gruppo non trovate",
 	"bs-permissionmanager-groupmanager-invalid-name": "Le nomine del gruppo contine {{PLURAL:$1|un character|characteres}} non valide: $2",
 	"bs-permissionmanager-groupmanager-invalid-name-length": "Le nomine del gruppo non pote esser plus longe de 255 characteres.",
@@ -70,7 +69,6 @@
 	"bs-permissionmanager-group-type-builtin": "integrate",
 	"bs-permissionmanager-group-type-implicit": "implicite",
 	"bs-permissionmanager-namespace-picker": "Spatios de nomines",
-	"group-bs-user": "Usatores authenticate",
 	"bs-permissionmanager-advanced-switch": "Modo avantiate",
 	"bs-permissionmanager-advanced-switch-confirm": "Il ha cambiamentos non salveguardate. Si tu cambia de modo, ille cambiamentos essera perdite!",
 	"bs-permission-manager-simple-matrix-global": "Permissiones global",
@@ -87,11 +85,13 @@
 	"bs-permissionmanager-search-namespaces": "Cerca un spatio de nomines…",
 	"bs-permission-manager-simple-matrix-group": "Parametros pro le gruppo: $1",
 	"bs-permissionmanager-group-manager-heading": "Gruppos",
-	"group-editor": "Redactores",
-	"group-reviewer": "Revisores",
 	"bs-permissionmanager-group-header-implicit": "Gruppos automatic",
 	"bs-permissionmanager-group-header-groups": "Gruppos",
 	"bs-permissionmanager-group-disable-edit": "Disactivar le modification",
 	"bs-permissionmanager-group-enable-edit": "Modificar gruppos",
-	"bs-permissionmanager-header-description": "Description"
+	"bs-permissionmanager-header-description": "Description",
+	"bs-permissionmanager-group-implicit-anon": "Usatores non authenticate",
+	"bs-permissionmanager-group-implicit-user": "Usatores authenticate",
+	"bs-permissionmanager-group-explicit-editor": "Redactores",
+	"bs-permissionmanager-group-explicit-reviewer": "Revisores"
 }
