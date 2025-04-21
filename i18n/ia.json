@@ -93,5 +93,7 @@
 	"bs-permissionmanager-group-implicit-anon": "Usatores non authenticate",
 	"bs-permissionmanager-group-implicit-user": "Usatores authenticate",
 	"bs-permissionmanager-group-explicit-editor": "Redactores",
-	"bs-permissionmanager-group-explicit-reviewer": "Revisores"
+	"bs-permissionmanager-group-explicit-reader": "Lectores",
+	"bs-permissionmanager-group-explicit-reviewer": "Revisores",
+	"bs-permissionmanager-group-explicit-sysop": "Administratores"
 }

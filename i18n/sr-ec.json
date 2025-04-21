@@ -31,5 +31,6 @@
 	"bs-permissionmanager-group-implicit-anon": "Неаутентификовани корисници",
 	"bs-permissionmanager-group-implicit-user": "Аутентификовани корисници",
 	"bs-permissionmanager-group-explicit-editor": "Уредници",
-	"bs-permissionmanager-group-explicit-reader": "Читаоци"
+	"bs-permissionmanager-group-explicit-reader": "Читаоци",
+	"bs-permissionmanager-group-explicit-sysop": "Администратори"
 }
