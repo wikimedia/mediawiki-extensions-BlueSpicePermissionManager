@@ -4,9 +4,10 @@ namespace BlueSpice\PermissionManager\Special;
 
 use BlueSpice\PermissionManager\PermissionManager;
 use MediaWiki\Html\Html;
-use MediaWiki\SpecialPage\SpecialPage;
+use MediaWiki\Html\TemplateParser;
+use OOJSPlus\Special\OOJSSpecialPage;
 
-class SpecialPermissionManager extends SpecialPage {
+class SpecialPermissionManager extends OOJSSpecialPage {
 	/** @var PermissionManager */
 	protected $permissionManager;
 
@@ -16,18 +17,41 @@ class SpecialPermissionManager extends SpecialPage {
 	 */
 	protected $groups = [];
 
+	/**
+	 * @param PermissionManager $permissionManager
+	 */
 	public function __construct( PermissionManager $permissionManager ) {
 		parent::__construct( 'PermissionManager', 'wikiadmin' );
 
 		$this->permissionManager = $permissionManager;
+		$this->templateParser = new TemplateParser(
+			dirname( __DIR__, 2 ) . '/resources/templates'
+		);
+	}
+
+	/**
+	 *
+	 * @return void
+	 */
+	protected function buildSkeleton() {
+		$this->getOutput()->enableOOUI();
+		$this->getOutput()->addModuleStyles( [ 'ext.bluespice.permissionManager.skeleton' ] );
+		$skeleton = $this->templateParser->processTemplate(
+			'skeleton-permission',
+			[]
+		);
+		$skeletonCnt = Html::openElement( 'div', [
+			'id' => 'bs-permissionManager-skeleton-cnt'
+		] );
+		$skeletonCnt .= $skeleton;
+		$skeletonCnt .= Html::closeElement( 'div' );
+		$this->getOutput()->addHTML( $skeletonCnt );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
-	public function execute( $subPage ) {
-		parent::execute( $subPage );
-
+	public function doExecute( $subPage ) {
 		$availablePresets = $this->permissionManager->getAvailablePresets();
 		$activePreset = $this->permissionManager->getActivePreset();
 		$presetData = [];

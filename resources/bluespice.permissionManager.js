@@ -22,4 +22,7 @@ $( () => {
 			$customPanel: $( '#bs-permission-manager-custom-preset' )
 		} ).$element
 	);
+	if ( $( document ).find( '#bs-permissionManager-skeleton-cnt' ) ) {
+		$( '#bs-permissionManager-skeleton-cnt' ).empty();
+	}
 } );
