@@ -60,7 +60,6 @@
 	"bs-permissionmanager-preset-save-error": "Die Konfiguration kann nicht gespeichert werden! Änderungen werden nicht übernommen!",
 	"bs-permissionmanager-preset-save-success": "Konfiguration wurde gespeichert!",
 	"bs-permissionmanager-pref-max-backups-help": "Anzahl der Backups für die letzten Änderungen an der Rechteverwaltung (Spezial:PermissionManager).",
-	"group-anon": "Nicht authentifizierte Benutzer",
 	"bs-permissionmanager-group-not-found": "Gruppe nicht gefunden",
 	"bs-permissionmanager-groupmanager-invalid-name": "Der Gruppenname enthält {{PLURAL:$1|ein ungültiges Zeichen|ungültige Zeichen}}: $2",
 	"bs-permissionmanager-groupmanager-invalid-name-length": "Der Gruppenname darf nicht länger als 255 Zeichen sein.",
@@ -80,7 +79,6 @@
 	"bs-permissionmanager-group-type-builtin": "eingebaut",
 	"bs-permissionmanager-group-type-implicit": "implizit",
 	"bs-permissionmanager-namespace-picker": "Namensräume",
-	"group-bs-user": "Authentifizierte Benutzer",
 	"bs-permissionmanager-advanced-switch": "Erweiterter Modus",
 	"bs-permissionmanager-advanced-switch-confirm": "Es gibt ungespeicherte Änderungen. Wenn der Modus gewechselt wird, gehen diese Änderungen verloren!",
 	"bs-permission-manager-simple-matrix-global": "Globale Berechtigungen",
@@ -97,11 +95,13 @@
 	"bs-permissionmanager-search-namespaces": "Suche nach einem Namensraum…",
 	"bs-permission-manager-simple-matrix-group": "Einstellungen für Gruppe: $1",
 	"bs-permissionmanager-group-manager-heading": "Gruppen",
-	"group-editor": "Bearbeiter",
-	"group-reviewer": "Begutachter",
 	"bs-permissionmanager-group-header-implicit": "Automatisch erstellte Gruppen",
 	"bs-permissionmanager-group-header-groups": "Gruppen",
 	"bs-permissionmanager-group-disable-edit": "Bearbeitung deaktivieren",
 	"bs-permissionmanager-group-enable-edit": "Gruppen bearbeiten",
-	"bs-permissionmanager-header-description": "Beschreibung"
+	"bs-permissionmanager-header-description": "Beschreibung",
+	"bs-permissionmanager-group-implicit-anon": "Nicht authentifizierte Benutzer",
+	"bs-permissionmanager-group-implicit-user": "Authentifizierte Benutzer",
+	"bs-permissionmanager-group-explicit-editor": "Bearbeiter",
+	"bs-permissionmanager-group-explicit-reviewer": "Begutachter"
 }

@@ -22,7 +22,6 @@
 	"bs-permissionmanager-preset-private-label": "Privat Wiki",
 	"bs-permissionmanager-preset-public-label": "Ëffentlech Wiki",
 	"bs-permissionmanager-preset-save-success": "Konfiguratioun gespäichert!",
-	"group-anon": "Net-confirméiert Benotzer",
 	"bs-permissionmanager-group-not-found": "Grupp net fonnt",
 	"bs-permissionmanager-groupmanager-invalid-name": "Am Gruppennumm {{PLURAL:$1|kënnt en ongültegt Zeeche|kommen ongülteg Zeeche}} vir: $2",
 	"bs-permissionmanager-group-already-exists": "D'Grupp existéiert schonn",
@@ -37,7 +36,6 @@
 	"bs-permissionmanager-group-name": "Gruppennumm",
 	"bs-permissionmanager-group-type-implicit": "implizitt",
 	"bs-permissionmanager-namespace-picker": "Nummraim",
-	"group-bs-user": "Confirméiert Benotzer",
 	"bs-permissionmanager-advanced-switch": "Erweiderte Modus",
 	"bs-permission-manager-simple-matrix-namespace": "Nummraumspezifesch Rechter",
 	"bs-permissionmanager-search-namespaces": "No engem Nummraum sichen…",
@@ -47,5 +45,9 @@
 	"bs-permissionmanager-group-header-groups": "Gruppen",
 	"bs-permissionmanager-group-disable-edit": "Änneren desaktivéieren",
 	"bs-permissionmanager-group-enable-edit": "Gruppen änneren",
-	"bs-permissionmanager-header-description": "Beschreiwung"
+	"bs-permissionmanager-header-description": "Beschreiwung",
+	"bs-permissionmanager-group-implicit-anon": "Net-confirméiert Benotzer",
+	"bs-permissionmanager-group-implicit-user": "Confirméiert Benotzer",
+	"bs-permissionmanager-group-explicit-reader": "Lieser",
+	"bs-permissionmanager-group-explicit-sysop": "Administrateuren"
 }

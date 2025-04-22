@@ -49,10 +49,12 @@
 	"bs-permissionmanager-preset-public-label": "Wiki pubblico",
 	"bs-permissionmanager-preset-save-error": "La configurazione non può essere salvata! Le modifiche non vengono applicate!",
 	"bs-permissionmanager-preset-save-success": "Configurazione salvata",
-	"group-anon": "Utenti non autenticati",
 	"bs-permissionmanager-namespace-picker": "Namespace",
 	"bs-permissionmanager-group-manager-heading": "Gruppi",
 	"bs-permissionmanager-group-header-implicit": "Gruppi automatici",
 	"bs-permissionmanager-group-header-groups": "Gruppi",
-	"bs-permissionmanager-header-description": "Descrizione"
+	"bs-permissionmanager-header-description": "Descrizione",
+	"bs-permissionmanager-group-implicit-anon": "Utenti non autenticati",
+	"bs-permissionmanager-group-explicit-reader": "Lettori",
+	"bs-permissionmanager-group-explicit-sysop": "Amministratori"
 }
