@@ -68,6 +68,11 @@
 		"remoteExtPath": "BlueSpicePermissionManager/resources"
 	},
 	"ResourceModules": {
+		"ext.bluespice.permissionManager.skeleton": {
+			"styles": [
+				"stylesheets/skeleton-permissionManager.css"
+			]
+		},
 		"ext.bluespice.permissionManager.presetSelector": {
 			"scripts": [
 				"widget/Preset.js",
