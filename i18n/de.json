@@ -103,5 +103,7 @@
 	"bs-permissionmanager-group-implicit-anon": "Nicht authentifizierte Benutzer",
 	"bs-permissionmanager-group-implicit-user": "Authentifizierte Benutzer",
 	"bs-permissionmanager-group-explicit-editor": "Bearbeiter",
-	"bs-permissionmanager-group-explicit-reviewer": "Begutachter"
+	"bs-permissionmanager-group-explicit-reader": "Leser",
+	"bs-permissionmanager-group-explicit-reviewer": "Prüfer",
+	"bs-permissionmanager-group-explicit-sysop": "Administratoren"
 }
