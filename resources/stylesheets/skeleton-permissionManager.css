@@ -1,0 +1,74 @@
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 2rem;
+	border-radius: 12px;
+}
+
+.toolbar {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+
+.toolbar .skeleton {
+	width: 52px;
+	height: 36px;
+	margin: 0 6px;
+}
+
+.toolbar .skeleton.left {
+	width: 52px;
+	height: 36px;
+}
+
+.toolbar .skeleton.right {
+	width: 92px;
+	height: 36px;
+}
+
+.skeleton {
+	background: linear-gradient( 90deg, #eee, #ddd, #eee );
+	background-size: 200% 100%;
+	animation: shimmer 1.5s infinite;
+	border-radius: 6px;
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: -200% 0;
+	}
+
+	100% {
+		background-position: 200% 0;
+	}
+}
+
+.bs-perm-skeleton-card {
+	display: flex;
+	margin: 20px 0;
+}
+
+.bs-perm-skeleton-card-img {
+	width: 70px;
+	height: 70px;
+	margin: 15px;
+}
+
+.bs-perm-skeleton-card-data-cnt {
+	margin-left: 25px;
+	width: 70%;
+}
+
+.bs-perm-skeleton-card-data-title {
+	width: 25%;
+	height: 25px;
+	margin: 5px 0 15px 0;
+}
+
+.bs-perm-skeleton-card-data-text {
+	width: 75%;
+	height: 15px;
+	margin: 10px 0;
+}
