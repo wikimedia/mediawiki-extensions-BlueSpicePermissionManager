@@ -47,5 +47,9 @@
 	"bs-permissionmanager-group-header-groups": "Gruppen",
 	"bs-permissionmanager-group-disable-edit": "Änneren desaktivéieren",
 	"bs-permissionmanager-group-enable-edit": "Gruppen änneren",
-	"bs-permissionmanager-header-description": "Beschreiwung"
+	"bs-permissionmanager-header-description": "Beschreiwung",
+	"bs-permissionmanager-group-implicit-anon": "Net-confirméiert Benotzer",
+	"bs-permissionmanager-group-implicit-user": "Confirméiert Benotzer",
+	"bs-permissionmanager-group-explicit-reader": "Lieser",
+	"bs-permissionmanager-group-explicit-sysop": "Administrateuren"
 }

@@ -30,5 +30,10 @@
 	"group-editor": "Уредници",
 	"bs-permissionmanager-group-header-implicit": "Аутоматске групе",
 	"bs-permissionmanager-group-header-groups": "Групе",
-	"bs-permissionmanager-header-description": "Опис"
+	"bs-permissionmanager-header-description": "Опис",
+	"bs-permissionmanager-group-implicit-anon": "Неаутентификовани корисници",
+	"bs-permissionmanager-group-implicit-user": "Аутентификовани корисници",
+	"bs-permissionmanager-group-explicit-editor": "Уредници",
+	"bs-permissionmanager-group-explicit-reader": "Читаоци",
+	"bs-permissionmanager-group-explicit-sysop": "Администратори"
 }

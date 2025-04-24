@@ -66,5 +66,7 @@
 	"bs-permissionmanager-group-manager-heading": "그룹",
 	"bs-permissionmanager-group-header-groups": "그룹",
 	"bs-permissionmanager-group-enable-edit": "그룹 편집",
-	"bs-permissionmanager-header-description": "설명"
+	"bs-permissionmanager-header-description": "설명",
+	"bs-permissionmanager-group-implicit-anon": "인증되지 않은 사용자",
+	"bs-permissionmanager-group-implicit-user": "로그인한 모든 사용자"
 }

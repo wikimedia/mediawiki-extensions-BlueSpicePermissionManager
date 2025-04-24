@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"EmDashUser002",
 			"Fany",
 			"Fitoschido",
 			"Florian COLLIN",
@@ -104,5 +105,11 @@
 	"bs-permissionmanager-group-header-groups": "Groupes",
 	"bs-permissionmanager-group-disable-edit": "Désactiver les modifications",
 	"bs-permissionmanager-group-enable-edit": "Modifier les groupes",
-	"bs-permissionmanager-header-description": "Description"
+	"bs-permissionmanager-header-description": "Description",
+	"bs-permissionmanager-group-implicit-anon": "Utilisateurs non authentifiés",
+	"bs-permissionmanager-group-implicit-user": "Utilisateurs authentifiés",
+	"bs-permissionmanager-group-explicit-editor": "Rédacteurs",
+	"bs-permissionmanager-group-explicit-reader": "Lecteurs",
+	"bs-permissionmanager-group-explicit-reviewer": "Relecteurs",
+	"bs-permissionmanager-group-explicit-sysop": "Administrateurs"
 }

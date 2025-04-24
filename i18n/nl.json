@@ -99,5 +99,9 @@
 	"bs-permissionmanager-group-header-groups": "Groepen",
 	"bs-permissionmanager-group-disable-edit": "Bewerken uitschakelen",
 	"bs-permissionmanager-group-enable-edit": "Groepen bewerken",
-	"bs-permissionmanager-header-description": "Beschrijving"
+	"bs-permissionmanager-header-description": "Beschrijving",
+	"bs-permissionmanager-group-implicit-anon": "Niet geauthenticeerde gebruikers",
+	"bs-permissionmanager-group-implicit-user": "Geauthenticeerde gebruikers",
+	"bs-permissionmanager-group-explicit-editor": "Bewerkers",
+	"bs-permissionmanager-group-explicit-reviewer": "Controleurs"
 }

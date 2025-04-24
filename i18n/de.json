@@ -103,5 +103,11 @@
 	"bs-permissionmanager-group-header-groups": "Gruppen",
 	"bs-permissionmanager-group-disable-edit": "Bearbeitung deaktivieren",
 	"bs-permissionmanager-group-enable-edit": "Gruppen bearbeiten",
-	"bs-permissionmanager-header-description": "Beschreibung"
+	"bs-permissionmanager-header-description": "Beschreibung",
+	"bs-permissionmanager-group-implicit-anon": "Nicht authentifizierte Benutzer",
+	"bs-permissionmanager-group-implicit-user": "Authentifizierte Benutzer",
+	"bs-permissionmanager-group-explicit-editor": "Bearbeiter",
+	"bs-permissionmanager-group-explicit-reader": "Leser",
+	"bs-permissionmanager-group-explicit-reviewer": "Prüfer",
+	"bs-permissionmanager-group-explicit-sysop": "Administratoren"
 }

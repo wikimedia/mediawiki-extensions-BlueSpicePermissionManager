@@ -93,5 +93,11 @@
 	"bs-permissionmanager-group-header-groups": "Gruppos",
 	"bs-permissionmanager-group-disable-edit": "Disactivar le modification",
 	"bs-permissionmanager-group-enable-edit": "Modificar gruppos",
-	"bs-permissionmanager-header-description": "Description"
+	"bs-permissionmanager-header-description": "Description",
+	"bs-permissionmanager-group-implicit-anon": "Usatores non authenticate",
+	"bs-permissionmanager-group-implicit-user": "Usatores authenticate",
+	"bs-permissionmanager-group-explicit-editor": "Redactores",
+	"bs-permissionmanager-group-explicit-reader": "Lectores",
+	"bs-permissionmanager-group-explicit-reviewer": "Revisores",
+	"bs-permissionmanager-group-explicit-sysop": "Administratores"
 }

@@ -49,5 +49,7 @@
 	"bs-permissionmanager-group-manager-heading": "Группы",
 	"group-reviewer": "Рецензенты",
 	"bs-permissionmanager-group-header-groups": "Группы",
-	"bs-permissionmanager-header-description": "Описание"
+	"bs-permissionmanager-header-description": "Описание",
+	"bs-permissionmanager-group-implicit-anon": "Неаутентифицированные пользователи",
+	"bs-permissionmanager-group-explicit-reviewer": "Рецензенты"
 }
