@@ -110,5 +110,11 @@
 	"group-reviewer": "Reviewers",
 	"bs-permissionmanager-group-header-implicit": "Automatic groups",
 	"bs-permissionmanager-group-header-groups": "Groups",
-	"bs-permissionmanager-header-description": "Description"
+	"bs-permissionmanager-header-description": "Description",
+	"bs-permissionmanager-group-implicit-anon": "Unauthenticated users",
+	"bs-permissionmanager-group-implicit-user": "Authenticated users",
+	"bs-permissionmanager-group-explicit-editor": "Editors",
+	"bs-permissionmanager-group-explicit-reader": "Readers",
+	"bs-permissionmanager-group-explicit-reviewer": "Reviewers",
+	"bs-permissionmanager-group-explicit-sysop": "Administrators"
 }

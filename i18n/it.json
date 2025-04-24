@@ -66,5 +66,8 @@
 	"bs-permissionmanager-group-manager-heading": "Gruppi",
 	"bs-permissionmanager-group-header-implicit": "Gruppi automatici",
 	"bs-permissionmanager-group-header-groups": "Gruppi",
-	"bs-permissionmanager-header-description": "Descrizione"
+	"bs-permissionmanager-header-description": "Descrizione",
+	"bs-permissionmanager-group-implicit-anon": "Utenti non autenticati",
+	"bs-permissionmanager-group-explicit-reader": "Lettori",
+	"bs-permissionmanager-group-explicit-sysop": "Amministratori"
 }

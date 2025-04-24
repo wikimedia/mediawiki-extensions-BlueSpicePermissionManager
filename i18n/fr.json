@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"EmDashUser002",
 			"Fany",
 			"Fitoschido",
 			"Florian COLLIN",
 			"Gomoko",
+			"JLTRY",
 			"Ltrlg",
 			"Pols12",
 			"SleaY",
@@ -103,5 +105,25 @@
 	"bs-permissionmanager-simple-inherited": "Accordé - hérité du groupe $1",
 	"bs-permissionmanager-simple-explicit": "Accordé explicitement",
 	"bs-permissionmanager-simple-setonwiki": "Accordé - hérité des autorisations globales",
-	"bs-permissionmanager-search-namespaces": "Recherche d'un espace de noms..."
+	"bs-permissionmanager-search-namespaces": "Recherche d'un espace de noms...",
+	"bs-permissionmanager-groupmanager-invalid-name": "Le nom du groupe contient {{PLURAL:$1|un caractère non valide|des caractères non valides}} : $2",
+	"bs-permissionmanager-group-remove-confirm": "La suppression du groupe \"$1\" supprimera immédiatement et irréversiblement tous les utilisateurs de ce groupe, et révoquera donc toutes les autorisations accordées à ce groupe. Êtes-vous sûr de vouloir continuer ?",
+	"bs-permissionmanager-advanced-switch-confirm": "Il y a des modifications non enregistrées. Si vous changez de mode, ces modifications seront perdues !",
+	"bs-permission-manager-simple-matrix-global-sub": "Attribuer des rôles pour chaque espace de noms sur le wiki, sauf si explicitement bloqué",
+	"bs-permission-manager-simple-matrix-namespace": "Autorisations spécifiques à l'espace de noms",
+	"bs-permission-manager-simple-matrix-namespace-sub": "Affichage des espaces de noms de contenu",
+	"bs-permissionmanager-simple-setonwiki-sub": "Sélectionnez les rôles à accorder à ce groupe exclusivement dans l'espace de noms sélectionné (en bloquant tous les autres groupes)",
+	"bs-permissionmanager-simple-blocked": "Refusé - accordé exclusivement à {{PLURAL:$2| groupe|groupes}} $1",
+	"bs-permissionmanager-simple-blocked-sub": "Sélectionnez-le pour ajouter ce groupe à la liste des groupes auxquels ce rôle est accordé",
+	"bs-permission-manager-simple-matrix-group": "Paramètres pour le groupe : $1",
+	"bs-permissionmanager-group-manager-heading": "Groupes",
+	"bs-permissionmanager-group-header-implicit": "Groupes automatiques",
+	"bs-permissionmanager-group-header-groups": "Groupes",
+	"bs-permissionmanager-header-description": "Description",
+	"bs-permissionmanager-group-implicit-anon": "Utilisateurs non authentifiés",
+	"bs-permissionmanager-group-implicit-user": "Utilisateurs authentifiés",
+	"bs-permissionmanager-group-explicit-editor": "Rédacteurs",
+	"bs-permissionmanager-group-explicit-reader": "Lecteurs",
+	"bs-permissionmanager-group-explicit-reviewer": "Relecteurs",
+	"bs-permissionmanager-group-explicit-sysop": "Administrateurs"
 }

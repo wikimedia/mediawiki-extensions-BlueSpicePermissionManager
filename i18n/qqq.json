@@ -116,5 +116,11 @@
 	"group-reviewer": "Group label",
 	"bs-permissionmanager-group-header-implicit": "Label of the section showing implicit groups",
 	"bs-permissionmanager-group-header-groups": "Label of the section showing custom and built-in groups",
-	"bs-permissionmanager-header-description": "Column header"
+	"bs-permissionmanager-header-description": "Column header",
+	"bs-permissionmanager-group-implicit-anon": "Group name for `*` implicit group",
+	"bs-permissionmanager-group-implicit-user": "Group name for `user` implicit group",
+	"bs-permissionmanager-group-explicit-editor": "Group label",
+	"bs-permissionmanager-group-explicit-reader": "Group label",
+	"bs-permissionmanager-group-explicit-reviewer": "Group label",
+	"bs-permissionmanager-group-explicit-sysop": "Group label"
 }

@@ -17,5 +17,8 @@
 	"bs-permissionmanager-group-type-implicit": "پوشیدہ",
 	"bs-permissionmanager-group-manager-heading": "گروپس",
 	"group-editor": "ایڈیٹر",
-	"bs-permissionmanager-group-header-groups": "گروپس"
+	"bs-permissionmanager-group-header-groups": "گروپس",
+	"bs-permissionmanager-group-explicit-editor": "ایڈیٹر",
+	"bs-permissionmanager-group-explicit-reader": "قارئین",
+	"bs-permissionmanager-group-explicit-sysop": "منتظمین"
 }

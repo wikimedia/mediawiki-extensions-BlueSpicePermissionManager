@@ -6,6 +6,7 @@
 			"Elliot",
 			"Hwboehm",
 			"Jkonrad",
+			"Justman10000",
 			"Metalhead64",
 			"Mglaser",
 			"Stephan Muggli <muggli@hallowelt.biz>",
@@ -115,5 +116,14 @@
 	"bs-permissionmanager-group-type-custom": "Benutzerdefiniert",
 	"bs-permissionmanager-group-type-implicit": "implizit",
 	"group-editor": "Bearbeiter",
-	"group-reviewer": "Begutachter"
+	"group-reviewer": "Begutachter",
+	"bs-permissionmanager-groupmanager-invalid-name": "Der Gruppenname enthält {{PLURAL:$1|ein ungültiges Zeichen|ungültige Zeichen}}: $2",
+	"bs-permissionmanager-group-remove-confirm": "Wenn du die Gruppe „$1“ löschst, werden sofort und unwiderruflich alle Benutzer aus dieser Gruppe entfernt und somit auch alle dieser Gruppe gewährten Berechtigungen entzogen. Bist du sicher, dass du fortfahren möchtest?",
+	"bs-permissionmanager-group-type-builtin": "eingebaut",
+	"bs-permissionmanager-group-implicit-anon": "Nicht authentifizierte Benutzer",
+	"bs-permissionmanager-group-implicit-user": "Authentifizierte Benutzer",
+	"bs-permissionmanager-group-explicit-editor": "Bearbeiter",
+	"bs-permissionmanager-group-explicit-reader": "Leser",
+	"bs-permissionmanager-group-explicit-reviewer": "Prüfer",
+	"bs-permissionmanager-group-explicit-sysop": "Administratoren"
 }
