@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bosogo"
+			"Bosogo",
+			"Baydastann"
 		]
 	},
 	"bs-permissionmanager-header-global": "Вики",
-	"bs-permissionmanager-btn-save-label": "Сактоо"
+	"bs-permissionmanager-btn-save-label": "Сактоо",
+	"bs-permissionmanager-group-explicit-reader": "Окурмандар",
+	"bs-permissionmanager-group-explicit-sysop": "Администраторлор"
 }

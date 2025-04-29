@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
-	"bs-permissionmanager-group-create": "جوړول"
+	"bs-permissionmanager-group-create": "جوړول",
+	"bs-permissionmanager-group-explicit-reader": "لوستونکي",
+	"bs-permissionmanager-group-explicit-sysop": "پازوالان"
 }
