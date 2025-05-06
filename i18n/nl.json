@@ -37,7 +37,7 @@
 	"bs-permissionmanager-header-role": "Rol",
 	"bs-permissionmanager-write-config-file-error": "Kan $1 niet aanmaken of beschrijven",
 	"right-permissionmanager-viewspecialpage": "Toegang tot de speciale pagina [[Special:PermissionManager]]",
-	"bs-premissionmanager-reset-button-label": "Herstellen",
+	"bs-premissionmanager-reset-button-label": "Opnieuw instellen",
 	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|heeft}} de rol{{PLURAL:$6||len}} $5 toegevoegd aan de groep $4",
 	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|heeft}} de rol{{PLURAL:$6||len}} $5 verwijderd uit de groep $4",
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|heeft}} de rol{{PLURAL:$6||len}} $5 in de naamruimte $7 toegevoegd aan de groep $4",
