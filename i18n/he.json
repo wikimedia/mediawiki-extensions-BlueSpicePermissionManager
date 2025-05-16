@@ -100,5 +100,7 @@
 	"bs-permissionmanager-group-implicit-anon": "משתמשים שלא אומתו",
 	"bs-permissionmanager-group-implicit-user": "משתמשים שאומתי",
 	"bs-permissionmanager-group-explicit-editor": "עורכים",
-	"bs-permissionmanager-group-explicit-reviewer": "סוקרים"
+	"bs-permissionmanager-group-explicit-reviewer": "סוקרים",
+	"bs-permissionmanager-group-explicit-reader": "קוראים",
+	"bs-permissionmanager-group-explicit-sysop": "מפעילים"
 }
