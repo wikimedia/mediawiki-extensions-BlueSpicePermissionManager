@@ -2,8 +2,8 @@
 
 namespace BlueSpice\PermissionManager;
 
+use Exception;
 use MediaWiki\Message\Message;
-use MWException;
 
 interface IPreset {
 	/**
@@ -36,7 +36,7 @@ interface IPreset {
 	 * Apply to the system
 	 *
 	 * @return array
-	 * @throws MWException
+	 * @throws Exception
 	 */
 	public function apply();
 }
