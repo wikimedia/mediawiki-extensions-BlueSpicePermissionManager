@@ -284,7 +284,9 @@
 		}
 	],
 	"AutoloadNamespaces": {
-		"BlueSpice\\PermissionManager\\": "src/",
+		"BlueSpice\\PermissionManager\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
 		"BlueSpice\\PermissionManager\\Tests\\": "tests/phpunit/"
 	},
 	"callback": "BlueSpice\\PermissionManager\\Extension::onCallback",
