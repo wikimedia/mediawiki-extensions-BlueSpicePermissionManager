@@ -33,6 +33,7 @@
 	"group-anon": "Net-confirméiert Benotzer",
 	"bs-permissionmanager-group-not-found": "Grupp net fonnt",
 	"bs-permissionmanager-groupmanager-invalid-name": "Am Gruppennumm {{PLURAL:$1|kënnt en ongültegt Zeeche|kommen ongülteg Zeeche}} vir: $2",
+	"bs-permissionmanager-groupmanager-invalid-name-length": "De Gruppennumm däerf net méi laang wéi 255 Zeeche sinn.",
 	"bs-permissionmanager-group-already-exists": "D'Grupp existéiert schonn",
 	"bs-permissionmanager-group-disable-edit": "Änneren desaktivéieren",
 	"bs-permissionmanager-group-enable-edit": "Gruppen änneren",
