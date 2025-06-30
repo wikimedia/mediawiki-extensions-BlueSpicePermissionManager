@@ -17,5 +17,17 @@
 	"bs-permissionmanager-preset-public-label": "Javni viki",
 	"bs-permissionmanager-preset-save-error": "Nije moguće čuvanje podešavanja! Izmene nisu primenjene!",
 	"bs-permissionmanager-preset-save-success": "Podešavanja su sačuvana!",
-	"bs-permissionmanager-namespace-picker": "Imenski prostori"
+	"bs-permissionmanager-namespace-picker": "Imenski prostori",
+	"bs-permissionmanager-group-create": "Napravi",
+	"bs-permissionmanager-cancel": "Otkaži",
+	"bs-permission-manager-simple-matrix-group": "Podešavanja za grupu: $1",
+	"bs-permissionmanager-group-manager-heading": "Grupe",
+	"bs-permissionmanager-group-header-implicit": "Automatske grupe",
+	"bs-permissionmanager-group-header-groups": "Grupe",
+	"bs-permissionmanager-header-description": "Opis",
+	"bs-permissionmanager-group-implicit-anon": "Neautentifikovani korisnici",
+	"bs-permissionmanager-group-implicit-user": "Autentifikovani korisnici",
+	"bs-permissionmanager-group-explicit-editor": "Urednici",
+	"bs-permissionmanager-group-explicit-reader": "Čitaoci",
+	"bs-permissionmanager-group-explicit-sysop": "Administratori"
 }

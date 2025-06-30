@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"EmDashUser002",
 			"Fany",
 			"Fitoschido",
 			"Florian COLLIN",
@@ -12,8 +13,7 @@
 			"Thibaut120094",
 			"Verdy p",
 			"Windes",
-			"Wladek92",
-			"EmDashUser002"
+			"Wladek92"
 		]
 	},
 	"bs-permissionmanager-desc": "Interface d’administration pour la modification des droits des utilisateurs",
