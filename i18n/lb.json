@@ -24,6 +24,7 @@
 	"bs-permissionmanager-preset-save-success": "Konfiguratioun gespäichert!",
 	"bs-permissionmanager-group-not-found": "Grupp net fonnt",
 	"bs-permissionmanager-groupmanager-invalid-name": "Am Gruppennumm {{PLURAL:$1|kënnt en ongültegt Zeeche|kommen ongülteg Zeeche}} vir: $2",
+	"bs-permissionmanager-groupmanager-invalid-name-length": "De Gruppennumm däerf net méi laang wéi 255 Zeeche sinn.",
 	"bs-permissionmanager-group-already-exists": "D'Grupp existéiert schonn",
 	"bs-permissionmanager-group-remove": "Grupp ewechhuelen",
 	"bs-permissionmanager-group-edit": "Grupp änneren",
@@ -49,6 +50,5 @@
 	"bs-permissionmanager-group-implicit-anon": "Net-confirméiert Benotzer",
 	"bs-permissionmanager-group-implicit-user": "Confirméiert Benotzer",
 	"bs-permissionmanager-group-explicit-reader": "Lieser",
-	"bs-permissionmanager-group-explicit-sysop": "Administrateuren",
-	"bs-permissionmanager-groupmanager-invalid-name-length": "De Gruppennumm däerf net méi laang wéi 255 Zeeche sinn."
+	"bs-permissionmanager-group-explicit-sysop": "Administrateuren"
 }
