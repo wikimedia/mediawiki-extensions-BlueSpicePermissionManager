@@ -208,6 +208,7 @@ bs.permissionManager.panel.PermissionManager.prototype.getNamespaceMeta = functi
 		}
 	}
 	meta.blocking = this.getAssignedGroupsForNamespaceAndRole( namespace, role ).filter( ( g ) => g !== group );
+	meta.blocking = this.removeImplicitGroupsFromBlock( group, meta.blocking );
 	meta.blocking = meta.blocking.map( ( g ) => this.groupSelector.getGroupLabel( g ) || g );
 	if ( meta.blocking.length > 0 && meta.assignment !== 'explicit' ) {
 		meta.isBlocked = true;
@@ -223,7 +224,8 @@ bs.permissionManager.panel.PermissionManager.prototype.getBlockingDependencies =
 		}
 		const roles = dependencies[ permission ];
 		for ( let i = 0; i < roles.length; i++ ) {
-			const blocking = this.getAssignedGroupsForNamespaceAndRole( namespace, roles[ i ] );
+			let blocking = this.getAssignedGroupsForNamespaceAndRole( namespace, roles[ i ] );
+			blocking = this.removeImplicitGroupsFromBlock( group, blocking );
 			if ( blocking.length > 0 && blocking.indexOf( group ) === -1 ) {
 				if ( !res.hasOwnProperty( permission ) ) {
 					res[ permission ] = [];
@@ -233,6 +235,20 @@ bs.permissionManager.panel.PermissionManager.prototype.getBlockingDependencies =
 		}
 	}
 	return res;
+};
+
+bs.permissionManager.panel.PermissionManager.prototype.removeImplicitGroupsFromBlock = function ( forGroup, blocking ) {
+	if ( forGroup !== '*' && blocking.indexOf( '*' ) !== -1 ) {
+		// Remove any roles blocked by `*` if the group is not `*`
+		blocking.splice( blocking.indexOf( '*' ), 1 );
+	}
+	if ( forGroup !== 'user' && forGroup !== '*' ) {
+		// Remove any roles blocked by `user` and `*` if the group is not `user` or `*`
+		blocking.splice( blocking.indexOf( '*' ), 1 );
+		blocking.splice( blocking.indexOf( 'user' ), 1 );
+	}
+
+	return blocking;
 };
 
 bs.permissionManager.panel.PermissionManager.prototype.getAssignedGroupsForNamespaceAndRole = function ( namespace, role ) {
