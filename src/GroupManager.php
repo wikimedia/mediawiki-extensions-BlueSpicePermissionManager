@@ -9,6 +9,7 @@ use MediaWiki\Config\Config;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Message\Message;
 use MediaWiki\Permissions\Authority;
+use MediaWiki\User\User;
 use MWStake\MediaWiki\Component\DynamicConfig\DynamicConfigManager;
 use Psr\Log\LoggerInterface;
 use Wikimedia\Rdbms\ILoadBalancer;
@@ -187,6 +188,9 @@ class GroupManager {
 	 * @return void
 	 */
 	private function assertActorCan( string $action, Authority $actor ) {
+		if ( $actor instanceof User && $actor->isSystemUser() ) {
+			return;
+		}
 		if ( !$actor->isAllowed( 'wikiadmin' ) ) {
 			throw new InvalidArgumentException(
 				Message::newFromKey( 'bs-permissionmanager-action-not-allowed' )->plain()
