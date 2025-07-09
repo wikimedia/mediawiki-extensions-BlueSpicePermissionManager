@@ -9,8 +9,9 @@
 	"requires": {
 		"MediaWiki": ">= 1.39.0",
 		"extensions": {
-			"BlueSpiceFoundation": ">= 4.3",
-			"OOJSPlus": "*"
+			"BlueSpiceFoundation": ">= 5.1",
+			"BlueSpiceConfigManager": ">= 5.1",
+			"OOJSPlus": ">= 3.0.0"
 		}
 	},
 	"attributes": {
