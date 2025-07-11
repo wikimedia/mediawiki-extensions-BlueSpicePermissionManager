@@ -238,14 +238,20 @@ bs.permissionManager.panel.PermissionManager.prototype.getBlockingDependencies =
 };
 
 bs.permissionManager.panel.PermissionManager.prototype.removeImplicitGroupsFromBlock = function ( forGroup, blocking ) {
+	blocking = $.extend( [], blocking );
 	if ( forGroup !== '*' && blocking.indexOf( '*' ) !== -1 ) {
 		// Remove any roles blocked by `*` if the group is not `*`
 		blocking.splice( blocking.indexOf( '*' ), 1 );
 	}
 	if ( forGroup !== 'user' && forGroup !== '*' ) {
 		// Remove any roles blocked by `user` and `*` if the group is not `user` or `*`
-		blocking.splice( blocking.indexOf( '*' ), 1 );
-		blocking.splice( blocking.indexOf( 'user' ), 1 );
+		if ( blocking.indexOf( 'user' ) !== -1 ) {
+			blocking.splice( blocking.indexOf( 'user' ), 1 );
+		}
+		if ( blocking.indexOf( '*' ) !== -1 ) {
+			// Remove `*` if it is present, as it is not relevant for non-user groups
+			blocking.splice( blocking.indexOf( '*' ), 1 );
+		}
 	}
 
 	return blocking;
