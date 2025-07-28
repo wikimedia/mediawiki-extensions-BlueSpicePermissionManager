@@ -14,5 +14,7 @@
 	"bs-permissionmanager-namespace-picker": "Անվանատարածքներ",
 	"bs-permissionmanager-group-manager-heading": "Խմբեր",
 	"bs-permissionmanager-group-header-groups": "Խմբեր",
-	"bs-permissionmanager-header-description": "Նկարագրություն"
+	"bs-permissionmanager-header-description": "Նկարագրություն",
+	"bs-permissionmanager-group-explicit-reader": "Կարդացողներ",
+	"bs-permissionmanager-group-explicit-sysop": "Ադմինիստրատորներ"
 }

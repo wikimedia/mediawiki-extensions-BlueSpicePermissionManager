@@ -53,7 +53,7 @@
 	"bs-permissionmanager-role-permissions-label": "Machtigingen in rol: $1",
 	"bs-permissionmanager-role-permissions-column-permission": "Toestemming",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Beschrijving",
-	"bs-premissionmanager-reset-button-label": "Herstellen",
+	"bs-premissionmanager-reset-button-label": "Opnieuw instellen",
 	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|heeft}} de rol{{PLURAL:$6||len}} $5 toegevoegd aan de groep $4",
 	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|heeft}} de rol{{PLURAL:$6||len}} $5 verwijderd uit de groep $4",
 	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|heeft}} de rol{{PLURAL:$6||len}} $5 in de naamruimte $7 toegevoegd aan de groep $4",
@@ -117,5 +117,7 @@
 	"bs-permissionmanager-group-implicit-anon": "Niet geauthenticeerde gebruikers",
 	"bs-permissionmanager-group-implicit-user": "Geauthenticeerde gebruikers",
 	"bs-permissionmanager-group-explicit-editor": "Bewerkers",
-	"bs-permissionmanager-group-explicit-reviewer": "Controleurs"
+	"bs-permissionmanager-group-explicit-reviewer": "Controleurs",
+	"bs-permissionmanager-group-explicit-reader": "Lezers",
+	"bs-permissionmanager-group-explicit-sysop": "Moderatoren"
 }
