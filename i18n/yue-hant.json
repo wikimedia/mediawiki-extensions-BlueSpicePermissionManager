@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"Yueman"
 		]
 	},
 	"action-permissionmanager-viewspecialpage": "睇下特殊頁面“{{int:bs-permissionmanager-label}}”",
-	"permissionmanager": "權限管理"
+	"permissionmanager": "權限管理",
+	"bs-permissionmanager-header-permissions": "許可",
+	"bs-permissionmanager-group-all": "全部"
 }
