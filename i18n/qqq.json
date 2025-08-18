@@ -8,6 +8,7 @@
 			"Robby",
 			"Shirayuki",
 			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Toliño",
 			"Umherirrender"
 		]
 	},
@@ -85,7 +86,7 @@
 	"bs-permissionmanager-simple-inherited": "Notice when role is granted by inheritance",
 	"bs-permissionmanager-simple-explicit": "Notice when role is granted explicitly",
 	"bs-permissionmanager-simple-setonwiki": "Notice when role is granted on a nemespace by inheriting from global permissions",
-	"bs-permissionmanager-simple-setonwiki-sub": "Additional notice when role is granted on a nemespace by inheriting from global permissions",
+	"bs-permissionmanager-simple-setonwiki-sub": "Additional notice when role is granted on a namespace by inheriting from global permissions",
 	"bs-permissionmanager-simple-blocked": "Notice when role is blocked.\n* $1 - name of the group or groups having the role\n* $2 - count of groups having the role",
 	"bs-permissionmanager-simple-blocked-sub": "Additional notice when role is blocked.",
 	"bs-permissionmanager-simple-notset": "Notice when role is not set",
