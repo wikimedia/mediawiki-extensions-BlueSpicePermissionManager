@@ -43,7 +43,7 @@
 	"logeventslist-bs-permission-manager-log": "Rexistro do xestor de permisos",
 	"bs-permissionmanager-hint": "Este rol inclúe {{PLURAL:$2|o seguinte permiso|os seguintes permisos}}: $1",
 	"bs-permissionmanager-write-config-file-error": "Non se pode crear nin escribir «$1»",
-	"right-permissionmanager-viewspecialpage": "Acceder á páxina especial [[Special:PermissionManager]]",
+	"right-permissionmanager-viewspecialpage": "Acceso á páxina especial [[Special:PermissionManager]]",
 	"bs-premissionmanager-reset-button-label": "Restablecer",
 	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|engadiu}} {{PLURAL:$6|o rol|os roles}} $5 ao grupo $4",
 	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|eliminou}} {{PLURAL:$6|o rol|os roles}} $5 do grupo $4",
