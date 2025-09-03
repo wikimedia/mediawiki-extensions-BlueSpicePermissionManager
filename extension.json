@@ -220,7 +220,7 @@
 	},
 	"Hooks": {
 		"BSPermissionManagerGroupDeleted": "reactToGroupChanges",
-		"BSPermissionManagerGroupNameChanged": "reactToGroupChanges",
+		"BSPermissionManagerGroupEdited": "reactToGroupChanges",
 		"LoadExtensionSchemaUpdates": "migrateSettings",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"MWStakeDynamicConfigRegisterConfigs": "registerDynamicConfig"
