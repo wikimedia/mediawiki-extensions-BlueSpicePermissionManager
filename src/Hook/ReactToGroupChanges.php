@@ -61,6 +61,9 @@ class ReactToGroupChanges implements BSPermissionManagerGroupEditedHook, BSPermi
 	 */
 	public function onBSPermissionManagerGroupEdited( string $oldName, string $newName, Authority $actor ) {
 		[ $groupRoles, $namespaceLockdown ] = $this->getPermissionConfig();
+
+		$groupRoles[$newName] = $groupRoles[$oldName];
+
 		if ( isset( $groupRoles[$oldName] ) ) {
 			unset( $groupRoles[$oldName] );
 		}
