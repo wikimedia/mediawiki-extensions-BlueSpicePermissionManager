@@ -7,7 +7,8 @@
 			"Ebraminio",
 			"FarsiNevis",
 			"Huji",
-			"Jeeputer"
+			"Jeeputer",
+			"LordProfo"
 		]
 	},
 	"bs-permissionmanager-desc": "رابط مدیریتی برای ویرایش کردن اختیارات کاربر",
@@ -54,5 +55,6 @@
 	"bs-permissionmanager-namespace-picker": "فضاهای نام",
 	"bs-permissionmanager-header-description": "توضیح",
 	"bs-permissionmanager-group-implicit-anon": "کاربران ناشناس",
-	"bs-permissionmanager-group-implicit-user": "تمام کاربران واردشده به سامانه"
+	"bs-permissionmanager-group-implicit-user": "تمام کاربران واردشده به سامانه",
+	"bs-permissionmanager-advanced-switch": "حالت پیشرفته"
 }
