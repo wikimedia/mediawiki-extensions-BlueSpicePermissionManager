@@ -57,7 +57,7 @@ class RetrieveGroups extends SimpleHandler {
 				$labelMsg = wfMessage( "group-$group" );
 			}
 			if ( $labelMsg->exists() ) {
-				$display = $labelMsg->plain();
+				$display = $labelMsg->text();
 			}
 
 			if ( $query && !$this->queryApplies( $query, [ $group, $display ] ) ) {
