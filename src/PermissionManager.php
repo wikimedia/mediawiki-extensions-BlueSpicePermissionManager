@@ -175,7 +175,7 @@ class PermissionManager {
 		$permissionsAndDescs = [];
 		foreach ( $permissions as $permission ) {
 			$permissionsAndDescs[ $permission ] =
-				wfMessage( "right-$permission" )->plain();
+				wfMessage( "right-$permission" )->text();
 		}
 
 		return $permissionsAndDescs;
@@ -259,7 +259,7 @@ class PermissionManager {
 		if ( $this->services->getReadOnlyMode()->isReadOnly() ) {
 			return [
 				'success' => false,
-				'message' => wfMessage( 'bs-readonly', $this->services->getReadOnlyMode()->getReason() )->plain()
+				'message' => wfMessage( 'bs-readonly', $this->services->getReadOnlyMode()->getReason() )->text()
 			];
 		}
 
@@ -280,7 +280,7 @@ class PermissionManager {
 				'message' => Message::newFromKey(
 					'bs-permissionmanager-write-config-file-error',
 					'bs-permissionmanager-roles'
-				)->plain()
+				)->text()
 			];
 		}
 	}
@@ -322,7 +322,7 @@ class PermissionManager {
 				$namespaceInfo = $this->services->getNamespaceInfo();
 				$nsCanonical = $namespaceInfo->getCanonicalName( $ns );
 				if ( $ns === NS_MAIN ) {
-					$nsCanonical = wfMessage( 'bs-ns_main' )->plain();
+					$nsCanonical = wfMessage( 'bs-ns_main' )->text();
 				}
 				$addedRoles = [];
 				$removedRoles = [];

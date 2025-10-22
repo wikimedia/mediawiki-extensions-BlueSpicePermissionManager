@@ -124,16 +124,16 @@ class GroupManager {
 			);
 		} elseif ( preg_match( "/^[0-9]+$/", $name ) ) {
 			throw new InvalidArgumentException(
-				Message::newFromKey( 'bs-permissionmanager-groupmanager-invalid-name-numeric' )->plain()
+				Message::newFromKey( 'bs-permissionmanager-groupmanager-invalid-name-numeric' )->text()
 			);
 		} elseif ( strlen( $name ) > 255 ) {
 			throw new InvalidArgumentException(
-				Message::newFromKey( 'bs-permissionmanager-groupmanager-invalid-name-length' )->plain()
+				Message::newFromKey( 'bs-permissionmanager-groupmanager-invalid-name-length' )->text()
 			);
 		}
 		if ( $this->checkGroupExists( $name ) ) {
 			throw new InvalidArgumentException(
-				Message::newFromKey( 'bs-permissionmanager-group-already-exists' )->plain()
+				Message::newFromKey( 'bs-permissionmanager-group-already-exists' )->text()
 			);
 		}
 	}
@@ -177,7 +177,7 @@ class GroupManager {
 	private function assertGroupExists( string $name ) {
 		if ( !$this->checkGroupExists( $name ) ) {
 			throw new InvalidArgumentException(
-				Message::newFromKey( 'bs-permissionmanager-group-not-found' )->plain()
+				Message::newFromKey( 'bs-permissionmanager-group-not-found' )->text()
 			);
 		}
 	}
@@ -193,7 +193,7 @@ class GroupManager {
 		}
 		if ( !$actor->isAllowed( 'wikiadmin' ) ) {
 			throw new InvalidArgumentException(
-				Message::newFromKey( 'bs-permissionmanager-action-not-allowed' )->plain()
+				Message::newFromKey( 'bs-permissionmanager-action-not-allowed' )->text()
 			);
 		}
 	}
