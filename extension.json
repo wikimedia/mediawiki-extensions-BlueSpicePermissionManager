@@ -24,9 +24,6 @@
 			"ConfigDefinitionRegistry": {
 				"PermissionManagerActivePreset": "\\BlueSpice\\PermissionManager\\ConfigDefinition\\PermissionManagerActivePresetConfig::getInstance"
 			},
-			"AdminToolRegistry": {
-				"bs-permission-manager": "BlueSpice\\PermissionManager\\AdminTool"
-			},
 			"PermissionLockdownRegistry": {
 				"special-pages": "\\BlueSpice\\PermissionManager\\Lockdown\\SpecialPages::getInstance"
 			}
