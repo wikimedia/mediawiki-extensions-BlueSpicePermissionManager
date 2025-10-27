@@ -7,7 +7,8 @@
 			"Ebraminio",
 			"FarsiNevis",
 			"Huji",
-			"Jeeputer"
+			"Jeeputer",
+			"LordProfo"
 		]
 	},
 	"bs-permissionmanager-desc": "رابط مدیریتی برای ویرایش کردن اختیارات کاربر",
@@ -65,5 +66,6 @@
 	"bs-permissionmanager-groupmanager-invalid-name": "نام گروه حاوی {{PLURAL:$1|یک نویسهٔ نامعتبر|نویسه‌های نامعتبر}} است: $2",
 	"bs-permissionmanager-namespace-picker": "فضاهای نام",
 	"group-bs-user": "تمام کاربران واردشده به سامانه",
+	"bs-permissionmanager-advanced-switch": "حالت پیشرفته",
 	"bs-permissionmanager-header-description": "توضیح"
 }
