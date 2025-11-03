@@ -7,7 +7,6 @@
 	},
 	"bs-permissionmanager-desc": "Администраторски посредник за измена на кориснички права",
 	"prefs-permissionmanager": "Раководител со дозволи",
-	"bs-permissionmanager-label": "Раководител со дозволи",
 	"bs-permissionmanager-grouping-global": "Дозволи независни од именски простор",
 	"bs-permissionmanager-grouping-local": "Дозволи според именски простор",
 	"bs-permissionmanager-header-permissions": "Дозволи",

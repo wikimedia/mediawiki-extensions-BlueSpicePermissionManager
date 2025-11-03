@@ -9,7 +9,6 @@
 	},
 	"bs-permissionmanager-desc": "Ҡатнашыусыларҙың хоҡуҡтарын үҙгәртеү буйынса хаким интерфейсы",
 	"prefs-permissionmanager": "Рөхсәт биреү",
-	"bs-permissionmanager-label": "Рөхсәт биреү",
 	"bs-permissionmanager-grouping-global": "Исемдәр тупланмаһындағы бойондороҡһоҙ сиселештәр",
 	"bs-permissionmanager-grouping-local": "Исемдәр тупланмаһындағы аныҡ сиселештәр",
 	"bs-permissionmanager-header-permissions": "Рөхсәт",
