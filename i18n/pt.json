@@ -4,6 +4,7 @@
 			"Athena in Wonderland",
 			"Hamilton Abreu",
 			"Jkb8",
+			"Mansil alfalb",
 			"Vitorvicentevalente"
 		]
 	},
@@ -53,5 +54,24 @@
 	"bs-permissionmanager-preset-save-error": "A configuração não pode ser gravada! As alterações não foram aplicadas!",
 	"bs-permissionmanager-preset-save-success": "Configuração gravada!",
 	"bs-permissionmanager-pref-max-backups-help": "Número de cópias de segurança das últimas alterações do administrador de permissões (Especial:PermissionManager).",
-	"bs-permissionmanager-namespace-picker": "Espaços nominais"
+	"bs-permissionmanager-namespace-picker": "Espaços nominais",
+	"bs-permissionmanager-group-create": "Criar",
+	"bs-permissionmanager-edit-group": "Editar grupo",
+	"bs-permissionmanager-save": "Guardar",
+	"bs-permissionmanager-cancel": "Cancelar",
+	"bs-permissionmanager-group-name": "Nome do grupo",
+	"bs-permissionmanager-group-type-custom": "personalizado",
+	"bs-permissionmanager-group-type-builtin": "integrado",
+	"bs-permissionmanager-group-type-implicit": "implícito",
+	"bs-permissionmanager-advanced-switch": "Modo Avançado",
+	"bs-permissionmanager-group-manager-heading": "Grupos",
+	"bs-permissionmanager-group-header-implicit": "Grupos automáticos",
+	"bs-permissionmanager-group-header-groups": "Grupos",
+	"bs-permissionmanager-group-disable-edit": "Desativar edição",
+	"bs-permissionmanager-group-enable-edit": "Editar grupos",
+	"bs-permissionmanager-header-description": "Descrição",
+	"bs-permissionmanager-group-explicit-editor": "Editores",
+	"bs-permissionmanager-group-explicit-reader": "Leitores",
+	"bs-permissionmanager-group-explicit-reviewer": "Revisores",
+	"bs-permissionmanager-group-explicit-sysop": "Administradores"
 }
