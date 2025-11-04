@@ -10,7 +10,6 @@
 	"bs-permissionmanager-desc": "Interfejs administracyjny do edycji uprawnień użytkowników",
 	"prefs-permissionmanager": "Menedżer uprawnień",
 	"bs-permissionmanager-text": "Uprawnienia",
-	"bs-permissionmanager-label": "Menedżer uprawnień",
 	"bs-permissionmanager-header-permissions": "Uprawnienia",
 	"bs-permissionmanager-header-global": "Wiki",
 	"bs-permissionmanager-btn-save-label": "Zapisz",
@@ -22,7 +21,6 @@
 	"bs-permissionmanager-affected-by-notset": "Nie ustawione",
 	"bs-permissionmanager-affected-by-setonwiki": "Ustaw na poziom wiki",
 	"bs-permissionmanager-header-role": "Rola",
-	"right-permissionmanager-viewspecialpage": "Dostęp do strony specjalnej [[Special:PermissionManager]].",
 	"bs-premissionmanager-reset-button-label": "Zresetuj",
 	"bs-permissionmanager-preset-save-success": "Konfiguracja zapisana!",
 	"bs-permissionmanager-namespace-picker": "Przestrzenie nazw"
