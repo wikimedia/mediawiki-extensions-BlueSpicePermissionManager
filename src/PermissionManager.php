@@ -76,7 +76,11 @@ class PermissionManager {
 	 */
 	public function applyCurrentPreset() {
 		try {
-			$this->getActivePreset()->apply();
+			$preset = $this->getActivePreset();
+			$preset->apply();
+			$this->services->getHookContainer()->run( 'BSPermissionManagerAfterApplyPreset', [
+				$preset, $this->roleManager
+			] );
 		} catch ( Throwable $exception ) {
 			$this->logger->critical(
 				'Exception while applying preset: {error}',
