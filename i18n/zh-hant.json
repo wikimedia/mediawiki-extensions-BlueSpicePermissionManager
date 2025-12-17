@@ -100,6 +100,6 @@
 	"bs-permissionmanager-group-implicit-user": "已驗證使用者",
 	"bs-permissionmanager-group-explicit-editor": "編輯者",
 	"bs-permissionmanager-group-explicit-reader": "讀者",
-	"bs-permissionmanager-group-explicit-reviewer": "審核者",
+	"bs-permissionmanager-group-explicit-reviewer": "檢閱者",
 	"bs-permissionmanager-group-explicit-sysop": "管理員"
 }
