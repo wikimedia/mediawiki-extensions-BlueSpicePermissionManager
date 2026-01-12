@@ -5,6 +5,7 @@
 			"Lokal Profil",
 			"Mjälten",
 			"Sabelöga",
+			"Stefan2255",
 			"WikiPhoenix"
 		]
 	},
@@ -40,9 +41,9 @@
 	"bs-permissionmanager-preset-custom-label": "Anpassad installation",
 	"bs-permissionmanager-preset-private-label": "Privat wiki",
 	"bs-permissionmanager-preset-protected-label": "Skrivskyddad wiki",
-	"bs-permissionmanager-preset-protected-help": "Wikins innehåll kommer vara synligt för alla men bara kunna redigeras av inloggade användare",
+	"bs-permissionmanager-preset-protected-help": "* Alla kan '''visa''' innehållet - inklusive anonyma användare\n* Endast inloggade användare kan '''redigera''' innehållet\n* Endast användare i gruppen \"sysop\" kan utföra '''administrativa åtgärder'''",
 	"bs-permissionmanager-preset-public-label": "Offentlig wiki",
-	"bs-permissionmanager-preset-public-help": "Wikins innehåll kommer inte kunna visas eller redigeras av alla",
+	"bs-permissionmanager-preset-public-help": "* Alla kan '''visa och redigera''' innehållet - inklusive anonyma användare\n* Endast användare i gruppen \"sysop\" kan utföra '''administrativa åtgärder'''",
 	"bs-permissionmanager-preset-save-error": "Konfigureringen kunde inte sparas! Ändringarna tillämpades inte!",
 	"bs-permissionmanager-namespace-picker": "Namnrymder"
 }
