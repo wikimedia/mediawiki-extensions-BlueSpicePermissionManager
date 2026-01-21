@@ -90,6 +90,7 @@
 	"bs-permissionmanager-group-explicit-reader": "Readers",
 	"bs-permissionmanager-group-explicit-reviewer": "Reviewers",
 	"bs-permissionmanager-group-explicit-sysop": "Administrators",
+	"bs-permissionmanager-preset-private-with-editor-help": "* Only logged-in users can '''view''' the content\n* Users in group \"editor\" can '''edit'''\n* Only users in the group \"sysop\" can perform '''administrative actions'''",
 	"bs-permissionmanager-group-not-found": "Group not found",
 	"bs-permissionmanager-groupmanager-invalid-name": "The group name contains {{PLURAL:$1|an invalid character|invalid characters}}: $2",
 	"bs-permissionmanager-groupmanager-invalid-name-length": "The group name cannot be longer than 255 characters.",
