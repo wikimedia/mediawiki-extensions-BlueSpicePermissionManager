@@ -45,6 +45,6 @@ class PrivateWiki extends PermissionPreset {
 	 * @inheritDoc
 	 */
 	public function getHelpMessage(): Message {
-		return Message::newFromKey( 'bs-permissionmanager-preset-private-help' );
+		return Message::newFromKey( 'bs-permissionmanager-preset-private-with-editor-help' );
 	}
 }
