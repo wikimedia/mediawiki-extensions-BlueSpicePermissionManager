@@ -52,12 +52,13 @@ class GroupManager {
 	/**
 	 * @param string $name
 	 * @param Authority $actor
+	 * @param bool $ignoreExists
 	 * @return void
 	 * @throws Exception
 	 */
-	public function addGroup( string $name, Authority $actor ) {
+	public function addGroup( string $name, Authority $actor, bool $ignoreExists = false ) {
 		$this->assertActorCan( 'add', $actor );
-		$this->assertValidName( $name );
+		$this->assertValidName( $name, $ignoreExists );
 		$current = $this->config->get( 'AdditionalGroups' ) ?? [];
 		$current[$name] = true;
 		$this->store( $current );
@@ -104,9 +105,10 @@ class GroupManager {
 
 	/**
 	 * @param string $name
+	 * @param bool $ignoreExists
 	 * @return void
 	 */
-	private function assertValidName( string $name ) {
+	private function assertValidName( string $name, bool $ignoreExists = false ) {
 		$invalidChars = [];
 		$name = trim( $name );
 		if ( substr_count( $name, '\'' ) > 0 ) {
@@ -131,7 +133,7 @@ class GroupManager {
 				Message::newFromKey( 'bs-permissionmanager-groupmanager-invalid-name-length' )->text()
 			);
 		}
-		if ( $this->checkGroupExists( $name ) ) {
+		if ( !$ignoreExists && $this->checkGroupExists( $name ) ) {
 			throw new InvalidArgumentException(
 				Message::newFromKey( 'bs-permissionmanager-group-already-exists' )->text()
 			);
