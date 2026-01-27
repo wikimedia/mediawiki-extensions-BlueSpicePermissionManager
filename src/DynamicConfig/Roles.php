@@ -53,6 +53,7 @@ class Roles implements IDynamicConfig {
 	protected function removeEmptyValues( array $values ): array {
 		$final = [];
 		foreach ( $values as $ns => $data ) {
+			$data = $data ?? [];
 			foreach ( $data as $group => $roles ) {
 				if ( is_array( $roles ) && !empty( $roles ) ) {
 					if ( !isset( $final[$ns] ) ) {
