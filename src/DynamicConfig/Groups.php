@@ -28,13 +28,16 @@ class Groups extends GlobalsDynamicConfig {
 	public function apply( string $serialized ): bool {
 		parent::apply( $serialized );
 
-		$this->setMwGlobal(
-			'wgGroupPermissions',
-			array_merge(
-				$this->getMwGlobal( 'wgGroupPermissions' ),
-				$this->getMwGlobal( 'wgAdditionalGroups' )
-			)
-		);
+		$groupPermissions = $this->getMwGlobal( 'wgGroupPermissions' );
+		$additionalGroups = $this->getMwGlobal( 'wgAdditionalGroups' );
+
+		foreach ( array_keys( $additionalGroups ) as $group ) {
+			if ( isset( $groupPermissions[$group] ) ) {
+				continue;
+			}
+			$groupPermissions[$group] = [];
+		}
+		$this->setMwGlobal( 'wgGroupPermissions', $groupPermissions );
 		return true;
 	}
 
