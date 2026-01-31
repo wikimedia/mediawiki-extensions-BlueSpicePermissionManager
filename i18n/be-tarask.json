@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ucukor",
 			"W"
 		]
 	},
@@ -8,5 +9,6 @@
 	"bs-permissionmanager-header-global": "Вікі",
 	"bs-permissionmanager-btn-save-label": "Захаваць",
 	"bs-permissionmanager-group-all": "усе",
-	"bs-permissionmanager-namespace-picker": "Прасторы назваў"
+	"bs-permissionmanager-namespace-picker": "Прасторы назваў",
+	"bs-permissionmanager-group-explicit-reviewer": "Рэцэнзэнты"
 }
