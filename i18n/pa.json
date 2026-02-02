@@ -4,7 +4,27 @@
 			"Cabal"
 		]
 	},
+	"prefs-permissionmanager": "ਇਜਾਜ਼ਤ ਪ੍ਰਬੰਧਕ",
+	"bs-permissionmanager-text": "ਇਜਾਜ਼ਤਾਂ",
+	"bs-permissionmanager-header-permissions": "ਇਜਾਜ਼ਤਾਂ",
+	"bs-permissionmanager-header-global": "ਵਿਕੀ",
+	"bs-permissionmanager-btn-save-label": "ਸਾਂਭੋ",
+	"log-name-bs-permission-manager": "ਇਜਾਜ਼ਤ ਪ੍ਰਬੰਧਕ  ਇੰਦਰਾਜ",
+	"bs-permissionmanager-affected-by-notset": "ਕਾਇਮ ਨਹੀਂ ਕੀਤਾ",
+	"bs-permissionmanager-group-all": "ਸਾਰੇ",
+	"bs-premissionmanager-reset-button-label": "ਮੁੜ-ਬਣਾਓ",
+	"bs-permissionmanager-preset-private-label": "ਨਿੱਜੀ ਵਿਕੀ",
+	"bs-permissionmanager-preset-public-label": "ਜਨਤਕ ਵਿਕੀ",
+	"bs-permissionmanager-group-not-found": "ਢਾਣਿਆਂ ਨਹੀਂ ਲੱਭਿਆਂ",
+	"bs-permissionmanager-group-remove": "ਢਾਣਿਆਂ ਹਟਾਓ",
+	"bs-permissionmanager-group-create": "ਬਣਾਓ",
+	"bs-permissionmanager-save": "ਸਾਂਭੋ",
+	"bs-permissionmanager-cancel": "ਰੱਦ ਕਰੋ",
+	"bs-permissionmanager-group-type-custom": "ਆਪਣੇ ਮੁਤਾਬਕ",
+	"bs-permissionmanager-namespace-picker": "ਨਾਂ-ਥਾਂ",
 	"bs-permissionmanager-header-description": "ਵੇਰਵਾ",
+	"bs-permissionmanager-group-explicit-editor": "ਸੋਧਕ",
 	"bs-permissionmanager-group-explicit-reader": "ਪਾਠਕਾਂ",
+	"bs-permissionmanager-group-explicit-reviewer": "ਪਾਰਖੂ",
 	"bs-permissionmanager-group-explicit-sysop": "ਪ੍ਰਬੰਧਕ"
 }
