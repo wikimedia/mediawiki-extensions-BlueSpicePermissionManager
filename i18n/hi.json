@@ -6,13 +6,13 @@
 			"Sfic"
 		]
 	},
-	"bs-permissionmanager-header-global": "विकि",
 	"bs-permissionmanager-desc": "सदस्य अधिकार सम्पादित करने के लिए प्रबंधन इंटरफ़ेस",
 	"prefs-permissionmanager": "अनुमति प्रबंधक",
 	"bs-permissionmanager-text": "अनुमतियाँ",
 	"bs-permissionmanager-grouping-global": "नामस्थान-स्वतंत्र अनुमतियाँ",
 	"bs-permissionmanager-grouping-local": "नामस्थान-विशिष्ट अनुमतियाँ",
 	"bs-permissionmanager-header-permissions": "अनुमतियाँ",
+	"bs-permissionmanager-header-global": "विकि",
 	"bs-permissionmanager-btn-save-label": "सहेजें",
 	"bs-permissionmanager-pref-enablerealitycheck": "अनुमति जाँच सक्रिय करें",
 	"bs-permissionmanager-error-lockout": "कम-से-कम एक समूह के पास \"$1\" अधिकार होना होगा।\nबदलाव सहेजे नहीं जा सके।",

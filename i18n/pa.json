@@ -4,9 +4,6 @@
 			"Cabal"
 		]
 	},
-	"bs-permissionmanager-header-description": "ਵੇਰਵਾ",
-	"bs-permissionmanager-group-explicit-reader": "ਪਾਠਕਾਂ",
-	"bs-permissionmanager-group-explicit-sysop": "ਪ੍ਰਬੰਧਕ",
 	"prefs-permissionmanager": "ਇਜਾਜ਼ਤ ਪ੍ਰਬੰਧਕ",
 	"bs-permissionmanager-text": "ਇਜਾਜ਼ਤਾਂ",
 	"bs-permissionmanager-header-permissions": "ਇਜਾਜ਼ਤਾਂ",
@@ -25,6 +22,9 @@
 	"bs-permissionmanager-cancel": "ਰੱਦ ਕਰੋ",
 	"bs-permissionmanager-group-type-custom": "ਆਪਣੇ ਮੁਤਾਬਕ",
 	"bs-permissionmanager-namespace-picker": "ਨਾਂ-ਥਾਂ",
+	"bs-permissionmanager-header-description": "ਵੇਰਵਾ",
 	"bs-permissionmanager-group-explicit-editor": "ਸੋਧਕ",
-	"bs-permissionmanager-group-explicit-reviewer": "ਪਾਰਖੂ"
+	"bs-permissionmanager-group-explicit-reader": "ਪਾਠਕਾਂ",
+	"bs-permissionmanager-group-explicit-reviewer": "ਪਾਰਖੂ",
+	"bs-permissionmanager-group-explicit-sysop": "ਪ੍ਰਬੰਧਕ"
 }
