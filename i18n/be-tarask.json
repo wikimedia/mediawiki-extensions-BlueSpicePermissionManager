@@ -15,5 +15,6 @@
 	"bs-permissionmanager-role-permissions-column-permission": "Дазвол",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Апісаньне",
 	"bs-permissionmanager-namespace-picker": "Прасторы назваў",
-	"bs-permissionmanager-group-explicit-reviewer": "Рэцэнзэнты"
+	"bs-permissionmanager-group-explicit-reviewer": "Рэцэнзэнты",
+	"bs-permissionmanager-cancel": "Скасаваць"
 }
