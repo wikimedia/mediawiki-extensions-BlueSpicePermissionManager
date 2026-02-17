@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"बडा काजी"
+		]
+	},
+	"prefs-permissionmanager": "अनुमति प्रबन्धक",
+	"bs-permissionmanager-text": "अनुमतिहरू",
+	"bs-permissionmanager-header-permissions": "अनुमतिहरू",
+	"bs-permissionmanager-header-global": "विकि",
+	"bs-permissionmanager-btn-save-label": "सङ्ग्रह गर्नुहोस्",
+	"bs-permissionmanager-pref-enablerealitycheck": "अनुमति जाँच सक्रिय गर्नुहोस्",
+	"bs-permissionmanager-group-all": "सबै",
+	"bs-permissionmanager-header-role": "भूमिका",
+	"bs-premissionmanager-reset-button-label": "पूर्वस्थितिमा फर्काउनुहोस्",
+	"bs-permissionmanager-preset-private-label": "निजी विकि",
+	"bs-permissionmanager-preset-protected-label": "संरक्षित विकी",
+	"bs-permissionmanager-preset-public-label": "सार्वजनिक विकी",
+	"bs-permissionmanager-group-create": "सृजना गर्नुहोस्",
+	"bs-permissionmanager-edit-group": "समूह सम्पादन गर्नुहोस",
+	"bs-permissionmanager-save": "सङ्ग्रह गर्नुहोस्",
+	"bs-permissionmanager-cancel": "रद्द गर्नुहोस्",
+	"bs-permissionmanager-group-name": "समूहको नाम",
+	"bs-permissionmanager-group-type-custom": "अनुकूल",
+	"bs-permissionmanager-group-type-implicit": "निहित",
+	"bs-permissionmanager-namespace-picker": "नामपद",
+	"bs-permissionmanager-advanced-switch": "उन्नत मोड",
+	"bs-permissionmanager-group-manager-heading": "समूह",
+	"bs-permissionmanager-group-header-implicit": "स्वचालित समूहहरू",
+	"bs-permissionmanager-group-header-groups": "समूह",
+	"bs-permissionmanager-group-disable-edit": "सम्पादन असक्षम पार्नुहोस्",
+	"bs-permissionmanager-group-enable-edit": "समूह सम्पादन गर्नुहोस",
+	"bs-permissionmanager-header-description": "विवरण",
+	"bs-permissionmanager-group-implicit-anon": "अप्रमाणित प्रयोगकर्ताहरू",
+	"bs-permissionmanager-group-implicit-user": "प्रमाणित प्रयोगकर्ताहरू",
+	"bs-permissionmanager-group-explicit-editor": "सम्पादकहरू",
+	"bs-permissionmanager-group-explicit-reader": "पाठकहरू",
+	"bs-permissionmanager-group-explicit-reviewer": "समीक्षकहरू",
+	"bs-permissionmanager-group-explicit-sysop": "प्रवन्धकहरू"
+}
