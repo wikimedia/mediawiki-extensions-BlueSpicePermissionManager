@@ -179,7 +179,7 @@ bs.permissionManager.panel.GroupManager.prototype.removeGroup = function ( group
 bs.permissionManager.panel.GroupManager.prototype.doRemoveGroup = async function ( groupName ) {
 	return new Promise( ( resolve, reject ) => {
 		$.ajax( {
-			url: mw.util.wikiScript( 'rest' ) + '/bs-permission-manager/v1/groups/delete/' + groupName,
+			url: mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/groups/delete/' + groupName,
 			type: 'POST',
 			success: function () {
 				resolve();

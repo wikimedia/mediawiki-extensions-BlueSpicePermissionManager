@@ -11,7 +11,7 @@ bs.permissionManager.dialog.AddGroup.static.title = mw.msg( 'bs-permissionmanage
 bs.permissionManager.dialog.AddGroup.static.size = 'medium';
 
 bs.permissionManager.dialog.AddGroup.prototype.getUrl = function ( value ) {
-	return mw.util.wikiScript( 'rest' ) + '/bs-permission-manager/v1/groups/create/' + value;
+	return mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/groups/create/' + value;
 };
 
 bs.permissionManager.dialog.AddGroup.prototype.getMethod = function () {

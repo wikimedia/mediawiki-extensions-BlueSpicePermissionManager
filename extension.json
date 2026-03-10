@@ -10,7 +10,8 @@
 		"MediaWiki": ">= 1.43.0",
 		"extensions": {
 			"BlueSpiceFoundation": ">= 5.1",
-			"BlueSpiceConfigManager": ">= 5.1",
+			"BlueSpiceConfigManager": ">= 5.2",
+			"BlueSpiceUserManager": ">=5.2",
 			"OOJSPlus": ">= 3.0.0"
 		}
 	},
@@ -217,8 +218,8 @@
 		}
 	},
 	"Hooks": {
-		"BSPermissionManagerGroupDeleted": "reactToGroupChanges",
-		"BSPermissionManagerGroupEdited": "reactToGroupChanges",
+		"BSUserManagerGroupDeleted": "reactToGroupChanges",
+		"BSUserManagerGroupEdited": "reactToGroupChanges",
 		"LoadExtensionSchemaUpdates": "migrateSettings",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"MWStakeDynamicConfigRegisterConfigs": "registerDynamicConfig"

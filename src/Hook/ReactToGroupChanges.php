@@ -3,10 +3,12 @@
 namespace BlueSpice\PermissionManager\Hook;
 
 use BlueSpice\PermissionManager\PermissionManager;
+use BlueSpice\UserManager\Hook\BSUserManagerGroupDeletedHook;
+use BlueSpice\UserManager\Hook\BSUserManagerGroupEditedHook;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Permissions\Authority;
 
-class ReactToGroupChanges implements BSPermissionManagerGroupEditedHook, BSPermissionManagerGroupDeletedHook {
+class ReactToGroupChanges implements BSUserManagerGroupEditedHook, BSUserManagerGroupDeletedHook {
 
 	/**
 	 * @var ConfigFactory
@@ -32,7 +34,7 @@ class ReactToGroupChanges implements BSPermissionManagerGroupEditedHook, BSPermi
 	 * @param Authority $actor
 	 * @return void
 	 */
-	public function onBSPermissionManagerGroupDeleted( string $name, Authority $actor ) {
+	public function onBSUserManagerGroupDeleted( string $name, Authority $actor ) {
 		[ $groupRoles, $namespaceLockdown ] = $this->getPermissionConfig();
 		if ( isset( $groupRoles[$name] ) ) {
 			unset( $groupRoles[$name] );
@@ -59,7 +61,7 @@ class ReactToGroupChanges implements BSPermissionManagerGroupEditedHook, BSPermi
 	 * @param Authority $actor
 	 * @return void
 	 */
-	public function onBSPermissionManagerGroupEdited( string $oldName, string $newName, Authority $actor ) {
+	public function onBSUserManagerGroupEdited( string $oldName, string $newName, Authority $actor ) {
 		[ $groupRoles, $namespaceLockdown ] = $this->getPermissionConfig();
 
 		$groupRoles[$newName] = $groupRoles[$oldName];

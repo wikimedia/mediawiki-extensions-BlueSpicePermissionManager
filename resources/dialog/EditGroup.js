@@ -13,7 +13,7 @@ bs.permissionManager.dialog.EditGroup.static.title = mw.msg( 'bs-permissionmanag
 bs.permissionManager.dialog.EditGroup.static.size = 'medium';
 
 bs.permissionManager.dialog.EditGroup.prototype.getUrl = function ( value ) {
-	return mw.util.wikiScript( 'rest' ) + '/bs-permission-manager/v1/groups/edit/' + this.group + '/' + value;
+	return mw.util.wikiScript( 'rest' ) + '/bs-usermanager/v1/groups/edit/' + this.group + '/' + value;
 };
 
 bs.permissionManager.dialog.EditGroup.prototype.getMethod = function () {
