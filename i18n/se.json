@@ -9,5 +9,8 @@
 	"bs-permissionmanager-group-all": "buot",
 	"bs-permissionmanager-btn-save-label": "Vurke",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Govvádus",
-	"bs-permissionmanager-text": "Geavahanvuoigatvuođat"
+	"bs-permissionmanager-text": "Geavahanvuoigatvuođat",
+	"bs-permissionmanager-group-create": "Ráhkat",
+	"bs-permissionmanager-save": "Vurke",
+	"bs-permissionmanager-namespace-picker": "Nammagomuvuođat"
 }

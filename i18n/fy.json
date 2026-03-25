@@ -6,5 +6,6 @@
 		]
 	},
 	"bs-permissionmanager-header-namespaces": "Nammeromten",
-	"bs-permissionmanager-btn-save-label": "Bewarje"
+	"bs-permissionmanager-btn-save-label": "Bewarje",
+	"bs-permissionmanager-namespace-picker": "Nammeromten"
 }

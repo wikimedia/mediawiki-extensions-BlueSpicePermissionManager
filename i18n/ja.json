@@ -43,5 +43,6 @@
 	"logentry-bs-permission-manager-global-remove": "$1{{GENDER:$2|権限を持っている人}}がグループ$4から{{PLURAL:$6|権限|複数の権限}}$5を削除しました",
 	"bs-permissionmanager-preset-save-success": "設定を保存しました。",
 	"bs-permissionmanager-switch-preset-confirm": "設定の変更はウィキのすべての利用者に直ちに適用されます. 続行しますか？",
-	"bs-permissionmanager-preset-save-error": "設定の保存に失敗しました。変更はされませんでした。"
+	"bs-permissionmanager-preset-save-error": "設定の保存に失敗しました。変更はされませんでした。",
+	"bs-permissionmanager-namespace-picker": "名前空間"
 }

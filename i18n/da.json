@@ -22,5 +22,6 @@
 	"bs-premissionmanager-reset-button-label": "Nulstil",
 	"bs-permissionmanager-preset-private-label": "Privat wiki",
 	"bs-permissionmanager-preset-protected-label": "Beskyttet wiki",
-	"bs-permissionmanager-preset-public-label": "Offentlig wiki"
+	"bs-permissionmanager-preset-public-label": "Offentlig wiki",
+	"bs-permissionmanager-namespace-picker": "Navnerum"
 }

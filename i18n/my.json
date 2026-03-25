@@ -13,5 +13,6 @@
 	"bs-permissionmanager-btn-save-label": "သိမ်းရန်",
 	"bs-permissionmanager-btn-save-in-progress-label": "သိမ်းဆည်းနေသည်...",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "ဖော်ပြချက်",
-	"bs-premissionmanager-reset-button-label": "ပြန်စရန်"
+	"bs-premissionmanager-reset-button-label": "ပြန်စရန်",
+	"bs-permissionmanager-namespace-picker": "အမည်ညွှန်းများ"
 }

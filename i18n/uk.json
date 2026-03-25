@@ -72,5 +72,6 @@
 	"bs-permissionmanager-switch-preset-confirm": "Перемикання пресету буде негайно застосовано до всіх користувачів у вікі. Ви впевнені, що хочете продовжити?",
 	"bs-permissionmanager-preset-save-error": "Неможливо зберегти конфігурацію! Зміни не застосовуються!",
 	"bs-permissionmanager-preset-save-success": "Скидання конфігурації",
-	"bs-permissionmanager-pref-max-backups-help": "Кількість резервних копій для останніх змін у менеджері дозволів (Special:PermissionManager)."
+	"bs-permissionmanager-pref-max-backups-help": "Кількість резервних копій для останніх змін у менеджері дозволів (Special:PermissionManager).",
+	"bs-permissionmanager-namespace-picker": "Простори назв"
 }

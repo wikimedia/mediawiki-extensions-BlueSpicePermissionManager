@@ -9,5 +9,6 @@
 	"bs-permissionmanager-header-namespaces": "نامانی فضاهان",
 	"bs-permissionmanager-header-group": "گروپ",
 	"bs-permissionmanager-btn-save-label": "ذخیره",
-	"bs-permissionmanager-btn-save-in-progress-label": "بئ ذخیره کورتینی حالا..."
+	"bs-permissionmanager-btn-save-in-progress-label": "بئ ذخیره کورتینی حالا...",
+	"bs-permissionmanager-namespace-picker": "نامانی فضاهان"
 }

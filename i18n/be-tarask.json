@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ucukor",
 			"W"
 		]
 	},
@@ -12,5 +13,8 @@
 	"bs-permissionmanager-save-success": "Дазволы захаваныя.",
 	"bs-permissionmanager-group-all": "усе",
 	"bs-permissionmanager-role-permissions-column-permission": "Дазвол",
-	"bs-permissionmanager-role-permissions-column-permission-desc": "Апісаньне"
+	"bs-permissionmanager-role-permissions-column-permission-desc": "Апісаньне",
+	"bs-permissionmanager-cancel": "Скасаваць",
+	"bs-permissionmanager-namespace-picker": "Прасторы назваў",
+	"bs-permissionmanager-group-explicit-reviewer": "Рэцэнзэнты"
 }

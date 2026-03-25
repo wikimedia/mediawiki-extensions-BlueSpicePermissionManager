@@ -22,5 +22,6 @@
 	"bs-permissionmanager-save-success": "Рөхсәттәр һаҡланды.",
 	"bs-permissionmanager-pref-enablerealitycheck": "Тикшереүҙәр рөхсәтен әүҙемләштерергә",
 	"bs-permissionmanager-unsaved-changes": "Һаҡланмаған үҙгәртеүҙәр бар. Биттән ысынлап сығырға уйлайһығыҙмы? Был осраҡта һаҡланмаған үҙгәртеүҙәр юғаласаҡ.",
-	"log-name-bs-permission-manager": "Рөхсәттәр менән идара итеү журналы"
+	"log-name-bs-permission-manager": "Рөхсәттәр менән идара итеү журналы",
+	"bs-permissionmanager-namespace-picker": "Исемдәр арауығы"
 }

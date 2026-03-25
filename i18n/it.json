@@ -60,5 +60,13 @@
 	"bs-permissionmanager-preset-save-error": "La configurazione non può essere salvata! Le modifiche non vengono applicate!",
 	"bs-permissionmanager-affected-by-dependency": "Questo ruolo richiede {{PLURAL:$2|la seguente autorizzazione|le seguenti autorizzazioni}}:\n$1",
 	"bs-permissionmanager-preset-custom-help": "* Assegnare ruoli e gruppi manualmente",
-	"bs-permissionmanager-preset-private-help": "* Solo gli utenti che hanno effettuato l'accesso possono '''visualizzare e modificare''' il contenuto\n* Solo gli utenti del gruppo \"sysop\" possono eseguire '''azioni amministrative'''"
+	"bs-permissionmanager-preset-private-help": "* Solo gli utenti che hanno effettuato l'accesso possono '''visualizzare e modificare''' il contenuto\n* Solo gli utenti del gruppo \"sysop\" possono eseguire '''azioni amministrative'''",
+	"bs-permissionmanager-namespace-picker": "Namespace",
+	"bs-permissionmanager-group-manager-heading": "Gruppi",
+	"bs-permissionmanager-group-header-implicit": "Gruppi automatici",
+	"bs-permissionmanager-group-header-groups": "Gruppi",
+	"bs-permissionmanager-header-description": "Descrizione",
+	"bs-permissionmanager-group-implicit-anon": "Utenti non autenticati",
+	"bs-permissionmanager-group-explicit-reader": "Lettori",
+	"bs-permissionmanager-group-explicit-sysop": "Amministratori"
 }

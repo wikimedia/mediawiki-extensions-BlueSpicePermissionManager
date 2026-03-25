@@ -11,5 +11,13 @@
 	"bs-permissionmanager-header-role": "رول",
 	"bs-permissionmanager-role-permissions-column-permission": "اجازت",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "تفصیل",
-	"bs-premissionmanager-reset-button-label": "ولدا ٹھیک کرو"
+	"bs-premissionmanager-reset-button-label": "ولدا ٹھیک کرو",
+	"bs-permissionmanager-save": "بچاؤ",
+	"bs-permissionmanager-cancel": "منسوخ",
+	"bs-permissionmanager-group-type-implicit": "پوشیدہ",
+	"bs-permissionmanager-group-manager-heading": "گروپس",
+	"bs-permissionmanager-group-header-groups": "گروپس",
+	"bs-permissionmanager-group-explicit-editor": "ایڈیٹر",
+	"bs-permissionmanager-group-explicit-reader": "قارئین",
+	"bs-permissionmanager-group-explicit-sysop": "منتظمین"
 }

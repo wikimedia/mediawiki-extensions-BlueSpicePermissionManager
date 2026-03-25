@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Ahmed-Najib-Biabani-Ibrahimkhel",
-			"Baloch Khan",
-			"Amjad Khan"
+			"شاه زمان پټان"
 		]
 	},
 	"bs-permissionmanager-labeltpled-edit": "سمول",
-	"bs-permissionmanager-labeltpled-cancel": "ناگارل"
+	"bs-permissionmanager-labeltpled-cancel": "ناگارل",
+	"bs-permissionmanager-group-create": "جوړول",
+	"bs-permissionmanager-group-explicit-reader": "لوستونکي",
+	"bs-permissionmanager-group-explicit-sysop": "پازوالان"
 }

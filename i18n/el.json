@@ -18,5 +18,6 @@
 	"bs-permissionmanager-header-role": "Ρόλος",
 	"bs-permissionmanager-role-permissions-column-permission": "Άδεια",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Περιγραφή",
-	"bs-premissionmanager-reset-button-label": "Επαναφορά"
+	"bs-premissionmanager-reset-button-label": "Επαναφορά",
+	"bs-permissionmanager-namespace-picker": "Ονοματοχώροι"
 }

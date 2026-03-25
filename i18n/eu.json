@@ -20,5 +20,6 @@
 	"bs-permissionmanager-affected-by-inherited": "$1tik oinordetzan jasota",
 	"bs-permissionmanager-affected-by-notset": "Ez da aktibatu",
 	"bs-permissionmanager-affected-by-explicitlyset": "Bereziki aktibatuta",
-	"bs-permissionmanager-affected-by-setonwiki": "Wiki maila aktibatu"
+	"bs-permissionmanager-affected-by-setonwiki": "Wiki maila aktibatu",
+	"bs-permissionmanager-namespace-picker": "Izen-tarteak"
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Cabadeck",
 			"DDPAT",
 			"Facenapalm",
 			"Ice bulldog",
@@ -9,6 +10,7 @@
 			"Pacha Tchernof",
 			"Striking Blue",
 			"Vlad5250",
+			"Yurina Tatiana",
 			"Марио"
 		]
 	},
@@ -47,5 +49,15 @@
 	"bs-permissionmanager-preset-private-label": "Приватная вики",
 	"bs-permissionmanager-preset-protected-label": "Защищенная вики",
 	"bs-permissionmanager-preset-public-label": "Публичная вики",
-	"bs-permissionmanager-preset-save-success": "Конфигурация сохранена!"
+	"bs-permissionmanager-preset-save-success": "Конфигурация сохранена!",
+	"bs-permissionmanager-affected-by-notset": "Не задано",
+	"bs-permissionmanager-group-create": "Создать",
+	"bs-permissionmanager-namespace-picker": "Пространства имён",
+	"bs-permission-manager-simple-matrix-namespace-sub": "Показывать пространства имен контента",
+	"bs-permissionmanager-simple-setonwiki-sub": "Выберите роли, которые будут предоставлены этой группе исключительно в выбранном пространстве имен (блокируя все остальные группы)",
+	"bs-permissionmanager-group-manager-heading": "Группы",
+	"bs-permissionmanager-group-header-groups": "Группы",
+	"bs-permissionmanager-header-description": "Описание",
+	"bs-permissionmanager-group-implicit-anon": "Неаутентифицированные пользователи",
+	"bs-permissionmanager-group-explicit-reviewer": "Рецензенты"
 }

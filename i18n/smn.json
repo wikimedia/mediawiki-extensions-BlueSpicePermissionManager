@@ -8,5 +8,8 @@
 	"bs-permissionmanager-group-all": "puoh",
 	"bs-permissionmanager-btn-save-label": "Vuorkkii",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Kuvvim",
-	"bs-permissionmanager-header-permissions": "Kevttimvuoigâdvuođah"
+	"bs-permissionmanager-header-permissions": "Kevttimvuoigâdvuođah",
+	"bs-permissionmanager-group-create": "Räähti",
+	"bs-permissionmanager-save": "Vuorkkii",
+	"bs-permissionmanager-namespace-picker": "Nommâkomovuođah"
 }

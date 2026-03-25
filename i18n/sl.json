@@ -68,5 +68,6 @@
 	"bs-permissionmanager-switch-preset-confirm": "Preklop prednastavitve bo takoj veljal za vse uporabnike v vikiju. Ste prepričani, da želite nadaljevati?",
 	"bs-permissionmanager-preset-save-error": "Konfiguracije ni mogoče shraniti! Spremembe niso bile uporabljene!",
 	"bs-permissionmanager-preset-save-success": "Konfiguracija shranjena!",
-	"bs-permissionmanager-pref-max-backups-help": "Število varnostnih kopij za zadnje spremembe upravitelja dovoljenj (Special:PermissionManager)."
+	"bs-permissionmanager-pref-max-backups-help": "Število varnostnih kopij za zadnje spremembe upravitelja dovoljenj (Special:PermissionManager).",
+	"bs-permissionmanager-namespace-picker": "Imenski prostori"
 }
