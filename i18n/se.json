@@ -11,5 +11,6 @@
 	"bs-permissionmanager-group-all": "buot",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Govvádus",
 	"bs-permissionmanager-namespace-picker": "Nammagomuvuođat",
-	"bs-permissionmanager-group-create": "Ráhkat"
+	"bs-permissionmanager-group-create": "Ráhkat",
+	"bs-permissionmanager-save": "Vurke"
 }

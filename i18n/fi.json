@@ -4,7 +4,8 @@
 			"Kimberli Mäkäräinen (WMNO)",
 			"MITO",
 			"Pyscowicz",
-			"Silvonen"
+			"Silvonen",
+			"Yupik"
 		]
 	},
 	"bs-permissionmanager-text": "Käyttöoikeudet",
@@ -15,5 +16,6 @@
 	"bs-permissionmanager-group-all": "kaikki",
 	"bs-permissionmanager-header-role": "Rooli",
 	"bs-permissionmanager-role-permissions-column-permission-desc": "Kuvaus",
-	"bs-permissionmanager-namespace-picker": "Nimiavaruudet"
+	"bs-permissionmanager-namespace-picker": "Nimiavaruudet",
+	"bs-permissionmanager-save": "Tallenna"
 }
