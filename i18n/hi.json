@@ -32,7 +32,6 @@
 	"bs-permissionmanager-header-role": "भूमिका",
 	"bs-permissionmanager-write-config-file-error": "$1 बनाया या लिखा नहीं जा सकता",
 	"bs-premissionmanager-reset-button-label": "रीसेट करें",
-	"bs-permissionmanager-group-already-exists": "समूह पहले से मौजूद है",
 	"bs-permissionmanager-group-remove": "समूह हटाएँ",
 	"bs-permissionmanager-group-edit": "समूह सम्पादित करें",
 	"bs-permissionmanager-error": "एक त्रुटि हुई है",
