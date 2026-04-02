@@ -59,5 +59,6 @@
 	"bs-permissionmanager-group-explicit-editor": "सम्पादक",
 	"bs-permissionmanager-group-explicit-reader": "पाठक",
 	"bs-permissionmanager-group-explicit-reviewer": "पुनरीक्षक",
-	"bs-permissionmanager-group-explicit-sysop": "प्रबंधक"
+	"bs-permissionmanager-group-explicit-sysop": "प्रबंधक",
+	"bs-permissionmanager-group-already-exists": "समूह पहले से मौजूद है"
 }

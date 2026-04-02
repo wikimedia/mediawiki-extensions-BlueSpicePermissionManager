@@ -96,5 +96,10 @@
 	"bs-permissionmanager-group-explicit-editor": "Group label",
 	"bs-permissionmanager-group-explicit-reader": "Group label",
 	"bs-permissionmanager-group-explicit-reviewer": "Group label",
-	"bs-permissionmanager-group-explicit-sysop": "Group label"
+	"bs-permissionmanager-group-explicit-sysop": "Group label",
+	"bs-permissionmanager-group-not-found": "Error message when a group is not found",
+	"bs-permissionmanager-groupmanager-invalid-name": "Error message that the group name contains an invalid character or invalid characters\n*$1 is the number of invalid characetares\n*$2 are the invalid characters",
+	"bs-permissionmanager-groupmanager-invalid-name-length": "Error message that the group name cannot be longer than 16 characters.",
+	"bs-permissionmanager-groupmanager-invalid-name-numeric": "Error message that the group name needs to have at least one character.",
+	"bs-permissionmanager-group-already-exists": "Error message that the group already exists"
 }

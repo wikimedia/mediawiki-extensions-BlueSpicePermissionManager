@@ -25,5 +25,6 @@
 	"bs-permissionmanager-group-explicit-editor": "ਸੋਧਕ",
 	"bs-permissionmanager-group-explicit-reader": "ਪਾਠਕਾਂ",
 	"bs-permissionmanager-group-explicit-reviewer": "ਪਾਰਖੂ",
-	"bs-permissionmanager-group-explicit-sysop": "ਪ੍ਰਬੰਧਕ"
+	"bs-permissionmanager-group-explicit-sysop": "ਪ੍ਰਬੰਧਕ",
+	"bs-permissionmanager-group-not-found": "ਢਾਣਿਆਂ ਨਹੀਂ ਲੱਭਿਆਂ"
 }

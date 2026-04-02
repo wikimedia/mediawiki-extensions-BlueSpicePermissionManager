@@ -54,5 +54,7 @@
 	"bs-permissionmanager-group-explicit-editor": "Редакторш",
 	"bs-permissionmanager-group-explicit-reader": "Йешархой",
 	"bs-permissionmanager-group-explicit-reviewer": "Рецензентхой",
-	"bs-permissionmanager-group-explicit-sysop": "Администраторш"
+	"bs-permissionmanager-group-explicit-sysop": "Администраторш",
+	"bs-permissionmanager-group-not-found": "Тоба ца карийна",
+	"bs-permissionmanager-group-already-exists": "Тоба хӀинцале а йу"
 }
