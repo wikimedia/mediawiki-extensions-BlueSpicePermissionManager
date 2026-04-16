@@ -43,6 +43,8 @@ bs.permissionManager.dialog.GroupNameDialog.prototype.getActionProcess = functio
 				$.ajax( {
 					url: this.getUrl( value ),
 					type: this.getMethod(),
+					contentType: 'application/json',
+					data: JSON.stringify( {} ),
 					success: () => {
 						dfd.resolve();
 						this.close( { action: 'save', newGroup: value } );
