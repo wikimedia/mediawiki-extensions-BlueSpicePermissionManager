@@ -21,12 +21,17 @@ class SpecialPermissionManager extends OOJSSpecialPage {
 	 * @param PermissionManager $permissionManager
 	 */
 	public function __construct( PermissionManager $permissionManager ) {
-		parent::__construct( 'PermissionManager', 'wikiadmin' );
+		parent::__construct( 'PermissionManager' );
 
 		$this->permissionManager = $permissionManager;
 		$this->templateParser = new TemplateParser(
 			dirname( __DIR__, 2 ) . '/resources/templates'
 		);
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'wikiadmin';
 	}
 
 	/**

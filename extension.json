@@ -7,7 +7,7 @@
 	"descriptionmsg": "bs-permissionmanager-desc",
 	"type": "bluespice",
 	"requires": {
-		"MediaWiki": ">= 1.39.0",
+		"MediaWiki": ">= 1.46.0",
 		"extensions": {
 			"BlueSpiceFoundation": ">= 5.1",
 			"BlueSpiceConfigManager": ">= 5.1",
