@@ -56,12 +56,6 @@
 	"bs-permissionmanager-preset-save-error": "Неможливо зберегти конфігурацію! Зміни не застосовуються!",
 	"bs-permissionmanager-preset-save-success": "Скидання конфігурації",
 	"bs-permissionmanager-pref-max-backups-help": "Кількість резервних копій для останніх змін у менеджері дозволів (Special:PermissionManager).",
-	"bs-permissionmanager-namespace-picker": "Простори назв",
-	"bs-permissionmanager-group-not-found": "Групу не знайдено",
-	"bs-permissionmanager-groupmanager-invalid-name": "Назва групи містить {{PLURAL:$1|недійсний символ|недійсні символи}}: $2",
-	"bs-permissionmanager-groupmanager-invalid-name-length": "Назва групи не може бути довшою, ніж 255 символів.",
-	"bs-permissionmanager-groupmanager-invalid-name-numeric": "Назва групи повинна мати принаймні один символ.",
-	"bs-permissionmanager-group-already-exists": "Група вже існує",
 	"bs-permissionmanager-group-remove": "Вилучити групу",
 	"bs-permissionmanager-group-edit": "Редагувати групу",
 	"bs-permissionmanager-error": "Сталася помилка",
@@ -74,6 +68,7 @@
 	"bs-permissionmanager-group-type-custom": "власна",
 	"bs-permissionmanager-group-type-builtin": "вбудована",
 	"bs-permissionmanager-group-type-implicit": "неявна",
+	"bs-permissionmanager-namespace-picker": "Простори назв",
 	"bs-permissionmanager-advanced-switch": "Розширений режим",
 	"bs-permissionmanager-advanced-switch-confirm": "Є незбережені зміни. Якщо ви перемкнете режим, ці зміни будуть втрачені!",
 	"bs-permission-manager-simple-matrix-global": "Глобальні дозволи",
@@ -95,5 +90,10 @@
 	"bs-permissionmanager-group-explicit-editor": "Редактори",
 	"bs-permissionmanager-group-explicit-reader": "Читачі",
 	"bs-permissionmanager-group-explicit-reviewer": "Рецензенти",
-	"bs-permissionmanager-group-explicit-sysop": "Адміністратори"
+	"bs-permissionmanager-group-explicit-sysop": "Адміністратори",
+	"bs-permissionmanager-group-not-found": "Групу не знайдено",
+	"bs-permissionmanager-groupmanager-invalid-name": "Назва групи містить {{PLURAL:$1|недійсний символ|недійсні символи}}: $2",
+	"bs-permissionmanager-groupmanager-invalid-name-length": "Назва групи не може бути довшою, ніж 255 символів.",
+	"bs-permissionmanager-groupmanager-invalid-name-numeric": "Назва групи повинна мати принаймні один символ.",
+	"bs-permissionmanager-group-already-exists": "Група вже існує"
 }
