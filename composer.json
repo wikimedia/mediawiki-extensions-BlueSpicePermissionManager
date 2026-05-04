@@ -12,7 +12,8 @@
 	],
 	"require": {
 		"composer/installers": "~1.0|~2",
-		"mwstake/mediawiki-component-dynamicconfig": "~2"
+		"mwstake/mediawiki-component-dynamicconfig": "~2",
+		"mwstake/mediawiki-component-utils": "~3"
 	},
 	"autoload": {
 		"psr-4": {

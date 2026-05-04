@@ -55,6 +55,7 @@ class Roles implements IDynamicConfig {
 		foreach ( $values as $ns => $data ) {
 			$data = $data ?? [];
 			foreach ( $data as $group => $roles ) {
+				$roles = $roles ?? [];
 				if ( is_array( $roles ) && !empty( $roles ) ) {
 					if ( !isset( $final[$ns] ) ) {
 						$final[$ns] = [];

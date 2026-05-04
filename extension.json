@@ -215,6 +215,10 @@
 		},
 		"migrateSettings": {
 			"class": "\\BlueSpice\\PermissionManager\\Hook\\MigrateSettings"
+		},
+		"provideReadableNamespaces": {
+			"class": "\\BlueSpice\\PermissionManager\\Hook\\ProvideReadableNamespaces",
+			"services": [ "ConfigFactory" ]
 		}
 	},
 	"Hooks": {
@@ -222,7 +226,8 @@
 		"BSUserManagerGroupEdited": "reactToGroupChanges",
 		"LoadExtensionSchemaUpdates": "migrateSettings",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
-		"MWStakeDynamicConfigRegisterConfigs": "registerDynamicConfig"
+		"MWStakeDynamicConfigRegisterConfigs": "registerDynamicConfig",
+		"MWStakeUtilsGetReadableNamespaces": "provideReadableNamespaces"
 	},
 	"ServiceWiringFiles": [
 		"ServiceWiring.php"
