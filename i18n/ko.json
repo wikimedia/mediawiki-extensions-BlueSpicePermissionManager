@@ -5,6 +5,7 @@
 			"Hwangjy9",
 			"MemphisA5",
 			"Songhee",
+			"Tensama0415",
 			"Ykhwong",
 			"Yunbj"
 		]
@@ -66,5 +67,6 @@
 	"bs-permissionmanager-group-enable-edit": "그룹 편집",
 	"bs-permissionmanager-header-description": "설명",
 	"bs-permissionmanager-group-implicit-anon": "인증되지 않은 사용자",
-	"bs-permissionmanager-group-implicit-user": "로그인한 모든 사용자"
+	"bs-permissionmanager-group-implicit-user": "로그인한 모든 사용자",
+	"bs-permissionmanager-group-type-custom": "사용자 지정"
 }
