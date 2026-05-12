@@ -29,6 +29,7 @@
 	"bs-permissionmanager-affected-by-inherited": "$1에서 상속됨",
 	"bs-permissionmanager-affected-by-notset": "설정되지 않음",
 	"bs-permissionmanager-affected-by-explicitlyset": "명시적으로 설정됨",
+	"bs-permissionmanager-affected-by-setonwiki": "위키 레벨에서 설정됨",
 	"bs-permissionmanager-group-all": "모두",
 	"bs-permissionmanager-hint": "이 역할은 {{PLURAL:$2|다음의 권한을 포함합니다: $1}}",
 	"bs-permissionmanager-header-role": "역할",
@@ -58,13 +59,19 @@
 	"bs-permissionmanager-group-name": "그룹 이름",
 	"bs-permissionmanager-group-type-custom": "사용자 지정",
 	"bs-permissionmanager-namespace-picker": "이름공간",
+	"bs-permissionmanager-advanced-switch": "고급 모드",
 	"bs-permission-manager-simple-matrix-global": "전역 권한",
 	"bs-permissionmanager-simple-notset": "부여되지 않음",
 	"bs-permissionmanager-search-namespaces": "이름공간 찾기...",
 	"bs-permissionmanager-group-manager-heading": "그룹",
 	"bs-permissionmanager-group-header-groups": "그룹",
+	"bs-permissionmanager-group-disable-edit": "편집 비활성화",
 	"bs-permissionmanager-group-enable-edit": "그룹 편집",
 	"bs-permissionmanager-header-description": "설명",
 	"bs-permissionmanager-group-implicit-anon": "인증되지 않은 사용자",
-	"bs-permissionmanager-group-implicit-user": "로그인한 모든 사용자"
+	"bs-permissionmanager-group-implicit-user": "로그인한 모든 사용자",
+	"bs-permissionmanager-group-explicit-editor": "편집자",
+	"bs-permissionmanager-group-explicit-reader": "독자",
+	"bs-permissionmanager-group-explicit-reviewer": "검토자",
+	"bs-permissionmanager-group-explicit-sysop": "관리자"
 }
