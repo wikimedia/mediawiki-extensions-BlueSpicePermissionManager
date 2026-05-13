@@ -66,5 +66,12 @@
 	"bs-permissionmanager-group-implicit-anon": "인증되지 않은 사용자",
 	"bs-permissionmanager-group-implicit-user": "로그인한 모든 사용자",
 	"bs-permissionmanager-group-not-found": "그룹을 찾을 수 없습니다",
-	"bs-permissionmanager-group-already-exists": "그룹이 이미 존재합니다"
+	"bs-permissionmanager-group-already-exists": "그룹이 이미 존재합니다",
+	"bs-permissionmanager-affected-by-setonwiki": "위키 레벨에서 설정됨",
+	"bs-permissionmanager-advanced-switch": "고급 모드",
+	"bs-permissionmanager-group-disable-edit": "편집 비활성화",
+	"bs-permissionmanager-group-explicit-editor": "편집자",
+	"bs-permissionmanager-group-explicit-reader": "독자",
+	"bs-permissionmanager-group-explicit-reviewer": "검토자",
+	"bs-permissionmanager-group-explicit-sysop": "관리자"
 }
