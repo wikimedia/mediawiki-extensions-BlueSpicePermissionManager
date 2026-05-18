@@ -31,8 +31,10 @@ class ProvideReadableNamespaces implements MWStakeUtilsGetReadableNamespacesHook
 		}
 		foreach ( $allNamespaces as $ns ) {
 			if ( isset( $namespaceLockdown[$ns] ) ) {
-				$namespacePermissions[$ns] = $namespaceLockdown[$ns]['reader'] ?? [];
-				continue;
+				if ( isset( $namespaceLockdown[$ns]['reader'] ) ) {
+					$namespacePermissions[$ns] = $namespaceLockdown[$ns]['reader'];
+					continue;
+				}
 			}
 			$namespacePermissions[$ns] = $globalReaders;
 		}
