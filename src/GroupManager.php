@@ -8,6 +8,7 @@ use BlueSpice\UserManager\Logging\GroupManagerSpecialLogLogger as LoggingGroupMa
 use MediaWiki\Config\Config;
 use MediaWiki\HookContainer\HookContainer;
 use MWStake\MediaWiki\Component\DynamicConfig\DynamicConfigManager;
+use MWStake\MediaWiki\Component\Utils\UtilityFactory;
 use Psr\Log\LoggerInterface;
 use Wikimedia\Rdbms\ILoadBalancer;
 
@@ -18,14 +19,18 @@ class GroupManager extends UserManagerGroupManager {
 	 * @param ILoadBalancer $lb
 	 * @param Config $config Main config (wg)
 	 * @param HookContainer $hookContainer
+	 * @param UtilityFactory $utilityFactory
 	 * @param LoggerInterface $logger
 	 * @param GroupManagerSpecialLogLogger $spLogger
 	 */
 	public function __construct(
 		DynamicConfigManager $configManager, ILoadBalancer $lb, Config $config,
-		HookContainer $hookContainer, LoggerInterface $logger, GroupManagerSpecialLogLogger $spLogger
+		HookContainer $hookContainer, UtilityFactory $utilityFactory,
+		LoggerInterface $logger, GroupManagerSpecialLogLogger $spLogger
 	) {
 		$userManagerLogger = new LoggingGroupManagerSpecialLogLogger();
-		parent::__construct( $configManager, $lb, $config, $hookContainer, $logger, $userManagerLogger );
+		parent::__construct(
+			$configManager, $lb, $config, $hookContainer, $utilityFactory, $logger, $userManagerLogger
+		);
 	}
 }
