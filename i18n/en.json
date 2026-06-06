@@ -116,5 +116,6 @@
 	"bs-permissionmanager-group-explicit-editor": "Editors",
 	"bs-permissionmanager-group-explicit-reader": "Readers",
 	"bs-permissionmanager-group-explicit-reviewer": "Reviewers",
-	"bs-permissionmanager-group-explicit-sysop": "Administrators"
+	"bs-permissionmanager-group-explicit-sysop": "Administrators",
+	"bs-permissionmanager-preset-private-with-editor-help": "* Only logged-in users can '''view''' the content\n* Users in group \"editor\" can '''edit'''\n* Only users in the group \"sysop\" can perform '''administrative actions'''"
 }

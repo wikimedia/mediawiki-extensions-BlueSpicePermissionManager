@@ -123,5 +123,6 @@
 	"bs-permissionmanager-group-explicit-editor": "Group label",
 	"bs-permissionmanager-group-explicit-reader": "Group label",
 	"bs-permissionmanager-group-explicit-reviewer": "Group label",
-	"bs-permissionmanager-group-explicit-sysop": "Group label"
+	"bs-permissionmanager-group-explicit-sysop": "Group label",
+	"bs-permissionmanager-preset-private-with-editor-help": "Help message for the permission preset \"private\""
 }
