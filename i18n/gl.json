@@ -95,5 +95,6 @@
 	"bs-permissionmanager-group-explicit-editor": "Editores",
 	"bs-permissionmanager-group-explicit-reader": "Lectores",
 	"bs-permissionmanager-group-explicit-reviewer": "Revisores",
-	"bs-permissionmanager-group-explicit-sysop": "Administradores"
+	"bs-permissionmanager-group-explicit-sysop": "Administradores",
+	"bs-permissionmanager-preset-private-with-editor-help": "* Só os usuarios que iniciaron sesión poden '''ver''' o contido\n* Os usuarios do grupo «editor» poden '''editar'''\n* Só os usuarios do grupo «sysop» poden realizar '''accións administrativas'''"
 }
