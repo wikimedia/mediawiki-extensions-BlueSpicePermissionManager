@@ -119,5 +119,6 @@
 	"bs-permissionmanager-group-explicit-editor": "Bewerkers",
 	"bs-permissionmanager-group-explicit-reviewer": "Controleurs",
 	"bs-permissionmanager-group-explicit-reader": "Lezers",
-	"bs-permissionmanager-group-explicit-sysop": "Moderatoren"
+	"bs-permissionmanager-group-explicit-sysop": "Moderatoren",
+	"bs-permissionmanager-preset-private-with-editor-help": "* Alleen aangemelde gebruikers kunnen de inhoud '''bekijken'''\n* Gebruikers in de groep \"editor\" kunnen '''bewerken'''\n* Alleen gebruikers in de groep \"sysop\" kunnen '''beheerdershandelingen''' uitvoeren"
 }
