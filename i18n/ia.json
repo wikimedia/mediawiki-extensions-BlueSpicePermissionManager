@@ -115,5 +115,6 @@
 	"bs-permissionmanager-group-explicit-editor": "Redactores",
 	"bs-permissionmanager-group-explicit-reader": "Lectores",
 	"bs-permissionmanager-group-explicit-reviewer": "Revisores",
-	"bs-permissionmanager-group-explicit-sysop": "Administratores"
+	"bs-permissionmanager-group-explicit-sysop": "Administratores",
+	"bs-permissionmanager-preset-private-with-editor-help": "* Solmente le usatores que ha aperite session pote '''vider''' le contento\n* Le usatores in le gruppo “editor” pote '''modificar'''\n* Solmente le usatores in le gruppo “sysop” pote exequer '''actiones administrative'''"
 }
