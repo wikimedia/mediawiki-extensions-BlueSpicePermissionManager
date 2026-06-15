@@ -93,5 +93,6 @@
 	"bs-permissionmanager-groupmanager-invalid-name": "Le nomine del gruppo contine {{PLURAL:$1|un character|characteres}} non valide: $2",
 	"bs-permissionmanager-groupmanager-invalid-name-length": "Le nomine del gruppo non pote esser plus longe de 255 characteres.",
 	"bs-permissionmanager-groupmanager-invalid-name-numeric": "Le nomine del gruppo debe haber al minus un character.",
-	"bs-permissionmanager-group-already-exists": "Le gruppo jam existe"
+	"bs-permissionmanager-group-already-exists": "Le gruppo jam existe",
+	"bs-permissionmanager-preset-private-with-editor-help": "* Solmente le usatores que ha aperite session pote '''vider''' le contento\n* Le usatores in le gruppo “editor” pote '''modificar'''\n* Solmente le usatores in le gruppo “sysop” pote exequer '''actiones administrative'''"
 }
