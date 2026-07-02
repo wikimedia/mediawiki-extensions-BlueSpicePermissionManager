@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"A Chinese Wikipedian",
+			"GuoPC",
 			"Lakejason0",
 			"Linforest",
 			"Liuxinyu970226",
@@ -108,5 +109,6 @@
 	"bs-permissionmanager-groupmanager-invalid-name": "此群组名包含{{PLURAL:$1|一个|多个}}无效字符：$2",
 	"bs-permissionmanager-groupmanager-invalid-name-length": "群组名不能超过255个字符。",
 	"bs-permissionmanager-groupmanager-invalid-name-numeric": "群组名需要至少一个字符。",
-	"bs-permissionmanager-group-already-exists": "群组已存在"
+	"bs-permissionmanager-group-already-exists": "群组已存在",
+	"bs-permissionmanager-preset-private-with-editor-help": "* 只有登录用户可以'''查看'''内容\n* “editor”用户组的用户可以做出'''编辑'''\n* 只有“sysop”用户组的用户可以执行'''管理操作'''"
 }
