@@ -2,6 +2,7 @@
 
 namespace BlueSpice\PermissionManager\Hook;
 
+use BlueSpice\PermissionManager\Maintenance\FixInvalidGroupsInConfig;
 use BlueSpice\PermissionManager\Maintenance\MigrateGmSettings;
 use BlueSpice\PermissionManager\Maintenance\MigratePmSettings;
 use MediaWiki\Installer\Hook\LoadExtensionSchemaUpdatesHook;
@@ -20,6 +21,9 @@ class MigrateSettings implements LoadExtensionSchemaUpdatesHook {
 		);
 		$updater->addPostDatabaseUpdateMaintenance(
 			MigrateGmSettings::class
+		);
+		$updater->addPostDatabaseUpdateMaintenance(
+			FixInvalidGroupsInConfig::class
 		);
 	}
 }
