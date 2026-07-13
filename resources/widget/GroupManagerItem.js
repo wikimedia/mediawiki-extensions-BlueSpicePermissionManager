@@ -38,7 +38,7 @@ bs.permissionManager.widget.GroupManagerItem = function ( cfg ) {
 	if ( this.isCustom && this.editable ) {
 		const $editingPanel = $( '<div>' ).addClass( 'group-editing-panel' );
 		this.$element.append( $editingPanel );
-		const rmButton = new OO.ui.ButtonWidget( {
+		const rmButton = new OO.ui.ButtonWidget( { // eslint-disable-line mediawiki/no-unlabeled-buttonwidget
 			icon: 'trash',
 			title: mw.msg( 'bs-permissionmanager-group-remove' ),
 			framed: false,
@@ -49,7 +49,7 @@ bs.permissionManager.widget.GroupManagerItem = function ( cfg ) {
 		} } );
 		$editingPanel.append( rmButton.$element );
 
-		const editButton = new OO.ui.ButtonWidget( {
+		const editButton = new OO.ui.ButtonWidget( { // eslint-disable-line mediawiki/no-unlabeled-buttonwidget
 			icon: 'edit',
 			title: mw.msg( 'bs-permissionmanager-group-edit' ),
 			framed: false,

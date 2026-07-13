@@ -26,7 +26,7 @@ bs.permissionManager.panel.GridMatrix.prototype.makeNamespacePicker = function (
 			label: namespaces[ i ].name
 		} );
 		if (
-			this.selectedNamespaces.indexOf( namespaces[ i ].id ) === -1 &&
+			this.selectedNamespaces.indexOf( namespaces[ i ].id ) === -1 && // eslint-disable-line unicorn/prefer-includes
 			( !namespaces[ i ].hideable || namespaces[ i ].content )
 		) {
 			this.selectedNamespaces.push( parseInt( namespaces[ i ].id ) );
@@ -127,7 +127,7 @@ bs.permissionManager.panel.GridMatrix.prototype.render = function ( data ) {
 		columns[ 'ns_' + this.manager.permissionRawData.namespaces[ i ].id ] = {
 			type: 'bs-permissionmanager-matrix',
 			headerText: this.manager.permissionRawData.namespaces[ i ].name,
-			hidden: this.selectedNamespaces.indexOf( this.manager.permissionRawData.namespaces[ i ].id ) === -1,
+			hidden: this.selectedNamespaces.indexOf( this.manager.permissionRawData.namespaces[ i ].id ) === -1, // eslint-disable-line unicorn/prefer-includes
 			width: 50,
 			minWidth: 30,
 			maxWidth: 100

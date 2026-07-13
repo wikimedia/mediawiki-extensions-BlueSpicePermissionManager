@@ -65,7 +65,7 @@ bs.permissionManager.panel.GroupManager.prototype.renderHeader = function () {
 	} );
 	this.$header.append( label.$element );
 	if ( this.editable ) {
-		this.addButton = new OO.ui.ButtonWidget( {
+		this.addButton = new OO.ui.ButtonWidget( { // eslint-disable-line mediawiki/no-unlabeled-buttonwidget
 			icon: 'add',
 			title: mw.msg( 'bs-permissionmanager-group-create' ),
 			flags: [ 'progressive' ],

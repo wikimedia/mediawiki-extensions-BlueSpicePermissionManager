@@ -175,14 +175,14 @@ bs.permissionManager.panel.PermissionManager.prototype.getGlobalMeta = function 
 bs.permissionManager.panel.PermissionManager.prototype.isNamespaceAssigned = function ( group, role, namespace ) {
 	return this.permissionRawData.nsLockdown.hasOwnProperty( namespace ) &&
 		this.permissionRawData.nsLockdown[ namespace ].hasOwnProperty( role ) &&
-		this.permissionRawData.nsLockdown[ namespace ][ role ].indexOf( group ) !== -1;
+		this.permissionRawData.nsLockdown[ namespace ][ role ].indexOf( group ) !== -1; // eslint-disable-line unicorn/prefer-includes
 };
 
 bs.permissionManager.panel.PermissionManager.prototype.getNamespaceMeta = function ( group, role, namespace, namespaceName ) {
 	const meta = { nsId: namespace, nsName: namespaceName };
 	const explicit = this.permissionRawData.nsLockdown.hasOwnProperty( namespace ) &&
 		this.permissionRawData.nsLockdown[ namespace ].hasOwnProperty( role ) &&
-		this.permissionRawData.nsLockdown[ namespace ][ role ].indexOf( group ) !== -1;
+		this.permissionRawData.nsLockdown[ namespace ][ role ].indexOf( group ) !== -1; // eslint-disable-line unicorn/prefer-includes
 	if ( explicit ) {
 		meta.assignment = 'explicit';
 	} else if ( this.getGlobalMeta( group, role ).assignment !== false ) {
@@ -226,7 +226,7 @@ bs.permissionManager.panel.PermissionManager.prototype.getBlockingDependencies =
 		for ( let i = 0; i < roles.length; i++ ) {
 			let blocking = this.getAssignedGroupsForNamespaceAndRole( namespace, roles[ i ] );
 			blocking = this.removeImplicitGroupsFromBlock( group, blocking );
-			if ( blocking.length > 0 && blocking.indexOf( group ) === -1 ) {
+			if ( blocking.length > 0 && blocking.indexOf( group ) === -1 ) { // eslint-disable-line unicorn/prefer-includes
 				if ( !res.hasOwnProperty( permission ) ) {
 					res[ permission ] = [];
 				}
@@ -238,17 +238,17 @@ bs.permissionManager.panel.PermissionManager.prototype.getBlockingDependencies =
 };
 
 bs.permissionManager.panel.PermissionManager.prototype.removeImplicitGroupsFromBlock = function ( forGroup, blocking ) {
-	blocking = $.extend( [], blocking );
-	if ( forGroup !== '*' && blocking.indexOf( '*' ) !== -1 ) {
+	blocking = $.extend( [], blocking ); // eslint-disable-line no-jquery/no-extend
+	if ( forGroup !== '*' && blocking.indexOf( '*' ) !== -1 ) { // eslint-disable-line unicorn/prefer-includes
 		// Remove any roles blocked by `*` if the group is not `*`
 		blocking.splice( blocking.indexOf( '*' ), 1 );
 	}
 	if ( forGroup !== 'user' && forGroup !== '*' ) {
 		// Remove any roles blocked by `user` and `*` if the group is not `user` or `*`
-		if ( blocking.indexOf( 'user' ) !== -1 ) {
+		if ( blocking.indexOf( 'user' ) !== -1 ) { // eslint-disable-line unicorn/prefer-includes
 			blocking.splice( blocking.indexOf( 'user' ), 1 );
 		}
-		if ( blocking.indexOf( '*' ) !== -1 ) {
+		if ( blocking.indexOf( '*' ) !== -1 ) { // eslint-disable-line unicorn/prefer-includes
 			// Remove `*` if it is present, as it is not relevant for non-user groups
 			blocking.splice( blocking.indexOf( '*' ), 1 );
 		}
@@ -317,7 +317,7 @@ bs.permissionManager.panel.PermissionManager.prototype.setDirty = function ( col
 		this.dirtyState[ this.activeGroup ][ role ] = [];
 	}
 	if ( dirty ) {
-		if ( this.dirtyState[ this.activeGroup ][ role ].indexOf( column ) === -1 ) {
+		if ( this.dirtyState[ this.activeGroup ][ role ].indexOf( column ) === -1 ) { // eslint-disable-line unicorn/prefer-includes
 			this.dirtyState[ this.activeGroup ][ role ].push( column );
 		}
 	} else {

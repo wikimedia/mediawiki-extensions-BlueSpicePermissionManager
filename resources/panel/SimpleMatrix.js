@@ -22,8 +22,8 @@ bs.permissionManager.panel.SimpleMatrix.prototype.setUsableRoles = function () {
 		nsRoleBlacklist = blacklist.concat( [ 'admin' ] );
 
 	// Define roles user can set - blacklist instead of whitelist to allow for custom roles
-	this.usableRoles = this.manager.permissionRawData.roles.filter( ( role ) => blacklist.indexOf( role.role ) === -1 );
-	this.usableNsRoles = this.manager.permissionRawData.roles.filter( ( role ) => nsRoleBlacklist.indexOf( role.role ) === -1 );
+	this.usableRoles = this.manager.permissionRawData.roles.filter( ( role ) => blacklist.indexOf( role.role ) === -1 ); // eslint-disable-line unicorn/prefer-includes
+	this.usableNsRoles = this.manager.permissionRawData.roles.filter( ( role ) => nsRoleBlacklist.indexOf( role.role ) === -1 ); // eslint-disable-line unicorn/prefer-includes
 };
 
 bs.permissionManager.panel.SimpleMatrix.prototype.setUsableNamespaces = function () {
@@ -190,7 +190,7 @@ bs.permissionManager.panel.SimpleMatrix.prototype.filterNamespaces = function ( 
 	nsPanel.find( '.bs-permission-manager-simple-matrix-ns-panel' ).each( function () {
 		const $nsItem = $( this );
 		const $label = $nsItem.find( '.bs-permission-manager-simple-matrix-ns-label' );
-		if ( $label.length === 0 || val === '' || $label.text().toLowerCase().indexOf( val.toLowerCase() ) !== -1 ) {
+		if ( $label.length === 0 || val === '' || $label.text().toLowerCase().indexOf( val.toLowerCase() ) !== -1 ) { // eslint-disable-line unicorn/prefer-includes
 			$nsItem.show();
 		} else {
 			$nsItem.hide();

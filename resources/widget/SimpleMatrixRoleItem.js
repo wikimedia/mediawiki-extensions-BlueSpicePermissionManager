@@ -94,7 +94,7 @@ bs.permissionManager.widget.SimpleMatrixRoleItem.prototype.makeMeta = function (
 			cls = 'role-denied';
 		}
 	}
-	this.mainLabel.$element.removeClass( 'role-granted role-denied' ).addClass( cls ); // eslint-disable-line mediawiki/class-doc
+	this.mainLabel.$element.removeClass( 'role-granted role-denied' ).addClass( cls );
 
 	this.mainLabel.setLabel( new OO.ui.HtmlSnippet( label ) );
 	this.subLabel.setLabel( sub );
