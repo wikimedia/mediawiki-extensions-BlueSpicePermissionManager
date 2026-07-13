@@ -193,7 +193,6 @@ class PermissionManager {
 	}
 
 	/**
-	 *
 	 * @param array $data
 	 * @return array
 	 */
@@ -217,7 +216,6 @@ class PermissionManager {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getNamespaceRolesLockdown() {
@@ -225,7 +223,6 @@ class PermissionManager {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getRoleDependencyTree() {
@@ -254,7 +251,6 @@ class PermissionManager {
 	}
 
 	/**
-	 *
 	 * @param array $groupRoles
 	 * @param array $roleLockdown
 	 * @return array
@@ -290,7 +286,6 @@ class PermissionManager {
 	}
 
 	/**
-	 *
 	 * @param array $globalDiff
 	 * @param array $nsDiff
 	 */
@@ -358,7 +353,6 @@ class PermissionManager {
 	}
 
 	/**
-	 *
 	 * @param string $type
 	 * @param array $params
 	 */

@@ -5,6 +5,7 @@ namespace BlueSpice\PermissionManager\Rest;
 use BlueSpice\PermissionManager\GroupManager;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Rest\HttpException;
+use MediaWiki\Rest\Response;
 use MediaWiki\Rest\SimpleHandler;
 use Throwable;
 use Wikimedia\ParamValidator\ParamValidator;
@@ -28,6 +29,9 @@ class AddGroup extends SimpleHandler {
 		return true;
 	}
 
+	/**
+	 * @return Response
+	 */
 	public function execute() {
 		$params = $this->getValidatedParams();
 		try {

@@ -21,6 +21,9 @@ class RetrieveGroups extends SimpleHandler {
 		$this->groupHelper = $utilityFactory->getGroupHelper();
 	}
 
+	/**
+	 * @return array
+	 */
 	public function execute() {
 		$params = $this->getValidatedParams();
 		$query = $params['query'] ?? null;

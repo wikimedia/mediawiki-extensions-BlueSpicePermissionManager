@@ -7,7 +7,6 @@ use BlueSpice\ConfigDefinition\StringSetting;
 /**
  * This config will not be included in ConfigManager, but is
  * set from Special:PermissionManager instead
- *
  */
 class PermissionManagerActivePresetConfig extends StringSetting {
 
