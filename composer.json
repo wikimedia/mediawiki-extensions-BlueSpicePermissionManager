@@ -15,11 +15,6 @@
 		"mwstake/mediawiki-component-dynamicconfig": "~2",
 		"mwstake/mediawiki-component-utils": "~3"
 	},
-	"autoload": {
-		"psr-4": {
-			"BlueSpice\\PermissionManager\\": "src"
-		}
-	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "45.0.0",
 		"mediawiki/mediawiki-phan-config": "0.14.0",
@@ -39,6 +34,11 @@
 		],
 		"phan": "phan -d . --long-progress-bar",
 		"phpcs": "phpcs -sp --cache"
+	},
+	"autoload": {
+		"psr-4": {
+			"BlueSpice\\PermissionManager\\": "src"
+		}
 	},
 	"extra": {
 		"installer-name": "BlueSpicePermissionManager"

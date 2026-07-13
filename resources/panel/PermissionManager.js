@@ -238,7 +238,7 @@ bs.permissionManager.panel.PermissionManager.prototype.getBlockingDependencies =
 };
 
 bs.permissionManager.panel.PermissionManager.prototype.removeImplicitGroupsFromBlock = function ( forGroup, blocking ) {
-	blocking = $.extend( [], blocking );
+	blocking = $.extend( [], blocking ); // eslint-disable-line no-jquery/no-extend
 	if ( forGroup !== '*' && blocking.indexOf( '*' ) !== -1 ) {
 		// Remove any roles blocked by `*` if the group is not `*`
 		blocking.splice( blocking.indexOf( '*' ), 1 );
