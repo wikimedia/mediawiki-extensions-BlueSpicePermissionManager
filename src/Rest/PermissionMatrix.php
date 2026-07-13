@@ -8,6 +8,7 @@ use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Language\Language;
 use MediaWiki\Rest\HttpException;
+use MediaWiki\Rest\Response;
 use MediaWiki\Rest\SimpleHandler;
 use MediaWiki\Title\NamespaceInfo;
 
@@ -41,6 +42,9 @@ class PermissionMatrix extends SimpleHandler {
 		$this->configFactory = $configFactory;
 	}
 
+	/**
+	 * @return Response
+	 */
 	public function execute() {
 		$this->assertUserCan();
 
@@ -91,7 +95,6 @@ class PermissionMatrix extends SimpleHandler {
 	}
 
 	/**
-	 *
 	 * @param array $rolesAndPermissions
 	 * @return array
 	 */
@@ -122,7 +125,6 @@ class PermissionMatrix extends SimpleHandler {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	private function buildNamespaceMetadata() {

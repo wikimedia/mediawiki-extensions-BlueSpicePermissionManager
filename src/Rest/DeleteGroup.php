@@ -4,6 +4,7 @@ namespace BlueSpice\PermissionManager\Rest;
 
 use BlueSpice\PermissionManager\GroupManager;
 use BlueSpice\UserManager\Rest\DeleteGroup as RestDeleteGroup;
+use MediaWiki\Rest\Response;
 
 /**
  * @deprecated since BlueSpice 5.3 - use BlueSpice\UserManager\Rest\DeleteGroup
@@ -19,6 +20,9 @@ class DeleteGroup extends RestDeleteGroup {
 		return parent::__construct( $groupManager );
 	}
 
+	/**
+	 * @return Response
+	 */
 	public function execute() {
 		return parent::execute();
 	}

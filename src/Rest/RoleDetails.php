@@ -5,6 +5,7 @@ namespace BlueSpice\PermissionManager\Rest;
 use BlueSpice\PermissionManager\PermissionManager as BSPermissionManager;
 use MediaWiki\Message\Message;
 use MediaWiki\Rest\HttpException;
+use MediaWiki\Rest\Response;
 use MediaWiki\Rest\SimpleHandler;
 use Wikimedia\ParamValidator\ParamValidator;
 
@@ -18,6 +19,9 @@ class RoleDetails extends SimpleHandler {
 	) {
 	}
 
+	/**
+	 * @return Response
+	 */
 	public function execute() {
 		$params = $this->getValidatedParams();
 		$role = $params['role'];

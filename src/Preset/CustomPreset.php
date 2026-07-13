@@ -12,6 +12,9 @@ class CustomPreset implements IPreset {
 	/** @var DynamicConfigManager */
 	private $configManager;
 
+	/**
+	 * @return static
+	 */
 	public static function factory() {
 		return new static(
 			MediaWikiServices::getInstance()->getService( 'MWStakeDynamicConfigManager' )
