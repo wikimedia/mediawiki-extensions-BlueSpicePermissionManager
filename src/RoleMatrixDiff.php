@@ -6,34 +6,28 @@ use MediaWiki\Config\Config;
 
 class RoleMatrixDiff {
 	/**
-	 *
 	 * @var Config
 	 */
 	protected $config;
 	/**
-	 *
 	 * @var array
 	 */
 	protected $newGlobal;
 	/**
-	 *
 	 * @var array
 	 */
 	protected $newNSLockdown;
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $oldGlobal;
 	/**
-	 *
 	 * @var array
 	 */
 	protected $oldNSLockdown;
 
 	/**
-	 *
 	 * @param Config $config
 	 * @param array $newGlobal
 	 * @param array $newNSLockdown
@@ -53,7 +47,6 @@ class RoleMatrixDiff {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getGlobalDiff() {
@@ -61,7 +54,6 @@ class RoleMatrixDiff {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getNsDiff() {
@@ -69,7 +61,6 @@ class RoleMatrixDiff {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function globalDiff() {
@@ -87,7 +78,6 @@ class RoleMatrixDiff {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function nsDiff() {

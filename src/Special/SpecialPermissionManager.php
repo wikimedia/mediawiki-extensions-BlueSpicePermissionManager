@@ -12,7 +12,6 @@ class SpecialPermissionManager extends OOJSSpecialPage {
 	protected $permissionManager;
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $groups = [];
@@ -35,7 +34,6 @@ class SpecialPermissionManager extends OOJSSpecialPage {
 	}
 
 	/**
-	 *
 	 * @return void
 	 */
 	protected function buildSkeleton() {

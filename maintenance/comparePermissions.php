@@ -111,7 +111,6 @@ class comparePermissions extends Maintenance { // phpcs:ignore Squiz.Classes.Val
 	}
 
 	/**
-	 *
 	 * @param array $result
 	 */
 	protected function displayResult( $result ) {
@@ -134,7 +133,6 @@ class comparePermissions extends Maintenance { // phpcs:ignore Squiz.Classes.Val
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getHTMLHeader() {
@@ -151,7 +149,6 @@ class comparePermissions extends Maintenance { // phpcs:ignore Squiz.Classes.Val
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getCSVHeader() {
@@ -165,7 +162,6 @@ class comparePermissions extends Maintenance { // phpcs:ignore Squiz.Classes.Val
 	}
 
 	/**
-	 *
 	 * @param string $permission
 	 * @param array $data
 	 * @return string
@@ -182,7 +178,6 @@ class comparePermissions extends Maintenance { // phpcs:ignore Squiz.Classes.Val
 	}
 
 	/**
-	 *
 	 * @param string $permission
 	 * @param array $data
 	 * @return string

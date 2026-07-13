@@ -5,6 +5,7 @@ namespace BlueSpice\PermissionManager\Rest;
 use BlueSpice\PermissionManager\PermissionManager as BSPermissionManager;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Rest\HttpException;
+use MediaWiki\Rest\Response;
 use MediaWiki\Rest\SimpleHandler;
 use Wikimedia\ParamValidator\ParamValidator;
 
@@ -17,6 +18,9 @@ class SavePermissions extends SimpleHandler {
 		$this->bsPermissionManager = $bsPermissionManager;
 	}
 
+	/**
+	 * @return Response
+	 */
 	public function execute() {
 		$this->assertUserCan();
 
