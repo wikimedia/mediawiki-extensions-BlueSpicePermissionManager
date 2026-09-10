@@ -24,6 +24,7 @@ class RoleDetails extends SimpleHandler {
 	 */
 	public function execute() {
 		$params = $this->getValidatedParams();
+		$queryParams = $this->getRequest()->getQueryParams();
 		$role = $params['role'];
 		$roleObject = $this->permissionManager->getRoleManager()->getRole( $role );
 		if ( !$roleObject ) {
@@ -31,15 +32,24 @@ class RoleDetails extends SimpleHandler {
 		}
 		$permissions = $roleObject->getPermissions();
 		$res = [];
-		foreach ( $permissions as $permission ) {
-			$msg = Message::newFromKey( 'right-' . $permission );
-			$description = $msg->exists() ? $msg->parse() : '-';
-			$res[] = [
-				'permission' => $permission,
-				'description' => $description
-			];
+		$start = $queryParams['start'];
+		// Next paginated page/batch to be fetched.
+		$batch = $start + $queryParams['limit'];
+
+		for ( $i = $start; $i < $batch; ++$i ) {
+			$msg = Message::newFromKey( 'right-' . $permissions[$i] );
+			// On the last batch, even if we have fewer permissions than the limit,
+			// show only those entries and avoid showing useless messages that clutter
+			// the dialog.
+			if ( $i < count( $permissions ) ) {
+				$description = $msg->exists() ? $msg->parse() : '-';
+				$res[] = [
+					'permission' => $permissions[$i],
+					'description' => $description
+				];
+			}
 		}
-		return $this->getResponseFactory()->createJson( [ 'results' => $res, 'total' => count( $res ) ] );
+		return $this->getResponseFactory()->createJson( [ 'results' => $res, 'total' => count( $permissions ) ] );
 	}
 
 	/**
