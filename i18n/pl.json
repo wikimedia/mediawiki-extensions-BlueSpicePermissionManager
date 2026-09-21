@@ -14,7 +14,7 @@
 	"bs-permissionmanager-header-permissions": "Uprawnienia",
 	"bs-permissionmanager-header-global": "Wiki",
 	"bs-permissionmanager-btn-save-label": "Zapisz",
-	"bs-permissionmanager-error-lockout": "Co najmniej jedna grupa musi posiadać uprawnienie „$1”.\nZmiany nie mogą zostać zapisane.",
+	"bs-permissionmanager-error-lockout": "Co najmniej jedna grupa musi mieć uprawnienie „$1”.\nZmiany nie mogą zostać zapisane.",
 	"log-description-bs-permission-manager": "Jest to rejestr zmian w uprawnieniach grupy.",
 	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|zmienił|zmieniła|zmienił(a)}} uprawnienia grupy „$4”",
 	"permissionmanager": "Menedżer uprawnień",
