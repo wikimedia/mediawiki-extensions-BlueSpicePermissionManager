@@ -3,6 +3,7 @@
 		"authors": [
 			"Chrumps",
 			"InternerowyGołąb",
+			"PanWor",
 			"Rail",
 			"Railfail536"
 		]
@@ -13,9 +14,9 @@
 	"bs-permissionmanager-header-permissions": "Uprawnienia",
 	"bs-permissionmanager-header-global": "Wiki",
 	"bs-permissionmanager-btn-save-label": "Zapisz",
-	"bs-permissionmanager-error-lockout": "Co najmniej jedna grupa musi posiadać uprawnienie „$1”.\nZmiany nie mogą zostać zapisane.",
+	"bs-permissionmanager-error-lockout": "Co najmniej jedna grupa musi mieć uprawnienie „$1”.\nZmiany nie mogą zostać zapisane.",
 	"log-description-bs-permission-manager": "Jest to rejestr zmian w uprawnieniach grupy.",
-	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|zmienił|zmieniła|zmienił(a)}} uprawnienia grupy $4",
+	"logentry-bs-permission-manager-modify": "$1 {{GENDER:$2|zmienił|zmieniła|zmienił(a)}} uprawnienia grupy „$4”",
 	"permissionmanager": "Menedżer uprawnień",
 	"bs-permissionmanager-affected-by-explicit": "Zablokowane przez $1",
 	"bs-permissionmanager-affected-by-notset": "Nie ustawione",
@@ -23,5 +24,9 @@
 	"bs-permissionmanager-header-role": "Rola",
 	"bs-premissionmanager-reset-button-label": "Zresetuj",
 	"bs-permissionmanager-preset-save-success": "Konfiguracja zapisana!",
-	"bs-permissionmanager-namespace-picker": "Przestrzenie nazw"
+	"bs-permissionmanager-namespace-picker": "Przestrzenie nazw",
+	"logentry-bs-permission-manager-global-add": "$1 {{GENDER:$2|dodał|dodała|dodał(a)}} {{PLURAL:$6|rolę|role}} „$5” dla grupy „$4”",
+	"logentry-bs-permission-manager-global-remove": "$1 {{GENDER:$2|usunął|usunęła|usunął(-ęła)}} {{PLURAL:$6|rolę|role}} „$5” dla grupy „$4”",
+	"logentry-bs-permission-manager-ns-add": "$1 {{GENDER:$2|dodał|dodała|dodał(a)}} {{PLURAL:$6|rolę|role}} „$5” w przestrzeni nazw „$7” dla grupy „$4”",
+	"logentry-bs-permission-manager-ns-remove": "$1 {{GENDER:$2|usunął|usunęła|usunął(-ęła)}} {{PLURAL:$6|rolę|role}} „$5” w przestrzeni nazw „$7” dla grupy „$4”"
 }
