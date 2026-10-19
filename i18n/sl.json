@@ -51,5 +51,18 @@
 	"bs-permissionmanager-preset-save-error": "Konfiguracije ni mogoče shraniti! Spremembe niso bile uporabljene!",
 	"bs-permissionmanager-preset-save-success": "Konfiguracija shranjena!",
 	"bs-permissionmanager-pref-max-backups-help": "Število varnostnih kopij za zadnje spremembe upravitelja dovoljenj (Special:PermissionManager).",
+	"bs-permissionmanager-group-not-found": "Skupine ni mogoče najti",
+	"bs-permissionmanager-groupmanager-invalid-name-length": "Ime skupine ne sme biti daljše od 255 znakov.",
+	"bs-permissionmanager-groupmanager-invalid-name-numeric": "Ime skupine mora vsebovati vsaj en znak.",
+	"bs-permissionmanager-group-already-exists": "Skupina že obstaja",
+	"bs-permissionmanager-group-remove": "Odstrani skupino",
+	"bs-permissionmanager-group-edit": "Uredi skupino",
+	"bs-permissionmanager-error": "Prišlo je do napake",
+	"bs-permissionmanager-group-create-label": "Dodaj novo skupino",
+	"bs-permissionmanager-group-create": "Ustvari",
+	"bs-permissionmanager-save": "Shrani",
+	"bs-permissionmanager-cancel": "Prekliči",
+	"bs-permissionmanager-group-name": "Ime skupine",
+	"bs-permissionmanager-group-type-custom": "po meri",
 	"bs-permissionmanager-namespace-picker": "Imenski prostori"
 }
