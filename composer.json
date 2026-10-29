@@ -13,7 +13,7 @@
 	"require": {
 		"composer/installers": "~1.0|~2",
 		"mwstake/mediawiki-component-dynamicconfig": "~3",
-		"mwstake/mediawiki-component-utils": "~3"
+		"mwstake/mediawiki-component-utils": "~4"
 	},
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "52.0.0",
