@@ -9,6 +9,7 @@
 			"Justman10000",
 			"Metalhead64",
 			"Mglaser",
+			"Mschlindwein",
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Umherirrender",
 			"Vhoesl"
@@ -105,5 +106,6 @@
 	"bs-permissionmanager-group-explicit-editor": "Bearbeiter",
 	"bs-permissionmanager-group-explicit-reader": "Leser",
 	"bs-permissionmanager-group-explicit-reviewer": "Prüfer",
-	"bs-permissionmanager-group-explicit-sysop": "Administratoren"
+	"bs-permissionmanager-group-explicit-sysop": "Administratoren",
+	"bs-permissionmanager-preset-private-with-editor-help": "* Nur angemeldete Benutzer können die Inhalte '''ansehen'''!\n* Benutzer der Gruppe „editor“ können '''bearbeiten'''!\n* Nur Benutzer der Gruppe „sysop“ können '''administrative Aktionen''' durchführen"
 }
